@@ -1,4 +1,3 @@
-
 /* PATRIASOUL — Modern Design System 2026 */
 :root{
   --ps-bg:#07090d;
@@ -18,208 +17,22 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  background:
-    radial-gradient(circle at 15% -10%,rgba(217,184,76,.09),transparent 32rem),
-    radial-gradient(circle at 90% 10%,rgba(201,33,44,.06),transparent 28rem),
-    var(--ps-bg);
-  color:var(--ps-text);
-  line-height:1.65;
-  overflow-x:hidden;
-}
-body:before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
-  background-image:linear-gradient(rgba(7,9,13,.82),rgba(7,9,13,.96)),url("../images/Hrvatske_kockice.png");
-  background-size:cover;background-position:center;opacity:.18;
-}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;height:auto}
-button,input,textarea,select{font:inherit}
-.container{width:min(var(--ps-max),calc(100% - 40px));margin-inline:auto}
-
-/* Header */
-.ps-topbar{
-  border-bottom:1px solid var(--ps-line);
-  background:rgba(4,6,9,.88);
-  color:var(--ps-muted);
-  font-size:12px;
-}
-.ps-topbar-inner{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.ps-topbar strong{color:var(--ps-gold-2)}
-.ps-header{
-  position:sticky;top:0;z-index:1000;
-  border-bottom:1px solid var(--ps-line);
-  background:rgba(7,9,13,.82);
-  backdrop-filter:blur(18px) saturate(130%);
-}
-.ps-nav{min-height:78px;display:flex;align-items:center;gap:28px}
-.ps-brand{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;font-size:21px;font-weight:950;letter-spacing:2.4px}
-.ps-brand-mark{
-  width:34px;height:34px;border:1px solid rgba(217,184,76,.5);border-radius:10px;
-  display:grid;place-items:center;background:linear-gradient(145deg,rgba(217,184,76,.18),rgba(201,33,44,.08));
-  color:var(--ps-gold-2);font-size:15px;
-}
-.ps-brand span{color:var(--ps-gold-2)}
-.ps-mainnav{display:flex;align-items:center;gap:3px;flex:1;justify-content:flex-end}
-.ps-mainnav a{
-  color:#c6ccd4;font-size:13px;font-weight:750;padding:10px 12px;border-radius:10px;
-  transition:.2s ease;
-}
-.ps-mainnav a:hover,.ps-mainnav a[aria-current="page"]{color:var(--ps-gold-2);background:rgba(217,184,76,.08)}
-.ps-mainnav .ps-nav-cta{background:var(--ps-gold);color:#111;font-weight:900;margin-left:6px;box-shadow:0 8px 24px rgba(217,184,76,.13)}
-.ps-mainnav .ps-nav-cta:hover{background:var(--ps-gold-2);color:#111}
-.ps-menu{
-  display:none;border:1px solid var(--ps-line);background:var(--ps-surface);
-  color:#fff;border-radius:11px;padding:9px 11px;cursor:pointer;
-}
-
-/* Mobile drawer */
-.ps-drawer{
-  position:fixed;inset:0 0 0 auto;width:min(360px,88vw);z-index:2000;
-  transform:translateX(110%);transition:transform .25s ease;
-  background:#0a0d12;border-left:1px solid var(--ps-line);padding:84px 22px 30px;
-  box-shadow:-20px 0 60px rgba(0,0,0,.4);
-}
-.ps-drawer.is-open{transform:none}
-.ps-drawer a{display:block;padding:13px 14px;border-radius:10px;color:#d6dae0;font-weight:750}
-.ps-drawer a:hover{background:rgba(217,184,76,.08);color:var(--ps-gold-2)}
-.ps-drawer-close{position:absolute;right:18px;top:20px}
-.ps-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1900}
-.ps-backdrop.is-open{display:block}
-
-/* Buttons */
-.ps-btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;
-  padding:12px 18px;border-radius:11px;border:1px solid var(--ps-line);
-  font-weight:850;transition:.2s ease;cursor:pointer;
-}
-.ps-btn:hover{transform:translateY(-2px)}
-.ps-btn-primary{background:var(--ps-gold);border-color:var(--ps-gold);color:#111}
-.ps-btn-primary:hover{background:var(--ps-gold-2)}
-.ps-btn-ghost{background:rgba(255,255,255,.03);color:#eef0f3}
-.ps-btn-ghost:hover{border-color:rgba(217,184,76,.4);color:var(--ps-gold-2)}
-
-/* Hero */
-.ps-hero{
-  position:relative;isolation:isolate;min-height:650px;display:flex;align-items:center;
-  border-bottom:1px solid var(--ps-line);overflow:hidden;
-}
-.ps-hero:before{
-  content:"";position:absolute;inset:0;z-index:-2;
-  background:
-    linear-gradient(90deg,rgba(7,9,13,.97) 0%,rgba(7,9,13,.78) 42%,rgba(7,9,13,.45) 100%),
-    url("../images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg") center/cover;
-}
-.ps-hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;z-index:-1;background:linear-gradient(transparent,var(--ps-bg))}
-.ps-hero-inner{padding:90px 0;max-width:850px}
-.ps-eyebrow{
-  display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(217,184,76,.28);
-  border-radius:999px;background:rgba(217,184,76,.06);color:var(--ps-gold-2);
-  text-transform:uppercase;letter-spacing:1.7px;font-size:11px;font-weight:900;
-}
-.ps-hero h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-3px;margin:22px 0 20px}
-.ps-hero h1 span{color:var(--ps-gold-2)}
-.ps-hero p{max-width:730px;color:#c4cad2;font-size:clamp(17px,2vw,21px);margin:0 0 30px}
-.ps-actions{display:flex;flex-wrap:wrap;gap:10px}
-
-/* General content */
-.ps-section{padding:82px 0}
-.ps-section-muted{background:rgba(255,255,255,.018);border-block:1px solid var(--ps-line)}
-.ps-kicker{color:var(--ps-gold-2);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:900}
-.ps-heading{max-width:760px;margin-bottom:36px}
-.ps-heading h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-1.2px;margin:8px 0 12px}
-.ps-heading p{color:var(--ps-muted);margin:0}
-.ps-grid{display:grid;gap:18px}
-.ps-grid-3{grid-template-columns:repeat(3,1fr)}
-.ps-grid-4{grid-template-columns:repeat(4,1fr)}
-.ps-grid-5{grid-template-columns:repeat(5,1fr)}
-.ps-card{
-  display:flex;flex-direction:column;min-height:100%;padding:24px;
-  border:1px solid var(--ps-line);border-radius:var(--ps-radius);
-  background:linear-gradient(145deg,rgba(18,24,33,.92),rgba(10,14,20,.94));
-  box-shadow:0 12px 40px rgba(0,0,0,.12);transition:.22s ease;
-}
-.ps-card:hover{transform:translateY(-4px);border-color:rgba(217,184,76,.35);box-shadow:var(--ps-shadow)}
-.ps-card-icon{font-size:27px;margin-bottom:18px}
-.ps-card h3{font-size:20px;line-height:1.25;margin:0 0 8px}
-.ps-card p{color:var(--ps-muted);font-size:14px;margin:0}
-.ps-card-link{margin-top:auto;padding-top:18px;color:var(--ps-gold-2);font-weight:850;font-size:13px}
-.ps-statbar{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ps-line);border-radius:16px;overflow:hidden;background:rgba(7,9,13,.7)}
-.ps-stat{text-align:center;padding:24px 12px;border-right:1px solid var(--ps-line)}
-.ps-stat:last-child{border-right:0}
-.ps-stat strong{display:block;font-size:28px;color:var(--ps-gold-2)}
-.ps-stat span{font-size:12px;color:var(--ps-muted)}
-.ps-feature{
-  border:1px solid var(--ps-line);border-radius:22px;overflow:hidden;
-  background:linear-gradient(145deg,rgba(18,24,33,.95),rgba(9,13,18,.95));
-}
-.ps-feature-media{aspect-ratio:16/8;overflow:hidden;background:#111}
-.ps-feature-media img{width:100%;height:100%;object-fit:cover}
-.ps-feature-body{padding:28px}
-.ps-feature-body h3{font-size:27px;margin:0 0 8px}
-.ps-feature-body p{color:var(--ps-muted);margin:0 0 18px}
-.ps-list{display:grid;gap:9px;padding:0;margin:0;list-style:none}
-.ps-list li{padding:11px 13px;border:1px solid var(--ps-line);border-radius:10px;background:rgba(255,255,255,.02);color:#dce0e5}
-.ps-list li:before{content:"—";color:var(--ps-gold);margin-right:9px}
-.ps-quote{padding:70px 20px;text-align:center;border-block:1px solid var(--ps-line)}
-.ps-quote blockquote{max-width:850px;margin:0 auto 14px;font-size:clamp(23px,3.5vw,37px);line-height:1.2;font-weight:850}
-.ps-quote cite{color:var(--ps-gold-2);font-style:normal;font-size:13px}
-
-/* Hub pages */
-.ps-page-hero{padding:78px 0 48px;border-bottom:1px solid var(--ps-line)}
-.ps-page-hero h1{font-size:clamp(40px,6vw,68px);line-height:1;margin:10px 0 15px;letter-spacing:-2px}
-.ps-page-hero p{max-width:760px;color:var(--ps-muted);font-size:17px;margin:0}
-.ps-breadcrumbs{font-size:12px;color:#77818e;margin-bottom:18px}
-.ps-breadcrumbs a:hover{color:var(--ps-gold-2)}
-.ps-content{padding:55px 0 85px}
-.ps-content-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px}
-.ps-sidebar{position:sticky;top:104px;height:max-content}
-.ps-sidebar .ps-card{padding:18px}
-.ps-sidebar a{display:block;padding:10px;border-radius:9px;color:#b8c0ca;font-size:13px;font-weight:700}
-.ps-sidebar a:hover{background:rgba(217,184,76,.07);color:var(--ps-gold-2)}
-.ps-article{max-width:850px}
-.ps-article h2{font-size:30px;line-height:1.2;margin:0 0 14px}
-.ps-article h3{font-size:21px;margin:30px 0 8px}
-.ps-article p{color:#c4cad2}
-.ps-note{padding:18px 20px;border-left:3px solid var(--ps-gold);background:rgba(217,184,76,.06);border-radius:0 12px 12px 0;color:#dce0e5}
-
-/* Footer */
-.ps-footer{border-top:1px solid var(--ps-line);background:#05070a;padding:58px 0 24px}
-.ps-footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}
-.ps-footer h4{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:1.4px;color:#e8ebef}
-.ps-footer p,.ps-footer a{color:#858f9b;font-size:13px}
-.ps-footer a:hover{color:var(--ps-gold-2)}
-.ps-footer-links{display:grid;gap:7px}
-.ps-footer-bottom{margin-top:38px;padding-top:18px;border-top:1px solid var(--ps-line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#68717d;font-size:11px}
-
-/* Accessibility / focus */
-:focus-visible{outline:2px solid var(--ps-gold-2);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
-
-/* Responsive */
-@media(max-width:1120px){
-  .ps-mainnav a:nth-child(6),.ps-mainnav a:nth-child(7),.ps-mainnav a:nth-child(8){display:none}
-  .ps-grid-5{grid-template-columns:repeat(3,1fr)}
-}
-@media(max-width:860px){
-  .ps-mainnav{display:none}.ps-menu{display:block;margin-left:auto}
-  .ps-topbar-inner{justify-content:center}.ps-topbar-inner span:last-child{display:none}
-  .ps-grid-3,.ps-grid-4,.ps-grid-5{grid-template-columns:repeat(2,1fr)}
-  .ps-statbar{grid-template-columns:repeat(2,1fr)}
-  .ps-stat:nth-child(2){border-right:0}.ps-stat:nth-child(-n+2){border-bottom:1px solid var(--ps-line)}
-  .ps-content-layout{grid-template-columns:1fr}.ps-sidebar{position:static}
-  .ps-footer-grid{grid-template-columns:repeat(2,1fr)}
-}
-@media(max-width:560px){
-  .container{width:min(var(--ps-max),calc(100% - 28px))}
-  .ps-nav{min-height:68px}.ps-brand{font-size:18px}.ps-brand-mark{width:30px;height:30px}
-  .ps-hero{min-height:590px}.ps-hero-inner{padding:72px 0}
-  .ps-hero h1{font-size:clamp(45px,15vw,70px);letter-spacing:-2px}
-  .ps-section{padding:60px 0}.ps-page-hero{padding:58px 0 36px}
-  .ps-grid-3,.ps-grid-4,.ps-grid-5{grid-template-columns:1fr}
-  .ps-stat{padding:19px 8px}.ps-stat strong{font-size:23px}
-  .ps-footer-grid{grid-template-columns:1fr}.ps-footer{padding-top:44px}
-  .ps-footer-bottom{display:block}.ps-footer-bottom span{display:block;margin-bottom:7px}
-}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% -10%,rgba(217,184,76,.09),transparent 32rem),radial-gradient(circle at 90% 10%,rgba(201,33,44,.06),transparent 28rem),var(--ps-bg);color:var(--ps-text);line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:linear-gradient(rgba(7,9,13,.82),rgba(7,9,13,.96)),url("images/Hrvatske_kockice.png");background-size:cover;background-position:center;opacity:.18}
+a{color:inherit;text-decoration:none}img{max-width:100%;height:auto}button,input,textarea,select{font:inherit}.container{width:min(var(--ps-max),calc(100% - 40px));margin-inline:auto}
+.ps-topbar{border-bottom:1px solid var(--ps-line);background:rgba(4,6,9,.88);color:var(--ps-muted);font-size:12px}.ps-topbar-inner{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:18px}.ps-topbar strong{color:var(--ps-gold-2)}
+.ps-header{position:sticky;top:0;z-index:1000;border-bottom:1px solid var(--ps-line);background:rgba(7,9,13,.82);backdrop-filter:blur(18px) saturate(130%)}.ps-nav{min-height:78px;display:flex;align-items:center;gap:28px}.ps-brand{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;font-size:21px;font-weight:950;letter-spacing:2.4px}.ps-brand-mark{width:34px;height:34px;border:1px solid rgba(217,184,76,.5);border-radius:10px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(217,184,76,.18),rgba(201,33,44,.08));color:var(--ps-gold-2);font-size:15px}.ps-brand span{color:var(--ps-gold-2)}
+.ps-mainnav{display:flex;align-items:center;gap:3px;flex:1;justify-content:flex-end}.ps-mainnav a{color:#c6ccd4;font-size:13px;font-weight:750;padding:10px 12px;border-radius:10px;transition:.2s ease}.ps-mainnav a:hover,.ps-mainnav a[aria-current="page"]{color:var(--ps-gold-2);background:rgba(217,184,76,.08)}.ps-mainnav .ps-nav-cta{background:var(--ps-gold);color:#111;font-weight:900;margin-left:6px;box-shadow:0 8px 24px rgba(217,184,76,.13)}.ps-mainnav .ps-nav-cta:hover{background:var(--ps-gold-2);color:#111}.ps-menu{display:none;border:1px solid var(--ps-line);background:var(--ps-surface);color:#fff;border-radius:11px;padding:9px 11px;cursor:pointer}
+.ps-drawer{position:fixed;inset:0 0 0 auto;width:min(360px,88vw);z-index:2000;transform:translateX(110%);transition:transform .25s ease;background:#0a0d12;border-left:1px solid var(--ps-line);padding:84px 22px 30px;box-shadow:-20px 0 60px rgba(0,0,0,.4)}.ps-drawer.is-open{transform:none}.ps-drawer a{display:block;padding:13px 14px;border-radius:10px;color:#d6dae0;font-weight:750}.ps-drawer a:hover{background:rgba(217,184,76,.08);color:var(--ps-gold-2)}.ps-drawer-close{position:absolute;right:18px;top:20px}.ps-backdrop{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:1900}.ps-backdrop.is-open{display:block}
+.ps-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:11px;border:1px solid var(--ps-line);font-weight:850;transition:.2s ease;cursor:pointer}.ps-btn:hover{transform:translateY(-2px)}.ps-btn-primary{background:var(--ps-gold);border-color:var(--ps-gold);color:#111}.ps-btn-primary:hover{background:var(--ps-gold-2)}.ps-btn-ghost{background:rgba(255,255,255,.03);color:#eef0f3}.ps-btn-ghost:hover{border-color:rgba(217,184,76,.4);color:var(--ps-gold-2)}
+.ps-hero{position:relative;isolation:isolate;min-height:650px;display:flex;align-items:center;border-bottom:1px solid var(--ps-line);overflow:hidden}.ps-hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(7,9,13,.97) 0%,rgba(7,9,13,.78) 42%,rgba(7,9,13,.45) 100%),url("images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg") center/cover}.ps-hero:after{content:"";position:absolute;inset:auto 0 0;height:180px;z-index:-1;background:linear-gradient(transparent,var(--ps-bg))}.ps-hero-inner{padding:90px 0;max-width:850px}.ps-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid rgba(217,184,76,.28);border-radius:999px;background:rgba(217,184,76,.06);color:var(--ps-gold-2);text-transform:uppercase;letter-spacing:1.7px;font-size:11px;font-weight:900}.ps-hero h1{font-size:clamp(48px,8vw,92px);line-height:.98;letter-spacing:-3px;margin:22px 0 20px}.ps-hero h1 span{color:var(--ps-gold-2)}.ps-hero p{max-width:730px;color:#c4cad2;font-size:clamp(17px,2vw,21px);margin:0 0 30px}.ps-actions{display:flex;flex-wrap:wrap;gap:10px}
+.ps-section{padding:82px 0}.ps-section-muted{background:rgba(255,255,255,.018);border-block:1px solid var(--ps-line)}.ps-kicker{color:var(--ps-gold-2);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:900}.ps-heading{max-width:760px;margin-bottom:36px}.ps-heading h2{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-1.2px;margin:8px 0 12px}.ps-heading p{color:var(--ps-muted);margin:0}.ps-grid{display:grid;gap:18px}.ps-grid-3{grid-template-columns:repeat(3,1fr)}.ps-grid-4{grid-template-columns:repeat(4,1fr)}.ps-grid-5{grid-template-columns:repeat(5,1fr)}
+.ps-card{display:flex;flex-direction:column;min-height:100%;padding:24px;border:1px solid var(--ps-line);border-radius:var(--ps-radius);background:linear-gradient(145deg,rgba(18,24,33,.92),rgba(10,14,20,.94));box-shadow:0 12px 40px rgba(0,0,0,.12);transition:.22s ease}.ps-card:hover{transform:translateY(-4px);border-color:rgba(217,184,76,.35);box-shadow:var(--ps-shadow)}.ps-card-icon{font-size:27px;margin-bottom:18px}.ps-card h3{font-size:20px;line-height:1.25;margin:0 0 8px}.ps-card p{color:var(--ps-muted);font-size:14px;margin:0}.ps-card-link{margin-top:auto;padding-top:18px;color:var(--ps-gold-2);font-weight:850;font-size:13px}
+.ps-statbar{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--ps-line);border-radius:16px;overflow:hidden;background:rgba(7,9,13,.7)}.ps-stat{text-align:center;padding:24px 12px;border-right:1px solid var(--ps-line)}.ps-stat:last-child{border-right:0}.ps-stat strong{display:block;font-size:28px;color:var(--ps-gold-2)}.ps-stat span{font-size:12px;color:var(--ps-muted)}.ps-feature{border:1px solid var(--ps-line);border-radius:22px;overflow:hidden;background:linear-gradient(145deg,rgba(18,24,33,.95),rgba(9,13,18,.95))}.ps-feature-media{aspect-ratio:16/8;overflow:hidden;background:#111}.ps-feature-media img{width:100%;height:100%;object-fit:cover}.ps-feature-body{padding:28px}.ps-feature-body h3{font-size:27px;margin:0 0 8px}.ps-feature-body p{color:var(--ps-muted);margin:0 0 18px}
+.ps-page-hero{padding:78px 0 48px;border-bottom:1px solid var(--ps-line)}.ps-page-hero h1{font-size:clamp(40px,6vw,68px);line-height:1;margin:10px 0 15px;letter-spacing:-2px}.ps-page-hero p{max-width:760px;color:var(--ps-muted);font-size:17px;margin:0}.ps-breadcrumbs{font-size:12px;color:#77818e;margin-bottom:18px}.ps-breadcrumbs a:hover{color:var(--ps-gold-2)}
+.ps-quote{padding:70px 20px;text-align:center;border-block:1px solid var(--ps-line)}.ps-quote blockquote{max-width:850px;margin:0 auto 14px;font-size:clamp(23px,3.5vw,37px);line-height:1.2;font-weight:850}.ps-quote cite{color:var(--ps-gold-2);font-style:normal;font-size:13px}
+.ps-footer{border-top:1px solid var(--ps-line);background:#05070a;padding:58px 0 24px}.ps-footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}.ps-footer h4{margin:0 0 12px;font-size:13px;text-transform:uppercase;letter-spacing:1.4px;color:#e8ebef}.ps-footer p,.ps-footer a{color:#858f9b;font-size:13px}.ps-footer a:hover{color:var(--ps-gold-2)}.ps-footer-links{display:grid;gap:7px}.ps-footer-bottom{margin-top:38px;padding-top:18px;border-top:1px solid var(--ps-line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:#68717d;font-size:11px}
+:focus-visible{outline:2px solid var(--ps-gold-2);outline-offset:3px}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+@media(max-width:1120px){.ps-mainnav a:nth-child(6),.ps-mainnav a:nth-child(7),.ps-mainnav a:nth-child(8){display:none}.ps-grid-5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:860px){.ps-mainnav{display:none}.ps-menu{display:block;margin-left:auto}.ps-topbar-inner{justify-content:center}.ps-topbar-inner span:last-child{display:none}.ps-grid-3,.ps-grid-4,.ps-grid-5{grid-template-columns:repeat(2,1fr)}.ps-statbar{grid-template-columns:repeat(2,1fr)}.ps-stat:nth-child(2){border-right:0}.ps-stat:nth-child(-n+2){border-bottom:1px solid var(--ps-line)}.ps-footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.container{width:min(var(--ps-max),calc(100% - 28px))}.ps-nav{min-height:68px}.ps-brand{font-size:18px}.ps-brand-mark{width:30px;height:30px}.ps-hero{min-height:590px}.ps-hero-inner{padding:72px 0}.ps-hero h1{font-size:clamp(45px,15vw,70px);letter-spacing:-2px}.ps-section{padding:60px 0}.ps-page-hero{padding:58px 0 36px}.ps-grid-3,.ps-grid-4,.ps-grid-5{grid-template-columns:1fr}.ps-stat{padding:19px 8px}.ps-stat strong{font-size:23px}.ps-footer-grid{grid-template-columns:1fr}.ps-footer{padding-top:44px}}
