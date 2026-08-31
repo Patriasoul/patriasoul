@@ -1,17 +1,194 @@
 <!doctype html>
-<html lang="hr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="PatriaSoul — Brani svoj grad. Odaberi hrvatski grad, upiši nadimak i pripremi se za izazov grad protiv grada."><title>Brani svoj grad | PatriaSoul</title><link rel="stylesheet" href="patriasoul-modern.css"><style>.game-wrap{max-width:1060px;margin:auto}.game-card{background:linear-gradient(145deg,#111821,#0a0e13);border:1px solid rgba(212,174,56,.22);border-radius:18px;padding:28px}.game-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.game-form label{display:block;margin-bottom:7px;color:var(--ps-muted,#9aa1ab);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px}.game-form input,.game-form select{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #303844;background:#080c11;color:#fff}.game-actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}.game-status{margin-top:16px;color:#a8afb8}.city-list{margin-top:24px;display:grid;grid-template-columns:repeat(5,1fr);gap:9px}.city{padding:11px 10px;border:1px solid #2b333e;border-radius:10px;background:#0c1117;color:#e7e9ec;cursor:pointer;text-align:left}.city:hover{border-color:rgba(212,174,56,.5);color:#f0d777}.challenge-box{margin-top:18px;padding:18px;border:1px solid rgba(212,174,56,.18);border-radius:14px;background:rgba(212,174,56,.04);display:none}.challenge-box.show{display:block}.challenge-box h3{margin:0 0 8px}.challenge-box p{margin:0;color:#a8afb8}.mini-status{display:inline-block;margin-left:8px;font-size:12px;font-weight:800}.ok{color:#74d59b}.bad{color:#ef7b84}@media(max-width:900px){.city-list{grid-template-columns:repeat(4,1fr)}}@media(max-width:700px){.game-form{grid-template-columns:1fr}.city-list{grid-template-columns:repeat(2,1fr)}}@media(max-width:450px){.city-list{grid-template-columns:1fr}}</style></head>
-<body><div id="site-header"></div><main>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="PatriaSoul — Brani svoj grad. Odaberi hrvatski grad, upiši nadimak i pripremi se za izazov grad protiv grada.">
+<title>Brani svoj grad | PatriaSoul</title>
+<link rel="stylesheet" href="patriasoul-modern.css">
+<style>
+.game-wrap{max-width:1060px;margin:auto}
+.game-card{background:linear-gradient(145deg,#111821,#0a0e13);border:1px solid rgba(212,174,56,.22);border-radius:18px;padding:28px}
+.game-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.game-form label{display:block;margin-bottom:7px;color:var(--ps-muted,#9aa1ab);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.game-form input,.game-form select{width:100%;padding:13px 14px;border-radius:10px;border:1px solid #303844;background:#080c11;color:#fff}
+.game-actions{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.game-status{margin-top:16px;color:#a8afb8}
+.city-list{margin-top:24px;display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.city{padding:11px 10px;border:1px solid #2b333e;border-radius:10px;background:#0c1117;color:#e7e9ec;cursor:pointer;text-align:left}
+.city:hover{border-color:rgba(212,174,56,.5);color:#f0d777}
+.challenge-box{margin-top:18px;padding:18px;border:1px solid rgba(212,174,56,.18);border-radius:14px;background:rgba(212,174,56,.04);display:none}
+.challenge-box.show{display:block}
+.challenge-box h3{margin:0 0 8px}
+.challenge-box p{margin:0;color:#a8afb8}
+.mini-status{display:inline-block;margin-left:8px;font-size:12px;font-weight:800}
+.ok{color:#74d59b}.bad{color:#ef7b84}
+@media(max-width:900px){.city-list{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.game-form{grid-template-columns:1fr}.city-list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:450px){.city-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main>
 <section class="ps-page-hero"><div class="container"><div class="ps-breadcrumbs"><a href="/index.html">Početna</a> / Brani svoj grad</div><span class="ps-kicker">🛡️ PatriaSoul izazov</span><h1>Brani svoj grad</h1><p>Izaberi grad koji predstavljaš, odaberi slobodan nadimak i pripremi se za misije, bodove, značke i izazove grad protiv grada.</p></div></section>
-<section class="ps-section"><div class="container game-wrap"><div class="game-card"><div class="game-form"><div><label for="nickname">Nadimak</label><input id="nickname" maxlength="20" autocomplete="nickname" placeholder="Npr. HrvatskiLav" aria-describedby="nicknameStatus"><div id="nicknameStatus" class="mini-status"></div></div><div><label for="city">Tvoj grad</label><select id="city"><option value="">Odaberi grad</option></select></div></div><div class="game-actions"><button class="ps-btn ps-btn-primary" id="start" type="button">🛡️ Započni misiju</button><button class="ps-btn ps-btn-ghost" id="challenge" type="button">⚔️ Izazovi drugi grad</button></div><div id="challengeBox" class="challenge-box"><h3>Izazov grad protiv grada</h3><p>Odaberi protivnički grad:</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><select id="opponent" style="flex:1;min-width:220px;padding:13px 14px;border-radius:10px;border:1px solid #303844;background:#080c11;color:#fff"><option value="">Odaberi protivnika</option></select><button class="ps-btn ps-btn-primary" id="prepareChallenge" type="button">Pripremi izazov</button></div></div><p class="game-status" id="status">Nadimak se provjerava lokalno na ovom uređaju. Kad uvedemo online backend, zauzetost nadimka i rezultati mogu postati globalni.</p></div><div class="ps-heading" style="margin-top:45px"><span class="ps-kicker">127 gradova</span><h2>Odaberi svoju stranu</h2><p>Svaki službeno priznati grad može dobiti vlastiti profil, statistiku, pitanja i mjesto u natjecanju.</p></div><div class="city-list" id="cityList"></div></div></section>
-</main><div id="site-footer"></div><script>
-const CITY_NAMES=['Bakar','Beli Manastir','Belišće','Benkovac','Biograd na Moru','Bjelovar','Buje','Buzet','Cres','Crikvenica','Čabar','Čakovec','Čazma','Daruvar','Delnice','Donja Stubica','Donji Miholjac','Drniš','Dubrovnik','Duga Resa','Dugo Selo','Đakovo','Đurđevac','Garešnica','Glina','Gospić','Grubišno Polje','Hrvatska Kostajnica','Hvar','Ilok','Imotski','Ivanec','Ivanić-Grad','Jastrebarsko','Karlovac','Kastav','Kaštela','Klanjec','Knin','Komiža','Koprivnica','Korčula','Kraljevica','Krapina','Križevci','Krk','Kutina','Kutjevo','Labin','Lepoglava','Lipik','Ludbreg','Makarska','Mali Lošinj','Metković','Mursko Središće','Našice','Nin','Nova Gradiška','Novalja','Novi Marof','Novi Vinodolski','Novigrad','Novska','Obrovac','Ogulin','Omiš','Opatija','Orahovica','Opuzen','Oroslavje','Osijek','Otočac','Otok','Ozalj','Pag','Pakrac','Pazin','Petrinja','Pleternica','Ploče','Poreč','Popovača','Požega','Pregrada','Prelog','Pula','Rab','Rijeka','Rovinj','Samobor','Senj','Sinj','Sisak','Skradin','Slatina','Slavonski Brod','Slunj','Solin','Split','Stari Grad','Supetar','Sveta Nedelja','Sveti Ivan Zelina','Šibenik','Trilj','Trogir','Umag','Valpovo','Varaždin','Varaždinske Toplice','Velika Gorica','Vinkovci','Virovitica','Vis','Vodice','Vrbovec','Vrbovsko','Vrgorac','Vrlika','Vukovar','Zabok','Zadar','Zagreb','Zaprešić','Zlatar','Županja','Vodnjan'];
-const city=document.getElementById('city'),opponent=document.getElementById('opponent'),list=document.getElementById('cityList');
-CITY_NAMES.forEach(name=>{const o=document.createElement('option');o.value=name;o.textContent=name;city.appendChild(o);const po=document.createElement('option');po.value=name;po.textContent=name;opponent.appendChild(po);const c=document.createElement('button');c.className='city';c.type='button';c.textContent=name;c.onclick=()=>{city.value=name;document.getElementById('nickname').focus()};list.appendChild(c)});
-const nickname=document.getElementById('nickname'),status=document.getElementById('status'),nicknameStatus=document.getElementById('nicknameStatus');
-function savedNames(){try{return JSON.parse(localStorage.getItem('patriasoul_nicknames')||'[]')}catch{return[]}}
-function nicknameAvailable(name){const names=savedNames();const current=JSON.parse(localStorage.getItem('patriasoul_city_player')||'null');const currentName=current?.name?.toLocaleLowerCase('hr-HR');return !names.some(n=>n.toLocaleLowerCase('hr-HR')===name.toLocaleLowerCase('hr-HR')&&n.toLocaleLowerCase('hr-HR')!==currentName)}
-nickname.addEventListener('input',()=>{const n=nickname.value.trim();if(!n){nicknameStatus.textContent='';return}if(!/^[A-Za-z0-9ČĆŽŠĐčćžšđ _-]{3,20}$/.test(n)){nicknameStatus.textContent='Nadimak mora imati 3–20 dopuštenih znakova.';nicknameStatus.className='mini-status bad';return}if(nicknameAvailable(n)){nicknameStatus.textContent='Nadimak je slobodan ✓';nicknameStatus.className='mini-status ok'}else{nicknameStatus.textContent='Nadimak je zauzet ✕';nicknameStatus.className='mini-status bad'}});
-document.getElementById('start').onclick=()=>{const n=nickname.value.trim(),c=city.value;if(!/^[A-Za-z0-9ČĆŽŠĐčćžšđ _-]{3,20}$/.test(n)){status.textContent='Nadimak mora imati 3–20 dopuštenih znakova.';return}if(!nicknameAvailable(n)){status.textContent='Ovaj nadimak je već zauzet na ovom uređaju.';return}if(!c){status.textContent='Odaberi svoj grad.';return}const names=savedNames();if(!names.some(x=>x.toLocaleLowerCase('hr-HR')===n.toLocaleLowerCase('hr-HR')))names.push(n);localStorage.setItem('patriasoul_nicknames',JSON.stringify(names));localStorage.setItem('patriasoul_city_player',JSON.stringify({name:n,city:c,updatedAt:new Date().toISOString()}));status.textContent=`Dobrodošao, ${n}. Tvoj grad je ${c}. Misija može započeti.`};
-document.getElementById('challenge').onclick=()=>document.getElementById('challengeBox').classList.toggle('show');
-document.getElementById('prepareChallenge').onclick=()=>{const own=city.value,opp=opponent.value;if(!own||!opp){status.textContent='Odaberi svoj grad i protivnički grad.';return}if(own===opp){status.textContent='Protivnički grad mora biti različit od tvog grada.';return}status.textContent=`Izazov je pripremljen: ${own} ⚔️ ${opp}. Online meč grad protiv grada bit će spojen na zajedničku rang-listu kad uvedemo backend.`};
-</script><script src="app.js" defer></script></body></html>
+<section class="ps-section"><div class="container game-wrap"><div class="game-card">
+<div class="game-form">
+<div><label for="nickname">Nadimak</label><input id="nickname" maxlength="20" autocomplete="nickname" placeholder="Npr. HrvatskiLav" aria-describedby="nicknameStatus"><div id="nicknameStatus" class="mini-status"></div></div>
+<div><label for="city">Tvoj grad</label><select id="city"><option value="">Odaberi grad</option></select></div>
+</div>
+<div class="game-actions"><button class="ps-btn ps-btn-primary" id="start" type="button">🛡️ Započni misiju</button><button class="ps-btn ps-btn-ghost" id="challenge" type="button">⚔️ Izazovi drugi grad</button></div>
+<div id="challengeBox" class="challenge-box"><h3>Izazov grad protiv grada</h3><p>Odaberi protivnički grad:</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><select id="opponent" style="flex:1;min-width:220px;padding:13px 14px;border-radius:10px;border:1px solid #303844;background:#080c11;color:#fff"><option value="">Odaberi protivnika</option></select><button class="ps-btn ps-btn-primary" id="prepareChallenge" type="button">Pripremi izazov</button></div></div>
+<p class="game-status" id="status">Nadimak se provjerava lokalno na ovom uređaju. Kad uvedemo online backend, zauzetost nadimka i rezultati mogu postati globalni.</p>
+</div>
+<div class="ps-heading" style="margin-top:45px"><span class="ps-kicker">127 gradova</span><h2>Odaberi svoju stranu</h2><p>Svaki službeno priznati grad može dobiti vlastiti profil, statistiku, pitanja i mjesto u natjecanju.</p></div>
+<div class="city-list" id="cityList"></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="gradovi.js"></script>
+<script>
+(function(){
+  'use strict';
+
+  const CITY_NAMES = Array.isArray(window.PATRIA_CITIES) ? window.PATRIA_CITIES : [];
+  const city = document.getElementById('city');
+  const opponent = document.getElementById('opponent');
+  const list = document.getElementById('cityList');
+  const nickname = document.getElementById('nickname');
+  const status = document.getElementById('status');
+  const nicknameStatus = document.getElementById('nicknameStatus');
+
+  CITY_NAMES.forEach((name) => {
+    const option = document.createElement('option');
+    option.value = name;
+    option.textContent = name;
+    city.appendChild(option);
+
+    const opponentOption = option.cloneNode(true);
+    opponent.appendChild(opponentOption);
+
+    const card = document.createElement('button');
+    card.className = 'city';
+    card.type = 'button';
+    card.textContent = name;
+    card.addEventListener('click', () => {
+      city.value = name;
+      nickname.focus();
+    });
+    list.appendChild(card);
+  });
+
+  function savedNames() {
+    try {
+      const value = JSON.parse(localStorage.getItem('patriasoul_nicknames') || '[]');
+      return Array.isArray(value) ? value : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function currentPlayer() {
+    try {
+      return JSON.parse(localStorage.getItem('patriasoul_city_player') || 'null');
+    } catch {
+      return null;
+    }
+  }
+
+  function validNickname(value) {
+    return /^[A-Za-z0-9ČĆŽŠĐčćžšđ _-]{3,20}$/.test(value);
+  }
+
+  function nicknameAvailable(value) {
+    const current = currentPlayer();
+    const currentName = String(current?.name || '').toLocaleLowerCase('hr-HR');
+    return !savedNames().some((name) => {
+      const normalized = String(name).toLocaleLowerCase('hr-HR');
+      return normalized === value.toLocaleLowerCase('hr-HR') && normalized !== currentName;
+    });
+  }
+
+  nickname.addEventListener('input', () => {
+    const value = nickname.value.trim();
+    if (!value) {
+      nicknameStatus.textContent = '';
+      nicknameStatus.className = 'mini-status';
+      return;
+    }
+    if (!validNickname(value)) {
+      nicknameStatus.textContent = 'Nadimak mora imati 3–20 dopuštenih znakova.';
+      nicknameStatus.className = 'mini-status bad';
+      return;
+    }
+    if (nicknameAvailable(value)) {
+      nicknameStatus.textContent = 'Nadimak je slobodan ✓';
+      nicknameStatus.className = 'mini-status ok';
+    } else {
+      nicknameStatus.textContent = 'Nadimak je zauzet ✕';
+      nicknameStatus.className = 'mini-status bad';
+    }
+  });
+
+  document.getElementById('start').addEventListener('click', () => {
+    const name = nickname.value.trim();
+    const selectedCity = city.value;
+
+    if (!validNickname(name)) {
+      status.textContent = 'Nadimak mora imati 3–20 dopuštenih znakova.';
+      return;
+    }
+    if (!nicknameAvailable(name)) {
+      status.textContent = 'Ovaj nadimak je već zauzet na ovom uređaju.';
+      return;
+    }
+    if (!selectedCity) {
+      status.textContent = 'Odaberi svoj grad.';
+      return;
+    }
+
+    const names = savedNames();
+    if (!names.some((item) => item.toLocaleLowerCase('hr-HR') === name.toLocaleLowerCase('hr-HR'))) {
+      names.push(name);
+    }
+
+    localStorage.setItem('patriasoul_nicknames', JSON.stringify(names));
+    localStorage.setItem('patriasoul_city_player', JSON.stringify({
+      name,
+      city: selectedCity,
+      updatedAt: new Date().toISOString()
+    }));
+
+    status.textContent = `Dobrodošao, ${name}. Tvoj grad je ${selectedCity}. Misija može započeti.`;
+  });
+
+  document.getElementById('challenge').addEventListener('click', () => {
+    document.getElementById('challengeBox').classList.toggle('show');
+  });
+
+  document.getElementById('prepareChallenge').addEventListener('click', () => {
+    const ownCity = city.value;
+    const opponentCity = opponent.value;
+
+    if (!ownCity || !opponentCity) {
+      status.textContent = 'Odaberi svoj grad i protivnički grad.';
+      return;
+    }
+    if (ownCity === opponentCity) {
+      status.textContent = 'Protivnički grad mora biti različit od tvog grada.';
+      return;
+    }
+
+    localStorage.setItem('patriasoul_pending_challenge', JSON.stringify({
+      from: ownCity,
+      to: opponentCity,
+      createdAt: new Date().toISOString()
+    }));
+
+    status.textContent = `Izazov je pripremljen: ${ownCity} ⚔️ ${opponentCity}. Online meč grad protiv grada bit će spojen na zajedničku rang-listu kad uvedemo backend.`;
+  });
+})();
+</script>
+<script src="app.js" defer></script>
+</body>
+</html>
