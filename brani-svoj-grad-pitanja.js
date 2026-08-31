@@ -1,0 +1,47 @@
+/* PatriaSoul — pitanja za Brani svoj grad. Jedan izvor pitanja za igru. */
+(function(){
+  'use strict';
+  const QUESTIONS = [
+    {q:'Koji je najveći hrvatski grad po broju stanovnika?',a:['Split','Zagreb','Rijeka','Osijek'],c:1},
+    {q:'Koji se grad nalazi uz rijeku Dravu?',a:['Dubrovnik','Šibenik','Osijek','Senj'],c:2},
+    {q:'Koji je hrvatski grad poznat po Dioklecijanovoj palači?',a:['Split','Pula','Zadar','Trogir'],c:0},
+    {q:'U kojem se gradu nalazi poznata Arena iz rimskog doba?',a:['Pula','Karlovac','Varaždin','Požega'],c:0},
+    {q:'Koji je grad poznat po morskim orguljama?',a:['Rovinj','Zadar','Makarska','Korčula'],c:1},
+    {q:'Koji je grad poznat kao grad tvrđava na ušću Krke?',a:['Skradin','Knin','Šibenik','Omiš'],c:2},
+    {q:'Koji se grad nalazi na rijeci Kupi?',a:['Karlovac','Pula','Vukovar','Dubrovnik'],c:0},
+    {q:'Koji je grad najpoznatiji po Stradunu?',a:['Trogir','Dubrovnik','Rijeka','Hvar'],c:1},
+    {q:'Koji je grad povijesno središte Baranje?',a:['Beli Manastir','Bakar','Buzet','Ilok'],c:0},
+    {q:'Koji je grad poznat po Sinjskoj alci?',a:['Sinj','Imotski','Trilj','Omiš'],c:0},
+    {q:'Koji je grad povezan s tvrđavom Klis?',a:['Solin','Split','Knin','Kaštela'],c:1},
+    {q:'Koji je hrvatski grad poznat po staroj gradskoj jezgri i Forumu?',a:['Zadar','Varaždin','Sisak','Samobor'],c:0},
+    {q:'Koji se grad nalazi na Dunavu?',a:['Vukovar','Pazin','Senj','Otočac'],c:0},
+    {q:'Koji je grad poznat po Trsatskoj gradini?',a:['Rijeka','Bakar','Opatija','Kastav'],c:0},
+    {q:'Koji je grad poznat po baroknoj jezgri i Špancirfestu?',a:['Varaždin','Čakovec','Koprivnica','Krapina'],c:0},
+    {q:'Koji se grad nalazi na otoku Hvaru?',a:['Hvar','Vis','Rab','Cres'],c:0},
+    {q:'Koji je grad poznat po Frankopanima i nalazi se na otoku Krku?',a:['Krk','Cres','Rab','Pag'],c:0},
+    {q:'Koji je grad poznat po Napoleonovim cestama i staroj jezgri na Korčuli?',a:['Korčula','Hvar','Vis','Komiža'],c:0},
+    {q:'Koji je grad simbol hrvatske Podravine?',a:['Koprivnica','Dubrovnik','Ploče','Hvar'],c:0},
+    {q:'Koji je grad poznat po muzeju neandertalaca?',a:['Krapina','Knin','Petrinja','Glina'],c:0},
+    {q:'Koji je grad poznat po tvrđavi Medvedgrad u svojoj okolici?',a:['Zagreb','Samobor','Zaprešić','Velika Gorica'],c:0},
+    {q:'Koji je grad poznat po Gospinoj crkvi i marijanskom svetištu na Trsatu?',a:['Rijeka','Senj','Kraljevica','Crikvenica'],c:0},
+    {q:'Koji je grad poznat po starom gradu i tvrđavi Nehaj?',a:['Senj','Novi Vinodolski','Bakar','Crikvenica'],c:0},
+    {q:'Koji je grad poznat po mostu i staroj jezgri na otoku?',a:['Trogir','Ploče','Metković','Opuzen'],c:0},
+    {q:'Koji je grad na krajnjem jugu Hrvatske najpoznatiji po zidinama?',a:['Dubrovnik','Cavtat','Korčula','Ston'],c:0},
+    {q:'Koji je grad poznat po Maruliću i statusu najvećeg grada Dalmacije?',a:['Split','Zadar','Šibenik','Dubrovnik'],c:0},
+    {q:'Koji je grad poznat po zvoniku sv. Marka i staroj jezgri u Istri?',a:['Labin','Pula','Poreč','Buje'],c:0},
+    {q:'Koji je grad poznat po Eufrazijevoj bazilici?',a:['Poreč','Rovinj','Umag','Novigrad'],c:0},
+    {q:'Koji je grad poznat po crkvi sv. Eufemije?',a:['Rovinj','Pazin','Pula','Buzet'],c:0},
+    {q:'Koji je grad povijesno povezan s knezovima Zrinskima?',a:['Čakovec','Pula','Hvar','Omiš'],c:0},
+    {q:'Koji je grad poznat po Starom gradu i tvrđavi Kamerlengo?',a:['Trogir','Split','Zadar','Šibenik'],c:0},
+    {q:'Koji je grad poznat po tvrđavi sv. Mihovila?',a:['Šibenik','Zadar','Knin','Sinj'],c:0},
+    {q:'Koji je grad poznat po tvrđavi sv. Mihovila iznad rijeke Krke?',a:['Knin','Šibenik','Drniš','Skradin'],c:0},
+    {q:'Koji je grad poznat po Napoleonovoj cesti i riječkoj luci?',a:['Rijeka','Pula','Zadar','Split'],c:0},
+    {q:'Koji je grad poznat po katedrali sv. Jakova?',a:['Šibenik','Zadar','Split','Pula'],c:0},
+    {q:'Koji je grad poznat po katedrali sv. Stošije?',a:['Zadar','Šibenik','Dubrovnik','Rijeka'],c:0},
+    {q:'Koji je grad poznat po Narodnom trgu i zadarskom Pozdravu Suncu?',a:['Zadar','Split','Pula','Rovinj'],c:0},
+    {q:'Koji je grad poznat po muzeju Apoksiomena?',a:['Mali Lošinj','Cres','Krk','Rab'],c:0},
+    {q:'Koji je grad na otoku Visu?',a:['Vis','Hvar','Komiža','Supetar'],c:0},
+    {q:'Koji je grad na otoku Braču poznat po blizini Zlatnog rata?',a:['Supetar','Bol','Postira','Milna'],c:0}
+  ];
+  window.PATRIA_CITY_QUESTIONS = Object.freeze(QUESTIONS.map(x=>Object.freeze({q:x.q,a:Object.freeze(x.a.slice()),c:x.c})));
+})();
