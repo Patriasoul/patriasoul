@@ -4,50 +4,45 @@
 
   const NAV_ITEMS = [
     ['Početna', '/index.html'],
-    ['Domovina', '/pages/domovina/index.html'],
-    ['Branitelji', '/pages/branitelji/index.html'],
-    ['Povijest', '/pages/povijest/index.html'],
-    ['Baština', '/pages/bastina/index.html'],
-    ['Vjera', '/pages/vjera/index.html'],
-    ['Gradovi', '/pages/gradovi/index.html'],
-    ['Vijesti', '/pages/vijesti/index.html'],
-    ['Igra', '/pages/brani-svoj-grad/index.html'],
-    ['🧠 Kviz', '/pages/kviz/index.html', 'ps-nav-cta']
+    ['Domovina', '/domovina.html'],
+    ['Branitelji', '/branitelji.html'],
+    ['Povijest', '/povijest.html'],
+    ['Baština', '/bastina.html'],
+    ['Vjera', '/vjera.html'],
+    ['Gradovi', '/gradovi.html'],
+    ['Vijesti', '/vijesti.html'],
+    ['Igra', '/brani-svoj-grad.html'],
+    ['🧠 Kviz', '/quiz.html', 'ps-nav-cta']
   ];
 
-  function currentPath() {
-    const path = window.location.pathname.replace(/\\/g, '/');
-    return path.replace(/index\.html$/, '') || '/';
+  const ROOT = '/';
+
+  function normalizePath(path) {
+    const value = String(path || '/').replace(/\\/g, '/');
+    if (value === '' || value === '/') return '/';
+    return value.replace(/index\.html$/, '') || '/';
   }
 
-  function createNav(mobile) {
+  function currentPath() {
+    return normalizePath(window.location.pathname);
+  }
+
+  function isActive(href) {
+    const current = currentPath();
+    const target = normalizePath(href);
+    return target === '/' ? current === '/' : current === target;
+  }
+
+  function createNav() {
     const fragment = document.createDocumentFragment();
-    const path = currentPath();
 
     NAV_ITEMS.forEach(([label, href, extraClass]) => {
       const link = document.createElement('a');
       link.href = href;
       link.textContent = label;
 
-      if (extraClass) {
-        link.className = extraClass;
-      }
-
-      const target = href
-        .replace(/index\.html$/, '')
-        .replace(/\\/g, '/');
-
-      const active = target === '/'
-        ? path === '/'
-        : path.startsWith(target);
-
-      if (active) {
-        link.setAttribute('aria-current', 'page');
-      }
-
-      if (mobile) {
-        link.addEventListener('click', closeDrawer);
-      }
+      if (extraClass) link.className = extraClass;
+      if (isActive(href)) link.setAttribute('aria-current', 'page');
 
       fragment.appendChild(link);
     });
@@ -84,10 +79,7 @@
 
     drawer?.classList.remove('is-open');
     backdrop?.classList.remove('is-open');
-
-    if (backdrop) {
-      backdrop.hidden = true;
-    }
+    if (backdrop) backdrop.hidden = true;
 
     drawer?.setAttribute('aria-hidden', 'true');
     menu?.setAttribute('aria-expanded', 'false');
@@ -113,31 +105,32 @@
 
   async function init() {
     await Promise.all([
-      loadInto('#site-header', '/components/header.html'),
-      loadInto('#site-footer', '/footer.html')
+      loadInto('#site-header', `${ROOT}components/header.html`),
+      loadInto('#site-footer', `${ROOT}footer.html`)
     ]);
 
     const desktopNav = document.querySelector('#site-navigation');
     const mobileNav = document.querySelector('#site-mobile-navigation');
 
-    if (desktopNav) {
-      desktopNav.replaceChildren(createNav(false));
-    }
-
-    if (mobileNav) {
-      mobileNav.replaceChildren(createNav(true));
-    }
+    if (desktopNav) desktopNav.replaceChildren(createNav());
+    if (mobileNav) mobileNav.replaceChildren(createNav());
 
     document.querySelector('[data-ps-menu]')?.addEventListener('click', openDrawer);
     document.querySelector('[data-ps-close]')?.addEventListener('click', closeDrawer);
     document.querySelector('[data-ps-backdrop]')?.addEventListener('click', closeDrawer);
 
     document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') {
-        closeDrawer();
-      }
+      if (event.key === 'Escape') closeDrawer();
     });
   }
+
+  window.PatriaSoul = Object.freeze({
+    navItems: NAV_ITEMS.map(([label, href]) => ({ label, href })),
+    currentPath,
+    loadInto,
+    openDrawer,
+    closeDrawer
+  });
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init, { once: true });
