@@ -42,14 +42,17 @@
   async function loadInto(selector, url) {
     const target = document.querySelector(selector);
     if (!target) return null;
+
     try {
-      const response = await fetch(url, { credentials: 'same-origin' });
+      const response = await fetch(url, {
+        credentials: 'same-origin',
+        cache: 'no-cache'
+      });
       if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
       target.innerHTML = await response.text();
       return target;
     } catch (error) {
       console.error(`PatriaSoul: nije moguće učitati ${url}`, error);
-      target.removeAttribute('data-component-error');
       return null;
     }
   }
@@ -58,6 +61,7 @@
     const drawer = document.querySelector('[data-ps-drawer]');
     const backdrop = document.querySelector('[data-ps-backdrop]');
     const menu = document.querySelector('[data-ps-menu]');
+
     drawer?.classList.remove('is-open');
     backdrop?.classList.remove('is-open');
     if (backdrop) backdrop.hidden = true;
@@ -70,6 +74,7 @@
     const drawer = document.querySelector('[data-ps-drawer]');
     const backdrop = document.querySelector('[data-ps-backdrop]');
     const menu = document.querySelector('[data-ps-menu]');
+
     drawer?.classList.add('is-open');
     if (backdrop) backdrop.hidden = false;
     requestAnimationFrame(() => backdrop?.classList.add('is-open'));
@@ -81,17 +86,19 @@
   async function init() {
     await Promise.all([
       loadInto('#site-header', '/components/header.html'),
-      loadInto('#site-footer', '/components/footer.html')
+      loadInto('#site-footer', '/footer.html')
     ]);
 
     const desktopNav = document.querySelector('#site-navigation');
     const mobileNav = document.querySelector('#site-mobile-navigation');
+
     if (desktopNav) desktopNav.appendChild(createNav(false));
     if (mobileNav) mobileNav.appendChild(createNav(true));
 
     document.querySelector('[data-ps-menu]')?.addEventListener('click', openDrawer);
     document.querySelector('[data-ps-close]')?.addEventListener('click', closeDrawer);
     document.querySelector('[data-ps-backdrop]')?.addEventListener('click', closeDrawer);
+
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape') closeDrawer();
     });
