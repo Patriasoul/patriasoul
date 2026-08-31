@@ -1,0 +1,12 @@
+{
+  "name": "PatriaSoul",
+  "short_name": "PatriaSoul",
+  "description": "Hrvatska. Povijest. Znanje. Identitet. Baština.",
+  "lang": "hr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#07090d",
+  "theme_color": "#07090d",
+  "icons": []
+}

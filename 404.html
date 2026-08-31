@@ -1,0 +1,45 @@
+<!doctype html><html lang="hr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>404 | PatriaSoul</title><link rel="stylesheet" href="css/patriasoul-modern.css"></head><body>
+
+<div class="ps-topbar"><div class="container ps-topbar-inner"><span><strong>🇭🇷 PATRIA SOUL</strong> · Hrvatska • povijest • identitet • baština</span><span>Čuvaj nasljeđe. Prenesi ga dalje.</span></div></div>
+<header class="ps-header"><div class="container ps-nav">
+<a class="ps-brand" href="/index.html" aria-label="PatriaSoul početna"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
+<nav class="ps-mainnav" aria-label="Glavna navigacija"><a href="/index.html">Početna</a><a href="/pages/domovina/index.html">Domovina</a><a href="/pages/branitelji/index.html">Branitelji</a><a href="/pages/povijest/index.html">Povijest</a><a href="/pages/bastina/index.html">Baština</a><a href="/pages/vjera/index.html">Vjera</a><a href="/pages/gradovi/index.html">Gradovi</a><a href="/pages/vijesti/index.html">Vijesti</a><a href="/pages/brani-svoj-grad/index.html">Igra</a><a class="ps-nav-cta" href="/pages/kviz/index.html">🧠 Kviz</a></nav>
+<button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik">☰</button>
+</div></header>
+<div class="ps-backdrop" data-ps-backdrop></div>
+<aside class="ps-drawer" data-ps-drawer><button class="ps-menu ps-drawer-close" type="button" data-ps-close>✕</button><a href="/index.html">Početna</a><a href="/pages/domovina/index.html">Domovina</a><a href="/pages/branitelji/index.html">Branitelji</a><a href="/pages/povijest/index.html">Povijest</a><a href="/pages/bastina/index.html">Baština</a><a href="/pages/vjera/index.html">Vjera</a><a href="/pages/gradovi/index.html">Gradovi</a><a href="/pages/vijesti/index.html">Vijesti</a><a href="/pages/brani-svoj-grad/index.html">Igra</a><a href="/pages/kviz/index.html">🧠 Kviz</a></aside>
+
+<main><section class="ps-hero" style="min-height:70vh"><div class="container ps-hero-inner"><span class="ps-eyebrow">404 · Stranica nije pronađena</span><h1>Vratimo se na<br><span>pravi trag.</span></h1><p>Tražena stranica ne postoji ili je premještena u novu strukturu PatriaSoula.</p><div class="ps-actions"><a class="ps-btn ps-btn-primary" href="/index.html">← Početna</a><a class="ps-btn ps-btn-ghost" href="/pages/gradovi/index.html">Istraži Gradove</a></div></div></section></main>
+
+<footer class="ps-footer">
+  <div class="container">
+    <div class="ps-footer-grid">
+      <div>
+        <a class="ps-brand" href="/index.html"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
+        <p style="max-width:360px;margin-top:16px">Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje.</p>
+      </div>
+      <div><h4>Istraži</h4><div class="ps-footer-links">
+        <a href="/pages/domovina/index.html">Domovina</a><a href="/pages/povijest/index.html">Povijest</a><a href="/pages/bastina/index.html">Baština</a><a href="/pages/vjera/index.html">Vjera</a>
+      </div></div>
+      <div><h4>Zajednica</h4><div class="ps-footer-links">
+        <a href="/pages/branitelji/index.html">Branitelji</a><a href="/pages/gradovi/index.html">Gradovi</a><a href="/pages/brani-svoj-grad/index.html">Brani svoj grad</a><a href="/pages/kviz/index.html">Kviz</a>
+      </div></div>
+      <div><h4>PatriaSoul</h4><div class="ps-footer-links">
+        <a href="/pages/vijesti/index.html">Vijesti</a><a href="/pages/video/index.html">Video</a><a href="/pages/galerija/index.html">Galerija</a><a href="/pages/o-nama/index.html">O nama</a>
+      </div></div>
+    </div>
+    <div class="ps-footer-bottom"><span>© 2026 PatriaSoul. Sva prava pridržana.</span><span>Čuvaj nasljeđe. Prenesi ga dalje.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const open=document.querySelector('[data-ps-menu]');
+  const close=document.querySelector('[data-ps-close]');
+  const drawer=document.querySelector('[data-ps-drawer]');
+  const backdrop=document.querySelector('[data-ps-backdrop]');
+  function set(v){drawer?.classList.toggle('is-open',v);backdrop?.classList.toggle('is-open',v);document.body.style.overflow=v?'hidden':''}
+  open?.addEventListener('click',()=>set(true)); close?.addEventListener('click',()=>set(false)); backdrop?.addEventListener('click',()=>set(false));
+  drawer?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>set(false)));
+})();
+</script></body></html>
