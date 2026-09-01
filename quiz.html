@@ -1,1 +1,210 @@
-<!doctype html><html lang="hr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="PatriaSoul kviz hrvatske povijesti, geografije, baštine i identiteta."><title>Kviz | PatriaSoul</title><link rel="stylesheet" href="patriasoul-modern.css"><style>.qwrap{max-width:900px;margin:auto}.modes,.answers{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.mode,.answer{padding:16px;border:1px solid rgba(255,255,255,.12);border-radius:14px;background:#11161d;color:#fff;cursor:pointer}.mode.active,.answer:hover{border-color:#d6ad55}.answer.correct{outline:2px solid #39a96b}.answer.wrong{outline:2px solid #c94b4b}.qtop{display:flex;justify-content:space-between;gap:15px;margin-bottom:18px}.timer{font-weight:800}.bar{height:7px;background:#252b33;border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:#d6ad55;width:100%;transition:width 1s linear}.hidden{display:none}.result{text-align:center}.nick{display:flex;gap:10px;margin:16px 0}.nick input{flex:1;padding:13px;border-radius:10px;border:1px solid #444;background:#11161d;color:#fff}.small{opacity:.72;font-size:.92rem}@media(max-width:650px){.modes,.answers{grid-template-columns:1fr}}</style></head><body><header class="ps-header"><div class="container ps-nav"><a class="ps-brand" href="index.html"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a><nav class="ps-mainnav"><a href="index.html">Početna</a><a href="gradovi.html">Gradovi</a><a href="brani-svoj-grad.html">Igra</a><a href="rang-lista.html">Rang-lista</a><a class="ps-nav-cta" href="quiz.html" aria-current="page">🧠 Kviz</a></nav></div></header><main><section class="ps-page-hero"><div class="container"><div class="ps-breadcrumbs"><a href="index.html">Početna</a> / Kviz</div><span class="ps-kicker">🧠 PatriaSoul znanje</span><h1>Hrvatski kviz</h1><p>Odaberi izazov. Svako pitanje ima 15 sekundi, a ponuđeni odgovori se svaki put preslaguju.</p></div></section><section class="ps-section"><div class="container qwrap"><div id="start"><h2>Odaberi kviz</h2><div class="modes"><button class="mode active" data-mode="mixed">🇭🇷 Miješani kviz</button><button class="mode" data-mode="daily">📅 Dnevni kviz</button><button class="mode" data-mode="weekly">🗓️ Tjedni kviz</button><button class="mode" data-mode="monthly">📆 Mjesečni kviz</button></div><div class="nick"><input id="nick" maxlength="20" placeholder="Tvoj nadimak"><button class="ps-btn" id="startBtn">Igraj →</button></div><p id="err" class="small"></p><p id="bankInfo" class="small"></p></div><div id="game" class="hidden"><div class="qtop"><span id="progress"></span><span class="timer">⏱️ <b id="time">15</b></span></div><div class="bar"><i id="bar"></i></div><h2 id="question"></h2><div id="answers" class="answers"></div><p id="feedback" class="small"></p></div><div id="result" class="result hidden"><h2>Rezultat</h2><div id="score"></div><p id="resultText"></p><div class="ps-actions"><button class="ps-btn" id="again">Igraj ponovno</button><a class="ps-btn ps-btn-ghost" href="rang-lista.html">Rang-lista</a></div></div></div></section></main><script src="quiz.js"></script><script src="badges.js"></script><script>document.addEventListener('DOMContentLoaded',()=>{const $=id=>document.getElementById(id);let mode='mixed',qs=[],pos=0,points=0,correct=0,timer=null,left=15;document.querySelectorAll('.mode').forEach(b=>b.onclick=()=>{document.querySelectorAll('.mode').forEach(x=>x.classList.remove('active'));b.classList.add('active');mode=b.dataset.mode});PatriaQuiz.ready.then(()=>{$('bankInfo').textContent=`Baza trenutno sadrži ${PatriaQuiz.bank().length} pitanja.`});function start(){const n=$('nick').value.trim();const r=PatriaPlayer.choose(n);if(!r.ok){$('err').textContent=r.error;return}$('err').textContent='';qs=mode==='mixed'?PatriaQuiz.byCategory('mijesani',10):PatriaQuiz.periodQuiz(mode,10);if(!qs.length){$('err').textContent='Nema dovoljno pitanja za ovaj kviz.';return}pos=points=correct=0;$('start').classList.add('hidden');$('result').classList.add('hidden');$('game').classList.remove('hidden');show()}function show(){$('progress').textContent=`Pitanje ${pos+1} / ${qs.length}`;$('question').textContent=qs[pos].question;$('feedback').textContent='';const a=$('answers');a.innerHTML='';qs[pos].options.forEach((o,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=`${String.fromCharCode(65+i)}) ${o.text}`;b.onclick=()=>answer(i);a.appendChild(b)});clearInterval(timer);left=15;$('time').textContent=left;$('bar').style.width='100%';timer=setInterval(()=>{left--;$('time').textContent=left;$('bar').style.width=(left/15*100)+'%';if(left<=0){clearInterval(timer);answer(-1)}},1000)}function answer(i){clearInterval(timer);const q=qs[pos],buttons=[...$('answers').children];buttons.forEach(b=>b.disabled=true);const ok=i===q.correctIndex;if(i>=0)buttons[i].classList.add(ok?'correct':'wrong');if(!ok){const ci=q.correctIndex;buttons[ci]?.classList.add('correct');$('feedback').textContent=`Točan odgovor: ${q.options[ci].text}`}else{correct++;points+=100+left*5;$('feedback').textContent='Točno! +'+(100+left*5)+' bodova'}setTimeout(()=>{pos++;pos<qs.length?show():finish()},850)}function finish(){const p=PatriaPlayer.current();p.points=(p.points||0)+points;p.xp=(p.xp||0)+points;p.quizzes=(p.quizzes||0)+1;p.correct=(p.correct||0)+correct;PatriaBadges.evaluate(p);localStorage.setItem('patriasoul_player',JSON.stringify(p));localStorage.setItem('patriasoul_score_'+Date.now(),JSON.stringify({name:p.name,points,correct,total:qs.length,mode,date:new Date().toISOString()}));$('game').classList.add('hidden');$('result').classList.remove('hidden');$('score').innerHTML=`<strong style="font-size:2.5rem">${points}</strong> bodova`;$('resultText').textContent=`${correct}/${qs.length} točnih odgovora · ${p.name}${p.badges?.length?' · '+p.badges.length+' znački':''}`}$('startBtn').onclick=start;$('again').onclick=()=>{$('result').classList.add('hidden');$('start').classList.remove('hidden')};const saved=PatriaPlayer.current();if(saved.name)$('nick').value=saved.name})</script></body></html>
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PatriaSoul kviz hrvatske povijesti, geografije, baštine, sporta i znanja.">
+  <title>Kviz | PatriaSoul</title>
+  <link rel="stylesheet" href="patriasoul-modern.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <header class="ps-header">
+    <div class="container ps-nav">
+      <a class="ps-brand" href="index.html" aria-label="PatriaSoul početna">
+        <span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span>
+      </a>
+      <nav class="ps-mainnav" aria-label="Glavna navigacija">
+        <a href="index.html">Početna</a>
+        <a href="gradovi.html">Gradovi</a>
+        <a href="brani-svoj-grad.html">Igra</a>
+        <a href="rang-lista.html">Rang-lista</a>
+        <a class="ps-nav-cta" href="quiz.html" aria-current="page">🧠 Kviz</a>
+      </nav>
+      <button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik">☰</button>
+    </div>
+  </header>
+
+  <main class="quiz-page">
+    <section class="ps-page-hero">
+      <div class="container">
+        <div class="ps-breadcrumbs"><a href="index.html">Početna</a> / Kviz</div>
+        <span class="ps-kicker">🧠 PATRIA SOUL • ZNANJE</span>
+        <h1>Hrvatski kviz</h1>
+        <p>Provjeri znanje, osvoji bodove i skupljaj značke. Ponuđeni odgovori svaki se put preslaguju.</p>
+      </div>
+    </section>
+
+    <section class="ps-section">
+      <div class="container qwrap">
+        <div class="quiz-card">
+          <div id="start">
+            <div class="quiz-heading">
+              <div>
+                <h2>Odaberi izazov</h2>
+                <p>Svako pitanje ima 15 sekundi.</p>
+              </div>
+              <div class="quiz-status" id="bankInfo" aria-live="polite">Učitavanje baze…</div>
+            </div>
+
+            <div class="modes" role="group" aria-label="Vrsta kviza">
+              <button class="mode active" type="button" data-mode="mixed">🇭🇷 Miješani kviz</button>
+              <button class="mode" type="button" data-mode="daily">📅 Dnevni kviz</button>
+              <button class="mode" type="button" data-mode="weekly">🗓️ Tjedni kviz</button>
+              <button class="mode" type="button" data-mode="monthly">📆 Mjesečni kviz</button>
+            </div>
+
+            <div class="quiz-form">
+              <label class="quiz-hidden" for="nick">Tvoj nadimak</label>
+              <input id="nick" maxlength="20" autocomplete="nickname" placeholder="Tvoj nadimak" aria-label="Tvoj nadimak">
+              <button class="ps-btn" id="startBtn" type="button">Igraj →</button>
+            </div>
+
+            <p id="err" class="quiz-error" role="alert" aria-live="polite"></p>
+            <p class="quiz-note">💡 Brži točan odgovor donosi više bodova.</p>
+          </div>
+
+          <div id="game" class="quiz-game" aria-live="polite">
+            <div class="quiz-top">
+              <span id="progress">Pitanje 1 / 10</span>
+              <span class="quiz-timer">⏱️ <b id="time">15</b> s</span>
+            </div>
+            <div class="quiz-progressbar" aria-hidden="true"><i id="bar"></i></div>
+            <h2 id="question" class="quiz-question"></h2>
+            <div id="answers" class="answers" role="group" aria-label="Ponuđeni odgovori"></div>
+            <p id="feedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+          </div>
+
+          <div id="result" class="quiz-result" aria-live="polite">
+            <span class="ps-kicker">🏆 KVIZ ZAVRŠEN</span>
+            <h2>Odličan pokušaj!</h2>
+            <div id="score" class="quiz-score">0</div>
+            <div>bodova</div>
+            <p id="resultText" class="quiz-result-text"></p>
+            <div class="quiz-actions">
+              <button class="ps-btn" id="again" type="button">Igraj ponovno</button>
+              <a class="ps-btn ps-btn-ghost" href="rang-lista.html">Rang-lista →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="quiz.js"></script>
+  <script src="badges.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $ = id => document.getElementById(id);
+      let mode = 'mixed', qs = [], pos = 0, points = 0, correct = 0, timer = null, left = 15;
+
+      document.querySelectorAll('.mode').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.mode').forEach(x => x.classList.remove('active'));
+          button.classList.add('active');
+          mode = button.dataset.mode;
+        });
+      });
+
+      PatriaQuiz.ready.then(() => {
+        const validation = PatriaQuiz.validate();
+        $('bankInfo').textContent = `${validation.total.toLocaleString('hr-HR')} pitanja`;
+        if (validation.invalid || validation.duplicates) {
+          $('err').textContent = `Baza ima ${validation.invalid} neispravnih i ${validation.duplicates} duplikata.`;
+        }
+      }).catch(() => {
+        $('bankInfo').textContent = 'Greška pri učitavanju';
+        $('err').textContent = 'Baza pitanja nije se mogla učitati.';
+      });
+
+      function start() {
+        const n = $('nick').value.trim();
+        const r = PatriaPlayer.choose(n);
+        if (!r.ok) { $('err').textContent = r.error; return; }
+        $('err').textContent = '';
+        qs = mode === 'mixed' ? PatriaQuiz.byCategory('mijesani', 10) : PatriaQuiz.periodQuiz(mode, 10);
+        if (!qs.length) { $('err').textContent = 'Nema dovoljno pitanja za ovaj kviz.'; return; }
+        pos = points = correct = 0;
+        $('start').classList.add('quiz-hidden');
+        $('result').classList.remove('is-active');
+        $('game').classList.add('is-active');
+        show();
+      }
+
+      function show() {
+        $('progress').textContent = `Pitanje ${pos + 1} / ${qs.length}`;
+        $('question').textContent = qs[pos].question;
+        $('feedback').textContent = '';
+        const answers = $('answers');
+        answers.innerHTML = '';
+        qs[pos].options.forEach((o, i) => {
+          const button = document.createElement('button');
+          button.className = 'answer';
+          button.type = 'button';
+          button.textContent = `${String.fromCharCode(65 + i)}) ${o.text}`;
+          button.addEventListener('click', () => answer(i));
+          answers.appendChild(button);
+        });
+        clearInterval(timer);
+        left = 15;
+        $('time').textContent = left;
+        $('bar').style.width = '100%';
+        timer = setInterval(() => {
+          left--;
+          $('time').textContent = left;
+          $('bar').style.width = `${left / 15 * 100}%`;
+          if (left <= 0) { clearInterval(timer); answer(-1); }
+        }, 1000);
+      }
+
+      function answer(i) {
+        clearInterval(timer);
+        const q = qs[pos];
+        const buttons = [...$('answers').children];
+        buttons.forEach(b => b.disabled = true);
+        const ok = i === q.correctIndex;
+        if (i >= 0) buttons[i].classList.add(ok ? 'correct' : 'wrong');
+        if (!ok) {
+          const ci = q.correctIndex;
+          buttons[ci]?.classList.add('correct');
+          $('feedback').textContent = `Točan odgovor: ${q.options[ci].text}`;
+        } else {
+          const gained = 100 + left * 5;
+          correct++;
+          points += gained;
+          $('feedback').textContent = `Točno! +${gained} bodova`;
+        }
+        setTimeout(() => { pos++; pos < qs.length ? show() : finish(); }, 850);
+      }
+
+      function finish() {
+        const p = PatriaPlayer.current();
+        p.points = (p.points || 0) + points;
+        p.xp = (p.xp || 0) + points;
+        p.quizzes = (p.quizzes || 0) + 1;
+        p.correct = (p.correct || 0) + correct;
+        PatriaBadges.evaluate(p);
+        localStorage.setItem('patriasoul_player', JSON.stringify(p));
+        localStorage.setItem('patriasoul_score_' + Date.now(), JSON.stringify({ name: p.name, points, correct, total: qs.length, mode, date: new Date().toISOString() }));
+        $('game').classList.remove('is-active');
+        $('result').classList.add('is-active');
+        $('score').textContent = points;
+        $('resultText').textContent = `${correct}/${qs.length} točnih odgovora · ${p.name}${p.badges?.length ? ' · ' + p.badges.length + ' znački' : ''}`;
+      }
+
+      $('startBtn').addEventListener('click', start);
+      $('nick').addEventListener('keydown', e => { if (e.key === 'Enter') start(); });
+      $('again').addEventListener('click', () => {
+        $('result').classList.remove('is-active');
+        $('start').classList.remove('quiz-hidden');
+      });
+
+      const saved = PatriaPlayer.current();
+      if (saved.name) $('nick').value = saved.name;
+
+      const menu = document.querySelector('[data-ps-menu]');
+      menu?.addEventListener('click', () => document.querySelector('.ps-mainnav')?.classList.toggle('is-open'));
+    });
+  </script>
+</body>
+</html>
