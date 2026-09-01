@@ -17,6 +17,7 @@
   // Svi podaci su u korijenu GitHub Pagesa.
   document.write('<scr'+'ipt src="domovinski.js"></scr'+'ipt>');
   document.write('<scr'+'ipt src="question_banks_800.js"></scr'+'ipt>');
+  document.write('<scr'+'ipt src="question_banks_1200.js"></scr'+'ipt>');
   document.write('<scr'+'ipt src="povijest_extra.js"></scr'+'ipt>');
   document.write('<scr'+'ipt src="bastina.js"></scr'+'ipt>');
   document.write('<scr'+'ipt src="bitke.js"></scr'+'ipt>');
