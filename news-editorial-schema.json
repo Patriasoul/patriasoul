@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PatriaSoul vijest",
+  "type": "object",
+  "required": ["title","summary","body","category","date","author","sources","status"],
+  "properties": {
+    "title": {"type":"string"},
+    "summary": {"type":"string"},
+    "body": {"type":"string"},
+    "category": {"type":"string"},
+    "city": {"type":"string"},
+    "date": {"type":"string"},
+    "author": {"const":"Čuvari nasljeđa"},
+    "label": {"const":"PatriaSoul uredništvo"},
+    "sources": {"type":"array","items":{"type":"string"}},
+    "status": {"enum":["published","review"]},
+    "aiGenerated": {"type":"boolean"}
+  }
+}
