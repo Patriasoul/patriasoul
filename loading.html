@@ -1,2 +1,212 @@
-<!-- Zajednički indikator učitavanja. -->
-<div class="loading" hidden aria-live="polite">Učitavanje…</div>
+<!-- PatriaSoul – zajednički indikator učitavanja za stranice i dinamičke sadržaje. -->
+<div
+  id="patria-loading"
+  class="ps-loading"
+  hidden
+  role="status"
+  aria-live="polite"
+  aria-busy="true"
+  aria-label="Učitavanje sadržaja"
+>
+  <div class="ps-loading__backdrop" aria-hidden="true"></div>
+
+  <div class="ps-loading__panel" aria-describedby="patria-loading-text">
+    <div class="ps-loading__brand" aria-hidden="true">
+      <span class="ps-loading__crest">✦</span>
+      <span class="ps-loading__brand-name">PatriaSoul</span>
+    </div>
+
+    <div class="ps-loading__spinner" aria-hidden="true">
+      <span></span>
+    </div>
+
+    <p id="patria-loading-text" class="ps-loading__text">Učitavanje sadržaja…</p>
+    <p class="ps-loading__hint">Molimo pričekajte trenutak.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  const loader = document.getElementById('patria-loading');
+  if (!loader) return;
+
+  const text = document.getElementById('patria-loading-text');
+  let active = 0;
+  let timer = null;
+
+  function setText(message) {
+    if (text && typeof message === 'string' && message.trim()) {
+      text.textContent = message.trim();
+    }
+  }
+
+  function show(message) {
+    active += 1;
+    setText(message || 'Učitavanje sadržaja…');
+    loader.hidden = false;
+    loader.setAttribute('aria-busy', 'true');
+    document.documentElement.classList.add('ps-is-loading');
+  }
+
+  function hide(force) {
+    if (force) active = 0;
+    else active = Math.max(0, active - 1);
+
+    if (active === 0) {
+      loader.setAttribute('aria-busy', 'false');
+      loader.hidden = true;
+      document.documentElement.classList.remove('ps-is-loading');
+    }
+  }
+
+  window.PatriaLoading = Object.freeze({
+    show,
+    hide,
+    setText
+  });
+
+  window.addEventListener('pageshow', function () {
+    if (active === 0) hide(true);
+  });
+
+  window.addEventListener('beforeunload', function () {
+    if (timer) window.clearTimeout(timer);
+  });
+})();
+</script>
+
+<style>
+  :root {
+    --ps-loading-bg: #101113;
+    --ps-loading-panel: rgba(22, 23, 26, 0.96);
+    --ps-loading-gold: #d4af37;
+    --ps-loading-gold-soft: #f1d77a;
+    --ps-loading-text: #f5f5f5;
+    --ps-loading-muted: #a7a7a7;
+  }
+
+  .ps-loading[hidden] {
+    display: none !important;
+  }
+
+  .ps-loading {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483000;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+  }
+
+  .ps-loading__backdrop {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(circle at 50% 38%, rgba(212, 175, 55, 0.10), transparent 32%),
+      linear-gradient(135deg, rgba(7, 8, 10, 0.98), rgba(20, 21, 24, 0.98));
+    backdrop-filter: blur(7px);
+  }
+
+  .ps-loading__panel {
+    width: min(92vw, 390px);
+    box-sizing: border-box;
+    padding: 34px 30px 30px;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 22px;
+    background: var(--ps-loading-panel);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), 0 0 45px rgba(212, 175, 55, 0.07);
+    text-align: center;
+  }
+
+  .ps-loading__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 26px;
+    color: var(--ps-loading-gold-soft);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  .ps-loading__crest {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border: 1px solid rgba(212, 175, 55, 0.55);
+    border-radius: 50%;
+    color: var(--ps-loading-gold);
+  }
+
+  .ps-loading__spinner {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    margin: 0 auto 22px;
+    border: 3px solid rgba(212, 175, 55, 0.18);
+    border-top-color: var(--ps-loading-gold);
+    border-right-color: var(--ps-loading-gold-soft);
+    border-radius: 50%;
+    animation: patria-loading-spin 0.9s linear infinite;
+  }
+
+  .ps-loading__spinner span {
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 50%;
+  }
+
+  .ps-loading__text {
+    margin: 0;
+    color: var(--ps-loading-text);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .ps-loading__hint {
+    margin: 8px 0 0;
+    color: var(--ps-loading-muted);
+    font-size: 0.84rem;
+  }
+
+  .ps-is-loading {
+    cursor: wait;
+  }
+
+  @keyframes patria-loading-spin {
+    to { transform: rotate(360deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ps-loading__spinner {
+      animation: none;
+      border-top-color: var(--ps-loading-gold-soft);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .ps-loading__panel {
+      width: min(90vw, 350px);
+      padding: 28px 22px 25px;
+      border-radius: 18px;
+    }
+  }
+
+  @media (forced-colors: active) {
+    .ps-loading__panel {
+      border: 1px solid CanvasText;
+      background: Canvas;
+      color: CanvasText;
+    }
+
+    .ps-loading__text,
+    .ps-loading__brand,
+    .ps-loading__hint {
+      color: CanvasText;
+    }
+  }
+</style>
