@@ -1,1 +1,322 @@
-/* Gumbi i interakcije. */
+/*
+ * PatriaSoul — centralni sustav gumba i interakcija
+ *
+ * Koristi klase:
+ * .btn
+ * .btn-primary / .btn-secondary / .btn-ghost / .btn-danger / .btn-success
+ * .btn-gold / .btn-quiz / .btn-city / .btn-defense
+ * .btn-sm / .btn-lg / .btn-block / .btn-icon
+ *
+ * Datoteka je namjerno samostalna i koristi fallback vrijednosti
+ * kako bi radila i prije nego što se prošire variables.css varijable.
+ */
+
+:root {
+  --ps-gold: #d4af37;
+  --ps-gold-light: #f1d778;
+  --ps-gold-dark: #9b7a18;
+  --ps-dark: #17191d;
+  --ps-dark-2: #20242a;
+  --ps-dark-3: #292e36;
+  --ps-text: #f5f5f5;
+  --ps-muted: #b8bec8;
+  --ps-success: #2e9d63;
+  --ps-danger: #b83a3a;
+  --ps-radius: 12px;
+  --ps-button-height: 46px;
+  --ps-button-shadow: 0 8px 24px rgba(0, 0, 0, .22);
+  --ps-focus: rgba(212, 175, 55, .48);
+}
+
+/* Osnovni gumb */
+.btn,
+button.btn,
+a.btn,
+input.btn,
+input[type="button"].btn,
+input[type="submit"].btn,
+input[type="reset"].btn {
+  --btn-bg: var(--ps-dark-2);
+  --btn-color: var(--ps-text);
+  --btn-border: rgba(212, 175, 55, .32);
+  --btn-hover-bg: var(--ps-dark-3);
+  --btn-hover-border: var(--ps-gold);
+
+  box-sizing: border-box;
+  min-height: var(--ps-button-height);
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  padding: .72rem 1.15rem;
+  border: 1px solid var(--btn-border);
+  border-radius: var(--ps-radius);
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .14);
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    transform .18s ease,
+    box-shadow .18s ease;
+}
+
+.btn:hover {
+  background: var(--btn-hover-bg);
+  border-color: var(--btn-hover-border);
+  color: var(--btn-color);
+  transform: translateY(-1px);
+  box-shadow: var(--ps-button-shadow);
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--ps-focus);
+  outline-offset: 3px;
+}
+
+.btn:disabled,
+.btn[disabled],
+.btn.is-disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Primarni PatriaSoul gumb — zlat */
+.btn-primary,
+.btn-gold,
+.btn-quiz {
+  --btn-bg: linear-gradient(135deg, var(--ps-gold-light), var(--ps-gold));
+  --btn-color: #151515;
+  --btn-border: var(--ps-gold-light);
+  --btn-hover-bg: linear-gradient(135deg, #f6df8a, var(--ps-gold-light));
+  --btn-hover-border: #fff0a8;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, .20);
+}
+
+.btn-primary:hover,
+.btn-gold:hover,
+.btn-quiz:hover {
+  color: #111;
+  box-shadow: 0 12px 30px rgba(212, 175, 55, .30);
+}
+
+/* Sekundarni */
+.btn-secondary {
+  --btn-bg: var(--ps-dark-2);
+  --btn-color: var(--ps-text);
+  --btn-border: rgba(255, 255, 255, .16);
+  --btn-hover-bg: var(--ps-dark-3);
+  --btn-hover-border: rgba(212, 175, 55, .72);
+}
+
+/* Diskretan gumb */
+.btn-ghost {
+  --btn-bg: transparent;
+  --btn-color: var(--ps-muted);
+  --btn-border: transparent;
+  --btn-hover-bg: rgba(212, 175, 55, .08);
+  --btn-hover-border: rgba(212, 175, 55, .35);
+}
+
+/* Akcije */
+.btn-success {
+  --btn-bg: var(--ps-success);
+  --btn-color: #fff;
+  --btn-border: rgba(255, 255, 255, .12);
+  --btn-hover-bg: #36ad70;
+  --btn-hover-border: #58ca8c;
+}
+
+.btn-danger {
+  --btn-bg: var(--ps-danger);
+  --btn-color: #fff;
+  --btn-border: rgba(255, 255, 255, .12);
+  --btn-hover-bg: #cf4848;
+  --btn-hover-border: #eb6666;
+}
+
+/* Posebne PatriaSoul funkcionalne varijante */
+.btn-city {
+  --btn-bg: linear-gradient(135deg, #252a31, #1b1e23);
+  --btn-color: var(--ps-text);
+  --btn-border: rgba(212, 175, 55, .38);
+  --btn-hover-bg: linear-gradient(135deg, #303640, #22262c);
+  --btn-hover-border: var(--ps-gold);
+}
+
+.btn-defense {
+  --btn-bg: linear-gradient(135deg, #25282c, #17191d);
+  --btn-color: #fff;
+  --btn-border: rgba(212, 175, 55, .55);
+  --btn-hover-bg: linear-gradient(135deg, #33373c, #202329);
+  --btn-hover-border: var(--ps-gold-light);
+}
+
+/* Veličine */
+.btn-sm {
+  min-height: 38px;
+  padding: .55rem .85rem;
+  border-radius: 10px;
+  font-size: .9rem;
+}
+
+.btn-lg {
+  min-height: 54px;
+  padding: .88rem 1.45rem;
+  border-radius: 14px;
+  font-size: 1.05rem;
+}
+
+.btn-xl {
+  min-height: 62px;
+  padding: 1rem 1.7rem;
+  border-radius: 16px;
+  font-size: 1.12rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-icon {
+  width: var(--ps-button-height);
+  height: var(--ps-button-height);
+  padding: 0;
+  flex: 0 0 auto;
+}
+
+.btn-icon.btn-sm {
+  width: 38px;
+  height: 38px;
+}
+
+.btn-icon.btn-lg {
+  width: 54px;
+  height: 54px;
+}
+
+/* Grupe gumba */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .65rem;
+}
+
+.btn-group.center {
+  justify-content: center;
+}
+
+.btn-group.end {
+  justify-content: flex-end;
+}
+
+/* Gumb s ikonom */
+.btn .icon,
+.btn > svg,
+.btn > i {
+  flex: 0 0 auto;
+}
+
+.btn .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading stanje */
+.btn.is-loading,
+.btn[aria-busy="true"] {
+  position: relative;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.btn.is-loading::after,
+.btn[aria-busy="true"]::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  margin-left: .15rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: ps-button-spin .7s linear infinite;
+}
+
+@keyframes ps-button-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Toggle / aktivno stanje */
+.btn[aria-pressed="true"],
+.btn.is-active,
+.btn.active {
+  border-color: var(--ps-gold);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, .14), var(--ps-button-shadow);
+}
+
+/* Na touch uređajima nema potrebe za lažnim hover efektom */
+@media (hover: none) {
+  .btn:hover {
+    transform: none;
+  }
+}
+
+/* Mobilni prikaz */
+@media (max-width: 640px) {
+  .btn-group {
+    gap: .5rem;
+  }
+
+  .btn {
+    min-height: 46px;
+  }
+
+  .btn-mobile-block {
+    width: 100%;
+  }
+
+  .btn-mobile-stack {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-mobile-stack .btn {
+    width: 100%;
+  }
+}
+
+/* Korisnik može smanjiti animacije */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn:hover,
+  .btn:active {
+    transition: none;
+  }
+
+  .btn.is-loading::after,
+  .btn[aria-busy="true"]::after {
+    animation: none;
+  }
+}
