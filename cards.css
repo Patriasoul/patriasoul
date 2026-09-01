@@ -1,1 +1,321 @@
-/* Kartice sadržaja. */
+/*
+ * PatriaSoul — centralni sustav kartica
+ *
+ * Osnovna klasa: .ps-card
+ * Varijante: .ps-card-feature, .ps-card-compact, .ps-card-gold,
+ * .ps-card-dark, .ps-card-clickable, .ps-card-horizontal
+ * Pomoćne klase: .ps-card-icon, .ps-card-media, .ps-card-body,
+ * .ps-card-meta, .ps-card-title, .ps-card-text, .ps-card-link
+ */
+
+:root {
+  --ps-card-bg: #0d1118;
+  --ps-card-bg-2: #121821;
+  --ps-card-bg-3: #171e28;
+  --ps-card-text: #f4f6f8;
+  --ps-card-muted: #9ba5b2;
+  --ps-card-line: rgba(255,255,255,.09);
+  --ps-card-gold: #d9b84c;
+  --ps-card-gold-light: #f0d777;
+  --ps-card-radius: 18px;
+  --ps-card-shadow: 0 14px 45px rgba(0,0,0,.18);
+  --ps-card-shadow-hover: 0 22px 70px rgba(0,0,0,.32);
+}
+
+/* Osnovna kartica */
+.ps-card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100%;
+  padding: 24px;
+  border: 1px solid var(--ps-card-line);
+  border-radius: var(--ps-card-radius);
+  background: linear-gradient(145deg, rgba(18,24,33,.94), rgba(10,14,20,.96));
+  color: var(--ps-card-text);
+  box-shadow: var(--ps-card-shadow);
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease, background .22s ease;
+}
+
+/* Kartice koje su linkovi mogu se jasno klikati */
+a.ps-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.ps-card:hover,
+.ps-card-clickable:hover {
+  transform: translateY(-4px);
+  border-color: rgba(217,184,76,.38);
+  box-shadow: var(--ps-card-shadow-hover);
+  text-decoration: none;
+}
+
+.ps-card-clickable { cursor: pointer; }
+
+/* Diskretan zlatni sjaj */
+.ps-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(circle at 100% 0, rgba(217,184,76,.09), transparent 38%);
+  opacity: .75;
+}
+
+.ps-card:hover::before { opacity: 1; }
+
+/* Ikona */
+.ps-card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  margin-bottom: 18px;
+  border: 1px solid rgba(217,184,76,.22);
+  border-radius: 14px;
+  background: rgba(217,184,76,.07);
+  color: var(--ps-card-gold-light);
+  font-size: 25px;
+  line-height: 1;
+}
+
+/* Slika */
+.ps-card-media {
+  aspect-ratio: 16 / 9;
+  margin: -24px -24px 22px;
+  overflow: hidden;
+  background: #11161d;
+}
+
+.ps-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.ps-card:hover .ps-card-media img { transform: scale(1.035); }
+
+/* Tijelo kartice */
+.ps-card-body { display: flex; flex-direction: column; min-width: 0; }
+
+.ps-card-title,
+.ps-card h2,
+.ps-card h3,
+.ps-card h4 {
+  color: var(--ps-card-text);
+  line-height: 1.25;
+  margin: 0 0 9px;
+  letter-spacing: -.25px;
+}
+
+.ps-card h2 { font-size: 24px; }
+.ps-card h3 { font-size: 20px; }
+.ps-card h4 { font-size: 16px; }
+
+.ps-card-text,
+.ps-card p {
+  color: var(--ps-card-muted);
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Meta podaci: županija, datum, kategorija, status... */
+.ps-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 12px;
+  color: var(--ps-card-muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+}
+
+.ps-card-meta > span {
+  padding: 5px 8px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 999px;
+  background: rgba(255,255,255,.025);
+}
+
+.ps-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--ps-card-gold-light);
+  font-size: 13px;
+  font-weight: 850;
+  line-height: 1.2;
+  transition: color .18s ease, gap .18s ease;
+}
+
+.ps-card-link:hover {
+  color: #fff0a8;
+  gap: 9px;
+  text-decoration: none;
+}
+
+/* Veća istaknuta kartica */
+.ps-card-feature {
+  padding: 30px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(22,29,39,.98), rgba(9,13,18,.98));
+}
+
+.ps-card-feature h2 { font-size: clamp(26px, 3vw, 36px); }
+.ps-card-feature p { font-size: 15px; }
+
+/* Kompaktna kartica */
+.ps-card-compact {
+  padding: 17px;
+  border-radius: 14px;
+}
+
+.ps-card-compact .ps-card-icon {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 12px;
+  border-radius: 11px;
+  font-size: 19px;
+}
+
+.ps-card-compact h3 { font-size: 17px; }
+.ps-card-compact p { font-size: 13px; }
+.ps-card-compact .ps-card-link { padding-top: 12px; }
+
+/* Zlatno naglašena kartica */
+.ps-card-gold {
+  border-color: rgba(217,184,76,.34);
+  background: linear-gradient(145deg, rgba(40,34,20,.82), rgba(13,17,24,.98));
+}
+
+.ps-card-gold::before {
+  background: radial-gradient(circle at 50% 0, rgba(217,184,76,.17), transparent 55%);
+}
+
+/* Tamna neutralna kartica */
+.ps-card-dark {
+  background: #080b10;
+  box-shadow: 0 10px 35px rgba(0,0,0,.24);
+}
+
+/* Horizontalna kartica za vijesti, osobe, postrojbe i događaje */
+.ps-card-horizontal {
+  display: grid;
+  grid-template-columns: minmax(170px, 280px) minmax(0,1fr);
+  padding: 0;
+}
+
+.ps-card-horizontal .ps-card-media {
+  aspect-ratio: auto;
+  min-height: 100%;
+  margin: 0;
+}
+
+.ps-card-horizontal .ps-card-body { padding: 24px; }
+
+/* Stat kartica */
+.ps-card-stat {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.ps-card-stat strong {
+  display: block;
+  color: var(--ps-card-gold-light);
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1;
+  margin-bottom: 7px;
+}
+
+.ps-card-stat span {
+  color: var(--ps-card-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Statusna traka */
+.ps-card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: rgba(217,184,76,.08);
+  border: 1px solid rgba(217,184,76,.2);
+  color: var(--ps-card-gold-light);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.ps-card-status.is-success { color: #6bd39c; border-color: rgba(107,211,156,.25); background: rgba(107,211,156,.07); }
+.ps-card-status.is-danger { color: #ff8d8d; border-color: rgba(255,141,141,.25); background: rgba(255,141,141,.07); }
+
+/* Gridovi kartica */
+.ps-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 18px;
+}
+
+.ps-card-grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.ps-card-grid-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
+
+/* Fokus za tipkovnicu */
+a.ps-card:focus-visible,
+.ps-card-clickable:focus-visible {
+  outline: 2px solid var(--ps-card-gold-light);
+  outline-offset: 4px;
+}
+
+/* Bez animacija kada korisnik to zatraži */
+@media (prefers-reduced-motion: reduce) {
+  .ps-card,
+  .ps-card-media img,
+  .ps-card-link {
+    transition: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .ps-card-grid,
+  .ps-card-grid-4 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+
+  .ps-card-horizontal {
+    grid-template-columns: 190px minmax(0,1fr);
+  }
+}
+
+/* Mobitel */
+@media (max-width: 600px) {
+  .ps-card { padding: 20px; border-radius: 15px; }
+
+  .ps-card-media {
+    margin: -20px -20px 19px;
+  }
+
+  .ps-card-grid,
+  .ps-card-grid-2,
+  .ps-card-grid-4 { grid-template-columns: 1fr; }
+
+  .ps-card-horizontal { display: flex; }
+  .ps-card-horizontal .ps-card-media { min-height: auto; }
+  .ps-card-horizontal .ps-card-body { padding: 20px; }
+}
