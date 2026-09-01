@@ -1,0 +1,3979 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-01T14:57:26.106252+00:00",
+  "source": "PatriaSoul repository",
+  "counts": {
+    "grad": 127,
+    "kviz": 100,
+    "stranica": 22
+  },
+  "items": [
+    {
+      "id": "city-dugo-selo",
+      "type": "grad",
+      "title": "Dugo Selo",
+      "content": "Dugo Selo je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Dugo Selo",
+        "dugo-selo",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "dugo-selo",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096716+00:00"
+    },
+    {
+      "id": "city-ivanic-grad",
+      "type": "grad",
+      "title": "Ivanić-Grad",
+      "content": "Ivanić-Grad je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Ivanić-Grad",
+        "ivanic-grad",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "ivanic-grad",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096733+00:00"
+    },
+    {
+      "id": "city-jastrebarsko",
+      "type": "grad",
+      "title": "Jastrebarsko",
+      "content": "Jastrebarsko je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Jastrebarsko",
+        "jastrebarsko",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "jastrebarsko",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096742+00:00"
+    },
+    {
+      "id": "city-samobor",
+      "type": "grad",
+      "title": "Samobor",
+      "content": "Samobor je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Samobor",
+        "samobor",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "samobor",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096746+00:00"
+    },
+    {
+      "id": "city-sveta-nedelja",
+      "type": "grad",
+      "title": "Sveta Nedelja",
+      "content": "Sveta Nedelja je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Sveta Nedelja",
+        "sveta-nedelja",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "sveta-nedelja",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096750+00:00"
+    },
+    {
+      "id": "city-sveti-ivan-zelina",
+      "type": "grad",
+      "title": "Sveti Ivan Zelina",
+      "content": "Sveti Ivan Zelina je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Sveti Ivan Zelina",
+        "sveti-ivan-zelina",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "sveti-ivan-zelina",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096755+00:00"
+    },
+    {
+      "id": "city-velika-gorica",
+      "type": "grad",
+      "title": "Velika Gorica",
+      "content": "Velika Gorica je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Velika Gorica",
+        "velika-gorica",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "velika-gorica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096758+00:00"
+    },
+    {
+      "id": "city-vrbovec",
+      "type": "grad",
+      "title": "Vrbovec",
+      "content": "Vrbovec je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Vrbovec",
+        "vrbovec",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "vrbovec",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096763+00:00"
+    },
+    {
+      "id": "city-zapresic",
+      "type": "grad",
+      "title": "Zaprešić",
+      "content": "Zaprešić je grad u Zagrebačka županija. Županija: Zagrebačka županija.",
+      "tags": [
+        "Zaprešić",
+        "zapresic",
+        "Zagrebačka županija",
+        "grad"
+      ],
+      "cityId": "zapresic",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096767+00:00"
+    },
+    {
+      "id": "city-donja-stubica",
+      "type": "grad",
+      "title": "Donja Stubica",
+      "content": "Donja Stubica je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Donja Stubica",
+        "donja-stubica",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "donja-stubica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096771+00:00"
+    },
+    {
+      "id": "city-klanjec",
+      "type": "grad",
+      "title": "Klanjec",
+      "content": "Klanjec je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Klanjec",
+        "klanjec",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "klanjec",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096774+00:00"
+    },
+    {
+      "id": "city-krapina",
+      "type": "grad",
+      "title": "Krapina",
+      "content": "Krapina je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Krapina",
+        "krapina",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "krapina",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096778+00:00"
+    },
+    {
+      "id": "city-oroslavje",
+      "type": "grad",
+      "title": "Oroslavje",
+      "content": "Oroslavje je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Oroslavje",
+        "oroslavje",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "oroslavje",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096781+00:00"
+    },
+    {
+      "id": "city-pregrada",
+      "type": "grad",
+      "title": "Pregrada",
+      "content": "Pregrada je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Pregrada",
+        "pregrada",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "pregrada",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096784+00:00"
+    },
+    {
+      "id": "city-zabok",
+      "type": "grad",
+      "title": "Zabok",
+      "content": "Zabok je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Zabok",
+        "zabok",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "zabok",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096788+00:00"
+    },
+    {
+      "id": "city-zlatar",
+      "type": "grad",
+      "title": "Zlatar",
+      "content": "Zlatar je grad u Krapinsko-zagorska županija. Županija: Krapinsko-zagorska županija.",
+      "tags": [
+        "Zlatar",
+        "zlatar",
+        "Krapinsko-zagorska županija",
+        "grad"
+      ],
+      "cityId": "zlatar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096795+00:00"
+    },
+    {
+      "id": "city-glina",
+      "type": "grad",
+      "title": "Glina",
+      "content": "Glina je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Glina",
+        "glina",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "glina",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096798+00:00"
+    },
+    {
+      "id": "city-hrvatska-kostajnica",
+      "type": "grad",
+      "title": "Hrvatska Kostajnica",
+      "content": "Hrvatska Kostajnica je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Hrvatska Kostajnica",
+        "hrvatska-kostajnica",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "hrvatska-kostajnica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096802+00:00"
+    },
+    {
+      "id": "city-kutina",
+      "type": "grad",
+      "title": "Kutina",
+      "content": "Kutina je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Kutina",
+        "kutina",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "kutina",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096805+00:00"
+    },
+    {
+      "id": "city-novska",
+      "type": "grad",
+      "title": "Novska",
+      "content": "Novska je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Novska",
+        "novska",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "novska",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096809+00:00"
+    },
+    {
+      "id": "city-petrinja",
+      "type": "grad",
+      "title": "Petrinja",
+      "content": "Petrinja je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Petrinja",
+        "petrinja",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "petrinja",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096812+00:00"
+    },
+    {
+      "id": "city-popovaca",
+      "type": "grad",
+      "title": "Popovača",
+      "content": "Popovača je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Popovača",
+        "popovaca",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "popovaca",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096815+00:00"
+    },
+    {
+      "id": "city-sisak",
+      "type": "grad",
+      "title": "Sisak",
+      "content": "Sisak je grad u Sisačko-moslavačka županija. Županija: Sisačko-moslavačka županija.",
+      "tags": [
+        "Sisak",
+        "sisak",
+        "Sisačko-moslavačka županija",
+        "grad"
+      ],
+      "cityId": "sisak",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096818+00:00"
+    },
+    {
+      "id": "city-duga-resa",
+      "type": "grad",
+      "title": "Duga Resa",
+      "content": "Duga Resa je grad u Karlovačka županija. Županija: Karlovačka županija.",
+      "tags": [
+        "Duga Resa",
+        "duga-resa",
+        "Karlovačka županija",
+        "grad"
+      ],
+      "cityId": "duga-resa",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096821+00:00"
+    },
+    {
+      "id": "city-karlovac",
+      "type": "grad",
+      "title": "Karlovac",
+      "content": "Karlovac je grad u Karlovačka županija. Županija: Karlovačka županija.",
+      "tags": [
+        "Karlovac",
+        "karlovac",
+        "Karlovačka županija",
+        "grad"
+      ],
+      "cityId": "karlovac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096826+00:00"
+    },
+    {
+      "id": "city-ogulin",
+      "type": "grad",
+      "title": "Ogulin",
+      "content": "Ogulin je grad u Karlovačka županija. Županija: Karlovačka županija.",
+      "tags": [
+        "Ogulin",
+        "ogulin",
+        "Karlovačka županija",
+        "grad"
+      ],
+      "cityId": "ogulin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096830+00:00"
+    },
+    {
+      "id": "city-ozalj",
+      "type": "grad",
+      "title": "Ozalj",
+      "content": "Ozalj je grad u Karlovačka županija. Županija: Karlovačka županija.",
+      "tags": [
+        "Ozalj",
+        "ozalj",
+        "Karlovačka županija",
+        "grad"
+      ],
+      "cityId": "ozalj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096834+00:00"
+    },
+    {
+      "id": "city-slunj",
+      "type": "grad",
+      "title": "Slunj",
+      "content": "Slunj je grad u Karlovačka županija. Županija: Karlovačka županija.",
+      "tags": [
+        "Slunj",
+        "slunj",
+        "Karlovačka županija",
+        "grad"
+      ],
+      "cityId": "slunj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096838+00:00"
+    },
+    {
+      "id": "city-ivanec",
+      "type": "grad",
+      "title": "Ivanec",
+      "content": "Ivanec je grad u Varaždinska županija. Županija: Varaždinska županija.",
+      "tags": [
+        "Ivanec",
+        "ivanec",
+        "Varaždinska županija",
+        "grad"
+      ],
+      "cityId": "ivanec",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096841+00:00"
+    },
+    {
+      "id": "city-lepoglava",
+      "type": "grad",
+      "title": "Lepoglava",
+      "content": "Lepoglava je grad u Varaždinska županija. Županija: Varaždinska županija.",
+      "tags": [
+        "Lepoglava",
+        "lepoglava",
+        "Varaždinska županija",
+        "grad"
+      ],
+      "cityId": "lepoglava",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096844+00:00"
+    },
+    {
+      "id": "city-ludbreg",
+      "type": "grad",
+      "title": "Ludbreg",
+      "content": "Ludbreg je grad u Varaždinska županija. Županija: Varaždinska županija.",
+      "tags": [
+        "Ludbreg",
+        "ludbreg",
+        "Varaždinska županija",
+        "grad"
+      ],
+      "cityId": "ludbreg",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096848+00:00"
+    },
+    {
+      "id": "city-novi-marof",
+      "type": "grad",
+      "title": "Novi Marof",
+      "content": "Novi Marof je grad u Varaždinska županija. Županija: Varaždinska županija.",
+      "tags": [
+        "Novi Marof",
+        "novi-marof",
+        "Varaždinska županija",
+        "grad"
+      ],
+      "cityId": "novi-marof",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096851+00:00"
+    },
+    {
+      "id": "city-varazdin",
+      "type": "grad",
+      "title": "Varaždin",
+      "content": "Varaždin je grad u Varaždinska županija. Županija: Varaždinska županija.",
+      "tags": [
+        "Varaždin",
+        "varazdin",
+        "Varaždinska županija",
+        "grad"
+      ],
+      "cityId": "varazdin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096854+00:00"
+    },
+    {
+      "id": "city-varazdinske-toplice",
+      "type": "grad",
+      "title": "Varaždinske Toplice",
+      "content": "Varaždinske Toplice je grad u Varaždinska županija. Županija: Varaždinska županija.",
+      "tags": [
+        "Varaždinske Toplice",
+        "varazdinske-toplice",
+        "Varaždinska županija",
+        "grad"
+      ],
+      "cityId": "varazdinske-toplice",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096859+00:00"
+    },
+    {
+      "id": "city-durdevac",
+      "type": "grad",
+      "title": "Đurđevac",
+      "content": "Đurđevac je grad u Koprivničko-križevačka županija. Županija: Koprivničko-križevačka županija.",
+      "tags": [
+        "Đurđevac",
+        "durdevac",
+        "Koprivničko-križevačka županija",
+        "grad"
+      ],
+      "cityId": "durdevac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096863+00:00"
+    },
+    {
+      "id": "city-koprivnica",
+      "type": "grad",
+      "title": "Koprivnica",
+      "content": "Koprivnica je grad u Koprivničko-križevačka županija. Županija: Koprivničko-križevačka županija.",
+      "tags": [
+        "Koprivnica",
+        "koprivnica",
+        "Koprivničko-križevačka županija",
+        "grad"
+      ],
+      "cityId": "koprivnica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096866+00:00"
+    },
+    {
+      "id": "city-krizevci",
+      "type": "grad",
+      "title": "Križevci",
+      "content": "Križevci je grad u Koprivničko-križevačka županija. Županija: Koprivničko-križevačka županija.",
+      "tags": [
+        "Križevci",
+        "krizevci",
+        "Koprivničko-križevačka županija",
+        "grad"
+      ],
+      "cityId": "krizevci",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096869+00:00"
+    },
+    {
+      "id": "city-bjelovar",
+      "type": "grad",
+      "title": "Bjelovar",
+      "content": "Bjelovar je grad u Bjelovarsko-bilogorska županija. Županija: Bjelovarsko-bilogorska županija.",
+      "tags": [
+        "Bjelovar",
+        "bjelovar",
+        "Bjelovarsko-bilogorska županija",
+        "grad"
+      ],
+      "cityId": "bjelovar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096876+00:00"
+    },
+    {
+      "id": "city-cazma",
+      "type": "grad",
+      "title": "Čazma",
+      "content": "Čazma je grad u Bjelovarsko-bilogorska županija. Županija: Bjelovarsko-bilogorska županija.",
+      "tags": [
+        "Čazma",
+        "cazma",
+        "Bjelovarsko-bilogorska županija",
+        "grad"
+      ],
+      "cityId": "cazma",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096880+00:00"
+    },
+    {
+      "id": "city-daruvar",
+      "type": "grad",
+      "title": "Daruvar",
+      "content": "Daruvar je grad u Bjelovarsko-bilogorska županija. Županija: Bjelovarsko-bilogorska županija.",
+      "tags": [
+        "Daruvar",
+        "daruvar",
+        "Bjelovarsko-bilogorska županija",
+        "grad"
+      ],
+      "cityId": "daruvar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096883+00:00"
+    },
+    {
+      "id": "city-garesnica",
+      "type": "grad",
+      "title": "Garešnica",
+      "content": "Garešnica je grad u Bjelovarsko-bilogorska županija. Županija: Bjelovarsko-bilogorska županija.",
+      "tags": [
+        "Garešnica",
+        "garesnica",
+        "Bjelovarsko-bilogorska županija",
+        "grad"
+      ],
+      "cityId": "garesnica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096886+00:00"
+    },
+    {
+      "id": "city-grubisno-polje",
+      "type": "grad",
+      "title": "Grubišno Polje",
+      "content": "Grubišno Polje je grad u Bjelovarsko-bilogorska županija. Županija: Bjelovarsko-bilogorska županija.",
+      "tags": [
+        "Grubišno Polje",
+        "grubisno-polje",
+        "Bjelovarsko-bilogorska županija",
+        "grad"
+      ],
+      "cityId": "grubisno-polje",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096892+00:00"
+    },
+    {
+      "id": "city-bakar",
+      "type": "grad",
+      "title": "Bakar",
+      "content": "Bakar je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Bakar",
+        "bakar",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "bakar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096895+00:00"
+    },
+    {
+      "id": "city-cres",
+      "type": "grad",
+      "title": "Cres",
+      "content": "Cres je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Cres",
+        "cres",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "cres",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096898+00:00"
+    },
+    {
+      "id": "city-crikvenica",
+      "type": "grad",
+      "title": "Crikvenica",
+      "content": "Crikvenica je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Crikvenica",
+        "crikvenica",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "crikvenica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096903+00:00"
+    },
+    {
+      "id": "city-cabar",
+      "type": "grad",
+      "title": "Čabar",
+      "content": "Čabar je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Čabar",
+        "cabar",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "cabar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096906+00:00"
+    },
+    {
+      "id": "city-delnice",
+      "type": "grad",
+      "title": "Delnice",
+      "content": "Delnice je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Delnice",
+        "delnice",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "delnice",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096910+00:00"
+    },
+    {
+      "id": "city-kastav",
+      "type": "grad",
+      "title": "Kastav",
+      "content": "Kastav je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Kastav",
+        "kastav",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "kastav",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096913+00:00"
+    },
+    {
+      "id": "city-kraljevica",
+      "type": "grad",
+      "title": "Kraljevica",
+      "content": "Kraljevica je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Kraljevica",
+        "kraljevica",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "kraljevica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096917+00:00"
+    },
+    {
+      "id": "city-krk",
+      "type": "grad",
+      "title": "Krk",
+      "content": "Krk je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Krk",
+        "krk",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "krk",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096921+00:00"
+    },
+    {
+      "id": "city-mali-losinj",
+      "type": "grad",
+      "title": "Mali Lošinj",
+      "content": "Mali Lošinj je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Mali Lošinj",
+        "mali-losinj",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "mali-losinj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096924+00:00"
+    },
+    {
+      "id": "city-novi-vinodolski",
+      "type": "grad",
+      "title": "Novi Vinodolski",
+      "content": "Novi Vinodolski je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Novi Vinodolski",
+        "novi-vinodolski",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "novi-vinodolski",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096927+00:00"
+    },
+    {
+      "id": "city-opatija",
+      "type": "grad",
+      "title": "Opatija",
+      "content": "Opatija je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Opatija",
+        "opatija",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "opatija",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096931+00:00"
+    },
+    {
+      "id": "city-rab",
+      "type": "grad",
+      "title": "Rab",
+      "content": "Rab je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Rab",
+        "rab",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "rab",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096934+00:00"
+    },
+    {
+      "id": "city-rijeka",
+      "type": "grad",
+      "title": "Rijeka",
+      "content": "Rijeka je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Rijeka",
+        "rijeka",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "rijeka",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096937+00:00"
+    },
+    {
+      "id": "city-vrbovsko",
+      "type": "grad",
+      "title": "Vrbovsko",
+      "content": "Vrbovsko je grad u Primorsko-goranska županija. Županija: Primorsko-goranska županija.",
+      "tags": [
+        "Vrbovsko",
+        "vrbovsko",
+        "Primorsko-goranska županija",
+        "grad"
+      ],
+      "cityId": "vrbovsko",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096941+00:00"
+    },
+    {
+      "id": "city-gospic",
+      "type": "grad",
+      "title": "Gospić",
+      "content": "Gospić je grad u Ličko-senjska županija. Županija: Ličko-senjska županija.",
+      "tags": [
+        "Gospić",
+        "gospic",
+        "Ličko-senjska županija",
+        "grad"
+      ],
+      "cityId": "gospic",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096946+00:00"
+    },
+    {
+      "id": "city-novalja",
+      "type": "grad",
+      "title": "Novalja",
+      "content": "Novalja je grad u Ličko-senjska županija. Županija: Ličko-senjska županija.",
+      "tags": [
+        "Novalja",
+        "novalja",
+        "Ličko-senjska županija",
+        "grad"
+      ],
+      "cityId": "novalja",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096949+00:00"
+    },
+    {
+      "id": "city-otocac",
+      "type": "grad",
+      "title": "Otočac",
+      "content": "Otočac je grad u Ličko-senjska županija. Županija: Ličko-senjska županija.",
+      "tags": [
+        "Otočac",
+        "otocac",
+        "Ličko-senjska županija",
+        "grad"
+      ],
+      "cityId": "otocac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096953+00:00"
+    },
+    {
+      "id": "city-senj",
+      "type": "grad",
+      "title": "Senj",
+      "content": "Senj je grad u Ličko-senjska županija. Županija: Ličko-senjska županija.",
+      "tags": [
+        "Senj",
+        "senj",
+        "Ličko-senjska županija",
+        "grad"
+      ],
+      "cityId": "senj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096956+00:00"
+    },
+    {
+      "id": "city-orahovica",
+      "type": "grad",
+      "title": "Orahovica",
+      "content": "Orahovica je grad u Virovitičko-podravska županija. Županija: Virovitičko-podravska županija.",
+      "tags": [
+        "Orahovica",
+        "orahovica",
+        "Virovitičko-podravska županija",
+        "grad"
+      ],
+      "cityId": "orahovica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096961+00:00"
+    },
+    {
+      "id": "city-slatina",
+      "type": "grad",
+      "title": "Slatina",
+      "content": "Slatina je grad u Virovitičko-podravska županija. Županija: Virovitičko-podravska županija.",
+      "tags": [
+        "Slatina",
+        "slatina",
+        "Virovitičko-podravska županija",
+        "grad"
+      ],
+      "cityId": "slatina",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096964+00:00"
+    },
+    {
+      "id": "city-virovitica",
+      "type": "grad",
+      "title": "Virovitica",
+      "content": "Virovitica je grad u Virovitičko-podravska županija. Županija: Virovitičko-podravska županija.",
+      "tags": [
+        "Virovitica",
+        "virovitica",
+        "Virovitičko-podravska županija",
+        "grad"
+      ],
+      "cityId": "virovitica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096969+00:00"
+    },
+    {
+      "id": "city-kutjevo",
+      "type": "grad",
+      "title": "Kutjevo",
+      "content": "Kutjevo je grad u Požeško-slavonska županija. Županija: Požeško-slavonska županija.",
+      "tags": [
+        "Kutjevo",
+        "kutjevo",
+        "Požeško-slavonska županija",
+        "grad"
+      ],
+      "cityId": "kutjevo",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096973+00:00"
+    },
+    {
+      "id": "city-lipik",
+      "type": "grad",
+      "title": "Lipik",
+      "content": "Lipik je grad u Požeško-slavonska županija. Županija: Požeško-slavonska županija.",
+      "tags": [
+        "Lipik",
+        "lipik",
+        "Požeško-slavonska županija",
+        "grad"
+      ],
+      "cityId": "lipik",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096976+00:00"
+    },
+    {
+      "id": "city-pakrac",
+      "type": "grad",
+      "title": "Pakrac",
+      "content": "Pakrac je grad u Požeško-slavonska županija. Županija: Požeško-slavonska županija.",
+      "tags": [
+        "Pakrac",
+        "pakrac",
+        "Požeško-slavonska županija",
+        "grad"
+      ],
+      "cityId": "pakrac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096979+00:00"
+    },
+    {
+      "id": "city-pleternica",
+      "type": "grad",
+      "title": "Pleternica",
+      "content": "Pleternica je grad u Požeško-slavonska županija. Županija: Požeško-slavonska županija.",
+      "tags": [
+        "Pleternica",
+        "pleternica",
+        "Požeško-slavonska županija",
+        "grad"
+      ],
+      "cityId": "pleternica",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096983+00:00"
+    },
+    {
+      "id": "city-pozega",
+      "type": "grad",
+      "title": "Požega",
+      "content": "Požega je grad u Požeško-slavonska županija. Županija: Požeško-slavonska županija.",
+      "tags": [
+        "Požega",
+        "pozega",
+        "Požeško-slavonska županija",
+        "grad"
+      ],
+      "cityId": "pozega",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096986+00:00"
+    },
+    {
+      "id": "city-nova-gradiska",
+      "type": "grad",
+      "title": "Nova Gradiška",
+      "content": "Nova Gradiška je grad u Brodsko-posavska županija. Županija: Brodsko-posavska županija.",
+      "tags": [
+        "Nova Gradiška",
+        "nova-gradiska",
+        "Brodsko-posavska županija",
+        "grad"
+      ],
+      "cityId": "nova-gradiska",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096989+00:00"
+    },
+    {
+      "id": "city-slavonski-brod",
+      "type": "grad",
+      "title": "Slavonski Brod",
+      "content": "Slavonski Brod je grad u Brodsko-posavska županija. Županija: Brodsko-posavska županija.",
+      "tags": [
+        "Slavonski Brod",
+        "slavonski-brod",
+        "Brodsko-posavska županija",
+        "grad"
+      ],
+      "cityId": "slavonski-brod",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096993+00:00"
+    },
+    {
+      "id": "city-benkovac",
+      "type": "grad",
+      "title": "Benkovac",
+      "content": "Benkovac je grad u Zadarska županija. Županija: Zadarska županija.",
+      "tags": [
+        "Benkovac",
+        "benkovac",
+        "Zadarska županija",
+        "grad"
+      ],
+      "cityId": "benkovac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.096996+00:00"
+    },
+    {
+      "id": "city-biograd-na-moru",
+      "type": "grad",
+      "title": "Biograd na Moru",
+      "content": "Biograd na Moru je grad u Zadarska županija. Županija: Zadarska županija.",
+      "tags": [
+        "Biograd na Moru",
+        "biograd-na-moru",
+        "Zadarska županija",
+        "grad"
+      ],
+      "cityId": "biograd-na-moru",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097002+00:00"
+    },
+    {
+      "id": "city-nin",
+      "type": "grad",
+      "title": "Nin",
+      "content": "Nin je grad u Zadarska županija. Županija: Zadarska županija.",
+      "tags": [
+        "Nin",
+        "nin",
+        "Zadarska županija",
+        "grad"
+      ],
+      "cityId": "nin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097005+00:00"
+    },
+    {
+      "id": "city-obrovac",
+      "type": "grad",
+      "title": "Obrovac",
+      "content": "Obrovac je grad u Zadarska županija. Županija: Zadarska županija.",
+      "tags": [
+        "Obrovac",
+        "obrovac",
+        "Zadarska županija",
+        "grad"
+      ],
+      "cityId": "obrovac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097009+00:00"
+    },
+    {
+      "id": "city-pag",
+      "type": "grad",
+      "title": "Pag",
+      "content": "Pag je grad u Zadarska županija. Županija: Zadarska županija.",
+      "tags": [
+        "Pag",
+        "pag",
+        "Zadarska županija",
+        "grad"
+      ],
+      "cityId": "pag",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097012+00:00"
+    },
+    {
+      "id": "city-zadar",
+      "type": "grad",
+      "title": "Zadar",
+      "content": "Zadar je grad u Zadarska županija. Županija: Zadarska županija.",
+      "tags": [
+        "Zadar",
+        "zadar",
+        "Zadarska županija",
+        "grad"
+      ],
+      "cityId": "zadar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097015+00:00"
+    },
+    {
+      "id": "city-beli-manastir",
+      "type": "grad",
+      "title": "Beli Manastir",
+      "content": "Beli Manastir je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Beli Manastir",
+        "beli-manastir",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "beli-manastir",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097025+00:00"
+    },
+    {
+      "id": "city-belisce",
+      "type": "grad",
+      "title": "Belišće",
+      "content": "Belišće je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Belišće",
+        "belisce",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "belisce",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097029+00:00"
+    },
+    {
+      "id": "city-dakovo",
+      "type": "grad",
+      "title": "Đakovo",
+      "content": "Đakovo je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Đakovo",
+        "dakovo",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "dakovo",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097033+00:00"
+    },
+    {
+      "id": "city-donji-miholjac",
+      "type": "grad",
+      "title": "Donji Miholjac",
+      "content": "Donji Miholjac je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Donji Miholjac",
+        "donji-miholjac",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "donji-miholjac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097036+00:00"
+    },
+    {
+      "id": "city-nasice",
+      "type": "grad",
+      "title": "Našice",
+      "content": "Našice je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Našice",
+        "nasice",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "nasice",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097041+00:00"
+    },
+    {
+      "id": "city-osijek",
+      "type": "grad",
+      "title": "Osijek",
+      "content": "Osijek je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Osijek",
+        "osijek",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "osijek",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097044+00:00"
+    },
+    {
+      "id": "city-valpovo",
+      "type": "grad",
+      "title": "Valpovo",
+      "content": "Valpovo je grad u Osječko-baranjska županija. Županija: Osječko-baranjska županija.",
+      "tags": [
+        "Valpovo",
+        "valpovo",
+        "Osječko-baranjska županija",
+        "grad"
+      ],
+      "cityId": "valpovo",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097049+00:00"
+    },
+    {
+      "id": "city-drnis",
+      "type": "grad",
+      "title": "Drniš",
+      "content": "Drniš je grad u Šibensko-kninska županija. Županija: Šibensko-kninska županija.",
+      "tags": [
+        "Drniš",
+        "drnis",
+        "Šibensko-kninska županija",
+        "grad"
+      ],
+      "cityId": "drnis",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097055+00:00"
+    },
+    {
+      "id": "city-knin",
+      "type": "grad",
+      "title": "Knin",
+      "content": "Knin je grad u Šibensko-kninska županija. Županija: Šibensko-kninska županija.",
+      "tags": [
+        "Knin",
+        "knin",
+        "Šibensko-kninska županija",
+        "grad"
+      ],
+      "cityId": "knin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097058+00:00"
+    },
+    {
+      "id": "city-skradin",
+      "type": "grad",
+      "title": "Skradin",
+      "content": "Skradin je grad u Šibensko-kninska županija. Županija: Šibensko-kninska županija.",
+      "tags": [
+        "Skradin",
+        "skradin",
+        "Šibensko-kninska županija",
+        "grad"
+      ],
+      "cityId": "skradin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097061+00:00"
+    },
+    {
+      "id": "city-sibenik",
+      "type": "grad",
+      "title": "Šibenik",
+      "content": "Šibenik je grad u Šibensko-kninska županija. Županija: Šibensko-kninska županija.",
+      "tags": [
+        "Šibenik",
+        "sibenik",
+        "Šibensko-kninska županija",
+        "grad"
+      ],
+      "cityId": "sibenik",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097064+00:00"
+    },
+    {
+      "id": "city-vodice",
+      "type": "grad",
+      "title": "Vodice",
+      "content": "Vodice je grad u Šibensko-kninska županija. Županija: Šibensko-kninska županija.",
+      "tags": [
+        "Vodice",
+        "vodice",
+        "Šibensko-kninska županija",
+        "grad"
+      ],
+      "cityId": "vodice",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097068+00:00"
+    },
+    {
+      "id": "city-ilok",
+      "type": "grad",
+      "title": "Ilok",
+      "content": "Ilok je grad u Vukovarsko-srijemska županija. Županija: Vukovarsko-srijemska županija.",
+      "tags": [
+        "Ilok",
+        "ilok",
+        "Vukovarsko-srijemska županija",
+        "grad"
+      ],
+      "cityId": "ilok",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097071+00:00"
+    },
+    {
+      "id": "city-otok",
+      "type": "grad",
+      "title": "Otok",
+      "content": "Otok je grad u Vukovarsko-srijemska županija. Županija: Vukovarsko-srijemska županija.",
+      "tags": [
+        "Otok",
+        "otok",
+        "Vukovarsko-srijemska županija",
+        "grad"
+      ],
+      "cityId": "otok",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097076+00:00"
+    },
+    {
+      "id": "city-vinkovci",
+      "type": "grad",
+      "title": "Vinkovci",
+      "content": "Vinkovci je grad u Vukovarsko-srijemska županija. Županija: Vukovarsko-srijemska županija.",
+      "tags": [
+        "Vinkovci",
+        "vinkovci",
+        "Vukovarsko-srijemska županija",
+        "grad"
+      ],
+      "cityId": "vinkovci",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097146+00:00"
+    },
+    {
+      "id": "city-vukovar",
+      "type": "grad",
+      "title": "Vukovar",
+      "content": "Vukovar je grad u Vukovarsko-srijemska županija. Županija: Vukovarsko-srijemska županija.",
+      "tags": [
+        "Vukovar",
+        "vukovar",
+        "Vukovarsko-srijemska županija",
+        "grad"
+      ],
+      "cityId": "vukovar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097150+00:00"
+    },
+    {
+      "id": "city-zupanja",
+      "type": "grad",
+      "title": "Županja",
+      "content": "Županja je grad u Vukovarsko-srijemska županija. Županija: Vukovarsko-srijemska županija.",
+      "tags": [
+        "Županja",
+        "zupanja",
+        "Vukovarsko-srijemska županija",
+        "grad"
+      ],
+      "cityId": "zupanja",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097153+00:00"
+    },
+    {
+      "id": "city-hvar",
+      "type": "grad",
+      "title": "Hvar",
+      "content": "Hvar je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Hvar",
+        "hvar",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "hvar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097157+00:00"
+    },
+    {
+      "id": "city-imotski",
+      "type": "grad",
+      "title": "Imotski",
+      "content": "Imotski je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Imotski",
+        "imotski",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "imotski",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097160+00:00"
+    },
+    {
+      "id": "city-kastela",
+      "type": "grad",
+      "title": "Kaštela",
+      "content": "Kaštela je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Kaštela",
+        "kastela",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "kastela",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097165+00:00"
+    },
+    {
+      "id": "city-komiza",
+      "type": "grad",
+      "title": "Komiža",
+      "content": "Komiža je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Komiža",
+        "komiza",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "komiza",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097168+00:00"
+    },
+    {
+      "id": "city-makarska",
+      "type": "grad",
+      "title": "Makarska",
+      "content": "Makarska je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Makarska",
+        "makarska",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "makarska",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097172+00:00"
+    },
+    {
+      "id": "city-omis",
+      "type": "grad",
+      "title": "Omiš",
+      "content": "Omiš je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Omiš",
+        "omis",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "omis",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097175+00:00"
+    },
+    {
+      "id": "city-sinj",
+      "type": "grad",
+      "title": "Sinj",
+      "content": "Sinj je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Sinj",
+        "sinj",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "sinj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097178+00:00"
+    },
+    {
+      "id": "city-solin",
+      "type": "grad",
+      "title": "Solin",
+      "content": "Solin je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Solin",
+        "solin",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "solin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097182+00:00"
+    },
+    {
+      "id": "city-split",
+      "type": "grad",
+      "title": "Split",
+      "content": "Split je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Split",
+        "split",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "split",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097185+00:00"
+    },
+    {
+      "id": "city-stari-grad",
+      "type": "grad",
+      "title": "Stari Grad",
+      "content": "Stari Grad je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Stari Grad",
+        "stari-grad",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "stari-grad",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097188+00:00"
+    },
+    {
+      "id": "city-supetar",
+      "type": "grad",
+      "title": "Supetar",
+      "content": "Supetar je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Supetar",
+        "supetar",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "supetar",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097193+00:00"
+    },
+    {
+      "id": "city-trogir",
+      "type": "grad",
+      "title": "Trogir",
+      "content": "Trogir je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Trogir",
+        "trogir",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "trogir",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097196+00:00"
+    },
+    {
+      "id": "city-trilj",
+      "type": "grad",
+      "title": "Trilj",
+      "content": "Trilj je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Trilj",
+        "trilj",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "trilj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097200+00:00"
+    },
+    {
+      "id": "city-vis",
+      "type": "grad",
+      "title": "Vis",
+      "content": "Vis je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Vis",
+        "vis",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "vis",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097203+00:00"
+    },
+    {
+      "id": "city-vrlika",
+      "type": "grad",
+      "title": "Vrlika",
+      "content": "Vrlika je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Vrlika",
+        "vrlika",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "vrlika",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097208+00:00"
+    },
+    {
+      "id": "city-vrgorac",
+      "type": "grad",
+      "title": "Vrgorac",
+      "content": "Vrgorac je grad u Splitsko-dalmatinska županija. Županija: Splitsko-dalmatinska županija.",
+      "tags": [
+        "Vrgorac",
+        "vrgorac",
+        "Splitsko-dalmatinska županija",
+        "grad"
+      ],
+      "cityId": "vrgorac",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097211+00:00"
+    },
+    {
+      "id": "city-buje",
+      "type": "grad",
+      "title": "Buje",
+      "content": "Buje je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Buje",
+        "buje",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "buje",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097214+00:00"
+    },
+    {
+      "id": "city-buzet",
+      "type": "grad",
+      "title": "Buzet",
+      "content": "Buzet je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Buzet",
+        "buzet",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "buzet",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097219+00:00"
+    },
+    {
+      "id": "city-labin",
+      "type": "grad",
+      "title": "Labin",
+      "content": "Labin je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Labin",
+        "labin",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "labin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097222+00:00"
+    },
+    {
+      "id": "city-novigrad",
+      "type": "grad",
+      "title": "Novigrad",
+      "content": "Novigrad je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Novigrad",
+        "novigrad",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "novigrad",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097227+00:00"
+    },
+    {
+      "id": "city-pazin",
+      "type": "grad",
+      "title": "Pazin",
+      "content": "Pazin je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Pazin",
+        "pazin",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "pazin",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097230+00:00"
+    },
+    {
+      "id": "city-porec",
+      "type": "grad",
+      "title": "Poreč",
+      "content": "Poreč je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Poreč",
+        "porec",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "porec",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097233+00:00"
+    },
+    {
+      "id": "city-pula",
+      "type": "grad",
+      "title": "Pula",
+      "content": "Pula je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Pula",
+        "pula",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "pula",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097236+00:00"
+    },
+    {
+      "id": "city-rovinj",
+      "type": "grad",
+      "title": "Rovinj",
+      "content": "Rovinj je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Rovinj",
+        "rovinj",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "rovinj",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097239+00:00"
+    },
+    {
+      "id": "city-umag",
+      "type": "grad",
+      "title": "Umag",
+      "content": "Umag je grad u Istarska županija. Županija: Istarska županija.",
+      "tags": [
+        "Umag",
+        "umag",
+        "Istarska županija",
+        "grad"
+      ],
+      "cityId": "umag",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097242+00:00"
+    },
+    {
+      "id": "city-dubrovnik",
+      "type": "grad",
+      "title": "Dubrovnik",
+      "content": "Dubrovnik je grad u Dubrovačko-neretvanska županija. Županija: Dubrovačko-neretvanska županija.",
+      "tags": [
+        "Dubrovnik",
+        "dubrovnik",
+        "Dubrovačko-neretvanska županija",
+        "grad"
+      ],
+      "cityId": "dubrovnik",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097245+00:00"
+    },
+    {
+      "id": "city-korcula",
+      "type": "grad",
+      "title": "Korčula",
+      "content": "Korčula je grad u Dubrovačko-neretvanska županija. Županija: Dubrovačko-neretvanska županija.",
+      "tags": [
+        "Korčula",
+        "korcula",
+        "Dubrovačko-neretvanska županija",
+        "grad"
+      ],
+      "cityId": "korcula",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097250+00:00"
+    },
+    {
+      "id": "city-metkovic",
+      "type": "grad",
+      "title": "Metković",
+      "content": "Metković je grad u Dubrovačko-neretvanska županija. Županija: Dubrovačko-neretvanska županija.",
+      "tags": [
+        "Metković",
+        "metkovic",
+        "Dubrovačko-neretvanska županija",
+        "grad"
+      ],
+      "cityId": "metkovic",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097254+00:00"
+    },
+    {
+      "id": "city-opuzen",
+      "type": "grad",
+      "title": "Opuzen",
+      "content": "Opuzen je grad u Dubrovačko-neretvanska županija. Županija: Dubrovačko-neretvanska županija.",
+      "tags": [
+        "Opuzen",
+        "opuzen",
+        "Dubrovačko-neretvanska županija",
+        "grad"
+      ],
+      "cityId": "opuzen",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097257+00:00"
+    },
+    {
+      "id": "city-ploce",
+      "type": "grad",
+      "title": "Ploče",
+      "content": "Ploče je grad u Dubrovačko-neretvanska županija. Županija: Dubrovačko-neretvanska županija.",
+      "tags": [
+        "Ploče",
+        "ploce",
+        "Dubrovačko-neretvanska županija",
+        "grad"
+      ],
+      "cityId": "ploce",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097261+00:00"
+    },
+    {
+      "id": "city-cakovec",
+      "type": "grad",
+      "title": "Čakovec",
+      "content": "Čakovec je grad u Međimurska županija. Županija: Međimurska županija.",
+      "tags": [
+        "Čakovec",
+        "cakovec",
+        "Međimurska županija",
+        "grad"
+      ],
+      "cityId": "cakovec",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097264+00:00"
+    },
+    {
+      "id": "city-mursko-sredisce",
+      "type": "grad",
+      "title": "Mursko Središće",
+      "content": "Mursko Središće je grad u Međimurska županija. Županija: Međimurska županija.",
+      "tags": [
+        "Mursko Središće",
+        "mursko-sredisce",
+        "Međimurska županija",
+        "grad"
+      ],
+      "cityId": "mursko-sredisce",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097269+00:00"
+    },
+    {
+      "id": "city-prelog",
+      "type": "grad",
+      "title": "Prelog",
+      "content": "Prelog je grad u Međimurska županija. Županija: Međimurska županija.",
+      "tags": [
+        "Prelog",
+        "prelog",
+        "Međimurska županija",
+        "grad"
+      ],
+      "cityId": "prelog",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097272+00:00"
+    },
+    {
+      "id": "city-zagreb",
+      "type": "grad",
+      "title": "Zagreb",
+      "content": "Zagreb je grad u Grad Zagreb. Županija: Grad Zagreb.",
+      "tags": [
+        "Zagreb",
+        "zagreb",
+        "Grad Zagreb",
+        "grad"
+      ],
+      "cityId": "zagreb",
+      "source": "mpudt-jls",
+      "sourceTitle": "Kanonski registar gradova PatriaSoul",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097275+00:00"
+    },
+    {
+      "id": "quiz-p001",
+      "type": "kviz",
+      "title": "Koji se hrvatski vladar tradicionalno smatra prvim hrvatskim kraljem?",
+      "content": "Pitanje: Koji se hrvatski vladar tradicionalno smatra prvim hrvatskim kraljem? Odgovori: Tomislav | Mislav | Krešimir III. | Dmitar Zvonimir. Točan odgovor: Tomislav.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097719+00:00"
+    },
+    {
+      "id": "quiz-p002",
+      "type": "kviz",
+      "title": "Koje je godine Hrvatska postala članicom Ujedinjenih naroda?",
+      "content": "Pitanje: Koje je godine Hrvatska postala članicom Ujedinjenih naroda? Odgovori: 1991. | 1992. | 1995. | 2000.. Točan odgovor: 1992..",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097737+00:00"
+    },
+    {
+      "id": "quiz-p003",
+      "type": "kviz",
+      "title": "Koji je hrvatski ban povezan s revolucionarnom 1848. godinom?",
+      "content": "Pitanje: Koji je hrvatski ban povezan s revolucionarnom 1848. godinom? Odgovori: Ivan Mažuranić | Josip Jelačić | Petar Berislavić | Nikola Šubić Zrinski. Točan odgovor: Josip Jelačić.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097748+00:00"
+    },
+    {
+      "id": "quiz-p004",
+      "type": "kviz",
+      "title": "Tko je branio Siget od Osmanlija 1566. godine?",
+      "content": "Pitanje: Tko je branio Siget od Osmanlija 1566. godine? Odgovori: Petar Zrinski | Nikola Šubić Zrinski | Fran Krsto Frankopan | Ivan Drašković. Točan odgovor: Nikola Šubić Zrinski.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097758+00:00"
+    },
+    {
+      "id": "quiz-p005",
+      "type": "kviz",
+      "title": "Koje je godine osnovano Sveučilište u Zagrebu?",
+      "content": "Pitanje: Koje je godine osnovano Sveučilište u Zagrebu? Odgovori: 1669. | 1699. | 1776. | 1874.. Točan odgovor: 1669..",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097764+00:00"
+    },
+    {
+      "id": "quiz-p006",
+      "type": "kviz",
+      "title": "Koji je grad bio važno središte hrvatske države u ranom srednjem vijeku?",
+      "content": "Pitanje: Koji je grad bio važno središte hrvatske države u ranom srednjem vijeku? Odgovori: Knin | Pula | Rijeka | Varaždin. Točan odgovor: Knin.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097771+00:00"
+    },
+    {
+      "id": "quiz-p007",
+      "type": "kviz",
+      "title": "Kojeg se datuma obilježava Dan državnosti Republike Hrvatske?",
+      "content": "Pitanje: Kojeg se datuma obilježava Dan državnosti Republike Hrvatske? Odgovori: 25. lipnja | 30. svibnja | 5. kolovoza | 8. listopada. Točan odgovor: 30. svibnja.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097779+00:00"
+    },
+    {
+      "id": "quiz-p008",
+      "type": "kviz",
+      "title": "Koji se događaj dogodio 25. lipnja 1991.?",
+      "content": "Pitanje: Koji se događaj dogodio 25. lipnja 1991.? Odgovori: Proglašena je hrvatska neovisnost | Operacija Oluja | Međunarodno priznanje Hrvatske | Mirna reintegracija Podunavlja. Točan odgovor: Proglašena je hrvatska neovisnost.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097789+00:00"
+    },
+    {
+      "id": "quiz-p009",
+      "type": "kviz",
+      "title": "Koji je hrvatski sabor 1848. ukinuo kmetstvo?",
+      "content": "Pitanje: Koji je hrvatski sabor 1848. ukinuo kmetstvo? Odgovori: Hrvatski sabor | Carevinsko vijeće | Dalmatinski sabor | Banski stol. Točan odgovor: Hrvatski sabor.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097797+00:00"
+    },
+    {
+      "id": "quiz-p010",
+      "type": "kviz",
+      "title": "Koji se dokument smatra jednim od najvažnijih ranih hrvatskih glagoljskih spomenika?",
+      "content": "Pitanje: Koji se dokument smatra jednim od najvažnijih ranih hrvatskih glagoljskih spomenika? Odgovori: Bašćanska ploča | Vinodolski zakonik | Povaljska listina | Istarski razvod. Točan odgovor: Bašćanska ploča.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097805+00:00"
+    },
+    {
+      "id": "quiz-p011",
+      "type": "kviz",
+      "title": "Koji je hrvatski kralj vladao u drugoj polovici 11. stoljeća?",
+      "content": "Pitanje: Koji je hrvatski kralj vladao u drugoj polovici 11. stoljeća? Odgovori: Dmitar Zvonimir | Tomislav | Mislav | Krešimir III.. Točan odgovor: Dmitar Zvonimir.",
+      "tags": [
+        "kraljevi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097812+00:00"
+    },
+    {
+      "id": "quiz-p012",
+      "type": "kviz",
+      "title": "Koji se vladar povezuje s godinom 925. i naslovom kralja u papinskom pismu?",
+      "content": "Pitanje: Koji se vladar povezuje s godinom 925. i naslovom kralja u papinskom pismu? Odgovori: Tomislav | Dmitar Zvonimir | Petar Krešimir IV. | Stjepan Držislav. Točan odgovor: Tomislav.",
+      "tags": [
+        "kraljevi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097823+00:00"
+    },
+    {
+      "id": "quiz-p013",
+      "type": "kviz",
+      "title": "Koji je hrvatski kralj poznat kao Petar Krešimir IV.?",
+      "content": "Pitanje: Koji je hrvatski kralj poznat kao Petar Krešimir IV.? Odgovori: Petar Krešimir IV. | Petar Svačić | Dmitar Zvonimir | Stjepan Držislav. Točan odgovor: Petar Krešimir IV..",
+      "tags": [
+        "kraljevi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097831+00:00"
+    },
+    {
+      "id": "quiz-p014",
+      "type": "kviz",
+      "title": "Koji je vladar prema hrvatskoj historiografiji naslijedio Tomislava?",
+      "content": "Pitanje: Koji je vladar prema hrvatskoj historiografiji naslijedio Tomislava? Odgovori: Trpimir II. | Dmitar Zvonimir | Petar Krešimir IV. | Mihajlo Krešimir II.. Točan odgovor: Trpimir II..",
+      "tags": [
+        "kraljevi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097841+00:00"
+    },
+    {
+      "id": "quiz-p015",
+      "type": "kviz",
+      "title": "Koji je hrvatski kralj posljednji iz dinastije Trpimirovića?",
+      "content": "Pitanje: Koji je hrvatski kralj posljednji iz dinastije Trpimirovića? Odgovori: Stjepan II. | Tomislav | Petar Krešimir IV. | Dmitar Zvonimir. Točan odgovor: Stjepan II..",
+      "tags": [
+        "kraljevi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097848+00:00"
+    },
+    {
+      "id": "quiz-p016",
+      "type": "kviz",
+      "title": "Koja se vojno-redarstvena operacija iz kolovoza 1995. obilježava 5. kolovoza?",
+      "content": "Pitanje: Koja se vojno-redarstvena operacija iz kolovoza 1995. obilježava 5. kolovoza? Odgovori: Oluja | Bljesak | Maslenica | Medački džep. Točan odgovor: Oluja.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097855+00:00"
+    },
+    {
+      "id": "quiz-p017",
+      "type": "kviz",
+      "title": "Koja je operacija provedena u svibnju 1995.?",
+      "content": "Pitanje: Koja je operacija provedena u svibnju 1995.? Odgovori: Bljesak | Oluja | Maslenica | Medački džep. Točan odgovor: Bljesak.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097861+00:00"
+    },
+    {
+      "id": "quiz-p018",
+      "type": "kviz",
+      "title": "Koji je grad simbol otpora i obrane Hrvatske 1991. godine?",
+      "content": "Pitanje: Koji je grad simbol otpora i obrane Hrvatske 1991. godine? Odgovori: Vukovar | Pula | Varaždin | Dubrovnik. Točan odgovor: Vukovar.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097876+00:00"
+    },
+    {
+      "id": "quiz-p019",
+      "type": "kviz",
+      "title": "Koji je datum Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja?",
+      "content": "Pitanje: Koji je datum Dana pobjede i domovinske zahvalnosti i Dana hrvatskih branitelja? Odgovori: 5. kolovoza | 30. svibnja | 25. lipnja | 8. listopada. Točan odgovor: 5. kolovoza.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097884+00:00"
+    },
+    {
+      "id": "quiz-p020",
+      "type": "kviz",
+      "title": "Koji je proces završio mirnom reintegracijom hrvatskog Podunavlja?",
+      "content": "Pitanje: Koji je proces završio mirnom reintegracijom hrvatskog Podunavlja? Odgovori: Mirna reintegracija | Operacija Bljesak | Operacija Oluja | Zagrebački sporazum. Točan odgovor: Mirna reintegracija.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097892+00:00"
+    },
+    {
+      "id": "quiz-p021",
+      "type": "kviz",
+      "title": "Koji je najviši vrh Hrvatske?",
+      "content": "Pitanje: Koji je najviši vrh Hrvatske? Odgovori: Sinjal na Dinari | Sveto brdo | Snježnik | Risnjak. Točan odgovor: Sinjal na Dinari.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097899+00:00"
+    },
+    {
+      "id": "quiz-p022",
+      "type": "kviz",
+      "title": "Koja je najduža rijeka koja cijelim tokom protječe kroz Hrvatsku?",
+      "content": "Pitanje: Koja je najduža rijeka koja cijelim tokom protječe kroz Hrvatsku? Odgovori: Kupa | Cetina | Korana | Mrežnica. Točan odgovor: Kupa.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097905+00:00"
+    },
+    {
+      "id": "quiz-p023",
+      "type": "kviz",
+      "title": "Koje je najveće hrvatsko jezero po površini?",
+      "content": "Pitanje: Koje je najveće hrvatsko jezero po površini? Odgovori: Vransko jezero | Prokljansko jezero | Bajer | Lokvarsko jezero. Točan odgovor: Vransko jezero.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097913+00:00"
+    },
+    {
+      "id": "quiz-p024",
+      "type": "kviz",
+      "title": "Koji je najveći hrvatski otok po površini?",
+      "content": "Pitanje: Koji je najveći hrvatski otok po površini? Odgovori: Cres | Krk | Brač | Hvar. Točan odgovor: Cres.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097919+00:00"
+    },
+    {
+      "id": "quiz-p025",
+      "type": "kviz",
+      "title": "Koji nacionalni park čine brojna jezera povezana slapovima?",
+      "content": "Pitanje: Koji nacionalni park čine brojna jezera povezana slapovima? Odgovori: Plitvička jezera | Risnjak | Paklenica | Brijuni. Točan odgovor: Plitvička jezera.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097926+00:00"
+    },
+    {
+      "id": "quiz-p026",
+      "type": "kviz",
+      "title": "U kojem se gradu nalazi Dioklecijanova palača?",
+      "content": "Pitanje: U kojem se gradu nalazi Dioklecijanova palača? Odgovori: Split | Dubrovnik | Zadar | Šibenik. Točan odgovor: Split.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097932+00:00"
+    },
+    {
+      "id": "quiz-p027",
+      "type": "kviz",
+      "title": "Koji je hrvatski grad poznat po Stradunu?",
+      "content": "Pitanje: Koji je hrvatski grad poznat po Stradunu? Odgovori: Dubrovnik | Trogir | Zadar | Pula. Točan odgovor: Dubrovnik.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097938+00:00"
+    },
+    {
+      "id": "quiz-p028",
+      "type": "kviz",
+      "title": "U kojem se gradu nalazi crkva sv. Donata?",
+      "content": "Pitanje: U kojem se gradu nalazi crkva sv. Donata? Odgovori: Zadar | Split | Poreč | Šibenik. Točan odgovor: Zadar.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097944+00:00"
+    },
+    {
+      "id": "quiz-p029",
+      "type": "kviz",
+      "title": "Koji je grad poznat po Areni iz rimskog doba?",
+      "content": "Pitanje: Koji je grad poznat po Areni iz rimskog doba? Odgovori: Pula | Rijeka | Osijek | Varaždin. Točan odgovor: Pula.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097951+00:00"
+    },
+    {
+      "id": "quiz-p030",
+      "type": "kviz",
+      "title": "Koji je hrvatski grad poznat po katedrali sv. Jakova koja je na UNESCO-ovu popisu?",
+      "content": "Pitanje: Koji je hrvatski grad poznat po katedrali sv. Jakova koja je na UNESCO-ovu popisu? Odgovori: Šibenik | Zagreb | Karlovac | Sisak. Točan odgovor: Šibenik.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097959+00:00"
+    },
+    {
+      "id": "quiz-p031",
+      "type": "kviz",
+      "title": "Koje je pismo posebno povezano s hrvatskom srednjovjekovnom baštinom?",
+      "content": "Pitanje: Koje je pismo posebno povezano s hrvatskom srednjovjekovnom baštinom? Odgovori: Glagoljica | Runica | Grčko pismo | Arapsko pismo. Točan odgovor: Glagoljica.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097966+00:00"
+    },
+    {
+      "id": "quiz-p032",
+      "type": "kviz",
+      "title": "Gdje se nalazi Bašćanska ploča?",
+      "content": "Pitanje: Gdje se nalazi Bašćanska ploča? Odgovori: Jurandvor na Krku | Trogir | Nin | Knin. Točan odgovor: Jurandvor na Krku.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097972+00:00"
+    },
+    {
+      "id": "quiz-p033",
+      "type": "kviz",
+      "title": "Koji je hrvatski grad povijesno središte dubrovačke Republike?",
+      "content": "Pitanje: Koji je hrvatski grad povijesno središte dubrovačke Republike? Odgovori: Dubrovnik | Zagreb | Split | Osijek. Točan odgovor: Dubrovnik.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097980+00:00"
+    },
+    {
+      "id": "quiz-p034",
+      "type": "kviz",
+      "title": "Koji je grad poznat po Eufrazijevoj bazilici?",
+      "content": "Pitanje: Koji je grad poznat po Eufrazijevoj bazilici? Odgovori: Poreč | Rovinj | Umag | Pula. Točan odgovor: Poreč.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097990+00:00"
+    },
+    {
+      "id": "quiz-p035",
+      "type": "kviz",
+      "title": "Koja je tradicionalna viteška igra povezana sa Sinjem?",
+      "content": "Pitanje: Koja je tradicionalna viteška igra povezana sa Sinjem? Odgovori: Sinjska alka | Moreška | Trka na prstenac | Kumpanija. Točan odgovor: Sinjska alka.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.097997+00:00"
+    },
+    {
+      "id": "quiz-p036",
+      "type": "kviz",
+      "title": "Kako se u katoličkoj tradiciji naziva blagdan Presvetog Tijela i Krvi Kristove?",
+      "content": "Pitanje: Kako se u katoličkoj tradiciji naziva blagdan Presvetog Tijela i Krvi Kristove? Odgovori: Tijelovo | Bogojavljenje | Blagovijest | Svi sveti. Točan odgovor: Tijelovo.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098005+00:00"
+    },
+    {
+      "id": "quiz-p037",
+      "type": "kviz",
+      "title": "Koje je hrvatsko marijansko svetište poznato po crkvi na otvorenom i velikom hodočašću?",
+      "content": "Pitanje: Koje je hrvatsko marijansko svetište poznato po crkvi na otvorenom i velikom hodočašću? Odgovori: Marija Bistrica | Trsat | Sinj | Vepric. Točan odgovor: Marija Bistrica.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098011+00:00"
+    },
+    {
+      "id": "quiz-p038",
+      "type": "kviz",
+      "title": "Koje je poznato svetište u Rijeci povezano s čudotvornom slikom Majke Božje?",
+      "content": "Pitanje: Koje je poznato svetište u Rijeci povezano s čudotvornom slikom Majke Božje? Odgovori: Trsat | Marija Bistrica | Aljmaš | Ludbreg. Točan odgovor: Trsat.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098018+00:00"
+    },
+    {
+      "id": "quiz-p039",
+      "type": "kviz",
+      "title": "Koji je svetac zaštitnik grada Dubrovnika?",
+      "content": "Pitanje: Koji je svetac zaštitnik grada Dubrovnika? Odgovori: Sveti Vlaho | Sveti Duje | Sveti Marko | Sveti Donat. Točan odgovor: Sveti Vlaho.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098024+00:00"
+    },
+    {
+      "id": "quiz-p040",
+      "type": "kviz",
+      "title": "Koji je svetac zaštitnik Splita?",
+      "content": "Pitanje: Koji je svetac zaštitnik Splita? Odgovori: Sveti Duje | Sveti Vlaho | Sveti Josip | Sveti Juraj. Točan odgovor: Sveti Duje.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098031+00:00"
+    },
+    {
+      "id": "quiz-p041",
+      "type": "kviz",
+      "title": "Tko je napisao roman „U registraturi“?",
+      "content": "Pitanje: Tko je napisao roman „U registraturi“? Odgovori: Ante Kovačić | August Šenoa | Miroslav Krleža | Vjenceslav Novak. Točan odgovor: Ante Kovačić.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098038+00:00"
+    },
+    {
+      "id": "quiz-p042",
+      "type": "kviz",
+      "title": "Tko je autor „Judite“?",
+      "content": "Pitanje: Tko je autor „Judite“? Odgovori: Marko Marulić | Marin Držić | Ivan Gundulić | Petar Hektorović. Točan odgovor: Marko Marulić.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098045+00:00"
+    },
+    {
+      "id": "quiz-p043",
+      "type": "kviz",
+      "title": "Tko je napisao „Planine“?",
+      "content": "Pitanje: Tko je napisao „Planine“? Odgovori: Petar Zoranić | Marko Marulić | Hanibal Lucić | Marin Držić. Točan odgovor: Petar Zoranić.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098054+00:00"
+    },
+    {
+      "id": "quiz-p044",
+      "type": "kviz",
+      "title": "Koje je djelo napisao Marin Držić?",
+      "content": "Pitanje: Koje je djelo napisao Marin Držić? Odgovori: Dundo Maroje | Judita | Ribanje i ribarsko prigovaranje | Planine. Točan odgovor: Dundo Maroje.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098062+00:00"
+    },
+    {
+      "id": "quiz-p045",
+      "type": "kviz",
+      "title": "Koji je hrvatski književnik napisao „Gospodu Glembajeve“?",
+      "content": "Pitanje: Koji je hrvatski književnik napisao „Gospodu Glembajeve“? Odgovori: Miroslav Krleža | August Šenoa | Tin Ujević | Antun Gustav Matoš. Točan odgovor: Miroslav Krleža.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098069+00:00"
+    },
+    {
+      "id": "quiz-p046",
+      "type": "kviz",
+      "title": "Koji je oblik višeglasnog pjevanja posebno povezan s dalmatinskom tradicijom?",
+      "content": "Pitanje: Koji je oblik višeglasnog pjevanja posebno povezan s dalmatinskom tradicijom? Odgovori: Klapsko pjevanje | Bećarac | Ojkanje | Ganga. Točan odgovor: Klapsko pjevanje.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098076+00:00"
+    },
+    {
+      "id": "quiz-p047",
+      "type": "kviz",
+      "title": "Koji je oblik tradicijskog pjevanja povezan sa Slavonijom i Baranjom?",
+      "content": "Pitanje: Koji je oblik tradicijskog pjevanja povezan sa Slavonijom i Baranjom? Odgovori: Bećarac | Klapsko pjevanje | Ganga | Ojkanje. Točan odgovor: Bećarac.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098085+00:00"
+    },
+    {
+      "id": "quiz-p048",
+      "type": "kviz",
+      "title": "Koji je hrvatski skladatelj napisao operu „Nikola Šubić Zrinjski“?",
+      "content": "Pitanje: Koji je hrvatski skladatelj napisao operu „Nikola Šubić Zrinjski“? Odgovori: Ivan pl. Zajc | Vatroslav Lisinski | Jakov Gotovac | Boris Papandopulo. Točan odgovor: Ivan pl. Zajc.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098095+00:00"
+    },
+    {
+      "id": "quiz-p049",
+      "type": "kviz",
+      "title": "Koji je skladatelj napisao operu „Ero s onoga svijeta“?",
+      "content": "Pitanje: Koji je skladatelj napisao operu „Ero s onoga svijeta“? Odgovori: Jakov Gotovac | Ivan pl. Zajc | Vatroslav Lisinski | Blagoje Bersa. Točan odgovor: Jakov Gotovac.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098103+00:00"
+    },
+    {
+      "id": "quiz-p050",
+      "type": "kviz",
+      "title": "Tko je skladao prvu hrvatsku operu „Ljubav i zloba“?",
+      "content": "Pitanje: Tko je skladao prvu hrvatsku operu „Ljubav i zloba“? Odgovori: Vatroslav Lisinski | Ivan pl. Zajc | Jakov Gotovac | Ivo Tijardović. Točan odgovor: Vatroslav Lisinski.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098110+00:00"
+    },
+    {
+      "id": "quiz-p051",
+      "type": "kviz",
+      "title": "Koji je hrvatski ban bio poznat po reformama u 19. stoljeću i bio književnik?",
+      "content": "Pitanje: Koji je hrvatski ban bio poznat po reformama u 19. stoljeću i bio književnik? Odgovori: Ivan Mažuranić | Josip Jelačić | Nikola Šubić Zrinski | Petar Berislavić. Točan odgovor: Ivan Mažuranić.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098118+00:00"
+    },
+    {
+      "id": "quiz-p052",
+      "type": "kviz",
+      "title": "Koji je hrvatski ban poginuo u bitci kod Krbavskog polja 1493.?",
+      "content": "Pitanje: Koji je hrvatski ban poginuo u bitci kod Krbavskog polja 1493.? Odgovori: Petar Zrinski | Emerik Derenčin | Nikola Šubić Zrinski | Ivan Karlović. Točan odgovor: Emerik Derenčin.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098126+00:00"
+    },
+    {
+      "id": "quiz-p053",
+      "type": "kviz",
+      "title": "Koji je hrvatski plemić pogubljen 1671. nakon Zrinsko-frankopanske urote?",
+      "content": "Pitanje: Koji je hrvatski plemić pogubljen 1671. nakon Zrinsko-frankopanske urote? Odgovori: Petar Zrinski | Nikola Šubić Zrinski | Ivan Mažuranić | Josip Jelačić. Točan odgovor: Petar Zrinski.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098135+00:00"
+    },
+    {
+      "id": "quiz-p054",
+      "type": "kviz",
+      "title": "Koji je plemić pogubljen zajedno s Petrom Zrinskim 1671.?",
+      "content": "Pitanje: Koji je plemić pogubljen zajedno s Petrom Zrinskim 1671.? Odgovori: Fran Krsto Frankopan | Nikola Šubić Zrinski | Stjepan Držislav | Petar Berislavić. Točan odgovor: Fran Krsto Frankopan.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098145+00:00"
+    },
+    {
+      "id": "quiz-p055",
+      "type": "kviz",
+      "title": "Koji je grad bio sjedište hrvatskog bana u 19. stoljeću?",
+      "content": "Pitanje: Koji je grad bio sjedište hrvatskog bana u 19. stoljeću? Odgovori: Zagreb | Split | Rijeka | Dubrovnik. Točan odgovor: Zagreb.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098151+00:00"
+    },
+    {
+      "id": "quiz-p056",
+      "type": "kviz",
+      "title": "Koji je grad glavni grad Republike Hrvatske?",
+      "content": "Pitanje: Koji je grad glavni grad Republike Hrvatske? Odgovori: Zagreb | Split | Rijeka | Osijek. Točan odgovor: Zagreb.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098157+00:00"
+    },
+    {
+      "id": "quiz-p057",
+      "type": "kviz",
+      "title": "Koji grad leži na ušću rijeke Neretve?",
+      "content": "Pitanje: Koji grad leži na ušću rijeke Neretve? Odgovori: Metković | Zadar | Šibenik | Senj. Točan odgovor: Metković.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098164+00:00"
+    },
+    {
+      "id": "quiz-p058",
+      "type": "kviz",
+      "title": "Koji je grad poznat po staroj jezgri na otočiću Trogiru?",
+      "content": "Pitanje: Koji je grad poznat po staroj jezgri na otočiću Trogiru? Odgovori: Trogir | Rovinj | Korčula | Hvar. Točan odgovor: Trogir.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098172+00:00"
+    },
+    {
+      "id": "quiz-p059",
+      "type": "kviz",
+      "title": "Koji se grad naziva gradom na četiri rijeke?",
+      "content": "Pitanje: Koji se grad naziva gradom na četiri rijeke? Odgovori: Karlovac | Sisak | Osijek | Varaždin. Točan odgovor: Karlovac.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098178+00:00"
+    },
+    {
+      "id": "quiz-p060",
+      "type": "kviz",
+      "title": "Koji je grad najveći u Slavoniji?",
+      "content": "Pitanje: Koji je grad najveći u Slavoniji? Odgovori: Osijek | Vinkovci | Slavonski Brod | Požega. Točan odgovor: Osijek.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098185+00:00"
+    },
+    {
+      "id": "quiz-p061",
+      "type": "kviz",
+      "title": "Koji je najviši vrh Dinare na hrvatskoj strani?",
+      "content": "Pitanje: Koji je najviši vrh Dinare na hrvatskoj strani? Odgovori: Sinjal | Sveto brdo | Kula | Vaganski vrh. Točan odgovor: Sinjal.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098191+00:00"
+    },
+    {
+      "id": "quiz-p062",
+      "type": "kviz",
+      "title": "Koji hrvatski otok je poznat po Zlatnom ratu?",
+      "content": "Pitanje: Koji hrvatski otok je poznat po Zlatnom ratu? Odgovori: Brač | Hvar | Vis | Korčula. Točan odgovor: Brač.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098197+00:00"
+    },
+    {
+      "id": "quiz-p063",
+      "type": "kviz",
+      "title": "Koji je najduži hrvatski poluotok?",
+      "content": "Pitanje: Koji je najduži hrvatski poluotok? Odgovori: Istra | Pelješac | Pag | Cres. Točan odgovor: Istra.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098203+00:00"
+    },
+    {
+      "id": "quiz-p064",
+      "type": "kviz",
+      "title": "Koja rijeka protječe kroz Zagreb?",
+      "content": "Pitanje: Koja rijeka protječe kroz Zagreb? Odgovori: Sava | Kupa | Drava | Una. Točan odgovor: Sava.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098209+00:00"
+    },
+    {
+      "id": "quiz-p065",
+      "type": "kviz",
+      "title": "Koja rijeka protječe kroz Karlovac?",
+      "content": "Pitanje: Koja rijeka protječe kroz Karlovac? Odgovori: Kupa | Sava | Drava | Neretva. Točan odgovor: Kupa.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098216+00:00"
+    },
+    {
+      "id": "quiz-p066",
+      "type": "kviz",
+      "title": "Koji je rimski car dao izgraditi palaču u Splitu?",
+      "content": "Pitanje: Koji je rimski car dao izgraditi palaču u Splitu? Odgovori: Dioklecijan | Trajan | August | Konstantin. Točan odgovor: Dioklecijan.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098223+00:00"
+    },
+    {
+      "id": "quiz-p067",
+      "type": "kviz",
+      "title": "Koji se lokalitet nalazi u Poreču?",
+      "content": "Pitanje: Koji se lokalitet nalazi u Poreču? Odgovori: Eufrazijeva bazilika | Arena | Dioklecijanova palača | Katedrala sv. Jakova. Točan odgovor: Eufrazijeva bazilika.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098231+00:00"
+    },
+    {
+      "id": "quiz-p068",
+      "type": "kviz",
+      "title": "Koji je hrvatski grad poznat po zadarskim Morskim orguljama?",
+      "content": "Pitanje: Koji je hrvatski grad poznat po zadarskim Morskim orguljama? Odgovori: Zadar | Split | Rijeka | Šibenik. Točan odgovor: Zadar.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098237+00:00"
+    },
+    {
+      "id": "quiz-p069",
+      "type": "kviz",
+      "title": "Koja je povijesna jezgra pod zaštitom UNESCO-a i poznata po katedrali sv. Lovre?",
+      "content": "Pitanje: Koja je povijesna jezgra pod zaštitom UNESCO-a i poznata po katedrali sv. Lovre? Odgovori: Trogir | Zadar | Rovinj | Pula. Točan odgovor: Trogir.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098243+00:00"
+    },
+    {
+      "id": "quiz-p070",
+      "type": "kviz",
+      "title": "Koji je lokalitet povezan s poljem drevnih parcela na Hvaru?",
+      "content": "Pitanje: Koji je lokalitet povezan s poljem drevnih parcela na Hvaru? Odgovori: Starogradsko polje | Limska draga | Lonjsko polje | Imotsko polje. Točan odgovor: Starogradsko polje.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098250+00:00"
+    },
+    {
+      "id": "quiz-p071",
+      "type": "kviz",
+      "title": "Koja je bitka 1991. postala simbol obrane grada Vukovara?",
+      "content": "Pitanje: Koja je bitka 1991. postala simbol obrane grada Vukovara? Odgovori: Bitka za Vukovar | Bitka za Maslenicu | Bitka za Šibenik | Bitka za Zadar. Točan odgovor: Bitka za Vukovar.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098260+00:00"
+    },
+    {
+      "id": "quiz-p072",
+      "type": "kviz",
+      "title": "Koji je hrvatski grad bio izložen teškom granatiranju 1991. i branjen u Domovinskom ratu?",
+      "content": "Pitanje: Koji je hrvatski grad bio izložen teškom granatiranju 1991. i branjen u Domovinskom ratu? Odgovori: Dubrovnik | Pula | Varaždin | Rovinj. Točan odgovor: Dubrovnik.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098266+00:00"
+    },
+    {
+      "id": "quiz-p073",
+      "type": "kviz",
+      "title": "Koja je operacija 1993. oslobodila područje oko Maslenice?",
+      "content": "Pitanje: Koja je operacija 1993. oslobodila područje oko Maslenice? Odgovori: Maslenica | Bljesak | Oluja | Medački džep. Točan odgovor: Maslenica.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098273+00:00"
+    },
+    {
+      "id": "quiz-p074",
+      "type": "kviz",
+      "title": "Koja je operacija provedena u rujnu 1993. na području Like?",
+      "content": "Pitanje: Koja je operacija provedena u rujnu 1993. na području Like? Odgovori: Medački džep | Maslenica | Bljesak | Oluja. Točan odgovor: Medački džep.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098283+00:00"
+    },
+    {
+      "id": "quiz-p075",
+      "type": "kviz",
+      "title": "Koji je sporazum otvorio put mirnoj reintegraciji hrvatskog Podunavlja?",
+      "content": "Pitanje: Koji je sporazum otvorio put mirnoj reintegraciji hrvatskog Podunavlja? Odgovori: Erdutski sporazum | Washingtonski sporazum | Daytonski sporazum | Zagrebački sporazum. Točan odgovor: Erdutski sporazum.",
+      "tags": [
+        "domovinski_rat",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098292+00:00"
+    },
+    {
+      "id": "quiz-p076",
+      "type": "kviz",
+      "title": "Koji je svetac zaštitnik Zagreba?",
+      "content": "Pitanje: Koji je svetac zaštitnik Zagreba? Odgovori: Majka Božja od Kamenitih vrata | Sveti Duje | Sveti Vlaho | Sveti Donat. Točan odgovor: Majka Božja od Kamenitih vrata.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098302+00:00"
+    },
+    {
+      "id": "quiz-p077",
+      "type": "kviz",
+      "title": "Koji je blagdan 15. kolovoza?",
+      "content": "Pitanje: Koji je blagdan 15. kolovoza? Odgovori: Uznesenje Marije – Velika Gospa | Tijelovo | Uskrs | Duhovi. Točan odgovor: Uznesenje Marije – Velika Gospa.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098309+00:00"
+    },
+    {
+      "id": "quiz-p078",
+      "type": "kviz",
+      "title": "Koji je svetac zaštitnik Dubrovnika?",
+      "content": "Pitanje: Koji je svetac zaštitnik Dubrovnika? Odgovori: Sveti Vlaho | Sveti Duje | Sveti Josip | Sveti Nikola. Točan odgovor: Sveti Vlaho.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098316+00:00"
+    },
+    {
+      "id": "quiz-p079",
+      "type": "kviz",
+      "title": "Koji je svetac zaštitnik Splita?",
+      "content": "Pitanje: Koji je svetac zaštitnik Splita? Odgovori: Sveti Duje | Sveti Vlaho | Sveti Marko | Sveti Juraj. Točan odgovor: Sveti Duje.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098323+00:00"
+    },
+    {
+      "id": "quiz-p080",
+      "type": "kviz",
+      "title": "Koje je hrvatsko svetište povezano s čudotvornim kipom Majke Božje na Trsatu?",
+      "content": "Pitanje: Koje je hrvatsko svetište povezano s čudotvornim kipom Majke Božje na Trsatu? Odgovori: Trsatsko svetište | Marija Bistrica | Sinj | Aljmaš. Točan odgovor: Trsatsko svetište.",
+      "tags": [
+        "katolicka_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098330+00:00"
+    },
+    {
+      "id": "quiz-p081",
+      "type": "kviz",
+      "title": "Koji je hrvatski književnik napisao „Čudnovate zgode šegrta Hlapića“?",
+      "content": "Pitanje: Koji je hrvatski književnik napisao „Čudnovate zgode šegrta Hlapića“? Odgovori: Ivana Brlić-Mažuranić | Marija Jurić Zagorka | Jagoda Truhelka | Zlata Kolarić-Kišur. Točan odgovor: Ivana Brlić-Mažuranić.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098338+00:00"
+    },
+    {
+      "id": "quiz-p082",
+      "type": "kviz",
+      "title": "Tko je autor „Ribanja i ribarskoga prigovaranja“?",
+      "content": "Pitanje: Tko je autor „Ribanja i ribarskoga prigovaranja“? Odgovori: Petar Hektorović | Marko Marulić | Hanibal Lucić | Marin Držić. Točan odgovor: Petar Hektorović.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098346+00:00"
+    },
+    {
+      "id": "quiz-p083",
+      "type": "kviz",
+      "title": "Koji je književnik poznat pod nadimkom „Mažuranić“ i napisao „Smrt Smail-age Čengića“?",
+      "content": "Pitanje: Koji je književnik poznat pod nadimkom „Mažuranić“ i napisao „Smrt Smail-age Čengića“? Odgovori: Ivan Mažuranić | Ivan Gundulić | Petar Preradović | August Šenoa. Točan odgovor: Ivan Mažuranić.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098353+00:00"
+    },
+    {
+      "id": "quiz-p084",
+      "type": "kviz",
+      "title": "Tko je napisao „Glembajeve“?",
+      "content": "Pitanje: Tko je napisao „Glembajeve“? Odgovori: Miroslav Krleža | Antun Gustav Matoš | Tin Ujević | Vladimir Nazor. Točan odgovor: Miroslav Krleža.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098361+00:00"
+    },
+    {
+      "id": "quiz-p085",
+      "type": "kviz",
+      "title": "Koji je hrvatski književnik autor pjesme „Notturno“?",
+      "content": "Pitanje: Koji je hrvatski književnik autor pjesme „Notturno“? Odgovori: Antun Gustav Matoš | Tin Ujević | Dobriša Cesarić | Vladimir Nazor. Točan odgovor: Antun Gustav Matoš.",
+      "tags": [
+        "jezik",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098368+00:00"
+    },
+    {
+      "id": "quiz-p086",
+      "type": "kviz",
+      "title": "Koja je tradicionalna glazbena forma povezana s Međimurjem i upisana na UNESCO-ov popis?",
+      "content": "Pitanje: Koja je tradicionalna glazbena forma povezana s Međimurjem i upisana na UNESCO-ov popis? Odgovori: Međimurska popevka | Bećarac | Klapsko pjevanje | Ojkanje. Točan odgovor: Međimurska popevka.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098375+00:00"
+    },
+    {
+      "id": "quiz-p087",
+      "type": "kviz",
+      "title": "Koji je oblik pjevanja 2012. upisan na UNESCO-ov popis nematerijalne baštine?",
+      "content": "Pitanje: Koji je oblik pjevanja 2012. upisan na UNESCO-ov popis nematerijalne baštine? Odgovori: Klapsko pjevanje | Tamburaško pjevanje | Zagorska popevka | Istarsko pjevanje. Točan odgovor: Klapsko pjevanje.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098390+00:00"
+    },
+    {
+      "id": "quiz-p088",
+      "type": "kviz",
+      "title": "Koji je oblik tradicijskog pjevanja povezan s vokalnom tehnikom „ojkanja“?",
+      "content": "Pitanje: Koji je oblik tradicijskog pjevanja povezan s vokalnom tehnikom „ojkanja“? Odgovori: Ojkanje | Bećarac | Klapa | Psalmodija. Točan odgovor: Ojkanje.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098399+00:00"
+    },
+    {
+      "id": "quiz-p089",
+      "type": "kviz",
+      "title": "Koji hrvatski skladatelj nosi titulu autora opere „Nikola Šubić Zrinjski“?",
+      "content": "Pitanje: Koji hrvatski skladatelj nosi titulu autora opere „Nikola Šubić Zrinjski“? Odgovori: Ivan pl. Zajc | Jakov Gotovac | Vatroslav Lisinski | Boris Papandopulo. Točan odgovor: Ivan pl. Zajc.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098407+00:00"
+    },
+    {
+      "id": "quiz-p090",
+      "type": "kviz",
+      "title": "Koji je skladatelj napisao „Ero s onoga svijeta“?",
+      "content": "Pitanje: Koji je skladatelj napisao „Ero s onoga svijeta“? Odgovori: Jakov Gotovac | Ivan pl. Zajc | Vatroslav Lisinski | Ivo Tijardović. Točan odgovor: Jakov Gotovac.",
+      "tags": [
+        "glazba",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098414+00:00"
+    },
+    {
+      "id": "quiz-p091",
+      "type": "kviz",
+      "title": "Koliko lokaliteta Hrvatska trenutno ima na UNESCO-ovu Popisu svjetske baštine?",
+      "content": "Pitanje: Koliko lokaliteta Hrvatska trenutno ima na UNESCO-ovu Popisu svjetske baštine? Odgovori: 10 | 8 | 12 | 15. Točan odgovor: 10.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098422+00:00"
+    },
+    {
+      "id": "quiz-p092",
+      "type": "kviz",
+      "title": "Koji je hrvatski grad poznat po tvrđavi sv. Mihovila?",
+      "content": "Pitanje: Koji je hrvatski grad poznat po tvrđavi sv. Mihovila? Odgovori: Šibenik | Split | Pula | Zagreb. Točan odgovor: Šibenik.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098428+00:00"
+    },
+    {
+      "id": "quiz-p093",
+      "type": "kviz",
+      "title": "Koji je nacionalni park najstariji u Hrvatskoj?",
+      "content": "Pitanje: Koji je nacionalni park najstariji u Hrvatskoj? Odgovori: Plitvička jezera | Risnjak | Paklenica | Mljet. Točan odgovor: Plitvička jezera.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098435+00:00"
+    },
+    {
+      "id": "quiz-p094",
+      "type": "kviz",
+      "title": "Koji nacionalni park obuhvaća otok Mljet?",
+      "content": "Pitanje: Koji nacionalni park obuhvaća otok Mljet? Odgovori: Mljet | Brijuni | Kornati | Krka. Točan odgovor: Mljet.",
+      "tags": [
+        "geografija",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098441+00:00"
+    },
+    {
+      "id": "quiz-p095",
+      "type": "kviz",
+      "title": "Koji se grad nalazi na četiri rijeke Kupi, Korani, Mrežnici i Dobri?",
+      "content": "Pitanje: Koji se grad nalazi na četiri rijeke Kupi, Korani, Mrežnici i Dobri? Odgovori: Karlovac | Sisak | Zagreb | Slavonski Brod. Točan odgovor: Karlovac.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098448+00:00"
+    },
+    {
+      "id": "quiz-p096",
+      "type": "kviz",
+      "title": "Koji je kralj povezan s Bašćanskom pločom kao „Zvonimir kralj hrvatski“?",
+      "content": "Pitanje: Koji je kralj povezan s Bašćanskom pločom kao „Zvonimir kralj hrvatski“? Odgovori: Dmitar Zvonimir | Tomislav | Petar Krešimir IV. | Stjepan Držislav. Točan odgovor: Dmitar Zvonimir.",
+      "tags": [
+        "kraljevi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098457+00:00"
+    },
+    {
+      "id": "quiz-p097",
+      "type": "kviz",
+      "title": "Koji je hrvatski vladar bio knez 914. prema Tomi Arhiđakonu?",
+      "content": "Pitanje: Koji je hrvatski vladar bio knez 914. prema Tomi Arhiđakonu? Odgovori: Tomislav | Trpimir II. | Muncimir | Mihajlo Krešimir II.. Točan odgovor: Tomislav.",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098465+00:00"
+    },
+    {
+      "id": "quiz-p098",
+      "type": "kviz",
+      "title": "Koji je hrvatski lokalitet poznat po stećcima i nalazi se na UNESCO-ovu popisu kao dio multinacionalnog dobra?",
+      "content": "Pitanje: Koji je hrvatski lokalitet poznat po stećcima i nalazi se na UNESCO-ovu popisu kao dio multinacionalnog dobra? Odgovori: Stećci – srednjovjekovni nadgrobni spomenici | Bašćanska ploča | Stari Grad | Eufrazijeva bazilika. Točan odgovor: Stećci – srednjovjekovni nadgrobni spomenici.",
+      "tags": [
+        "kulturna_bastina",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098476+00:00"
+    },
+    {
+      "id": "quiz-p099",
+      "type": "kviz",
+      "title": "Koji je grad poznat po Dioklecijanovoj palači i povijesnoj jezgri pod zaštitom UNESCO-a?",
+      "content": "Pitanje: Koji je grad poznat po Dioklecijanovoj palači i povijesnoj jezgri pod zaštitom UNESCO-a? Odgovori: Split | Dubrovnik | Trogir | Zadar. Točan odgovor: Split.",
+      "tags": [
+        "gradovi",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098484+00:00"
+    },
+    {
+      "id": "quiz-p100",
+      "type": "kviz",
+      "title": "Koje godine je Hrvatska primljena u Ujedinjene narode?",
+      "content": "Pitanje: Koje godine je Hrvatska primljena u Ujedinjene narode? Odgovori: 1992. | 1991. | 1995. | 1999.. Točan odgovor: 1992..",
+      "tags": [
+        "povijest",
+        "kviz",
+        "pitanje"
+      ],
+      "source": "data.js",
+      "sourceTitle": "PatriaSoul centralna baza pitanja",
+      "status": "verified",
+      "updatedAt": "2026-09-01T14:57:26.098490+00:00"
+    },
+    {
+      "id": "page-biblija.html",
+      "type": "stranica",
+      "title": "Biblija | PatriaSoul",
+      "content": "Biblija | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera / Biblija ✝️ Vjera Biblija Sadržaj je organiziran kao zaseban modul kako bi se kasnije mogao povezati s dnevnim podacima i uredničkim sustavom. Predložak sadržaja. Ova stranica je sada dio nove PatriaSoul arhitekture. Tekstovi, izvori, fotografije i podatkovni moduli mogu se dodavati bez promjene dizajna. Biblija Glavni sadržaj ove stranice predviđen je za jasnu hijerarhiju: uvod, ključne informacije, multimediju, povezane sadržaje i izvore. Time svaka tema dobiva isti profesionalni standard prikaza. Povezani sadržaj Povezane PatriaSoul teme Fotografije i multimedija Izvori i dodatno čitanje ✝️ Vjera ← Natrag na rubriku 🧠 Kviz 🛡️ Brani svoj grad PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "biblija",
+        "portal"
+      ],
+      "source": "biblija.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-blagdani.html",
+      "type": "stranica",
+      "title": "Blagdani | PatriaSoul",
+      "content": "Blagdani | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera / Blagdani ✝️ Vjera Blagdani Sadržaj je organiziran kao zaseban modul kako bi se kasnije mogao povezati s dnevnim podacima i uredničkim sustavom. Predložak sadržaja. Ova stranica je sada dio nove PatriaSoul arhitekture. Tekstovi, izvori, fotografije i podatkovni moduli mogu se dodavati bez promjene dizajna. Blagdani Glavni sadržaj ove stranice predviđen je za jasnu hijerarhiju: uvod, ključne informacije, multimediju, povezane sadržaje i izvore. Time svaka tema dobiva isti profesionalni standard prikaza. Povezani sadržaj Povezane PatriaSoul teme Fotografije i multimedija Izvori i dodatno čitanje ✝️ Vjera ← Natrag na rubriku 🧠 Kviz 🛡️ Brani svoj grad PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "blagdani",
+        "portal"
+      ],
+      "source": "blagdani.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-index.html",
+      "type": "stranica",
+      "title": "Vjera | PatriaSoul",
+      "content": "Vjera | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera Vjera i duhovna baština Vjera Mirno i pregledno mjesto za evanđelje, molitve, svece, blagdane i biblijski sadržaj. 📖 Evanđelje Dnevno evanđelje i prostor za razmišljanje. Otvori → 🕯️ Svetac dana Kalendar svetaca i kratke biografije. Otvori → 🙏 Molitve Zbirka tradicionalnih i svakodnevnih molitava. Otvori → 📿 Krunica Vodič kroz molitvu krunice. Otvori → 📅 Blagdani Liturgijski i hrvatski blagdanski kalendar. Otvori → 📚 Biblija Biblijski sadržaj, knjige i tematski vodiči. Otvori → PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "index",
+        "portal"
+      ],
+      "source": "index.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-grad.html",
+      "type": "stranica",
+      "title": "Grad | PatriaSoul",
+      "content": "Grad | PatriaSoul PS PATRIA SOUL Početna Povijest Vjera Gradovi Vrijeme Igra 🧠 Kviz Početna / Gradovi / Grad 🏙️ PatriaSoul gradovi Grad Istraži povijest, baštinu i identitet hrvatskih gradova. 🌤️ Vrijeme Aktualni podaci DHMZ-a za ovaj grad i četiri najbliže lokacije. Otvori vrijeme → 📜 Povijest Provjereni povijesni pregled, ključne godine i događaji vežu se uz ovaj grad bez dupliciranja podataka. 🏛️ Baština i znamenitosti Kulturna dobra, znamenitosti i sakralna baština dodaju se uz vlastitu uredničku provjeru. 👤 Ljudi i priče Osobe, lokalne priče i dokumentirani događaji vežu se na identifikator grada. Urednički standard Točnost prije količine Teritorijalni podatak dolazi iz kanonskog registra gradovi.js . Povijesni, statistički, baštinski i biografski sadržaj mora imati odgovarajući izvor iz registra sources-phase2.js . ← Svi gradovi 🌤️ Vrijeme Hrvatske 🛡️ Brani svoj grad 🧠 Kviz © 2026 PatriaSoul Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "grad",
+        "portal"
+      ],
+      "source": "grad.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-vrijeme.html",
+      "type": "stranica",
+      "title": "Vrijeme u Hrvatskoj | PatriaSoul",
+      "content": "Vrijeme u Hrvatskoj | PatriaSoul PS PATRIA SOUL Početna Vijesti Gradovi Igra 🧠 Kviz Početna / Vrijeme 🌤️ Hrvatska Vrijeme u Hrvatskoj PatriaSoul automatski pronalazi četiri najbliža grada prema tvojoj lokaciji i prikazuje aktualne podatke. 📍 Tražimo tvoju lokaciju… 📍 Pronađi moju lokaciju Ili odaberi grad… Zagreb Split Rijeka Osijek Zadar Šibenik Sinj Trilj Omiš Knin Dubrovnik Pula Karlovac Varaždin Vukovar Učitavanje… Izvor podataka: DHMZ — vremenski podaci i upozorenja automatski se osvježavaju iz javno dostupnih DHMZ podataka. Lokacija se koristi samo u pregledniku za odabir najbližih gradova i ne šalje se PatriaSoulu.",
+      "tags": [
+        "vrijeme",
+        "portal"
+      ],
+      "source": "vrijeme.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.023275+00:00"
+    },
+    {
+      "id": "page-CHANGELOG-2026.md",
+      "type": "stranica",
+      "title": "Changelog 2026",
+      "content": "# PatriaSoul Pro 2026 — promjene - uveden novi `patriasoul-modern.css` design system - redizajnirana početna stranica - standardizirani hubovi glavnih rubrika - dodane sve planirane podstranice iz nove strukture - uvedena responzivna mobilna navigacija - obnovljen 404 - obnovljeni sitemap i manifest - postojeći legacy sadržaj zadržan radi kompatibilnosti i postupne migracije",
+      "tags": [
+        "CHANGELOG-2026",
+        "portal"
+      ],
+      "source": "CHANGELOG-2026.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.019357+00:00"
+    },
+    {
+      "id": "page-rang-lista.html",
+      "type": "stranica",
+      "title": "Rang-lista | PatriaSoul",
+      "content": "Rang-lista | PatriaSoul PS PATRIA SOUL Početna Gradovi Igra Rang-lista 🧠 Kviz Početna / Rang-lista 🏆 PatriaSoul natjecanje Rang-lista Rezultati se trenutno spremaju lokalno na uređaju. Kasnije ih možemo spojiti na pravi korisnički sustav i javnu bazu. Kviz Brani svoj grad",
+      "tags": [
+        "rang-lista",
+        "portal"
+      ],
+      "source": "rang-lista.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.022006+00:00"
+    },
+    {
+      "id": "page-evandelje.html",
+      "type": "stranica",
+      "title": "Evanđelje | PatriaSoul",
+      "content": "Evanđelje | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera / Evanđelje ✝️ Vjera Evanđelje Sadržaj je organiziran kao zaseban modul kako bi se kasnije mogao povezati s dnevnim podacima i uredničkim sustavom. Predložak sadržaja. Ova stranica je sada dio nove PatriaSoul arhitekture. Tekstovi, izvori, fotografije i podatkovni moduli mogu se dodavati bez promjene dizajna. Evanđelje Glavni sadržaj ove stranice predviđen je za jasnu hijerarhiju: uvod, ključne informacije, multimediju, povezane sadržaje i izvore. Time svaka tema dobiva isti profesionalni standard prikaza. Povezani sadržaj Povezane PatriaSoul teme Fotografije i multimedija Izvori i dodatno čitanje ✝️ Vjera ← Natrag na rubriku 🧠 Kviz 🛡️ Brani svoj grad PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "evandelje",
+        "portal"
+      ],
+      "source": "evandelje.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-plan-razvoja.md",
+      "type": "stranica",
+      "title": "Plan Razvoja",
+      "content": "# PatriaSoul — plan razvoja ## Faza 1 — završena Vizualni sustav, navigacija, početna, hub stranice i responzivnost. ## Faza 2 — završena: sadržajna arhitektura - kanonski registar gradova Hrvatske - 127 službenih gradskih jedinica u jednom izvoru podataka - Gradovi hub s pretragom i grupiranjem po županijama - zajednički predložak profila grada - kanonski registar uredničkih izvora - pravilo izvora i sprječavanje dupliciranja sadržaja - odvojeni podatkovni sloj od prikaza - UTF-8 hrvatski sadržaj i stabilni slugovi ## Faza 3 — jezgra završena - centralni kviz engine s preslagivanjem odgovora - miješani, dnevni, tjedni i mjesečni kviz - 15-sekundni timer i bodovanje prema brzini - lokalni profil igrača i XP - sustav razina - sustav znački i automatsko otključavanje - Brani svoj grad za svih 127 gradova - lokalna rang-lista za kviz i gradske izazove - ispravljene putanje učitavanja kviznih banaka za GitHub Pages ### Faza 3 — preostaje za produkcijsku verziju - pravi korisnički računi i sigurna pohrana rezultata na poslužitelju - javna rang-lista zajednička svim uređajima - trajna statistika i zaštita od manipulacije rezultatom - završna provjera svih pitanja i izvora prije javne objave ## Faza 4 Admin panel, korisnici, pretraga na razini cijelog portala, PWA i analitika. ### Pravilo razvoja Postojeći sadržaj se prvo ponovno koristi. Novi podatak ide u svoj kanonski izvor i ne kopira se u više datoteka. Svaki činjenični sadržaj koji nije izvorni urednički tekst mora imati evidentiran izvor.",
+      "tags": [
+        "plan-razvoja",
+        "portal"
+      ],
+      "source": "plan-razvoja.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.021006+00:00"
+    },
+    {
+      "id": "page-brani-svoj-grad.html",
+      "type": "stranica",
+      "title": "Brani svoj grad | PatriaSoul",
+      "content": "Brani svoj grad | PatriaSoul PS PATRIA SOUL Početna Gradovi Igra Rang-lista 🧠 Kviz Početna / Brani svoj grad 🛡️ Gradski izazov Brani svoj grad Izaberi grad koji želiš braniti. Dobivaš 5 pitanja iz PatriaSoul baze, a rezultat se pripisuje odabranom gradu. 🛡️ Odaberi svoj grad ← Svi gradovi 🏆 Vidi rang-listu",
+      "tags": [
+        "brani-svoj-grad",
+        "portal"
+      ],
+      "source": "brani-svoj-grad.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-molitve.html",
+      "type": "stranica",
+      "title": "Molitve | PatriaSoul",
+      "content": "Molitve | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera / Molitve ✝️ Vjera Molitve Sadržaj je organiziran kao zaseban modul kako bi se kasnije mogao povezati s dnevnim podacima i uredničkim sustavom. Predložak sadržaja. Ova stranica je sada dio nove PatriaSoul arhitekture. Tekstovi, izvori, fotografije i podatkovni moduli mogu se dodavati bez promjene dizajna. Molitve Glavni sadržaj ove stranice predviđen je za jasnu hijerarhiju: uvod, ključne informacije, multimediju, povezane sadržaje i izvore. Time svaka tema dobiva isti profesionalni standard prikaza. Povezani sadržaj Povezane PatriaSoul teme Fotografije i multimedija Izvori i dodatno čitanje ✝️ Vjera ← Natrag na rubriku 🧠 Kviz 🛡️ Brani svoj grad PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "molitve",
+        "portal"
+      ],
+      "source": "molitve.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.021006+00:00"
+    },
+    {
+      "id": "page-quiz.html",
+      "type": "stranica",
+      "title": "Kviz | PatriaSoul",
+      "content": "Kviz | PatriaSoul PS PATRIA SOUL Početna Gradovi Igra Rang-lista 🧠 Kviz Početna / Kviz 🧠 PatriaSoul znanje Hrvatski kviz Odaberi izazov. Svako pitanje ima 15 sekundi, a ponuđeni odgovori se svaki put preslaguju. Odaberi kviz 🇭🇷 Miješani kviz 📅 Dnevni kviz 🗓️ Tjedni kviz 📆 Mjesečni kviz Igraj → ⏱️ 15 Rezultat Igraj ponovno Rang-lista",
+      "tags": [
+        "quiz",
+        "portal"
+      ],
+      "source": "quiz.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.022006+00:00"
+    },
+    {
+      "id": "page-404.html",
+      "type": "stranica",
+      "title": "404 | PatriaSoul",
+      "content": "404 | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz 404 · Stranica nije pronađena Vratimo se na pravi trag. Tražena stranica ne postoji ili je premještena u novu strukturu PatriaSoula. ← Početna Istraži Gradove PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "404",
+        "portal"
+      ],
+      "source": "404.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.019357+00:00"
+    },
+    {
+      "id": "page-gradovi.html",
+      "type": "stranica",
+      "title": "Gradovi Hrvatske | PatriaSoul",
+      "content": "Gradovi Hrvatske | PatriaSoul PS PATRIA SOUL Početna Povijest Vjera Gradovi Igra 🧠 Kviz Početna / Gradovi 🏙️ Hrvatski gradovi Gradovi Hrvatske Kanonski registar 127 gradova, organiziran po županijama. Svaki grad koristi isti profilni okvir kako bi sadržaj bio dosljedan i proširiv. Urednički standard Jedan izvor podataka, bez dupliranja Registar gradova nalazi se u gradovi.js . Profil grada koristi zajednički predložak, a povijesni, baštinski i biografski sadržaj veže se na identifikator grada. © 2026 PatriaSoul Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "gradovi",
+        "portal"
+      ],
+      "source": "gradovi.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-dizajn.md",
+      "type": "stranica",
+      "title": "Dizajn",
+      "content": "# PatriaSoul — dizajn 2026 ## Smjer Moderni editorial/digital heritage izgled: tamna podloga, zlatni akcent, vrlo jasna tipografija, veliki razmaci i kartice s diskretnim staklastim slojem. ## Pravila - Jedan zajednički design system u `css/patriasoul-modern.css`. - Mobile-first ponašanje i pristupačni focus stateovi. - Glavne rubrike imaju isti vizualni jezik. - Sadržaj se odvaja od prezentacije gdje god je moguće. - Nove rubrike dodaju se kao moduli, bez redizajna cijele stranice.",
+      "tags": [
+        "dizajn",
+        "portal"
+      ],
+      "source": "dizajn.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-vijesti.html",
+      "type": "stranica",
+      "title": "Vijesti | PatriaSoul",
+      "content": "Vijesti | PatriaSoul PS PATRIA SOUL Početna Gradovi Igra Rang-lista 🧠 Kviz Početna / Vijesti 📰 Čuvari nasljeđa Vijesti PatriaSoul prati važne događaje i pretvara provjerene informacije u jasne, originalno oblikovane vijesti za naše čitatelje. ✦ Čuvari nasljeđa · PatriaSoul uredništvo Sve 🇭🇷 Domovina 🛡️ Branitelji 📜 Povijest ⛪ Vjera 🏛️ Baština 🏙️ Gradovi 🎭 Kultura 🌍 Svijet Učitavanje… Čuvari nasljeđa – PatriaSoul uredništvo obrađuje informacije iz navedenih izvora. Izvori su uvijek jasno navedeni, a puni sadržaj izvornih publikacija ne kopiramo. 🇭🇷 PatriaSoul · Hrvatska. Povijest. Znanje. Identitet.",
+      "tags": [
+        "vijesti",
+        "portal"
+      ],
+      "source": "vijesti.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.023275+00:00"
+    },
+    {
+      "id": "page-vijesti-admin.html",
+      "type": "stranica",
+      "title": "Uredništvo | PatriaSoul",
+      "content": "Uredništvo | PatriaSoul PS PATRIA SOUL Početna Vijesti Gradovi 🧠 Kviz Čuvari nasljeđa · uredništvo Urednički centar Kontrolna ploča za vijesti koje automatizirani sustav označi za provjeru. Ovaj ekran je pripremljen za buduće sigurno povezivanje s pravom autentikacijom i AI obradom. 0 Ukupno u feedu 0 Čeka provjeru 0 Objavljeno — Zadnje osvježavanje ⚠️ Urednička zaštita: osjetljive teme ne trebaju ići izravno u javnu objavu. Ovdje ih urednik može pregledati prije objave. Vijesti na provjeri Popis se učitava iz centralnog news feeda. Trenutno se prikazuje lokalni pregled dok ne spojimo trajnu bazu i autentikaciju. Urednička pravila Autor javnih članaka: Čuvari nasljeđa . Objave trebaju biti originalno urednički oblikovane, jasno razlikovati činjenice od procjene, navesti izvore i ne kopirati puni sadržaj izvornih publikacija. Za stvarnu produkciju potrebno je spojiti autentikaciju administratora, serversku bazu i sigurnu pohranu izmjena. Ova statička stranica namjerno ne sadrži lozinke, API ključeve ni lažnu sigurnost.",
+      "tags": [
+        "vijesti-admin",
+        "portal"
+      ],
+      "source": "vijesti-admin.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.023275+00:00"
+    },
+    {
+      "id": "page-svetac-dana.html",
+      "type": "stranica",
+      "title": "Svetac dana | PatriaSoul",
+      "content": "Svetac dana | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera / Svetac dana ✝️ Vjera Svetac dana Sadržaj je organiziran kao zaseban modul kako bi se kasnije mogao povezati s dnevnim podacima i uredničkim sustavom. Predložak sadržaja. Ova stranica je sada dio nove PatriaSoul arhitekture. Tekstovi, izvori, fotografije i podatkovni moduli mogu se dodavati bez promjene dizajna. Svetac dana Glavni sadržaj ove stranice predviđen je za jasnu hijerarhiju: uvod, ključne informacije, multimediju, povezane sadržaje i izvore. Time svaka tema dobiva isti profesionalni standard prikaza. Povezani sadržaj Povezane PatriaSoul teme Fotografije i multimedija Izvori i dodatno čitanje ✝️ Vjera ← Natrag na rubriku 🧠 Kviz 🛡️ Brani svoj grad PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "svetac-dana",
+        "portal"
+      ],
+      "source": "svetac-dana.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.023275+00:00"
+    },
+    {
+      "id": "page-footer.html",
+      "type": "stranica",
+      "title": "Footer",
+      "content": "PS PATRIA SOUL Čuvaj nasljeđe. Prenesi ga dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz Projekt Vijesti Video Galerija O nama © 2026 PatriaSoul Hrvatska • povijest • identitet • baština",
+      "tags": [
+        "footer",
+        "portal"
+      ],
+      "source": "footer.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-krunica.html",
+      "type": "stranica",
+      "title": "Krunica | PatriaSoul",
+      "content": "Krunica | PatriaSoul 🇭🇷 PATRIA SOUL · Hrvatska • povijest • identitet • baština Čuvaj nasljeđe. Prenesi ga dalje. PS PATRIA SOUL Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz ☰ ✕ Početna Domovina Branitelji Povijest Baština Vjera Gradovi Vijesti Igra 🧠 Kviz Početna / Vjera / Krunica ✝️ Vjera Krunica Sadržaj je organiziran kao zaseban modul kako bi se kasnije mogao povezati s dnevnim podacima i uredničkim sustavom. Predložak sadržaja. Ova stranica je sada dio nove PatriaSoul arhitekture. Tekstovi, izvori, fotografije i podatkovni moduli mogu se dodavati bez promjene dizajna. Krunica Glavni sadržaj ove stranice predviđen je za jasnu hijerarhiju: uvod, ključne informacije, multimediju, povezane sadržaje i izvore. Time svaka tema dobiva isti profesionalni standard prikaza. Povezani sadržaj Povezane PatriaSoul teme Fotografije i multimedija Izvori i dodatno čitanje ✝️ Vjera ← Natrag na rubriku 🧠 Kviz 🛡️ Brani svoj grad PS PATRIA SOUL Digitalni prostor za hrvatsku povijest, vjeru, baštinu, gradove, ljude i znanje — napravljen da se priča sačuva i prenese dalje. Istraži Domovina Povijest Baština Vjera Zajednica Branitelji Gradovi Brani svoj grad Kviz PatriaSoul Vijesti Video Galerija O nama © 2026 PatriaSoul. Sva prava pridržana. Čuvaj nasljeđe. Prenesi ga dalje.",
+      "tags": [
+        "krunica",
+        "portal"
+      ],
+      "source": "krunica.html",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-funkcije.md",
+      "type": "stranica",
+      "title": "Funkcije",
+      "content": "# PatriaSoul — funkcije Planirani sustavi: globalno pretraživanje, dnevni sadržaj, profili gradova, kviz, Brani svoj grad, značke, rang-lista, korisnički profil, galerija, video i administracija. Trenutna verzija prvo stabilizira informacijsku arhitekturu i vizualni sustav.",
+      "tags": [
+        "funkcije",
+        "portal"
+      ],
+      "source": "funkcije.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.020090+00:00"
+    },
+    {
+      "id": "page-struktura.md",
+      "type": "stranica",
+      "title": "Struktura",
+      "content": "# PatriaSoul — struktura Glavna arhitektura prati MASTER PLAN: Domovina, Branitelji, Povijest, Baština, Vjera, Gradovi, Brani svoj grad, Kviz, Vijesti, Video, Galerija i O nama. ## Kanonski sadržajni sloj - `gradovi.js` — jedini kanonski registar 127 gradova Republike Hrvatske; ne duplicirati popis gradova u drugim datotekama. - `gradovi.html` — Gradovi hub; prikaz i pretraga čitaju samo `gradovi.js`. - `grad.html` — zajednički predložak profila grada; ne izrađivati zaseban HTML za svaki grad. - `sources-phase2.js` — jedini registar uredničkih izvora za sadržajne tvrdnje. - postojeće baze pitanja i tematski JS moduli ostaju vlasnici svojih domena; ne kopirati ih u gradsku bazu. ## Pravilo podataka Svaki entitet ima jedno mjesto istine. Prikaz koristi postojeći podatak umjesto stvaranja kopije. Povijesni, statistički, baštinski i biografski zapisi dodaju se kao povezani zapisi s navedenim izvorom. ## Prioritet razvoja 1. Početna i navigacija — Faza 1 2. Sadržajni hubovi — Faza 1 3. Podstranice i predlošci — Faza 1/2 4. Gradovi / podatkovni sloj — Faza 2 5. Kviz i igra — Faza 3 6. Admin i korisnički sustav — Faza 4",
+      "tags": [
+        "struktura",
+        "portal"
+      ],
+      "source": "struktura.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T14:57:26.023275+00:00"
+    }
+  ]
+}
