@@ -1,12 +1,26 @@
 {
+  "id": "/",
   "name": "PatriaSoul",
   "short_name": "PatriaSoul",
   "description": "Hrvatska. Povijest. Znanje. Identitet. Baština.",
-  "lang": "hr",
+  "lang": "hr-HR",
+  "dir": "ltr",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
   "background_color": "#07090d",
-  "theme_color": "#07090d",
+  "theme_color": "#c9a227",
+  "categories": [
+    "education",
+    "entertainment",
+    "lifestyle"
+  ],
+  "prefer_related_applications": false,
   "icons": []
 }
