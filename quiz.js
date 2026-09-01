@@ -18,8 +18,10 @@
   document.write('<scr'+'ipt src="domovinski.js"></scr'+'ipt>');
   document.write('<scr'+'ipt src="question_banks_800.js"></scr'+'ipt>');
   document.write('<scr'+'ipt src="povijest_extra.js"></scr'+'ipt>');
+  document.write('<scr'+'ipt src="bastina.js"></scr'+'ipt>');
   if(typeof PATRIA_DOMOVINSKI!=='undefined') window.PATRIA_QUESTIONS=window.PATRIA_QUESTIONS.concat(PATRIA_DOMOVINSKI);
   Object.values(window.PATRIA_EXTRA_QUESTIONS||{}).forEach(bank=>{if(Array.isArray(bank))window.PATRIA_QUESTIONS.push(...bank)});
+  if(typeof window.PATRIA_BASTINA!=='undefined'&&Array.isArray(window.PATRIA_BASTINA)) window.PATRIA_QUESTIONS.push(...window.PATRIA_BASTINA);
   window.PATRIA_QUESTIONS=Array.from(new Map(window.PATRIA_QUESTIONS.map(q=>[q.id,q])).values());
   window.PatriaQuiz.ready=Promise.resolve();
 })();
