@@ -1,0 +1,37 @@
+name: PatriaSoul – Knowledge Base
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'gradovi.js'
+      - 'data.js'
+      - '*.html'
+      - '*.md'
+      - 'news-feed.json'
+      - 'scripts/build-knowledge-index.py'
+      - '.github/workflows/build-knowledge.yml'
+  schedule:
+    - cron: '17 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  build-knowledge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Izgradi Knowledge Base indeks
+        run: python3 scripts/build-knowledge-index.py
+
+      - name: Spremi indeks
+        run: |
+          git config user.name "patriasoul-knowledge-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add ai-engine/knowledge/index.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Automatsko osvježavanje PatriaSoul Knowledge Base"
+          git push
