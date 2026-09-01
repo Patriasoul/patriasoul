@@ -1,0 +1,4 @@
+# Supabase CLI project configuration
+# This file is intentionally minimal; database migrations live in supabase/migrations.
+
+project_id = "azerctpwfzdivydsxyex"
