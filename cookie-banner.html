@@ -1,2 +1,368 @@
-<!-- Zajednički banner za kolačiće. -->
-<div id="cookie-banner" hidden></div>
+<!--
+  PatriaSoul – banner za kolačiće
+  Napomena: u ovaj javni dokument ne stavljati API ključeve, tokene ili lozinke.
+  Neobavezne analitičke/marketinške skripte trebaju se pokretati tek nakon pristanka korisnika.
+-->
+<section
+  id="cookie-banner"
+  class="ps-cookie-banner"
+  hidden
+  role="dialog"
+  aria-modal="false"
+  aria-labelledby="ps-cookie-title"
+  aria-describedby="ps-cookie-description"
+>
+  <div class="ps-cookie-banner__inner">
+    <div class="ps-cookie-banner__content">
+      <div class="ps-cookie-banner__icon" aria-hidden="true">🍪</div>
+      <div>
+        <p class="ps-cookie-banner__eyebrow">Privatnost i kolačići</p>
+        <h2 id="ps-cookie-title" class="ps-cookie-banner__title">Vaša privatnost nam je važna</h2>
+        <p id="ps-cookie-description" class="ps-cookie-banner__text">
+          PatriaSoul koristi nužne kolačiće za pravilan rad stranice. Neobavezne kolačiće
+          za analitiku i druge svrhe koristimo samo uz vaš pristanak.
+          <a href="/privatnost.html" class="ps-cookie-banner__link">Saznaj više</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="ps-cookie-banner__actions" aria-label="Postavke kolačića">
+      <button type="button" class="ps-cookie-btn ps-cookie-btn--secondary" data-cookie-action="reject">
+        Samo nužni
+      </button>
+      <button type="button" class="ps-cookie-btn ps-cookie-btn--ghost" data-cookie-action="settings">
+        Postavke
+      </button>
+      <button type="button" class="ps-cookie-btn ps-cookie-btn--primary" data-cookie-action="accept">
+        Prihvati sve
+      </button>
+    </div>
+  </div>
+
+  <div class="ps-cookie-settings" data-cookie-settings hidden>
+    <div class="ps-cookie-settings__head">
+      <div>
+        <p class="ps-cookie-banner__eyebrow">Postavke privatnosti</p>
+        <h3 class="ps-cookie-settings__title">Odaberite što dopuštate</h3>
+      </div>
+      <button type="button" class="ps-cookie-settings__close" data-cookie-action="close" aria-label="Zatvori postavke">×</button>
+    </div>
+
+    <div class="ps-cookie-category">
+      <div>
+        <strong>Nužni kolačići</strong>
+        <p>Potrebni su za osnovni rad stranice i ne mogu se isključiti.</p>
+      </div>
+      <span class="ps-cookie-status">Uvijek aktivni</span>
+    </div>
+
+    <label class="ps-cookie-category ps-cookie-category--toggle">
+      <span>
+        <strong>Analitika</strong>
+        <p>Pomaže nam razumjeti korištenje stranice i poboljšati sadržaj.</p>
+      </span>
+      <input type="checkbox" name="cookie-analytics" data-cookie-category="analytics">
+    </label>
+
+    <label class="ps-cookie-category ps-cookie-category--toggle">
+      <span>
+        <strong>Vanjski sadržaj</strong>
+        <p>Omogućuje sadržaje i usluge trećih strana kada ih koristimo na stranici.</p>
+      </span>
+      <input type="checkbox" name="cookie-external" data-cookie-category="external">
+    </label>
+
+    <div class="ps-cookie-settings__actions">
+      <button type="button" class="ps-cookie-btn ps-cookie-btn--secondary" data-cookie-action="save">
+        Spremi odabir
+      </button>
+      <button type="button" class="ps-cookie-btn ps-cookie-btn--primary" data-cookie-action="accept">
+        Prihvati sve
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ps-cookie-banner {
+    --ps-cookie-bg: #171717;
+    --ps-cookie-bg-soft: #202020;
+    --ps-cookie-line: rgba(212, 175, 55, .24);
+    --ps-cookie-gold: #d4af37;
+    --ps-cookie-gold-light: #f0d879;
+    --ps-cookie-text: #f5f5f5;
+    --ps-cookie-muted: #b9b9b9;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    color: var(--ps-cookie-text);
+    background: linear-gradient(135deg, rgba(23,23,23,.98), rgba(13,13,13,.98));
+    border-top: 1px solid var(--ps-cookie-line);
+    box-shadow: 0 -14px 40px rgba(0,0,0,.35);
+    backdrop-filter: blur(12px);
+  }
+
+  .ps-cookie-banner__inner,
+  .ps-cookie-settings {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+  }
+
+  .ps-cookie-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .ps-cookie-banner__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .ps-cookie-banner__icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--ps-cookie-line);
+    border-radius: 12px;
+    background: rgba(212,175,55,.08);
+    font-size: 20px;
+  }
+
+  .ps-cookie-banner__eyebrow {
+    margin: 0 0 4px;
+    color: var(--ps-cookie-gold-light);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .ps-cookie-banner__title {
+    margin: 0 0 6px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .ps-cookie-banner__text {
+    max-width: 760px;
+    margin: 0;
+    color: var(--ps-cookie-muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .ps-cookie-banner__link {
+    color: var(--ps-cookie-gold-light);
+    font-weight: 700;
+  }
+
+  .ps-cookie-banner__actions,
+  .ps-cookie-settings__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 0 0 auto;
+  }
+
+  .ps-cookie-btn {
+    min-height: 40px;
+    padding: 9px 15px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform .18s ease, background .18s ease, border-color .18s ease;
+  }
+
+  .ps-cookie-btn:hover { transform: translateY(-1px); }
+  .ps-cookie-btn:focus-visible,
+  .ps-cookie-settings__close:focus-visible,
+  .ps-cookie-category input:focus-visible {
+    outline: 2px solid var(--ps-cookie-gold-light);
+    outline-offset: 3px;
+  }
+
+  .ps-cookie-btn--primary {
+    color: #161616;
+    background: linear-gradient(135deg, var(--ps-cookie-gold-light), var(--ps-cookie-gold));
+  }
+
+  .ps-cookie-btn--secondary {
+    color: var(--ps-cookie-text);
+    background: rgba(255,255,255,.06);
+    border-color: rgba(255,255,255,.16);
+  }
+
+  .ps-cookie-btn--ghost {
+    color: var(--ps-cookie-gold-light);
+    background: transparent;
+    border-color: var(--ps-cookie-line);
+  }
+
+  .ps-cookie-settings {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+
+  .ps-cookie-settings__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .ps-cookie-settings__title { margin: 0; font-size: 17px; }
+
+  .ps-cookie-settings__close {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 8px;
+    color: var(--ps-cookie-text);
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .ps-cookie-category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 13px 0;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+
+  .ps-cookie-category strong { font-size: 14px; }
+  .ps-cookie-category p { margin: 4px 0 0; color: var(--ps-cookie-muted); font-size: 12px; line-height: 1.45; }
+  .ps-cookie-status { color: var(--ps-cookie-gold-light); font-size: 12px; font-weight: 800; white-space: nowrap; }
+  .ps-cookie-category--toggle { cursor: pointer; }
+  .ps-cookie-category input { width: 20px; height: 20px; accent-color: var(--ps-cookie-gold); cursor: pointer; }
+  .ps-cookie-settings__actions { justify-content: flex-end; margin-top: 12px; }
+
+  @media (max-width: 820px) {
+    .ps-cookie-banner__inner { align-items: stretch; flex-direction: column; gap: 14px; }
+    .ps-cookie-banner__actions { width: 100%; }
+    .ps-cookie-btn { flex: 1 1 140px; }
+  }
+
+  @media (max-width: 520px) {
+    .ps-cookie-banner { padding: 12px; }
+    .ps-cookie-banner__icon { display: none; }
+    .ps-cookie-banner__actions { flex-direction: column; }
+    .ps-cookie-btn { width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ps-cookie-btn { transition: none; }
+    .ps-cookie-btn:hover { transform: none; }
+  }
+</style>
+
+<script>
+  (function () {
+    'use strict';
+
+    const banner = document.getElementById('cookie-banner');
+    if (!banner || banner.dataset.cookieReady === 'true') return;
+
+    const STORAGE_KEY = 'patriasoul_cookie_consent_v1';
+    const settings = banner.querySelector('[data-cookie-settings]');
+    const analytics = banner.querySelector('[data-cookie-category="analytics"]');
+    const external = banner.querySelector('[data-cookie-category="external"]');
+
+    banner.dataset.cookieReady = 'true';
+
+    function readConsent() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function saveConsent(value) {
+      const consent = {
+        version: 1,
+        necessary: true,
+        analytics: Boolean(value.analytics),
+        external: Boolean(value.external),
+        savedAt: new Date().toISOString()
+      };
+
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+      } catch (error) {
+        // Ako localStorage nije dostupan, banner ostaje bez trajne pohrane pristanka.
+      }
+
+      banner.hidden = true;
+      settings.hidden = true;
+
+      window.dispatchEvent(new CustomEvent('patriasoul:cookie-consent', {
+        detail: consent
+      }));
+    }
+
+    function openSettings() {
+      settings.hidden = false;
+      banner.querySelector('[data-cookie-action="settings"]').setAttribute('aria-expanded', 'true');
+      if (analytics) analytics.focus();
+    }
+
+    function closeSettings() {
+      settings.hidden = true;
+      const settingsButton = banner.querySelector('[data-cookie-action="settings"]');
+      if (settingsButton) settingsButton.setAttribute('aria-expanded', 'false');
+    }
+
+    banner.addEventListener('click', function (event) {
+      const button = event.target.closest('[data-cookie-action]');
+      if (!button) return;
+
+      const action = button.getAttribute('data-cookie-action');
+
+      if (action === 'accept') {
+        saveConsent({ analytics: true, external: true });
+      } else if (action === 'reject') {
+        saveConsent({ analytics: false, external: false });
+      } else if (action === 'settings') {
+        openSettings();
+      } else if (action === 'close') {
+        closeSettings();
+      } else if (action === 'save') {
+        saveConsent({
+          analytics: analytics && analytics.checked,
+          external: external && external.checked
+        });
+      }
+    });
+
+    const existing = readConsent();
+    if (!existing) {
+      banner.hidden = false;
+    }
+
+    window.PatriaSoulCookieConsent = {
+      get: readConsent,
+      openSettings: openSettings,
+      clear: function () {
+        try { localStorage.removeItem(STORAGE_KEY); } catch (error) {}
+        banner.hidden = false;
+      }
+    };
+  })();
+</script>
