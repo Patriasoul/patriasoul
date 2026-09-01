@@ -1,10 +1,30 @@
 <!-- PatriaSoul — shared navigation component -->
 <header class="ps-header">
   <div class="container ps-nav">
-    <a class="ps-brand" href="/index.html" aria-label="PatriaSoul početna"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
+    <a class="ps-brand" href="/index.html" aria-label="PatriaSoul početna">
+      <span class="ps-brand-mark" aria-hidden="true">PS</span>
+      <span class="ps-brand-name">PATRIA<span>SOUL</span></span>
+    </a>
+
     <nav class="ps-mainnav" aria-label="Glavna navigacija">
-      <a href="/index.html">Početna</a><a href="/pages/domovina/index.html">Domovina</a><a href="/pages/branitelji/index.html">Branitelji</a><a href="/pages/povijest/index.html">Povijest</a><a href="/pages/bastina/index.html">Baština</a><a href="/pages/vjera/index.html">Vjera</a><a href="/pages/gradovi/index.html">Gradovi</a><a href="/vijesti.html">Vijesti</a><a href="/vrijeme.html" aria-current="page">🌤️ Vrijeme</a><a href="/pages/brani-svoj-grad/index.html">🛡️ Igra</a><a class="ps-nav-cta" href="/pages/kviz/index.html">🧠 Kviz</a>
+      <a href="/index.html">Početna</a>
+      <a href="/pages/domovina/index.html">Domovina</a>
+      <a href="/pages/branitelji/index.html">Branitelji</a>
+      <a href="/pages/povijest/index.html">Povijest</a>
+      <a href="/pages/bastina/index.html">Baština</a>
+      <a href="/pages/vjera/index.html">Vjera</a>
+      <a href="/pages/gradovi/index.html">Gradovi</a>
+      <a href="/vijesti.html">Vijesti</a>
+      <a href="/vrijeme.html">🌤️ Vrijeme</a>
+      <a class="ps-nav-game" href="/pages/brani-svoj-grad/index.html">🛡️ Igraj</a>
+      <a class="ps-nav-cta" href="/pages/kviz/index.html" aria-label="Igraj PatriaSoul kviz">
+        <span aria-hidden="true">🧠</span>
+        <span>Igraj kviz</span>
+      </a>
     </nav>
-    <button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik">☰</button>
+
+    <button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik" aria-expanded="false" aria-controls="ps-main-navigation">
+      <span aria-hidden="true">☰</span>
+    </button>
   </div>
 </header>
