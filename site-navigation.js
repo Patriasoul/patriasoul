@@ -10,8 +10,8 @@
       {title:'Operacije i bojišta',items:[['⚔️ Operacije','/operacije.html'],['🗺️ Vukovar','/vukovar.html']]},
       {title:'Sjećanje',items:[['🕯️ Spomenici i memorijali','/spomenici.html']]}
     ]},
-    {label:'Povijest',href:'/povijest.html',children:[['Hrvatska povijest','/povijest.html'],['Domovinski rat','/domovinski-rat.html'],['Bitke i bojišta','/operacije.html'],['Datumi i događaji','/datumi.html']]},
-    {label:'Baština',href:'/bastina.html',children:[['Baština','/bastina.html'],['Spomenici','/spomenici.html'],['Kulturna baština','/kulturna-bastina.html'],['Tradicija','/tradicija.html']]},
+    {label:'Povijest',href:'/povijest.html',children:[['Hrvatska povijest','/povijest.html'],['Domovinski rat','/domovinski-rat.html'],['Bitke i bojišta','/operacije.html']]},
+    {label:'Baština',href:'/bastina.html',children:[['Baština','/bastina.html'],['Spomenici','/spomenici.html']]},
     {label:'Vjera',href:'/vjera.html',children:[['Vjera i duhovna baština','/vjera.html'],['Evanđelje','/evandelje.html'],['Svetac dana','/svetac-dana.html'],['Molitve','/molitve.html'],['Krunica','/krunica.html'],['Blagdani','/blagdani.html'],['Biblija','/biblija.html']]},
     {label:'Gradovi',href:'/gradovi.html',children:[['Svi gradovi','/gradovi.html'],['Zagreb','/grad.html?grad=zagreb'],['Vukovar','/grad.html?grad=vukovar'],['Split','/grad.html?grad=split'],['Rijeka','/grad.html?grad=rijeka'],['Osijek','/grad.html?grad=osijek']]},
     {label:'Vijesti',href:'/vijesti.html'},
@@ -41,7 +41,7 @@
   function render(){
     var nav=document.querySelector('.ps-mainnav');if(!nav)return;
     nav.innerHTML='';nav.id='ps-mainnav';nav.setAttribute('data-ps-canonical-nav','true');
-    groups.forEach(function(g){nav.appendChild(g.children||g.mega?makeGroup(g):makeLink(g));});
+    groups.forEach(function(g){nav.appendChild((g.children||g.mega)?makeGroup(g):makeLink(g));});
     var quiz=makeLink({label:'🧠 Kviz',href:'/quiz.html'});quiz.className='ps-nav-cta';nav.appendChild(quiz);
   }
   function init(){
