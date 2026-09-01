@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "provider": "gemini",
+  "model": "",
+  "knowledgeBase": "knowledge/",
+  "maxContextItems": 8,
+  "maxRequestsPerMinute": 20,
+  "maxRequestsPerDayPerUser": 30,
+  "requireSourcesForFacts": true,
+  "humanReviewForSensitiveNews": true,
+  "storeUserPrompts": false
+}
