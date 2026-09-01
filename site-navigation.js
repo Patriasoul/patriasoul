@@ -1,4 +1,4 @@
-/* PatriaSoul — canonical portal navigation */
+/* PatriaSoul — canonical portal shell: navigation + shared footer */
 (function(){
   'use strict';
   var groups=[
@@ -26,38 +26,20 @@
     var top=makeLink(g);top.className='ps-nav-parent';top.setAttribute('aria-haspopup','true');
     wrap.appendChild(top);
     var menu=document.createElement('div');menu.className='ps-subnav'+(g.mega?' ps-mega-menu':'');
-    if(g.mega){
-      g.sections.forEach(function(s){
-        var section=document.createElement('section');section.className='ps-mega-section';
-        var h=document.createElement('h4');h.textContent=s.title;section.appendChild(h);
-        s.items.forEach(function(c){section.appendChild(makeLink({label:c[0],href:c[1]}));});
-        menu.appendChild(section);
-      });
-    }else{
-      g.children.forEach(function(c){menu.appendChild(makeLink({label:c[0],href:c[1]}));});
-    }
+    if(g.mega){g.sections.forEach(function(s){var section=document.createElement('section');section.className='ps-mega-section';var h=document.createElement('h4');h.textContent=s.title;section.appendChild(h);s.items.forEach(function(c){section.appendChild(makeLink({label:c[0],href:c[1]}));});menu.appendChild(section);});}
+    else{g.children.forEach(function(c){menu.appendChild(makeLink({label:c[0],href:c[1]}));});}
     wrap.appendChild(menu);return wrap;
   }
-  function render(){
-    var nav=document.querySelector('.ps-mainnav');if(!nav)return;
-    nav.innerHTML='';nav.id='ps-mainnav';nav.setAttribute('data-ps-canonical-nav','true');
-    groups.forEach(function(g){nav.appendChild((g.children||g.mega)?makeGroup(g):makeLink(g));});
-    var quiz=makeLink({label:'🧠 Kviz',href:'/quiz.html'});quiz.className='ps-nav-cta';nav.appendChild(quiz);
+  function render(){var nav=document.querySelector('.ps-mainnav');if(!nav)return;nav.innerHTML='';nav.id='ps-mainnav';nav.setAttribute('data-ps-canonical-nav','true');groups.forEach(function(g){nav.appendChild((g.children||g.mega)?makeGroup(g):makeLink(g));});var quiz=makeLink({label:'🧠 Kviz',href:'/quiz.html'});quiz.className='ps-nav-cta';nav.appendChild(quiz);}
+  function normalizeFooter(){
+    var footer=document.querySelector('footer');if(!footer)return;footer.classList.add('ps-footer');
+    footer.innerHTML='<div class="container"><div class="ps-footer-grid"><div><a class="ps-brand" href="/index.html"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a><p>Hrvatska. Povijest. Znanje. Identitet. Digitalni prostor za čuvanje nasljeđa i njegovo prenošenje novim generacijama.</p></div><div><h4>Domovina</h4><div class="ps-footer-links"><a href="/domovina.html">Hrvatska</a><a href="/gradovi.html">Gradovi</a><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a></div></div><div><h4>Branitelji</h4><div class="ps-footer-links"><a href="/branitelji.html">Branitelji</a><a href="/postrojbe.html">Postrojbe</a><a href="/brigade.html">Brigade</a><a href="/operacije.html">Operacije</a><a href="/spomenici.html">Spomenici</a></div></div><div><h4>Zajednica</h4><div class="ps-footer-links"><a href="/vjera.html">Vjera</a><a href="/video.html">Video</a><a href="/galerija.html">Galerija</a><a href="/quiz.html">Kviz</a><a href="/profil.html">Profil</a></div></div></div><div class="ps-footer-bottom"><span>© 2026 PatriaSoul</span><span>Čuvaj nasljeđe. Prenesi ga dalje.</span></div></div>';
   }
   function init(){
-    render();
+    render();normalizeFooter();
     var b=document.querySelector('[data-ps-menu]'),n=document.querySelector('.ps-mainnav');
-    if(b&&n&&!b.dataset.bound){
-      b.dataset.bound='1';b.setAttribute('aria-controls','ps-mainnav');b.setAttribute('aria-expanded','false');
-      b.addEventListener('click',function(){var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',String(open));b.textContent=open?'✕':'☰';});
-      n.addEventListener('click',function(e){
-        var parent=e.target.closest('.ps-nav-parent');
-        if(!parent||window.matchMedia('(min-width:861px)').matches)return;
-        var group=parent.closest('.ps-nav-group');if(!group)return;
-        e.preventDefault();group.classList.toggle('is-expanded');
-      });
-    }
+    if(b&&n&&!b.dataset.bound){b.dataset.bound='1';b.setAttribute('aria-controls','ps-mainnav');b.setAttribute('aria-expanded','false');b.addEventListener('click',function(){var open=n.classList.toggle('is-open');b.setAttribute('aria-expanded',String(open));b.textContent=open?'✕':'☰';});n.addEventListener('click',function(e){var parent=e.target.closest('.ps-nav-parent');if(!parent||window.matchMedia('(min-width:861px)').matches)return;var group=parent.closest('.ps-nav-group');if(!group)return;e.preventDefault();group.classList.toggle('is-expanded');});}
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
-  window.PatriaSiteNavigation={groups:groups,render:render};
+  window.PatriaSiteNavigation={groups:groups,render:render,normalizeFooter:normalizeFooter};
 })();
