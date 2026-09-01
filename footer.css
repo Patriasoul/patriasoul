@@ -1,23 +1,22 @@
 /*
- * PatriaSoul — Footer system
- * Moderni, responsivni i ponovno upotrebljiv stil podnožja.
- * Namjerno ne ovisi o JavaScriptu niti o fiksnoj visini.
+ * PatriaSoul — Premium Footer
+ * Puna širina, bogata navigacija, responsivni grid i hrvatski identitet.
  */
 
 :root {
-  --ps-footer-bg: #101216;
-  --ps-footer-bg-deep: #0a0c0f;
-  --ps-footer-surface: rgba(255, 255, 255, 0.035);
-  --ps-footer-border: rgba(212, 175, 55, 0.18);
+  --ps-footer-bg: #0d1014;
+  --ps-footer-bg-deep: #080a0d;
+  --ps-footer-surface: rgba(255,255,255,.035);
+  --ps-footer-border: rgba(212,175,55,.18);
   --ps-footer-gold: #d4af37;
   --ps-footer-gold-light: #f0d77a;
-  --ps-footer-text: #f2f2f2;
+  --ps-footer-text: #f4f4f4;
   --ps-footer-muted: #a9adb5;
   --ps-footer-max: 1240px;
-  --ps-footer-radius: 18px;
 }
 
-/* Glavni footer */
+/* Zajednički footer — uvijek puna širina */
+.ps-footer,
 footer,
 .site-footer,
 #site-footer,
@@ -26,30 +25,29 @@ footer,
   width: 100%;
   margin-top: 0;
   padding: 0;
+  overflow: hidden;
   color: var(--ps-footer-text);
   background:
-    radial-gradient(circle at 15% 0%, rgba(212, 175, 55, 0.08), transparent 34%),
-    radial-gradient(circle at 85% 100%, rgba(212, 175, 55, 0.055), transparent 30%),
-    linear-gradient(180deg, var(--ps-footer-bg) 0%, var(--ps-footer-bg-deep) 100%);
+    radial-gradient(circle at 10% 0%, rgba(212,175,55,.09), transparent 30%),
+    radial-gradient(circle at 90% 100%, rgba(212,175,55,.06), transparent 30%),
+    linear-gradient(180deg, var(--ps-footer-bg), var(--ps-footer-bg-deep));
   border-top: 1px solid var(--ps-footer-border);
-  overflow: hidden;
 }
 
-/* Gornji zlatni detalj */
+.ps-footer::before,
 footer::before,
 .site-footer::before,
 #site-footer::before,
 .footer::before {
   content: "";
   display: block;
-  width: min(180px, 35vw);
+  width: min(240px, 42vw);
   height: 2px;
   margin: 0 auto;
   background: linear-gradient(90deg, transparent, var(--ps-footer-gold), transparent);
-  opacity: 0.85;
 }
 
-/* Standardni unutarnji kontejneri */
+.ps-footer-container,
 .footer-container,
 .footer-inner,
 .footer-wrap,
@@ -60,57 +58,113 @@ footer > .container,
   margin-inline: auto;
 }
 
+/* Brand + završna poruka */
+.ps-footer-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 54px 0 42px;
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+
+.ps-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ps-footer-text);
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  font-weight: 900;
+  letter-spacing: .07em;
+  text-decoration: none;
+}
+
+.ps-brand > span:last-child {
+  color: var(--ps-footer-gold);
+}
+
+.ps-brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  margin-right: 2px;
+  color: #0b0d10;
+  background: linear-gradient(135deg, var(--ps-footer-gold-light), var(--ps-footer-gold));
+  border-radius: 10px;
+  font-size: .8rem;
+  letter-spacing: 0;
+}
+
+.ps-footer-brand-block p {
+  max-width: 430px;
+  margin: 14px 0 0;
+  color: var(--ps-footer-muted);
+  line-height: 1.75;
+}
+
+.ps-footer-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  color: var(--ps-footer-gold);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.ps-footer-signature::before {
+  content: "";
+  width: 27px;
+  height: 1px;
+  background: var(--ps-footer-gold);
+}
+
+.ps-footer-motto {
+  justify-self: end;
+  max-width: 520px;
+  padding: 22px 26px;
+  background: linear-gradient(135deg, rgba(212,175,55,.07), rgba(255,255,255,.018));
+  border: 1px solid rgba(212,175,55,.13);
+  border-radius: 16px;
+}
+
+.ps-footer-motto-line {
+  display: block;
+  width: 44px;
+  height: 2px;
+  margin-bottom: 14px;
+  background: var(--ps-footer-gold);
+}
+
+.ps-footer-motto p {
+  margin: 0;
+  color: #d7d9dd;
+  font-size: .96rem;
+  line-height: 1.75;
+  font-style: italic;
+}
+
+/* Četiri glavna stupca */
+.ps-footer-grid,
 .footer-top,
 .footer-main,
 .footer-grid,
 .footer-widgets {
   display: grid;
-  grid-template-columns: minmax(260px, 1.7fr) repeat(3, minmax(150px, 1fr));
-  gap: clamp(28px, 4vw, 64px);
-  padding: 58px 0 44px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 58px);
+  padding: 44px 0 48px;
 }
 
-/* Brand */
-.footer-brand,
-.footer-about {
-  max-width: 430px;
+.ps-footer-grid nav {
+  min-width: 0;
 }
 
-.footer-brand h2,
-.footer-brand h3,
-.footer-about h2,
-.footer-about h3 {
-  margin: 0 0 12px;
-  color: var(--ps-footer-text);
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
-  font-weight: 800;
-  letter-spacing: 0.01em;
-}
-
-.footer-brand h2::first-letter,
-.footer-brand h3::first-letter {
-  color: var(--ps-footer-gold);
-}
-
-.footer-brand p,
-.footer-about p {
-  margin: 0;
-  color: var(--ps-footer-muted);
-  font-size: 0.95rem;
-  line-height: 1.75;
-}
-
-.footer-logo,
-.footer-brand img {
-  display: block;
-  width: auto;
-  max-width: 190px;
-  max-height: 64px;
-  margin: 0 0 18px;
-  object-fit: contain;
-}
-
-/* Naslovi stupaca */
+.ps-footer-grid h4,
 .footer-column h3,
 .footer-col h3,
 .footer-links h3,
@@ -118,73 +172,47 @@ footer > .container,
 .footer-section h3 {
   margin: 0 0 16px;
   color: var(--ps-footer-gold-light);
-  font-size: 0.88rem;
-  font-weight: 800;
-  letter-spacing: 0.11em;
+  font-size: .82rem;
+  font-weight: 850;
+  letter-spacing: .13em;
   text-transform: uppercase;
 }
 
-/* Linkovi */
+.ps-footer-links,
 .footer-column ul,
 .footer-col ul,
 .footer-links ul,
 .footer-nav ul,
 .footer-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.footer-column li,
-.footer-col li,
-.footer-links li,
-.footer-nav li,
-.footer-section li {
-  margin: 0;
-  padding: 0;
-}
-
-footer a,
-.site-footer a,
-#site-footer a,
-.footer a {
-  color: var(--ps-footer-muted);
-  text-decoration: none;
-  transition: color 180ms ease, opacity 180ms ease, transform 180ms ease;
-}
-
-.footer-column li + li,
-.footer-col li + li,
-.footer-links li + li,
-.footer-nav li + li,
-.footer-section li + li {
-  margin-top: 10px;
-}
-
+.ps-footer-links a,
 .footer-column a,
 .footer-col a,
 .footer-links a,
 .footer-nav a,
-.footer-section a {
+.footer-section a,
+footer a,
+.site-footer a,
+#site-footer a,
+.footer a {
   display: inline-flex;
   align-items: center;
+  width: fit-content;
   min-height: 28px;
-  font-size: 0.93rem;
+  color: var(--ps-footer-muted);
+  font-size: .91rem;
+  text-decoration: none;
+  transition: color 180ms ease, transform 180ms ease;
 }
 
-.footer-column a:hover,
-.footer-col a:hover,
-.footer-links a:hover,
-.footer-nav a:hover,
-.footer-section a:hover,
-footer a:hover,
-.site-footer a:hover,
-#site-footer a:hover,
-.footer a:hover {
-  color: var(--ps-footer-gold-light);
-}
-
-/* Suptilna strelica uz navigacijske linkove */
+.ps-footer-links a::before,
 .footer-column a::before,
 .footer-col a::before,
 .footer-links a::before,
@@ -197,6 +225,21 @@ footer a:hover,
   transition: opacity 180ms ease, transform 180ms ease;
 }
 
+.ps-footer-links a:hover,
+.footer-column a:hover,
+.footer-col a:hover,
+.footer-links a:hover,
+.footer-nav a:hover,
+.footer-section a:hover,
+footer a:hover,
+.site-footer a:hover,
+#site-footer a:hover,
+.footer a:hover {
+  color: var(--ps-footer-gold-light);
+  transform: translateX(2px);
+}
+
+.ps-footer-links a:hover::before,
 .footer-column a:hover::before,
 .footer-col a:hover::before,
 .footer-links a:hover::before,
@@ -205,99 +248,48 @@ footer a:hover,
   transform: translateX(0);
 }
 
-/* Društvene mreže */
-.footer-social,
-.footer-socials,
-#footer-social-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 9px;
-  margin-top: 22px;
-}
-
-.footer-social a,
-.footer-socials a,
-#footer-social-buttons a,
-.footer-social button,
-.footer-socials button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  color: var(--ps-footer-muted);
-  background: var(--ps-footer-surface);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 50%;
-}
-
-.footer-social a:hover,
-.footer-socials a:hover,
-#footer-social-buttons a:hover,
-.footer-social button:hover,
-.footer-socials button:hover {
-  color: var(--ps-footer-gold-light);
-  background: rgba(212, 175, 55, 0.1);
-  border-color: rgba(212, 175, 55, 0.35);
-  transform: translateY(-2px);
-}
-
 /* Donji redak */
+.ps-footer-bottom,
 .footer-bottom,
 .footer-bottom-bar,
 #footer-bottom-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 20px 0 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 24px;
+  padding: 20px 0 25px;
+  border-top: 1px solid rgba(255,255,255,.08);
 }
 
+.ps-footer-bottom > div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: center;
+}
+
+.ps-footer-bottom strong,
 .footer-bottom p,
 .footer-bottom-bar p,
 .footer-copyright,
 .footer-bottom small {
-  margin: 0;
-  color: #858a93;
-  font-size: 0.82rem;
-  line-height: 1.6;
+  color: #d0d2d6;
+  font-size: .78rem;
 }
 
-.footer-bottom-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px 20px;
-}
-
+.ps-footer-bottom span,
+.ps-footer-bottom-links,
 .footer-bottom-links a {
-  font-size: 0.82rem;
+  color: #858a93;
+  font-size: .78rem;
 }
 
-/* Oznaka / patriotski detalj */
-.footer-signature {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 18px;
-  color: var(--ps-footer-gold);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.footer-signature::before {
-  content: "";
-  width: 24px;
-  height: 1px;
-  background: var(--ps-footer-gold);
+.ps-footer-bottom-links {
+  text-align: right;
 }
 
 /* Fokus tipkovnice */
+.ps-footer a:focus-visible,
 footer a:focus-visible,
 .site-footer a:focus-visible,
 #site-footer a:focus-visible,
@@ -310,24 +302,28 @@ footer a:focus-visible,
 
 /* Tablet */
 @media (max-width: 900px) {
+  .ps-footer-hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .ps-footer-motto {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .ps-footer-grid,
   .footer-top,
   .footer-main,
   .footer-grid,
   .footer-widgets {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 34px 28px;
-    padding-top: 44px;
-  }
-
-  .footer-brand,
-  .footer-about {
-    max-width: none;
-    grid-column: 1 / -1;
   }
 }
 
 /* Mobitel */
 @media (max-width: 620px) {
+  .ps-footer-container,
   .footer-container,
   .footer-inner,
   .footer-wrap,
@@ -337,34 +333,25 @@ footer a:focus-visible,
     width: min(100% - 28px, var(--ps-footer-max));
   }
 
+  .ps-footer-hero {
+    padding: 38px 0 30px;
+  }
+
+  .ps-footer-grid,
   .footer-top,
   .footer-main,
   .footer-grid,
   .footer-widgets {
     grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 38px 0 30px;
+    gap: 27px;
+    padding: 32px 0 34px;
   }
 
-  .footer-brand,
-  .footer-about {
-    grid-column: auto;
+  .ps-footer-motto {
+    padding: 18px 20px;
   }
 
-  .footer-logo,
-  .footer-brand img {
-    max-width: 165px;
-    max-height: 56px;
-  }
-
-  .footer-column h3,
-  .footer-col h3,
-  .footer-links h3,
-  .footer-nav h3,
-  .footer-section h3 {
-    margin-bottom: 11px;
-  }
-
+  .ps-footer-bottom,
   .footer-bottom,
   .footer-bottom-bar,
   #footer-bottom-section {
@@ -373,26 +360,17 @@ footer a:focus-visible,
     padding: 18px 0 22px;
   }
 
-  .footer-bottom-links {
-    justify-content: flex-start;
-  }
-
-  .footer-social,
-  .footer-socials,
-  #footer-social-buttons {
-    margin-top: 18px;
+  .ps-footer-bottom-links {
+    text-align: left;
   }
 }
 
-/* Korisnici koji preferiraju manje animacija */
 @media (prefers-reduced-motion: reduce) {
+  .ps-footer a,
   footer a,
   .site-footer a,
   #site-footer a,
-  .footer a,
-  .footer-social a,
-  .footer-socials a,
-  #footer-social-buttons a {
+  .footer a {
     transition: none;
   }
 }
