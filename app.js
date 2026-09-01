@@ -23,7 +23,10 @@
   ];
 
   function absolutePath(path) {
-    return new URL(path, window.location.origin + ROOT).pathname;
+    // Always resolve portal links relative to the detected project root.
+    // A leading slash must not escape a GitHub Pages project path.
+    const cleanPath = String(path || '').replace(/^\/+/, '');
+    return new URL(cleanPath || 'index.html', window.location.origin + ROOT).pathname;
   }
 
   function normalizePath(path) {
@@ -71,8 +74,6 @@
   }
 
   function polishKnownContent() {
-    // Small terminology correction kept here temporarily so the existing
-    // Domovina page remains correct without duplicating or rebuilding it.
     if (window.location.pathname.endsWith('/domovina.html')) {
       document.querySelectorAll('.domovina-fact strong').forEach(node => {
         if (node.textContent.trim() === 'Dalmatia') node.textContent = 'Dalmacija';
