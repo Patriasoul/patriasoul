@@ -1,0 +1,100 @@
+-- PatriaSoul Phase 2 — production schema
+create extension if not exists pgcrypto;
+
+create table if not exists public.profiles (
+  id uuid primary key references auth.users(id) on delete cascade,
+  nickname text not null check (char_length(nickname) between 3 and 40),
+  avatar_url text,
+  xp bigint not null default 0 check (xp >= 0),
+  points bigint not null default 0 check (points >= 0),
+  quizzes integer not null default 0 check (quizzes >= 0),
+  correct integer not null default 0 check (correct >= 0),
+  answers integer not null default 0 check (answers >= 0),
+  streak integer not null default 0 check (streak >= 0),
+  selected_city_slug text,
+  badges jsonb not null default '[]'::jsonb,
+  favorites jsonb not null default '[]'::jsonb,
+  categories jsonb not null default '{}'::jsonb,
+  cities jsonb not null default '{}'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.quiz_results (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.profiles(id) on delete cascade,
+  category text not null,
+  period text not null default 'all' check (period in ('daily','weekly','monthly','all','city')),
+  score integer not null default 0 check (score >= 0),
+  xp integer not null default 0 check (xp >= 0),
+  correct integer not null default 0 check (correct >= 0),
+  answers integer not null default 0 check (answers >= 0),
+  city_slug text,
+  question_count integer not null default 0 check (question_count >= 0),
+  duration_ms integer,
+  client_nonce uuid,
+  created_at timestamptz not null default now()
+);
+
+create table if not exists public.favorite_questions (
+  user_id uuid not null references public.profiles(id) on delete cascade,
+  question_id text not null,
+  created_at timestamptz not null default now(),
+  primary key (user_id, question_id)
+);
+
+create index if not exists quiz_results_user_created on public.quiz_results(user_id, created_at desc);
+create index if not exists quiz_results_period_created on public.quiz_results(period, created_at desc);
+create index if not exists quiz_results_city_created on public.quiz_results(city_slug, created_at desc);
+
+create or replace function public.handle_new_user() returns trigger language plpgsql security definer set search_path = public as $$
+begin
+  insert into public.profiles(id,nickname) values (new.id, coalesce(nullif(new.raw_user_meta_data->>'nickname',''),'Igrač')) on conflict (id) do nothing;
+  return new;
+end; $$;
+
+drop trigger if exists on_auth_user_created on auth.users;
+create trigger on_auth_user_created after insert on auth.users for each row execute procedure public.handle_new_user();
+
+alter table public.profiles enable row level security;
+alter table public.quiz_results enable row level security;
+alter table public.favorite_questions enable row level security;
+
+drop policy if exists profiles_select_public on public.profiles;
+create policy profiles_select_public on public.profiles for select using (true);
+drop policy if exists profiles_insert_own on public.profiles;
+create policy profiles_insert_own on public.profiles for insert with check (auth.uid() = id);
+drop policy if exists profiles_update_own on public.profiles;
+create policy profiles_update_own on public.profiles for update using (auth.uid() = id) with check (auth.uid() = id);
+
+drop policy if exists results_select_public on public.quiz_results;
+create policy results_select_public on public.quiz_results for select using (true);
+drop policy if exists results_insert_own on public.quiz_results;
+create policy results_insert_own on public.quiz_results for insert with check (auth.uid() = user_id);
+drop policy if exists results_update_none on public.quiz_results;
+
+create policy favorites_select_own on public.favorite_questions for select using (auth.uid() = user_id);
+create policy favorites_insert_own on public.favorite_questions for insert with check (auth.uid() = user_id);
+create policy favorites_delete_own on public.favorite_questions for delete using (auth.uid() = user_id);
+
+create or replace view public.leaderboard_all as
+select p.id,p.nickname,p.xp,p.points,p.quizzes,p.correct,row_number() over(order by p.xp desc,p.points desc,p.id) as rank
+from public.profiles p;
+
+create or replace view public.leaderboard_daily as
+select p.id,p.nickname,sum(r.score)::bigint as points,sum(r.xp)::bigint as xp,count(r.id)::bigint as quizzes,sum(r.correct)::bigint as correct,
+row_number() over(order by sum(r.score) desc,sum(r.xp) desc,p.id) as rank
+from public.profiles p join public.quiz_results r on r.user_id=p.id
+where r.created_at >= date_trunc('day',now()) group by p.id,p.nickname;
+
+create or replace view public.leaderboard_weekly as
+select p.id,p.nickname,sum(r.score)::bigint as points,sum(r.xp)::bigint as xp,count(r.id)::bigint as quizzes,sum(r.correct)::bigint as correct,
+row_number() over(order by sum(r.score) desc,sum(r.xp) desc,p.id) as rank
+from public.profiles p join public.quiz_results r on r.user_id=p.id
+where r.created_at >= date_trunc('week',now()) group by p.id,p.nickname;
+
+create or replace view public.leaderboard_monthly as
+select p.id,p.nickname,sum(r.score)::bigint as points,sum(r.xp)::bigint as xp,count(r.id)::bigint as quizzes,sum(r.correct)::bigint as correct,
+row_number() over(order by sum(r.score) desc,sum(r.xp) desc,p.id) as rank
+from public.profiles p join public.quiz_results r on r.user_id=p.id
+where r.created_at >= date_trunc('month',now()) group by p.id,p.nickname;
