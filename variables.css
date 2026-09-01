@@ -1,2 +1,130 @@
-/* Globalne CSS varijable PatriaSoul. */
-:root { --patriasoul-ready: 1; }
+/*
+ * PatriaSoul — centralne CSS varijable
+ *
+ * Jedno mjesto za dizajn sustav cijele stranice.
+ * Komponente i pojedinačne stranice trebaju koristiti ove varijable
+ * umjesto ponavljanja boja, razmaka, sjena i breakpointa.
+ */
+
+:root {
+  /* Brand */
+  --patria-bg: #080a0e;
+  --patria-bg-deep: #05070a;
+  --patria-surface: #12161d;
+  --patria-surface-2: #171c24;
+  --patria-surface-3: #1b2028;
+  --patria-text: #f4f4f2;
+  --patria-text-soft: #d7d9dc;
+  --patria-muted: #a3a8b0;
+  --patria-muted-dark: #707781;
+
+  /* Croatian / PatriaSoul accent palette */
+  --patria-gold: #d4ae38;
+  --patria-gold-light: #f1cf69;
+  --patria-red: #c51f2b;
+  --patria-white: #ffffff;
+
+  /* Borders */
+  --patria-border: #2b313b;
+  --patria-border-soft: rgba(255, 255, 255, 0.09);
+  --patria-border-gold: rgba(212, 174, 56, 0.35);
+  --patria-border-gold-strong: rgba(212, 174, 56, 0.55);
+
+  /* Typography */
+  --font-sans: Inter, Arial, sans-serif;
+  --font-display: Inter, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 800;
+  --font-weight-black: 950;
+
+  /* Layout */
+  --container-max: 1180px;
+  --container-wide: 1380px;
+  --content-width: 940px;
+  --page-gutter: 4%;
+  --section-space: 85px;
+  --section-space-mobile: 65px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.16);
+  --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 14px 35px rgba(0, 0, 0, 0.30);
+  --shadow-gold: 0 4px 14px rgba(212, 174, 56, 0.16);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.2, 0.65, 0.3, 1);
+  --transition-fast: 0.18s var(--ease-standard);
+  --transition: 0.24s var(--ease-standard);
+  --transition-slow: 0.35s var(--ease-standard);
+
+  /* Layering */
+  --z-base: 1;
+  --z-header: 1000;
+  --z-overlay: 1400;
+  --z-drawer: 1500;
+  --z-modal: 2000;
+  --z-toast: 3000;
+
+  /* Breakpoints — dokumentacijske vrijednosti za komponente */
+  --bp-mobile: 600px;
+  --bp-tablet: 850px;
+  --bp-desktop: 1080px;
+
+  /* Accessibility */
+  --focus-ring: 0 0 0 3px rgba(241, 207, 105, 0.30);
+}
+
+/* Kompatibilnost s postojećim style.css */
+:root {
+  --bg: var(--patria-bg);
+  --panel: var(--patria-surface);
+  --line: var(--patria-border);
+  --text: var(--patria-text);
+  --muted: var(--patria-muted);
+  --gold: var(--patria-gold);
+  --gold2: var(--patria-gold-light);
+  --red: var(--patria-red);
+  --max: var(--container-max);
+}
+
+/* Osnovni utility sloj */
+.ps-focus:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+@media (max-width: 850px) {
+  :root {
+    --section-space: var(--section-space-mobile);
+    --page-gutter: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --page-gutter: 6%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0s;
+    --transition: 0s;
+    --transition-slow: 0s;
+  }
+}
