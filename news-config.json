@@ -1,0 +1,30 @@
+{
+  "brand": {
+    "name": "PatriaSoul",
+    "editor": "Čuvari nasljeđa",
+    "label": "PatriaSoul uredništvo"
+  },
+  "automation": {
+    "refreshMinutes": 30,
+    "autoPublishNormal": true,
+    "reviewSensitive": true,
+    "maxItems": 200
+  },
+  "categories": {
+    "domovina": {"label":"🇭🇷 Domovina","keywords":["hrvatska","vlada","sabor","ministarstvo","zagreb"]},
+    "branitelji": {"label":"🛡️ Branitelji","keywords":["branitelj","branitelji","domovinski rat","vukovar","knin","oluja","bljesak","hrvi"]},
+    "povijest": {"label":"📜 Povijest","keywords":["povijest","povijesni","obljetnica","godišnjica","spomenik"]},
+    "vjera": {"label":"⛪ Vjera","keywords":["crkva","biskup","svećenik","misa","molitva","katolički","kršćanski"]},
+    "bastina": {"label":"🏛️ Baština","keywords":["baština","zaštita kulturnih dobara","nematerijalna baština","tradicija"]},
+    "gradovi": {"label":"🏙️ Gradovi","keywords":["split","sinj","dubrovnik","rijeka","osijek","zadar","šibenik","pula","varaždin","samobor","vukovar","knin"]},
+    "kultura": {"label":"🎭 Kultura","keywords":["kultura","muzej","kazalište","knjiga","film","izložba","festival","umjetnost"]},
+    "svijet": {"label":"🌍 Hrvatska i svijet","keywords":["europa","europska unija","nato","svijet","međunarodni"]}
+  },
+  "editorial": {
+    "style": "jasan, ozbiljan, hrvatski, informativan i neutralan",
+    "credit": "Tekst je urednički oblikovan za PatriaSoul na temelju navedenih izvora.",
+    "neverCopyFullSource": true,
+    "alwaysShowSources": true
+  },
+  "sensitiveKeywords": ["uhićen", "optužen", "presuda", "smrt", "poginuo", "teror", "rat", "seksual", "kaznen", "istraga", "izbori", "politička kriza"]
+}
