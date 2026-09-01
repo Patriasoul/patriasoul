@@ -1,9 +1,9 @@
-/* PatriaSoul — canonical site navigation */
+/* PatriaSoul — canonical portal navigation */
 (function(){
   'use strict';
   var groups=[
     {label:'Početna',href:'/index.html'},
-    {label:'Domovina',href:'/domovina.html'},
+    {label:'Domovina',href:'/domovina.html',children:[['🇭🇷 Hrvatska','/domovina.html'],['🏙️ Gradovi','/gradovi.html'],['🕰️ Povijest','/povijest.html']]},
     {label:'Branitelji',href:'/branitelji.html',mega:true,sections:[
       {title:'Pregled',items:[['🛡️ Branitelji','/branitelji.html'],['⚔️ Domovinski rat','/domovinski-rat.html']]},
       {title:'Postrojbe',items:[['🏛️ Postrojbe','/postrojbe.html'],['🪖 Brigade','/brigade.html']]},
@@ -12,28 +12,28 @@
     ]},
     {label:'Povijest',href:'/povijest.html',children:[['Hrvatska povijest','/povijest.html'],['Domovinski rat','/domovinski-rat.html'],['Bitke i bojišta','/operacije.html']]},
     {label:'Baština',href:'/bastina.html',children:[['Baština','/bastina.html'],['Spomenici','/spomenici.html']]},
-    {label:'Vjera',href:'/vjera.html',children:[['Vjera i duhovna baština','/vjera.html'],['Evanđelje','/evandelje.html'],['Svetac dana','/svetac-dana.html'],['Molitve','/molitve.html'],['Krunica','/krunica.html'],['Blagdani','/blagdani.html'],['Biblija','/biblija.html']]},
+    {label:'Vjera',href:'/vjera.html',children:[['✝️ Vjera i duhovna baština','/vjera.html'],['📖 Evanđelje','/evandelje.html'],['🙏 Molitve','/molitve.html'],['📿 Krunica','/krunica.html'],['⛪ Blagdani','/blagdani.html'],['📚 Biblija','/biblija.html']]},
     {label:'Gradovi',href:'/gradovi.html',children:[['Svi gradovi','/gradovi.html'],['Zagreb','/grad.html?grad=zagreb'],['Vukovar','/grad.html?grad=vukovar'],['Split','/grad.html?grad=split'],['Rijeka','/grad.html?grad=rijeka'],['Osijek','/grad.html?grad=osijek']]},
     {label:'Vijesti',href:'/vijesti.html'},
-    {label:'Mediji',href:'/video.html',children:[['Video','/video.html'],['Galerija','/galerija.html']]},
-    {label:'Igra',href:'/brani-svoj-grad.html',children:[['🛡️ Brani svoj grad','/brani-svoj-grad.html'],['🧠 Kviz','/quiz.html'],['🏆 Rang-lista','/rang-lista.html'],['👤 Profil','/profil.html'],['🏅 Značke','/profil.html#znacke']]}
+    {label:'Mediji',href:'/video.html',children:[['🎬 Video','/video.html'],['📷 Galerija','/galerija.html']]},
+    {label:'Igra',href:'/brani-svoj-grad.html',children:[['🛡️ Brani svoj grad','/brani-svoj-grad.html'],['🧠 Kviz','/quiz.html'],['🏆 Rang-lista','/rang-lista.html'],['👤 Profil','/profil.html']]}
   ];
   function current(){return location.pathname.replace(/\/+$/,'')||'/';}
-  function active(href){return href.indexOf('?')===-1&&href.indexOf('#')===-1&&current()===href.replace(/\/+$/,'');}
+  function active(href){return href.indexOf('?')===-1&&current()===href.replace(/\/+$/,'');}
   function makeLink(item){var a=document.createElement('a');a.href=item.href;a.textContent=item.label;if(active(item.href))a.setAttribute('aria-current','page');return a;}
   function makeGroup(g){
-    var wrap=document.createElement('div');wrap.className='ps-nav-group'+(g.mega?' ps-nav-mega-group':'');
+    var wrap=document.createElement('div');wrap.className='ps-nav-group'+(g.mega?' ps-nav-mega':'');
     var top=makeLink(g);top.className='ps-nav-parent';top.setAttribute('aria-haspopup','true');
     wrap.appendChild(top);
     var menu=document.createElement('div');menu.className='ps-subnav'+(g.mega?' ps-mega-menu':'');
     if(g.mega){
-      g.sections.forEach(function(section){
-        var col=document.createElement('section');col.className='ps-subnav-section';
-        var h=document.createElement('div');h.className='ps-subnav-title';h.textContent=section.title;col.appendChild(h);
-        section.items.forEach(function(c){col.appendChild(makeLink({label:c[0],href:c[1]}));});
-        menu.appendChild(col);
+      g.sections.forEach(function(s){
+        var section=document.createElement('section');section.className='ps-mega-section';
+        var h=document.createElement('h4');h.textContent=s.title;section.appendChild(h);
+        s.items.forEach(function(c){section.appendChild(makeLink({label:c[0],href:c[1]}));});
+        menu.appendChild(section);
       });
-    } else {
+    }else{
       g.children.forEach(function(c){menu.appendChild(makeLink({label:c[0],href:c[1]}));});
     }
     wrap.appendChild(menu);return wrap;
