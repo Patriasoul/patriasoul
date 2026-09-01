@@ -1,0 +1,15 @@
+[
+  {
+    "id": "city-sinj",
+    "type": "grad",
+    "title": "Sinj",
+    "content": "Primjer zapisa. Stvarni sadržaj treba preuzeti iz kanonskog registra i profila grada.",
+    "tags": ["Sinj", "Dalmatinska zagora", "grad"],
+    "cityId": "sinj",
+    "source": "",
+    "sourceTitle": "",
+    "sourceDate": "",
+    "status": "draft",
+    "updatedAt": "2026-09-01T00:00:00Z"
+  }
+]
