@@ -3,8 +3,6 @@
 (function () {
   'use strict';
 
-  const DEFAULT_MODEL = 'google/gemini-3.6-flash';
-
   function ensurePuter() {
     if (!window.puter || !window.puter.ai || typeof window.puter.ai.chat !== 'function') {
       throw new Error('Puter.js nije učitan. Dodaj https://js.puter.com/v2/ prije ovog modula.');
@@ -29,7 +27,7 @@
       `- Ne izmišljaj činjenice koje nisu potkrijepljene kontekstom.\n` +
       `- Ako baza nema dovoljno podataka, jasno reci da podatak nije potvrđen u PatriaSoul bazi.\n` +
       `- Ne predstavljaj nacrte ili zapise u statusu draft/review kao potvrđene činjenice.\n` +
-      `- Na kraju, ako koristiš kontekst, navedi kratko "Izvori PatriaSoul: [brojevi]".\n\n` +
+      `- Ako koristiš kontekst, na kraju navedi kratko "Izvori PatriaSoul: [brojevi]".\n\n` +
       `KONTEKST PATRIA SOUL BAZE:\n${sources || 'Nema relevantnog zapisa.'}\n\n` +
       `PITANJE KORISNIKA:\n${question}`;
   }
@@ -52,22 +50,18 @@
     }
 
     const prompt = buildPrompt(q, context);
-    const response = await window.puter.ai.chat(prompt, {
-      model: options.model || DEFAULT_MODEL,
-      stream: options.stream === true
-    });
+    const request = { stream: options.stream === true };
+    if (options.model) request.model = options.model;
+
+    const response = await window.puter.ai.chat(prompt, request);
 
     return {
       text: getText(response),
-      model: options.model || DEFAULT_MODEL,
+      model: options.model || 'Puter default model',
       context,
       usedKnowledgeBase: context.length > 0
     };
   }
 
-  window.PatriaSoulAI = {
-    ask,
-    buildPrompt,
-    defaultModel: DEFAULT_MODEL
-  };
+  window.PatriaSoulAI = { ask, buildPrompt };
 })();
