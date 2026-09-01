@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T19:13:18.699212+00:00",
+  "updatedAt": "2026-09-01T19:48:22.217950+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -92,6 +92,12 @@
       "wind": null,
       "humidity": null
     },
+    "Rijeka": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Rijeka-aerodrom": {
       "temp": null,
       "condition": null,
@@ -171,12 +177,6 @@
       "humidity": null
     },
     "Zagreb": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Rijeka": {
       "temp": null,
       "condition": null,
       "wind": null,
