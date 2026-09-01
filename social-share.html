@@ -1,2 +1,24 @@
-<!-- Zajedničko dijeljenje sadržaja. -->
-<div class="social-share" aria-label="Podijeli sadržaj"></div>
+<!-- PatriaSoul — zajednička komponenta za dijeljenje sadržaja -->
+<div class="social-share" aria-label="Podijeli sadržaj">
+  <div class="social-share__heading">
+    <span class="social-share__mark" aria-hidden="true">↗</span>
+    <span>Podijeli</span>
+  </div>
+  <div class="social-share__actions">
+    <a class="social-share__button" data-share="facebook" href="#" target="_blank" rel="noopener noreferrer" aria-label="Podijeli na Facebooku"><span aria-hidden="true">f</span><span>Facebook</span></a>
+    <a class="social-share__button" data-share="x" href="#" target="_blank" rel="noopener noreferrer" aria-label="Podijeli na X-u"><span aria-hidden="true">𝕏</span><span>X</span></a>
+    <a class="social-share__button" data-share="whatsapp" href="#" target="_blank" rel="noopener noreferrer" aria-label="Podijeli putem WhatsAppa"><span aria-hidden="true">☏</span><span>WhatsApp</span></a>
+    <button class="social-share__button" type="button" data-share="native" aria-label="Podijeli putem uređaja"><span aria-hidden="true">↗</span><span>Podijeli</span></button>
+    <button class="social-share__button" type="button" data-share="copy" aria-label="Kopiraj poveznicu"><span aria-hidden="true">⛓</span><span>Kopiraj link</span></button>
+  </div>
+  <p class="social-share__status" role="status" aria-live="polite"></p>
+</div>
+<style>
+.social-share{margin:2rem 0;padding:1rem 1.1rem;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(13,17,24,.88);box-shadow:0 18px 50px rgba(0,0,0,.22)}
+.social-share__heading{display:flex;align-items:center;gap:.55rem;margin-bottom:.8rem;font-weight:800;color:#f4f6f8}.social-share__mark{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(217,184,76,.12);color:#f0d777}.social-share__actions{display:flex;flex-wrap:wrap;gap:.6rem}
+.social-share__button{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:42px;padding:.65rem .9rem;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:#121821;color:#f4f6f8;text-decoration:none;font:inherit;font-weight:700;cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease}.social-share__button:hover{transform:translateY(-2px);border-color:rgba(217,184,76,.55);background:#171e28}.social-share__button:focus-visible{outline:2px solid #f0d777;outline-offset:3px}.social-share__status{min-height:1.2em;margin:.65rem 0 0;color:#9ba5b2;font-size:.9rem}
+@media(max-width:640px){.social-share{padding:.9rem}.social-share__actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.social-share__button{width:100%}}
+</style>
+<script>
+(function(){function init(root){if(!root||root.dataset.ready==='1')return;root.dataset.ready='1';var url=window.location.href,title=document.querySelector('meta[property="og:title"]')?.content||document.title||'PatriaSoul',text=title+' — PatriaSoul',enc=encodeURIComponent(url),encText=encodeURIComponent(text),status=root.querySelector('.social-share__status');var links={facebook:'https://www.facebook.com/sharer/sharer.php?u='+enc,x:'https://twitter.com/intent/tweet?text='+encText+'&url='+enc,whatsapp:'https://wa.me/?text='+encodeURIComponent(text+' '+url)};root.querySelectorAll('[data-share]').forEach(function(el){var type=el.dataset.share;if(links[type])el.href=links[type];el.addEventListener('click',async function(e){if(type==='copy'){e.preventDefault();try{await navigator.clipboard.writeText(url);if(status)status.textContent='Poveznica je kopirana.'}catch(x){if(status)status.textContent='Kopiranje nije dostupno.'}}if(type==='native'){e.preventDefault();if(navigator.share){try{await navigator.share({title:title,text:text,url:url})}catch(x){}}else{try{await navigator.clipboard.writeText(url);if(status)status.textContent='Poveznica je kopirana.'}catch(x){if(status)status.textContent='Dijeljenje nije dostupno.'}}}})})}function boot(){document.querySelectorAll('.social-share').forEach(init)}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot()})();
+</script>
