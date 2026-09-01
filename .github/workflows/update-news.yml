@@ -1,0 +1,89 @@
+name: PatriaSoul – automatsko osvježavanje vijesti
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preuzmi i razvrstaj RSS vijesti
+        shell: python
+        run: |
+          import json, re, html, urllib.request
+          import xml.etree.ElementTree as ET
+          from datetime import datetime, timezone
+          from email.utils import parsedate_to_datetime
+
+          with open('news-sources.json', encoding='utf-8') as f:
+              cfg=json.load(f)
+
+          def clean(text):
+              text=html.unescape(text or '')
+              text=re.sub(r'<[^>]+>', ' ', text)
+              return re.sub(r'\s+', ' ', text).strip()
+
+          def category(title, summary, default):
+              s=(title+' '+summary).lower()
+              rules=[
+                ('branitelji',['branitelj','branitelji','veteran','domovinski rat','nestal','poginul','vukovar','oluja','bljesak','hrvi']),
+                ('vjera',['crkva','biskup','svećen','svec','misa','molit','katoli','vatikan','isus','kršć']),
+                ('povijest',['obljetnic','povijest','povijes','baštin','memorijal','spomenik','godišnjic']),
+                ('gradovi',['zagreb','split','sinj','vukovar','knin','dubrovnik','rijeka','osijek','zadar','šibenik','omiš','gospić','pula','varaždin','samobor']),
+                ('kultura',['kultura','film','kazališt','muzej','knjig','glazb','izložb','festival','umjet']),
+                ('svijet',['europsk','eu ','ukrajin','nato','slovačk','mađarsk','njemačk','francusk','srb','svijet','međunarod']),
+              ]
+              for c,words in rules:
+                  if any(w in s for w in words): return c
+              return default
+
+          def parse_date(v):
+              if not v: return datetime.now(timezone.utc).isoformat()
+              try: return parsedate_to_datetime(v).astimezone(timezone.utc).isoformat()
+              except: return v
+
+          items=[]
+          for src in cfg['sources']:
+              try:
+                  req=urllib.request.Request(src['feed'],headers={'User-Agent':'PatriaSoul-NewsBot/1.0'})
+                  raw=urllib.request.urlopen(req,timeout=20).read()
+                  root=ET.fromstring(raw)
+                  for node in root.findall('.//item'):
+                      title=clean(node.findtext('title'))
+                      link=clean(node.findtext('link'))
+                      summary=clean(node.findtext('description'))
+                      date=parse_date(node.findtext('pubDate') or node.findtext('{http://purl.org/dc/elements/1.1/}date'))
+                      if not title or not link: continue
+                      items.append({'title':title,'summary':summary[:360],'link':link,'date':date,'source':src['name'],'sourceId':src['id'],'category':category(title,summary,src['category'])})
+              except Exception as e:
+                  print(f'RSS warning {src["id"]}: {e}')
+
+          # Deduplikacija po poveznici/naslovu i najnovije prvo.
+          seen=set(); unique=[]
+          for x in sorted(items,key=lambda z:z.get('date',''),reverse=True):
+              key=(x['link'].rstrip('/'),x['title'].lower())
+              if key in seen: continue
+              seen.add(key); unique.append(x)
+
+          data={'updatedAt':datetime.now(timezone.utc).isoformat(),'items':unique[:200]}
+          with open('news-feed.json','w',encoding='utf-8') as f:
+              json.dump(data,f,ensure_ascii=False,indent=2)
+              f.write('\n')
+          print(f'PatriaSoul news: {len(unique[:200])} items')
+
+      - name: Spremi osvježeni feed
+        run: |
+          git config user.name "patriasoul-news-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add news-feed.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Automatsko osvježavanje PatriaSoul vijesti"
+          git push
