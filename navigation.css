@@ -1,1 +1,281 @@
-/* Zajednički stilovi navigacije. */
+/* PatriaSoul — zajednički stil navigacije.
+   navigation.html koristi: .ps-header, .ps-nav, .ps-brand,
+   .ps-mainnav, .ps-nav-cta i .ps-menu.
+*/
+
+:root {
+  --ps-nav-bg: rgba(10, 10, 12, 0.94);
+  --ps-nav-border: rgba(212, 175, 55, 0.22);
+  --ps-nav-gold: #d4af37;
+  --ps-nav-gold-soft: #f0d477;
+  --ps-nav-text: #f4f1e8;
+  --ps-nav-muted: #b9b5aa;
+  --ps-nav-shadow: 0 12px 35px rgba(0, 0, 0, 0.28);
+  --ps-nav-height: 76px;
+}
+
+/* Skip link — omogućuje brzo preskakanje ponavljajuće navigacije. */
+.ps-skip-link {
+  position: fixed;
+  z-index: 2000;
+  top: 10px;
+  left: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--ps-nav-gold);
+  color: #111;
+  font-weight: 800;
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+
+.ps-skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 3px;
+}
+
+.ps-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  min-height: var(--ps-nav-height);
+  background: var(--ps-nav-bg);
+  border-bottom: 1px solid var(--ps-nav-border);
+  box-shadow: var(--ps-nav-shadow);
+  backdrop-filter: blur(16px) saturate(125%);
+  -webkit-backdrop-filter: blur(16px) saturate(125%);
+}
+
+.ps-header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.65), transparent);
+  pointer-events: none;
+}
+
+.ps-nav {
+  min-height: var(--ps-nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.ps-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  color: var(--ps-nav-text);
+  font-size: clamp(0.95rem, 1.3vw, 1.12rem);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ps-brand > span:not(.ps-brand-mark) {
+  color: var(--ps-nav-gold-soft);
+}
+
+.ps-brand-mark {
+  display: inline-grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  flex: 0 0 38px;
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 10px;
+  background: linear-gradient(145deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.04));
+  color: var(--ps-nav-gold-soft);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  box-shadow: inset 0 0 18px rgba(212, 175, 55, 0.06);
+}
+
+.ps-brand:hover .ps-brand-mark {
+  border-color: rgba(212, 175, 55, 0.9);
+}
+
+.ps-mainnav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.ps-mainnav::-webkit-scrollbar {
+  display: none;
+}
+
+.ps-mainnav a {
+  position: relative;
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border-radius: 9px;
+  color: var(--ps-nav-muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.ps-mainnav a::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 4px;
+  left: 10px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--ps-nav-gold);
+  opacity: 0;
+  transform: scaleX(0.35);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.ps-mainnav a:hover {
+  color: var(--ps-nav-text);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.ps-mainnav a:hover::after,
+.ps-mainnav a[aria-current="page"]::after,
+.ps-mainnav a.active::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.ps-mainnav a[aria-current="page"],
+.ps-mainnav a.active {
+  color: var(--ps-nav-gold-soft);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.ps-mainnav a:focus-visible,
+.ps-brand:focus-visible,
+.ps-menu:focus-visible {
+  outline: 2px solid var(--ps-nav-gold-soft);
+  outline-offset: 3px;
+}
+
+.ps-mainnav .ps-nav-cta {
+  margin-left: 5px;
+  padding-inline: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.07));
+  color: var(--ps-nav-gold-soft);
+  box-shadow: 0 5px 18px rgba(212, 175, 55, 0.07);
+}
+
+.ps-mainnav .ps-nav-cta::after {
+  display: none;
+}
+
+.ps-mainnav .ps-nav-cta:hover {
+  border-color: rgba(212, 175, 55, 0.8);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(212, 175, 55, 0.1));
+  transform: translateY(-1px);
+}
+
+.ps-menu {
+  display: none;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--ps-nav-border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--ps-nav-text);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ps-menu:hover {
+  border-color: rgba(212, 175, 55, 0.55);
+  color: var(--ps-nav-gold-soft);
+}
+
+@media (max-width: 1180px) {
+  .ps-nav {
+    gap: 12px;
+  }
+
+  .ps-mainnav a {
+    padding-inline: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    --ps-nav-height: 68px;
+  }
+
+  .ps-mainnav {
+    display: none;
+  }
+
+  .ps-menu {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 520px) {
+  .ps-nav {
+    padding-inline: 14px;
+  }
+
+  .ps-brand {
+    font-size: 0.86rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ps-brand-mark {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+    border-radius: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ps-skip-link,
+  .ps-mainnav a,
+  .ps-mainnav a::after {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .ps-header,
+  .ps-mainnav .ps-nav-cta,
+  .ps-menu {
+    border: 1px solid ButtonText;
+  }
+
+  .ps-mainnav a,
+  .ps-brand,
+  .ps-menu {
+    color: CanvasText;
+  }
+}
