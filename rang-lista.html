@@ -1,1 +1,218 @@
-<!doctype html><html lang="hr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="PatriaSoul rang-lista — poredak prema XP-u i bodovima."><title>Rang-lista | PatriaSoul</title><link rel="stylesheet" href="patriasoul-modern.css"><style>.rank{max-width:900px;margin:auto}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.tabs button{padding:11px 15px;border-radius:10px;border:1px solid #444;background:#11161d;color:#fff;cursor:pointer}.tabs button.active{border-color:#d6ad55}.row{display:grid;grid-template-columns:55px 1fr 120px 120px 100px;gap:10px;align-items:center;padding:14px;border-bottom:1px solid rgba(255,255,255,.08)}.row:first-child{border-radius:12px 12px 0 0}@media(max-width:650px){.row{grid-template-columns:40px 1fr 85px;font-size:.92rem}.row .optional{display:none}}.rank-note{margin:0 0 18px}.rank-card{overflow:hidden}</style></head><body><header class="ps-header"><div class="container ps-nav"><a class="ps-brand" href="index.html"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a><nav class="ps-mainnav"><a href="index.html">Početna</a><a href="gradovi.html">Gradovi</a><a href="brani-svoj-grad.html">Igra</a><a href="rang-lista.html" aria-current="page">Rang-lista</a><a href="profil.html">Profil</a><a class="ps-nav-cta" href="quiz.html">🧠 Kviz</a></nav><button class="ps-menu" type="button" data-ps-menu>☰</button></div></header><main><section class="ps-page-hero"><div class="container"><div class="ps-breadcrumbs"><a href="index.html">Početna</a> / Rang-lista</div><span class="ps-kicker">🏆 PatriaSoul natjecanje</span><h1>Rang-lista</h1><p>Prati poredak prema XP-u, bodovima i odigranim kvizovima.</p></div></section><section class="ps-section"><div class="container rank"><div class="tabs"><button class="active" data-type="xp">⭐ XP</button><button data-type="points">🏆 Bodovi</button><button data-type="quiz">🧠 Kviz</button><button data-type="city">🛡️ Grad</button></div><div class="ps-card rank-card"><p class="rank-note small" id="note"></p><div id="list"></div><p id="empty" class="small"></p></div></div></section></main><script src="xp-engine.js"></script><script>document.addEventListener('DOMContentLoaded',()=>{const list=document.getElementById('list'),empty=document.getElementById('empty'),note=document.getElementById('note');let type='xp';function profile(){try{return JSON.parse(localStorage.getItem('patriasoul_xp')||'{}')}catch{return{}}}function draw(){const p=profile();let rows=[];if(type==='xp'||type==='points'){rows=[{name:'Ti',xp:Number(p.xp)||0,points:Number(p.points)||0,quizzes:Number(p.quizzes)||0}];try{const saved=JSON.parse(localStorage.getItem('patriasoul_leaderboard')||'[]');rows=rows.concat(Array.isArray(saved)?saved:[])}catch{}}else if(type==='quiz'){Object.keys(localStorage).filter(k=>k.startsWith('patriasoul_score_')).forEach(k=>{try{const x=JSON.parse(localStorage.getItem(k));rows.push({name:x.name||'Gost',points:x.points||0,quizzes:1,extra:`${x.correct||0}/${x.total||0}`})}catch{}})}else{try{rows=JSON.parse(localStorage.getItem('patriasoul_city_scores')||'[]').map(x=>({name:x.city||'Grad',points:x.score||0,quizzes:0,extra:x.name||'Gost'}))}catch{}}const seen={};rows.forEach(x=>{const n=x.name||'Gost';if(!seen[n]||Number(x.xp||0)>Number(seen[n].xp||0)||Number(x.points||0)>Number(seen[n].points||0))seen[n]=x});rows=Object.values(seen);rows.sort((a,b)=>type==='xp'?(b.xp||0)-(a.xp||0):(b.points||0)-(a.points||0));list.innerHTML=rows.slice(0,50).map((x,i)=>`<div class="row"><strong>${i<3?['🥇','🥈','🥉'][i]:i+1}</strong><span>${x.name||'Gost'}</span><strong>${type==='xp'?(x.xp||0)+' XP':(x.points||0)+' bod'}</strong><span class="optional">${x.quizzes||0} kviz.</span><span class="optional">${x.extra||''}</span></div>`).join('');empty.textContent=rows.length?'Prikazano je do 50 najboljih rezultata.':'Još nema rezultata na ovom uređaju.';note.textContent='Trenutno lokalna rang-lista. Kada uvedemo korisnički račun i bazu, ista stranica može postati javna rang-lista za sve igrače.'}document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));b.classList.add('active');type=b.dataset.type;draw()});document.querySelector('[data-ps-menu]')?.addEventListener('click',()=>document.querySelector('.ps-mainnav')?.classList.toggle('is-open'));draw()})</script><script src="/ai-engine/puter-ai.js"></script><script src="/ai-engine/pitaj-patriasoul-widget.js"></script></body></html>
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PatriaSoul rang-lista — poredak igrača prema XP-u, bodovima i rezultatima.">
+  <title>Rang-lista | PatriaSoul</title>
+  <link rel="stylesheet" href="patriasoul-modern.css">
+  <style>
+    .rank{max-width:1000px;margin:auto}
+    .rank-toolbar{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .tabs button{padding:11px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:#11161d;color:#fff;cursor:pointer;font:inherit;transition:.2s}
+    .tabs button:hover,.tabs button:focus-visible{border-color:#d6ad55;transform:translateY(-1px)}
+    .tabs button.active{border-color:#d6ad55;background:rgba(214,173,85,.12);box-shadow:0 0 0 1px rgba(214,173,85,.12) inset}
+    .rank-card{overflow:hidden;padding:0}
+    .rank-head,.row{display:grid;grid-template-columns:70px minmax(180px,1fr) 130px 110px 120px;gap:12px;align-items:center}
+    .rank-head{padding:13px 18px;background:rgba(255,255,255,.035);border-bottom:1px solid rgba(255,255,255,.08);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:#aaa}
+    .row{padding:15px 18px;border-bottom:1px solid rgba(255,255,255,.07);transition:background .2s}
+    .row:hover{background:rgba(255,255,255,.025)}
+    .row:last-child{border-bottom:0}
+    .place{font-size:1.05rem;font-weight:800}
+    .player{display:flex;align-items:center;gap:11px;min-width:0}
+    .avatar{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:rgba(214,173,85,.12);border:1px solid rgba(214,173,85,.3);color:#d6ad55;font-weight:800;flex:0 0 auto}
+    .player-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .metric{font-weight:800}
+    .metric.gold{color:#d6ad55}
+    .muted{color:#999;font-size:.9rem}
+    .rank-note{margin:0 0 16px}
+    .empty{text-align:center;padding:42px 20px;color:#aaa}
+    .my-rank{margin-top:18px;padding:16px 18px;border:1px solid rgba(214,173,85,.22);border-radius:14px;background:rgba(214,173,85,.06)}
+    .my-rank strong{color:#d6ad55}
+    @media(max-width:720px){
+      .rank-head,.row{grid-template-columns:45px minmax(130px,1fr) 95px 85px}
+      .rank-head .optional,.row .optional{display:none}
+      .rank-head,.row{gap:8px;padding-left:12px;padding-right:12px}
+    }
+    @media(max-width:480px){
+      .tabs button{flex:1;padding:10px 8px;font-size:.88rem}
+      .rank-head,.row{grid-template-columns:38px minmax(110px,1fr) 82px}
+      .rank-head .points-col,.row .points-col{display:none}
+      .metric{font-size:.9rem}
+      .avatar{width:32px;height:32px;font-size:.8rem}
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="ps-header">
+    <div class="container ps-nav">
+      <a class="ps-brand" href="index.html"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
+      <nav class="ps-mainnav" aria-label="Glavna navigacija">
+        <a href="index.html">Početna</a>
+        <a href="gradovi.html">Gradovi</a>
+        <a href="brani-svoj-grad.html">Igra</a>
+        <a href="rang-lista.html" aria-current="page">Rang-lista</a>
+        <a href="profil.html">Profil</a>
+        <a class="ps-nav-cta" href="quiz.html">🧠 Kviz</a>
+      </nav>
+      <button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="ps-page-hero">
+      <div class="container">
+        <div class="ps-breadcrumbs"><a href="index.html">Početna</a> / Rang-lista</div>
+        <span class="ps-kicker">🏆 PatriaSoul natjecanje</span>
+        <h1>Rang-lista</h1>
+        <p>Prati najbolje igrače prema XP-u, bodovima i broju odigranih kvizova.</p>
+      </div>
+    </section>
+
+    <section class="ps-section">
+      <div class="container rank">
+        <div class="rank-toolbar">
+          <div class="tabs" role="tablist" aria-label="Vrsta rang-liste">
+            <button class="active" type="button" role="tab" aria-selected="true" data-type="xp">⭐ XP</button>
+            <button type="button" role="tab" aria-selected="false" data-type="points">🏆 Bodovi</button>
+            <button type="button" role="tab" aria-selected="false" data-type="quiz">🧠 Kviz</button>
+            <button type="button" role="tab" aria-selected="false" data-type="city">🛡️ Grad</button>
+          </div>
+        </div>
+
+        <div class="ps-card rank-card">
+          <div class="rank-note" id="note" aria-live="polite"></div>
+          <div class="rank-head" aria-hidden="true">
+            <span>#</span><span>Igrač</span><span>Rezultat</span><span class="optional">Kvizovi</span><span class="optional points-col">Detalj</span>
+          </div>
+          <div id="list" aria-live="polite"></div>
+          <div id="empty" class="empty" hidden>Još nema rezultata na ovom uređaju.</div>
+        </div>
+
+        <div class="my-rank" id="myRank" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="xp-engine.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const list = document.getElementById('list');
+      const empty = document.getElementById('empty');
+      const note = document.getElementById('note');
+      const myRank = document.getElementById('myRank');
+      let type = 'xp';
+
+      function read(key, fallback) {
+        try {
+          const value = JSON.parse(localStorage.getItem(key) || 'null');
+          return value ?? fallback;
+        } catch (_) { return fallback; }
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? '').replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]));
+      }
+
+      function profile() {
+        return read('patriasoul_xp', {}) || {};
+      }
+
+      function collectRows() {
+        const p = profile();
+        let rows = [];
+
+        if (type === 'xp' || type === 'points') {
+          rows.push({name: p.name || 'Ti', xp: Number(p.xp) || 0, points: Number(p.points) || 0, quizzes: Number(p.quizzes) || 0});
+          const saved = read('patriasoul_leaderboard', []);
+          if (Array.isArray(saved)) rows = rows.concat(saved);
+        } else if (type === 'quiz') {
+          Object.keys(localStorage).filter(k => k.startsWith('patriasoul_score_')).forEach(key => {
+            const x = read(key, null);
+            if (x) rows.push({name:x.name || 'Gost', points:Number(x.points)||0, quizzes:1, extra:`${Number(x.correct)||0}/${Number(x.total)||0}`});
+          });
+        } else {
+          const cities = read('patriasoul_city_scores', []);
+          if (Array.isArray(cities)) rows = cities.map(x => ({name:x.name || 'Gost', city:x.city || 'Grad', points:Number(x.score)||0, quizzes:0, extra:x.city || 'Grad'}));
+        }
+
+        const seen = new Map();
+        rows.forEach(x => {
+          const name = String(x.name || 'Gost').trim() || 'Gost';
+          const key = name.toLocaleLowerCase('hr-HR');
+          const current = seen.get(key);
+          if (!current || Number(x.xp || 0) > Number(current.xp || 0) || Number(x.points || 0) > Number(current.points || 0)) {
+            seen.set(key, {...x, name});
+          }
+        });
+
+        rows = [...seen.values()];
+        rows.sort((a,b) => {
+          if (type === 'xp') return (Number(b.xp)||0) - (Number(a.xp)||0);
+          if (type === 'quiz') return (Number(b.points)||0) - (Number(a.points)||0);
+          return (Number(b.points)||0) - (Number(a.points)||0);
+        });
+        return rows;
+      }
+
+      function draw() {
+        const rows = collectRows();
+        empty.hidden = rows.length !== 0;
+        list.innerHTML = rows.slice(0, 50).map((x, i) => {
+          const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : String(i + 1);
+          const score = type === 'xp' ? `${Number(x.xp)||0} XP` : `${Number(x.points)||0} bod`;
+          const detail = x.extra || '';
+          const quizzes = Number(x.quizzes)||0;
+          const initials = String(x.name || 'G').trim().slice(0,1).toUpperCase();
+          return `<div class="row">
+            <strong class="place">${medal}</strong>
+            <div class="player"><span class="avatar" aria-hidden="true">${escapeHtml(initials)}</span><span class="player-name">${escapeHtml(x.name || 'Gost')}</span></div>
+            <strong class="metric gold">${escapeHtml(score)}</strong>
+            <span class="muted optional">${quizzes} kviz.</span>
+            <span class="muted optional points-col">${escapeHtml(detail)}</span>
+          </div>`;
+        }).join('');
+
+        note.textContent = 'Rang-lista trenutno koristi rezultate spremljene na ovom uređaju. Kada spojimo korisničke račune i bazu, može postati javna rang-lista za sve igrače.';
+
+        const me = String(profile().name || '').trim().toLocaleLowerCase('hr-HR');
+        const myIndex = me ? rows.findIndex(x => String(x.name || '').trim().toLocaleLowerCase('hr-HR') === me) : -1;
+        if (myIndex >= 0) {
+          const mine = rows[myIndex];
+          myRank.hidden = false;
+          myRank.innerHTML = `Tvoj trenutni poredak: <strong>#${myIndex + 1}</strong> — ${escapeHtml(mine.name)} · ${type === 'xp' ? Number(mine.xp)||0 : Number(mine.points)||0} ${type === 'xp' ? 'XP' : 'bodova'}`;
+        } else {
+          myRank.hidden = true;
+          myRank.textContent = '';
+        }
+      }
+
+      document.querySelectorAll('.tabs button').forEach(button => {
+        button.addEventListener('click', () => {
+          document.querySelectorAll('.tabs button').forEach(b => {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          button.classList.add('active');
+          button.setAttribute('aria-selected', 'true');
+          type = button.dataset.type || 'xp';
+          draw();
+        });
+      });
+
+      const menu = document.querySelector('[data-ps-menu]');
+      menu?.addEventListener('click', () => {
+        const nav = document.querySelector('.ps-mainnav');
+        const open = nav?.classList.toggle('is-open') || false;
+        menu.setAttribute('aria-expanded', String(open));
+      });
+
+      draw();
+    });
+  </script>
+  <script src="/ai-engine/puter-ai.js"></script>
+  <script src="/ai-engine/pitaj-patriasoul-widget.js"></script>
+</body>
+</html>
