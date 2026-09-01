@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "description": "Kanonski zapis znanja koji PatriaSoul AI može dohvaćati.",
+  "fields": {
+    "id": "jedinstveni ID",
+    "type": "grad|povijest|osoba|dogadjaj|bastina|vjera|vijest|kviz",
+    "title": "naslov",
+    "content": "provjereni sadržaj",
+    "tags": "niz ključnih riječi",
+    "cityId": "opcionalni ID grada",
+    "source": "izvor ili URL",
+    "sourceTitle": "naziv izvora",
+    "sourceDate": "datum izvora ako postoji",
+    "status": "draft|review|verified|published",
+    "updatedAt": "ISO datum zadnje izmjene"
+  },
+  "rules": [
+    "AI smije koristiti verified i published zapise za činjenične odgovore.",
+    "draft i review zapisi služe uredničkoj obradi i ne smiju biti predstavljeni kao potvrđene činjenice.",
+    "Svaki činjenični zapis treba imati izvor kad je izvor poznat.",
+    "Novi ili izmijenjeni sadržaj mora imati updatedAt radi ponovnog indeksiranja."
+  ]
+}
