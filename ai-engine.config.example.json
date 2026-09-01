@@ -1,0 +1,23 @@
+{
+  "provider": "gemini",
+  "endpoint": "/api/ai",
+  "enabled": false,
+  "tasks": {
+    "news_summary": true,
+    "news_rewrite": true,
+    "news_fact_check": true,
+    "quiz_questions": true,
+    "history_explain": true,
+    "assistant": true
+  },
+  "limits": {
+    "maxInputChars": 12000,
+    "maxOutputTokens": 1200,
+    "requestsPerMinutePerUser": 5
+  },
+  "security": {
+    "apiKeyLocation": "server-environment-secret",
+    "neverExposeApiKeyToBrowser": true,
+    "requireEditorialReviewForSensitiveNews": true
+  }
+}
