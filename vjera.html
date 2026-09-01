@@ -1,1 +1,131 @@
-<!doctype html><html lang="hr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vjera | PatriaSoul</title><link rel="stylesheet" href="/patriasoul-modern.css"></head><body><header class="ps-header"><div class="container ps-nav"><a class="ps-brand" href="/index.html"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a><nav class="ps-mainnav" aria-label="Glavna navigacija"><a href="/index.html">Početna</a><a href="/domovina.html">Domovina</a><a href="/branitelji.html">Branitelji</a><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a><a href="/vjera.html" aria-current="page">Vjera</a><a href="/gradovi.html">Gradovi</a><a href="/vijesti.html">Vijesti</a><a href="/brani-svoj-grad.html">Igra</a><a class="ps-nav-cta" href="/quiz.html">🧠 Kviz</a></nav><button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik">☰</button></div></header><main><section class="ps-page-hero"><div class="container"><span class="ps-kicker">Vjera i duhovna baština</span><h1>Vjera</h1><p>Mirno i pregledno mjesto za evanđelje, molitve, svece, blagdane i biblijski sadržaj.</p></div></section><section class="ps-content"><div class="container"><div class="ps-grid ps-grid-3"><a class="ps-card" href="/evandelje.html"><div class="ps-card-icon">📖</div><h3>Evanđelje</h3><p>Dnevno evanđelje i razmišljanje.</p></a><a class="ps-card" href="/svetac-dana.html"><div class="ps-card-icon">🕯️</div><h3>Svetac dana</h3><p>Kalendar svetaca.</p></a><a class="ps-card" href="/molitve.html"><div class="ps-card-icon">🙏</div><h3>Molitve</h3><p>Zbirka molitava.</p></a><a class="ps-card" href="/krunica.html"><div class="ps-card-icon">📿</div><h3>Krunica</h3><p>Vodič kroz molitvu krunice.</p></a><a class="ps-card" href="/blagdani.html"><div class="ps-card-icon">📅</div><h3>Blagdani</h3><p>Liturgijski i hrvatski kalendar.</p></a><a class="ps-card" href="/biblija.html"><div class="ps-card-icon">📚</div><h3>Biblija</h3><p>Biblijski sadržaj.</p></a></div></div></section></main><footer class="ps-footer"><div class="container"><div class="ps-footer-bottom"><span>© 2026 PatriaSoul</span><span>Čuvaj nasljeđe. Prenesi ga dalje.</span></div></div></footer><script src="/ai-engine/quiz-guard.js"></script><script src="/ai-engine/puter-ai.js"></script><script src="/ai-engine/pitaj-patriasoul-widget.js"></script><script>(function(){document.querySelector('[data-ps-menu]')?.addEventListener('click',()=>document.querySelector('.ps-mainnav')?.classList.toggle('is-open'));})();</script></body></html>
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="PatriaSoul Vjera – evanđelje, molitve, krunica, sveci, blagdani i Biblija.">
+  <meta name="theme-color" content="#080a0e">
+  <title>Vjera | PatriaSoul</title>
+  <link rel="stylesheet" href="/variables.css">
+  <link rel="stylesheet" href="/patriasoul-modern.css">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .faith-hero{position:relative;overflow:hidden;text-align:center;padding:96px 0 72px}
+    .faith-hero:before{content:"✝";position:absolute;left:50%;top:15px;transform:translateX(-50%);font-size:180px;line-height:1;color:rgba(212,174,56,.045);pointer-events:none}
+    .faith-hero .container{position:relative;z-index:1}
+    .faith-kicker{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid rgba(212,174,56,.35);border-radius:999px;background:rgba(212,174,56,.07);color:#f1cf69;font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+    .faith-hero h1{margin:20px 0 12px;font-size:clamp(48px,8vw,82px);line-height:1;letter-spacing:2px}
+    .faith-hero h1 span{color:#d4ae38}
+    .faith-hero p{max-width:760px;margin:auto;color:#b8bec7;font-size:18px}
+    .faith-section{padding:34px 0 86px}
+    .faith-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .faith-card{position:relative;display:flex;flex-direction:column;min-height:205px;padding:28px;border:1px solid #2b313b;border-radius:18px;background:linear-gradient(145deg,rgba(23,28,36,.94),rgba(12,16,22,.94));transition:transform .22s,border-color .22s,box-shadow .22s}
+    .faith-card:hover{transform:translateY(-5px);border-color:rgba(212,174,56,.58);box-shadow:0 16px 36px rgba(0,0,0,.22)}
+    .faith-icon{width:48px;height:48px;display:grid;place-items:center;margin-bottom:20px;border:1px solid rgba(212,174,56,.28);border-radius:13px;background:rgba(212,174,56,.07);font-size:24px}
+    .faith-card h2,.faith-card h3{margin:0 0 8px;font-size:22px;color:#f4f4f2}
+    .faith-card p{margin:0;color:#a3a8b0;font-size:14px;line-height:1.7}
+    .faith-arrow{margin-top:auto;padding-top:20px;color:#f1cf69;font-size:13px;font-weight:900}
+    .faith-feature{display:grid;grid-template-columns:1.3fr .7fr;gap:18px;margin-bottom:18px}
+    .verse-card,.welcome-card{border:1px solid #2b313b;border-radius:18px;background:linear-gradient(145deg,rgba(23,28,36,.94),rgba(12,16,22,.94));padding:34px}
+    .verse-label{color:#d4ae38;font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+    .verse-card blockquote{margin:18px 0 12px;font-family:Georgia,serif;font-size:clamp(22px,3vw,31px);line-height:1.5;color:#f4f4f2}
+    .verse-ref{color:#a3a8b0;font-size:14px}
+    .welcome-card h2{font-size:25px;margin-bottom:10px}
+    .welcome-card p{color:#a3a8b0;line-height:1.75;font-size:14px}
+    .faith-quick{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+    .faith-quick a{padding:14px 12px;text-align:center;border:1px solid #2b313b;border-radius:12px;background:rgba(8,10,14,.45);color:#d7d9dc;font-size:13px;font-weight:800;transition:.2s}
+    .faith-quick a:hover{color:#f1cf69;border-color:rgba(212,174,56,.45)}
+    .faith-note{margin-top:18px;padding:18px 20px;border-left:3px solid #d4ae38;background:rgba(212,174,56,.045);border-radius:0 12px 12px 0;color:#aeb4bd;font-size:13px;line-height:1.7}
+    @media(max-width:850px){.faith-grid{grid-template-columns:1fr 1fr}.faith-feature{grid-template-columns:1fr}.faith-quick{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.faith-hero{padding:76px 0 54px}.faith-grid,.faith-quick{grid-template-columns:1fr}.faith-card{min-height:0}.verse-card,.welcome-card{padding:25px}.faith-hero p{font-size:16px}}
+    @media(prefers-reduced-motion:reduce){.faith-card,.faith-quick a{transition:none}.faith-card:hover{transform:none}}
+  </style>
+</head>
+<body>
+  <header class="ps-header">
+    <div class="container ps-nav">
+      <a class="ps-brand" href="/index.html" aria-label="PatriaSoul početna stranica"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
+      <nav class="ps-mainnav" aria-label="Glavna navigacija">
+        <a href="/index.html">Početna</a>
+        <a href="/domovina.html">Domovina</a>
+        <a href="/branitelji.html">Branitelji</a>
+        <a href="/povijest.html">Povijest</a>
+        <a href="/bastina.html">Baština</a>
+        <a href="/vjera.html" aria-current="page">Vjera</a>
+        <a href="/gradovi.html">Gradovi</a>
+        <a href="/vijesti.html">Vijesti</a>
+        <a href="/brani-svoj-grad.html">Igra</a>
+        <a class="ps-nav-cta" href="/quiz.html">🧠 Kviz</a>
+      </nav>
+      <button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="faith-hero">
+      <div class="container">
+        <span class="faith-kicker">✝ Vjera i duhovna baština</span>
+        <h1>Vjera <span>•</span> nada <span>•</span> ljubav</h1>
+        <p>Mjesto za Evanđelje, molitvu, Bibliju, svece i blagdane – miran prostor za upoznavanje i čuvanje kršćanske baštine.</p>
+      </div>
+    </section>
+
+    <section class="faith-section" aria-labelledby="faith-content-title">
+      <div class="container">
+        <div class="faith-feature">
+          <article class="verse-card">
+            <div class="verse-label">Riječ za razmišljanje</div>
+            <blockquote>„Ja sam svjetlost svijeta. Tko ide za mnom, neće hodati u tami, nego će imati svjetlost života.”</blockquote>
+            <div class="verse-ref">Ivan 8,12</div>
+          </article>
+          <article class="welcome-card">
+            <h2>Dobro došao</h2>
+            <p>Ovdje možeš pronaći sadržaje koji pomažu u molitvi, upoznavanju Svetoga pisma i hrvatske kršćanske baštine.</p>
+            <div class="faith-note">Sadržaj se može postupno širiti kroz provjerene izvore, liturgijski kalendar i nove duhovne rubrike.</div>
+          </article>
+        </div>
+
+        <h2 id="faith-content-title" class="sr-only">Vjerski sadržaji</h2>
+        <div class="faith-grid">
+          <a class="faith-card" href="/evandelje.html"><div class="faith-icon">📖</div><h3>Evanđelje</h3><p>Dnevno Evanđelje i prostor za razmišljanje o Božjoj riječi.</p><span class="faith-arrow">Otvori →</span></a>
+          <a class="faith-card" href="/svetac-dana.html"><div class="faith-icon">🕯️</div><h3>Svetac dana</h3><p>Upoznaj svece i blaženike povezane s liturgijskim kalendarom.</p><span class="faith-arrow">Otvori →</span></a>
+          <a class="faith-card" href="/molitve.html"><div class="faith-icon">🙏</div><h3>Molitve</h3><p>Zbirka tradicionalnih i prigodnih molitava za osobnu i zajedničku molitvu.</p><span class="faith-arrow">Otvori →</span></a>
+          <a class="faith-card" href="/krunica.html"><div class="faith-icon">📿</div><h3>Krunica</h3><p>Jednostavan vodič kroz molitvu krunice i njezina otajstva.</p><span class="faith-arrow">Otvori →</span></a>
+          <a class="faith-card" href="/blagdani.html"><div class="faith-icon">📅</div><h3>Blagdani</h3><p>Pregled važnih crkvenih blagdana i prigodnog sadržaja.</p><span class="faith-arrow">Otvori →</span></a>
+          <a class="faith-card" href="/biblija.html"><div class="faith-icon">📚</div><h3>Biblija</h3><p>Ulaz u biblijski sadržaj i tematsko upoznavanje Svetoga pisma.</p><span class="faith-arrow">Otvori →</span></a>
+        </div>
+
+        <div class="faith-quick" aria-label="Brze poveznice">
+          <a href="/evandelje.html">📖 Evanđelje</a>
+          <a href="/molitve.html">🙏 Molitve</a>
+          <a href="/svetac-dana.html">🕯️ Svetac dana</a>
+          <a href="/biblija.html">📚 Biblija</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ps-footer">
+    <div class="container">
+      <div class="ps-footer-bottom">
+        <span>© 2026 PatriaSoul</span>
+        <span>Čuvaj nasljeđe. Prenesi ga dalje.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/ai-engine/quiz-guard.js"></script>
+  <script src="/ai-engine/puter-ai.js"></script>
+  <script src="/ai-engine/pitaj-patriasoul-widget.js"></script>
+  <script>
+    (function(){
+      const button=document.querySelector('[data-ps-menu]');
+      const nav=document.querySelector('.ps-mainnav');
+      button?.addEventListener('click',()=>{
+        const open=nav?.classList.toggle('is-open');
+        button.setAttribute('aria-expanded',String(!!open));
+      });
+    })();
+  </script>
+</body>
+</html>
