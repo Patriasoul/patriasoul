@@ -1,0 +1,78 @@
+<!-- PatriaSoul: prvi "Pitaj PatriaSoul" prototip -->
+<section class="patria-ai" id="pitaj-patriasoul">
+  <div class="patria-ai__header">
+    <div>
+      <span class="patria-ai__eyebrow">🧠 PATRIA SOUL AI</span>
+      <h2>Pitaj PatriaSoul</h2>
+      <p>Postavi pitanje o Hrvatskoj, povijesti, gradovima, baštini ili sadržaju portala.</p>
+    </div>
+  </div>
+
+  <div class="patria-ai__chat" id="patriaAiChat" aria-live="polite">
+    <div class="patria-ai__message patria-ai__message--assistant">
+      Pozdrav! Ja sam PatriaSoul AI. Pitaj me nešto o sadržaju PatriaSoula. 🇭🇷
+    </div>
+  </div>
+
+  <form class="patria-ai__form" id="patriaAiForm">
+    <label class="sr-only" for="patriaAiQuestion">Pitanje</label>
+    <input id="patriaAiQuestion" autocomplete="off" placeholder="Npr. Što znaš o Sinju?" />
+    <button type="submit">Pitaj</button>
+  </form>
+  <small class="patria-ai__note">Za AI odgovor može biti potreban Puter račun. PatriaSoul baza ostaje primarni izvor konteksta.</small>
+</section>
+
+<script src="https://js.puter.com/v2/"></script>
+<script src="/ai-engine/knowledge/retriever.js"></script>
+<script src="/ai-engine/puter-ai.js"></script>
+<script>
+(function () {
+  const form = document.getElementById('patriaAiForm');
+  const input = document.getElementById('patriaAiQuestion');
+  const chat = document.getElementById('patriaAiChat');
+
+  function addMessage(text, kind) {
+    const el = document.createElement('div');
+    el.className = 'patria-ai__message patria-ai__message--' + kind;
+    el.textContent = text;
+    chat.appendChild(el);
+    chat.scrollTop = chat.scrollHeight;
+    return el;
+  }
+
+  async function loadKnowledge() {
+    try {
+      const response = await fetch('/ai-engine/knowledge/index.json', { cache: 'no-store' });
+      if (!response.ok) return [];
+      const data = await response.json();
+      return Array.isArray(data) ? data : (data.items || []);
+    } catch (_) {
+      return [];
+    }
+  }
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    const question = input.value.trim();
+    if (!question) return;
+
+    addMessage(question, 'user');
+    input.value = '';
+    const waiting = addMessage('Tražim podatke u PatriaSoul bazi…', 'assistant');
+
+    try {
+      const knowledge = await loadKnowledge();
+      const result = await window.PatriaSoulAI.ask(question, {
+        knowledge,
+        model: 'google/gemini-3.6-flash',
+        trustedOnly: true,
+        limit: 8
+      });
+      waiting.textContent = result.text || 'Trenutno nemam dovoljno podataka za odgovor.';
+    } catch (error) {
+      waiting.textContent = 'AI trenutno nije dostupan. Provjeri Puter prijavu ili pokušaj ponovno.';
+      console.error('[PatriaSoul AI]', error);
+    }
+  });
+})();
+</script>
