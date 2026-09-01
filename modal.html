@@ -1,2 +1,226 @@
-<!-- Zajednički modal. -->
-<div id="site-modal" class="modal" hidden></div>
+<!--
+  PatriaSoul — zajednički modalni sustav
+  Koristi modal.css za vizualni sloj.
+
+  Predviđeno za:
+  - galerijski lightbox
+  - slike i video
+  - potvrde i upozorenja
+  - rezultate kviza
+  - informativne prozore
+  - dinamički sadržaj koji puni JavaScript
+
+  Native <dialog> otvara se preko showModal(), čime preglednik osigurava
+  modalni sloj, fokus i inertnu pozadinu.
+-->
+
+<!-- Glavni dinamički modal za postojeći PatriaSoul JS sustav. -->
+<div
+  id="site-modal"
+  class="modal"
+  hidden
+  aria-hidden="true"
+  aria-labelledby="site-modal-title"
+  aria-describedby="site-modal-description"
+  role="dialog"
+>
+  <div class="modal__dialog" role="document">
+    <header class="modal__header">
+      <div>
+        <h2 id="site-modal-title" class="modal__title">PatriaSoul</h2>
+        <p id="site-modal-description" class="modal__subtitle" hidden></p>
+      </div>
+      <button
+        class="modal__close"
+        type="button"
+        data-modal-close
+        aria-label="Zatvori prozor"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </header>
+
+    <div id="site-modal-body" class="modal__body"></div>
+
+    <footer id="site-modal-footer" class="modal__footer" hidden></footer>
+  </div>
+</div>
+
+<!--
+  Standardni native modal.
+  Sadržaj se može zamijeniti ili popuniti JavaScriptom.
+-->
+<dialog
+  id="ps-dialog"
+  class="ps-modal"
+  aria-labelledby="ps-dialog-title"
+  aria-describedby="ps-dialog-description"
+  closedby="closerequest"
+>
+  <div class="ps-modal__dialog">
+    <header class="ps-modal__header">
+      <div>
+        <h2 id="ps-dialog-title" class="ps-modal__title">PatriaSoul</h2>
+        <p id="ps-dialog-description" class="ps-modal__subtitle" hidden></p>
+      </div>
+      <button
+        class="ps-modal__close"
+        type="button"
+        command="close"
+        commandfor="ps-dialog"
+        aria-label="Zatvori prozor"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </header>
+
+    <div id="ps-dialog-body" class="ps-modal__body"></div>
+
+    <footer id="ps-dialog-footer" class="ps-modal__footer" hidden></footer>
+  </div>
+</dialog>
+
+<!--
+  Galerijski lightbox.
+  Namijenjen je velikim fotografijama i videu, uz prethodnu/sljedeću sliku.
+-->
+<dialog
+  id="ps-lightbox"
+  class="ps-modal ps-lightbox"
+  aria-labelledby="ps-lightbox-title"
+  closedby="closerequest"
+>
+  <div class="ps-modal__dialog ps-lightbox__dialog">
+    <header class="ps-modal__header">
+      <div>
+        <h2 id="ps-lightbox-title" class="ps-modal__title">Galerija</h2>
+      </div>
+      <button
+        class="ps-modal__close"
+        type="button"
+        command="close"
+        commandfor="ps-lightbox"
+        aria-label="Zatvori galeriju"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </header>
+
+    <div class="ps-lightbox__media" id="ps-lightbox-media" aria-live="polite">
+      <img
+        id="ps-lightbox-image"
+        src=""
+        alt=""
+        hidden
+      >
+      <video
+        id="ps-lightbox-video"
+        controls
+        playsinline
+        hidden
+      ></video>
+    </div>
+
+    <button
+      id="ps-lightbox-prev"
+      class="ps-lightbox__prev"
+      type="button"
+      aria-label="Prethodna slika"
+      hidden
+    >
+      <span aria-hidden="true">&#10094;</span>
+    </button>
+
+    <button
+      id="ps-lightbox-next"
+      class="ps-lightbox__next"
+      type="button"
+      aria-label="Sljedeća slika"
+      hidden
+    >
+      <span aria-hidden="true">&#10095;</span>
+    </button>
+
+    <div id="ps-lightbox-caption" class="ps-lightbox__caption" hidden></div>
+  </div>
+</dialog>
+
+<!--
+  Jednostavan potvrđujući modal.
+  Form method="dialog" omogućuje zatvaranje bez dodatnog JavaScripta.
+-->
+<dialog
+  id="ps-confirm-dialog"
+  class="ps-modal ps-modal--small"
+  aria-labelledby="ps-confirm-title"
+  aria-describedby="ps-confirm-message"
+  closedby="closerequest"
+>
+  <div class="ps-modal__dialog">
+    <header class="ps-modal__header">
+      <div>
+        <h2 id="ps-confirm-title" class="ps-modal__title">Potvrda</h2>
+      </div>
+      <button
+        class="ps-modal__close"
+        type="button"
+        command="close"
+        commandfor="ps-confirm-dialog"
+        aria-label="Zatvori potvrdu"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </header>
+
+    <div class="ps-modal__body">
+      <div id="ps-confirm-message" class="ps-modal__message">
+        Jeste li sigurni da želite nastaviti?
+      </div>
+    </div>
+
+    <form class="ps-modal__footer" method="dialog">
+      <button class="btn btn-secondary" type="submit" value="cancel">
+        Odustani
+      </button>
+      <button class="btn btn-primary" type="submit" value="confirm">
+        Potvrdi
+      </button>
+    </form>
+  </div>
+</dialog>
+
+<!--
+  Zajednički informativni modal za poruke sustava, uspjeh i greške.
+-->
+<dialog
+  id="ps-message-dialog"
+  class="ps-modal ps-modal--small"
+  aria-labelledby="ps-message-title"
+  aria-describedby="ps-message-content"
+  closedby="closerequest"
+>
+  <div class="ps-modal__dialog">
+    <header class="ps-modal__header">
+      <div>
+        <h2 id="ps-message-title" class="ps-modal__title">Obavijest</h2>
+      </div>
+      <button
+        class="ps-modal__close"
+        type="button"
+        command="close"
+        commandfor="ps-message-dialog"
+        aria-label="Zatvori obavijest"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </header>
+
+    <div class="ps-modal__body">
+      <div id="ps-message-content" class="ps-modal__message"></div>
+    </div>
+
+    <form class="ps-modal__footer" method="dialog">
+      <button class="btn btn-primary" type="submit" value="ok">U redu</button>
+    </form>
+  </div>
+</dialog>
