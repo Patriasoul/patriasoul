@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-01T21:38:06.394619+00:00",
+  "generatedAt": "2026-09-01T21:38:54.780558+00:00",
   "source": "PatriaSoul repository",
   "counts": {
     "grad": 127,
     "kviz": 100,
-    "stranica": 37
+    "stranica": 39
   },
   "items": [
     {
@@ -23,7 +23,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382471+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765107+00:00"
     },
     {
       "id": "city-ivanic-grad",
@@ -40,7 +40,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382486+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765125+00:00"
     },
     {
       "id": "city-jastrebarsko",
@@ -57,7 +57,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382491+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765132+00:00"
     },
     {
       "id": "city-samobor",
@@ -74,7 +74,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382497+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765136+00:00"
     },
     {
       "id": "city-sveta-nedelja",
@@ -91,7 +91,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382500+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765143+00:00"
     },
     {
       "id": "city-sveti-ivan-zelina",
@@ -108,7 +108,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382503+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765147+00:00"
     },
     {
       "id": "city-velika-gorica",
@@ -125,7 +125,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382506+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765150+00:00"
     },
     {
       "id": "city-vrbovec",
@@ -142,7 +142,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382510+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765156+00:00"
     },
     {
       "id": "city-zapresic",
@@ -159,7 +159,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382513+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765159+00:00"
     },
     {
       "id": "city-donja-stubica",
@@ -176,7 +176,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382516+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765163+00:00"
     },
     {
       "id": "city-klanjec",
@@ -193,7 +193,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382518+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765166+00:00"
     },
     {
       "id": "city-krapina",
@@ -210,7 +210,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382521+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765169+00:00"
     },
     {
       "id": "city-oroslavje",
@@ -227,7 +227,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382523+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765172+00:00"
     },
     {
       "id": "city-pregrada",
@@ -244,7 +244,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382526+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765175+00:00"
     },
     {
       "id": "city-zabok",
@@ -261,7 +261,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382528+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765179+00:00"
     },
     {
       "id": "city-zlatar",
@@ -278,7 +278,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382533+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765184+00:00"
     },
     {
       "id": "city-glina",
@@ -295,7 +295,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382537+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765187+00:00"
     },
     {
       "id": "city-hrvatska-kostajnica",
@@ -312,7 +312,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382540+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765193+00:00"
     },
     {
       "id": "city-kutina",
@@ -329,7 +329,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382543+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765216+00:00"
     },
     {
       "id": "city-novska",
@@ -346,7 +346,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382545+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765220+00:00"
     },
     {
       "id": "city-petrinja",
@@ -363,7 +363,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382548+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765223+00:00"
     },
     {
       "id": "city-popovaca",
@@ -380,7 +380,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382550+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765226+00:00"
     },
     {
       "id": "city-sisak",
@@ -397,7 +397,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382553+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765229+00:00"
     },
     {
       "id": "city-duga-resa",
@@ -414,7 +414,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382555+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765232+00:00"
     },
     {
       "id": "city-karlovac",
@@ -431,7 +431,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382559+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765238+00:00"
     },
     {
       "id": "city-ogulin",
@@ -448,7 +448,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382562+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765241+00:00"
     },
     {
       "id": "city-ozalj",
@@ -465,7 +465,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382564+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765244+00:00"
     },
     {
       "id": "city-slunj",
@@ -482,7 +482,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382568+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765247+00:00"
     },
     {
       "id": "city-ivanec",
@@ -499,7 +499,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382571+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765252+00:00"
     },
     {
       "id": "city-lepoglava",
@@ -516,7 +516,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382573+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765256+00:00"
     },
     {
       "id": "city-ludbreg",
@@ -533,7 +533,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382576+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765259+00:00"
     },
     {
       "id": "city-novi-marof",
@@ -550,7 +550,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382578+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765262+00:00"
     },
     {
       "id": "city-varazdin",
@@ -567,7 +567,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382581+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765265+00:00"
     },
     {
       "id": "city-varazdinske-toplice",
@@ -584,7 +584,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382585+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765270+00:00"
     },
     {
       "id": "city-durdevac",
@@ -601,7 +601,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382588+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765274+00:00"
     },
     {
       "id": "city-koprivnica",
@@ -618,7 +618,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382590+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765277+00:00"
     },
     {
       "id": "city-krizevci",
@@ -635,7 +635,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382593+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765280+00:00"
     },
     {
       "id": "city-bjelovar",
@@ -652,7 +652,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382597+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765285+00:00"
     },
     {
       "id": "city-cazma",
@@ -669,7 +669,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382601+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765291+00:00"
     },
     {
       "id": "city-daruvar",
@@ -686,7 +686,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382604+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765294+00:00"
     },
     {
       "id": "city-garesnica",
@@ -703,7 +703,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382608+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765297+00:00"
     },
     {
       "id": "city-grubisno-polje",
@@ -720,7 +720,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382611+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765303+00:00"
     },
     {
       "id": "city-bakar",
@@ -737,7 +737,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382613+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765306+00:00"
     },
     {
       "id": "city-cres",
@@ -754,7 +754,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382616+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765309+00:00"
     },
     {
       "id": "city-crikvenica",
@@ -771,7 +771,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382620+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765314+00:00"
     },
     {
       "id": "city-cabar",
@@ -788,7 +788,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382622+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765318+00:00"
     },
     {
       "id": "city-delnice",
@@ -805,7 +805,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382625+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765321+00:00"
     },
     {
       "id": "city-kastav",
@@ -822,7 +822,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382627+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765324+00:00"
     },
     {
       "id": "city-kraljevica",
@@ -839,7 +839,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382629+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765327+00:00"
     },
     {
       "id": "city-krk",
@@ -856,7 +856,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382632+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765330+00:00"
     },
     {
       "id": "city-mali-losinj",
@@ -873,7 +873,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382636+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765336+00:00"
     },
     {
       "id": "city-novi-vinodolski",
@@ -890,7 +890,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382639+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765339+00:00"
     },
     {
       "id": "city-opatija",
@@ -907,7 +907,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382642+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765342+00:00"
     },
     {
       "id": "city-rab",
@@ -924,7 +924,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382644+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765345+00:00"
     },
     {
       "id": "city-rijeka",
@@ -941,7 +941,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382647+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765349+00:00"
     },
     {
       "id": "city-vrbovsko",
@@ -958,7 +958,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382649+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765352+00:00"
     },
     {
       "id": "city-gospic",
@@ -975,7 +975,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382654+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765357+00:00"
     },
     {
       "id": "city-novalja",
@@ -992,7 +992,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382656+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765361+00:00"
     },
     {
       "id": "city-otocac",
@@ -1009,7 +1009,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382658+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765364+00:00"
     },
     {
       "id": "city-senj",
@@ -1026,7 +1026,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382661+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765367+00:00"
     },
     {
       "id": "city-orahovica",
@@ -1043,7 +1043,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382663+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765370+00:00"
     },
     {
       "id": "city-slatina",
@@ -1060,7 +1060,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382668+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765373+00:00"
     },
     {
       "id": "city-virovitica",
@@ -1077,7 +1077,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382672+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765381+00:00"
     },
     {
       "id": "city-kutjevo",
@@ -1094,7 +1094,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382675+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765384+00:00"
     },
     {
       "id": "city-lipik",
@@ -1111,7 +1111,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382678+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765387+00:00"
     },
     {
       "id": "city-pakrac",
@@ -1128,7 +1128,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382681+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765390+00:00"
     },
     {
       "id": "city-pleternica",
@@ -1145,7 +1145,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382683+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765393+00:00"
     },
     {
       "id": "city-pozega",
@@ -1162,7 +1162,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382686+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765396+00:00"
     },
     {
       "id": "city-nova-gradiska",
@@ -1179,7 +1179,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382689+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765400+00:00"
     },
     {
       "id": "city-slavonski-brod",
@@ -1196,7 +1196,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382692+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765403+00:00"
     },
     {
       "id": "city-benkovac",
@@ -1213,7 +1213,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382694+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765406+00:00"
     },
     {
       "id": "city-biograd-na-moru",
@@ -1230,7 +1230,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382698+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765412+00:00"
     },
     {
       "id": "city-nin",
@@ -1247,7 +1247,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382703+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765417+00:00"
     },
     {
       "id": "city-obrovac",
@@ -1264,7 +1264,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382705+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765420+00:00"
     },
     {
       "id": "city-pag",
@@ -1281,7 +1281,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382708+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765423+00:00"
     },
     {
       "id": "city-zadar",
@@ -1298,7 +1298,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382710+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765426+00:00"
     },
     {
       "id": "city-beli-manastir",
@@ -1315,7 +1315,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382719+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765437+00:00"
     },
     {
       "id": "city-belisce",
@@ -1332,7 +1332,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382723+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765442+00:00"
     },
     {
       "id": "city-dakovo",
@@ -1349,7 +1349,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382725+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765445+00:00"
     },
     {
       "id": "city-donji-miholjac",
@@ -1366,7 +1366,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382728+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765449+00:00"
     },
     {
       "id": "city-nasice",
@@ -1383,7 +1383,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382732+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765454+00:00"
     },
     {
       "id": "city-osijek",
@@ -1400,7 +1400,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382735+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765457+00:00"
     },
     {
       "id": "city-valpovo",
@@ -1417,7 +1417,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382739+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765460+00:00"
     },
     {
       "id": "city-drnis",
@@ -1434,7 +1434,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382744+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765466+00:00"
     },
     {
       "id": "city-knin",
@@ -1451,7 +1451,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382748+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765471+00:00"
     },
     {
       "id": "city-skradin",
@@ -1468,7 +1468,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382750+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765476+00:00"
     },
     {
       "id": "city-sibenik",
@@ -1485,7 +1485,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382753+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765479+00:00"
     },
     {
       "id": "city-vodice",
@@ -1502,7 +1502,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382755+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765482+00:00"
     },
     {
       "id": "city-ilok",
@@ -1519,7 +1519,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382758+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765485+00:00"
     },
     {
       "id": "city-otok",
@@ -1536,7 +1536,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382760+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765489+00:00"
     },
     {
       "id": "city-vinkovci",
@@ -1553,7 +1553,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382822+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765565+00:00"
     },
     {
       "id": "city-vukovar",
@@ -1570,7 +1570,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382825+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765569+00:00"
     },
     {
       "id": "city-zupanja",
@@ -1587,7 +1587,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382827+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765572+00:00"
     },
     {
       "id": "city-hvar",
@@ -1604,7 +1604,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382830+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765576+00:00"
     },
     {
       "id": "city-imotski",
@@ -1621,7 +1621,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382832+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765579+00:00"
     },
     {
       "id": "city-kastela",
@@ -1638,7 +1638,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382835+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765582+00:00"
     },
     {
       "id": "city-komiza",
@@ -1655,7 +1655,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382837+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765585+00:00"
     },
     {
       "id": "city-makarska",
@@ -1672,7 +1672,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382842+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765590+00:00"
     },
     {
       "id": "city-omis",
@@ -1689,7 +1689,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382845+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765593+00:00"
     },
     {
       "id": "city-sinj",
@@ -1706,7 +1706,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382847+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765596+00:00"
     },
     {
       "id": "city-solin",
@@ -1723,7 +1723,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382850+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765600+00:00"
     },
     {
       "id": "city-split",
@@ -1740,7 +1740,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382852+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765603+00:00"
     },
     {
       "id": "city-stari-grad",
@@ -1757,7 +1757,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382855+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765606+00:00"
     },
     {
       "id": "city-supetar",
@@ -1774,7 +1774,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382859+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765611+00:00"
     },
     {
       "id": "city-trogir",
@@ -1791,7 +1791,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382862+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765614+00:00"
     },
     {
       "id": "city-trilj",
@@ -1808,7 +1808,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382865+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765618+00:00"
     },
     {
       "id": "city-vis",
@@ -1825,7 +1825,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382867+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765621+00:00"
     },
     {
       "id": "city-vrlika",
@@ -1842,7 +1842,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382869+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765624+00:00"
     },
     {
       "id": "city-vrgorac",
@@ -1859,7 +1859,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382872+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765627+00:00"
     },
     {
       "id": "city-buje",
@@ -1876,7 +1876,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382876+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765630+00:00"
     },
     {
       "id": "city-buzet",
@@ -1893,7 +1893,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382880+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765637+00:00"
     },
     {
       "id": "city-labin",
@@ -1910,7 +1910,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382883+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765640+00:00"
     },
     {
       "id": "city-novigrad",
@@ -1927,7 +1927,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382887+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765645+00:00"
     },
     {
       "id": "city-pazin",
@@ -1944,7 +1944,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382889+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765648+00:00"
     },
     {
       "id": "city-porec",
@@ -1961,7 +1961,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382892+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765651+00:00"
     },
     {
       "id": "city-pula",
@@ -1978,7 +1978,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382894+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765653+00:00"
     },
     {
       "id": "city-rovinj",
@@ -1995,7 +1995,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382896+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765656+00:00"
     },
     {
       "id": "city-umag",
@@ -2012,7 +2012,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382899+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765659+00:00"
     },
     {
       "id": "city-dubrovnik",
@@ -2029,7 +2029,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382901+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765663+00:00"
     },
     {
       "id": "city-korcula",
@@ -2046,7 +2046,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382904+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765666+00:00"
     },
     {
       "id": "city-metkovic",
@@ -2063,7 +2063,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382906+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765669+00:00"
     },
     {
       "id": "city-opuzen",
@@ -2080,7 +2080,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382911+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765672+00:00"
     },
     {
       "id": "city-ploce",
@@ -2097,7 +2097,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382913+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765678+00:00"
     },
     {
       "id": "city-cakovec",
@@ -2114,7 +2114,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382918+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765681+00:00"
     },
     {
       "id": "city-mursko-sredisce",
@@ -2131,7 +2131,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382920+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765687+00:00"
     },
     {
       "id": "city-prelog",
@@ -2148,7 +2148,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382923+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765690+00:00"
     },
     {
       "id": "city-zagreb",
@@ -2165,7 +2165,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.382925+00:00"
+      "updatedAt": "2026-09-01T21:38:54.765693+00:00"
     },
     {
       "id": "quiz-p001",
@@ -2180,7 +2180,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383264+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766085+00:00"
     },
     {
       "id": "quiz-p002",
@@ -2195,7 +2195,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383277+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766100+00:00"
     },
     {
       "id": "quiz-p003",
@@ -2210,7 +2210,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383286+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766110+00:00"
     },
     {
       "id": "quiz-p004",
@@ -2225,7 +2225,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383293+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766119+00:00"
     },
     {
       "id": "quiz-p005",
@@ -2240,7 +2240,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383298+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766125+00:00"
     },
     {
       "id": "quiz-p006",
@@ -2255,7 +2255,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383303+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766132+00:00"
     },
     {
       "id": "quiz-p007",
@@ -2270,7 +2270,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383308+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766139+00:00"
     },
     {
       "id": "quiz-p008",
@@ -2285,7 +2285,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383316+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766149+00:00"
     },
     {
       "id": "quiz-p009",
@@ -2300,7 +2300,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383322+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766156+00:00"
     },
     {
       "id": "quiz-p010",
@@ -2315,7 +2315,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383328+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766164+00:00"
     },
     {
       "id": "quiz-p011",
@@ -2330,7 +2330,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383334+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766171+00:00"
     },
     {
       "id": "quiz-p012",
@@ -2345,7 +2345,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383342+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766181+00:00"
     },
     {
       "id": "quiz-p013",
@@ -2360,7 +2360,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383347+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766188+00:00"
     },
     {
       "id": "quiz-p014",
@@ -2375,7 +2375,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383353+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766214+00:00"
     },
     {
       "id": "quiz-p015",
@@ -2390,7 +2390,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383360+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766221+00:00"
     },
     {
       "id": "quiz-p016",
@@ -2405,7 +2405,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383365+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766227+00:00"
     },
     {
       "id": "quiz-p017",
@@ -2420,7 +2420,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383370+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766233+00:00"
     },
     {
       "id": "quiz-p018",
@@ -2435,7 +2435,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383377+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766242+00:00"
     },
     {
       "id": "quiz-p019",
@@ -2450,7 +2450,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383382+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766251+00:00"
     },
     {
       "id": "quiz-p020",
@@ -2465,7 +2465,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383389+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766259+00:00"
     },
     {
       "id": "quiz-p021",
@@ -2480,7 +2480,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383394+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766265+00:00"
     },
     {
       "id": "quiz-p022",
@@ -2495,7 +2495,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383398+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766271+00:00"
     },
     {
       "id": "quiz-p023",
@@ -2510,7 +2510,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383404+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766278+00:00"
     },
     {
       "id": "quiz-p024",
@@ -2525,7 +2525,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383408+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766283+00:00"
     },
     {
       "id": "quiz-p025",
@@ -2540,7 +2540,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383413+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766290+00:00"
     },
     {
       "id": "quiz-p026",
@@ -2555,7 +2555,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383418+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766295+00:00"
     },
     {
       "id": "quiz-p027",
@@ -2570,7 +2570,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383423+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766301+00:00"
     },
     {
       "id": "quiz-p028",
@@ -2585,7 +2585,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383427+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766307+00:00"
     },
     {
       "id": "quiz-p029",
@@ -2600,7 +2600,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383432+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766313+00:00"
     },
     {
       "id": "quiz-p030",
@@ -2615,7 +2615,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383437+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766319+00:00"
     },
     {
       "id": "quiz-p031",
@@ -2630,7 +2630,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383444+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766325+00:00"
     },
     {
       "id": "quiz-p032",
@@ -2645,7 +2645,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383448+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766331+00:00"
     },
     {
       "id": "quiz-p033",
@@ -2660,7 +2660,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383454+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766341+00:00"
     },
     {
       "id": "quiz-p034",
@@ -2675,7 +2675,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383469+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766358+00:00"
     },
     {
       "id": "quiz-p035",
@@ -2690,7 +2690,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383474+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766365+00:00"
     },
     {
       "id": "quiz-p036",
@@ -2705,7 +2705,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383481+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766374+00:00"
     },
     {
       "id": "quiz-p037",
@@ -2720,7 +2720,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383486+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766379+00:00"
     },
     {
       "id": "quiz-p038",
@@ -2735,7 +2735,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383490+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766385+00:00"
     },
     {
       "id": "quiz-p039",
@@ -2750,7 +2750,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383495+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766392+00:00"
     },
     {
       "id": "quiz-p040",
@@ -2765,7 +2765,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383500+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766398+00:00"
     },
     {
       "id": "quiz-p041",
@@ -2780,7 +2780,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383506+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766405+00:00"
     },
     {
       "id": "quiz-p042",
@@ -2795,7 +2795,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383512+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766412+00:00"
     },
     {
       "id": "quiz-p043",
@@ -2810,7 +2810,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383517+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766418+00:00"
     },
     {
       "id": "quiz-p044",
@@ -2825,7 +2825,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383523+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766425+00:00"
     },
     {
       "id": "quiz-p045",
@@ -2840,7 +2840,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383529+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766432+00:00"
     },
     {
       "id": "quiz-p046",
@@ -2855,7 +2855,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383536+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766438+00:00"
     },
     {
       "id": "quiz-p047",
@@ -2870,7 +2870,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383545+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766447+00:00"
     },
     {
       "id": "quiz-p048",
@@ -2885,7 +2885,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383551+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766457+00:00"
     },
     {
       "id": "quiz-p049",
@@ -2900,7 +2900,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383557+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766467+00:00"
     },
     {
       "id": "quiz-p050",
@@ -2915,7 +2915,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383562+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766474+00:00"
     },
     {
       "id": "quiz-p051",
@@ -2930,7 +2930,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383568+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766482+00:00"
     },
     {
       "id": "quiz-p052",
@@ -2945,7 +2945,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383574+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766490+00:00"
     },
     {
       "id": "quiz-p053",
@@ -2960,7 +2960,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383580+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766497+00:00"
     },
     {
       "id": "quiz-p054",
@@ -2975,7 +2975,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383588+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766507+00:00"
     },
     {
       "id": "quiz-p055",
@@ -2990,7 +2990,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383592+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766512+00:00"
     },
     {
       "id": "quiz-p056",
@@ -3005,7 +3005,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383597+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766518+00:00"
     },
     {
       "id": "quiz-p057",
@@ -3020,7 +3020,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383601+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766524+00:00"
     },
     {
       "id": "quiz-p058",
@@ -3035,7 +3035,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383605+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766529+00:00"
     },
     {
       "id": "quiz-p059",
@@ -3050,7 +3050,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383610+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766535+00:00"
     },
     {
       "id": "quiz-p060",
@@ -3065,7 +3065,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383615+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766541+00:00"
     },
     {
       "id": "quiz-p061",
@@ -3080,7 +3080,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383621+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766547+00:00"
     },
     {
       "id": "quiz-p062",
@@ -3095,7 +3095,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383626+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766552+00:00"
     },
     {
       "id": "quiz-p063",
@@ -3110,7 +3110,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383630+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766560+00:00"
     },
     {
       "id": "quiz-p064",
@@ -3125,7 +3125,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383634+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766566+00:00"
     },
     {
       "id": "quiz-p065",
@@ -3140,7 +3140,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383640+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766573+00:00"
     },
     {
       "id": "quiz-p066",
@@ -3155,7 +3155,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383645+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766579+00:00"
     },
     {
       "id": "quiz-p067",
@@ -3170,7 +3170,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383651+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766587+00:00"
     },
     {
       "id": "quiz-p068",
@@ -3185,7 +3185,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383655+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766593+00:00"
     },
     {
       "id": "quiz-p069",
@@ -3200,7 +3200,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383660+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766598+00:00"
     },
     {
       "id": "quiz-p070",
@@ -3215,7 +3215,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383665+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766605+00:00"
     },
     {
       "id": "quiz-p071",
@@ -3230,7 +3230,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383671+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766612+00:00"
     },
     {
       "id": "quiz-p072",
@@ -3245,7 +3245,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383675+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766618+00:00"
     },
     {
       "id": "quiz-p073",
@@ -3260,7 +3260,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383680+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766624+00:00"
     },
     {
       "id": "quiz-p074",
@@ -3275,7 +3275,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383689+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766635+00:00"
     },
     {
       "id": "quiz-p075",
@@ -3290,7 +3290,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383697+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766643+00:00"
     },
     {
       "id": "quiz-p076",
@@ -3305,7 +3305,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383707+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766658+00:00"
     },
     {
       "id": "quiz-p077",
@@ -3320,7 +3320,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383713+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766665+00:00"
     },
     {
       "id": "quiz-p078",
@@ -3335,7 +3335,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383718+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766672+00:00"
     },
     {
       "id": "quiz-p079",
@@ -3350,7 +3350,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383723+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766678+00:00"
     },
     {
       "id": "quiz-p080",
@@ -3365,7 +3365,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383728+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766684+00:00"
     },
     {
       "id": "quiz-p081",
@@ -3380,7 +3380,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383734+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766692+00:00"
     },
     {
       "id": "quiz-p082",
@@ -3395,7 +3395,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383739+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766699+00:00"
     },
     {
       "id": "quiz-p083",
@@ -3410,7 +3410,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383744+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766705+00:00"
     },
     {
       "id": "quiz-p084",
@@ -3425,7 +3425,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383750+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766712+00:00"
     },
     {
       "id": "quiz-p085",
@@ -3440,7 +3440,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383755+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766719+00:00"
     },
     {
       "id": "quiz-p086",
@@ -3455,7 +3455,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383760+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766726+00:00"
     },
     {
       "id": "quiz-p087",
@@ -3470,7 +3470,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383768+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766735+00:00"
     },
     {
       "id": "quiz-p088",
@@ -3485,7 +3485,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383773+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766741+00:00"
     },
     {
       "id": "quiz-p089",
@@ -3500,7 +3500,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383779+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766748+00:00"
     },
     {
       "id": "quiz-p090",
@@ -3515,7 +3515,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383785+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766755+00:00"
     },
     {
       "id": "quiz-p091",
@@ -3530,7 +3530,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383791+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766763+00:00"
     },
     {
       "id": "quiz-p092",
@@ -3545,7 +3545,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383797+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766769+00:00"
     },
     {
       "id": "quiz-p093",
@@ -3560,7 +3560,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383803+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766775+00:00"
     },
     {
       "id": "quiz-p094",
@@ -3575,7 +3575,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383807+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766781+00:00"
     },
     {
       "id": "quiz-p095",
@@ -3590,7 +3590,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383812+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766789+00:00"
     },
     {
       "id": "quiz-p096",
@@ -3605,7 +3605,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383819+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766799+00:00"
     },
     {
       "id": "quiz-p097",
@@ -3620,7 +3620,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383826+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766805+00:00"
     },
     {
       "id": "quiz-p098",
@@ -3635,7 +3635,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383833+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766816+00:00"
     },
     {
       "id": "quiz-p099",
@@ -3650,7 +3650,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383841+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766824+00:00"
     },
     {
       "id": "quiz-p100",
@@ -3665,7 +3665,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-01T21:38:06.383845+00:00"
+      "updatedAt": "2026-09-01T21:38:54.766830+00:00"
     },
     {
       "id": "page-povijest.html",
@@ -3679,7 +3679,7 @@
       "source": "povijest.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.290012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.686881+00:00"
     },
     {
       "id": "page-biblija.html",
@@ -3693,7 +3693,7 @@
       "source": "biblija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682098+00:00"
     },
     {
       "id": "page-blagdani.html",
@@ -3707,7 +3707,7 @@
       "source": "blagdani.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682098+00:00"
     },
     {
       "id": "page-index.html",
@@ -3721,7 +3721,7 @@
       "source": "index.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.288012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.683881+00:00"
     },
     {
       "id": "page-domovina.html",
@@ -3735,7 +3735,7 @@
       "source": "domovina.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-grad.html",
@@ -3749,7 +3749,7 @@
       "source": "grad.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.287012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-vrijeme.html",
@@ -3763,7 +3763,7 @@
       "source": "vrijeme.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.292012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.689881+00:00"
     },
     {
       "id": "page-galerija.html",
@@ -3777,7 +3777,7 @@
       "source": "galerija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.287012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-vjera.html",
@@ -3791,7 +3791,7 @@
       "source": "vjera.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.292012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.689346+00:00"
     },
     {
       "id": "page-CHANGELOG-2026.md",
@@ -3805,7 +3805,7 @@
       "source": "CHANGELOG-2026.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.284012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.680089+00:00"
     },
     {
       "id": "page-rang-lista.html",
@@ -3819,7 +3819,7 @@
       "source": "rang-lista.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.290012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.687881+00:00"
     },
     {
       "id": "page-newsletter.html",
@@ -3833,7 +3833,7 @@
       "source": "newsletter.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.289012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.685881+00:00"
     },
     {
       "id": "page-evandelje.html",
@@ -3847,7 +3847,7 @@
       "source": "evandelje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.287012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-modal.html",
@@ -3861,7 +3861,7 @@
       "source": "modal.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.288012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.684881+00:00"
     },
     {
       "id": "page-plan-razvoja.md",
@@ -3875,7 +3875,7 @@
       "source": "plan-razvoja.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.289638+00:00"
+      "updatedAt": "2026-09-01T21:38:54.686881+00:00"
     },
     {
       "id": "page-search.html",
@@ -3889,7 +3889,21 @@
       "source": "search.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.291054+00:00"
+      "updatedAt": "2026-09-01T21:38:54.688487+00:00"
+    },
+    {
+      "id": "page-FAZE-1-2-ZAVRSENO.md",
+      "type": "stranica",
+      "title": "Faze 1 2 Zavrseno",
+      "content": "# PatriaSoul — fazna kontrola nakon implementacije **Datum:** 1. rujna 2026. **Grana:** `main` **Implementacijski commit:** `e0e4faf7d5571f1494a9b26bd0cf6e2d16bba6ab` ## Faza 1 — završeno - Jedinstveni profil: `patriasoul-profile.js` je jedini izvor XP-a, bodova, streaka, kategorija, gradova, favorita i rezultata. - `xp-engine.js`, `badges.js`, `profil.html`, `quiz.html`, `brani-svoj-grad.html` više ne trebaju paralelne profile. - 100 razina ostaje u `levels.js` kao jedini registar razina. - Značke su proširene i čitaju centralni profil. - Omiljena pitanja imaju centralni API. - Brani svoj grad koristi isti profil/XP sustav. - Rang-lista ima dnevni/tjedni/mjesečni/ukupni način rada i adapter za backend. - Kviz koristi centralni profil i ne stvara drugi profilni ključ. - `pages/kviz/index.html` je moderniziran ulaz u centralni kviz. - Video i galerija imaju jedan centralni media registar i zasebne prikaze. - `O PatriaSoul` je dovršen kao zasebna stranica. - PWA jezgra: service worker + registracija + cache shell. - QA stranica: `/qa.html` provjerava banku, gradove, razine, profil i značke. ## Faza 2 — implementirano - Supabase produkcijska shema u `supabase/schema.sql`. - Idempotentna migracija u `supabase/migrations/20260901000000_patriasoul_core.sql`. - `profiles`, `quiz_results`, `favorite_questions`. - RLS politike za vlastiti profil, rezultate i favorite. - Javne leaderboard view-e za ukupno/dnevno/tjedno/mjesečno. - Auth trigger za automatsko kreiranje profila nakon registracije. - `patriasoul-supabase.js` adapter za Auth, profile rezultate i leaderboard. - Nema service-role ključa u browser kodu. - Multimedijski registry i vizualni fallback SVG resursi. ## Važno za testiranje Repozitorij sada ima kompletan **lokalni/demo put** bez vanjskih ključeva. Supabase produkcijski put je spreman, ali stvarna javna baza se aktivira tek kada se na Supabase projektu primijeni migracija i u runtime se doda javni publishable/anon ključ. To nije hardkodirano u repozitorij radi sigurnosti. ## QA pravilo Ne označavamo sadržaj kao urednički verificiran samo zato što je tehnički generiran. Posebno se prije javne objave moraju potvrditi izvori pojedinačnih povijesnih zapisa i pitanje-po-pitanje kvaliteta kviz banke. Tehnički engine ih sada može automatski prijaviti kroz `/qa.html` i `PatriaQuiz.validate()`. ## Arhitektonsko pravilo **Jedan podatak → jedno mjesto istine → više prikaza.** Ne stvarati paralelne profile, rang-liste, grad-registre, media registre ili kopirane sadržaje.",
+      "tags": [
+        "FAZE-1-2-ZAVRSENO",
+        "portal"
+      ],
+      "source": "FAZE-1-2-ZAVRSENO.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T21:38:54.680089+00:00"
     },
     {
       "id": "page-cookie-banner.html",
@@ -3903,7 +3917,7 @@
       "source": "cookie-banner.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682098+00:00"
     },
     {
       "id": "page-STATUS-PROJEKTA.md",
@@ -3917,7 +3931,7 @@
       "source": "STATUS-PROJEKTA.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.284012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.680089+00:00"
     },
     {
       "id": "page-brani-svoj-grad.html",
@@ -3931,7 +3945,7 @@
       "source": "brani-svoj-grad.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682098+00:00"
     },
     {
       "id": "page-molitve.html",
@@ -3945,7 +3959,7 @@
       "source": "molitve.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.288012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.684881+00:00"
     },
     {
       "id": "page-quiz.html",
@@ -3959,7 +3973,7 @@
       "source": "quiz.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.290012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.686881+00:00"
     },
     {
       "id": "page-404.html",
@@ -3973,7 +3987,7 @@
       "source": "404.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.284012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.680089+00:00"
     },
     {
       "id": "page-gradovi.html",
@@ -3987,7 +4001,21 @@
       "source": "gradovi.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.287012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
+    },
+    {
+      "id": "page-README.md",
+      "type": "stranica",
+      "title": "Readme",
+      "content": "# PatriaSoul 🇭🇷 PatriaSoul je digitalni projekt posvećen hrvatskoj povijesti, gradovima, baštini, vjeri, sjećanju i znanju. ## Jezgra - 127 hrvatskih gradova u `gradovi.js` - zajednički grad template `grad.html` - centralni kviz engine `quiz.js` - 800 + dodatna banka pitanja - dnevni, tjedni, mjesečni i miješani kviz - jedinstveni profil/XP/streak/bedževi u `patriasoul-profile.js` - rang-lista i `Brani svoj grad` - Vjera, Baština, Povijest, Branitelji, Vijesti i Vrijeme - AI + Knowledge Base - Video + Galerija - PWA/service worker - Supabase schema, RLS i leaderboard views ## Arhitektura **Jedan podatak → jedno mjesto istine → više prikaza.** Ne duplicirati registre ili profilne sustave. Kanonski podaci žive u centralnim JS/JSON registrima, a HTML stranice ih samo prikazuju. ## Test Otvori `/qa.html` za automatsku provjeru jezgre projekta. ## Supabase Schema: `supabase/schema.sql` Migracija: `supabase/migrations/20260901000000_patriasoul_core.sql` Ključevi se ne spremaju u javni repozitorij. Browser smije koristiti samo javni publishable/anon ključ uz uključene RLS politike; service-role ključ nikada ne ide u frontend. ## Dokumentacija - `struktura.md` — arhitektura i pravilo izvora istine - `FAZE-1-2-ZAVRSENO.md` — posljednja fazna kontrola - `STATUS-PROJEKTA.md` — širi audit i otvorene uredničke/vanjske stavke",
+      "tags": [
+        "README",
+        "portal"
+      ],
+      "source": "README.md",
+      "sourceTitle": "PatriaSoul portal",
+      "status": "published",
+      "updatedAt": "2026-09-01T21:38:54.680089+00:00"
     },
     {
       "id": "page-o-patriasoul.html",
@@ -4001,7 +4029,7 @@
       "source": "o-patriasoul.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.289012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.685881+00:00"
     },
     {
       "id": "page-bastina.html",
@@ -4015,7 +4043,7 @@
       "source": "bastina.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.285778+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682098+00:00"
     },
     {
       "id": "page-dizajn.md",
@@ -4029,7 +4057,7 @@
       "source": "dizajn.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-vijesti.html",
@@ -4043,7 +4071,7 @@
       "source": "vijesti.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.292012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.689346+00:00"
     },
     {
       "id": "page-branitelji.html",
@@ -4057,7 +4085,7 @@
       "source": "branitelji.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.286012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682098+00:00"
     },
     {
       "id": "page-vijesti-admin.html",
@@ -4071,7 +4099,7 @@
       "source": "vijesti-admin.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.291738+00:00"
+      "updatedAt": "2026-09-01T21:38:54.689346+00:00"
     },
     {
       "id": "page-svetac-dana.html",
@@ -4085,7 +4113,7 @@
       "source": "svetac-dana.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.291738+00:00"
+      "updatedAt": "2026-09-01T21:38:54.689346+00:00"
     },
     {
       "id": "page-footer.html",
@@ -4099,7 +4127,7 @@
       "source": "footer.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.287012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-profil.html",
@@ -4113,7 +4141,7 @@
       "source": "profil.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.290012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.686881+00:00"
     },
     {
       "id": "page-video.html",
@@ -4127,7 +4155,7 @@
       "source": "video.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.291738+00:00"
+      "updatedAt": "2026-09-01T21:38:54.689346+00:00"
     },
     {
       "id": "page-krunica.html",
@@ -4141,7 +4169,7 @@
       "source": "krunica.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.288012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.683881+00:00"
     },
     {
       "id": "page-funkcije.md",
@@ -4155,7 +4183,7 @@
       "source": "funkcije.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.287012+00:00"
+      "updatedAt": "2026-09-01T21:38:54.682881+00:00"
     },
     {
       "id": "page-struktura.md",
@@ -4169,7 +4197,7 @@
       "source": "struktura.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.291054+00:00"
+      "updatedAt": "2026-09-01T21:38:54.688487+00:00"
     },
     {
       "id": "page-pages-vjera-index.html",
@@ -4183,7 +4211,7 @@
       "source": "pages/vjera/index.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-01T21:38:06.289638+00:00"
+      "updatedAt": "2026-09-01T21:38:54.686695+00:00"
     }
   ]
 }
