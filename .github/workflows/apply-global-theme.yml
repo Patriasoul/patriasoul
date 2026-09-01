@@ -1,0 +1,38 @@
+name: Apply PatriaSoul global theme
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'patriasoul-global.css'
+      - 'scripts/apply-global-theme.py'
+      - '.github/workflows/apply-global-theme.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  theme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply global theme
+        run: python3 scripts/apply-global-theme.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No HTML files needed theme injection."
+            exit 0
+          fi
+          git add '*.html' 'pages/**/*.html' 2>/dev/null || git add -A
+          git commit -m "chore(theme): apply unified PatriaSoul theme"
+          git push
