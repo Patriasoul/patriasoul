@@ -30,6 +30,19 @@
     .search-loading{display:flex;align-items:center;justify-content:center;gap:10px;padding:30px;color:var(--ps-muted)}
     .search-spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,.16);border-top-color:var(--ps-gold);border-radius:50%;animation:spin .8s linear infinite}
     @keyframes spin{to{transform:rotate(360deg)}}
+
+    /* PatriaSoul znak: samo hrvatska šahovnica, bez krune/gornjeg dijela grba. */
+    .ps-checker-mark{
+      width:34px;height:34px;border:1px solid rgba(217,184,76,.55);border-radius:8px;
+      background:
+        conic-gradient(#c9212c 25%,#f4f6f8 0 50%,#c9212c 0 75%,#f4f6f8 0) 0 0/40% 40%;
+      box-shadow:inset 0 0 0 2px rgba(0,0,0,.18),0 5px 18px rgba(0,0,0,.22);
+      flex:0 0 auto;
+    }
+    .search-brand-text{display:inline-flex;align-items:center;gap:10px}
+    .search-brand-text strong{color:#f4f6f8}
+    .search-brand-text strong span{color:var(--ps-gold-2)}
+
     @media (max-width:640px){
       .search-page{padding-top:32px}
       .search-box{flex-direction:column}
@@ -49,7 +62,8 @@
   <header class="ps-header">
     <div class="container ps-nav">
       <a class="ps-brand" href="index.html" aria-label="PatriaSoul početna stranica">
-        <span class="ps-brand-mark">PS</span><span>PATRIA<span>SOUL</span></span>
+        <span class="ps-checker-mark" aria-hidden="true"></span>
+        <span class="search-brand-text"><strong>PATRIA<span>SOUL</span></strong></span>
       </a>
       <button class="ps-menu" type="button" aria-expanded="false" aria-controls="main-navigation">☰ <span class="sr-only">Izbornik</span></button>
       <nav class="ps-mainnav" id="main-navigation" aria-label="Glavna navigacija">
@@ -133,7 +147,6 @@
             } catch { return false; }
           });
 
-          // Fetch pages in small batches so the browser is not flooded with requests.
           const batchSize = 8;
           const collected = [];
           for (let i=0; i<allowed.length; i+=batchSize) {
