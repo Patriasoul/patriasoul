@@ -70,6 +70,16 @@
     });
   }
 
+  function polishKnownContent() {
+    // Small terminology correction kept here temporarily so the existing
+    // Domovina page remains correct without duplicating or rebuilding it.
+    if (window.location.pathname.endsWith('/domovina.html')) {
+      document.querySelectorAll('.domovina-fact strong').forEach(node => {
+        if (node.textContent.trim() === 'Dalmatia') node.textContent = 'Dalmacija';
+      });
+    }
+  }
+
   async function loadInto(selector, url) {
     const target = document.querySelector(selector);
     if (!target) return null;
@@ -123,6 +133,7 @@
     if (desktopNav) desktopNav.replaceChildren(createNav());
     if (mobileNav) mobileNav.replaceChildren(createNav());
     rewriteInternalLinks();
+    polishKnownContent();
     document.querySelector('[data-ps-menu]')?.addEventListener('click', openDrawer);
     document.querySelector('[data-ps-close]')?.addEventListener('click', closeDrawer);
     document.querySelector('[data-ps-backdrop]')?.addEventListener('click', closeDrawer);
