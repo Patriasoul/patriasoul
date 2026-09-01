@@ -1,5 +1,182 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-09-01T14:33:02.386827+00:00",
   "source": "DHMZ",
-  "stations": {}
-}
+  "stations": {
+    "RC Bilogora": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Crikvenica": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Dubrovnik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Dubrovnik-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Gospić": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Knin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Križevci": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Opatija": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Osijek-Čepin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pula-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Rijeka-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Slavonski Brod": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Split-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Šibenik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Varaždin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zadar-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zagreb-Maksimir": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zagreb-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zagreb": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Rijeka": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zadar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Split": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pula": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    }
+  },
+  "alerts": [
+    "Žuto upozorenje za vjetar",
+    "Jak, na udare mjestimice olujan sjeverni vjetar. Najjači udari vjetra > 65 km/h",
+    "Yellow wind warning",
+    "Strong N wind with gale force gusts. Maximum gust speed > 65 km/h",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno mogući izraženiji pljuskovi s grmljavinom i prolazno jakim vjetrom. Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally possible thundershowers withe strong wind. Lightning risk > 60 %",
+    "Žuto upozorenje za vjetar",
+    "Jak, na udare olujan sjeverni i sjeveroistočni vjetar. Najjači udari vjetra > 65 km/h",
+    "Yellow wind warning",
+    "Strong N and NW wind with gale force gusts. Maximum gust speed > 65 km/h",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno mogući izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 50 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers possible. Lightning risk > 50 %",
+    "Žuto upozorenje za vjetar",
+    "Mjestimice jaka, osobito podno Velebita na udare olujna bura. Najjači udari vjetra > 65 km/h",
+    "Yellow wind warning",
+    "Strong bura (NE wind) withe gale force gusts. Maximum gust speed > 65 km/h",
+    "Žuto upozorenje za vrućinu",
+    "Toplinski val. Maksimalna temperatura > 34 °C",
+    "Yellow high temperature warning",
+    "Heat wave. Maximum temperature > 34 °C",
+    "Žuto upozorenje za vrućinu",
+    "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 26 °C",
+    "Yellow high temperature warning",
+    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 26 °C",
+    "Žuto upozorenje za vjetar",
+    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)"
+  ]
+}\n
