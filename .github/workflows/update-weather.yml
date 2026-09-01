@@ -1,0 +1,86 @@
+name: PatriaSoul – automatsko osvježavanje vremena
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/20 * * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Preuzmi DHMZ XML i izradi centralni feed
+        shell: python
+        run: |
+          import json, re, urllib.request, xml.etree.ElementTree as ET
+          from datetime import datetime, timezone
+
+          SOURCES={
+            'current':'https://vrijeme.hr/hrvatska_n.xml',
+            'alerts':'https://meteo.hr/upozorenja/cap_hr_today.xml'
+          }
+          wanted=['Zagreb','Karlovac','Sisak','Varaždin','Križevci','Bjelovar','Rijeka','Opatija','Crikvenica','Krk','Gospić','Senj','Zadar','Šibenik','Knin','Split','Makarska','Dubrovnik','Pula','Pazin','Osijek','Slavonski Brod','Gradište','Bilogora']
+
+          def local(tag): return tag.rsplit('}',1)[-1].lower()
+          def clean(v): return re.sub(r'\\s+',' ',str(v or '')).strip()
+          def text(el): return clean(el.text if el is not None else '')
+          def child_map(node): return {local(c.tag):text(c) for c in list(node)}
+          def find_value(m, names):
+              for n in names:
+                  for k,v in m.items():
+                      if n in k and v!='': return v
+              return None
+
+          raw=urllib.request.urlopen(urllib.request.Request(SOURCES['current'],headers={'User-Agent':'PatriaSoul-Weather/1.0'}),timeout=30).read()
+          root=ET.fromstring(raw)
+          stations={}
+          for node in root.iter():
+              if local(node.tag)!='grad': continue
+              m=child_map(node)
+              name=find_value(m,['gradime','ime','naziv','postaja','mjesto'])
+              if not name: continue
+              temp=find_value(m,['temp','temperatura'])
+              cond=find_value(m,['vrijeme','stanje','opis'])
+              wind=find_value(m,['brzinavjetra','vjetar','smjerbrzina','brzina'])
+              hum=find_value(m,['relvlaga','vlaga','relativnavlaga','vlaznost'])
+              if any(w.lower() in name.lower() for w in wanted):
+                  stations[name]={'temp':temp,'condition':cond,'wind':wind,'humidity':hum}
+
+          # Fallback aliases: preserve common PatriaSoul display names even if DHMZ station uses a suffix.
+          aliases={}
+          for k,v in stations.items():
+              base=re.sub(r'[-–].*$','',k).strip().lower()
+              aliases[base]=v
+          for w in wanted:
+              if w not in stations:
+                  v=aliases.get(w.lower())
+                  if v: stations[w]=v
+
+          alerts=[]
+          try:
+              ar=ET.fromstring(urllib.request.urlopen(SOURCES['alerts'],timeout=30).read())
+              for e in ar.iter():
+                  if local(e.tag) in ('headline','event','description') and text(e):
+                      alerts.append(text(e))
+          except Exception as e:
+              print('CAP warning:',e)
+
+          data={'updatedAt':datetime.now(timezone.utc).isoformat(),'source':'DHMZ','stations':stations,'alerts':alerts[:30]}
+          with open('weather-feed.json','w',encoding='utf-8') as f:
+              json.dump(data,f,ensure_ascii=False,indent=2); f.write('\\n')
+          print('PatriaSoul weather stations:',len(stations),'alerts:',len(alerts))
+
+      - name: Spremi osvježeni weather feed
+        run: |
+          git config user.name "patriasoul-weather-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add weather-feed.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Automatsko osvježavanje PatriaSoul vremena"
+          git push
