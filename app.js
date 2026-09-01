@@ -11,6 +11,7 @@
     ['Vjera', '/vjera.html'],
     ['Gradovi', '/gradovi.html'],
     ['Vijesti', '/vijesti.html'],
+    ['Rang-lista', '/rang-lista.html'],
     ['Igra', '/brani-svoj-grad.html'],
     ['🧠 Kviz', '/quiz.html', 'ps-nav-cta']
   ];
@@ -35,35 +36,23 @@
 
   function createNav() {
     const fragment = document.createDocumentFragment();
-
     NAV_ITEMS.forEach(([label, href, extraClass]) => {
       const link = document.createElement('a');
       link.href = href;
       link.textContent = label;
-
       if (extraClass) link.className = extraClass;
       if (isActive(href)) link.setAttribute('aria-current', 'page');
-
       fragment.appendChild(link);
     });
-
     return fragment;
   }
 
   async function loadInto(selector, url) {
     const target = document.querySelector(selector);
     if (!target) return null;
-
     try {
-      const response = await fetch(url, {
-        credentials: 'same-origin',
-        cache: 'no-cache'
-      });
-
-      if (!response.ok) {
-        throw new Error(`${response.status} ${response.statusText}`);
-      }
-
+      const response = await fetch(url, { credentials: 'same-origin', cache: 'no-cache' });
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
       target.innerHTML = await response.text();
       return target;
     } catch (error) {
@@ -76,11 +65,9 @@
     const drawer = document.querySelector('[data-ps-drawer]');
     const backdrop = document.querySelector('[data-ps-backdrop]');
     const menu = document.querySelector('[data-ps-menu]');
-
     drawer?.classList.remove('is-open');
     backdrop?.classList.remove('is-open');
     if (backdrop) backdrop.hidden = true;
-
     drawer?.setAttribute('aria-hidden', 'true');
     menu?.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('menu-open');
@@ -90,14 +77,11 @@
     const drawer = document.querySelector('[data-ps-drawer]');
     const backdrop = document.querySelector('[data-ps-backdrop]');
     const menu = document.querySelector('[data-ps-menu]');
-
     drawer?.classList.add('is-open');
-
     if (backdrop) {
       backdrop.hidden = false;
       requestAnimationFrame(() => backdrop.classList.add('is-open'));
     }
-
     drawer?.setAttribute('aria-hidden', 'false');
     menu?.setAttribute('aria-expanded', 'true');
     document.body.classList.add('menu-open');
@@ -108,20 +92,14 @@
       loadInto('#site-header', `${ROOT}components/header.html`),
       loadInto('#site-footer', `${ROOT}footer.html`)
     ]);
-
     const desktopNav = document.querySelector('#site-navigation');
     const mobileNav = document.querySelector('#site-mobile-navigation');
-
     if (desktopNav) desktopNav.replaceChildren(createNav());
     if (mobileNav) mobileNav.replaceChildren(createNav());
-
     document.querySelector('[data-ps-menu]')?.addEventListener('click', openDrawer);
     document.querySelector('[data-ps-close]')?.addEventListener('click', closeDrawer);
     document.querySelector('[data-ps-backdrop]')?.addEventListener('click', closeDrawer);
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') closeDrawer();
-    });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeDrawer(); });
   }
 
   window.PatriaSoul = Object.freeze({
@@ -132,9 +110,6 @@
     closeDrawer
   });
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init, { once: true });
-  } else {
-    init();
-  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
+  else init();
 })();
