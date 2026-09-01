@@ -1,2 +1,73 @@
-<!-- Zajednički newsletter obrazac. -->
-<form class="newsletter" novalidate></form>
+<!-- PatriaSoul — zajednički newsletter obrazac -->
+<section class="newsletter" aria-labelledby="newsletter-title">
+  <div class="newsletter__inner">
+    <div class="newsletter__content">
+      <p class="newsletter__eyebrow">PATRIA SOUL</p>
+      <h2 id="newsletter-title">Ostani uz PatriaSoul</h2>
+      <p class="newsletter__text">
+        Primaj najvažnije novosti, povijesne priče, sadržaje o domovini i obavijesti o novim sadržajima izravno na svoj e-mail.
+      </p>
+    </div>
+
+    <form class="newsletter__form" id="patriasoul-newsletter-form" novalidate>
+      <div class="newsletter__field">
+        <label for="newsletter-email">Tvoja e-mail adresa</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          inputmode="email"
+          maxlength="254"
+          placeholder="tvoj@email.hr"
+          required
+          aria-describedby="newsletter-help newsletter-status"
+        />
+        <p id="newsletter-help" class="newsletter__help">
+          Unosom e-maila potvrđuješ da želiš primati PatriaSoul novosti.
+        </p>
+      </div>
+
+      <button class="newsletter__submit" type="submit">
+        <span aria-hidden="true">✉️</span>
+        <span>Prijavi me</span>
+      </button>
+
+      <p
+        id="newsletter-status"
+        class="newsletter__status"
+        role="status"
+        aria-live="polite"
+        hidden
+      ></p>
+    </form>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const form = document.getElementById('patriasoul-newsletter-form');
+    const email = document.getElementById('newsletter-email');
+    const status = document.getElementById('newsletter-status');
+
+    if (!form || !email || !status) return;
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      status.hidden = false;
+
+      if (!email.checkValidity()) {
+        status.textContent = 'Molimo unesite ispravnu e-mail adresu.';
+        email.focus();
+        return;
+      }
+
+      /*
+       * Za sada nema vanjskog servisa za slanje newslettera.
+       * Ovdje će se naknadno spojiti Supabase/newsletter backend.
+       */
+      status.textContent = 'Hvala! Tvoja prijava je zaprimljena. Newsletter ćemo uskoro povezati s našim sustavom.';
+      form.reset();
+    });
+  })();
+</script>
