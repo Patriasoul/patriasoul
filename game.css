@@ -1,1 +1,679 @@
-/* Stilovi igre Brani svoj grad. */
+/*
+ * PatriaSoul — Game UI
+ * Stilovi za "Brani svoj grad" i buduće interaktivne igre.
+ * Dizajn: tamni anthracite + zlatni identitet, fokus na čitljivost,
+ * jasnu hijerarhiju, touch kontrole i responsivnost.
+ */
+
+:root {
+  --ps-game-bg: #0b0d10;
+  --ps-game-surface: #12161b;
+  --ps-game-surface-2: #181d23;
+  --ps-game-surface-3: #20262e;
+  --ps-game-border: rgba(212, 175, 55, 0.22);
+  --ps-game-gold: #d4af37;
+  --ps-game-gold-soft: #f0d77a;
+  --ps-game-text: #f4f1e8;
+  --ps-game-muted: #a9adb5;
+  --ps-game-success: #4fbd78;
+  --ps-game-danger: #df5b5b;
+  --ps-game-info: #6fa8dc;
+  --ps-game-shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
+  --ps-game-radius: 18px;
+  --ps-game-radius-sm: 12px;
+  --ps-game-transition: 180ms ease;
+}
+
+/* Glavni spremnik igre */
+.game,
+.game-page,
+.game-shell,
+.ps-game {
+  width: min(100%, 1180px);
+  margin-inline: auto;
+  padding: clamp(18px, 3vw, 34px);
+  color: var(--ps-game-text);
+}
+
+.game {
+  min-height: 60vh;
+}
+
+.game-shell {
+  position: relative;
+}
+
+/* Zaglavlje igre */
+.game-header,
+.ps-game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 24px;
+  padding: 20px 22px;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 55, 0.08), transparent 45%),
+    var(--ps-game-surface);
+  border: 1px solid var(--ps-game-border);
+  border-radius: var(--ps-game-radius);
+  box-shadow: var(--ps-game-shadow);
+}
+
+.game-title,
+.ps-game-title {
+  margin: 0;
+  color: var(--ps-game-gold-soft);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+.game-subtitle,
+.ps-game-subtitle {
+  margin: 6px 0 0;
+  color: var(--ps-game-muted);
+  font-size: 0.95rem;
+}
+
+/* HUD: bodovi, vrijeme, val, grad */
+.game-hud,
+.ps-game-hud,
+.game-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.game-stat,
+.ps-game-stat,
+.stat-box {
+  min-width: 0;
+  padding: 14px 16px;
+  background: var(--ps-game-surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--ps-game-radius-sm);
+  text-align: center;
+}
+
+.game-stat-label,
+.ps-game-stat-label,
+.stat-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--ps-game-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.game-stat-value,
+.ps-game-stat-value,
+.stat-value {
+  display: block;
+  color: var(--ps-game-text);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.game-stat.is-gold,
+.ps-game-stat.is-gold {
+  border-color: var(--ps-game-border);
+}
+
+.game-stat.is-gold .game-stat-value,
+.ps-game-stat.is-gold .ps-game-stat-value {
+  color: var(--ps-game-gold-soft);
+}
+
+/* Traka napretka / obrane grada */
+.game-progress,
+.ps-game-progress {
+  height: 10px;
+  overflow: hidden;
+  margin: 0 0 22px;
+  background: #080a0d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.game-progress > span,
+.ps-game-progress > span {
+  display: block;
+  width: var(--progress, 0%);
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #9c7a18, var(--ps-game-gold), var(--ps-game-gold-soft));
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.22);
+  transition: width 260ms ease;
+}
+
+/* Glavno igralište */
+.game-board,
+.ps-game-board {
+  position: relative;
+  min-height: 430px;
+  padding: clamp(18px, 3vw, 30px);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.09), transparent 38%),
+    linear-gradient(180deg, #11151a, #0b0d10);
+  border: 1px solid var(--ps-game-border);
+  border-radius: calc(var(--ps-game-radius) + 2px);
+  box-shadow: var(--ps-game-shadow);
+  isolation: isolate;
+}
+
+.game-board::before,
+.ps-game-board::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.22;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 92%);
+}
+
+/* Gradski cilj / zastava */
+.game-city,
+.ps-game-city,
+.city-target {
+  display: grid;
+  place-items: center;
+  width: min(100%, 460px);
+  min-height: 130px;
+  margin: 0 auto 24px;
+  padding: 24px;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(212, 175, 55, 0.13), rgba(255, 255, 255, 0.025));
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  border-radius: var(--ps-game-radius);
+}
+
+.game-city-name,
+.ps-game-city-name,
+.city-target-name {
+  margin: 0;
+  color: var(--ps-game-gold-soft);
+  font-size: clamp(1.35rem, 4vw, 2.2rem);
+  font-weight: 850;
+}
+
+.game-city-status,
+.ps-game-city-status {
+  margin-top: 7px;
+  color: var(--ps-game-muted);
+}
+
+/* Neprijatelji / mete */
+.game-enemies,
+.ps-game-enemies,
+.enemy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.game-enemy,
+.ps-game-enemy,
+.enemy-card {
+  position: relative;
+  min-height: 130px;
+  padding: 18px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #171b21, #101318);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--ps-game-radius-sm);
+  cursor: pointer;
+  transition: transform var(--ps-game-transition), border-color var(--ps-game-transition), box-shadow var(--ps-game-transition);
+}
+
+.game-enemy:hover,
+.ps-game-enemy:hover,
+.enemy-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0.48);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+}
+
+.game-enemy:focus-visible,
+.ps-game-enemy:focus-visible,
+.enemy-card:focus-visible,
+.game-action:focus-visible,
+.ps-game-action:focus-visible,
+.game-button:focus-visible,
+.ps-game-button:focus-visible {
+  outline: 3px solid var(--ps-game-gold-soft);
+  outline-offset: 3px;
+}
+
+.game-enemy-name,
+.ps-game-enemy-name,
+.enemy-name {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--ps-game-text);
+  font-weight: 800;
+}
+
+.game-health,
+.ps-game-health,
+.health-bar {
+  height: 8px;
+  overflow: hidden;
+  background: #090b0e;
+  border-radius: 999px;
+}
+
+.game-health > span,
+.ps-game-health > span,
+.health-bar > span {
+  display: block;
+  width: var(--health, 100%);
+  height: 100%;
+  background: linear-gradient(90deg, #8d3434, var(--ps-game-danger));
+  border-radius: inherit;
+  transition: width 220ms ease;
+}
+
+/* Akcije */
+.game-actions,
+.ps-game-actions,
+.game-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.game-action,
+.ps-game-action,
+.game-button,
+.ps-game-button {
+  appearance: none;
+  min-height: 48px;
+  padding: 12px 20px;
+  color: #111;
+  background: linear-gradient(135deg, var(--ps-game-gold-soft), var(--ps-game-gold));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.16);
+  font: inherit;
+  font-weight: 850;
+  cursor: pointer;
+  transition: transform var(--ps-game-transition), filter var(--ps-game-transition), box-shadow var(--ps-game-transition);
+}
+
+.game-action:hover,
+.ps-game-action:hover,
+.game-button:hover,
+.ps-game-button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 11px 26px rgba(212, 175, 55, 0.22);
+}
+
+.game-action:active,
+.ps-game-action:active,
+.game-button:active,
+.ps-game-button:active {
+  transform: translateY(0);
+}
+
+.game-action.secondary,
+.ps-game-action.secondary,
+.game-button.secondary,
+.ps-game-button.secondary {
+  color: var(--ps-game-text);
+  background: var(--ps-game-surface-2);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.game-action.danger,
+.ps-game-action.danger {
+  color: #fff;
+  background: linear-gradient(135deg, #b94343, var(--ps-game-danger));
+}
+
+.game-action:disabled,
+.ps-game-action:disabled,
+.game-button:disabled,
+.ps-game-button:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+  transform: none;
+  filter: none;
+}
+
+/* Poruke stanja */
+.game-message,
+.ps-game-message,
+.game-status {
+  margin: 18px 0 0;
+  padding: 13px 16px;
+  color: var(--ps-game-muted);
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--ps-game-radius-sm);
+}
+
+.game-message.success,
+.ps-game-message.success,
+.game-status.success {
+  color: #c9f0d6;
+  border-color: rgba(79, 189, 120, 0.35);
+  background: rgba(79, 189, 120, 0.08);
+}
+
+.game-message.error,
+.ps-game-message.error,
+.game-status.error {
+  color: #ffd0d0;
+  border-color: rgba(223, 91, 91, 0.35);
+  background: rgba(223, 91, 91, 0.08);
+}
+
+/* Rezultat igre */
+.game-result,
+.ps-game-result,
+.game-over {
+  width: min(100%, 680px);
+  margin: 28px auto;
+  padding: clamp(24px, 5vw, 42px);
+  text-align: center;
+  background:
+    linear-gradient(145deg, rgba(212, 175, 55, 0.13), transparent 55%),
+    var(--ps-game-surface);
+  border: 1px solid var(--ps-game-border);
+  border-radius: calc(var(--ps-game-radius) + 4px);
+  box-shadow: var(--ps-game-shadow);
+}
+
+.game-result-title,
+.ps-game-result-title,
+.game-over-title {
+  margin: 0 0 8px;
+  color: var(--ps-game-gold-soft);
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+}
+
+.game-result-score,
+.ps-game-result-score,
+.final-score {
+  margin: 14px 0;
+  color: var(--ps-game-text);
+  font-size: clamp(2rem, 7vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rang-lista rezultata */
+.game-leaderboard,
+.ps-game-leaderboard,
+.game-ranking {
+  margin-top: 24px;
+  padding: 20px;
+  background: var(--ps-game-surface);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--ps-game-radius);
+}
+
+.game-leaderboard-row,
+.ps-game-leaderboard-row,
+.ranking-row {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.game-leaderboard-row:last-child,
+.ps-game-leaderboard-row:last-child,
+.ranking-row:last-child {
+  border-bottom: 0;
+}
+
+.game-rank,
+.ps-game-rank,
+.ranking-position {
+  color: var(--ps-game-gold-soft);
+  font-weight: 900;
+  text-align: center;
+}
+
+.game-player,
+.ps-game-player,
+.ranking-player {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--ps-game-text);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.game-score,
+.ps-game-score,
+.ranking-score {
+  color: var(--ps-game-gold-soft);
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Badge / XP */
+.game-badges,
+.ps-game-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.game-badge,
+.ps-game-badge {
+  padding: 7px 11px;
+  color: var(--ps-game-gold-soft);
+  background: rgba(212, 175, 55, 0.09);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+/* Animacije za pogodak / udarac / bonus */
+@keyframes game-hit {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes game-success {
+  0% { transform: scale(0.96); opacity: 0.65; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes game-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+  50% { box-shadow: 0 0 0 8px rgba(212, 175, 55, 0.08); }
+}
+
+.game-hit,
+.ps-game-hit {
+  animation: game-hit 180ms ease;
+}
+
+.game-success,
+.ps-game-success {
+  animation: game-success 220ms ease both;
+}
+
+.game-active,
+.ps-game-active {
+  animation: game-pulse 1.8s ease-in-out infinite;
+}
+
+/* Stanja učitavanja */
+.game-loading,
+.ps-game-loading {
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  color: var(--ps-game-muted);
+  text-align: center;
+}
+
+.game-loading::before,
+.ps-game-loading::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  margin-bottom: 12px;
+  border: 3px solid rgba(212, 175, 55, 0.2);
+  border-top-color: var(--ps-game-gold);
+  border-radius: 50%;
+  animation: game-spin 800ms linear infinite;
+}
+
+@keyframes game-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .game-hud,
+  .ps-game-hud,
+  .game-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .game-enemies,
+  .ps-game-enemies,
+  .enemy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobiteli */
+@media (max-width: 640px) {
+  .game,
+  .game-page,
+  .game-shell,
+  .ps-game {
+    padding: 14px;
+  }
+
+  .game-header,
+  .ps-game-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 17px;
+  }
+
+  .game-board,
+  .ps-game-board {
+    min-height: 360px;
+    padding: 15px;
+  }
+
+  .game-enemies,
+  .ps-game-enemies,
+  .enemy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .game-actions,
+  .ps-game-actions,
+  .game-controls {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .game-action,
+  .ps-game-action,
+  .game-button,
+  .ps-game-button {
+    width: 100%;
+  }
+
+  .game-leaderboard-row,
+  .ps-game-leaderboard-row,
+  .ranking-row {
+    grid-template-columns: 36px minmax(0, 1fr) auto;
+  }
+}
+
+/* Vrlo mali ekrani */
+@media (max-width: 380px) {
+  .game-hud,
+  .ps-game-hud,
+  .game-stats {
+    gap: 7px;
+  }
+
+  .game-stat,
+  .ps-game-stat,
+  .stat-box {
+    padding: 11px 8px;
+  }
+
+  .game-stat-label,
+  .ps-game-stat-label,
+  .stat-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Korisnik traži manje animacija: zadrži igru potpuno funkcionalnom bez motion efekata. */
+@media (prefers-reduced-motion: reduce) {
+  .game-action,
+  .ps-game-action,
+  .game-button,
+  .ps-game-button,
+  .game-enemy,
+  .ps-game-enemy,
+  .enemy-card,
+  .game-progress > span,
+  .ps-game-progress > span,
+  .game-health > span,
+  .ps-game-health > span,
+  .health-bar > span {
+    transition: none;
+  }
+
+  .game-hit,
+  .ps-game-hit,
+  .game-success,
+  .ps-game-success,
+  .game-active,
+  .ps-game-active,
+  .game-loading::before,
+  .ps-game-loading::before {
+    animation: none;
+  }
+}
+
+/* Sigurniji keyboard fokus */
+@media (forced-colors: active) {
+  .game-action,
+  .ps-game-action,
+  .game-button,
+  .ps-game-button,
+  .game-enemy,
+  .ps-game-enemy,
+  .enemy-card {
+    border: 1px solid ButtonText;
+  }
+}
