@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://patriasoul.hr/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/bastina/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/bastina/gastronomija.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/bastina/glazba.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -9,13 +8,11 @@
   <url><loc>https://patriasoul.hr/pages/bastina/narodne-nosnje.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/bastina/obicaji.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/bastina/sakralna-bastina.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/brani-svoj-grad/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/brani-svoj-grad/igra.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/brani-svoj-grad/rang-lista.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/brani-svoj-grad/rezultat.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/brani-svoj-grad/značke.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/branitelji/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/branitelji/bitke.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/branitelji/brigade.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -35,42 +32,32 @@
   <url><loc>https://patriasoul.hr/pages/branitelji/svjedocanstva.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/branitelji/video.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/branitelji/zapovjednici.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/domovina/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/domovina/hrvatska.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/domovina/simboli.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/domovina/zanimljivosti.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/galerija/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/gradovi/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://patriasoul.hr/pages/gradovi/grad.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/kviz/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/kviz/igra.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/kviz/rezultat.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/o-nama/index.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/o-nama/kolacici.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://patriasoul.hr/pages/o-nama/kontakt.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://patriasoul.hr/pages/o-nama/privatnost.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
   <url><loc>https://patriasoul.hr/pages/o-nama/uvjeti.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/povijest/index.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/povijest/domovinski-rat.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/povijest/hrvatski-vladari.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/povijest/kronologija.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/povijest/velikani.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/video/index.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/vijesti/index.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
   <url><loc>https://patriasoul.hr/pages/vijesti/branitelji.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/vijesti/hrvatska.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/vijesti/kultura.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/vijesti/svijet.html</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/vijesti/vjera.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
-
   <url><loc>https://patriasoul.hr/pages/vjera/index.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/vjera/biblija.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://patriasoul.hr/pages/vjera/blagdani.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -78,4 +65,132 @@
   <url><loc>https://patriasoul.hr/pages/vjera/krunica.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/vjera/molitve.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://patriasoul.hr/pages/vjera/svetac-dana.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+
+  <url><loc>https://patriasoul.hr/grad.html?city=Zagreb</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Split</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Rijeka</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Osijek</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Zadar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Slavonski%20Brod</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Velika%20Gorica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Karlovac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pula</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Sisak</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C5%A0ibenik</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vara%C5%BEdin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Dubrovnik</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Bjelovar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Samobor</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vinkovci</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ka%C5%A1tela</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vukovar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Koprivnica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C4%8Cakovec</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C4%90akovo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Po%C5%BEega</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Sinj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Kutina</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Petrinja</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Zapre%C5%A1i%C4%87</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Virovitica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Kri%C5%BEevci</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Solin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pore%C4%8D</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Na%C5%A1ice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Jastrebarsko</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C5%BDupanja</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Sveti%20Ivan%20Zelina</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Nova%20Gradi%C5%A1ka</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Sveta%20Nedelja</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Omi%C5%A1</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Metkovi%C4%87</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Knin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ogulin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Slatina</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ivani%C4%87%20Grad</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vrbovec</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ivanec</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Novska</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Dugo%20Selo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Rovinj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Novi%20Marof</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Makarska</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Daruvar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Trogir</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Gospi%C4%87</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Krapina</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Umag</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pleternica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Opatija</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Labin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Valpovo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Duga%20Resa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Beli%C5%A1%C4%87e</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Gare%C5%A1nica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Crikvenica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Beli%20Manastir</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Plo%C4%8De</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Trilj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Oto%C4%8Dac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Donji%20Miholjac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Imotski</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Glina</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Benkovac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Rab</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vodice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Zabok</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pazin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C4%8Cazma</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Kastav</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C4%90ur%C4%91evac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pakrac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Lepoglava</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ludbreg</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Drni%C5%A1</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Mali%20Lo%C5%A1inj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ilok</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Senj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Ozalj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Prelog</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Bakar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Otok</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vrgorac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Grubi%C5%A1no%20Polje</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Kutjevo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pregrada</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vara%C5%BEdinske%20Toplice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Lipik</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Mursko%20Sredi%C5%A1%C4%87e</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Zlatar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Delnice</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Oroslavje</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Slunj</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Buzet</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vrbovsko</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Donja%20Stubica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Kor%C4%8Dula</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Orahovica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vodnjan</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Krk</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Buje</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Novi%20Vinodolski</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Biograd%20na%20Moru</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Nin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Kraljevica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=%C4%8Cabar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Pag</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Hvar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Novigrad</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Skradin</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Supetar</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Obrovac</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Novalja</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Opuzen</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Klanjec</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Cres</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Stari%20Grad</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Hrvatska%20Kostajnica</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vrlika</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Vis</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://patriasoul.hr/grad.html?city=Komi%C5%BEa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
