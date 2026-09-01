@@ -1,13 +1,18 @@
-/* PatriaSoul — premium homepage layer 2026 */
+/* PatriaSoul — premium homepage / navigation layer 2026 */
 :root{--home-gold:#e3c65b;--home-gold-soft:#f4df8a;--home-bg:#06080c;--home-card:rgba(15,20,28,.82)}
 body{background:var(--home-bg)}
-.ps-header{background:rgba(5,7,11,.9);box-shadow:0 12px 40px rgba(0,0,0,.22)}
-.ps-nav{min-height:74px;gap:20px}
-.ps-brand{font-size:20px;flex:0 0 auto}
-.ps-mainnav{gap:1px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
-.ps-mainnav::-webkit-scrollbar{display:none}
-.ps-mainnav a{font-size:12px;padding:9px 10px}
-.ps-mainnav .ps-nav-cta{padding-inline:14px}
+.ps-header{position:sticky;top:0;z-index:100;background:rgba(4,6,10,.82);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 10px 40px rgba(0,0,0,.24)}
+.ps-nav{min-height:72px;gap:18px}
+.ps-brand{font-size:20px;flex:0 0 auto;letter-spacing:.5px}
+.ps-brand-mark{box-shadow:0 0 0 1px rgba(227,198,91,.25),0 8px 22px rgba(0,0,0,.2)}
+.ps-mainnav{display:flex;align-items:center;gap:3px;margin-left:auto;overflow:visible;white-space:nowrap}
+.ps-mainnav a{position:relative;font-size:12px;font-weight:800;padding:10px 9px;border-radius:9px;color:#aeb6c1;transition:.2s ease}
+.ps-mainnav a:hover{color:#fff;background:rgba(255,255,255,.055)}
+.ps-mainnav a[aria-current="page"]{color:#fff;background:rgba(227,198,91,.08)}
+.ps-mainnav a[aria-current="page"]:after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;border-radius:99px;background:var(--home-gold)}
+.ps-mainnav .ps-nav-cta{margin-left:6px;padding:10px 15px;color:#111;background:var(--home-gold);border:1px solid var(--home-gold);box-shadow:0 8px 24px rgba(227,198,91,.14)}
+.ps-mainnav .ps-nav-cta:hover{color:#111;background:var(--home-gold-soft);transform:translateY(-1px)}
+.ps-menu{display:none;appearance:none;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:#fff;border-radius:10px;padding:9px 11px;font-size:20px;line-height:1;cursor:pointer}
 .home-hero{position:relative;isolation:isolate;min-height:650px;display:flex;align-items:center;border-bottom:1px solid rgba(255,255,255,.08);overflow:hidden}
 .home-hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(5,7,11,.98) 0%,rgba(5,7,11,.88) 36%,rgba(5,7,11,.52) 68%,rgba(5,7,11,.72) 100%),url("/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg") center/cover no-repeat;transform:scale(1.02)}
 .home-hero:after{content:"";position:absolute;inset:auto 0 0;height:210px;z-index:-1;background:linear-gradient(transparent,var(--home-bg))}
@@ -31,24 +36,16 @@ body{background:var(--home-bg)}
 .home-card:after{content:"";position:absolute;width:120px;height:120px;right:-55px;top:-55px;border-radius:50%;background:rgba(227,198,91,.06);filter:blur(3px)}
 .home-card:hover{transform:translateY(-4px);border-color:rgba(227,198,91,.34);box-shadow:0 22px 60px rgba(0,0,0,.25)}
 .home-icon{font-size:26px;margin-bottom:18px}
-.home-card h3{font-size:20px;margin:0 0 7px}
-.home-card p{font-size:14px;color:#929ca8;margin:0;max-width:330px}
-.home-card-link{display:inline-block;margin-top:18px;color:var(--home-gold-soft);font-size:13px;font-weight:850}
+.home-card h3{font-size:20px;margin:0 0 7px}.home-card p{font-size:14px;color:#929ca8;margin:0;max-width:330px}.home-card-link{display:inline-block;margin-top:18px;color:var(--home-gold-soft);font-size:13px;font-weight:850}
 .home-feature{display:grid;grid-template-columns:1.1fr .9fr;border:1px solid rgba(255,255,255,.08);border-radius:22px;overflow:hidden;background:linear-gradient(135deg,rgba(18,24,33,.95),rgba(8,11,16,.96))}
-.home-feature-copy{padding:42px}
-.home-feature-copy h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-1.5px;margin:8px 0 15px}
-.home-feature-copy p{color:#9ca5b0;max-width:610px}
-.home-feature-visual{min-height:330px;background:linear-gradient(135deg,rgba(227,198,91,.12),rgba(201,33,44,.08)),url("/images/Hrvatske_kockice.png") center/cover;position:relative}
-.home-feature-visual:after{content:"PATRIASOUL";position:absolute;inset:auto 25px 20px;text-align:right;font-weight:950;letter-spacing:5px;color:rgba(255,255,255,.18);font-size:clamp(18px,3vw,34px)}
+.home-feature-copy{padding:42px}.home-feature-copy h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-1.5px;margin:8px 0 15px}.home-feature-copy p{color:#9ca5b0;max-width:610px}
+.home-feature-visual{min-height:330px;background:linear-gradient(135deg,rgba(227,198,91,.12),rgba(201,33,44,.08)),url("/images/Hrvatske_kockice.png") center/cover;position:relative}.home-feature-visual:after{content:"PATRIASOUL";position:absolute;inset:auto 25px 20px;text-align:right;font-weight:950;letter-spacing:5px;color:rgba(255,255,255,.18);font-size:clamp(18px,3vw,34px)}
 .home-anniv{padding:82px 0;border-block:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.018)}
 .home-footer{padding:58px 0 24px;background:#030508;border-top:1px solid rgba(255,255,255,.09)}
-.home-footer-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:30px}
-.home-footer-brand{font-size:20px;font-weight:950;letter-spacing:2px}.home-footer-brand span{color:var(--home-gold-soft)}
-.home-footer p{color:#7e8792;font-size:13px;max-width:360px}
-.home-footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;margin:0 0 13px;color:#e8ebef}
-.home-footer-links{display:grid;gap:7px}.home-footer-links a{font-size:13px;color:#7f8995}.home-footer-links a:hover{color:var(--home-gold-soft)}
+.home-footer-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:30px}.home-footer-brand{font-size:20px;font-weight:950;letter-spacing:2px}.home-footer-brand span{color:var(--home-gold-soft)}.home-footer p{color:#7e8792;font-size:13px;max-width:360px}.home-footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;margin:0 0 13px;color:#e8ebef}.home-footer-links{display:grid;gap:7px}.home-footer-links a{font-size:13px;color:#7f8995}.home-footer-links a:hover{color:var(--home-gold-soft)}
 .home-footer-bottom{margin-top:40px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#626b76;font-size:11px}
+@media(max-width:1120px){.ps-mainnav a{padding-inline:7px;font-size:11px}.ps-mainnav .ps-nav-cta{padding-inline:12px}}
 @media(max-width:980px){.home-grid{grid-template-columns:repeat(2,1fr)}.home-feature{grid-template-columns:1fr}.home-feature-visual{min-height:260px}.home-footer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:860px){.ps-mainnav{display:none}.ps-menu{display:block;margin-left:auto}.home-hero{min-height:610px}}
-@media(max-width:560px){.home-section{padding:60px 0}.home-grid{grid-template-columns:1fr}.home-feature-copy{padding:28px}.home-footer-grid{grid-template-columns:1fr}.home-hero-inner{padding:70px 0}.home-title{letter-spacing:-2.5px}}
-@media(prefers-reduced-motion:reduce){.home-card,.home-btn{transition:none}}
+@media(max-width:860px){.ps-nav{position:relative}.ps-mainnav{display:none;position:absolute;top:calc(100% + 1px);left:0;right:0;margin:0;padding:12px;background:rgba(5,7,11,.98);border:1px solid rgba(255,255,255,.1);border-top:0;border-radius:0 0 16px 16px;box-shadow:0 24px 45px rgba(0,0,0,.4);flex-direction:column;align-items:stretch;gap:3px;white-space:normal}.ps-mainnav.is-open{display:flex}.ps-mainnav a{padding:12px 14px;font-size:13px}.ps-mainnav a[aria-current="page"]:after{left:14px;right:auto;width:28px;bottom:6px}.ps-mainnav .ps-nav-cta{margin:6px 0 0;text-align:center}.ps-menu{display:block;margin-left:auto}.ps-menu[aria-expanded="true"]{background:rgba(227,198,91,.12);border-color:rgba(227,198,91,.35);color:var(--home-gold-soft)}.home-hero{min-height:610px}}
+@media(max-width:560px){.home-section{padding:60px 0}.home-grid{grid-template-columns:1fr}.home-feature-copy{padding:28px}.home-footer-grid{grid-template-columns:1fr}.home-hero-inner{padding:70px 0}.home-title{letter-spacing:-2.5px}.home-actions{flex-direction:column;align-items:stretch}.home-btn{width:100%}.home-section-head{display:block}.home-section-head p{margin-top:14px}}
+@media(prefers-reduced-motion:reduce){.home-card,.home-btn,.ps-mainnav a{transition:none}}
