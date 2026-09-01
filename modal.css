@@ -1,1 +1,478 @@
-/* Stilovi modala. */
+/*
+ * PatriaSoul — centralni sustav modalnih prozora
+ *
+ * Namjena:
+ * - klasični .ps-modal/.modal overlay
+ * - native <dialog> modalni prozori
+ * - galerijski lightbox i pregled medija
+ * - potvrde, obrasci, informacije i rezultati kviza
+ *
+ * JavaScript nije potreban za samo stiliziranje. Za pravi modalni
+ * <dialog> preporučuje se otvaranje metodom showModal(), čime preglednik
+ * osigurava modalni sloj i inertnu pozadinu.
+ */
+
+:root {
+  --ps-modal-bg: #0b0e13;
+  --ps-modal-surface: #121820;
+  --ps-modal-surface-2: #181f29;
+  --ps-modal-border: rgba(212, 175, 55, .22);
+  --ps-modal-border-strong: rgba(212, 175, 55, .48);
+  --ps-modal-gold: #d4af37;
+  --ps-modal-gold-light: #f1d77a;
+  --ps-modal-text: #f4f1e8;
+  --ps-modal-muted: #a7adb7;
+  --ps-modal-danger: #e56b6f;
+  --ps-modal-radius: 20px;
+  --ps-modal-shadow: 0 30px 90px rgba(0, 0, 0, .52);
+  --ps-modal-overlay: rgba(2, 4, 7, .78);
+}
+
+/* ------------------------------------------------------------
+   Generic modal overlay
+   ------------------------------------------------------------ */
+.modal,
+.ps-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 40px);
+  background: var(--ps-modal-overlay);
+  backdrop-filter: blur(7px) saturate(115%);
+  -webkit-backdrop-filter: blur(7px) saturate(115%);
+}
+
+.modal.is-open,
+.modal.open,
+.modal[aria-hidden="false"],
+.ps-modal.is-open,
+.ps-modal.open,
+.ps-modal[aria-hidden="false"] {
+  display: flex;
+}
+
+.modal__dialog,
+.ps-modal__dialog {
+  position: relative;
+  width: min(100%, 680px);
+  max-height: min(88vh, 900px);
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--ps-modal-border);
+  border-radius: var(--ps-modal-radius);
+  background:
+    radial-gradient(circle at 100% 0, rgba(212,175,55,.07), transparent 18rem),
+    linear-gradient(145deg, var(--ps-modal-surface-2), var(--ps-modal-surface));
+  color: var(--ps-modal-text);
+  box-shadow: var(--ps-modal-shadow);
+}
+
+.modal__header,
+.ps-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 24px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.modal__title,
+.ps-modal__title {
+  margin: 0;
+  color: var(--ps-modal-text);
+  font-size: clamp(1.25rem, 3vw, 1.7rem);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.modal__subtitle,
+.ps-modal__subtitle {
+  margin: 7px 0 0;
+  color: var(--ps-modal-muted);
+  font-size: .92rem;
+  line-height: 1.55;
+}
+
+.modal__body,
+.ps-modal__body {
+  padding: 24px;
+  color: #d6dae0;
+}
+
+.modal__footer,
+.ps-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 24px 22px;
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+/* ------------------------------------------------------------
+   Close button
+   ------------------------------------------------------------ */
+.modal__close,
+.ps-modal__close {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 11px;
+  background: rgba(255,255,255,.035);
+  color: #dce0e5;
+  font: inherit;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease, transform .18s ease;
+}
+
+.modal__close:hover,
+.ps-modal__close:hover {
+  border-color: var(--ps-modal-border-strong);
+  background: rgba(212,175,55,.08);
+  color: var(--ps-modal-gold-light);
+  transform: translateY(-1px);
+}
+
+.modal__close:focus-visible,
+.ps-modal__close:focus-visible {
+  outline: 2px solid var(--ps-modal-gold-light);
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------
+   Native HTML <dialog>
+   ------------------------------------------------------------ */
+dialog.modal,
+dialog.ps-modal {
+  width: min(680px, calc(100% - 32px));
+  max-width: 680px;
+  max-height: min(88vh, 900px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--ps-modal-border);
+  border-radius: var(--ps-modal-radius);
+  background: var(--ps-modal-surface);
+  color: var(--ps-modal-text);
+  box-shadow: var(--ps-modal-shadow);
+  overflow: auto;
+}
+
+dialog.modal:not([open]),
+dialog.ps-modal:not([open]) {
+  display: none;
+}
+
+dialog.modal::backdrop,
+dialog.ps-modal::backdrop {
+  background: var(--ps-modal-overlay);
+  backdrop-filter: blur(7px) saturate(115%);
+  -webkit-backdrop-filter: blur(7px) saturate(115%);
+}
+
+/* Optional browser-supported open-state transition. */
+dialog.modal,
+dialog.ps-modal {
+  opacity: 0;
+  transform: translateY(12px) scale(.985);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+dialog.modal:open,
+dialog.ps-modal:open {
+  opacity: 1;
+  transform: none;
+}
+
+/* ------------------------------------------------------------
+   Modal variants
+   ------------------------------------------------------------ */
+.ps-modal--small .ps-modal__dialog,
+.modal--small .modal__dialog {
+  width: min(100%, 460px);
+}
+
+.ps-modal--large .ps-modal__dialog,
+.modal--large .modal__dialog {
+  width: min(100%, 980px);
+}
+
+.ps-modal--fullscreen .ps-modal__dialog,
+.modal--fullscreen .modal__dialog {
+  width: min(1200px, 100%);
+  max-height: 94vh;
+}
+
+.ps-modal--danger .ps-modal__header,
+.modal--danger .modal__header {
+  border-bottom-color: rgba(229,107,111,.2);
+}
+
+.ps-modal--danger .ps-modal__title,
+.modal--danger .modal__title {
+  color: #ffb4b7;
+}
+
+/* ------------------------------------------------------------
+   Media / gallery lightbox
+   ------------------------------------------------------------ */
+.ps-lightbox,
+.lightbox {
+  padding: 18px;
+}
+
+.ps-lightbox__dialog,
+.lightbox__dialog {
+  width: min(1400px, 100%);
+  max-width: 1400px;
+  height: min(92vh, 980px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #07090d;
+}
+
+.ps-lightbox__media,
+.lightbox__media {
+  min-height: 0;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background:
+    radial-gradient(circle, rgba(212,175,55,.05), transparent 45%),
+    #05070a;
+}
+
+.ps-lightbox__media img,
+.lightbox__media img,
+.ps-lightbox__media video,
+.lightbox__media video {
+  display: block;
+  max-width: 100%;
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.ps-lightbox__caption,
+.lightbox__caption {
+  flex: 0 0 auto;
+  padding: 14px 20px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  color: var(--ps-modal-muted);
+  text-align: center;
+  font-size: .9rem;
+}
+
+/* Previous / next controls */
+.ps-lightbox__prev,
+.ps-lightbox__next,
+.lightbox__prev,
+.lightbox__next {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 50%;
+  background: rgba(7,9,13,.78);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background-color .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.ps-lightbox__prev:hover,
+.ps-lightbox__next:hover,
+.lightbox__prev:hover,
+.lightbox__next:hover {
+  border-color: var(--ps-modal-gold);
+  background: rgba(212,175,55,.12);
+  color: var(--ps-modal-gold-light);
+}
+
+.ps-lightbox__prev,
+.lightbox__prev { left: 18px; }
+.ps-lightbox__next,
+.lightbox__next { right: 18px; }
+
+/* ------------------------------------------------------------
+   Form / confirmation modals
+   ------------------------------------------------------------ */
+.ps-modal__message {
+  padding: 14px 16px;
+  border: 1px solid var(--ps-modal-border);
+  border-radius: 12px;
+  background: rgba(212,175,55,.055);
+  color: #ddd8ca;
+}
+
+.ps-modal__message--success {
+  border-color: rgba(98,199,138,.3);
+  background: rgba(98,199,138,.07);
+}
+
+.ps-modal__message--danger {
+  border-color: rgba(229,107,111,.3);
+  background: rgba(229,107,111,.07);
+}
+
+/* ------------------------------------------------------------
+   Scroll lock helper for custom modal scripts
+   ------------------------------------------------------------ */
+body.ps-modal-open,
+html.ps-modal-open {
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------
+   Responsive
+   ------------------------------------------------------------ */
+@media (max-width: 700px) {
+  .modal,
+  .ps-modal {
+    padding: 10px;
+  }
+
+  .modal__dialog,
+  .ps-modal__dialog,
+  dialog.modal,
+  dialog.ps-modal {
+    width: min(100%, calc(100vw - 20px));
+    max-height: calc(100vh - 20px);
+    border-radius: 16px;
+  }
+
+  .modal__header,
+  .ps-modal__header,
+  .modal__body,
+  .ps-modal__body,
+  .modal__footer,
+  .ps-modal__footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .modal__footer,
+  .ps-modal__footer {
+    justify-content: stretch;
+  }
+
+  .modal__footer > .btn,
+  .ps-modal__footer > .btn,
+  .modal__footer > button,
+  .ps-modal__footer > button {
+    flex: 1 1 140px;
+  }
+
+  .ps-lightbox,
+  .lightbox {
+    padding: 5px;
+  }
+
+  .ps-lightbox__dialog,
+  .lightbox__dialog {
+    width: 100%;
+    height: calc(100vh - 10px);
+    max-height: none;
+    border-radius: 14px;
+  }
+
+  .ps-lightbox__media,
+  .lightbox__media {
+    padding: 12px;
+  }
+
+  .ps-lightbox__media img,
+  .lightbox__media img,
+  .ps-lightbox__media video,
+  .lightbox__media video {
+    max-height: 78vh;
+  }
+
+  .ps-lightbox__prev,
+  .ps-lightbox__next,
+  .lightbox__prev,
+  .lightbox__next {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ps-lightbox__prev,
+  .lightbox__prev { left: 8px; }
+  .ps-lightbox__next,
+  .lightbox__next { right: 8px; }
+}
+
+@media (max-width: 420px) {
+  .modal__header,
+  .ps-modal__header {
+    gap: 10px;
+  }
+
+  .modal__close,
+  .ps-modal__close {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ------------------------------------------------------------
+   Accessibility / reduced motion / forced colors
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  .modal__close,
+  .ps-modal__close,
+  .ps-lightbox__prev,
+  .ps-lightbox__next,
+  .lightbox__prev,
+  .lightbox__next,
+  dialog.modal,
+  dialog.ps-modal {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .modal,
+  .ps-modal,
+  dialog.modal,
+  dialog.ps-modal {
+    border: 1px solid CanvasText;
+  }
+
+  .modal__close,
+  .ps-modal__close,
+  .ps-lightbox__prev,
+  .ps-lightbox__next,
+  .lightbox__prev,
+  .lightbox__next {
+    border: 1px solid ButtonText;
+    color: ButtonText;
+  }
+}
+
+@media print {
+  .modal,
+  .ps-modal,
+  dialog.modal,
+  dialog.ps-modal {
+    display: none !important;
+  }
+}
