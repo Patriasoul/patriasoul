@@ -1,1 +1,614 @@
-/* Stilovi gradova. */
+/*
+ * PatriaSoul – Gradovi
+ * Vizualni sustav za hub gradova i profile pojedinih gradova.
+ * Radi zajedno s cards.css i patriasoul-modern.css.
+ */
+
+:root {
+  --ps-city-gold: #d4af37;
+  --ps-city-gold-light: #f1d77a;
+  --ps-city-bg: #17191d;
+  --ps-city-bg-soft: #1f2228;
+  --ps-city-line: rgba(212, 175, 55, .22);
+  --ps-city-text: #f4f1e8;
+  --ps-city-muted: #a9adb5;
+  --ps-city-radius: 18px;
+  --ps-city-shadow: 0 16px 38px rgba(0, 0, 0, .28);
+}
+
+/* =========================
+   Gradovi – zaglavlje
+   ========================= */
+.city-page,
+.cities-page {
+  color: var(--ps-city-text);
+}
+
+.city-hero,
+.cities-hero {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 28px;
+  padding: clamp(28px, 5vw, 54px);
+  border: 1px solid var(--ps-city-line);
+  border-radius: var(--ps-city-radius);
+  background:
+    radial-gradient(circle at 85% 15%, rgba(212, 175, 55, .16), transparent 34%),
+    radial-gradient(circle at 10% 100%, rgba(255, 255, 255, .035), transparent 35%),
+    linear-gradient(145deg, #202329, var(--ps-city-bg));
+  box-shadow: var(--ps-city-shadow);
+}
+
+.city-hero::after,
+.cities-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--ps-city-gold), transparent);
+  opacity: .85;
+}
+
+.city-hero-content,
+.cities-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.city-eyebrow,
+.cities-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: var(--ps-city-gold-light);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.city-eyebrow::before,
+.cities-eyebrow::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: currentColor;
+}
+
+.city-hero h1,
+.cities-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -.025em;
+}
+
+.city-hero p,
+.cities-hero p {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: var(--ps-city-muted);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Pretraga i filteri
+   ========================= */
+.city-toolbar,
+.cities-toolbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) auto auto;
+  gap: 12px;
+  align-items: center;
+  margin: 0 0 24px;
+  padding: 14px;
+  border: 1px solid var(--ps-city-line);
+  border-radius: 16px;
+  background: rgba(23, 25, 29, .78);
+  backdrop-filter: blur(12px);
+}
+
+.city-search,
+.cities-search,
+.city-toolbar input[type="search"],
+.cities-toolbar input[type="search"] {
+  width: 100%;
+  min-height: 46px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  border-radius: 12px;
+  outline: none;
+  background: #111317;
+  color: var(--ps-city-text);
+  font: inherit;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.city-search::placeholder,
+.cities-search::placeholder {
+  color: #777d87;
+}
+
+.city-search:focus,
+.cities-search:focus,
+.city-toolbar input[type="search"]:focus,
+.cities-toolbar input[type="search"]:focus {
+  border-color: rgba(212, 175, 55, .65);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, .10);
+  background: #15171b;
+}
+
+.city-filter,
+.cities-filter,
+.city-toolbar select,
+.cities-toolbar select {
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  border-radius: 12px;
+  background: #111317;
+  color: var(--ps-city-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.city-count,
+.cities-count {
+  color: var(--ps-city-muted);
+  font-size: .9rem;
+  white-space: nowrap;
+}
+
+/* =========================
+   Mreža gradova
+   ========================= */
+.city-grid,
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.city-grid > *,
+.cities-grid > * {
+  min-width: 0;
+}
+
+.city-card,
+.cities-card {
+  position: relative;
+  display: flex;
+  min-height: 190px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 22px;
+  border: 1px solid rgba(212, 175, 55, .17);
+  border-radius: var(--ps-city-radius);
+  background: linear-gradient(145deg, #22252b, #17191d);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .20);
+  color: var(--ps-city-text);
+  text-decoration: none;
+  transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
+}
+
+.city-card::before,
+.cities-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 90% 0%, rgba(212, 175, 55, .12), transparent 40%);
+}
+
+.city-card:hover,
+.cities-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, .55);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, .30), 0 0 0 1px rgba(212, 175, 55, .08);
+}
+
+.city-card:focus-visible,
+.cities-card:focus-visible {
+  outline: 3px solid rgba(212, 175, 55, .65);
+  outline-offset: 3px;
+}
+
+.city-card-head,
+.cities-card-head {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.city-card-name,
+.cities-card-name {
+  margin: 0;
+  color: #fff;
+  font-size: 1.28rem;
+  line-height: 1.2;
+}
+
+.city-card-county,
+.cities-card-county {
+  margin-top: 6px;
+  color: var(--ps-city-muted);
+  font-size: .88rem;
+}
+
+.city-card-emblem,
+.cities-card-emblem {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--ps-city-line);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, .22);
+  color: var(--ps-city-gold-light);
+  font-size: 1.4rem;
+}
+
+.city-card-emblem img,
+.cities-card-emblem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+.city-card-footer,
+.cities-card-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.city-card-action,
+.cities-card-action {
+  color: var(--ps-city-gold-light);
+  font-size: .88rem;
+  font-weight: 800;
+}
+
+.city-card-arrow,
+.cities-card-arrow {
+  display: inline-flex;
+  transition: transform .2s ease;
+}
+
+.city-card:hover .city-card-arrow,
+.cities-card:hover .cities-card-arrow {
+  transform: translateX(4px);
+}
+
+/* Kompatibilnost s postojećim .ps-card karticama */
+.city-grid .ps-card,
+.cities-grid .ps-card {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.city-grid .ps-card:hover,
+.cities-grid .ps-card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Profil pojedinog grada
+   ========================= */
+.city-profile-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 26px;
+  padding: clamp(22px, 4vw, 34px);
+  border: 1px solid var(--ps-city-line);
+  border-radius: var(--ps-city-radius);
+  background: linear-gradient(145deg, #22252b, #17191d);
+  box-shadow: var(--ps-city-shadow);
+}
+
+.city-profile-emblem {
+  display: grid;
+  width: 104px;
+  height: 104px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, .35);
+  border-radius: 22px;
+  background: rgba(0, 0, 0, .24);
+}
+
+.city-profile-emblem img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.city-profile-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.08;
+}
+
+.city-profile-subtitle {
+  margin: 8px 0 0;
+  color: var(--ps-city-muted);
+  line-height: 1.6;
+}
+
+.city-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.city-meta-item {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid rgba(212, 175, 55, .16);
+  border-radius: 999px;
+  background: rgba(212, 175, 55, .06);
+  color: #d8dbe1;
+  font-size: .82rem;
+}
+
+/* =========================
+   Akcije grada
+   ========================= */
+.city-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 28px;
+}
+
+.city-action,
+a.city-action {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 0 16px;
+  border: 1px solid rgba(212, 175, 55, .35);
+  border-radius: 11px;
+  background: rgba(212, 175, 55, .08);
+  color: var(--ps-city-gold-light);
+  font-weight: 800;
+  text-decoration: none;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.city-action:hover,
+a.city-action:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, .65);
+  background: rgba(212, 175, 55, .15);
+}
+
+.city-action.primary,
+a.city-action.primary {
+  border-color: var(--ps-city-gold);
+  background: linear-gradient(135deg, #d4af37, #b88d18);
+  color: #151515;
+}
+
+.city-action.primary:hover,
+a.city-action.primary:hover {
+  background: linear-gradient(135deg, #e3c45a, #c69a20);
+}
+
+/* =========================
+   Vrijeme / informativne kartice
+   ========================= */
+.city-weather,
+.city-info-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0 0 24px;
+}
+
+.city-weather-item,
+.city-info-item {
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .025);
+}
+
+.city-weather-label,
+.city-info-label {
+  color: var(--ps-city-muted);
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.city-weather-value,
+.city-info-value {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+/* =========================
+   Sekcije profila
+   ========================= */
+.city-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.city-section {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid rgba(212, 175, 55, .14);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(34, 37, 43, .95), rgba(23, 25, 29, .95));
+}
+
+.city-section h2,
+.city-section h3 {
+  margin: 0;
+  color: #fff;
+}
+
+.city-section p {
+  color: #b8bcc4;
+  line-height: 1.7;
+}
+
+.city-section-link {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--ps-city-gold-light);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.city-section-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Prazan rezultat pretrage */
+.city-empty,
+.cities-empty {
+  grid-column: 1 / -1;
+  padding: 42px 22px;
+  border: 1px dashed rgba(212, 175, 55, .28);
+  border-radius: 16px;
+  background: rgba(212, 175, 55, .035);
+  color: var(--ps-city-muted);
+  text-align: center;
+}
+
+.city-empty strong,
+.cities-empty strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+/* =========================
+   Responzivnost
+   ========================= */
+@media (max-width: 980px) {
+  .city-grid,
+  .cities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .city-toolbar,
+  .cities-toolbar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .city-search,
+  .cities-search,
+  .city-toolbar input[type="search"],
+  .cities-toolbar input[type="search"] {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .city-hero,
+  .cities-hero {
+    padding: 26px 20px;
+    border-radius: 15px;
+  }
+
+  .city-toolbar,
+  .cities-toolbar,
+  .city-grid,
+  .cities-grid,
+  .city-sections {
+    grid-template-columns: 1fr;
+  }
+
+  .city-toolbar,
+  .cities-toolbar {
+    gap: 9px;
+    padding: 10px;
+  }
+
+  .city-search,
+  .cities-search,
+  .city-toolbar input[type="search"],
+  .cities-toolbar input[type="search"] {
+    grid-column: auto;
+  }
+
+  .city-card,
+  .cities-card {
+    min-height: 165px;
+    padding: 18px;
+  }
+
+  .city-profile-head {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .city-profile-emblem {
+    width: 86px;
+    height: 86px;
+    margin: 0 auto;
+  }
+
+  .city-meta,
+  .city-actions {
+    justify-content: center;
+  }
+
+  .city-weather,
+  .city-info-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .city-card,
+  .cities-card,
+  .city-action,
+  a.city-action,
+  .city-card-arrow,
+  .city-card:hover .city-card-arrow,
+  .cities-card:hover .city-card-arrow {
+    transition: none;
+  }
+}
