@@ -2,26 +2,36 @@
 (function () {
   'use strict';
 
+  // Resolve the site's actual root from this script location. This keeps the
+  // portal working both at a custom domain (/) and at a GitHub Pages project
+  // URL (/patriasoul/), without hard-coded root-relative paths.
+  const SCRIPT_SRC = document.currentScript?.src || new URL('app.js', window.location.href).href;
+  const ROOT = new URL('.', SCRIPT_SRC).pathname.replace(/\/$/, '') + '/';
+
   const NAV_ITEMS = [
-    ['Početna', '/index.html'],
-    ['Domovina', '/domovina.html'],
-    ['Branitelji', '/branitelji.html'],
-    ['Povijest', '/povijest.html'],
-    ['Baština', '/bastina.html'],
-    ['Vjera', '/vjera.html'],
-    ['Gradovi', '/gradovi.html'],
-    ['Vijesti', '/vijesti.html'],
-    ['Rang-lista', '/rang-lista.html'],
-    ['Igra', '/brani-svoj-grad.html'],
-    ['🧠 Kviz', '/quiz.html', 'ps-nav-cta']
+    ['Početna', 'index.html'],
+    ['Domovina', 'domovina.html'],
+    ['Branitelji', 'branitelji.html'],
+    ['Povijest', 'povijest.html'],
+    ['Baština', 'bastina.html'],
+    ['Vjera', 'vjera.html'],
+    ['Gradovi', 'gradovi.html'],
+    ['Vijesti', 'vijesti.html'],
+    ['Rang-lista', 'rang-lista.html'],
+    ['Igra', 'brani-svoj-grad.html'],
+    ['🧠 Kviz', 'quiz.html', 'ps-nav-cta']
   ];
 
-  const ROOT = '/';
+  function absolutePath(path) {
+    return new URL(path, window.location.origin + ROOT).pathname;
+  }
 
   function normalizePath(path) {
     const value = String(path || '/').replace(/\\/g, '/');
     if (value === '' || value === '/') return '/';
-    return value.replace(/index\.html$/, '') || '/';
+    const withoutRoot = value.startsWith(ROOT) ? value.slice(ROOT.length) : value;
+    const normalized = withoutRoot.replace(/^\/+/, '').replace(/index\.html$/, '');
+    return normalized || '/';
   }
 
   function currentPath() {
@@ -29,16 +39,14 @@
   }
 
   function isActive(href) {
-    const current = currentPath();
-    const target = normalizePath(href);
-    return target === '/' ? current === '/' : current === target;
+    return normalizePath(absolutePath(href)) === currentPath();
   }
 
   function createNav() {
     const fragment = document.createDocumentFragment();
     NAV_ITEMS.forEach(([label, href, extraClass]) => {
       const link = document.createElement('a');
-      link.href = href;
+      link.href = absolutePath(href);
       link.textContent = label;
       if (extraClass) link.className = extraClass;
       if (isActive(href)) link.setAttribute('aria-current', 'page');
@@ -47,11 +55,29 @@
     return fragment;
   }
 
+  function rewriteInternalLinks() {
+    document.querySelectorAll('a[href^="/"]').forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href || href.startsWith('//') || href.startsWith('/#')) return;
+      try {
+        const target = new URL(href, window.location.origin);
+        if (target.origin !== window.location.origin) return;
+        const rootPath = target.pathname.replace(/^\/+/, '');
+        link.setAttribute('href', ROOT + rootPath + target.search + target.hash);
+      } catch (_) {
+        // Leave malformed or special links untouched.
+      }
+    });
+  }
+
   async function loadInto(selector, url) {
     const target = document.querySelector(selector);
     if (!target) return null;
     try {
-      const response = await fetch(url, { credentials: 'same-origin', cache: 'no-cache' });
+      const response = await fetch(new URL(url, window.location.origin + ROOT).href, {
+        credentials: 'same-origin',
+        cache: 'no-cache'
+      });
       if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
       target.innerHTML = await response.text();
       return target;
@@ -89,13 +115,14 @@
 
   async function init() {
     await Promise.all([
-      loadInto('#site-header', `${ROOT}components/header.html`),
-      loadInto('#site-footer', `${ROOT}footer.html`)
+      loadInto('#site-header', 'components/header.html'),
+      loadInto('#site-footer', 'footer.html')
     ]);
     const desktopNav = document.querySelector('#site-navigation');
     const mobileNav = document.querySelector('#site-mobile-navigation');
     if (desktopNav) desktopNav.replaceChildren(createNav());
     if (mobileNav) mobileNav.replaceChildren(createNav());
+    rewriteInternalLinks();
     document.querySelector('[data-ps-menu]')?.addEventListener('click', openDrawer);
     document.querySelector('[data-ps-close]')?.addEventListener('click', closeDrawer);
     document.querySelector('[data-ps-backdrop]')?.addEventListener('click', closeDrawer);
@@ -103,7 +130,8 @@
   }
 
   window.PatriaSoul = Object.freeze({
-    navItems: NAV_ITEMS.map(([label, href]) => ({ label, href })),
+    root: ROOT,
+    navItems: NAV_ITEMS.map(([label, href]) => ({ label, href: absolutePath(href) })),
     currentPath,
     loadInto,
     openDrawer,
