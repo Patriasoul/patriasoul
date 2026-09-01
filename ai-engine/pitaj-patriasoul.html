@@ -19,7 +19,8 @@
     <input id="patriaAiQuestion" autocomplete="off" placeholder="Npr. Što znaš o Sinju?" />
     <button type="submit">Pitaj</button>
   </form>
-  <small class="patria-ai__note">Za AI odgovor može biti potreban Puter račun. PatriaSoul baza ostaje primarni izvor konteksta.</small>
+  <small class="patria-ai__note">PatriaSoul baza je primarni izvor konteksta. AI odgovor može zahtijevati Puter prijavu.</small>
+  <small class="patria-ai__powered"><a href="https://developer.puter.com" target="_blank" rel="noopener noreferrer">Powered by Puter.js</a> · PatriaSoul AI</small>
 </section>
 
 <script src="https://js.puter.com/v2/"></script>
@@ -64,7 +65,6 @@
       const knowledge = await loadKnowledge();
       const result = await window.PatriaSoulAI.ask(question, {
         knowledge,
-        model: 'google/gemini-3.6-flash',
         trustedOnly: true,
         limit: 8
       });
