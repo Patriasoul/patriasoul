@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "vlada",
+      "name": "Vlada Republike Hrvatske",
+      "feed": "https://vlada.gov.hr/RSS?id=8",
+      "category": "domovina"
+    },
+    {
+      "id": "branitelji",
+      "name": "Ministarstvo hrvatskih branitelja",
+      "feed": "https://branitelji.gov.hr/rss/1267",
+      "category": "branitelji"
+    },
+    {
+      "id": "sabor",
+      "name": "Hrvatski sabor",
+      "feed": "https://www.sabor.hr/hr/rss",
+      "category": "domovina"
+    }
+  ],
+  "categories": {
+    "domovina": "🇭🇷 Domovina",
+    "branitelji": "🛡️ Branitelji",
+    "povijest": "📜 Povijest",
+    "vjera": "⛪ Vjera",
+    "bastina": "🏛️ Baština",
+    "gradovi": "🏙️ Gradovi",
+    "kultura": "🎭 Kultura",
+    "svijet": "🌍 Hrvatska i svijet"
+  }
+}
