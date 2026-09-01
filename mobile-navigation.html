@@ -1,2 +1,145 @@
-<!-- PatriaSoul mobilna navigacija. Zajednički komponent za sve stranice. -->
-<nav class="mobile-navigation" aria-label="Mobilna navigacija"></nav>
+<!--
+  PatriaSoul – zajednička mobilna navigacija
+  Koristi se na svim stranicama projekta.
+  Semantički <nav> landmark + jasne poveznice za dodirne uređaje.
+-->
+<nav class="mobile-navigation ps-mobile-nav" aria-label="Mobilna navigacija">
+  <div class="ps-mobile-nav__inner">
+    <a class="ps-mobile-nav__item" href="/index.html" aria-label="Početna">
+      <span class="ps-mobile-nav__icon" aria-hidden="true">⌂</span>
+      <span class="ps-mobile-nav__label">Početna</span>
+    </a>
+
+    <a class="ps-mobile-nav__item" href="/gradovi.html" aria-label="Gradovi">
+      <span class="ps-mobile-nav__icon" aria-hidden="true">🏙️</span>
+      <span class="ps-mobile-nav__label">Gradovi</span>
+    </a>
+
+    <a class="ps-mobile-nav__item ps-mobile-nav__item--quiz" href="/quiz.html" aria-label="Kviz">
+      <span class="ps-mobile-nav__icon" aria-hidden="true">🧠</span>
+      <span class="ps-mobile-nav__label">Kviz</span>
+    </a>
+
+    <a class="ps-mobile-nav__item" href="/brani-svoj-grad.html" aria-label="Brani svoj grad">
+      <span class="ps-mobile-nav__icon" aria-hidden="true">🛡️</span>
+      <span class="ps-mobile-nav__label">Brani svoj grad</span>
+    </a>
+
+    <a class="ps-mobile-nav__item" href="/vijesti.html" aria-label="Vijesti">
+      <span class="ps-mobile-nav__icon" aria-hidden="true">📰</span>
+      <span class="ps-mobile-nav__label">Vijesti</span>
+    </a>
+  </div>
+</nav>
+
+<style>
+  .ps-mobile-nav {
+    display: none;
+  }
+
+  .ps-mobile-nav__inner {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: stretch;
+    gap: 4px;
+    padding: 7px max(10px, env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom)) max(10px, env(safe-area-inset-left));
+  }
+
+  .ps-mobile-nav__item {
+    min-width: 0;
+    min-height: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 7px 3px;
+    border: 1px solid transparent;
+    border-radius: 13px;
+    color: #9ba5b2;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color .18s ease, color .18s ease, transform .18s ease, border-color .18s ease;
+  }
+
+  .ps-mobile-nav__item:hover,
+  .ps-mobile-nav__item:focus-visible {
+    color: #f0d777;
+    background: rgba(217, 184, 76, .08);
+  }
+
+  .ps-mobile-nav__item:active {
+    transform: scale(.96);
+  }
+
+  .ps-mobile-nav__icon {
+    min-height: 23px;
+    display: grid;
+    place-items: center;
+    font-size: 19px;
+    line-height: 1;
+  }
+
+  .ps-mobile-nav__item--quiz {
+    color: #111;
+    background: linear-gradient(145deg, #d9b84c, #f0d777);
+    border-color: rgba(240, 215, 119, .55);
+    box-shadow: 0 8px 24px rgba(217, 184, 76, .16);
+  }
+
+  .ps-mobile-nav__item--quiz:hover,
+  .ps-mobile-nav__item--quiz:focus-visible {
+    color: #111;
+    background: #f0d777;
+  }
+
+  @media (max-width: 860px) {
+    .ps-mobile-nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1500;
+      display: block;
+      border-top: 1px solid rgba(255, 255, 255, .09);
+      background: rgba(7, 9, 13, .94);
+      backdrop-filter: blur(18px) saturate(135%);
+      -webkit-backdrop-filter: blur(18px) saturate(135%);
+      box-shadow: 0 -14px 40px rgba(0, 0, 0, .28);
+    }
+
+    body {
+      padding-bottom: 76px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .ps-mobile-nav__label {
+      font-size: 9px;
+    }
+
+    .ps-mobile-nav__item {
+      min-height: 55px;
+      padding-inline: 1px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ps-mobile-nav__item {
+      transition: none;
+    }
+  }
+
+  @media print {
+    .ps-mobile-nav {
+      display: none !important;
+    }
+  }
+</style>
