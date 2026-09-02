@@ -26,11 +26,27 @@ const extra={
 ['Koja je manifestacija Dugog Sela povezana s pokladnim običajima?',['Dugoselski fašnik','Ljetni Martin','Vincekovo','Stara jela z Dugog Sela']],
 ['Koji je europski kulturni put povezan s kultom svetog Martina i Dugim Selom?',['Stopama svetog Martina','Via Francigena','Camino de Santiago','Via Adriatica']],
 ['Koje se godine Dugo Selo pridružilo europskoj kulturnoj ruti Stopama svetog Martina?',['2007.','1991.','2012.','2020.']]
+],
+'split':[
+['Koji je oblik tradicijskog pjevanja posebno povezan sa Splitom i Dalmacijom?',['Klapsko pjevanje','Jodlanje','Joik','Polifonija gruzijskih zborova']],
+['Kako se naziva klapsko pjevanje koje se izvodi bez instrumentalne pratnje?',['A cappella','Recitativ','Sprechgesang','Instrumental']],
+['Koji splitski trg Turistička zajednica navodi kao mjesto nastupa klape KUDŽ-a Filip Dević?',['Pjaca','Trg bana Jelačića','Trg Sv. Marka','Korzo']],
+['Kako se zove splitski program u kojem KUDŽ Filip Dević izvodi klapske nastupe?',['Piva klapa isp\'o volta','Zlatna tambura','Splitska serenada','Pisma pod zvizdama']],
+['Na kojim se splitskim lokacijama, među ostalima, održavaju nastupi programa KUDŽ-a Filip Dević?',['Pjaca, Vestibul i Zlatna vrata','Poljud, Riva i Marjan','Bačvice, Firule i Žnjan','Sustipan, Spinut i Meje']],
+['Kako se zove tradicionalna ljetna kulturna manifestacija Splita koja uključuje nastupe klapa?',['Splitski litnji koluri','Varaždinske barokne večeri','Dubrovačke ljetne igre','Đakovački vezovi']],
+['Na kojem se splitskom trgu održava program Splitski litnji koluri 2026.?',['Gajo Bulat Square','Peristil','Pjaca Republike','Prokurative']],
+['Koja klapa je prema službenom programu 2026. imala cjelovečernji koncert u sklopu Splitskih litnjih kolura?',['Klapa Cambi','Klapa Luka','Klapa Maslina','Klapa Intrade']],
+['Koja je druga klapa prema programu 2026. imala cjelovečernji nastup u Splitskim litnjim kolurima?',['Klapa Šufit','Klapa Iskon','Klapa Stine','Klapa Trogir']],
+['Koji se festival u Splitu održava kao festival zabavne glazbe?',['Splitski festival','Festival šansone Zagreb','Špancirfest','CMC festival Vodice']],
+['Koji se broj Splitskog festivala navodi u službenom kalendaru za 2026.?',['66.','56.','76.','46.']],
+['Koji veliki međunarodni glazbeni festival elektroničke glazbe službena Turistička zajednica Splita navodi među događanjima grada?',['Ultra Europe','INmusic','Dimensions','Sonus']],
+['Koji splitski festival nosi naziv Melodije Jadrana?',['Melodije Jadrana','Melodije Panonije','Jadranski tamburaški dani','Dalmatinski jazz tjedan']],
+['Koji je splitski događaj posvećen klasičnoj glazbi prema službenom kalendaru za 2026.?',['Ljetne čari klasične glazbe','Splitski festival zabavne glazbe','Ultra Europe','Mali Split']],
+['Koji kulturni festival u Splitu tradicionalno uključuje dramu, operu, balet i klasičnu glazbu?',['Splitsko ljeto','Ultra Europe','Splitski festival','Mali Split']]
 ]};
 const all=[];
-Object.entries(extra).forEach(([city,items])=>items.forEach((x,i)=>all.push({id:`verified28_${city}_${String(i+1).padStart(3,'0')}`,cityId:key(city),citySource:'verified',category:'gradovi',question:x[0],answers:x[1],correctIndex:0,sourceUrl:'https://tzds.hr/'})));
+Object.entries(extra).forEach(([city,items])=>items.forEach((x,i)=>all.push({id:`verified28_${city}_${String(i+1).padStart(3,'0')}`,cityId:key(city),citySource:'verified',category:'gradovi',question:x[0],answers:x[1],correctIndex:0,sourceUrl:city==='split'?'https://visitsplit.com/':'https://tzds.hr/'})));
 const cities=Array.isArray(global.PATRIA_CITY_DATA)?global.PATRIA_CITY_DATA:[];
-const prior=[];
 const apis=Array.from({length:28},(_,i)=>global[`PatriaCityVerified${i||''}`]);
 cities.forEach(c=>{
  const slug=key(c.slug||c.name), pool=[];
@@ -40,18 +56,7 @@ cities.forEach(c=>{
  const texts=new Set(pool.filter(Boolean).map(q=>String(q.question||'').toLocaleLowerCase('hr-HR')));
  let n=pool.filter(q=>q&&q.cityId===slug).length;
  const others=cities.map(x=>x.name).filter(x=>key(x)!==slug);
- const templates=[
-  `Koji je službeni naziv grada ${c.name}?`,
-  `Koji je grad u službenom registru povezan sa županijom ${c.county}?`,
-  `U kojoj se županiji prema registru nalazi ${c.name}?`,
-  `Koji od ponuđenih odgovora označava grad ${c.name}?`,
-  `Koji grad pripada administrativnoj jedinici ${c.county}?`,
-  `Kako glasi naziv grada koji pripada ${c.county}?`,
-  `Koji se grad navodi uz ${c.county} u službenom popisu?`,
-  `Koji od ponuđenih gradova pripada ${c.county}?`,
-  `Koji je hrvatski grad ${c.name} prema kanonskom registru?`,
-  `Koji odgovor predstavlja grad ${c.name} u PatriaSoul registru?`
- ];
+ const templates=[`Koji je službeni naziv grada ${c.name}?`,`Koji je grad u službenom registru povezan sa županijom ${c.county}?`,`U kojoj se županiji prema registru nalazi ${c.name}?`,`Koji od ponuđenih odgovora označava grad ${c.name}?`,`Koji grad pripada administrativnoj jedinici ${c.county}?`,`Kako glasi naziv grada koji pripada ${c.county}?`,`Koji se grad navodi uz ${c.county} u službenom popisu?`,`Koji od ponuđenih gradova pripada ${c.county}?`,`Koji je hrvatski grad ${c.name} prema kanonskom registru?`,`Koji odgovor predstavlja grad ${c.name} u PatriaSoul registru?`];
  for(let i=n;i<TARGET;i++){
    let q=`${templates[i%templates.length]} (pitanje ${i+1}/75)`;
    if(texts.has(q.toLocaleLowerCase('hr-HR')))continue;
