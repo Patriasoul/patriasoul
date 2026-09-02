@@ -16,7 +16,7 @@ var groups=[
  {title:'Razdoblja i vladari',items:[['🏰 Hrvatska povijest','/povijest.html'],['👑 Hrvatski kraljevi','/povijest.html'],['⚜️ Knezovi i vladari','/povijest.html'],['📜 Srednji vijek','/povijest.html']]},
  {title:'Kasnija povijest',items:[['🏛️ Habsburško razdoblje','/povijest.html'],['🇭🇷 Hrvatski narodni preporod','/povijest.html'],['📖 20. stoljeće','/povijest.html'],['👤 Povijesne osobe','/povijest.html']]}
 ]},
-{label:'Baština',href:'/bastina.html',children:[['🏛️ Baština','/bastina.html'],['⛪ Sakralna baština','/bastina.html'],['🪶 Glagoljica','/bastina.html'],['🎭 Tradicija i običaji','/bastina.html'],['👗 Narodne nošnje','/bastina.html'],['🍲 Gastronomija','/bastina.html'],['🎵 Glazba','/bastina.html'],['🗣️ Govori i dijalekti','/bastina.html']]},
+{label:'Baština',href:'/bastina.html',children:[['🏛️ Baština','/bastina.html'],['⛪ Sakralna baština','/bastina.html'],['🪶 Glagoljica','/bastina.html'],['🎭 Tradicija i običaji','/bastina.html'],['👗 Narodne nošnje','/bastina.html'],['🍲 Gastronomija','/gastronomija.html'],['🎵 Glazba','/bastina.html'],['🗣️ Govori i dijalekti','/govori-i-dijalekti.html']]},
 {label:'Vjera',href:'/vjera.html',children:[['✝️ Vjera i duhovna baština','/vjera.html'],['📖 Evanđelje','/evandelje.html'],['🙏 Molitve','/molitve.html'],['📿 Krunica','/krunica.html'],['⛪ Blagdani','/blagdani.html'],['📚 Biblija','/biblija.html'],['🕯️ Svetac dana','/svetac-dana.html']]},
 {label:'Mediji',href:'/video.html',children:[['🎬 Video','/video.html'],['📷 Galerija','/galerija.html']]},
 {label:'Igra',href:'/brani-svoj-grad.html',children:[['🛡️ Brani svoj grad','/brani-svoj-grad.html'],['🧠 Kviz','/quiz.html'],['⚔️ Duel','/duel.html'],['🏆 Rang-lista','/rang-lista.html'],['👤 Profil','/profil.html']]}
