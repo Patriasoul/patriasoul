@@ -18,7 +18,11 @@ for path in ROOT.rglob('*.html'):
     original = text
 
     # Keep the global hero script cache-busted whenever page-hero.js changes.
-    text = re.sub(r'/page-hero\.js(?:\?[^"\']*)?', f'/page-hero.js?v={hero_version}', text)
+    text = re.sub(r'/page-hero\\.js(?:\\?[^"\\']*)?', f'/page-hero.js?v={hero_version}', text)
+
+    # Remove the old placeholder badge everywhere in static HTML.
+    text = re.sub(r'\\s*[·•]\\s*privremena ilustracija\\b', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'\\bprivremena ilustracija\\b', '', text, flags=re.IGNORECASE)
 
     additions = []
     if '/patriasoul-global.css' not in text:
