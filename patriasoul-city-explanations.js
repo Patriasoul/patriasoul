@@ -3,7 +3,7 @@
 // ponuđene odgovore ni correctIndex. Ako pitanje već ima vlastito explanation polje,
 // ono ima prednost.
 (function(global){'use strict';
-function answerText(q){const a=Array.isArray(q?.answers)?q.answers:[],i=Number(q?.correctIndex);return Number.isInteger(i)&&a[i]!=null?String(a[i]):''}
+function answerText(q){const raw=Array.isArray(q?.answers)?q.answers:q?.options;const i=Number(q?.correctIndex);if(!Array.isArray(raw)||!Number.isInteger(i)||raw[i]==null)return '';const v=raw[i];return typeof v==='object'&&v!==null&&'text' in v?String(v.text):String(v)}
 function cityName(q){return String(q?.cityId||'ovaj grad').replace(/-/g,' ')}
 function cleanStem(q){return String(q?.question||'').replace(/^Koji je točan podatak o\s+/i,'').replace(/^Što je povezano s\s+/i,'').replace(/^Kada se navodi\s+/i,'').replace(/^Koja tvrdnja opisuje\s+/i,'').replace(/^Što treba zapamtiti o\s+/i,'').replace(/[?]$/,'').trim()}
 function explain(q){
