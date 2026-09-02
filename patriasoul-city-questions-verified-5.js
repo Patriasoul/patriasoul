@@ -28,14 +28,15 @@
     ]
   };
   const urls={
-    sveti-ivan-zelina:'https://www.visitzelina.hr/sveti-ivan-zelina/item/59-povijest',
-    zapresic:'https://zapresic.hr/upoznajte-zapresic/',
-    velika-gorica:'https://gorica.hr/povijest/',
-    sveta-nedelja:'https://www.svetanedelja.hr/povijest-c2'
+    'sveti-ivan-zelina':'https://www.visitzelina.hr/sveti-ivan-zelina/item/59-povijest',
+    'zapresic':'https://zapresic.hr/upoznajte-zapresic/',
+    'velika-gorica':'https://gorica.hr/povijest/',
+    'sveta-nedelja':'https://www.svetanedelja.hr/povijest-c2'
   };
   const normalizeCity=s=>String(s).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const all=[];
   Object.entries(extra).forEach(([city,items])=>items.forEach((x,i)=>all.push({id:`verified5_${city}_${String(i+1).padStart(3,'0')}`,cityId:normalizeCity(city),citySource:'verified',category:'gradovi',question:x[0],answers:x[1],correctIndex:0,sourceUrl:urls[normalizeCity(city)]})));
   global.PATRIA_CITY_VERIFIED_EXTRA_5=all;
   global.PatriaCityVerified5={all:()=>all.slice(),forCity:city=>{const slug=normalizeCity(city);return all.filter(q=>q.cityId===slug)},sources:()=>({...urls})};
+  if(document&&document.write){document.write('<scr'+'ipt src="/patriasoul-city-questions-verified-6.js"></scr'+'ipt>');}
 })(typeof window!=='undefined'?window:globalThis);
