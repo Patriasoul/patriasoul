@@ -7,7 +7,7 @@ function missions(){try{return JSON.parse(localStorage.getItem(MISSION_KEY)||'{"
 function saveMissions(m){localStorage.setItem(MISSION_KEY,JSON.stringify(m));return m}
 function start(city){
   const seed=[...String(city)].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,17);
-  const layers=Array.from({length:24},(_,i)=>global[`PatriaCityVerified${i||''}`]?.forCity?.(city)||[]);
+  const layers=Array.from({length:25},(_,i)=>global[`PatriaCityVerified${i||''}`]?.forCity?.(city)||[]);
   const cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];
   const combined=[cityBank,...layers].flat();
   const unique=Array.from(new Map(combined.map(q=>[String(q.id),q])).values());
