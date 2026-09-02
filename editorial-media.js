@@ -15,6 +15,14 @@
     '/brani-svoj-grad.html':{key:'hrvatska',title:'Brani svoj grad: znanje pretvaramo u iskustvo',text:'Igra je zamišljena kao interaktivni nastavak sadržaja portala. Gradovi, povijest, baština i nacionalno znanje postaju pitanja i izazovi, a igrač kroz to učenje upoznaje Hrvatsku iz drugog kuta.',text2:'Kako se baze budu širile, igra može koristiti sve više lokalnih pitanja, dnevne i tjedne izazove, značke, XP i rang-liste. Tako korisnik ne dobiva samo rezultat nego i razlog da se vrati, nauči nešto novo i istraži temu koja mu je bila nepoznata.'}
   };
   var p=profiles[path];
+  if(!p){
+    if(path.indexOf('/pages/domovina/')===0)p=profiles['/domovina.html'];
+    else if(path.indexOf('/pages/branitelji/')===0)p=profiles['/branitelji.html'];
+    else if(path.indexOf('/pages/bastina/')===0)p=profiles['/bastina.html'];
+    else if(path.indexOf('/pages/vjera/')===0)p=profiles['/vjera.html'];
+    else if(path.indexOf('/pages/gradovi/')===0)p=profiles['/gradovi.html'];
+    else if(path.indexOf('/pages/brani-svoj-grad/')===0)p=profiles['/brani-svoj-grad.html'];
+  }
   var imgBase='/assets/editorial/';
   var imgMap={hrvatska:'hrvatska.svg',povijest:'povijest.svg',bastina:'bastina.svg',branitelji:'branitelji.svg',vjera:'vjera.svg'};
   function figure(key,caption){var f=document.createElement('figure');f.className='ps-editorial-figure';var img=document.createElement('img');img.src=imgBase+imgMap[key];img.alt=caption;img.loading='lazy';var c=document.createElement('figcaption');c.textContent=caption+' · privremena ilustracija';f.append(img,c);return f;}
