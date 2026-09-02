@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T23:48:04.316178+00:00",
+  "updatedAt": "2026-09-02T00:23:54.689011+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
@@ -15,6 +15,12 @@
       "humidity": null
     },
     "Dubrovnik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Dubrovnik-aerodrom": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -56,7 +62,25 @@
       "wind": null,
       "humidity": null
     },
+    "Pula-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Rijeka-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Slavonski Brod": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Split-aerodrom": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -74,13 +98,49 @@
       "wind": null,
       "humidity": null
     },
+    "Zadar-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Zagreb-Maksimir": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
+    "Zagreb-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Zagreb": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Rijeka": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zadar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Split": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pula": {
       "temp": null,
       "condition": null,
       "wind": null,
