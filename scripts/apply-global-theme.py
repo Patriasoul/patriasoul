@@ -3,6 +3,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CSS = '<link rel="stylesheet" href="/patriasoul-global.css">'
 JS = '<script src="/site-navigation.js" defer></script>'
+HERO_JS = '<script src="/page-hero.js" defer></script>'
 changed = []
 
 for path in ROOT.rglob('*.html'):
@@ -15,6 +16,8 @@ for path in ROOT.rglob('*.html'):
         additions.append(CSS)
     if '/site-navigation.js' not in text:
         additions.append(JS)
+    if '/page-hero.js' not in text:
+        additions.append(HERO_JS)
     if not additions:
         continue
     pos = lower.find('</head>')
