@@ -3,45 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Domovina — Hrvatska, njezini gradovi, krajevi, zemljopis i Hrvatska danas na PatriaSoulu.">
+  <meta name="description" content="Domovina — bogat uvod u Hrvatsku, njezine gradove, krajeve, geografiju i Hrvatsku danas na PatriaSoulu.">
   <meta name="theme-color" content="#080a0e">
   <title>Domovina | PatriaSoul</title>
   <link rel="stylesheet" href="/patriasoul-modern.css">
   <link rel="stylesheet" href="/patriasoul-global.css">
   <style>
-    .home-section{padding:34px 0 82px}
-    .intro-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:22px;margin-bottom:22px}
-    .intro-card,.quote-card,.topic-card,.post-card{border:1px solid #2b313b;border-radius:20px;background:linear-gradient(145deg,rgba(23,28,36,.96),rgba(10,14,20,.96));box-shadow:0 14px 38px rgba(0,0,0,.16)}
-    .intro-card{padding:34px}
-    .intro-card h2{margin:0 0 16px;font-size:clamp(28px,4vw,42px)}
-    .intro-card p,.quote-card p{color:#aeb4bd;line-height:1.85;font-size:15px}
-    .quote-card{padding:30px;display:flex;flex-direction:column;justify-content:center;border-color:rgba(212,174,56,.28)}
-    .quote-mark{font-size:46px;line-height:.7;color:#d4ae38;margin-bottom:16px}
-    .quote-card strong{color:#f1cf69;letter-spacing:.5px}
-    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:20px;margin:42px 0 18px}
-    .section-heading h2{margin:0;font-size:30px}
-    .section-heading p{margin:0;color:#858c96;font-size:13px;max-width:560px;text-align:right;line-height:1.6}
-    .topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .topic-card{display:flex;flex-direction:column;padding:26px;min-height:225px;transition:transform .2s,border-color .2s,box-shadow .2s}
-    .topic-card:hover{transform:translateY(-4px);border-color:rgba(212,174,56,.55);box-shadow:0 18px 42px rgba(0,0,0,.24)}
-    .topic-icon{width:52px;height:52px;display:grid;place-items:center;border:1px solid rgba(212,174,56,.3);border-radius:15px;background:rgba(212,174,56,.07);font-size:26px;margin-bottom:18px}
-    .topic-card h3{margin:0 0 9px;font-size:22px;color:#f4f4f2}
-    .topic-card p{margin:0;color:#9fa6af;line-height:1.7;font-size:14px}
-    .topic-link{margin-top:auto;padding-top:22px;color:#f1cf69;font-size:13px;font-weight:900}
-    .posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .post-card{padding:25px;display:flex;flex-direction:column;min-height:205px}
-    .post-label{color:#d4ae38;font-size:10px;font-weight:900;letter-spacing:1.6px;text-transform:uppercase;margin-bottom:12px}
-    .post-card h3{margin:0 0 10px;font-size:20px}
-    .post-card p{margin:0;color:#a1a8b1;font-size:14px;line-height:1.7}
-    .post-link{margin-top:auto;padding-top:18px;color:#f1cf69;font-weight:900;font-size:13px}
-    .today-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:18px}
-    .today-card{padding:24px;border:1px solid #2b313b;border-radius:18px;background:rgba(14,18,24,.8)}
-    .today-card h3{margin:0 0 8px;font-size:20px}.today-card p{margin:0;color:#9fa6af;line-height:1.7;font-size:14px}
-    .bottom-cta{margin-top:28px;padding:28px;border:1px solid rgba(212,174,56,.24);border-radius:20px;background:linear-gradient(100deg,rgba(212,174,56,.08),rgba(10,14,20,.72));display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .bottom-cta h2{margin:0 0 6px;font-size:24px}.bottom-cta p{margin:0;color:#9fa6af;font-size:14px}
-    .cta-button{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;background:#d4ae38;color:#080a0e;font-weight:900;white-space:nowrap}
-    @media(max-width:850px){.intro-grid,.topic-grid,.posts-grid{grid-template-columns:1fr 1fr}.today-strip{grid-template-columns:1fr}.section-heading{display:block}.section-heading p{text-align:left;margin-top:7px}.bottom-cta{display:block}.cta-button{margin-top:18px}}
-    @media(max-width:600px){.intro-grid,.topic-grid,.posts-grid{grid-template-columns:1fr}.intro-card,.quote-card{padding:25px}.home-section{padding-bottom:60px}}
+    .domovina-section{padding:36px 0 88px}
+    .domovina-intro{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;margin-bottom:28px}
+    .d-card,.d-topic,.d-story,.d-quote,.d-stat{border:1px solid #2b313b;border-radius:22px;background:linear-gradient(145deg,rgba(23,28,36,.97),rgba(8,12,18,.97));box-shadow:0 16px 45px rgba(0,0,0,.18)}
+    .d-copy{padding:36px}
+    .d-eyebrow{display:block;color:#f1cf69;font-size:11px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:10px}
+    .d-copy h2{margin:0 0 17px;font-size:clamp(29px,4vw,44px);line-height:1.08}
+    .d-copy p,.d-topic p,.d-story p,.d-quote p{color:#adb5bf;line-height:1.82;font-size:15px}
+    .d-quote{padding:34px;display:flex;flex-direction:column;justify-content:center;border-color:rgba(224,189,85,.3);position:relative;overflow:hidden}
+    .d-quote:after{content:'🇭🇷';position:absolute;right:-12px;bottom:-25px;font-size:105px;opacity:.08;filter:grayscale(1)}
+    .quote-mark{font-size:62px;line-height:.55;color:#e0bd55;margin-bottom:20px;position:relative;z-index:1}
+    .d-quote p{font-size:18px;line-height:1.7;margin:0;position:relative;z-index:1}.d-quote strong{color:#f3da84}
+    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:52px 0 20px}.section-heading h2{margin:0;font-size:30px}.section-heading p{margin:0;max-width:590px;text-align:right;color:#858e99;font-size:14px;line-height:1.65}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .d-topic{overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}.d-topic:hover,.d-story:hover{transform:translateY(-4px);border-color:rgba(224,189,85,.5);box-shadow:0 22px 55px rgba(0,0,0,.27)}
+    .d-image{width:100%;height:190px;object-fit:cover;display:block;border-bottom:1px solid rgba(255,255,255,.07)}
+    .d-topic-body{padding:25px;display:flex;flex-direction:column;flex:1}.d-topic h3,.d-story h3{margin:0 0 9px;font-size:22px;color:#f4f5f7}.d-topic p{margin:0;font-size:14px}.d-link{margin-top:auto;padding-top:19px;color:#f3da84;font-size:13px;font-weight:900;text-decoration:none}
+    .wide-feature{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;border:1px solid #2b313b;border-radius:22px;background:#0c1118;box-shadow:0 16px 45px rgba(0,0,0,.18)}
+    .wide-feature img{width:100%;height:100%;min-height:300px;object-fit:cover}.wide-feature .wide-copy{padding:36px}.wide-copy h3{font-size:28px;margin:0 0 15px}.wide-copy p{color:#adb5bf;line-height:1.85;font-size:15px;margin:0 0 14px}.fact-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.fact{padding:13px;border:1px solid rgba(255,255,255,.07);border-radius:13px;background:rgba(255,255,255,.025)}.fact strong{display:block;color:#f3da84;font-size:13px}.fact span{display:block;color:#89939e;font-size:12px;margin-top:3px}
+    .story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.d-story{padding:27px;min-height:215px;display:flex;flex-direction:column}.story-tag{color:#e0bd55;font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:11px}.d-story p{font-size:14px;margin:0}.d-story .d-link{margin-top:auto}
+    .quote-banner{margin-top:30px;padding:42px 50px;border:1px solid rgba(224,189,85,.32);border-radius:24px;background:linear-gradient(115deg,rgba(224,189,85,.10),rgba(10,14,20,.88)),url('/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg') center/cover;position:relative;overflow:hidden;text-align:center}.quote-banner:before{content:'';position:absolute;inset:0;background:rgba(4,7,11,.58)}.quote-banner>*{position:relative;z-index:1}.quote-banner .big-quote{margin:0 auto 15px;max-width:980px;font-size:clamp(25px,4vw,42px);font-weight:900;line-height:1.2;letter-spacing:-1px;color:#fff}.quote-banner .quote-credit{margin:0;color:#f3da84;font-size:12px;font-weight:900;letter-spacing:1.3px;text-transform:uppercase}
+    .today-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.today-card{overflow:hidden;border:1px solid #2b313b;border-radius:22px;background:linear-gradient(145deg,rgba(18,24,33,.96),rgba(8,12,18,.97))}.today-card img{width:100%;height:205px;object-fit:cover;display:block}.today-body{padding:26px}.today-body h3{font-size:23px;margin:0 0 10px}.today-body p{color:#a9b1bb;font-size:14px;line-height:1.75;margin:0}.today-body .d-link{display:inline-block;margin-top:17px}
+    .closing{margin-top:34px;padding:32px;border:1px solid rgba(224,189,85,.25);border-radius:22px;background:linear-gradient(100deg,rgba(224,189,85,.08),rgba(9,13,19,.9));display:flex;align-items:center;justify-content:space-between;gap:25px}.closing h2{margin:0 0 7px;font-size:25px}.closing p{margin:0;color:#98a2ad;font-size:14px}.cta{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;background:#e0bd55;color:#111;font-weight:950;text-decoration:none;white-space:nowrap}
+    @media(max-width:900px){.domovina-intro,.feature-grid,.story-grid{grid-template-columns:1fr 1fr}.wide-feature{grid-template-columns:1fr}.wide-feature img{height:260px}.today-grid{grid-template-columns:1fr}.section-heading{display:block}.section-heading p{text-align:left;margin-top:8px}.closing{display:block}.cta{margin-top:18px}}
+    @media(max-width:620px){.domovina-intro,.feature-grid,.story-grid,.fact-list{grid-template-columns:1fr}.d-copy,.d-quote,.wide-feature .wide-copy{padding:26px}.d-image{height:180px}.quote-banner{padding:35px 22px}.today-card img{height:180px}.domovina-section{padding-bottom:60px}}
   </style>
   <script src="/site-navigation.js" defer></script>
   <script src="/page-hero.js?v=8a8a2b8f7662" defer></script>
@@ -51,102 +42,52 @@
     <div class="container ps-nav">
       <a class="ps-brand" href="/index.html" aria-label="PatriaSoul početna stranica"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
       <nav class="ps-mainnav" aria-label="Glavna navigacija">
-        <a href="/index.html">Početna</a>
-        <a href="/domovina.html" aria-current="page">Domovina</a>
-        <a href="/branitelji.html">Branitelji</a>
-        <a href="/povijest.html">Povijest</a>
-        <a href="/bastina.html">Baština</a>
-        <a href="/vjera.html">Vjera</a>
-        <a href="/gradovi.html">Gradovi</a>
-        <a href="/vijesti.html">Vijesti</a>
-        <a href="/brani-svoj-grad.html">Igra</a>
-        <a class="ps-nav-cta" href="/quiz.html">🧠 Kviz</a>
+        <a href="/index.html">Početna</a><a href="/domovina.html" aria-current="page">Domovina</a><a href="/branitelji.html">Branitelji</a><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a><a href="/vjera.html">Vjera</a><a href="/gradovi.html">Gradovi</a><a href="/vijesti.html">Vijesti</a><a href="/brani-svoj-grad.html">Igra</a><a class="ps-nav-cta" href="/quiz.html">🧠 Kviz</a>
       </nav>
       <button class="ps-menu" type="button" data-ps-menu aria-label="Otvori izbornik" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <main>
-    <section class="ps-page-hero">
-      <div class="container">
-        <span class="ps-kicker">🇭🇷 Hrvatska danas i kroz stoljeća</span>
-        <h1>Domovina</h1>
-        <p>Mjesto gdje upoznajemo Hrvatsku — njezinu zemlju, gradove, krajeve, ljude, prošlost i život danas.</p>
+    <section class="ps-page-hero"><div class="container"><span class="ps-kicker">🇭🇷 Hrvatska — zemlja, ljudi i priče</span><h1>Domovina</h1><p>Upoznaj Hrvatsku kroz njezine krajeve, gradove, prirodu, svakodnevni život i priče koje povezuju generacije.</p></div></section>
+
+    <section class="domovina-section"><div class="container">
+      <div class="domovina-intro">
+        <article class="d-card d-copy"><span class="d-eyebrow">Priča o domovini</span><h2>Hrvatska je više od granica na karti.</h2><p>Hrvatska je prostor iznimne raznolikosti: od ravnica Slavonije i Baranje, preko zelenih brežuljaka sjevera i gorskih područja, sve do Istre, Kvarnera, Dalmacije, obale i otoka. Na tom prostoru razvijali su se gradovi, sela, običaji, govori i načini života koji zajedno čine bogatu hrvatsku priču.</p><p>Domovina nije samo zemljopisni pojam. Ona je sjećanje, jezik, obitelj, mjesto kojem se vraćamo i nasljeđe koje upoznajemo kako bismo ga mogli sačuvati. Zato je ova stranica početna točka za istraživanje Hrvatske.</p></article>
+        <aside class="d-quote"><div class="quote-mark">“</div><p><strong>Domovina nije samo mjesto gdje živimo.</strong><br>Ona je ono što poznajemo, čuvamo, poštujemo i prenosimo dalje.</p></aside>
       </div>
-    </section>
 
-    <section class="home-section">
-      <div class="container">
-        <div class="intro-grid">
-          <article class="intro-card">
-            <h2>Hrvatska je više od granica na karti.</h2>
-            <p>Domovina je prostor u kojem se susreću priroda, gradovi, sela, more, ravnice i planine, ali i priče generacija koje su taj prostor oblikovale. Ovdje želimo na jednom mjestu povezati osnovno znanje o Hrvatskoj s pričama koje vrijedi upoznati i sačuvati.</p>
-            <p>Od Zagreba do Dubrovnika, od Istre i Kvarnera do Slavonije, Baranje, Like i Dalmacije — svaki kraj ima svoj karakter, običaje, znamenitosti i ljude. PatriaSoul ih povezuje u jednu veliku priču o domovini.</p>
-          </article>
-          <aside class="quote-card">
-            <div class="quote-mark">“</div>
-            <p><strong>Domovina nije samo mjesto gdje živimo.</strong><br>Ona je ono što poznajemo, čuvamo, poštujemo i prenosimo dalje.</p>
-          </aside>
-        </div>
-
-        <div class="section-heading">
-          <h2>Upoznaj Hrvatsku</h2>
-          <p>Svaka kartica je početak priče. Klikom na „Saznaj više“ ulaziš u zasebnu, detaljnu stranicu.</p>
-        </div>
-
-        <div class="topic-grid">
-          <a class="topic-card" href="/gradovi.html">
-            <div class="topic-icon">🏙️</div><h3>Gradovi</h3>
-            <p>Zagreb, Split, Rijeka, Osijek, Dubrovnik i brojni drugi gradovi. Upoznaj njihovu povijest, znamenitosti, posebnosti i priče.</p>
-            <span class="topic-link">Saznaj više →</span>
-          </a>
-          <a class="topic-card" href="/krajevi-i-geografija.html">
-            <div class="topic-icon">🗺️</div><h3>Krajevi i geografija</h3>
-            <p>Panonska, gorska i primorska Hrvatska, povijesne regije, otoci, rijeke, planine i prirodna obilježja zemlje.</p>
-            <span class="topic-link">Saznaj više →</span>
-          </a>
-          <a class="topic-card" href="/vijesti.html">
-            <div class="topic-icon">📰</div><h3>Hrvatska danas</h3>
-            <p>Aktualni događaji, važne informacije i teme iz hrvatskog društva — pregledno i na jednom mjestu.</p>
-            <span class="topic-link">Saznaj više →</span>
-          </a>
-        </div>
-
-        <div class="today-strip">
-          <a class="today-card" href="/vrijeme.html"><h3>🌤️ Vrijeme</h3><p>Prati vremenske prilike i prognozu za Hrvatsku.</p><span class="topic-link">Otvori vrijeme →</span></a>
-          <div class="today-card"><h3>🇭🇷 Hrvatska u nekoliko pogleda</h3><p>Hrvatska je na dodiru Panonske nizine, Dinarida i Sredozemlja. Upravo ta raznolikost oblikovala je njezine krajeve, gospodarstvo, gradove i način života.</p></div>
-        </div>
-
-        <div class="section-heading">
-          <h2>Kratke priče iz Domovine</h2>
-          <p>Na glavnoj stranici prvo dobivaš kratki pregled, a zatim jednim klikom ideš u dublji sadržaj.</p>
-        </div>
-
-        <div class="posts-grid">
-          <article class="post-card"><div class="post-label">Zemljopis</div><h3>Tri velika prirodna prostora</h3><p>Hrvatski prostor povezuje nizinsku, gorsku i primorsku cjelinu. Razlike u reljefu i klimi snažno su utjecale na život ljudi i razvoj krajeva.</p><a class="post-link" href="/krajevi-i-geografija.html">Istraži krajeve →</a></article>
-          <article class="post-card"><div class="post-label">Gradovi</div><h3>Gradovi koji pričaju svoju priču</h3><p>Od antičkih naselja na Jadranu do suvremenih regionalnih središta, hrvatski gradovi čuvaju slojeve različitih razdoblja.</p><a class="post-link" href="/gradovi.html">Istraži gradove →</a></article>
-          <article class="post-card"><div class="post-label">Hrvatska danas</div><h3>Domovina danas</h3><p>Život u Hrvatskoj nije samo statistika. To su ljudi, događaji, vrijeme, svakodnevica, uspjesi i izazovi koje vrijedi pratiti.</p><a class="post-link" href="/vijesti.html">Čitaj aktualno →</a></article>
-        </div>
-
-        <div class="bottom-cta">
-          <div><h2>Želiš upoznati Hrvatsku dublje?</h2><p>Kreni od gradova i krajeva, a zatim istražuj ostale PatriaSoul sadržaje.</p></div>
-          <a class="cta-button" href="/gradovi.html">Kreni istraživati →</a>
-        </div>
+      <div class="section-heading"><h2>Upoznaj Hrvatsku</h2><p>Tri glavna puta vode dublje u sadržaj Domovine. Svaki otvara zasebnu stranicu s mnogo više informacija.</p></div>
+      <div class="feature-grid">
+        <a class="d-topic" href="/gradovi.html"><img class="d-image" src="/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg" alt="Hrvatska zastava"><div class="d-topic-body"><h3>🏙️ Gradovi</h3><p>Upoznaj hrvatske gradove, njihovu povijest, znamenitosti, posebnosti i priče. Od Zagreba i Splita do Rijeke, Osijeka, Dubrovnika i brojnih manjih gradova.</p><span class="d-link">Saznaj više →</span></div></a>
+        <a class="d-topic" href="/krajevi-i-geografija.html"><img class="d-image" src="/images/Hrvatske_kockice.png" alt="Hrvatski crveno-bijeli motiv"><div class="d-topic-body"><h3>🗺️ Krajevi i geografija</h3><p>Od panonskih ravnica do dinarskog gorja i jadranske obale. Istraži prirodne i povijesne krajeve, otoke, rijeke, planine i geografske posebnosti.</p><span class="d-link">Saznaj više →</span></div></a>
+        <a class="d-topic" href="/vijesti.html"><img class="d-image" src="/images/PATRIA_SOUL_ORIGINAL_ISPRAVLJEN_GRB.png" alt="PatriaSoul hrvatski grb"><div class="d-topic-body"><h3>📰 Hrvatska danas</h3><p>Prati aktualne teme i događaje iz Hrvatske. Vijesti su zaseban prostor za suvremeni život, važne informacije i ono što se događa danas.</p><span class="d-link">Saznaj više →</span></div></a>
       </div>
-    </section>
+
+      <div class="quote-banner"><p class="big-quote">„Čuvati domovinu znači poznavati je, voljeti je i prenositi njezinu priču dalje.“</p><p class="quote-credit">PatriaSoul</p></div>
+
+      <div class="section-heading"><h2>Hrvatska u nekoliko pogleda</h2><p>Raznolikost hrvatskog prostora najbolje se vidi kada spojimo zemljopis, prirodu i način života.</p></div>
+      <div class="wide-feature"><img src="/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg" alt="Hrvatska zastava u krupnom planu"><div class="wide-copy"><span class="d-eyebrow">Zemlja između kontinenta i mora</span><h3>Mala zemlja, velika raznolikost</h3><p>Hrvatska se nalazi na dodiru srednjoeuropskog, panonskog, dinarskog i sredozemnog prostora. Zbog toga na relativno malom području susrećemo nizine, brežuljke, visoke planine, krš, dugu obalu i velik broj otoka.</p><p>Ta geografska raznolikost nije samo lijep prizor. Ona je kroz stoljeća utjecala na naselja, gospodarstvo, promet, prehranu, običaje i svakodnevni život ljudi.</p><div class="fact-list"><div class="fact"><strong>Panonski prostor</strong><span>ravnice, velike rijeke i plodna polja</span></div><div class="fact"><strong>Gorska Hrvatska</strong><span>šume, krš, planine i posebna klima</span></div><div class="fact"><strong>Jadranska Hrvatska</strong><span>obala, otoci, more i mediteranski krajolik</span></div><div class="fact"><strong>Povijesni krajevi</strong><span>različite tradicije i regionalni identiteti</span></div></div></div></div>
+
+      <div class="section-heading"><h2>Priče koje vrijedi upoznati</h2><p>Kratki uvodi stvaraju osjećaj portala, a detaljni sadržaj nastavlja se na povezanim podstranicama.</p></div>
+      <div class="story-grid">
+        <article class="d-story"><div class="story-tag">Gradovi</div><h3>Gradovi koji pričaju svoju priču</h3><p>Svaki hrvatski grad ima svoj ritam, svoje znamenitosti i slojeve prošlosti. Neki su rasli uz more, drugi uz rijeke, prometne putove ili plodne ravnice.</p><a class="d-link" href="/gradovi.html">Istraži gradove →</a></article>
+        <article class="d-story"><div class="story-tag">Geografija</div><h3>Od ravnice do Jadrana</h3><p>Na putu kroz Hrvatsku mijenjaju se krajolik, klima i način života. Upravo ta raznolikost daje zemlji snažan regionalni karakter.</p><a class="d-link" href="/krajevi-i-geografija.html">Istraži krajeve →</a></article>
+        <article class="d-story"><div class="story-tag">Suvremena Hrvatska</div><h3>Domovina danas</h3><p>Hrvatska je živa i suvremena zemlja. Ljudi, događaji, društvo i svakodnevica stvaraju priču koja se piše upravo sada.</p><a class="d-link" href="/vijesti.html">Čitaj aktualno →</a></article>
+      </div>
+
+      <div class="section-heading"><h2>Hrvatska danas</h2><p>Jedan pogled vodi prema aktualnostima, drugi prema vremenu i svakodnevnom ritmu života.</p></div>
+      <div class="today-grid">
+        <article class="today-card"><img src="/images/PATRIA_SOUL_ORIGINAL_ISPRAVLJEN_GRB.png" alt="PatriaSoul i hrvatski grb"><div class="today-body"><h3>📰 Vijesti</h3><p>Aktualne hrvatske teme na jednom mjestu. Ovdje se Domovina susreće sa sadašnjim trenutkom — događajima, ljudima i informacijama koje oblikuju svakodnevicu.</p><a class="d-link" href="/vijesti.html">Otvori Vijesti →</a></div></article>
+        <article class="today-card"><img src="/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg" alt="Hrvatska zastava"><div class="today-body"><h3>🌤️ Vrijeme</h3><p>Vrijeme se u Hrvatskoj razlikuje od kontinentalnog do priobalnog prostora. Pogledaj prognozu i vremenske prilike za hrvatske krajeve.</p><a class="d-link" href="/vrijeme.html">Pogledaj vrijeme →</a></div></article>
+      </div>
+
+      <div class="closing"><div><h2>Kreni istraživati Hrvatsku</h2><p>Od grada do grada, od kraja do kraja — upoznaj Domovinu korak po korak.</p></div><a class="cta" href="/gradovi.html">Započni istraživanje →</a></div>
+    </div></section>
   </main>
 
-  <footer class="ps-footer">
-    <div class="container">
-      <div class="ps-footer-bottom"><span>© 2026 PatriaSoul</span><span>Hrvatska. Povijest. Znanje. Identitet.</span></div>
-    </div>
-  </footer>
-
-  <script src="/ai-engine/quiz-guard.js"></script>
-  <script src="/ai-engine/puter-ai.js"></script>
-  <script src="/ai-engine/pitaj-patriasoul-widget.js"></script>
-  <script>
-    (function(){const button=document.querySelector('[data-ps-menu]');const nav=document.querySelector('.ps-mainnav');button?.addEventListener('click',()=>{const open=nav?.classList.toggle('is-open');button.setAttribute('aria-expanded',String(!!open));});})();
-  </script>
+  <footer class="ps-footer"><div class="container"><div class="ps-footer-bottom"><span>© 2026 PatriaSoul</span><span>Hrvatska. Povijest. Znanje. Identitet.</span></div></div></footer>
+  <script src="/ai-engine/quiz-guard.js"></script><script src="/ai-engine/puter-ai.js"></script><script src="/ai-engine/pitaj-patriasoul-widget.js"></script>
+  <script>(function(){const button=document.querySelector('[data-ps-menu]');const nav=document.querySelector('.ps-mainnav');button?.addEventListener('click',()=>{const open=nav?.classList.toggle('is-open');button.setAttribute('aria-expanded',String(!!open));});})();</script>
 </body>
 </html>
