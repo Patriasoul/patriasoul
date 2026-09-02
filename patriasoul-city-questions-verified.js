@@ -79,12 +79,12 @@
       ['Koje je godine Virovitica dobila srednjovjekovnu povelju sloboda?',['1234.','1242.','1356.','1579.']],
       ['Tko je izdao povelju Virovitici 1234. godine?',['Slavonski herceg Koloman','Bela IV.','Ludovik I.','Matija Korvin']],
       ['Koji je kralj 1242. u Virovitici izdao Zlatnu bulu kojom je Zagreb dobio status slobodnog i kraljevskog grada?',['Bela IV.','Andrija II.','Karlo Robert','Ladislav IV.']],
-      ['Kako se danas zove potok po kojem je prema službenoj povijesti najvjerojatnije nastao naziv Virovitica?',['Ođenica','Verevča','Ilova','Bednja']]
+      ['Koji se veliki vodeni tok nalazi sjeverno od Virovitice i čini važan prirodni dio njezina područja?',['Drava','Sava','Kupa','Una']]
     ],
     krapina:[
       ['Koje se godine Krapina prvi put spominje u pisanom povijesnom izvoru?',['1193.','1225.','1347.','1469.']],
       ['Na kojem je nalazištu Dragutin Gorjanović Kramberger otkrio ostatke krapinskog pračovjeka?',['Hušnjakovo brdo','Trakošćan','Medvedgrad','Lobor']],
-      ['Koje je godine Ludovik I. Anžuvinac proglasio Krapinu slobodnim kraljevskim trgovištem?',['1347.','1193.','1225.','1418.']],
+      ['Koje je godine Ludovik I. Anžuvinac proglasio Krapinu slobodnim kraljevskim gradom?',['1347.','1193.','1225.','1418.']],
       ['Koji je hrvatsko-ugarski kralj boravio u Krapini 2. lipnja 1225.?',['Bela IV.','Ludovik I.','Matija Korvin','Sigismund']]
     ],
     gospic:[
@@ -98,6 +98,24 @@
       ['Koje je godine Salona prvi put spomenuta u povijesnom izvoru?',['119. pr. Kr.','35. pr. Kr.','305.','614.']],
       ['Koji je rimski car prema službenoj povijesti Solina rođen u Saloni ili njezinoj okolici?',['Dioklecijan','Trajan','Hadrijan','Konstantin']],
       ['Oko koje su godine Avari i Slaveni razorili Salonu?',['614.','476.','568.','879.']]
+    ],
+    senj:[
+      ['Kako se zvao antički grad na području današnjeg Senja?',['Senia','Salona','Oneum','Cibalae']],
+      ['Koje je godine senjski biskup dobio papinsko dopuštenje za uporabu glagoljice i narodnog jezika u liturgiji?',['1248.','1102.','1494.','1558.']],
+      ['Koja je tvrđava završena 1558. godine na brdu Trbušnjak za obranu Senja?',['Nehaj','Kamerlengo','Mirabela','Fortica']],
+      ['Koje je godine osnovana Senjska kapetanija?',['1469.','1248.','1558.','1715.']]
+    ],
+    bakar:[
+      ['Koje je godine Marija Terezija proglasila Bakar slobodnim kraljevskim gradom?',['1779.','1756.','1715.','1809.']],
+      ['Što je Bakar dobio poveljom Marije Terezije iz 1779. godine?',['Gradski grb i autonomiju','Status biskupije','UNESCO-ov status','Vojnu krajinu']],
+      ['Koja je gospodarska djelatnost bila osobito važna za razvoj Bakra u 18. stoljeću?',['Luka, trgovina, brodogradnja i brodarstvo','Rudarstvo zlata','Proizvodnja svile','Velika poljoprivredna imanja']],
+      ['Kako se nazivaju kamene terase povezane s povijesnim vinogradarstvom Bakra?',['Bakarski prezidi','Bakarci','Primorski suhozidi','Kvarnerske terase']]
+    ],
+    crikvenica:[
+      ['Koje se rimsko ime naselja povezuje s područjem današnje Crikvenice?',['Ad turres','Senia','Oneum','Tarsatica']],
+      ['Koji se vodotok ulijeva u more u Crikvenici i ima važnu ulogu u njezinoj povijesti?',['Dubračina','Rječina','Kupa','Zrmanja']],
+      ['Koje je godine Crikvenica obilježila 600. obljetnicu prvog spomena svojega imena?',['2012.','2000.','2020.','1995.']],
+      ['Koji su hoteli među povijesno važnim objektima ranog crikveničkog turizma?',['Therapia i Miramare','Esplanade i Palace','Imperial i Excelsior','Kvarner i Bellevue']]
     ]
   };
   const urls={
@@ -112,11 +130,14 @@
     koprivnica:'https://koprivnica.hr/koprivnica/povijest-grada/',
     cakovec:'https://www.cakovec.hr/o-gradu-cakovcu/',
     sisak:'https://sisak.hr/o-gradu/',
-    pozega:'https://pozega.hr/o-pozegi/povijest-pozege',
+    pozega:'https://www.gmp.hr/odjeli/povjesni-odjel',
     virovitica:'https://www.virovitica.hr/povijest-grada-virovitice/',
     krapina:'https://krapina.hr/povijest-grada/',
     gospic:'https://gospic.hr/povijest/',
-    solin:'https://www.solin.hr/povijest/salona/'
+    solin:'https://www.solin.hr/povijest/',
+    senj:'https://www.senj.hr/povijest-grada/',
+    bakar:'https://www.bakar.hr/obavijesti-bakar-2/1191-program-obiljezavanja-240-godina-povelje-marije-terezije-u-bakru/item',
+    crikvenica:'https://www.crikvenica.hr/setnja-gradom/'
   };
   const normalizeCity=s=>String(s).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const all=[];
