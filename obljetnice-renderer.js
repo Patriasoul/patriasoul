@@ -22,6 +22,9 @@
       .ps-anniv-card p{margin:0;color:#b9bec5;font-size:.9rem;line-height:1.55}
       .ps-anniv-meta{display:flex;justify-content:space-between;gap:10px;margin-top:auto;padding-top:14px;color:#7f8791;font-size:.75rem}
       .ps-anniv-empty{padding:28px 22px;color:#aeb4bc;text-align:center}
+      .ps-anniv-footer{display:flex;justify-content:center;padding:0 20px 22px}
+      .ps-anniv-history-link{display:inline-flex;align-items:center;gap:7px;color:#f1d58d;text-decoration:none;font-weight:800;font-size:.86rem}
+      .ps-anniv-history-link:hover{text-decoration:underline}
       .ps-anniv-archive .ps-anniv-list{grid-template-columns:repeat(2,minmax(0,1fr))}
       @media(max-width:900px){.ps-anniv-list,.ps-anniv-archive .ps-anniv-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media(max-width:620px){.ps-anniv-head{align-items:flex-start;flex-direction:column}.ps-anniv-list,.ps-anniv-archive .ps-anniv-list{grid-template-columns:1fr;padding:14px}}
@@ -40,13 +43,17 @@
   }
 
   function nextAnniversaries(items, limit) {
-    const today = dateKey(new Date());
+    const now = new Date();
+    const todayMonth = now.getMonth() + 1;
+    const todayDay = now.getDate();
     return [...items]
       .filter((item) => /^\d{2}-\d{2}$/.test(item.date))
       .sort((a, b) => {
-        const da = a.date >= today ? a.date : `99-${a.date}`;
-        const db = b.date >= today ? b.date : `99-${b.date}`;
-        return da.localeCompare(db);
+        const [am, ad] = a.date.split("-").map(Number);
+        const [bm, bd] = b.date.split("-").map(Number);
+        const aPassed = am < todayMonth || (am === todayMonth && ad < todayDay);
+        const bPassed = bm < todayMonth || (bm === todayMonth && bd < todayDay);
+        return (aPassed ? 1 : 0) - (bPassed ? 1 : 0) || (am * 100 + ad) - (bm * 100 + bd);
       })
       .slice(0, limit);
   }
@@ -57,20 +64,21 @@
 
   function render(items) {
     injectStyles();
+    const data = Array.isArray(items) ? items : [];
     document.querySelectorAll("[data-obljetnice]").forEach((root) => {
       const mode = root.dataset.annivMode || "upcoming";
       const limit = Number(root.dataset.annivLimit || (mode === "archive" ? 100 : 3));
       const selected = mode === "today"
-        ? items.filter((item) => item.date === dateKey(new Date()))
+        ? data.filter((item) => item.date === dateKey(new Date()))
         : mode === "archive"
-          ? [...items].sort((a, b) => a.date.localeCompare(b.date))
-          : nextAnniversaries(items, limit);
+          ? [...data].sort((a, b) => a.date.localeCompare(b.date))
+          : nextAnniversaries(data, limit);
 
       const title = root.dataset.annivTitle || (mode === "archive" ? "Središnji kalendar obljetnica" : "Sljedeće hrvatske obljetnice");
       const intro = root.dataset.annivIntro || "Jedan središnji registar za cijeli PatriaSoul — bez kopiranja podataka po stranicama.";
       const list = selected.length ? selected.map(card).join("") : `<div class="ps-anniv-empty">Danas u središnjem registru nema evidentirane obljetnice.</div>`;
 
-      root.innerHTML = `<section class="ps-anniv-section ${mode === "archive" ? "ps-anniv-archive" : ""}"><div class="ps-anniv-shell"><div class="ps-anniv-head"><div><span class="ps-anniv-kicker">📜 Obljetnice</span><h2>${title}</h2><p>${intro}</p></div><span class="ps-anniv-count">${selected.length} zapisa</span></div><div class="ps-anniv-list">${list}</div></div></section>`;
+      root.innerHTML = `<section class="ps-anniv-section ${mode === "archive" ? "ps-anniv-archive" : ""}"><div class="ps-anniv-shell"><div class="ps-anniv-head"><div><span class="ps-anniv-kicker">📜 Obljetnice</span><h2>${title}</h2><p>${intro}</p></div><span class="ps-anniv-count">${selected.length} zapisa</span></div><div class="ps-anniv-list">${list}</div><div class="ps-anniv-footer"><a class="ps-anniv-history-link" href="/povijest.html">📜 Povijest – Tragovi vremena →</a></div></div></section>`;
     });
   }
 
@@ -83,7 +91,7 @@
     } catch (error) {
       console.error("PatriaSoul: nije moguće učitati središnji registar obljetnica.", error);
       roots.forEach((root) => {
-        root.innerHTML = `<section class="ps-anniv-section"><div class="ps-anniv-shell"><div class="ps-anniv-empty">Obljetnice trenutačno nisu dostupne.</div></div></section>`;
+        root.innerHTML = `<section class="ps-anniv-section"><div class="ps-anniv-shell"><div class="ps-anniv-empty">Obljetnice trenutačno nisu dostupne.</div><div class="ps-anniv-footer"><a class="ps-anniv-history-link" href="/povijest.html">📜 Povijest – Tragovi vremena →</a></div></div></section>`;
       });
     }
   }
