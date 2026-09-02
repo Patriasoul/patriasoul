@@ -6,7 +6,7 @@
       ['Koje se godine Pleternica spominje pod imenom sv. Nikola?',['1335.','1270.','1427.','1536.']],
       ['Kako se Pleternica zvala u 15. stoljeću prije nego što je ponovno prihvatila ženski oblik imena?',['Pleternik','Pleternica Nova','Nikolinje','Pletergrad']],
       ['Koje su godine Osmanlije zauzele Pleternicu?',['1536.','1688.','1427.','1728.']],
-      ['Uz koju je rijeku smještena Pleternica?',['Orljavu','Savу','Kupu','Česmu']]
+      ['Uz koju je rijeku smještena Pleternica?',['Orljavu','Savu','Kupu','Česmu']]
     ],
     'benkovac':[
       ['Koje je godine Ivan Benković započeo gradnju utvrde koja je označila početak povijesti grada Benkovca?',['1468.','1409.','1527.','1683.']],
