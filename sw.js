@@ -1,6 +1,14 @@
-// PatriaSoul — PWA cache sloj s network-first pristupom za svježi sadržaj.
-const CACHE='patriasoul-shell-v2';
-const SHELL=['/','/index.html','/style.css','/variables.css','/patriasoul-modern.css','/responsive.css','/manifest.json','/site-navigation.js','/patriasoul-profile.js','/levels.js','/badges.js','/profil.html','/rang-lista.html','/brani-svoj-grad.html','/gradovi.html','/quiz.html','/video.html','/galerija.html','/media-data.js','/media.js','/assets/gallery/patriasoul.svg','/assets/gallery/hrvatska.svg'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==location.origin)return;e.respondWith(fetch(e.request).then(res=>{if(res.ok){const copy=res.clone();caches.open(CACHE).then(c=>c.put(e.request,copy))}return res}).catch(()=>caches.match(e.request).then(cached=>cached||caches.match('/404.html'))))});
+// PatriaSoul — PWA cache layer.
+// Network-first: the live site always wins; cache is only a fallback when offline.
+const CACHE = 'patriasoul-shell-v3';
+const SHELL = ['/', '/index.html', '/404.html', '/manifest.json', '/patriasoul-global.css', '/patriasoul-modern.css', '/style.css', '/responsive.css', '/site-navigation.js', '/logo-navigation.css', '/pwa.js', '/gradovi.html', '/gradovi.js', '/grad.html', '/quiz.html', '/quiz.js', '/quiz.css', '/brani-svoj-grad.html', '/brigade.html', '/brigade.js', '/domovina.html', '/povijest.html', '/bastina.html', '/branitelji.html', '/postrojbe.html', '/operacije.html', '/spomenici.html', '/vjera.html', '/vijesti.html', '/video.html', '/galerija.html', '/rang-lista.html', '/profil.html'];
+self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL).catch(() => undefined)).then(() => self.skipWaiting())));
+self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  if (request.method !== 'GET' || new URL(request.url).origin !== location.origin) return;
+  event.respondWith(fetch(request).then(response => {
+    if (response.ok) { const copy = response.clone(); caches.open(CACHE).then(cache => cache.put(request, copy)).catch(() => undefined); }
+    return response;
+  }).catch(() => caches.match(request).then(cached => cached || caches.match('/404.html'))));
+});
