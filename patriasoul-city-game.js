@@ -13,7 +13,9 @@ function start(city){
   const verified3=global.PatriaCityVerified3?.forCity?.(city)||[];
   const verified4=global.PatriaCityVerified4?.forCity?.(city)||[];
   const verified5=global.PatriaCityVerified5?.forCity?.(city)||[];
-  const combined=[...cityBank,...verified,...verified2,...verified3,...verified4,...verified5];
+  const verified6=global.PatriaCityVerified6?.forCity?.(city)||[];
+  const verified7=global.PatriaCityVerified7?.forCity?.(city)||[];
+  const combined=[...cityBank,...verified,...verified2,...verified3,...verified4,...verified5,...verified6,...verified7];
   const unique=Array.from(new Map(combined.map(q=>[String(q.id),q])).values());
   const pool=unique.length>=5?unique:unique.concat(global.PatriaQuiz.bank().filter(q=>q&&!q.cityId));
   return global.PatriaQuiz.seededShuffle(pool,seed).slice(0,5).map(q=>global.PatriaQuiz.prepare(q));
