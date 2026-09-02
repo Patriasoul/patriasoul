@@ -1,6 +1,6 @@
 // PatriaSoul — Brani svoj grad engine: izazov, gradski bodovi i misije.
-// Gradski kviz koristi isključivo pitanja vezana uz odabrani grad.
-// Odabir je promjenjiv između igranja i izbjegava nedavno odigrana pitanja.
+// Gradski kviz koristi isključivo provjerena, gradu pripisana pitanja.
+// Registry-complete pitanja služe samo kao privremeni auditni sloj i ne ulaze u igru.
 (function(global){'use strict';
 const KEY='patriasoul_city_results_v3',MISSION_KEY='patriasoul_city_missions_v1',HISTORY_KEY='patriasoul_city_question_history_v1';
 function read(){try{const x=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(x)?x:[]}catch(_){return []}}
@@ -10,16 +10,23 @@ function saveMissions(m){localStorage.setItem(MISSION_KEY,JSON.stringify(m));ret
 function history(){try{const x=JSON.parse(localStorage.getItem(HISTORY_KEY)||'{}');return x&&typeof x==='object'?x:{}}catch(_){return {}}}
 function saveHistory(x){try{localStorage.setItem(HISTORY_KEY,JSON.stringify(x))}catch(_){}return x}
 function cityKey(city){return String(city).toLocaleLowerCase('hr-HR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function verifiedLayers(city){
+  const out=[];
+  for(let i=0;i<30;i++){
+    const layer=global[`PatriaCityVerified${i||''}`];
+    if(layer?.forCity)out.push(layer.forCity(city)||[]);
+  }
+  return out;
+}
+function verifiedCityPool(city){
+  const key=cityKey(city),cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];
+  const combined=[cityBank,...verifiedLayers(city)].flat();
+  return Array.from(new Map(combined.map(q=>[String(q.id),q])).values())
+    .filter(q=>q&&q.cityId===key&&q.citySource!=='registry-complete');
+}
 function start(city){
-  const key=cityKey(city), now=Date.now()>>>0;
-  // Include every verified layer, including the latest completion layer 28.
-  const layers=Array.from({length:29},(_,i)=>global[`PatriaCityVerified${i||''}`]?.forCity?.(city)||[]);
-  const cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];
-  const combined=[cityBank,...layers].flat();
-  const unique=Array.from(new Map(combined.map(q=>[String(q.id),q])).values()).filter(q=>q&&q.cityId===key);
-  const h=history(), recent=new Set(Array.isArray(h[key])?h[key]:[]);
-  // Prefer questions that have not appeared recently. If the bank is still small,
-  // use the full verified city pool rather than silently mixing unrelated questions.
+  const key=cityKey(city), now=Date.now()>>>0, unique=verifiedCityPool(city);
+  const h=history(),recent=new Set(Array.isArray(h[key])?h[key]:[]);
   let pool=unique.filter(q=>!recent.has(String(q.id)));
   if(pool.length<5)pool=unique.slice();
   if(pool.length<5)return [];
@@ -35,5 +42,5 @@ function finish(city,score,correct){
   return{...result,missions:{played:m.played,perfect:m.perfect,points:m.points,completed:[m.played>=1?'prvi-izazov':null,m.perfect>=1?'bezgresni-branitelj':null,m.points>=1000?'cuvar-grada':null].filter(Boolean)}}
 }
 function cityRows(city){return read().filter(r=>!city||r.city===city).sort((a,b)=>b.score-a.score)}
-global.PatriaCityGame={start,finish,results:read,cityRows,missions};
+global.PatriaCityGame={start,finish,results:read,cityRows,missions,questionCount:city=>verifiedCityPool(city).length};
 })(typeof window!=='undefined'?window:globalThis);
