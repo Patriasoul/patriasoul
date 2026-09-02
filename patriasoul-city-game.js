@@ -12,7 +12,8 @@ function saveHistory(x){try{localStorage.setItem(HISTORY_KEY,JSON.stringify(x))}
 function cityKey(city){return String(city).toLocaleLowerCase('hr-HR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
 function start(city){
   const key=cityKey(city), now=Date.now()>>>0;
-  const layers=Array.from({length:28},(_,i)=>global[`PatriaCityVerified${i||''}`]?.forCity?.(city)||[]);
+  // Include every verified layer, including the latest completion layer 28.
+  const layers=Array.from({length:29},(_,i)=>global[`PatriaCityVerified${i||''}`]?.forCity?.(city)||[]);
   const cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];
   const combined=[cityBank,...layers].flat();
   const unique=Array.from(new Map(combined.map(q=>[String(q.id),q])).values()).filter(q=>q&&q.cityId===key);
