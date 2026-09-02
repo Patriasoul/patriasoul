@@ -4,7 +4,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 CSS = '<link rel="stylesheet" href="/patriasoul-global.css">'
-JS = '<script src="/site-navigation.js" defer></script>'
+JS = '<script src="/site-navigation.js?v=placeholder-cleanup-2" defer></script>'
 hero_path = ROOT / 'page-hero.js'
 hero_version = hashlib.sha256(hero_path.read_bytes()).hexdigest()[:12] if hero_path.exists() else '1'
 HERO_JS = f'<script src="/page-hero.js?v={hero_version}" defer></script>'
@@ -18,11 +18,14 @@ for path in ROOT.rglob('*.html'):
     original = text
 
     # Keep the global hero script cache-busted whenever page-hero.js changes.
-    text = re.sub(r'/page-hero\\.js(?:\\?[^"\\']*)?', f'/page-hero.js?v={hero_version}', text)
+    text = re.sub(r'/page-hero\.js(?:\?[^"\']*)?', f'/page-hero.js?v={hero_version}', text)
 
     # Remove the old placeholder badge everywhere in static HTML.
-    text = re.sub(r'\\s*[·•]\\s*privremena ilustracija\\b', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'\\bprivremena ilustracija\\b', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'\s*[·•]\s*privremena ilustracija\b', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'\bprivremena ilustracija\b', '', text, flags=re.IGNORECASE)
+
+    # Force all themed HTML pages to load the newest placeholder-cleanup version.
+    text = re.sub(r'/site-navigation\.js(?:\?[^"\']*)?', '/site-navigation.js?v=placeholder-cleanup-2', text)
 
     additions = []
     if '/patriasoul-global.css' not in text:
