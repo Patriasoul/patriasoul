@@ -4,7 +4,6 @@
   const q=(id,city,question,answers,sourceUrl,category='gradovi')=>({id,cityId:city,citySource:'verified',category,question,answers,correctIndex:0,sourceUrl});
   const data=[];
   const add=(city,items)=>items.forEach((x,i)=>data.push(q(`verified29_${city}_${String(i+1).padStart(3,'0')}`,city,...x)));
-
   add('omis',[
     ['Koji se festival posvećen dalmatinskoj klapskoj pjesmi održava u Omišu?',['Festival dalmatinskih klapa Omiš','Splitsko ljeto','Dubrovačke ljetne igre','Šibenska šansona'],'https://fdk.hr/','glazba'],
     ['Koju glazbenu tradiciju Festival dalmatinskih klapa Omiš posebno čuva i promiče?',['Dalmatinsku klapsku pjesmu','Međimursku popevku','Istarsku ljestvicu','Bećarac'],'https://fdk.hr/','glazba'],
@@ -27,14 +26,5 @@
     ['Na koliko je instrumenata prema gradskom dokumentu organizirana osnovna glazbena naobrazba u Omišu?',['12','5','20','27'],'https://omis.hr/','glazba'],
     ['Koji se gradski glazbeni sastav uz koncerte i kulturne programe navodi u dokumentu Grada Omiša?',['Gradska glazba','Gradski jazz orkestar Zagreb','Dubrovački simfonijski orkestar','Varaždinski komorni orkestar'],'https://omis.hr/','glazba']
   ]);
-
-  add('sinj',[
-    ['Koja je poznata viteška igra zaštićena kao UNESCO nematerijalna baština povezana sa Sinjem?',['Sinjska alka','Moreška','Trka na prstenac','Nijemo kolo'],'https://ich.unesco.org/','običaji'],
-    ['Koji se grad u nazivu tradicionalne viteške igre spominje uz alku?',['Sinj','Omiš','Trogir','Knin'],'https://ich.unesco.org/','običaji'],
-    ['Koji UNESCO status ima Sinjska alka?',['Nematerijalna kulturna baština čovječanstva','Svjetska prirodna baština','Geopark UNESCO-a','Dokumentarna baština'],'https://ich.unesco.org/','običaji'],
-    ['Koji je od navedenih elemenata izravno povezan sa Sinjem?',['Sinjska alka','Međimurska popevka','Rovinj Batana','Bećarac'],'https://ich.unesco.org/','običaji'],
-    ['Koji je oblik baštine Sinjska alka prema UNESCO-u?',['Nematerijalna kulturna baština','Pokretna arheološka baština','Prirodna baština','Podvodna baština'],'https://ich.unesco.org/','običaji']
-  ]);
-
   global.PatriaCityVerified29={all:()=>data,forCity:city=>data.filter(x=>x.cityId===String(city).toLowerCase().replace(/č/g,'c').replace(/ć/g,'c').replace(/ž/g,'z').replace(/š/g,'s').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''))};
 })(window);
