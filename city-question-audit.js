@@ -4,21 +4,23 @@
 // i mogućnost generiranja objašnjenja nakon odgovora.
 (function(global){'use strict';
   const TARGET_CITIES=127, TARGET_PER_CITY=75, TARGET_TOTAL=9525;
-  // Layer 33 je uklonjen jer bi duplicirao Omiš: sloj 29 nosi pitanja 1–20,
-  // a sloj 34 pitanja 21–75. Aktivno je zato 126 verificiranih slojeva.
-  const EXPECTED_LAYER_IDS=Array.from({length:127},(_,i)=>i+1).filter(i=>i!==33);
-  const TARGET_LAYERS=EXPECTED_LAYER_IDS.length;
+  // Legacy verified sloj je patriasoul-city-questions-verified.js (bez numeričkog sufiksa).
+  // Numerički sloj 33 uklonjen je jer duplicira Omiš; 121 je uklonjen jer duplicira Metković.
+  // Slojevi 128–130 bili su prazni i također su uklonjeni.
+  const EXPECTED_LAYER_IDS=Array.from({length:126},(_,i)=>i+2).filter(i=>i!==33&&i!==121);
+  const TARGET_LAYERS=EXPECTED_LAYER_IDS.length+1;
   const key=s=>String(s||'').toLocaleLowerCase('hr-HR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   function collect(city){
     const slug=key(city.slug||city.name), layers=[];
+    const legacy=global.PatriaCityVerified?.forCity?.(city.name)||[];
     const base=global.PatriaCityQuestions?.forCity?.(city.name)||[];
-    layers.push(...base);
+    layers.push(...legacy,...base);
     for(const i of EXPECTED_LAYER_IDS){
       const api=global[`PatriaCityVerified${i}`];
       if(api?.forCity)layers.push(...api.forCity(city.name));
     }
     const unique=Array.from(new Map(layers.filter(Boolean).map(q=>[String(q.id),q])).values());
-    return {slug,questions:unique};
+    return {slug,questions:unique.filter(q=>q&&q.cityId===slug&&q.citySource==='verified')};
   }
   function run(){
     const cities=Array.isArray(global.PATRIA_CITY_DATA)?global.PATRIA_CITY_DATA:[];
@@ -30,8 +32,9 @@
         if(!id)errors.push('missing-id');
         if(ids.has(id))duplicateIds.push(id); else ids.add(id);
         if(q.cityId!==slug)errors.push(`cityId:${q.cityId||'missing'}`);
-        const answers=Array.isArray(q.answers)?q.answers:q.options;
-        if(!Array.isArray(answers)||answers.length!==4)errors.push(`answers:${id}`);
+        if(q.citySource!=='verified')errors.push(`citySource:${id}`);
+        const answers=Array.isArray(q.answers)?q.answers:(Array.isArray(q.options)?q.options.map(x=>typeof x==='object'?x.text:x):[]);
+        if(!Array.isArray(answers)||answers.length!==4||answers.some(x=>typeof x!=='string'||!x.trim()))errors.push(`answers:${id}`);
         if(!Number.isInteger(q.correctIndex)||q.correctIndex<0||q.correctIndex>3)errors.push(`correctIndex:${id}`);
         else if(!answers?.[q.correctIndex])errors.push(`empty-correct:${id}`);
         if(!q.sourceUrl)errors.push(`sourceUrl:${id}`);
@@ -43,9 +46,10 @@
       return {name:city.name,slug,count:questions.length,missing:Math.max(0,TARGET_PER_CITY-questions.length),ok:questions.length===TARGET_PER_CITY&&errors.length===0,errors};
     });
     const loadedLayers=EXPECTED_LAYER_IDS.filter(i=>global[`PatriaCityVerified${i}`]?.forCity);
+    const legacyLoaded=typeof global.PatriaCityVerified?.forCity==='function';
     const missingLayers=EXPECTED_LAYER_IDS.filter(i=>!loadedLayers.includes(i));
     const missing=report.filter(r=>r.count!==TARGET_PER_CITY);
-    const result={targetCities:TARGET_CITIES,actualCities:cities.length,targetLayers:TARGET_LAYERS,loadedLayers:loadedLayers.length,missingLayers,targetPerCity:TARGET_PER_CITY,targetTotal:TARGET_TOTAL,totalQuestions:report.reduce((n,r)=>n+r.count,0),missingCities:missing.length,duplicateIds:[...new Set(duplicateIds)],duplicateTexts,explanationsReady:report.every(r=>!r.errors.some(e=>e.startsWith('explanations:'))),report};
+    const result={targetCities:TARGET_CITIES,actualCities:cities.length,targetLayers:TARGET_LAYERS,loadedLayers:loadedLayers.length+(legacyLoaded?1:0),legacyLoaded,missingLayers,targetPerCity:TARGET_PER_CITY,targetTotal:TARGET_TOTAL,totalQuestions:report.reduce((n,r)=>n+r.count,0),missingCities:missing.length,duplicateIds:[...new Set(duplicateIds)],duplicateTexts,explanationsReady:report.every(r=>!r.errors.some(e=>e.startsWith('explanations:'))),report};
     global.PatriaCityQuestionAudit=result;
     return result;
   }
