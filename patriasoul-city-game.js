@@ -17,12 +17,15 @@ function loadLatestVerifiedLayer(){
     if(document.querySelector('script[src="'+src+'"]')){jobs.push(Promise.resolve({i,ok:true}));continue}
     jobs.push(new Promise(resolve=>{const s=document.createElement('script');s.src=src;s.defer=false;s.onload=()=>resolve({i,ok:true});s.onerror=()=>resolve({i,ok:false});document.head.appendChild(s)}));
   }
-  return Promise.all(jobs).then(r=>{const loaded=r.filter(x=>x.ok).map(x=>x.i),missing=r.filter(x=>!x.ok).map(x=>x.i);global.PatriaCityGameLoadStatus={loaded,missing};return{loaded,missing}});
+  return Promise.all(jobs).then(r=>{const loaded=r.filter(x=>x.ok).map(x=>x.i),missing=r.filter(x=>!x.ok).map(x=>x.i);global.PatriaCityGameLoadStatus={loaded,missing,complete:missing.length===0};return{loaded,missing}});
 }
 const ready=loadLatestVerifiedLayer();
+let readyState=false;
+ready.then(()=>{readyState=true;setTimeout(()=>global.PatriaCityQuestionAudit?.run?.(),0)});
+if(typeof document!=='undefined')document.addEventListener('click',e=>{if(!readyState&&e.target.closest?.('.city-btn')){e.preventDefault();e.stopImmediatePropagation()}},true);
 function verifiedLayers(city){const out=[];for(let i=0;i<=127;i++){const layer=global[`PatriaCityVerified${i||''}`];if(layer?.forCity)out.push((layer.forCity(city)||[]).slice(0,75))}return out}
 function verifiedCityPool(city){const key=cityKey(city),cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];const combined=[cityBank,...verifiedLayers(city)].flat();return Array.from(new Map(combined.map(q=>[String(q.id),q])).values()).filter(q=>q&&q.cityId===key&&q.citySource!=='registry-complete')}
-function start(city){const key=cityKey(city),unique=verifiedCityPool(city),target=75;if(unique.length<target)return [];const seed=((Date.now()>>>0)^((key.length*2654435761)>>>0))>>>0;const selected=global.PatriaQuiz.seededShuffle(unique,seed).slice(0,target);const h=history();h[key]=selected.map(q=>String(q.id));saveHistory(h);return selected.map(q=>global.PatriaQuiz.prepare(q))}
+function start(city){const key=cityKey(city),unique=verifiedCityPool(city),target=75;if(!readyState||unique.length<target)return [];const seed=((Date.now()>>>0)^((key.length*2654435761)>>>0))>>>0;const selected=global.PatriaQuiz.seededShuffle(unique,seed).slice(0,target);const h=history();h[key]=selected.map(q=>String(q.id));saveHistory(h);return selected.map(q=>global.PatriaQuiz.prepare(q))}
 function finish(city,score,correct,total){const p=global.PatriaPlayer.current(),answers=Math.max(0,Number(total)||75),result={id:crypto.randomUUID?.()||Date.now()+'',city,score:Math.max(0,score|0),correct:Math.max(0,correct|0),answers,name:p.name||'Gost',date:new Date().toISOString(),period:'daily'};save(read().concat(result));global.PatriaPlayer.addCityScore(city,result.score);global.PatriaPlayer.recordResult({category:'brani-svoj-grad',points:result.score,xp:result.score,correct:result.correct,answers,city,period:'daily',id:result.id});const m=missions();m.played++;m.points+=result.score;if(result.correct===answers)m.perfect++;saveMissions(m);global.PatriaBadges?.evaluate(global.PatriaPlayer.current());return{...result,missions:{played:m.played,perfect:m.perfect,points:m.points,completed:[m.played>=1?'prvi-izazov':null,m.perfect>=1?'bezgresni-branitelj':null,m.points>=1000?'cuvar-grada':null].filter(Boolean)}}}
 function cityRows(city){return read().filter(r=>!city||r.city===city).sort((a,b)=>b.score-a.score)}
 global.PatriaCityGame={start,finish,results:read,cityRows,missions,questionCount:city=>verifiedCityPool(city).length,ready};
