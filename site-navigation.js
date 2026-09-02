@@ -30,32 +30,9 @@ function makeGroup(g){var wrap=document.createElement('div');wrap.className='ps-
 function ensureShell(){var header=document.querySelector('.ps-header');if(!header){header=document.createElement('header');header.className='ps-header';var c=document.createElement('div');c.className='container ps-nav';header.appendChild(c);var first=document.body.firstElementChild;document.body.insertBefore(header,first||null);}var c=header.querySelector('.ps-nav');if(!c){c=document.createElement('div');c.className='container ps-nav';while(header.firstChild)c.appendChild(header.firstChild);header.appendChild(c);}var nav=c.querySelector('.ps-mainnav');if(!nav){nav=document.createElement('nav');nav.className='ps-mainnav';nav.setAttribute('aria-label','Glavna navigacija');c.appendChild(nav);}var b=c.querySelector('[data-ps-menu]');if(!b){b=document.createElement('button');b.className='ps-menu';b.type='button';b.setAttribute('data-ps-menu','');b.setAttribute('aria-label','Otvori izbornik');b.setAttribute('aria-controls','ps-mainnav');b.setAttribute('aria-expanded','false');b.textContent='☰';c.appendChild(b);}}
 function normalizeBrand(){var brand=document.querySelector('.ps-brand');if(!brand)return;brand.innerHTML='<img class="ps-nav-logo" src="/images/file_0000000082ec81f4a6fc17bdbd959622_114540.png" alt="PatriaSoul" width="256" height="256"><span class="sr-only">PatriaSoul</span>';brand.setAttribute('aria-label','PatriaSoul početna');brand.title='PatriaSoul';}
 function loadLogoStyles(){if(document.getElementById('ps-logo-navigation-css'))return;var l=document.createElement('link');l.id='ps-logo-navigation-css';l.rel='stylesheet';l.href='/logo-navigation.css';document.head.appendChild(l);}
-function loadEditorialMedia(){if(document.getElementById('ps-editorial-media-js'))return;var s=document.createElement('script');s.id='ps-editorial-media-js';s.src='/editorial-media.js';s.defer=false;document.head.appendChild(s);}
-function removeTemporaryIllustrationLabels(root){
- var scope=root||document.body;
- if(!scope)return;
- var walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,null,false),nodes=[],n;
- while(n=walker.nextNode())nodes.push(n);
- nodes.forEach(function(node){
-   var value=node.nodeValue;
-   if(!value||value.indexOf('privremena ilustracija')===-1)return;
-   node.nodeValue=value.replace(/\s*·\s*privremena ilustracija/gi,'').replace(/privremena ilustracija/gi,'').replace(/\s{2,}/g,' ');
- });
-}
-function watchTemporaryIllustrationLabels(){
- removeTemporaryIllustrationLabels(document.body);
- if(window.MutationObserver&&!document.body.__psTemporaryLabelObserver){
-   var observer=new MutationObserver(function(mutations){
-     mutations.forEach(function(m){
-       if(m.addedNodes&&m.addedNodes.length)m.addedNodes.forEach(function(node){
-         if(node.nodeType===1||node.nodeType===3)removeTemporaryIllustrationLabels(node.nodeType===1?node:null);
-       });
-     });
-   });
-   observer.observe(document.body,{childList:true,subtree:true});
-   document.body.__psTemporaryLabelObserver=observer;
- }
-}
+function loadEditorialMedia(){if(document.getElementById('ps-editorial-media-js'))return;var s=document.createElement('script');s.id='ps-editorial-media-js';s.src='/editorial-media.js?v=placeholder-cleanup-3';s.defer=false;document.head.appendChild(s);}
+function removeTemporaryIllustrationLabels(root){var scope=root||document.body;if(!scope)return;var walker=document.createTreeWalker(scope,NodeFilter.SHOW_TEXT,null,false),nodes=[],n;while(n=walker.nextNode())nodes.push(n);nodes.forEach(function(node){var value=node.nodeValue;if(!value||value.toLowerCase().indexOf('privremena ilustracija')===-1)return;node.nodeValue=value.replace(/\s*·\s*privremena ilustracija/gi,'').replace(/privremena ilustracija/gi,'').replace(/\s{2,}/g,' ');});}
+function watchTemporaryIllustrationLabels(){removeTemporaryIllustrationLabels(document.body);if(window.MutationObserver&&!document.body.__psTemporaryLabelObserver){var observer=new MutationObserver(function(mutations){mutations.forEach(function(m){if(m.addedNodes&&m.addedNodes.length)m.addedNodes.forEach(function(node){if(node.nodeType===1||node.nodeType===3)removeTemporaryIllustrationLabels(node.nodeType===1?node:null);});});});observer.observe(document.body,{childList:true,subtree:true});document.body.__psTemporaryLabelObserver=observer;}}
 function render(){ensureShell();var nav=document.querySelector('.ps-mainnav');if(!nav)return;nav.innerHTML='';nav.id='ps-mainnav';nav.setAttribute('data-ps-canonical-nav','true');groups.forEach(function(g){nav.appendChild((g.children||g.mega)?makeGroup(g):makeLink(g));});var quiz=makeLink({label:'🧠 Kviz',href:'/quiz.html'});quiz.className='ps-nav-cta';nav.appendChild(quiz);var defend=document.querySelector('.ps-nav-defend');if(!defend){defend=document.createElement('a');defend.className='ps-nav-defend';defend.href='/brani-svoj-grad.html';defend.textContent='🛡️ Brani svoj grad';defend.setAttribute('aria-label','Brani svoj grad');nav.parentNode.appendChild(defend);}normalizeBrand();loadLogoStyles();loadEditorialMedia();watchTemporaryIllustrationLabels();}
 function normalizeFooter(){var footer=document.querySelector('footer');if(!footer)return;footer.classList.add('ps-footer');footer.innerHTML='<div class="container"><div class="ps-footer-grid"><div><a class="ps-footer-brand" href="/index.html" aria-label="PatriaSoul početna"><img src="/images/file_0000000082ec81f4a6fc17bdbd959622_114540.png" alt="PatriaSoul" width="256" height="256"></a><p>Hrvatska. Povijest. Znanje. Identitet. Digitalni prostor za čuvanje nasljeđa i njegovo prenošenje novim generacijama.</p></div><div><h4>Domovina</h4><div class="ps-footer-links"><a href="/domovina.html">Hrvatska</a><a href="/gradovi.html">Gradovi</a><a href="/krajevi-i-geografija.html">Krajevi i geografija</a><a href="/vijesti.html">Vijesti</a><a href="/vrijeme.html">Vrijeme</a></div></div><div><h4>Branitelji</h4><div class="ps-footer-links"><a href="/branitelji.html">Branitelji</a><a href="/domovinski-rat.html">Domovinski rat</a><a href="/postrojbe.html">Postrojbe</a><a href="/brigade.html">Brigade</a><a href="/operacije.html">Operacije i bojišta</a><a href="/vukovar.html">Vukovar</a><a href="/spomenici.html">Spomenici</a></div></div><div><h4>Zajednica</h4><div class="ps-footer-links"><a href="/povijest.html">Povijest</a><a href="/bastina.html">Baština</a><a href="/vjera.html">Vjera</a><a href="/video.html">Video</a><a href="/galerija.html">Galerija</a><a href="/quiz.html">Kviz</a><a href="/duel.html">Duel</a><a href="/profil.html">Profil</a><a href="/o-nama.html">O nama</a><a href="/kontakt.html">Kontakt</a></div></div></div><div class="ps-footer-bottom"><span>© 2026 PatriaSoul</span><span>Čuvaj nasljeđe. Prenesi ga dalje.</span></div></div>';}
 function loadVjeraSubpage(){var map={'/evandelje.html':'evandelje','/molitve.html':'molitve','/krunica.html':'krunica','/blagdani.html':'blagdani','/biblija.html':'biblija'};var key=map[location.pathname];if(!key)return;document.body.dataset.vjeraPage=key;var s=document.createElement('script');s.src='/vjera-podstranica.js';s.defer=true;document.head.appendChild(s);}
