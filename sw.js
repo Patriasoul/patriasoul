@@ -1,7 +1,7 @@
 // PatriaSoul — PWA cache layer.
 // Network-first: the live site always wins; cache is only a fallback when offline.
-// v10 adds the third verified city-question extension for Brani svoj grad.
-const CACHE = 'patriasoul-shell-v10';
+// v11 keeps the third verified city-question extension fresh for Brani svoj grad.
+const CACHE = 'patriasoul-shell-v11';
 const SHELL = ['/', '/index.html', '/404.html', '/manifest.json', '/patriasoul-global.css', '/patriasoul-modern.css', '/style.css', '/responsive.css', '/site-navigation.js', '/logo-navigation.css', '/pwa.js', '/gradovi.html', '/gradovi.js', '/grad.html', '/quiz.html', '/quiz.js', '/quiz.css', '/brani-svoj-grad.html', '/patriasoul-city-questions.js', '/patriasoul-city-questions-verified.js', '/patriasoul-city-questions-verified-2.js', '/patriasoul-city-questions-verified-3.js', '/patriasoul-city-game.js', '/patriasoul-profile.js', '/levels.js', '/badges.js', '/leaderboard.js', '/brigade.html', '/brigade.js', '/domovina.html', '/povijest.html', '/bastina.html', '/branitelji.html', '/domovinski-rat.html', '/postrojbe.html', '/operacije.html', '/vukovar.html', '/spomenici.html', '/vjera.html', '/vijesti.html', '/video.html', '/galerija.html', '/rang-lista.html', '/profil.html', '/krajevi-i-geografija.html', '/dalmacija.html', '/istra.html', '/kvarner-i-primorje.html', '/lika-i-gorski-kotar.html', '/zagorje-i-prigorje.html', '/slavonija-i-baranja.html', '/posavina-i-pokuplje.html', '/podravina-i-bilogora.html', '/medimurje.html'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL).catch(() => undefined)).then(() => self.skipWaiting())));
 self.addEventListener('activate', event => event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE).map(key => caches.delete(key)))).then(() => self.clients.claim())));
