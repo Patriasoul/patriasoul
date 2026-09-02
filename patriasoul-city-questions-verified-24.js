@@ -4,7 +4,7 @@
   const extra={
     'pazin':[
       ['Koje se godine Pazin prvi put spominje kao Castrum Pisinum?',['983.','804.','1150.','1242.']],
-      ['Koji je poznati prirodni fenomen neposredno povezan s povijesnom jezgrom Pazina?',['Pazinska jama','Limски kanal','Limska draga','Raški zaljev']],
+      ['Koji je poznati prirodni fenomen neposredno povezan s povijesnom jezgrom Pazina?',['Pazinska jama','Limski kanal','Limska draga','Raški zaljev']],
       ['Koje je godine u Pazinu osnovana Velika državna gimnazija s nastavom na hrvatskom jeziku?',['1899.','1876.','1905.','1912.']],
       ['Koje su povijesne odluke donesene u Pazinu u rujnu 1943. posebno važne za Istru?',['Odluke o sjedinjenju Istre s domovinom Hrvatskom','Odluke o osnivanju Pazinske grofovije','Odluke o osnivanju Mletačke Republike','Odluke o ukidanju Pazinske grofovije']]
     ],
