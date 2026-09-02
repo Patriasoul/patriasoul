@@ -1,24 +1,20 @@
 from pathlib import Path
-import hashlib
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
 CSS = '<link rel="stylesheet" href="/patriasoul-global.css">'
 JS = '<script src="/site-navigation.js?v=placeholder-cleanup-2" defer></script>'
-hero_path = ROOT / 'page-hero.js'
-hero_version = hashlib.sha256(hero_path.read_bytes()).hexdigest()[:12] if hero_path.exists() else '1'
-HERO_JS = f'<script src="/page-hero.js?v={hero_version}" defer></script>'
 changed = []
 
 for path in ROOT.rglob('*.html'):
     if any(part in {'.git','node_modules'} for part in path.parts):
         continue
     text = path.read_text(encoding='utf-8')
-    lower = text.lower()
     original = text
 
-    # Keep the global hero script cache-busted whenever page-hero.js changes.
-    text = re.sub(r'/page-hero\.js(?:\?[^"\']*)?', f'/page-hero.js?v={hero_version}', text)
+    # Remove the obsolete page-hero renderer from every HTML page.
+    # Hero markup and styling now live in the page itself + patriasoul-global.css.
+    text = re.sub(r'<script\s+src=["\']/page-hero\.js(?:\?[^"\']*)?["\']\s+defer\s*></script>', '', text, flags=re.IGNORECASE)
 
     # Remove the old placeholder badge everywhere in static HTML.
     text = re.sub(r'\s*[·•]\s*privremena ilustracija\b', '', text, flags=re.IGNORECASE)
@@ -32,13 +28,10 @@ for path in ROOT.rglob('*.html'):
         additions.append(CSS)
     if '/site-navigation.js' not in text:
         additions.append(JS)
-    if '/page-hero.js' not in text:
-        additions.append(HERO_JS)
     if additions:
-        pos = lower.find('</head>')
+        pos = text.lower().find('</head>')
         if pos >= 0:
-            updated = text[:pos] + '\n'.join(additions) + '\n' + text[pos:]
-            text = updated
+            text = text[:pos] + '\n'.join(additions) + '\n' + text[pos:]
 
     if text == original:
         continue
@@ -46,6 +39,6 @@ for path in ROOT.rglob('*.html'):
     changed.append(str(path.relative_to(ROOT)))
 
 print(f'Updated PatriaSoul shell assets in {len(changed)} HTML files.')
-print(f'page-hero.js cache version: {hero_version}')
+print('page-hero.js references removed; hero styling remains in patriasoul-global.css.')
 for item in changed:
     print(item)
