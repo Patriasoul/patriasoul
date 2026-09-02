@@ -1,45 +1,4 @@
 {
-  "updatedAt": "2026-09-02T00:00:00+02:00",
-  "items": [
-    {
-      "id": "vlada-2026-09-01-mostar",
-      "title": "Predsjednik Vlade Plenković u Mostaru",
-      "date": "2026-09-01",
-      "source": "Vlada Republike Hrvatske",
-      "category": "domovina",
-      "url": "https://www.vlada.gov.hr/vijesti/8"
-    },
-    {
-      "id": "poljoprivreda-2026-09-01-medni-dan",
-      "title": "Poziv osnivačima: Prijavite škole za Program Školski medni dan s hrvatskih pčelinjaka",
-      "date": "2026-09-01",
-      "source": "Ministarstvo poljoprivrede, šumarstva i ribarstva",
-      "category": "domovina",
-      "url": "https://poljoprivreda.gov.hr/vijesti/8"
-    },
-    {
-      "id": "mup-2026-08-28-policija",
-      "title": "Hrabrost, ponos, čast – Postani policajac/policajka!",
-      "date": "2026-08-28",
-      "source": "Ministarstvo unutarnjih poslova Republike Hrvatske",
-      "category": "sigurnost",
-      "url": "https://mup.gov.hr/vijesti/8"
-    },
-    {
-      "id": "morh-2026-08-29-danuvina",
-      "title": "Zahvaljujući Hrvatskoj vojsci replika rimskog broda spašena i vraćena u Njemačku",
-      "date": "2026-08-29",
-      "source": "Ministarstvo obrane Republike Hrvatske",
-      "category": "obrana",
-      "url": "https://morh.gov.hr/vijesti/8"
-    },
-    {
-      "id": "mzom-2026-09-01-ihra",
-      "title": "IHRA Grant 2026 za projekte istraživanja Holokausta i stradavanja Roma",
-      "date": "2026-09-01",
-      "source": "Ministarstvo znanosti, obrazovanja i mladih",
-      "category": "obrazovanje",
-      "url": "https://mzom.gov.hr/?tip2=10"
-    }
-  ]
+  "updatedAt": "2026-09-02T07:39:27.689517+00:00",
+  "items": []
 }
