@@ -8,7 +8,7 @@
     const slug=key(city.slug||city.name), layers=[];
     const base=global.PatriaCityQuestions?.forCity?.(city.name)||[];
     layers.push(...base);
-    for(let i=0;i<=35;i++){
+    for(let i=0;i<=36;i++){
       const api=global[`PatriaCityVerified${i||''}`];
       if(api?.forCity)layers.push(...api.forCity(city.name));
     }
@@ -25,7 +25,8 @@
         if(!id)errors.push('missing-id');
         if(ids.has(id))duplicateIds.push(id); else ids.add(id);
         if(q.cityId!==slug)errors.push(`cityId:${q.cityId||'missing'}`);
-        if(!Array.isArray(q.answers)||q.answers.length!==4)errors.push(`answers:${id}`);
+        const answers=Array.isArray(q.answers)?q.answers:q.options;
+        if(!Array.isArray(answers)||answers.length!==4)errors.push(`answers:${id}`);
         if(Number.isInteger(q.correctIndex)===false||q.correctIndex<0||q.correctIndex>3)errors.push(`correctIndex:${id}`);
         if(!q.sourceUrl)errors.push(`sourceUrl:${id}`);
         const text=String(q.question||'').trim().toLocaleLowerCase('hr-HR');
