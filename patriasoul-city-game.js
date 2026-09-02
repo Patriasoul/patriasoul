@@ -7,9 +7,9 @@ function missions(){try{return JSON.parse(localStorage.getItem(MISSION_KEY)||'{"
 function saveMissions(m){localStorage.setItem(MISSION_KEY,JSON.stringify(m));return m}
 function start(city){
   const seed=[...String(city)].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,17);
-  const layers=['PatriaCityVerified','PatriaCityVerified2','PatriaCityVerified3','PatriaCityVerified4','PatriaCityVerified5','PatriaCityVerified6','PatriaCityVerified7','PatriaCityVerified8','PatriaCityVerified9','PatriaCityVerified10','PatriaCityVerified11'];
+  const layers=Array.from({length:13},(_,i)=>global[`PatriaCityVerified${i||''}`]?.forCity?.(city)||[]);
   const cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];
-  const combined=[...cityBank,...layers.flatMap(k=>global[k]?.forCity?.(city)||[])];
+  const combined=[cityBank,...layers].flat();
   const unique=Array.from(new Map(combined.map(q=>[String(q.id),q])).values());
   const pool=unique.length>=5?unique:unique.concat(global.PatriaQuiz.bank().filter(q=>q&&!q.cityId));
   return global.PatriaQuiz.seededShuffle(pool,seed).slice(0,5).map(q=>global.PatriaQuiz.prepare(q));
