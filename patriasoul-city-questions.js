@@ -25,7 +25,7 @@
       add({id:`city_${c.slug}_identity_001`,cityId:c.slug,citySource:'city-registry',category:'gradovi',question:`Koji od navedenih gradova pripada ${c.county}?`,answers:[c.name,...distractors],correctIndex:0});
     }
   });
-  // Provjerene činjenice: Ministarstvo kulture i medija RH + UNESCO.
+  // Provjerene činjenice: službeni gradski izvori + UNESCO.
   const verified={
     split:[
       ['Koji je rimski car početkom 4. stoljeća sagradio palaču iz koje je izrastao današnji Split?',['Dioklecijan','Konstantin Veliki','Trajan','Hadrijan']],
@@ -62,9 +62,63 @@
       ['Koje je razdoblje obuhvaćeno UNESCO-ovim nazivom venecijanskih obrambenih sustava u Zadru i Šibeniku?',['16. i 17. stoljeće','12. i 13. stoljeće','18. i 19. stoljeće','20. stoljeće']],
       ['S kojim je drugim hrvatskim gradom Zadar naveden u UNESCO-ovom dobru venecijanskih obrambenih sustava?',['Šibenikom','Dubrovnikom','Splitom','Porečom']],
       ['Koja organizacija je upisala venecijanske obrambene sustave u Zadar i Šibenik na Popis svjetske baštine?',['UNESCO','NATO','Vijeće Europe','Interpol']]
+    ],
+    zagreb:[
+      ['Na koja su se dva povijesna brežuljka razvile najstarije jezgre današnjeg Zagreba?',['Kaptol i Gradec','Medvedgrad i Maksimir','Grič i Medvednica','Sava i Kupa']],
+      ['Koje je godine Gradec proglašen slobodnim i kraljevskim gradom?',['1242.','1094.','1217.','1334.']],
+      ['Koji je kralj Gradecu dodijelio Zlatnu bulu 1242. godine?',['Bela IV.','Ladislav I.','Krešimir I.','Zvonimir']],
+      ['Koje je zagrebačko područje bilo biskupsko središte?',['Kaptol','Gradec','Trnje','Maksimir']]
+    ],
+    rijeka:[
+      ['Kako se zvalo rimsko naselje na području današnjeg riječkog Starog grada?',['Tarsatica','Salona','Mursa','Siscia']],
+      ['Koja rijeka protječe kroz Rijeku i ulijeva se u Riječki zaljev?',['Rječina','Kupa','Korana','Dobra']],
+      ['Kako se zove povijesni dio Rijeke na brijegu iznad kanjona Rječine?',['Trsat','Kastav','Sušak','Bakar']],
+      ['Koje je godine Rijeka proglašena slobodnom lukom za vrijeme cara Karla VI.?',['1719.','1660.','1815.','1868.']]
+    ],
+    pula:[
+      ['Koji je rimski spomenik najpoznatija znamenitost Pule?',['Arena','Dioklecijanova palača','Eufrazijeva bazilika','Tvrđava sv. Mihovila']],
+      ['Koja je rimska građevina u Puli poznata i kao Amfiteatar?',['Arena','Augustov hram','Slavoluk Sergijevaca','Rimsko kazalište']],
+      ['Koji je događaj 1856. označio početak snažnog modernog razvoja Pule?',['Otvorenje Arsenala, glavne baze austrijske ratne mornarice','Otvorenje sveučilišta','Izgradnja prve autoceste','Osnivanje filmskog festivala']],
+      ['S kojom je državom Pula bila povezana kao dio austrijskog Primorja od 1815. do kraja Prvog svjetskog rata?',['Austrijom','Francuskom','Italijom','Ugarskom']]
+    ],
+    osijek:[
+      ['Koji je povijesni dio Osijeka poznat kao barokna urbana i vojna jezgra?',['Tvrđa','Gornji grad','Donji grad','Retfala']],
+      ['Uz koju se rijeku nalazi osječka Tvrđa?',['Dravu','Savu','Dunav','Kupu']],
+      ['Od koje do koje godine austrijske su vlasti planski gradile osječku Tvrđu?',['1712.–1722.','1699.–1705.','1800.–1810.','1848.–1856.']],
+      ['Koja je ustanova u Tvrđi otvorena 1729. godine?',['Gimnazija','Sveučilište','Kazalište','Muzej']]
+    ],
+    varazdin:[
+      ['Koja je najvažnija povijesna građevina Varaždina?',['Stari grad','Katedrala sv. Jakova','Kninska tvrđava','Arena']],
+      ['Kakvu je ulogu imao varaždinski Stari grad?',['Sjedište feudalne uprave i utvrda','Rimski amfiteatar','Pomorska luka','Industrijski kompleks']],
+      ['Koji je dio obrambenog sustava Stari grad Varaždin imao za vrijeme ratova s Osmanlijama?',['Kulu stražarnicu','Morsku tvrđavu','Luku galija','Rimski limes']],
+      ['Koji su graditelji i vlasnici među ostalima boravili u varaždinskom Starom gradu?',['Celjski, Vitovci, Korvini, Brandenburg i Ungnad','Frankopani, Zrinski i Šubići','Brlići i Mažuranići','Rimljani i Liburni']]
+    ],
+    knin:[
+      ['Na kojem se brdu nalazi Kninska tvrđava?',['Spas','Medvednica','Marjan','Srđ']],
+      ['Koje se godine Knin spominje u djelu Konstantina Porfirogeneta?',['950.','879.','1074.','1242.']],
+      ['Koji je hrvatski vladar prema službenom opisu Kninske tvrđave učvrstio Knin kao stalnu prijestolnicu?',['Zvonimir','Tomislav','Krešimir I.','Petar Krešimir IV.']],
+      ['Kako se zvala tvrđava koja je prethodila kasnijem tvrđavskom kompleksu Knina?',['castro Tnin','Tarsatica','Andautonia','Mursa']]
     ]
   };
-  const urls={split:'https://min-kulture.gov.hr/kulturna-bastina/vrste-kulturne-bastine/nepokretna-kulturna-bastina/nepokretna-kulturna-dobra-upisana-na-unesco-ovu-listu-svjetske-bastine/1-povijesni-kompleks-splita-i-dioklecijanova-palaca/7250',dubrovnik:'https://min-kulture.gov.hr/unesco-16291/programska-podrucja-16482/kultura-4786/4786',porec:'https://min-kulture.gov.hr/unesco-16291/programska-podrucja-16482/kultura-4786/4786',trogir:'https://whc.unesco.org/en/list/810/',sibenik:'https://min-kulture.gov.hr/izdvojeno/kulturna-bastina/nepokretna-kulturna-bastina/nepokretna-kulturna-dobra-upisana-na-unesco-ovu-listu-svjetske-bastine/7244',zadar:'https://min-kulture.gov.hr/izdvojeno/kulturna-bastina/nepokretna-kulturna-bastina/nepokretna-kulturna-dobra-upisana-na-unesco-ovu-listu-svjetske-bastine/7244'};
+  const urls={
+    split:'https://whc.unesco.org/en/list/97/',
+    dubrovnik:'https://whc.unesco.org/en/list/95/',
+    porec:'https://whc.unesco.org/en/list/809/',
+    trogir:'https://whc.unesco.org/en/list/810/',
+    sibenik:'https://whc.unesco.org/en/list/963/',
+    zadar:'https://whc.unesco.org/en/list/1533/',
+    zagreb:'https://aktivnosti.zagreb.hr/gradske-cetvrti-19/gornji-grad-medvescak/iz-povijesti-13432/13432',
+    rijeka:'https://www.rijeka.hr/gradska-uprava/povijest-rijeke/',
+    pula:'https://www.pula.hr/hr/o-puli-pola/povijest-pule/',
+    osijek:'https://www.osijek.hr/kultura/tvrda/',
+    varazdin:'https://varazdin.hr/varazdin-kroz-povijest/',
+    knin:'https://knin.hr/kninska-tvrdava/'
+  };
   Object.entries(verified).forEach(([slug,items])=>{if(!bySlug[slug])return;items.forEach((f,i)=>add({id:`city_${slug}_verified_${String(i+1).padStart(3,'0')}`,cityId:slug,citySource:'verified-fact',category:'gradovi',question:f[0],answers:f[1],correctIndex:0,sourceUrl:urls[slug]}))});
-  global.PatriaCityQuestions={all:()=>out.slice(),forCity:city=>{const c=cities.find(x=>x.name===city||x.slug===city);return c?out.filter(q=>q.cityId===c.slug):[]},city:city=>bySlug[city]||cities.find(c=>c.name===city)||null,stats:()=>({cities:cities.length,questions:out.length,withCityId:out.filter(q=>q.cityId).length,explicit:out.filter(q=>q.citySource==='explicit-text').length,registry:out.filter(q=>q.citySource==='city-registry').length,verified:out.filter(q=>q.citySource==='verified-fact').length})};
+  global.PatriaCityQuestions={
+    all:()=>out.slice(),
+    forCity:city=>{const c=cities.find(x=>x.name===city||x.slug===city);return c?out.filter(q=>q.cityId===c.slug):[]},
+    city:city=>bySlug[city]||cities.find(c=>c.name===city)||null,
+    stats:()=>({cities:cities.length,questions:out.length,withCityId:out.filter(q=>q.cityId).length,explicit:out.filter(q=>q.citySource==='explicit-text').length,registry:out.filter(q=>q.citySource==='city-registry').length,verified:out.filter(q=>q.citySource==='verified-fact').length})
+  };
 })(typeof window!=='undefined'?window:globalThis);
