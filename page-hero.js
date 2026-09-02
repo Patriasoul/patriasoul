@@ -13,7 +13,7 @@ var images={
 '/operacije.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar%20Water%20Tower.jpg',
 '/vukovar.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar%20Water%20Tower.jpg',
 '/spomenici.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar%20water%20tower.jpg',
-'/povijest.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Pula%20Arena%20Amfiteatar.jpg',
+'/povijest.html':'/images/povijest.jfif',
 '/bastina.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C5%A1ka%20tablet.jpg',
 '/gastronomija.html':fallback,
 '/govori-i-dijalekti.html':fallback,
