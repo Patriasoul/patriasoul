@@ -14,7 +14,7 @@ var images={
 '/vukovar.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar%20Water%20Tower.jpg',
 '/spomenici.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar%20water%20tower.jpg',
 '/povijest.html':'/images/povijest.jfif',
-'/bastina.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Ba%C5%A1ka%20tablet.jpg',
+'/bastina.html':'/images/Bastina.jfif',
 '/gastronomija.html':fallback,
 '/govori-i-dijalekti.html':fallback,
 '/vjera.html':'https://commons.wikimedia.org/wiki/Special:FilePath/Katedrala%20%28Zagreb%29.jpg',
