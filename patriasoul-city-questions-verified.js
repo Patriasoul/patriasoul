@@ -62,6 +62,42 @@
       ['Koje se godine Čakovec prvi put izrijekom spominje kao utvrđeni grad?',['1333.','1227.','1356.','1579.']],
       ['Koja je plemićka obitelj posebno obilježila povijest Čakovca u 16. i 17. stoljeću?',['Zrinski','Šubići','Frankopani','Kačići']],
       ['Kako se zove najvrjednije nepokretno kulturno dobro Međimurja u središtu Čakovca?',['Stari grad Čakovec','Tvrđava sv. Mihovila','Kamerlengo','Mirabela']]
+    ],
+    sisak:[
+      ['Kako se zvao rimski grad na području današnjeg Siska?',['Siscia','Cibalae','Salona','Tarsatica']],
+      ['Koji je rimski car povezan s konačnim osvajanjem Segestike 35. godine pr. Kr.?',['Oktavijan','Dioklecijan','Trajan','Hadrijan']],
+      ['Koji je sisački biskup poznat kao ranokršćanski mučenik i zaštitnik grada?',['Kvirin','Duje','Eufrazije','Donat']],
+      ['Koje je godine Sisak dobio povelju slobodnog trgovišta od Zagrebačkog kaptola?',['1838.','1756.','1242.','1918.']]
+    ],
+    pozega:[
+      ['Kako su Rimljani nazivali plodnu dolinu u kojoj se nalazi Požega?',['Vallis aurea','Campus Martius','Ager Romanus','Valle Adriatica']],
+      ['Koje se godine u dokumentima spominje Castrum de Posege?',['1227.','1210.','1356.','1537.']],
+      ['Tko je 1688. predvodio oslobođenje Požege od Osmanlija?',['fra Luka Ibrišimović Sokol','Nikola Šubić Zrinski','Petar Zrinski','Matija Gubec']],
+      ['Koje je godine Požega dobila povelju slobodnog kraljevskog grada od Marije Terezije?',['1765.','1688.','1745.','1847.']]
+    ],
+    virovitica:[
+      ['Koje je godine Virovitica dobila srednjovjekovnu povelju sloboda?',['1234.','1242.','1356.','1579.']],
+      ['Tko je izdao povelju Virovitici 1234. godine?',['Slavonski herceg Koloman','Bela IV.','Ludovik I.','Matija Korvin']],
+      ['Koji je kralj 1242. u Virovitici izdao Zlatnu bulu kojom je Zagreb dobio status slobodnog i kraljevskog grada?',['Bela IV.','Andrija II.','Karlo Robert','Ladislav IV.']],
+      ['Kako se danas zove potok po kojem je prema službenoj povijesti najvjerojatnije nastao naziv Virovitica?',['Ođenica','Verevča','Ilova','Bednja']]
+    ],
+    krapina:[
+      ['Koje se godine Krapina prvi put spominje u pisanom povijesnom izvoru?',['1193.','1225.','1347.','1469.']],
+      ['Na kojem je nalazištu Dragutin Gorjanović Kramberger otkrio ostatke krapinskog pračovjeka?',['Hušnjakovo brdo','Trakošćan','Medvedgrad','Lobor']],
+      ['Koje je godine Ludovik I. Anžuvinac proglasio Krapinu slobodnim kraljevskim trgovištem?',['1347.','1193.','1225.','1418.']],
+      ['Koji je hrvatsko-ugarski kralj boravio u Krapini 2. lipnja 1225.?',['Bela IV.','Ludovik I.','Matija Korvin','Sigismund']]
+    ],
+    gospic:[
+      ['Koje se japodsko pleme povezuje s pretpoviješću prostora Gospića?',['Japodi','Liburni','Histri','Dalmati']],
+      ['Koje se naselje spominje u ispravi iz 1263. na području današnjeg Gospića?',['Kaseg','Cibalae','Muccurum','Andautonia']],
+      ['Uz koju rijeku leži prostor na kojem se razvijalo naselje Kaseg povezano s počecima današnjeg Gospića?',['Liku','Gacku','Kupu','Koranu']],
+      ['Koji se starohrvatski arheološki nalaz spominje među dokazima srednjovjekovne hrvatske prisutnosti u okolici Gospića?',['Ulomci pletera','Brončana kruna','Rimski novac iz Pule','Glagoljski misal']]
+    ],
+    solin:[
+      ['Kako se zvao antički grad na području današnjeg Solina?',['Salona','Cibalae','Oneum','Siscia']],
+      ['Koje je godine Salona prvi put spomenuta u povijesnom izvoru?',['119. pr. Kr.','35. pr. Kr.','305.','614.']],
+      ['Koji je rimski car prema službenoj povijesti Solina rođen u Saloni ili njezinoj okolici?',['Dioklecijan','Trajan','Hadrijan','Konstantin']],
+      ['Oko koje su godine Avari i Slaveni razorili Salonu?',['614.','476.','568.','879.']]
     ]
   };
   const urls={
@@ -74,7 +110,13 @@
     vinkovci:'https://grad-vinkovci.hr/povijest-grada',
     bjelovar:'https://visitbjelovar.hr/sto-mogu-vidjeti/bjelovar-opcenito/povijest-grada/',
     koprivnica:'https://koprivnica.hr/koprivnica/povijest-grada/',
-    cakovec:'https://mmc.hr/starigrad_hr.html'
+    cakovec:'https://www.cakovec.hr/o-gradu-cakovcu/',
+    sisak:'https://sisak.hr/o-gradu/',
+    pozega:'https://pozega.hr/o-pozegi/povijest-pozege',
+    virovitica:'https://www.virovitica.hr/povijest-grada-virovitice/',
+    krapina:'https://krapina.hr/povijest-grada/',
+    gospic:'https://gospic.hr/povijest/',
+    solin:'https://www.solin.hr/povijest/salona/'
   };
   const normalizeCity=s=>String(s).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const all=[];
