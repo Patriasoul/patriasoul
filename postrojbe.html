@@ -11,7 +11,7 @@
 <main><section class="ps-page-hero"><div class="container"><p>BRANITELJI · HRVATSKA VOJSKA · MUP</p><h1>Postrojbe</h1><p>Pregled postrojbi hrvatskih obrambenih snaga, strukturiran iz središnjeg registra PatriaSoula.</p></div></section>
 <section class="container" style="padding:38px 0 70px"><div class="toolbar"><input id="search" type="search" placeholder="Pretraži postrojbe, nadimak, vrstu ili oznaku…" aria-label="Pretraži postrojbe"><span id="count" class="registry-meta"></span></div><div id="list" class="registry"></div></section></main>
 <footer class="ps-footer"><div class="container"><p>PatriaSoul · Znanje, sjećanje i identitet.</p></div></footer>
-<script src="/site-navigation.js"></script><script type="module">
+<script src="/site-navigation.js?v=placeholder-cleanup-2"></script><script type="module">
 import {postrojbe} from '/postrojbe.js';
 const list=document.getElementById('list'),search=document.getElementById('search'),count=document.getElementById('count');
 function render(){const q=search.value.trim().toLowerCase();const rows=postrojbe.filter(x=>JSON.stringify(x).toLowerCase().includes(q));count.textContent=rows.length+' postrojbi';list.innerHTML=rows.map(x=>`<article class="registry-card ps-card"><h2>${x.naziv}</h2><div class="registry-meta">${x.nadimak?x.nadimak+' · ':''}${x.vrsta||''}${x.godinaUstrojavanja?' · od '+x.godinaUstrojavanja:''}</div><p>${x.znacaj||''}</p><div class="tags">${(x.oznake||[]).slice(0,5).map(t=>`<span class="tag">${t}</span>`).join('')}</div></article>`).join('')||'<div class="empty">Nema rezultata.</div>';}
