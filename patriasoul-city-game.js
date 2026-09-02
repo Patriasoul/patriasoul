@@ -7,29 +7,17 @@ function missions(){try{return JSON.parse(localStorage.getItem(MISSION_KEY)||'{"
 function saveMissions(m){localStorage.setItem(MISSION_KEY,JSON.stringify(m));return m}
 function start(city){
   const seed=[...String(city)].reduce((a,c)=>(a*31+c.charCodeAt(0))>>>0,17);
+  const layers=['PatriaCityVerified','PatriaCityVerified2','PatriaCityVerified3','PatriaCityVerified4','PatriaCityVerified5','PatriaCityVerified6','PatriaCityVerified7','PatriaCityVerified8','PatriaCityVerified9','PatriaCityVerified10','PatriaCityVerified11'];
   const cityBank=global.PatriaCityQuestions?.forCity?.(city)||[];
-  const verified=global.PatriaCityVerified?.forCity?.(city)||[];
-  const verified2=global.PatriaCityVerified2?.forCity?.(city)||[];
-  const verified3=global.PatriaCityVerified3?.forCity?.(city)||[];
-  const verified4=global.PatriaCityVerified4?.forCity?.(city)||[];
-  const verified5=global.PatriaCityVerified5?.forCity?.(city)||[];
-  const verified6=global.PatriaCityVerified6?.forCity?.(city)||[];
-  const verified7=global.PatriaCityVerified7?.forCity?.(city)||[];
-  const verified8=global.PatriaCityVerified8?.forCity?.(city)||[];
-  const verified9=global.PatriaCityVerified9?.forCity?.(city)||[];
-  const verified10=global.PatriaCityVerified10?.forCity?.(city)||[];
-  const combined=[...cityBank,...verified,...verified2,...verified3,...verified4,...verified5,...verified6,...verified7,...verified8,...verified9,...verified10];
+  const combined=[...cityBank,...layers.flatMap(k=>global[k]?.forCity?.(city)||[])];
   const unique=Array.from(new Map(combined.map(q=>[String(q.id),q])).values());
   const pool=unique.length>=5?unique:unique.concat(global.PatriaQuiz.bank().filter(q=>q&&!q.cityId));
   return global.PatriaQuiz.seededShuffle(pool,seed).slice(0,5).map(q=>global.PatriaQuiz.prepare(q));
 }
 function finish(city,score,correct){
   const p=global.PatriaPlayer.current(),result={id:crypto.randomUUID?.()||Date.now()+'',city,score:Math.max(0,score|0),correct:Math.max(0,correct|0),answers:5,name:p.name||'Gost',date:new Date().toISOString(),period:'daily'};
-  save(read().concat(result));
-  global.PatriaPlayer.addCityScore(city,result.score);
-  global.PatriaPlayer.recordResult({category:'brani-svoj-grad',points:result.score,xp:result.score,correct:result.correct,answers:5,city,period:'daily',id:result.id});
-  const m=missions();m.played++;m.points+=result.score;if(result.correct===5)m.perfect++;saveMissions(m);
-  global.PatriaBadges?.evaluate(global.PatriaPlayer.current());
+  save(read().concat(result));global.PatriaPlayer.addCityScore(city,result.score);global.PatriaPlayer.recordResult({category:'brani-svoj-grad',points:result.score,xp:result.score,correct:result.correct,answers:5,city,period:'daily',id:result.id});
+  const m=missions();m.played++;m.points+=result.score;if(result.correct===5)m.perfect++;saveMissions(m);global.PatriaBadges?.evaluate(global.PatriaPlayer.current());
   return{...result,missions:{played:m.played,perfect:m.perfect,points:m.points,completed:[m.played>=1?'prvi-izazov':null,m.perfect>=1?'bezgresni-branitelj':null,m.points>=1000?'cuvar-grada':null].filter(Boolean)}}
 }
 function cityRows(city){return read().filter(r=>!city||r.city===city).sort((a,b)=>b.score-a.score)}
