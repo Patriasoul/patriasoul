@@ -1,275 +1,217 @@
-# PatriaSoul — status projekta
+# PatriaSoul — stvarni status projekta
 
-**Datum kontrole:** 1. rujna 2026.
-**Grana:** `main`
-**Kontrolirani commit:** `edad1345240b7df557b5be54d29c94c50f6a4d30`
+**Datum kontrole:** 2. rujna 2026.  
+**Grana:** `main`  
 
-> Ovaj dokument razlikuje **postoji kod** od **stvarno završene produkcijske funkcije**. Datoteka koja postoji nije automatski označena kao 100% završena.
+> Ovaj dokument je kontrolna ploča projekta. **Postoji kod ≠ završena funkcija.** Funkcija je zelena tek kada je implementirana, povezana, sadržajno dovoljno popunjena i osnovno provjerena.
 
 ## Legenda
-
-- ✅ **ZAVRŠENO** — funkcija je implementirana i osnovno radi u postojećoj arhitekturi.
-- 🟡 **DJELOMIČNO** — postoji funkcionalna osnova, ali nedostaje važan dio ili produkcijska dorada.
-- 🔴 **TREBA RADITI** — funkcija nije dovršena ili nije stvarno spojena na sustav.
-- 🔵 **QA / PROVJERA** — kod postoji, ali treba završnu tehničku, sadržajnu ili izvorsku provjeru.
+- 🟢 **ZAVRŠENO** — implementirano i osnovno povezano.
+- 🟡 **PROŠIRITI / DOVRŠITI** — funkcionalna osnova postoji, ali sadržaj, integracija ili produkcijska dorada nisu završeni.
+- 🔴 **NEDOVRŠENO** — ključni dio još nedostaje.
+- 🔵 **QA** — treba završnu tehničku, sadržajnu ili izvorsku provjeru.
 
 ---
 
-## 1. Jezgra projekta
+## 1. Jezgra i dizajn
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Početna stranica | ✅ | Moderna početna s glavnim modulima i obljetnicama. |
-| Glavna navigacija | 🟡 | Postoji, ali više starijih stranica još koristi različite navigacijske obrasce/putanje. |
-| Moderni dizajn sustav | ✅ | `variables.css`, `patriasoul-modern.css`, `style.css`, responsive pravila. |
-| 404 stranica | ✅ | Postoji moderna 404 stranica. |
-| Dokumentacija arhitekture | ✅ | `struktura.md` i `plan-razvoja.md` postoje. |
-| Pravilo jednog izvora istine | ✅ | Definirano u arhitekturi; treba ga dosljedno primijeniti na sve sadržaje. |
-| README | 🟡 | Postoji, ali je vrlo kratak i ne opisuje stvarno stanje projekta. |
+| Početna stranica | 🟢 | Moderna početna i glavni moduli postoje. |
+| Navigacija | 🟡 | Centralni obrazac postoji, ali treba završiti provjeru svih starijih stranica. |
+| Dizajn sustav | 🟢 | Moderne varijable, globalni stilovi i responsive pravila postoje. |
+| 404 | 🟢 | Moderna 404 stranica postoji. |
+| Dokumentacija | 🟢 | `README.md`, `struktura.md`, `plan-razvoja.md` i ovaj status postoje. |
+| Jedan izvor istine | 🟡 | Pravilo postoji, ali ga treba dosljedno primijeniti na sve registre. |
 
-## 2. Gradovi
+## 2. Gradovi — PRIORITET
 
-| Područje | Status | Napomena |
+Kanonski registar `gradovi.js` postoji i sadrži 127 gradova. fileciteturn5file0
+
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Kanonski registar gradova | ✅ | `gradovi.js` sadrži registar 127 gradova. |
-| Gradovi hub | ✅ | Pretraga i grupiranje po županijama. |
-| Zajednički profil grada | 🟡 | `grad.html` radi kao template, ali sadržaj profila još nije popunjen po gradovima. |
-| 127 stvarno sadržajno obrađenih profila | 🔴 | Nije završeno. Trenutno nema 127 punih uredničkih profila. |
-| Zagreb modul | 🟡 | `zagreb.js` je sadržajno razrađen, ali nije još povezan s `grad.html` kao centralnim prikazom. |
-| Vukovar modul | 🟡 | Poseban memorijalni modul postoji; treba povezivanje s gradskim profilom i završnu uredničku provjeru. |
-| Grbovi/vizuali gradova | 🔴 | Nisu sustavno riješeni za svih 127 gradova. |
-| Izvori po gradovima | 🟡 | Registar izvora postoji, ali treba dovršiti pokrivenost sadržaja. |
+| 127 gradova u registru | 🟢 | Registar je centraliziran. |
+| Gradovi hub | 🟢 | Pretraga i županijsko grupiranje postoje. |
+| Zajednički profil | 🟢 | `grad.html` je proširen u bogatiji zajednički predložak. |
+| 127 punih uredničkih profila | 🔴 | Još nisu napisani stvarni sadržajni profili za svih 127 gradova. |
+| Grbovi i vizuali | 🔴 | Nema sustavno riješenog vizualnog paketa za svih 127 gradova. |
+| Povijest po gradu | 🟡 | Profil sada ima mjesto i poveznicu za povijesne zapise, ali treba puniti stvarnim izvorima. |
+| Baština po gradu | 🟡 | Struktura postoji; sadržaj treba proširiti. |
+| Ljudi po gradu | 🟡 | Predviđeno povezivanje s centralnom pretragom; registar osoba treba dodatno razviti. |
+| Branitelji/brigade po gradu | 🟡 | Povezivanje je predviđeno; treba centralni odnos grad ↔ postrojba. |
+| Vjera po gradu | 🟡 | Profil povezuje centralni Vjera hub; lokalni sadržaj još treba urediti. |
+
+**Nova dorada:** gradski profil sada nije više samo šest praznih kartica; ima brzi pregled, kanonske podatke, povijest, baštinu, ljude, Domovinu/branitelje, vjeru, vrijeme, kviz, Brani svoj grad, pretragu i uredničku napomenu.
 
 ## 3. Kviz
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Centralni quiz engine | ✅ | `quiz.js` učitava i objedinjuje banke te preslaguje odgovore. |
-| Preslagivanje A/B/C/D | ✅ | Točan odgovor ostaje vezan uz indeks izvornog odgovora. |
-| 15 sekundi po pitanju | ✅ | Implementirano u `quiz.html`. |
-| Brzo bodovanje | ✅ | 100 + bonus prema preostalom vremenu. |
-| Miješani kviz | ✅ | Implementiran. |
-| Dnevni kviz | ✅ | Deterministički set prema datumu. |
-| Tjedni kviz | ✅ | Deterministički tjedni set. |
-| Mjesečni kviz | ✅ | Deterministički mjesečni set. |
-| Postojećih 800 pitanja | ✅ | `question_banks_800.js` postoji i ostavljen je netaknut. |
-| Dodatnih 1.200 pitanja | 🟡 | Generator daje 1.200 zapisa, ali velik dio je napravljen templatski; potrebno je uredničko prepisivanje i provjera. |
-| Ukupno 2.000+ pitanja | 🟡 | Tehnički cilj je pokriven bankama, ali kvaliteta i izvorska provjera nisu završne. |
-| Završna provjera svih pitanja | 🔵 | Nije potvrđena kao završena. |
-| Jedinstveni ID-evi pitanja | ✅ | Engine deduplicira prema ID-u. |
-| Zaštita od manipulacije rezultatom | 🔴 | Trenutno se rezultati čuvaju u browser `localStorage`. |
+| Centralni engine | 🟢 | Radi i objedinjuje banke. |
+| Preslagivanje odgovora | 🟢 | Točan odgovor nije vezan uz A/B/C/D. |
+| Timer i brzo bodovanje | 🟢 | 15 s i bonus postoje. |
+| Miješani/dnevni/tjedni/mjesečni | 🟢 | Deterministički setovi postoje. |
+| 800 postojećih pitanja | 🟢 | Banka postoji i ostavljena je netaknuta. |
+| +1.200 pitanja | 🟡 | Tehnički postoji, ali dio sadržaja treba uredničko prepisivanje. |
+| 2.000+ kvalitetno provjerenih pitanja | 🟡 | Količina nije isto što i završna kvaliteta. |
+| Provjera svih pitanja | 🔵 | Potrebna sustavna kontrola izvora, duplikata i odgovora. |
+| Zaštita rezultata | 🔴 | Rezultati nisu još server-side autoritativni. |
 
-## 4. XP, razine i značke
+## 4. Profil, XP, razine i statistika
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Značke | 🟡 | `badges.js` postoji i ima automatsko otključavanje, ali sustav je još osnovan. |
-| 100 razina | ✅ | `levels.js` definira 100 razina i progresivni XP. |
-| XP engine | 🟡 | `xp-engine.js` postoji, ali nije usklađen s načinom spremanja profila koji trenutno koristi `quiz.js`. |
-| Profil igrača | 🟡 | Postoji UI i lokalni profil, ali dva sustava koriste različite ključeve/API-je. |
-| Streak | 🟡 | Podatak postoji, ali treba jedinstveno povezivanje s centralnim XP/profil sustavom. |
-| Statistika po kategorijama | 🔴 | Nije dovršena kao stvarni centralni sustav. |
-| Omiljena pitanja | 🔴 | Nije implementirano. |
+| 100 razina | 🟢 | Definirane u `levels.js`. |
+| Značke | 🟡 | Postoje, ali sustav treba proširiti. |
+| XP engine | 🟡 | Postoji, ali treba jedan centralni profilni model. |
+| Profil | 🟡 | UI i lokalni podaci postoje; treba centralizacija. |
+| Streak | 🟡 | Postoji podatak, ali treba jedinstveno spremanje. |
+| Statistika kategorija | 🔴 | Nije dovršena kao centralni sustav. |
+| Omiljena pitanja | 🔴 | Treba implementirati. |
 
-## 5. Rang-lista
+## 5. Supabase i javna rang-lista
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Rang-lista UI | ✅ | Postoji XP/bodovi/kviz/grad prikaz. |
-| TOP 3 vizualno | 🟡 | Medalje postoje; puni podium nije posebno izveden. |
-| Dnevna rang-lista | 🔴 | Nema stvarne zajedničke dnevne baze. |
-| Tjedna rang-lista | 🔴 | Nema stvarne zajedničke tjedne baze. |
-| Mjesečna rang-lista | 🔴 | Nema stvarne zajedničke mjesečne baze. |
-| Ukupna javna rang-lista | 🔴 | Trenutno lokalna po uređaju. |
-| Rang svih korisnika | 🔴 | Zahtijeva korisničke račune i backend. |
+| Lokalni leaderboard UI | 🟢 | Postoji. |
+| TOP 3 | 🟡 | Vizualni elementi postoje; treba puni javni sustav. |
+| Supabase korisnici | 🔴 | Nije potvrđen dovršen produkcijski auth/profil tok. |
+| Dnevna rang-lista | 🔴 | Nema zajedničke server-side liste. |
+| Tjedna rang-lista | 🔴 | Nema zajedničke server-side liste. |
+| Mjesečna rang-lista | 🔴 | Nema zajedničke server-side liste. |
+| Ukupna javna rang-lista | 🔴 | Lokalni podaci nisu javni sustav. |
 
 ## 6. Brani svoj grad
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Odabir grada | ✅ | Dostupno za registar gradova. |
-| Pretraga grada | ✅ | Implementirana. |
-| 5 pitanja po izazovu | ✅ | Implementirano. |
-| Bodovanje | 🟡 | Osnovno bodovanje radi, ali nije još povezano sa centralnim natjecateljskim sustavom. |
-| Spremanje rezultata | 🟡 | Lokalni `localStorage`. |
-| Gradska rang-lista | 🟡 | Lokalna, nije javna. |
-| Povezivanje s punim profilom grada | 🔴 | Treba dovršiti. |
+| Odabir/pretraga grada | 🟢 | Radi nad registrom gradova. |
+| Izazov od 5 pitanja | 🟢 | Implementiran. |
+| Bodovanje | 🟡 | Radi lokalno, nije centralno natjecanje. |
+| Spremanje rezultata | 🟡 | Lokalno spremanje. |
+| Gradska rang-lista | 🟡 | Lokalna; treba Supabase. |
+| Puni profil grada | 🟡 | Sada povezan s gradskim predloškom. |
 | Misije/napredovanje grada | 🔴 | Nije implementirano. |
-| Multiplayer | 🔴 | Planirana faza, nije implementirano. |
+| Multiplayer | 🔴 | Kasnija faza. |
 
 ## 7. Vjera
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Vjera hub | ✅ | Moderna stranica postoji. |
-| Vjera centralni JS izvor | ✅ | `vjera.js` postoji. |
-| Evanđelje | 🟡 | Stranica postoji; treba centralizirati sadržaj i osigurati dnevni/izvorski sustav. |
-| Svetac dana | 🟡 | Stranica postoji; treba dovršiti kalendar i uredničke podatke. |
-| Molitve | 🟡 | Stranica postoji; sadržaj treba centralno strukturirati. |
-| Krunica | 🟡 | Stranica postoji; treba sadržajnu provjeru i centralizaciju. |
-| Blagdani | 🟡 | Stranica postoji; treba dovršiti kalendar i sadržaj. |
-| Biblija | 🟡 | Stranica postoji; treba jasno definirati opseg i izvor podataka. |
-| Bez dupliciranja sadržaja | 🔵 | `vjera.html` trenutno sadrži dio sadržaja koji se također vodi u `vjera.js`; treba napraviti jedan izvor istine. |
+| Vjera hub | 🟢 | Postoji. |
+| Centralni `vjera.js` | 🟢 | Postoji. |
+| Evanđelje | 🟡 | Treba centralni dnevni/izvorski sustav. |
+| Svetac dana | 🟡 | Treba dovršiti kalendar i podatke. |
+| Molitve | 🟡 | Treba centralnu strukturu i više sadržaja. |
+| Krunica | 🟡 | Stranica postoji; treba sadržajni audit. |
+| Blagdani | 🟡 | Treba dovršiti kalendar. |
+| Biblija | 🟡 | Treba jasno definirati opseg i izvore. |
+| Jedan izvor istine | 🔵 | Potrebno ukloniti dupliciranje između HTML-a i JS-a. |
 
-## 8. Baština i povijest
+## 8. Povijest i baština
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Povijest hub/stranica | 🟡 | Velik sadržaj postoji, ali treba završni audit izvora i strukture. |
-| Povijest JS baze | 🟡 | Postoji `povijest.js` + `povijest_extra.js`; treba konsolidaciju i provjeru dupliciranja. |
-| Baština | 🟡 | `bastina.html` i `bastina.js` postoje; treba urednički audit i povezivanje s centralnim registrima. |
-| Bitke | 🟡 | `bitke.js` postoji; treba završnu provjeru izvora i integracije. |
-| Obljetnice | ✅ | Centralni registar + renderer postoje. |
-| Spomenici | 🟡 | Centralni registar postoji, ali početni zapisi nisu svi potvrđeni. |
+| Povijest hub | 🟡 | Velik sadržaj postoji; treba konsolidacija i QA. |
+| Povijest registar | 🟡 | Više izvora datoteka treba objediniti. |
+| Baština | 🟡 | Postoji, ali treba više zapisa i izvora. |
+| Bitke | 🟡 | Registar postoji; treba završnu provjeru. |
+| Obljetnice | 🟢 | Centralni registar i renderer postoje. |
+| Spomenici | 🟡 | Registar postoji; treba provjeru i proširenje. |
 
-## 9. Branitelji / Domovinski rat
+## 9. Branitelji, brigade i heroji
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Domovina stranica | 🟡 | Osnovna stranica postoji; treba završnu sadržajnu integraciju. |
-| Branitelji stranica | 🟡 | Osnovna stranica i podatkovni moduli postoje. |
-| Postrojbe | 🟡 | `postrojbe.js` postoji. Potrebna završna provjera registara i izvora. |
-| Brigade | 🟡 | `brigade.js` i `brigade-registar.js` postoje; treba provjeriti odnos kanonskog registra i prikaza. |
-| Heroji | 🟡 | `heroji.js` postoji; treba završiti izvore, profile i prikaz. |
-| Operacije | 🟡 | `operacije.js` postoji; treba završnu uredničku provjeru. |
-| Memorijalni sadržaj Vukovara | 🟡 | Postoji poseban modul s pravilima pijeteta; treba završna integracija. |
+| Branitelji hub | 🟡 | Osnova postoji. |
+| Postrojbe | 🟡 | Registar postoji; treba završni audit. |
+| Brigade | 🟡 | Registar postoji; prikaz je sada proširen filtriranjem, statistikama i povezanim zapisima. |
+| Heroji | 🟡 | Registar postoji; trebaju izvori i bogatiji profili. |
+| Operacije | 🟡 | Registar postoji; treba urednički audit. |
+| Vukovar | 🟡 | Poseban memorijalni sadržaj postoji; treba završna integracija. |
 
-## 10. Vijesti
+**Nova dorada:** `brigade.html` sada ima broj zapisa, broj gardijskih/ostalih brigada, filter po vrsti, bogatiji opis i poveznice prema centralnoj pretrazi i profilu sjedišta. Osnovni registar ostaje odvojen od budućih detaljnih monografija. fileciteturn8file0
 
-| Područje | Status | Napomena |
+## 10. Vijesti / feed
+
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Vijesti UI | 🟡 | `vijesti.html` i `vijesti.js` postoje. |
-| RSS/update workflow | ✅ | GitHub Actions workflow postoji za automatsko osvježavanje. |
-| Trenutni feed | 🔴 | `news-feed.json` trenutno ima `items: []`, dakle nema dostupnih vijesti u feedu. |
-| Izvori vijesti | 🟡 | `news-sources.json` i konfiguracija postoje. |
-| Urednički schema sustav | 🟡 | Schema postoji; treba stvarno uredničko spremanje/publish workflow. |
-| Admin vijesti | 🟡 | `vijesti-admin.html` postoji, ali nije pravi sigurni server-side admin sustav. |
+| Vijesti UI | 🟡 | Postoji. |
+| RSS workflow | 🟢 | Workflow postoji. |
+| Feed podaci | 🔴 | Posljednja kontrola je pokazala prazan `news-feed.json`; treba potvrditi zašto se ne puni. |
+| Izvori | 🟡 | Konfigurirana su najmanje tri službena izvora. fileciteturn11file0 |
+| Kategorije | 🟢 | Schema kategorija postoji. |
+| Siguran admin | 🔴 | Postojeći admin nije zamjena za server-side autentificirani CMS. |
 
 ## 11. Vrijeme
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Vremenska stranica | ✅ | `vrijeme.html` postoji. |
-| Horizontalna vremenska traka | ✅ | `vrijeme-traka.css/js` postoje. |
-| Najbliži gradovi | ✅ | Geolokacija + najbliže lokacije. |
-| DHMZ feed | 🟡 | Automatizirano osvježavanje postoji; treba kontinuirani QA i provjera mapiranja stanica. |
-| Hrvatska baza lokacija | 🟡 | `weather-cities.json` je proširen; dio mapiranja stanica treba završno verificirati. |
+| Vremenska stranica | 🟢 | Postoji. |
+| Horizontalna traka | 🟢 | Postoji. |
+| Najbliži gradovi | 🟢 | Postoji. |
+| DHMZ workflow | 🟡 | Automatizacija postoji; treba kontinuirani QA. |
+| Hrvatska baza lokacija | 🟡 | Proširena; treba završno mapiranje stanica. |
 
 ## 12. AI / Knowledge Base
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| AI client sloj | ✅ | `assets/js/patriasoul-ai-engine.js` postoji. |
-| Pitaj PatriaSoul UI | ✅ | Widget i stranica postoje. |
-| Puter provider | 🟡 | Provider postoji; treba produkcijsko testiranje. |
-| Knowledge schema | ✅ | Definirana pravila i statusi izvora. |
-| Knowledge retriever v2 | ✅ | Rangiranje, statusi, godina, izvori i confidence postoje. |
-| Knowledge index | 🟡 | `index.json` postoji i velik je, ali treba potvrditi da workflow uvijek uspješno obnavlja indeks. |
-| Automatska izgradnja knowledge indexa | ✅ | GitHub Actions workflow postoji. |
-| Pouzdani AI odgovori | 🟡 | Treba završiti pokrivenost provjerenim zapisima i fallback ponašanje. |
+| AI client | 🟢 | Postoji. |
+| Pitaj PatriaSoul | 🟢 | UI i widget postoje. |
+| Provider | 🟡 | Postoji, treba produkcijsko testiranje. |
+| Knowledge schema | 🟢 | Postoji. |
+| Retriever | 🟢 | Postoji rangiranje i confidence. |
+| Knowledge index | 🟡 | Velik indeks postoji; treba provjeriti obnovu workflowa. |
+| Pokrivenost | 🟡 | Treba više provjerenih zapisa po temama. |
 
-## 13. Pretraga
+## 13. Centralna pretraga — PRIORITET
 
-| Područje | Status | Napomena |
+Trenutna pretraga pretražuje javne HTML stranice preko sitemap-a, ali nije još pravi pretraživač svih kanonskih JS registara. fileciteturn12file0
+
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Globalna pretraga stranica | ✅ | `search.html` koristi sitemap i pretražuje javne stranice. |
-| Kategorijsko filtriranje | 🔴 | Nije izvedeno kao pravi centralni filter nad svim kanonskim bazama. |
-| Pretraga podataka iz JS registara | 🟡 | Treba povezati kanonske registre direktno s centralnom pretragom. |
-| Brzina pretrage | 🟡 | Trenutni pristup učitava više HTML stranica u browseru; treba optimizirati za produkciju. |
+| Pretraga javnih stranica | 🟢 | Radi preko sitemap-a. |
+| Filteri kategorija | 🟢 | UI postoji. |
+| Direktna pretraga gradova registra | 🟡 | Treba direktno spojiti `gradovi.js`. |
+| Direktna pretraga brigada/registara | 🟡 | Treba centralno indeksiranje registara. |
+| Jedan rezultatni model | 🔴 | Još nije objedinjen za sve registre. |
+| Brzina | 🟡 | Browser učitava više HTML stranica; treba optimizacija. |
 
 ## 14. Video i galerija
 
-| Područje | Status | Napomena |
+| Područje | Status | Stvarno stanje |
 |---|---|---|
-| Video CSS sustav | 🟡 | `video.css` je razrađen. |
-| Stvarna video stranica/sustav | 🔴 | U korijenskom stablu nema dovršene `video.html`/`video.js` funkcionalne cjeline. |
-| Gallery CSS sustav | 🟡 | `gallery.css` postoji. |
-| Stvarna galerija | 🔴 | Nema dovršene centralne galerijske stranice i registra sadržaja. |
-
-## 15. PWA / mobilno / tehničko
-
-| Područje | Status | Napomena |
-|---|---|---|
-| Responsive dizajn | ✅ | Više responsive slojeva postoji. |
-| Mobile navigation | 🟡 | Postoji više implementacija; treba standardizirati jednu. |
-| Manifest | 🟡 | `manifest.json` postoji. |
-| Service worker | 🔴 | Nije pronađen u projektu; PWA nije dovršen. |
-| Offline rad | 🔴 | Nije implementiran kao cjelovit sustav. |
-| Accessibility osnovna podrška | 🟡 | Focus/reduced-motion pravila postoje; treba završni audit stranica. |
-| SEO sitemap | 🟡 | `sitemap.xml` postoji; treba održavati ga u skladu sa stvarnim rutama. |
-| robots.txt | ✅ | Postoji. |
-| GitHub Pages | 🔴 | Repo metadata trenutno pokazuje da GitHub Pages nije uključen (`has_pages=false`). |
-
-## 16. Backend / Supabase / korisnici
-
-| Područje | Status | Napomena |
-|---|---|---|
-| Supabase config | 🟡 | `supabase/config.toml` postoji. |
-| Supabase migracije | 🔴 | `supabase/migrations` trenutno sadrži samo `.gitkeep`; nema baze aplikacije. |
-| Registracija korisnika | 🔴 | Nije implementirana. |
-| Login | 🔴 | Nije implementiran kao stvarni backend auth. |
-| Profil na serveru | 🔴 | Trenutno lokalni browser podaci. |
-| Javna rang-lista | 🔴 | Zahtijeva backend. |
-| Sigurno spremanje rezultata | 🔴 | Zahtijeva backend + pravila protiv manipulacije. |
-| Admin sustav | 🔴 | Trenutni admin HTML nije dovoljan za sigurni produkcijski admin. |
+| Video stilovi | 🟡 | CSS osnova postoji. |
+| Video portal | 🔴 | Nije dovršen kao pravi centralni sustav. |
+| Galerija | 🟡 | Osnovni asseti postoje; treba stvarni katalog galerija. |
+| Povezivanje s gradovima/poviješću | 🔴 | Nije centralizirano. |
 
 ---
 
-# Konačna procjena
+# Što sada širimo
 
-## Što je stvarno gotovo
+## A. Sadržaj po stranicama
+Nećemo više samo povećavati broj kartica. Svaki veći modul treba dobiti:
+1. uvodni tekst koji objašnjava temu;
+2. kanonske podatke;
+3. stvarne zapise;
+4. povezane registre;
+5. izvore;
+6. pretragu/filter;
+7. poveznice prema drugim PatriaSoul modulima.
 
-1. Temeljna moderna web struktura.
-2. Centralna arhitektura i dokumentirano pravilo jednog izvora istine.
-3. Registar 127 gradova i Gradovi hub.
-4. Osnovni zajednički profil grada.
-5. Centralni kviz engine.
-6. Miješani + dnevni + tjedni + mjesečni kviz.
-7. 15-sekundni timer i brzo bodovanje.
-8. Banka od 800 postojećih pitanja.
-9. Tehnički generirana dodatna banka od 1.200 pitanja.
-10. Osnovni XP/level/badge sustavi.
-11. Brani svoj grad za registar gradova.
-12. Lokalna rang-lista.
-13. Vjera hub i centralni Vjera JS sloj.
-14. Vrijeme + vremenska traka + DHMZ automatizacija.
-15. AI sloj + Knowledge Base + retriever v2.
-16. Obljetnice i osnovni memorijalni/spomenički registri.
-17. GitHub Actions za knowledge, news i weather.
+## B. Prioritet proširenja
+1. **127 gradova** — stvarni sadržajni profili, ne samo predložak.
+2. **Centralna pretraga registara** — gradovi, povijest, baština, vjera, brigade, heroji, operacije i kviz.
+3. **Supabase profil + XP + statistika + rang-lista.**
+4. **Brani svoj grad** — misije, napredovanje i gradsko natjecanje.
+5. **Branitelji/brigade/heroji** — detaljniji zapisi i izvori.
+6. **Vjera** — jedan centralni izvor i više provjerenog sadržaja.
+7. **Povijest/baština** — konsolidacija i povećanje dubine zapisa.
+8. **Vijesti/feed** — popraviti prazan feed i urediti workflow.
+9. **Video/galerija** — napraviti pravi katalog umjesto samo vizualne osnove.
+10. **Kviz** — urednički provjeriti 2.000+ pitanja.
 
-## Najvažnije što još NIJE gotovo
-
-### PRIORITET 1 — produkcijska jezgra
-- uskladiti `PatriaPlayer` / `PatriaSoulXP` / `levels.js` u **jedan sustav profila, XP-a i statistike**
-- napraviti Supabase schema + auth + profile + results
-- prebaciti rezultate kviza i igre sa `localStorage` na backend
-- napraviti stvarnu javnu dnevnu/tjednu/mjesečnu/ukupnu rang-listu
-- zaštititi rezultat od manipulacije
-
-### PRIORITET 2 — sadržaj
-- urednički provjeriti svih 2.000 pitanja
-- zamijeniti templatska pitanja iz dodatnih 1.200 stvarnim kvalitetnim pitanjima
-- dodijeliti izvore gdje je potrebno
-- dovršiti profile svih 127 gradova
-- povezati Zagreb/Vukovar i druge gradske module s centralnim profilom
-
-### PRIORITET 3 — portal
-- dovršiti Vijesti feed/publish sustav
-- dovršiti globalnu pretragu nad kanonskim registrima
-- dovršiti Video
-- dovršiti Galeriju
-- dovršiti O PatriaSoul
-- standardizirati navigaciju i putanje svih stranica
-
-### PRIORITET 4 — produkcija
-- PWA/service worker
-- accessibility audit
-- SEO/rute/sitemap audit
-- sigurnosni audit admina i API-ja
-- završni browser test svih glavnih ruta
-
----
-
-## Važna napomena
-
-Projekt je **daleko od praznog**: jezgra je postavljena i velik dio funkcionalnosti postoji. Međutim, nije ispravno označiti ga kao 100% završenog jer ključni produkcijski sloj — pravi korisnički računi, server-side rezultati, javna rang-lista i završno verificiran sadržaj — još nije dovršen.
+## Pravilo kvalitete
+**Ne punimo stranice izmišljenim činjenicama samo da izgledaju bogatije.** Kad podatak nije potvrđen, označava se kao sadržaj koji čeka izvor. Cilj je bogat PatriaSoul, ali i točan PatriaSoul.
