@@ -6,6 +6,7 @@ on:
     paths:
       - '**.html'
       - 'patriasoul-global.css'
+      - 'page-hero.js'
       - 'scripts/apply-global-theme.py'
       - '.github/workflows/apply-global-theme.yml'
   workflow_dispatch:
@@ -30,7 +31,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git diff --quiet; then
-            echo "No HTML files needed theme injection."
+            echo "No HTML files needed theme injection or cache version update."
             exit 0
           fi
           git add '*.html' 'pages/**/*.html' 2>/dev/null || git add -A
