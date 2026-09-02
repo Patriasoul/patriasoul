@@ -5,7 +5,7 @@
     'zabok':[
       ['Koje se godine ime Zabok prvi put pojavljuje u poznatim pisanim dokumentima?',['1335.','1242.','1345.','1397.']],
       ['Koji je ugarsko-hrvatski kralj 1335. darovao posjed Zabok Petru, sinu Nuzlina?',['Karlo I.','Ljudevit I.','Bela IV.','Matija Korvin']],
-      ['Koja je župna crkva u Zaboku posvećena svetici?',['Sv. Jeleni Križarici','Sv. Ani','Sv. Katarini','Sv. Margareti']],
+      ['Koja je župna crkva u Zaboku posvećena svetici?',['Sv. Jeleni Križarice','Sv. Ani','Sv. Katarini','Sv. Margareti']],
       ['Koje je godine Zabok dobio status grada?',['1993.','1886.','1910.','2000.']]
     ],
     'zlatar':[
@@ -21,17 +21,17 @@
       ['Koje je godine Popovača dobila željezničku prugu?',['1897.','1886.','1907.','1913.']]
     ],
     'ivanec':[
-      ['Po kojoj je prirodnoj znamenitosti Ivanec posebno povezan s Ivanščicom?',['Planinom Ivanščicom','Rijekom Dravom','Kamenitim otokom','Moslavačkom gorom']],
-      ['Koja je povijesna utvrda smještena na području Ivanščice iznad Ivanca?',['Grebengrad','Nehaj','Medvedgrad','Trsat']],
-      ['Koja je plemićka obitelj bila povezana s posjedom i razvojem Ivanca?',['Gisingovci','Zrinski','Frankopani','Erdődy']],
-      ['Koji je status Ivanec dobio 1997. godine?',['Status grada','Status županijskog sjedišta','Status slobodnog kraljevskog grada','Status biskupskog sjedišta']]
+      ['Koje je godine Ivanec dobio povelju kojom su potvrđene slobode njegove općine?',['1396.','1304.','1421.','1439.']],
+      ['Koji je crkveni viteški red povezan s nastankom srednjovjekovnog Ivanca?',['Ivanovci (hospitalci)','Templari','Pavlini','Benediktinci']],
+      ['Po kojoj je kapeli Ivanec dobio svoje ime?',['Kapeli sv. Ivana Krstitelja','Kapeli sv. Marije Magdalene','Kapeli sv. Nikole','Kapeli sv. Jurja']],
+      ['Koji je blagdan ujedno Dan Grada Ivanca, prema službenoj povijesti grada?',['Rođenje sv. Ivana Krstitelja','Velika Gospa','Sv. Josip','Sv. Juraj']]
     ]
   };
   const urls={
     zabok:'https://www.zabok.hr/povijest-zaboka/',
     zlatar:'https://zlatar.hr/povijest/',
     popovaca:'https://www.popovaca.hr/o-gradu-popovaca/povijest/2169-povijest',
-    ivanec:'https://ivanec.hr/'
+    ivanec:'https://www.ivanec.hr/123-history'
   };
   const normalizeCity=s=>String(s).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const all=[];
