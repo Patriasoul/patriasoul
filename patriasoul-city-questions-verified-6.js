@@ -27,14 +27,11 @@
       ['Koje je godine dovršena gradnja crkve Uznesenja Blažene Djevice Marije u Pregradi?',['1818.','1708.','1842.','1857.']]
     ]
   };
-  const urls={
-    'donja-stubica':'https://www.donjastubica.hr/povijest/',
-    'klanjec':'https://www.klanjec.hr/o-nama/povijest/',
-    'oroslavje':'https://oroslavje.hr/grad/povijest-oroslavja/',
-    'pregrada':'https://www.pregrada.hr/node/51'
-  };
+  const urls={'donja-stubica':'https://www.donjastubica.hr/povijest/','klanjec':'https://www.klanjec.hr/o-nama/povijest/','oroslavje':'https://oroslavje.hr/grad/povijest-oroslavja/','pregrada':'https://www.pregrada.hr/node/51'};
+  const normalizeCity=s=>String(s).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const all=[];
   Object.entries(extra).forEach(([city,items])=>items.forEach((x,i)=>all.push({id:`verified6_${city}_${String(i+1).padStart(3,'0')}`,cityId:city,citySource:'verified',category:'gradovi',question:x[0],answers:x[1],correctIndex:0,sourceUrl:urls[city]})));
   global.PATRIA_CITY_VERIFIED_EXTRA_6=all;
-  global.PatriaCityVerified6={all:()=>all.slice(),forCity:city=>{const slug=String(city).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');return all.filter(q=>q.cityId===slug)},sources:()=>({...urls})};
+  global.PatriaCityVerified6={all:()=>all.slice(),forCity:city=>{const slug=normalizeCity(city);return all.filter(q=>q.cityId===slug)},sources:()=>({...urls})};
+  if(typeof document!=='undefined'&&document.write){document.write('<scr'+'ipt src="/patriasoul-city-questions-verified-7.js"></scr'+'ipt>');}
 })(typeof window!=='undefined'?window:globalThis);
