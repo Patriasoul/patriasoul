@@ -11,7 +11,7 @@ const F=[
 ['stoljeće crkve sv. Nikole koja se povezuje s predajom o krunidbi kraljeva',['12. stoljeće','9. stoljeće','15. stoljeće','18. stoljeće']],
 ['starohrvatski brod iz 11. stoljeća pronađen na području Nina',['Condura Croatica','Serilija Liburnica','Bracera','Gajeta']],
 ['rimskodobni status Nina prema službenom turističkom vodiču',['municipij','kolonija Venecije','samostanska opatija','vojna krajina']],
-['godina međunarodnog priznanja Hrvatske povezane s knezom Branimirом u ninskoj tradiciji',['879.','925.','1102.','1242.']],
+['godina međunarodnog priznanja Hrvatske povezane s knezom Branimirom u ninskoj tradiciji',['879.','925.','1102.','1242.']],
 ['papa povezan s blagoslovom iz 879. godine',['Ivan VIII.','Grgur V.','Urban II.','Lav III.']],
 ['datum koji Nin povezuje s priznanjem iz 879.',['7. lipnja','5. kolovoza','15. kolovoza','30. svibnja']],
 ['status Nina kao europske destinacije od 2010.',['EDEN – Europska destinacija izvrsnosti','UNESCO grad baštine','Europska prijestolnica kulture','Ramsarsko područje']],
