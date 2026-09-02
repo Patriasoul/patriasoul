@@ -1,25 +1,151 @@
 <!doctype html>
 <html lang="hr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Hrvatska gastronomija — regionalna jela, namirnice, tradicija i priče hrvatskih krajeva.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Hrvatska gastronomija — regionalna jela, stari recepti, namirnice, običaji i priče hrvatskih krajeva.">
 <title>Gastronomija | PatriaSoul</title>
-<link rel="stylesheet" href="/patriasoul-modern.css"><link rel="stylesheet" href="/patriasoul-global.css">
+<link rel="stylesheet" href="/patriasoul-modern.css">
+<link rel="stylesheet" href="/patriasoul-global.css">
 <script src="/site-navigation.js" defer></script>
+<style>
+.gastro-intro{max-width:900px;margin:0 auto 2.5rem;text-align:center}
+.gastro-section{margin-top:3.5rem}
+.gastro-section h2{margin-bottom:.7rem}
+.gastro-section>p{max-width:900px;color:var(--muted,#aeb4c0)}
+.gastro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin-top:1.5rem}
+.gastro-card{overflow:hidden;padding:0!important}
+.gastro-card img{display:block;width:100%;height:220px;object-fit:cover;background:#20242b}
+.gastro-card-body{padding:1.2rem}
+.gastro-card h3{margin:.15rem 0 .45rem}
+.gastro-region{display:inline-flex;margin-bottom:.7rem;padding:.3rem .65rem;border:1px solid rgba(212,175,55,.35);border-radius:999px;color:#e6c76a;font-size:.78rem;font-weight:700}
+.recipe-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin-top:1.5rem}
+.recipe-card{overflow:hidden;padding:0!important}
+.recipe-card img{display:block;width:100%;height:300px;object-fit:cover;background:#20242b}
+.recipe-body{padding:1.35rem}
+.recipe-meta{display:flex;flex-wrap:wrap;gap:.45rem;margin:.75rem 0}
+.recipe-meta span{font-size:.78rem;padding:.3rem .55rem;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08)}
+.recipe-columns{display:grid;grid-template-columns:1fr 1.25fr;gap:1rem;margin-top:1rem}
+.recipe-columns h4{margin:.2rem 0 .45rem}
+.recipe-columns ul,.recipe-columns ol{margin:.3rem 0 0;padding-left:1.15rem}
+.photo-credit{font-size:.72rem;opacity:.7;padding:.55rem 1.35rem 0}
+.gastro-note{border-left:3px solid #d4af37;padding:1rem 1.2rem;background:rgba(212,175,55,.06);border-radius:0 .7rem .7rem 0;margin-top:1.5rem}
+@media(max-width:900px){.gastro-grid,.recipe-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.gastro-grid,.recipe-grid,.recipe-columns{grid-template-columns:1fr}.gastro-card img{height:210px}.recipe-card img{height:240px}}
+</style>
 </head>
 <body>
 <main>
-<section class="ps-page-hero"><div class="container"><span class="ps-kicker">Baština • okusi • tradicija</span><h1>Hrvatska gastronomija</h1><p>Hrana je jedan od najživljih dijelova hrvatske baštine. Na PatriaSoulu upoznajemo regionalne kuhinje, stare običaje, autohtone namirnice i jela koja pričaju priču o kraju iz kojeg dolaze.</p></div></section>
-<section class="ps-content"><div class="container">
-<div class="ps-grid ps-grid-3">
-<article class="ps-card"><div class="ps-card-icon">🌊</div><h3>Jadran i otoci</h3><p>Mediteranska kuhinja Dalmacije, Kvarnera i otoka temelji se na ribi, maslinovu ulju, povrću, aromatičnom bilju i jednostavnim načinima pripreme.</p></article>
-<article class="ps-card"><div class="ps-card-icon">🌿</div><h3>Istra</h3><p>Istarska gastronomska baština povezuje maslinovo ulje, tartufe, vino, ribu i tradicionalna tjestenasta jela s posebnim karakterom poluotoka.</p></article>
-<article class="ps-card"><div class="ps-card-icon">🏞️</div><h3>Lika i Gorski kotar</h3><p>Planinska i kontinentalna prehrana razvijala se prema dostupnim namirnicama, čuvanju hrane i snažnim jelima prilagođenima klimatskim uvjetima.</p></article>
-<article class="ps-card"><div class="ps-card-icon">🌾</div><h3>Slavonija i Baranja</h3><p>Panonska tradicija poznata je po jelima od mesa, paprici, kulenu i drugim suhomesnatim proizvodima, riječnim ribama te bogatoj zimnici.</p></article>
-<article class="ps-card"><div class="ps-card-icon">🍲</div><h3>Središnja Hrvatska</h3><p>Kuhinja sjeverne i središnje Hrvatske čuva raznolika variva, juhe, pečenja, tijesta, kolače i recepte koji se prenose kroz obitelji.</p></article>
-<article class="ps-card"><div class="ps-card-icon">🍞</div><h3>Stari recepti</h3><p>Posebno mjesto imaju domaći kruh, zimnica, tradicionalni kolači i jela vezana uz blagdane, svadbe, berbe i druge životne običaje.</p></article>
+<section class="ps-page-hero">
+<div class="container">
+<span class="ps-kicker">Baština • okusi • tradicija</span>
+<h1>Hrvatska gastronomija</h1>
+<p>Hrvatska nema samo jednu kuhinju. Ima niz regionalnih tradicija koje su nastajale prema krajoliku, klimi, dostupnim namirnicama i povijesnim vezama. Upravo je ta raznolikost jedna od njezinih najvećih gastronomskih vrijednosti.</p>
 </div>
-<div class="ps-card" style="margin-top:2rem"><h2>Što ćemo čuvati u ovoj rubrici?</h2><p>Gastronomija će biti organizirana po hrvatskim regijama i temama, a svaka će priča povezivati jelo s njegovim krajem, namirnicama, načinom pripreme i običajima. Posebno ćemo razlikovati lokalnu tradiciju od modernih interpretacija i, gdje je moguće, navoditi izvore i lokalne nositelje tradicije.</p><p>Posebnu pažnju dobit će proizvodi sa zaštićenim oznakama, tradicijska jela, blagdanska prehrana, stari načini konzerviranja hrane, vinogradarstvo, maslinarstvo, pčelarstvo i priče ljudi koji gastronomsku baštinu prenose novim generacijama.</p></div>
-</div></section></main>
+</section>
+
+<section class="ps-content"><div class="container">
+<div class="gastro-intro">
+<h2>Hrvatska za stolom</h2>
+<p>Od jadranske ribe, maslinova ulja i blitve do slavonske paprike, kulena i fišpaprikaša, pa sve do zagorskih štrukli i međimurskih kolača — svako područje čuva okuse koji su se prenosili iz kuće u kuću. PatriaSoul ih želi zapisati, fotografirati i povezati s ljudima i krajevima iz kojih dolaze.</p>
+</div>
+
+<section class="gastro-section">
+<h2>Gastronomske regije Hrvatske</h2>
+<p>Ovo je početni atlas. Rubrika će se dalje širiti po županijama, gradovima, otocima i manjim krajevima.</p>
+<div class="gastro-grid">
+<article class="ps-card gastro-card"><div class="gastro-card-body"><span class="gastro-region">Dalmacija • Jadran</span><h3>More, maslinovo ulje i komin</h3><p>Riba, školjke, brudet, soparnik, pašticada, peka, blitva, maslinovo ulje i suhomesnati proizvodi čine važan dio dalmatinske gastronomske baštine.</p></div></article>
+<article class="ps-card gastro-card"><div class="gastro-card-body"><span class="gastro-region">Istra</span><h3>Mirisi zemlje i mora</h3><p>Tartufi, maslinovo ulje, vino, riba, divlje šparoge i domaća tjestenina dio su istarskog gastronomskog identiteta.</p></div></article>
+<article class="ps-card gastro-card"><div class="gastro-card-body"><span class="gastro-region">Kvarner i otoci</span><h3>Otoci i primorje</h3><p>Riba, školjke, škampi, janjetina, sirevi i tradicionalni otočki kolači svjedoče o vezi ljudi s morem i kamenitim otocima.</p></div></article>
+<article class="ps-card gastro-card"><div class="gastro-card-body"><span class="gastro-region">Lika • Gorski kotar</span><h3>Planinska kuhinja</h3><p>Krumpir, meso, gljive, kupus, grah i mliječni proizvodi razvijali su se u kuhinji prilagođenoj hladnijoj klimi i dugim zimama.</p></div></article>
+<article class="ps-card gastro-card"><div class="gastro-card-body"><span class="gastro-region">Slavonija • Baranja</span><h3>Paprika, kotlić i zimnica</h3><p>Kulen, čobanac, fišpaprikaš, riječna riba, domaće kobasice i zimnica nose snažan panonski karakter.</p></div></article>
+<article class="ps-card gastro-card"><div class="gastro-card-body"><span class="gastro-region">Zagorje • Međimurje</span><h3>Tijesto, sir i slastice</h3><p>Štrukli, mlinci, purica, domaći sir, bučnica, orehnjača i međimurska gibanica pripadaju bogatoj sjevernoj tradiciji.</p></div></article>
+</div>
+</section>
+
+<section class="gastro-section" id="recepti">
+<h2>🍲 Recepti koji se ne smiju zaboraviti</h2>
+<p>Ovo je srce gastronomske rubrike. Svaki recept dobiva svoju fotografiju, kraj, priču, sastojke i način pripreme. Kada budemo dodavali obiteljske recepte, uz njih ćemo navoditi tko ih je sačuvao i odakle potječu.</p>
+<div class="gastro-note"><strong>Važno:</strong> PatriaSoul neće izmišljati „stare recepte”. Tamo gdje postoje regionalne varijante, to ćemo jasno označiti. Fotografije u ovoj početnoj verziji preuzete su s Wikimedia Commonsa uz navođenje autora/licence; kasnije ih možemo zamijeniti vlastitim fotografijama.</div>
+
+<div class="recipe-grid">
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada_-_Dalmatian_pot_roast_-_Croatia.jpg" alt="Dalmatinska pašticada s prilogom" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Dalmacija</span><h3>Pašticada</h3><p>Jelo od govedine koje se polako kuha uz vino, začine i suho voće; često se poslužuje s njokima. U dalmatinskoj tradiciji pripada svečanijim jelima.</p><div class="recipe-meta"><span>⏱ dugo kuhanje</span><span>🍷 vino</span><span>🎉 svečani stol</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>govedina</li><li>luk i češnjak</li><li>vino i ocat</li><li>suhe šljive/smokve prema receptu</li><li>začini</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Meso se marinira, zatim se polako pirja s povrćem, vinom i začinima dok ne omekša. Poslužuje se narezano, najčešće uz njoke.</p></div></div></div>
+<div class="photo-credit">Foto: Popo le Chien / Wikimedia Commons — CC BY-SA 4.0</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Soparnik.jpg" alt="Dalmatinski soparnik" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Poljica • Dalmacija</span><h3>Soparnik</h3><p>Tanka pita od tijesta punjena blitvom i lukom, premazana maslinovim uljem i češnjakom. Tradicija pripreme soparnika dio je hrvatske nematerijalne kulturne baštine.</p><div class="recipe-meta"><span>🌿 blitva</span><span>🫒 maslinovo ulje</span><span>🔥 komin</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>brašno</li><li>blitva</li><li>luk</li><li>maslinovo ulje</li><li>češnjak</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Između dva tanka sloja tijesta stavlja se začinjena blitva. Soparnik se tradicionalno peče na ugrijanom kamenu i prekriva žarom, a potom se premaže uljem i češnjakom.</p></div></div></div>
+<div class="photo-credit">Foto: Popo le Chien / Wikimedia Commons — slobodno korištenje uz uvjete izvora</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Brudet.jpg" alt="Hrvatski brudet" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Dalmacija • Kvarner • Istra</span><h3>Brudet</h3><p>Riblje jelo iz jednog lonca. Tradicija poznaje brojne lokalne varijante, a naglasak je na ribi, jednostavnoj pripremi i umaku.</p><div class="recipe-meta"><span>🐟 riba</span><span>🍅 umak</span><span>🥘 jedan lonac</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>različite vrste ribe</li><li>luk</li><li>rajčica prema varijanti</li><li>vino ili drugi lokalni dodatak</li><li>maslinovo ulje</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Riba se slaže i kuha u jednom loncu s lukom, uljem i drugim sastojcima karakterističnima za lokalnu varijantu. Često se poslužuje uz palentu.</p></div></div></div>
+<div class="photo-credit">Foto: LilKil / Wikimedia Commons — CC BY-SA 4.0</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cobanac-wp.jpg" alt="Slavonski čobanac" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Slavonija • Baranja</span><h3>Čobanac</h3><p>Gusto, dugo kuhano mesno jelo s paprikom, tradicionalno pripremano u kotliću. Postoje brojne kućne i lokalne varijante.</p><div class="recipe-meta"><span>🔥 kotlić</span><span>🌶️ paprika</span><span>🥩 više vrsta mesa</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>više vrsta mesa</li><li>luk</li><li>slatka i ljuta paprika</li><li>češnjak i začini</li><li>voda ili temeljac</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Namirnice se dugo i polako kuhaju u kotliću, često na otvorenoj vatri. Upravo vrijeme kuhanja i omjer mesa i paprike daju jelu karakter.</p></div></div></div>
+<div class="photo-credit">Foto: Webjo / Wikimedia Commons — CC BY-SA 4.0</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Zagorski_strukli.jpg" alt="Zagorski štrukli" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Hrvatsko zagorje</span><h3>Zagorski štrukli</h3><p>Tijesto punjeno svježim sirom, jajima i vrhnjem. Mogu se kuhati ili peći, a priprema je dio sjeverne hrvatske kulinarske tradicije.</p><div class="recipe-meta"><span>🥛 sir</span><span>🥚 jaja</span><span>🔥 kuhani ili pečeni</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>tanko tijesto</li><li>svježi sir</li><li>jaja</li><li>vrhnje</li><li>sol</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Tijesto se tanko razvuče, premaže nadjevom i oblikuje u štrukle. Zatim se kuhaju ili slažu u posudu, preliju vrhnjem i peku.</p></div></div></div>
+<div class="photo-credit">Foto: Mira & Neša / Wikimedia Commons — slobodno korištenje prema navedenoj dozvoli</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Me%C4%91imurska_gibanica_%28Croatia%29.jpg" alt="Međimurska gibanica" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Međimurje</span><h3>Međimurska gibanica</h3><p>Svečani slojeviti kolač s nadjevima koji uključuju svježi sir, mak, orahe i jabuke. Jedan je od prepoznatljivih slatkih predstavnika međimurske tradicije.</p><div class="recipe-meta"><span>🍎 jabuka</span><span>🌰 orah</span><span>🌱 mak</span><span>🥛 sir</span></div><div class="recipe-columns"><div><h4>Nadjevi</h4><ul><li>svježi sir</li><li>mljeveni mak</li><li>mljeveni orasi</li><li>jabuke</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Nadjevi se slažu u više slojeva između tijesta, a kolač se peče dok ne dobije zlatnu koricu. Omjeri i redoslijed mogu se razlikovati od kuće do kuće.</p></div></div></div>
+<div class="photo-credit">Foto: Silverije / Wikimedia Commons — CC BY-SA 3.0</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Kulin_%28serviran%29.jpg" alt="Slavonski kulen" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Slavonija • Baranja</span><h3>Kulen</h3><p>Tradicionalni suhomesnati proizvod snažno povezan sa slavonskim i baranjskim krajem. Njegova izrada traži znanje, kvalitetne sastojke, vrijeme i pravilno zrenje.</p><div class="recipe-meta"><span>🌶️ paprika</span><span>🥩 svinjetina</span><span>⏳ zrenje</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>odabrano meso</li><li>paprika</li><li>sol</li><li>crijevo</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Meso se priprema i začinjava, puni u prirodno crijevo te se potom proizvod suši i zrije prema pravilima i uvjetima karakterističnima za tradicionalnu proizvodnju.</p></div></div></div>
+<div class="photo-credit">Foto: Frka / Wikimedia Commons — licenca navedena na izvornoj stranici</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fritule_Badnjak_1209.jpg" alt="Fritule" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Primorje • Dalmacija • otoci</span><h3>Fritule</h3><p>Male pržene slastice koje se pripremaju u različitim lokalnim varijantama, osobito u vrijeme blagdana i zimskih svečanosti.</p><div class="recipe-meta"><span>🎄 blagdani</span><span>🍋 citrusi</span><span>🍩 prženo tijesto</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>brašno</li><li>kvasac ili druga vrsta dizanja</li><li>šećer</li><li>citrusna korica</li><li>ulje za prženje</li></ul></div><div><h4>Tradicionalna priprema</h4><p>Od tijesta se oblikuju male kuglice koje se prže u dubokom ulju. Recepti se razlikuju po dodatku grožđica, rakije, likera, jabuke ili drugih sastojaka.</p></div></div></div>
+<div class="photo-credit">Foto: Roberta F. / Wikimedia Commons — CC BY-SA 3.0</div>
+</article>
+
+<article class="ps-card recipe-card">
+<img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Strukli.jpg" alt="Štrukli" loading="lazy">
+<div class="recipe-body"><span class="gastro-region">Sjeverna Hrvatska</span><h3>Štrukli — kuhana i pečena varijanta</h3><p>Jedan naziv, više obiteljskih recepata. Nadjev, oblik, način kuhanja i završna priprema mogu se razlikovati od mjesta do mjesta.</p><div class="recipe-meta"><span>🥛 sir</span><span>🥣 tijesto</span><span>🏠 obiteljska tradicija</span></div><div class="recipe-columns"><div><h4>Osnova</h4><ul><li>tijesto</li><li>svježi sir</li><li>jaja</li><li>vrhnje</li></ul></div><div><h4>Za PatriaSoul</h4><p>Ovu ćemo stranicu koristiti i za prikupljanje različitih lokalnih verzija. Cilj nije proglasiti jedan recept jedinim „pravim”, nego sačuvati raznolikost tradicije.</p></div></div></div>
+<div class="photo-credit">Foto: Hibasi / Wikimedia Commons — CC BY-SA 4.0</div>
+</article>
+</div>
+</section>
+
+<section class="gastro-section">
+<h2>🧺 Što još čuvamo?</h2>
+<div class="gastro-grid">
+<article class="ps-card"><h3>Kruh i pogače</h3><p>Domaći kruh, pogače, kukuruzni i drugi tradicionalni kruhovi, uključujući običaje vezane uz njihovu pripremu.</p></article>
+<article class="ps-card"><h3>Zimnica i čuvanje hrane</h3><p>Sušenje, soljenje, kiseljenje, dimljenje, pekmezi, kompoti i drugi načini kojima se hrana čuvala kroz godinu.</p></article>
+<article class="ps-card"><h3>Blagdanski stol</h3><p>Božić, Uskrs, svadbe, proštenja, berbe i obiteljske svečanosti imaju svoje recepte i običaje koje vrijedi zapisati.</p></article>
+<article class="ps-card"><h3>Namirnice i proizvodi</h3><p>Maslinovo ulje, vino, sirevi, med, pršut, kulen, riba, ljekovito i samoniklo bilje te druge regionalne namirnice.</p></article>
+<article class="ps-card"><h3>Obiteljski recepti</h3><p>Posebna buduća zbirka za recepte koje čuvaju bake, djedovi i obitelji. Uz svaki ćemo, gdje je dopušteno, navesti priču i osobu koja ga je prenijela.</p></article>
+<article class="ps-card"><h3>Zaštićeni proizvodi</h3><p>Posebno ćemo obrađivati hrvatske proizvode sa zaštićenim oznakama i jasno navoditi službene izvore.</p></article>
+</div>
+</section>
+
+<section class="gastro-section">
+<h2>📚 Kako ćemo čuvati vjerodostojnost</h2>
+<p>Hrvatska gastronomija je regionalno raznolika i često ima više varijanti istog jela. Zato PatriaSoul neće svaku današnju varijantu predstavljati kao jedini povijesno „izvorni” recept. Za opći pregled koristimo vjerodostojne izvore, a za obiteljske recepte navodimo osobu, mjesto i priču kada ih dobijemo.</p>
+<p>Za početni pregled regionalne raznolikosti korišten je službeni portal Croatia.eu, koji hrvatsku gastronomiju opisuje kao skup različitih regionalnih kuhinja. citeturn0search0</p>
+<p>Za podatke o zaštiti autohtonih hrvatskih proizvoda koristit ćemo službene informacije Republike Hrvatske. citeturn0search2</p>
+</section>
+
+</div></section>
+</main>
 <footer class="ps-footer"><div class="container"><div class="ps-footer-bottom"><span>© 2026 PatriaSoul</span><span>Čuvaj baštinu. Prenesi je dalje.</span></div></div></footer>
-</body></html>
+</body>
+</html>
