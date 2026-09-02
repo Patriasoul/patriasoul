@@ -8,7 +8,7 @@
     const slug=key(city.slug||city.name), layers=[];
     const base=global.PatriaCityQuestions?.forCity?.(city.name)||[];
     layers.push(...base);
-    for(let i=0;i<28;i++){
+    for(let i=0;i<=35;i++){
       const api=global[`PatriaCityVerified${i||''}`];
       if(api?.forCity)layers.push(...api.forCity(city.name));
     }
