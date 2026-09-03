@@ -1,0 +1,58 @@
+name: Import gallery photos
+
+on:
+  push:
+    paths-ignore:
+      - 'images/gallery/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download selected Wikimedia Commons photos
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p images/gallery
+          download() {
+            local url="$1"
+            local out="$2"
+            echo "Downloading $out"
+            curl -L --fail --retry 3 --retry-delay 2 -A 'PatriaSoul/1.0 (gallery importer)' "$url" -o "images/gallery/$out"
+          }
+
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/A_distant_view_of_Divovici_Beach_and_the_Old_Town_of_Dubrovnik,_Croatia_(48739125537).jpg' 'dubrovnik-stari-grad.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Ston,_Croatia.jpg' 'ston.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Split_-_a_view_from_Marjan_-_panoramio.jpg' 'split-marjan.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Split_view_from_sea_2017_P01.jpg' 'split-more.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Batana_istrska.jpg' 'istra-batana.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Zagreb_(29255640143).jpg' 'zagreb-jelacic.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Medvedgrad_2022-05-12.jpg' 'medvedgrad.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Slavonija3_8292855.jpg' 'slavonija.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Smiraj_dana_na_rijeci_Savi.jpg' 'sava-slavonija.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Traditional_Slavonian_National_Costume.jpg' 'slavonska-nosnja.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar_-_street.JPG' 'vukovar-ulica.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Memorijalno_groblje_Vukovar.jpg' 'vukovar-groblje.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Croatia_BW_2014-10-07_14-21-23.jpg' 'opatija.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Vara%C5%BEdin_-_town_hall.JPG' 'varazdin-vijecnica.jpg'
+
+      - name: Commit downloaded photos
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'PatriaSoul Bot'
+          git config user.email 'patriasoul-bot@users.noreply.github.com'
+          git add images/gallery
+          if git diff --cached --quiet; then
+            echo 'No gallery changes.'
+            exit 0
+          fi
+          git commit -m 'Add selected Croatian gallery photos'
+          git push
