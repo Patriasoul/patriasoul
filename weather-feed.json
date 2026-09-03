@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T08:17:08.109998+00:00",
+  "updatedAt": "2026-09-03T18:36:50.035012+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -80,6 +80,12 @@
       "wind": null,
       "humidity": null
     },
+    "Osijek-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Pazin": {
       "temp": null,
       "condition": null,
@@ -87,6 +93,12 @@
       "humidity": null
     },
     "Pula-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Rijeka": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -176,12 +188,6 @@
       "wind": null,
       "humidity": null
     },
-    "Rijeka": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Split": {
       "temp": null,
       "condition": null,
@@ -193,20 +199,42 @@
       "condition": null,
       "wind": null,
       "humidity": null
+    },
+    "Osijek": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
     }
   },
   "alerts": [
     "Žuto upozorenje za vrućinu",
+    "Toplinski val. Maksimalna temperatura > 33 °C",
+    "Yellow high temperature warning",
+    "Heat wave. Maximum temperature > 33 °C",
+    "Narančasto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 34 °C",
-    "Yellow high temperature warning",
+    "Orange high temperature warning",
     "Heat wave. Maximum temperature > 34 °C",
-    "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 32 °C",
-    "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 32 °C",
+    "Narančasto upozorenje za vrućinu",
+    "Toplinski val. Maksimalna temperatura > 33 °C",
+    "Orange high temperature warning",
+    "Heat wave. Maximum temperature > 33 °C",
     "Žuto upozorenje za vjetar",
-    "Moguća je pojačana bura, uglavnom ujutro i navečer. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Pojačana, mjestimice jaka bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)",
     "Yellow wind warning",
-    "Fresh NE breeze possible, mostly in the morning and evening . Maximum wind gusts 35-40 knots (65-75 km/h)"
+    "Fresh, locally strong NE wind maximum wind gusts 35-45 knots (65-85 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Jaka bura. Najjači udari vjetra 35-50 čvorova  (65-95 km/h)",
+    "Yellow wind warning",
+    "Strong NE wind. Maximum wind gusts 35-50 knots (65-95 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Mjestimice jak sjeverozapadni vjetar, u noći pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Yellow wind warning",
+    "Locally strong NW wind, in the evening locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Yellow wind warning",
+    "Fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)"
   ]
 }\n
