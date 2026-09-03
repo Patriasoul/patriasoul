@@ -45,6 +45,14 @@
     document.head.appendChild(s);
   }
 
+  function sanitizeCanonicalNav() {
+    var nav = document.querySelector('.ps-mainnav');
+    if (!nav) return;
+    Array.prototype.slice.call(nav.children).forEach(function (child) {
+      if (!child.classList.contains('ps-nav-group')) child.remove();
+    });
+  }
+
   function improveKeyboardAndOutsideClick() {
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape') return;
@@ -65,6 +73,7 @@
   }
 
   function init() {
+    sanitizeCanonicalNav();
     injectStyles();
     improveKeyboardAndOutsideClick();
   }
