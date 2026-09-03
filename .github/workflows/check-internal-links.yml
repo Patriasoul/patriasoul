@@ -1,0 +1,27 @@
+name: Audit PatriaSoul links and shell
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'scripts/check-internal-links.py'
+      - 'site-navigation.js'
+  pull_request:
+    paths:
+      - '**.html'
+      - 'scripts/check-internal-links.py'
+      - 'site-navigation.js'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run internal-link audit
+        run: python3 scripts/check-internal-links.py
