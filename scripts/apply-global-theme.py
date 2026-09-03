@@ -3,7 +3,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 CSS = '<link rel="stylesheet" href="/patriasoul-global.css">'
-JS = '<script src="/site-navigation.js?v=placeholder-cleanup-2" defer></script>'
+JS = '<script src="/site-navigation.js?v=41" defer></script>'
 changed = []
 
 for path in ROOT.rglob('*.html'):
@@ -20,8 +20,8 @@ for path in ROOT.rglob('*.html'):
     text = re.sub(r'\s*[·•]\s*privremena ilustracija\b', '', text, flags=re.IGNORECASE)
     text = re.sub(r'\bprivremena ilustracija\b', '', text, flags=re.IGNORECASE)
 
-    # Force all themed HTML pages to load the newest placeholder-cleanup version.
-    text = re.sub(r'/site-navigation\.js(?:\?[^"\']*)?', '/site-navigation.js?v=placeholder-cleanup-2', text)
+    # Force all themed HTML pages to load the clean current navigation version.
+    text = re.sub(r'/site-navigation\.js(?:\?[^"\']*)?', '/site-navigation.js?v=41', text)
 
     additions = []
     if '/patriasoul-global.css' not in text:
