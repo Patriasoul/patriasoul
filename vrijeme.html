@@ -3,90 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Vrijeme u Hrvatskoj prema tvojoj lokaciji — najbliži gradovi, aktualni DHMZ podaci i upozorenja.">
+  <meta name="description" content="Vrijeme u Hrvatskoj prema tvojoj lokaciji — najbliži gradovi, aktualni DHMZ podaci, upozorenja i korisne informacije za putovanje.">
   <meta name="theme-color" content="#0b1016">
   <title>Vrijeme u Hrvatskoj | PatriaSoul</title>
   <link rel="stylesheet" href="variables.css">
   <link rel="stylesheet" href="patriasoul-modern.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="vrijeme-traka.css">
+  <link rel="stylesheet" href="/patriasoul-global.css">
+  <script src="/site-navigation.js?v=42" defer></script>
   <style>
     .wx-hero{background:radial-gradient(circle at 80% 8%,rgba(214,173,85,.14),transparent 34%),linear-gradient(135deg,#0a0f15,#17130d)}
-    .wx-wrap{max-width:1180px;margin-inline:auto}
-    .wx-intro{max-width:760px}
+    .wx-wrap{max-width:1180px;margin-inline:auto}.wx-intro{max-width:780px}
     .wx-control{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:22px 0 10px}
     .wx-locate{border:1px solid #d6ad55;background:linear-gradient(135deg,#d6ad55,#f1d58d);color:#111;padding:12px 17px;border-radius:12px;font-weight:850;cursor:pointer;transition:transform .18s,box-shadow .18s}
     .wx-locate:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(214,173,85,.2)}
     .wx-locate:focus-visible,.wx-select:focus-visible{outline:3px solid rgba(241,213,141,.55);outline-offset:3px}
     .wx-select{padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#11161d;color:#fff;min-width:230px}
-    .wx-location{font-size:1.02rem;font-weight:800;color:#f1d58d;margin:10px 0}
-    .wx-status{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8f969f;font-size:.82rem;margin-bottom:18px}
-    .wx-alert{margin:0 0 20px;padding:17px 18px;border:1px solid rgba(214,173,85,.35);border-left:4px solid #d6ad55;border-radius:14px;background:rgba(214,173,85,.06);color:#d5d9de;line-height:1.55}
-    .wx-alert strong{color:#f1d58d}.wx-alert ul{margin:8px 0 0;padding-left:20px}
-    .wx-list{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .wx-card{background:linear-gradient(180deg,#141a21,#0e1319);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:20px;min-height:270px;display:flex;flex-direction:column;box-shadow:0 10px 32px rgba(0,0,0,.16);transition:transform .18s,border-color .18s,box-shadow .18s}
-    .wx-card:hover{transform:translateY(-3px);border-color:rgba(214,173,85,.3);box-shadow:0 16px 40px rgba(0,0,0,.22)}
-    .wx-main{border-color:rgba(214,173,85,.42);box-shadow:0 10px 38px rgba(214,173,85,.08)}
-    .wx-card-top{display:flex;justify-content:space-between;gap:8px;font-size:.76rem}.wx-distance{color:#f1d58d}.wx-source{color:#7f8994}
-    .wx-city{display:flex;align-items:center;justify-content:space-between;margin-top:14px}.wx-city h2{margin:0;font-size:1.25rem}.wx-icon{font-size:2rem}
-    .wx-temp{font-size:3rem;font-weight:900;letter-spacing:-.05em;margin-top:8px}.wx-condition{color:#c5cbd2;min-height:24px;margin:4px 0 16px}
-    .wx-details{display:flex;gap:14px;color:#9fa8b2;font-size:.83rem;margin-top:auto}.wx-city-link{margin-top:16px;color:#f1d58d;text-decoration:none;font-weight:800}.wx-city-link:hover{text-decoration:underline}
-    .wx-empty{grid-column:1/-1;text-align:center;padding:45px;border:1px dashed #444;border-radius:18px;color:#9fa8b2}
+    .wx-location{font-size:1.02rem;font-weight:800;color:#f1d58d;margin:10px 0}.wx-status{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8f969f;font-size:.82rem;margin-bottom:18px}
+    .wx-alert{margin:0 0 20px;padding:17px 18px;border:1px solid rgba(214,173,85,.35);border-left:4px solid #d6ad55;border-radius:14px;background:rgba(214,173,85,.06);color:#d5d9de;line-height:1.55}.wx-alert strong{color:#f1d58d}.wx-alert ul{margin:8px 0 0;padding-left:20px}
+    .wx-list{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.wx-card{background:linear-gradient(180deg,#141a21,#0e1319);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:20px;min-height:270px;display:flex;flex-direction:column;box-shadow:0 10px 32px rgba(0,0,0,.16);transition:transform .18s,border-color .18s,box-shadow .18s}.wx-card:hover{transform:translateY(-3px);border-color:rgba(214,173,85,.3);box-shadow:0 16px 40px rgba(0,0,0,.22)}.wx-main{border-color:rgba(214,173,85,.42);box-shadow:0 10px 38px rgba(214,173,85,.08)}
+    .wx-card-top{display:flex;justify-content:space-between;gap:8px;font-size:.76rem}.wx-distance{color:#f1d58d}.wx-source{color:#7f8994}.wx-city{display:flex;align-items:center;justify-content:space-between;margin-top:14px}.wx-city h2{margin:0;font-size:1.25rem}.wx-icon{font-size:2rem}.wx-temp{font-size:3rem;font-weight:900;letter-spacing:-.05em;margin-top:8px}.wx-condition{color:#c5cbd2;min-height:24px;margin:4px 0 16px}.wx-details{display:flex;gap:14px;color:#9fa8b2;font-size:.83rem;margin-top:auto}.wx-city-link{margin-top:16px;color:#f1d58d;text-decoration:none;font-weight:800}.wx-city-link:hover{text-decoration:underline}.wx-empty{grid-column:1/-1;text-align:center;padding:45px;border:1px dashed #444;border-radius:18px;color:#9fa8b2}
     .wx-note{margin-top:24px;padding:16px 18px;border-left:3px solid #d6ad55;background:rgba(214,173,85,.05);color:#aeb6bf;line-height:1.55;border-radius:0 12px 12px 0}.wx-note strong{color:#f1d58d}
     .wx-section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:20px}.wx-section-head h2{margin:0}.wx-section-head p{margin:0;color:#8f969f}
-    @media(max-width:1000px){.wx-list{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:560px){.wx-list{grid-template-columns:1fr}.wx-card{min-height:220px}.wx-select,.wx-locate{width:100%}}
+    .wx-info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.wx-info{background:linear-gradient(180deg,#151b22,#10151b);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px}.wx-info h3{margin:0 0 9px;color:#f1d58d}.wx-info p{margin:0;color:#b8c0c8;line-height:1.65}.wx-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.wx-pill{padding:8px 11px;border:1px solid rgba(214,173,85,.25);border-radius:999px;color:#d6dce2;background:rgba(214,173,85,.05);font-size:.84rem}
+    .wx-travel{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}.wx-travel-main,.wx-travel-side{background:linear-gradient(180deg,#151b22,#0e1319);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:24px}.wx-travel h2,.wx-travel h3{margin-top:0}.wx-travel p,.wx-travel li{color:#b8c0c8;line-height:1.65}.wx-travel ul{padding-left:20px;margin-bottom:0}
+    @media(max-width:1000px){.wx-list{grid-template-columns:repeat(2,1fr)}.wx-info-grid,.wx-travel{grid-template-columns:1fr}}
+    @media(max-width:560px){.wx-list{grid-template-columns:1fr}.wx-card{min-height:220px}.wx-select,.wx-locate{width:100%}.wx-info-grid{grid-template-columns:1fr}}
     @media(prefers-reduced-motion:reduce){.wx-card,.wx-locate{transition:none}.wx-card:hover,.wx-locate:hover{transform:none}}
   </style>
-<link rel="stylesheet" href="/patriasoul-global.css">
-<script src="/site-navigation.js?v=41" defer></script>
-
 </head>
 <body>
-  <header class="ps-header">
-    <div class="container ps-nav">
-      <a class="ps-brand" href="index.html" aria-label="PatriaSoul početna"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a>
-      <nav class="ps-mainnav" aria-label="Glavna navigacija">
-        <a href="index.html">Početna</a><a href="vijesti.html">Vijesti</a><a href="gradovi.html">Gradovi</a><a href="brani-svoj-grad.html">Igra</a><a class="ps-nav-cta" href="quiz.html">🧠 Kviz</a>
-      </nav>
-    </div>
-  </header>
+  <header class="ps-header"><div class="container ps-nav"><a class="ps-brand" href="index.html" aria-label="PatriaSoul početna"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a><nav class="ps-mainnav" aria-label="Glavna navigacija"><a href="index.html">Početna</a><a href="vijesti.html">Vijesti</a><a href="gradovi.html">Gradovi</a><a href="brani-svoj-grad.html">Igra</a><a class="ps-nav-cta" href="quiz.html">🧠 Kviz</a></nav></div></header>
 
   <main>
-    <section class="ps-page-hero wx-hero">
-      <div class="container wx-wrap">
-        <div class="ps-breadcrumbs"><a href="index.html">Početna</a> / Vrijeme</div>
-        <span class="ps-kicker">🌤️ Hrvatska</span>
-        <h1>Vrijeme u Hrvatskoj</h1>
-        <p class="wx-intro">Provjeri vrijeme u svojoj blizini, pronađi najbliže gradove i brzo prijeđi na profil grada. Podaci se prikazuju iz dostupnog DHMZ izvora.</p>
-        <div class="wx-location" id="wx-location" aria-live="polite">📍 Tražimo tvoju lokaciju…</div>
-        <div class="wx-control">
-          <button id="wx-locate" class="wx-locate" type="button">📍 Pronađi moju lokaciju</button>
-          <label class="sr-only" for="wx-city">Odaberi grad</label>
-          <select id="wx-city" class="wx-select" aria-label="Odaberi grad">
-            <option value="">Ili odaberi grad…</option>
-            <option>Zagreb</option><option>Split</option><option>Rijeka</option><option>Osijek</option><option>Zadar</option><option>Šibenik</option><option>Sinj</option><option>Trilj</option><option>Omiš</option><option>Knin</option><option>Dubrovnik</option><option>Pula</option><option>Karlovac</option><option>Varaždin</option><option>Vukovar</option>
-          </select>
-        </div>
-        <div data-ps-weather-strip aria-label="Vremenska traka u tvojoj blizini"></div>
-      </div>
-    </section>
+    <section class="ps-page-hero wx-hero"><div class="container wx-wrap">
+      <div class="ps-breadcrumbs"><a href="index.html">Početna</a> / Vrijeme</div><span class="ps-kicker">🌤️ Hrvatska</span>
+      <h1>Vrijeme u Hrvatskoj</h1>
+      <p class="wx-intro">Provjeri aktualne vremenske uvjete u svojoj blizini, pronađi najbliže gradove i brzo prijeđi na njihov profil. Na jednom mjestu pratimo vrijeme na kontinentu, u gorskoj Hrvatskoj i uz Jadran.</p>
+      <div class="wx-location" id="wx-location" aria-live="polite">📍 Tražimo tvoju lokaciju…</div>
+      <div class="wx-control"><button id="wx-locate" class="wx-locate" type="button">📍 Pronađi moju lokaciju</button><label class="sr-only" for="wx-city">Odaberi grad</label><select id="wx-city" class="wx-select" aria-label="Odaberi grad"><option value="">Ili odaberi grad…</option><option>Zagreb</option><option>Split</option><option>Rijeka</option><option>Osijek</option><option>Zadar</option><option>Šibenik</option><option>Sinj</option><option>Trilj</option><option>Omiš</option><option>Knin</option><option>Dubrovnik</option><option>Pula</option><option>Karlovac</option><option>Varaždin</option><option>Vukovar</option></select></div>
+      <div data-ps-weather-strip aria-label="Vremenska traka u tvojoj blizini"></div>
+    </div></section>
 
-    <section class="ps-section" aria-labelledby="wx-nearby-title">
-      <div class="container wx-wrap">
-        <div class="wx-section-head">
-          <div><h2 id="wx-nearby-title">Vrijeme u najbližim gradovima</h2><p>Četiri lokacije najbliže tvojoj poziciji.</p></div>
-        </div>
-        <div class="wx-status"><span id="wx-count" aria-live="polite">Učitavanje…</span><span id="wx-updated"></span></div>
-        <div id="wx-alerts" class="wx-alert" role="status" aria-live="polite" hidden></div>
-        <div id="wx-list" class="wx-list" aria-live="polite"></div>
-        <div class="wx-note"><strong>Izvor podataka: DHMZ</strong> — vremenski podaci i upozorenja automatski se osvježavaju iz javno dostupnih podataka. Lokacija se koristi u pregledniku za odabir najbližih gradova i ne šalje se PatriaSoulu.</div>
+    <section class="ps-section" aria-labelledby="wx-nearby-title"><div class="container wx-wrap">
+      <div class="wx-section-head"><div><h2 id="wx-nearby-title">Vrijeme u najbližim gradovima</h2><p>Četiri lokacije najbliže tvojoj poziciji ili odabranom gradu.</p></div></div>
+      <div class="wx-status"><span id="wx-count" aria-live="polite">Učitavanje…</span><span id="wx-updated"></span></div>
+      <div id="wx-alerts" class="wx-alert" role="status" aria-live="polite" hidden></div><div id="wx-list" class="wx-list" aria-live="polite"></div>
+      <div class="wx-note"><strong>Izvor podataka: DHMZ</strong> — vremenski podaci i upozorenja automatski se osvježavaju iz dostupnog izvora. Lokacija se koristi u pregledniku za odabir najbližih gradova i ne sprema se na PatriaSoul.</div>
+    </div></section>
+
+    <section class="ps-section"><div class="container wx-wrap"><div class="wx-section-head"><div><h2>Hrvatska kroz četiri vremenska područja</h2><p>Vrijeme se može znatno razlikovati na malom prostoru.</p></div></div>
+      <div class="wx-info-grid">
+        <article class="wx-info"><h3>🌊 Jadran</h3><p>Obala i otoci imaju izražen mediteranski karakter. Ljeti su važni sunce, visoke temperature i vjetrovi poput bure i juga, dok se zimi vrijeme može brzo promijeniti.</p><div class="wx-pills"><span class="wx-pill">Bura</span><span class="wx-pill">Jugo</span><span class="wx-pill">Maestral</span></div></article>
+        <article class="wx-info"><h3>⛰️ Gorska Hrvatska</h3><p>Gorski krajevi imaju svježije uvjete i izraženije zimske prilike. Razlike u temperaturi između obale i unutrašnjosti posebno su vidljive pri prodorima hladnog zraka.</p><div class="wx-pills"><span class="wx-pill">Snijeg</span><span class="wx-pill">Magla</span><span class="wx-pill">Mraz</span></div></article>
+        <article class="wx-info"><h3>🌾 Kontinentalna Hrvatska</h3><p>Panonski i središnji krajevi imaju izražena godišnja doba. Ljeti su moguće vrućine i grmljavinski pljuskovi, a zimi magla, niske temperature i mraz.</p><div class="wx-pills"><span class="wx-pill">Magla</span><span class="wx-pill">Pljuskovi</span><span class="wx-pill">Mraz</span></div></article>
       </div>
-    </section>
+    </div></section>
+
+    <section class="ps-section"><div class="container wx-wrap"><div class="wx-travel">
+      <article class="wx-travel-main"><h2>🌤️ Vrijeme i planiranje puta</h2><p>Prije putovanja kroz Hrvatsku vrijedi provjeriti više od same temperature. Na obali vjetar može bitno promijeniti osjećaj vremena i uvjete na moru, u gorskim krajevima važni su snijeg, magla i stanje cesta, a u kontinentalnom dijelu ljetni pljuskovi i grmljavina mogu nastupiti vrlo brzo.</p><p>Za izlet, vožnju, planinarenje ili boravak uz more pogledaj upozorenja i odaberi grad koji ti je najbliži. Tako PatriaSoul može biti koristan početni pregled prije odlaska.</p></article>
+      <aside class="wx-travel-side"><h3>🧭 Brzi podsjetnik</h3><ul><li>Provjeri aktualnu temperaturu.</li><li>Pogledaj vjetar i vlagu.</li><li>Provjeri DHMZ upozorenja.</li><li>Za putovanje prati promjenu vremena.</li><li>Za obalu obrati pozornost na vjetar i stanje mora.</li></ul></aside>
+    </div></div></section>
   </main>
 
   <noscript><div class="container"><p>Za prikaz aktualnog vremena potrebno je uključiti JavaScript.</p></div></noscript>
-  <script src="vrijeme-traka.js" defer></script>
-  <script src="vrijeme.js" defer></script>
+  <script src="vrijeme-traka.js" defer></script><script src="vrijeme.js" defer></script>
 </body>
 </html>
