@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T20:48:32.825257+00:00",
+  "updatedAt": "2026-09-03T21:15:02.158064+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -14,55 +14,13 @@
       "wind": null,
       "humidity": null
     },
-    "Crikvenica": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Dubrovnik": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Dubrovnik-aerodrom": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
-    "Gospić": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "RC Gradište (kod Županje)": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Karlovac": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Knin": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Križevci": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Makarska": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -80,7 +38,7 @@
       "wind": null,
       "humidity": null
     },
-    "Pazin": {
+    "Osijek-aerodrom": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -92,25 +50,7 @@
       "wind": null,
       "humidity": null
     },
-    "Rijeka": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Rijeka-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Senj": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Sisak": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -122,19 +62,7 @@
       "wind": null,
       "humidity": null
     },
-    "Split-Marjan": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Split-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Šibenik": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -146,19 +74,7 @@
       "wind": null,
       "humidity": null
     },
-    "Zadar": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Zadar-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Zagreb-Grič": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -182,13 +98,37 @@
       "wind": null,
       "humidity": null
     },
+    "Rijeka": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zadar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Split": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
+    "Dubrovnik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Pula": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Osijek": {
       "temp": null,
       "condition": null,
       "wind": null,
