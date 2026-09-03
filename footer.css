@@ -15,7 +15,6 @@
   --ps-footer-max: 1240px;
 }
 
-/* Zajednički footer — uvijek puna širina */
 .ps-footer,
 footer,
 .site-footer,
@@ -58,7 +57,6 @@ footer > .container,
   margin-inline: auto;
 }
 
-/* Brand + završna poruka */
 .ps-footer-hero {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
@@ -148,7 +146,6 @@ footer > .container,
   font-style: italic;
 }
 
-/* Četiri glavna stupca */
 .ps-footer-grid,
 .footer-top,
 .footer-main,
@@ -248,7 +245,6 @@ footer a:hover,
   transform: translateX(0);
 }
 
-/* Donji redak */
 .ps-footer-bottom,
 .footer-bottom,
 .footer-bottom-bar,
@@ -288,7 +284,6 @@ footer a:hover,
   text-align: right;
 }
 
-/* Fokus tipkovnice */
 .ps-footer a:focus-visible,
 footer a:focus-visible,
 .site-footer a:focus-visible,
@@ -300,7 +295,46 @@ footer a:focus-visible,
   border-radius: 4px;
 }
 
-/* Tablet */
+.ps-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--ps-footer-text);
+  text-decoration: none;
+}
+
+.ps-footer-logo img {
+  display: block;
+  width: 74px;
+  height: 74px;
+  flex: 0 0 74px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.ps-footer-logo-text {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: clamp(1.35rem, 2.3vw, 1.8rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: .07em;
+}
+
+.ps-footer-logo-text span {
+  color: var(--ps-footer-text);
+}
+
+.ps-footer-logo-text strong {
+  color: var(--ps-footer-gold);
+  font-weight: 900;
+}
+
+.ps-footer-logo:hover {
+  transform: none;
+}
+
 @media (max-width: 900px) {
   .ps-footer-hero {
     grid-template-columns: 1fr;
@@ -321,7 +355,6 @@ footer a:focus-visible,
   }
 }
 
-/* Mobitel */
 @media (max-width: 620px) {
   .ps-footer-container,
   .footer-container,
@@ -349,6 +382,12 @@ footer a:focus-visible,
 
   .ps-footer-motto {
     padding: 18px 20px;
+  }
+
+  .ps-footer-logo img {
+    width: 62px;
+    height: 62px;
+    flex-basis: 62px;
   }
 
   .ps-footer-bottom,
