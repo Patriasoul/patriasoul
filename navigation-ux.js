@@ -24,6 +24,10 @@
       .ps-sub-link{font-size:14px!important;padding:8px 10px!important;border-radius:8px!important}
       .ps-sub-link:hover,.ps-nav-item.is-active>.ps-nav-item-row>.ps-sub-link{background:rgba(255,255,255,.07)!important;color:#fff!important}
       .ps-nav-nested-toggle{width:30px!important;height:30px!important;border-radius:7px!important}
+      .ps-regional-explore{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 28px;padding:18px;border:1px solid rgba(212,175,55,.18);border-radius:18px;background:rgba(255,255,255,.025)}
+      .ps-regional-explore h2{grid-column:1/-1;margin:0 0 2px;font-size:1.05rem}
+      .ps-regional-explore a{display:block;padding:11px 12px;border-radius:10px;background:rgba(255,255,255,.035);color:#d4af37!important;text-decoration:none;font-weight:700}
+      .ps-regional-explore a:hover{background:rgba(255,255,255,.08)!important;color:#fff!important}
       @media (min-width:861px){
         .ps-mainnav .ps-subnav{display:none!important;position:absolute!important;top:calc(100% + 8px)!important;right:0!important;z-index:5100!important;background:#111720!important}
         .ps-nav-group.is-expanded>.ps-subnav{display:grid!important;grid-template-columns:repeat(2,minmax(210px,1fr))!important;gap:20px!important}
@@ -40,7 +44,9 @@
         .ps-nav-group.is-expanded>.ps-subnav{display:block!important}
         .ps-mega-section{margin-bottom:14px!important}
         .ps-mega-section:last-child{margin-bottom:0!important}
+        .ps-regional-explore{grid-template-columns:1fr 1fr!important}
       }
+      @media(max-width:520px){.ps-regional-explore{grid-template-columns:1fr!important}}
     `;
     document.head.appendChild(s);
   }
@@ -51,6 +57,53 @@
     Array.prototype.slice.call(nav.children).forEach(function (child) {
       if (!child.classList.contains('ps-nav-group')) child.remove();
     });
+  }
+
+  function improveRegionalDiscovery() {
+    var root = document.querySelector('main .rg');
+    if (!root || document.getElementById('ps-regional-explore')) return;
+
+    var breadcrumb = root.querySelector('.ps-breadcrumbs');
+    var text = breadcrumb ? breadcrumb.textContent : '';
+    var regionalSlugs = [
+      'zagorje-i-prigorje','medimurje','podravina-i-bilogora','lika-i-gorski-kotar',
+      'slavonija-i-baranja','istra','kvarner-i-primorje','dalmacija','posavina-i-pokuplje'
+    ];
+    var isRegional = regionalSlugs.some(function (slug) { return location.pathname.indexOf(slug) !== -1; }) || /Krajevi i geografija/.test(text);
+    if (!isRegional) return;
+
+    var current = location.pathname.split('/').pop() || '';
+    var links = [
+      ['🗺️ Veliki regionalni vodič', '/regionalni-vodic.html'],
+      ['🏙️ Gradovi', '/gradovi.html'],
+      ['🏛️ Baština', '/bastina.html'],
+      ['🍽️ Gastronomija', '/gastronomija.html'],
+      ['🗣️ Govori i dijalekti', '/govori-i-dijalekti.html'],
+      ['🌲 Priroda Hrvatske', '/priroda.html']
+    ];
+
+    var box = document.createElement('section');
+    box.id = 'ps-regional-explore';
+    box.className = 'ps-regional-explore';
+    var heading = document.createElement('h2');
+    heading.textContent = '🔎 Istraži ovaj kraj kroz cijeli PatriaSoul';
+    box.appendChild(heading);
+    links.forEach(function (entry) {
+      var a = document.createElement('a');
+      a.href = entry[1];
+      a.textContent = entry[0];
+      if (entry[1].split('/').pop() === current) a.setAttribute('aria-current', 'page');
+      box.appendChild(a);
+    });
+
+    root.querySelectorAll('aside.card').forEach(function (aside) {
+      var h = aside.querySelector('h2');
+      if (h && /Istraži dalje/.test(h.textContent)) aside.remove();
+    });
+
+    var back = root.querySelector('.back');
+    if (back) back.parentNode.insertBefore(box, back);
+    else root.appendChild(box);
   }
 
   function improveKeyboardAndOutsideClick() {
@@ -75,6 +128,7 @@
   function init() {
     sanitizeCanonicalNav();
     injectStyles();
+    improveRegionalDiscovery();
     improveKeyboardAndOutsideClick();
   }
 
