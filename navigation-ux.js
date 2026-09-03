@@ -59,6 +59,29 @@
     });
   }
 
+  function exposeNatureInGeography() {
+    var nav = document.querySelector('.ps-mainnav');
+    if (!nav || nav.querySelector('[data-ps-nature-link]')) return;
+    var geography = nav.querySelector('a[href="/krajevi-i-geografija.html"]');
+    if (!geography) return;
+    var item = geography.closest('.ps-nav-item');
+    if (!item) return;
+    var nested = item.querySelector(':scope > .ps-nav-nested');
+    if (!nested) return;
+    var row = document.createElement('div');
+    row.className = 'ps-nav-item ps-nav-item-level-2';
+    row.setAttribute('data-ps-nature-link', 'true');
+    var linkRow = document.createElement('div');
+    linkRow.className = 'ps-nav-item-row';
+    var link = document.createElement('a');
+    link.className = 'ps-sub-link';
+    link.href = '/priroda.html';
+    link.textContent = '🌲 Priroda Hrvatske';
+    linkRow.appendChild(link);
+    row.appendChild(linkRow);
+    nested.appendChild(row);
+  }
+
   function improveRegionalDiscovery() {
     var root = document.querySelector('main .rg');
     if (!root || document.getElementById('ps-regional-explore')) return;
@@ -128,6 +151,7 @@
   function init() {
     sanitizeCanonicalNav();
     injectStyles();
+    exposeNatureInGeography();
     improveRegionalDiscovery();
     improveKeyboardAndOutsideClick();
   }
