@@ -138,6 +138,35 @@
     });
   }
 
+  function ensureFallbackNavigation() {
+    var nav = document.querySelector('.ps-mainnav');
+    if (!nav || nav.children.length) return;
+
+    var links = [
+      ['Početna', '/index.html'],
+      ['Domovina', '/domovina.html'],
+      ['Branitelji', '/branitelji.html'],
+      ['Povijest', '/povijest.html'],
+      ['Baština', '/bastina.html'],
+      ['Vjera', '/vjera.html'],
+      ['Mediji', '/video.html'],
+      ['Igra', '/brani-svoj-grad.html'],
+      ['O nama', '/o-nama.html'],
+      ['Kontakt', '/kontakt.html']
+    ];
+
+    links.forEach(function (item) {
+      var wrap = document.createElement('div');
+      wrap.className = 'ps-nav-fallback-item';
+      var a = document.createElement('a');
+      a.href = item[1];
+      a.textContent = item[0];
+      a.className = 'ps-nav-parent';
+      wrap.appendChild(a);
+      nav.appendChild(wrap);
+    });
+  }
+
   function removeInteractionBlockers() {
     /* Disable only obvious full-viewport empty overlays created by navigation layers. */
     document.querySelectorAll('body *').forEach(function (el) {
@@ -158,6 +187,7 @@
 
   function init() {
     injectStyles();
+    ensureFallbackNavigation();
     bindNavigation();
     bindMenuButton();
     removeInteractionBlockers();
@@ -170,5 +200,6 @@
   }
 
   setTimeout(init, 300);
-  setTimeout(removeInteractionBlockers, 1000);
+  setTimeout(init, 1000);
+  setTimeout(removeInteractionBlockers, 1500);
 })();
