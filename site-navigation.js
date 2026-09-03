@@ -7,6 +7,10 @@ var groups=[
  {title:'Hrvatska',items:[['🇭🇷 Hrvatska','/domovina.html'],['🏙️ Gradovi','/gradovi.html'],['🗺️ Krajevi i geografija','/krajevi-i-geografija.html']]},
  {title:'Hrvatska danas',items:[['📰 Vijesti','/vijesti.html'],['🌤️ Vrijeme','/vrijeme.html']]}
 ]},
+{label:'Krajevi',href:'/krajevi-i-geografija.html',mega:true,sections:[
+ {title:'Regionalni vodiči I',items:[['🗺️ Veliki regionalni vodič','/regionalni-vodic.html'],['🏞️ Zagorje i Prigorje','/zagorje-i-prigorje.html'],['🌿 Međimurje','/medimurje.html'],['🌳 Podravina i Bilogora','/podravina-i-bilogora.html'],['🌊 Posavina i Pokuplje','/posavina-i-pokuplje.html']]},
+ {title:'Regionalni vodiči II',items:[['⛰️ Lika i Gorski kotar','/lika-i-gorski-kotar.html'],['🌾 Slavonija i Baranja','/slavonija-i-baranja.html'],['🫒 Istra','/istra.html'],['⚓ Kvarner i Primorje','/kvarner-i-primorje.html'],['🌊 Dalmacija','/dalmacija.html']]}
+]},
 {label:'Branitelji',href:'/branitelji.html',mega:true,sections:[
  {title:'Domovinski rat',items:[['🛡️ Branitelji','/branitelji.html'],['⚔️ Domovinski rat','/domovinski-rat.html']]},
  {title:'Postrojbe i operacije',items:[['🏛️ Postrojbe','/postrojbe.html'],['🪖 Brigade','/brigade.html'],['⚔️ Operacije i bojišta','/operacije.html'],['🗺️ Vukovar','/vukovar.html']]},
