@@ -6,6 +6,7 @@ on:
     paths:
       - '**.html'
       - 'patriasoul-global.css'
+      - 'site-navigation.js'
       - 'page-hero.js'
       - 'scripts/apply-global-theme.py'
       - '.github/workflows/apply-global-theme.yml'
