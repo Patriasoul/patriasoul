@@ -4,6 +4,8 @@
 const KEY='patriasoul_city_results_v3',MISSION_KEY='patriasoul_city_missions_v1',HISTORY_KEY='patriasoul_city_question_history_v1';
 const ACTIVE_LAYER_IDS=Array.from({length:126},(_,i)=>i+2).filter(i=>i!==33&&i!==121);
 const QUESTIONS_PER_GAME=10;
+const ANSWER_TIME_MS=15000;
+const EXPLANATION_TIME_MS=5200;
 function read(){try{const x=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(x)?x:[]}catch(_){return []}}
 function save(x){try{localStorage.setItem(KEY,JSON.stringify(x.slice(-1000)))}catch(_){}return x}
 function missions(){try{return JSON.parse(localStorage.getItem(MISSION_KEY)||'{"played":0,"perfect":0,"points":0}')||{played:0,perfect:0,points:0}}catch(_){return{played:0,perfect:0,points:0}}}
@@ -47,19 +49,60 @@ function cityRows(city){return read().filter(r=>!city||r.city===city).sort((a,b)
 function installGamePolish(){
   if(typeof document==='undefined')return;
   const style=document.createElement('style');
-  style.textContent='.city-answer.correct{border-color:#35d47a!important;background:rgba(53,212,122,.28)!important;box-shadow:0 0 0 3px rgba(53,212,122,.16),0 8px 24px rgba(53,212,122,.14)!important;color:#fff!important;font-weight:850!important}.city-answer.wrong{background:rgba(201,75,75,.13)!important}.city-explanation{font-size:1rem!important;line-height:1.7!important;padding:19px 20px!important}.city-explanation strong{font-size:1.02rem!important;margin-bottom:8px!important}';
+  style.textContent='.city-answer.correct{border-color:#35d47a!important;background:rgba(53,212,122,.28)!important;box-shadow:0 0 0 3px rgba(53,212,122,.16),0 8px 24px rgba(53,212,122,.14)!important;color:#fff!important;font-weight:850!important}.city-answer.wrong{background:rgba(201,75,75,.13)!important}.city-explanation{font-size:1rem!important;line-height:1.7!important;padding:19px 20px!important}.city-explanation strong{font-size:1.02rem!important;margin-bottom:8px!important}.ps-city-answer-timer{height:10px;margin:10px 0 18px;background:#252b33;border-radius:99px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}.ps-city-answer-timer i{display:block;height:100%;width:100%;background:var(--gold,#d6ad55);transform-origin:left center}.ps-city-answer-timer-label{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:4px 0 8px;color:rgba(255,255,255,.7);font-size:.86rem;font-weight:800}.ps-city-answer-timer-label b{color:var(--gold2,#f0d38a);font-variant-numeric:tabular-nums}.ps-city-answer-timer.expired i{background:#c94b4b!important}.city-answer.ps-answer-disabled{pointer-events:none!important;opacity:.78!important}';
   document.head.appendChild(style);
   const labels=()=>{document.querySelectorAll('.stat').forEach(s=>{const b=s.querySelector('b'),small=s.querySelector('small');if(b&&small&&small.textContent.trim()==='pitanja po gradu')b.textContent=String(QUESTIONS_PER_GAME)});};
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',labels,{once:true});else labels();
-  // The legacy page advances after 1200 ms. Extend only that specific answer callback so the explanation can be read.
+  // The legacy page advances after 1200 ms. Extend only that specific answer callback to 5.2 s so the explanation can be read.
   const nativeTimeout=global.setTimeout.bind(global);
   if(!global.__psCityTimeoutPatched){
     global.__psCityTimeoutPatched=true;
     global.setTimeout=function(fn,delay,...args){
-      if(typeof fn==='function'&&Number(delay)===1200&&/pos\+\+/.test(Function.prototype.toString.call(fn)))delay=3200;
+      if(typeof fn==='function'&&Number(delay)===1200&&/pos\+\+/.test(Function.prototype.toString.call(fn)))delay=EXPLANATION_TIME_MS;
       return nativeTimeout(fn,delay,...args);
     };
   }
+  installAnswerTimer();
+}
+function installAnswerTimer(){
+  if(typeof document==='undefined'||global.__psCityAnswerTimerInstalled)return;
+  global.__psCityAnswerTimerInstalled=true;
+  let timer=null,questionStarted=0,locked=false,lastQuestionText='';
+  const getQuestionText=()=>document.querySelector('.city-question,h2.city-question,h3.city-question,.city-panel h2,.city-panel h3')?.textContent?.trim()||'';
+  const answerButtons=()=>Array.from(document.querySelectorAll('.city-answer')).filter(b=>!b.disabled&&!b.classList.contains('ps-answer-disabled'));
+  const removeTimer=()=>{if(timer){clearInterval(timer);timer=null}document.querySelectorAll('.ps-city-answer-timer').forEach(x=>x.remove())};
+  const lockAnswers=()=>{answerButtons().forEach(b=>{b.disabled=true;b.classList.add('ps-answer-disabled')})};
+  const mount=()=>{
+    const buttons=answerButtons();
+    if(!buttons.length)return false;
+    const first=buttons[0], panel=first.closest('.city-panel')||first.parentElement;
+    if(!panel)return false;
+    let bar=panel.querySelector('.ps-city-answer-timer');
+    if(!bar){
+      const label=document.createElement('div');label.className='ps-city-answer-timer-label';label.innerHTML='<span>⏱️ Vrijeme za odgovor</span><b>15,0 s</b>';
+      bar=document.createElement('div');bar.className='ps-city-answer-timer';bar.innerHTML='<i></i>';
+      first.parentElement?.insertBefore(label,first.parentElement.firstChild);
+      first.parentElement?.insertBefore(bar,first.parentElement.children[1]||first);
+    }
+    return true;
+  };
+  const startTimer=()=>{
+    const text=getQuestionText();
+    if(!text||text===lastQuestionText&&questionStarted>0)return;
+    lastQuestionText=text;questionStarted=Date.now();locked=false;removeTimer();if(!mount())return;
+    const label=document.querySelector('.ps-city-answer-timer-label b');const bar=document.querySelector('.ps-city-answer-timer');const fill=bar?.querySelector('i');
+    timer=setInterval(()=>{
+      const left=Math.max(0,ANSWER_TIME_MS-(Date.now()-questionStarted));
+      if(label)label.textContent=(left/1000).toFixed(1).replace('.',',')+' s';
+      if(fill)fill.style.transform='scaleX('+(left/ANSWER_TIME_MS)+')';
+      if(left<=0){clearInterval(timer);timer=null;if(bar)bar.classList.add('expired');lockAnswers();if(label)label.textContent='Vrijeme isteklo';setTimeout(()=>{const next=buttons[0];if(next&&!document.querySelector('.city-answer.correct,.city-answer.wrong')){next.click()}},80)}
+    },100);
+  };
+  const observer=new MutationObserver(()=>{if(document.querySelector('.city-answer'))startTimer()});
+  observer.observe(document.body,{subtree:true,childList:true,characterData:true});
+  document.addEventListener('click',e=>{if(e.target.closest('.city-answer')){locked=true;if(timer){clearInterval(timer);timer=null}}},true);
+  const boot=()=>setInterval(()=>{if(document.querySelector('.city-answer'))startTimer()},250);
+  boot();
 }
 installGamePolish();
 function installNicknameCard(){
@@ -93,5 +136,5 @@ function installNicknameCard(){
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 }
 installNicknameCard();
-global.PatriaCityGame={start,finish,results:read,cityRows,missions,questionCount:city=>verifiedCityPool(city).length,ready,activeLayerIds:ACTIVE_LAYER_IDS.slice(),questionsPerGame:QUESTIONS_PER_GAME};
+global.PatriaCityGame={start,finish,results:read,cityRows,missions,questionCount:city=>verifiedCityPool(city).length,ready,activeLayerIds:ACTIVE_LAYER_IDS.slice(),questionsPerGame:QUESTIONS_PER_GAME,answerTimeMs:ANSWER_TIME_MS,explanationTimeMs:EXPLANATION_TIME_MS};
 })(typeof window!=='undefined'?window:globalThis);
