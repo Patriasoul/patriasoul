@@ -7,11 +7,13 @@ on:
       - '**.html'
       - 'scripts/check-internal-links.py'
       - 'site-navigation.js'
+      - 'navigation-ux.js'
   pull_request:
     paths:
       - '**.html'
       - 'scripts/check-internal-links.py'
       - 'site-navigation.js'
+      - 'navigation-ux.js'
   workflow_dispatch:
 
 permissions:
