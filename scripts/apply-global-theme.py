@@ -3,7 +3,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 CSS = '<link rel="stylesheet" href="/patriasoul-global.css">'
-JS = '<script src="/site-navigation.js?v=43" defer></script>'
+JS = '<script src="/site-navigation.js?v=44" defer></script>'
 changed = []
 
 for path in ROOT.rglob('*.html'):
@@ -18,7 +18,7 @@ for path in ROOT.rglob('*.html'):
 
     text = re.sub(r'<link\s+rel=["\']stylesheet["\']\s+href=["\']/patriasoul-global\.css(?:\?[^"\']*)?["\']\s*/?>', CSS, text, flags=re.IGNORECASE)
     text = re.sub(r'\s*<link\s+rel=["\']stylesheet["\']\s+href=["\']/navigation-layout\.css(?:\?[^"\']*)?["\']\s*/?>', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'/site-navigation\.js(?:\?[^"\']*)?', '/site-navigation.js?v=43', text)
+    text = re.sub(r'/site-navigation\.js(?:\?[^"\']*)?', '/site-navigation.js?v=44', text)
 
     additions = []
     if '/patriasoul-global.css' not in text:
