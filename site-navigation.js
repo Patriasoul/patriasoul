@@ -4,230 +4,290 @@
   'use strict';
 
   var groups = [
-    { label:'Domovina', icon:'🇭🇷', href:'/domovina.html', sections:[
-      { items:[
-        {label:'Hrvatska',href:'/domovina.html'},
-        {label:'Gradovi',href:'/gradovi.html'},
-        {label:'Krajevi i geografija',href:'/krajevi-i-geografija.html',children:[
-          {label:'Krajevi',href:'/krajevi-i-geografija.html'},
-          {label:'Priroda Hrvatske',href:'/priroda.html'},
-          {label:'Veliki regionalni vodič',href:'/regionalni-vodic.html',children:[
-            {label:'Zagorje i Prigorje',href:'/zagorje-i-prigorje.html'},
-            {label:'Međimurje',href:'/medimurje.html'},
-            {label:'Podravina i Bilogora',href:'/podravina-i-bilogora.html'},
-            {label:'Lika i Gorski kotar',href:'/lika-i-gorski-kotar.html'},
-            {label:'Slavonija i Baranja',href:'/slavonija-i-baranja.html'},
-            {label:'Istra',href:'/istra.html'},
-            {label:'Kvarner i Primorje',href:'/kvarner-i-primorje.html'},
-            {label:'Dalmacija',href:'/dalmacija.html'},
-            {label:'Posavina i Pokuplje',href:'/posavina-i-pokuplje.html'}
-          ]}
-        ]},
-        {label:'Vijesti',href:'/vijesti.html'},
-        {label:'Vrijeme',href:'/vrijeme.html'}
-      ]}
-    ]},
+    {
+      label: 'Domovina',
+      href: '/domovina.html',
+      sections: [{
+        items: [
+          { label: 'Hrvatska', href: '/domovina.html' },
+          { label: 'Gradovi', href: '/gradovi.html' },
+          {
+            label: 'Krajevi i geografija',
+            href: '/krajevi-i-geografija.html',
+            children: [
+              { label: 'Krajevi', href: '/krajevi-i-geografija.html' },
+              { label: 'Priroda Hrvatske', href: '/priroda.html' },
+              {
+                label: 'Veliki regionalni vodič',
+                href: '/regionalni-vodic.html',
+                children: [
+                  { label: 'Zagorje i Prigorje', href: '/zagorje-i-prigorje.html' },
+                  { label: 'Međimurje', href: '/medimurje.html' },
+                  { label: 'Podravina i Bilogora', href: '/podravina-i-bilogora.html' },
+                  { label: 'Lika i Gorski kotar', href: '/lika-i-gorski-kotar.html' },
+                  { label: 'Slavonija i Baranja', href: '/slavonija-i-baranja.html' },
+                  { label: 'Istra', href: '/istra.html' },
+                  { label: 'Kvarner i Primorje', href: '/kvarner-i-primorje.html' },
+                  { label: 'Dalmacija', href: '/dalmacija.html' },
+                  { label: 'Posavina i Pokuplje', href: '/posavina-i-pokuplje.html' }
+                ]
+              }
+            ]
+          },
+          { label: 'Vijesti', href: '/vijesti.html' },
+          { label: 'Vrijeme', href: '/vrijeme.html' }
+        ]
+      }]
+    },
 
-    { label:'Branitelji',icon:'🛡️',href:'/branitelji.html',sections:[{items:[
-      {label:'Branitelji',href:'/branitelji.html'},
-      {label:'Domovinski rat',href:'/domovinski-rat.html',children:[
-        {label:'Vukovar',href:'/vukovar.html'},
-        {label:'Operacije i bojišta',href:'/operacije.html'}
-      ]},
-      {label:'Postrojbe',href:'/postrojbe.html',children:[
-        {label:'Brigade',href:'/brigade.html'}
-      ]},
-      {label:'Spomenici i memorijali',href:'/spomenici.html'}
-    ]}]},
+    {
+      label: 'Branitelji',
+      href: '/branitelji.html',
+      sections: [{
+        items: [
+          { label: 'Branitelji', href: '/branitelji.html' },
+          {
+            label: 'Domovinski rat',
+            href: '/domovinski-rat.html',
+            children: [
+              { label: 'Vukovar', href: '/vukovar.html' },
+              { label: 'Operacije i bojišta', href: '/operacije.html' }
+            ]
+          },
+          {
+            label: 'Postrojbe',
+            href: '/postrojbe.html',
+            children: [
+              { label: 'Brigade', href: '/brigade.html' }
+            ]
+          },
+          { label: 'Spomenici i memorijali', href: '/spomenici.html' }
+        ]
+      }]
+    },
 
-    { label:'Povijest',icon:'📜',href:'/povijest.html',sections:[{items:[
-      {label:'Povijest Hrvatske',href:'/hrvatska-povijest.html'},
-      {label:'Hrvatski kraljevi',href:'/hrvatski-kraljevi.html'},
-      {label:'Knezovi i vladari',href:'/knezovi-i-vladari.html'},
-      {label:'Srednji vijek',href:'/srednji-vijek.html'},
-      {label:'Habsburško razdoblje',href:'/habsbursko-razdoblje.html'},
-      {label:'Hrvatski narodni preporod',href:'/hrvatski-narodni-preporod.html'},
-      {label:'20. stoljeće',href:'/20-stoljece.html'},
-      {label:'Povijesne osobe',href:'/povijesne-osobe.html'}
-    ]}]},
+    {
+      label: 'Povijest',
+      href: '/povijest.html',
+      sections: [{
+        items: [
+          { label: 'Povijest Hrvatske', href: '/hrvatska-povijest.html' },
+          { label: 'Hrvatski kraljevi', href: '/hrvatski-kraljevi.html' },
+          { label: 'Knezovi i vladari', href: '/knezovi-i-vladari.html' },
+          { label: 'Srednji vijek', href: '/srednji-vijek.html' },
+          { label: 'Habsburško razdoblje', href: '/habsbursko-razdoblje.html' },
+          { label: 'Hrvatski narodni preporod', href: '/hrvatski-narodni-preporod.html' },
+          { label: '20. stoljeće', href: '/20-stoljece.html' },
+          { label: 'Povijesne osobe', href: '/povijesne-osobe.html' }
+        ]
+      }]
+    },
 
-    { label:'Baština',icon:'🏛️',href:'/bastina.html',sections:[{items:[
-      {label:'Baština',href:'/bastina.html'},
-      {label:'Sakralna baština',href:'/sakralna-bastina.html'},
-      {label:'Glagoljica',href:'/glagoljica.html'},
-      {label:'Tradicija i običaji',href:'/tradicija-i-obicaji.html'},
-      {label:'Narodne nošnje',href:'/narodne-nosnje.html'},
-      {label:'Gastronomija',href:'/gastronomija.html'},
-      {label:'Glazba',href:'/glazba.html'},
-      {label:'Govori i dijalekti',href:'/govori-i-dijalekti.html'}
-    ]}]},
+    {
+      label: 'Baština',
+      href: '/bastina.html',
+      sections: [{
+        items: [
+          { label: 'Baština', href: '/bastina.html' },
+          { label: 'Sakralna baština', href: '/sakralna-bastina.html' },
+          { label: 'Glagoljica', href: '/glagoljica.html' },
+          { label: 'Tradicija i običaji', href: '/tradicija-i-obicaji.html' },
+          { label: 'Narodne nošnje', href: '/narodne-nosnje.html' },
+          { label: 'Gastronomija', href: '/gastronomija.html' },
+          { label: 'Glazba', href: '/glazba.html' },
+          { label: 'Govori i dijalekti', href: '/govori-i-dijalekti.html' }
+        ]
+      }]
+    },
 
-    { label:'Vjera',icon:'✝️',href:'/vjera.html',sections:[{items:[
-      {label:'Vjera i duhovna baština',href:'/vjera.html'},
-      {label:'Evanđelje',href:'/evandelje.html'},
-      {label:'Biblija',href:'/biblija.html'},
-      {label:'Molitve',href:'/molitve.html'},
-      {label:'Krunica',href:'/krunica.html'},
-      {label:'Blagdani',href:'/blagdani.html'},
-      {label:'Svetac dana',href:'/svetac-dana.html'}
-    ]}]},
+    {
+      label: 'Vjera',
+      href: '/vjera.html',
+      sections: [{
+        items: [
+          { label: 'Vjera i duhovna baština', href: '/vjera.html' },
+          { label: 'Evanđelje', href: '/evandelje.html' },
+          { label: 'Biblija', href: '/biblija.html' },
+          { label: 'Molitve', href: '/molitve.html' },
+          { label: 'Krunica', href: '/krunica.html' },
+          { label: 'Blagdani', href: '/blagdani.html' },
+          { label: 'Svetac dana', href: '/svetac-dana.html' }
+        ]
+      }]
+    },
 
-    { label:'Mediji',icon:'📺',href:'/video.html',sections:[{items:[
-      {label:'Video',href:'/video.html'},
-      {label:'Galerija',href:'/galerija.html'}
-    ]}]},
+    {
+      label: 'Mediji',
+      href: '/video.html',
+      sections: [{
+        items: [
+          { label: 'Video', href: '/video.html' },
+          { label: 'Galerija', href: '/galerija.html' },
+          { label: 'Vijesti', href: '/vijesti.html' }
+        ]
+      }]
+    },
 
-    { label:'Igra',icon:'🎮',href:'/brani-svoj-grad.html',sections:[{items:[
-      {label:'Brani svoj grad',href:'/brani-svoj-grad.html'},
-      {label:'Kviz',href:'/quiz.html'},
-      {label:'Duel',href:'/duel.html'},
-      {label:'Rang-lista',href:'/rang-lista.html'},
-      {label:'Profil',href:'/profil.html'}
-    ]}]},
+    {
+      label: 'Igra',
+      href: '/brani-svoj-grad.html',
+      sections: [{
+        items: [
+          { label: 'Brani svoj grad', href: '/brani-svoj-grad.html' },
+          { label: 'Kviz', href: '/quiz.html' },
+          { label: 'Duel', href: '/duel.html' },
+          { label: 'Rang-lista', href: '/rang-lista.html' },
+          { label: 'Profil', href: '/profil.html' }
+        ]
+      }]
+    },
 
-    { label:'O nama',icon:'',href:'/o-nama.html',sections:[]},
+    {
+      label: 'O nama',
+      href: '/o-nama.html',
+      sections: []
+    },
 
-    { label:'Kontakt',icon:'',href:'/kontakt.html',sections:[]}
+    {
+      label: 'Kontakt',
+      href: '/kontakt.html',
+      sections: []
+    }
   ];
 
-  function current(){
-    return location.pathname.replace(/\/+$/,'')||'/';
+  function current() {
+    return location.pathname.replace(/\/+$/, '') || '/';
   }
 
-  function normalize(href){
-    return href.replace(/\/+$/,'')||'/';
+  function normalize(href) {
+    return href.replace(/\/+$/, '') || '/';
   }
 
-  function active(href){
-    return normalize(href)===current();
+  function active(href) {
+    return normalize(href) === current();
   }
 
-  function containsActive(item){
-    return active(item.href)||(item.children||[]).some(containsActive);
+  function containsActive(item) {
+    return active(item.href) ||
+      (item.children || []).some(containsActive);
   }
 
-  function makeLink(item){
-    var a=document.createElement('a');
-    a.href=item.href;
-    a.textContent=(item.icon?item.icon+' ':'')+item.label;
-    a.className='ps-sub-link';
+  function makeLink(item) {
+    var a = document.createElement('a');
 
-    if(active(item.href)){
-      a.setAttribute('aria-current','page');
+    a.href = item.href;
+    a.textContent = item.label;
+    a.className = 'ps-sub-link';
+
+    if (active(item.href)) {
+      a.setAttribute('aria-current', 'page');
     }
 
     return a;
   }
 
-  function nestedItem(item,level){
-    var li=document.createElement('div');
-    li.className='ps-nav-item ps-nav-item-level-'+level;
+  function nestedItem(item, level) {
+    var li = document.createElement('div');
+    li.className = 'ps-nav-item ps-nav-item-level-' + level;
 
-    if(containsActive(item)){
+    if (containsActive(item)) {
       li.classList.add('is-active');
     }
 
-    var row=document.createElement('div');
-    row.className='ps-nav-item-row';
+    var row = document.createElement('div');
+    row.className = 'ps-nav-item-row';
 
     row.appendChild(makeLink(item));
     li.appendChild(row);
 
-    if(item.children&&item.children.length){
-      var button=document.createElement('button');
+    if (item.children && item.children.length) {
+      var button = document.createElement('button');
 
-      button.type='button';
-      button.className='ps-nav-nested-toggle';
+      button.type = 'button';
+      button.className = 'ps-nav-nested-toggle';
 
-      var open=containsActive(item);
+      var open = containsActive(item);
 
-      button.setAttribute('aria-expanded',String(open));
+      button.setAttribute('aria-expanded', String(open));
       button.setAttribute(
         'aria-label',
-        'Otvori podizbornik '+item.label
+        'Otvori podizbornik ' + item.label
       );
 
-      button.textContent=open?'⌄':'›';
+      button.textContent = open ? '⌄' : '›';
 
       row.appendChild(button);
 
-      var child=document.createElement('div');
+      var child = document.createElement('div');
 
-      child.className='ps-nav-nested';
-      child.setAttribute('role','group');
+      child.className = 'ps-nav-nested';
+      child.setAttribute('role', 'group');
 
-      if(open){
+      if (open) {
         child.classList.add('is-open');
       }
 
-      item.children.forEach(function(x){
-        child.appendChild(nestedItem(x,level+1));
+      item.children.forEach(function (x) {
+        child.appendChild(nestedItem(x, level + 1));
       });
 
       li.appendChild(child);
 
-      button.addEventListener('click',function(e){
+      button.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
 
-        var state=child.classList.toggle('is-open');
+        var state = child.classList.toggle('is-open');
 
         button.setAttribute(
           'aria-expanded',
           String(state)
         );
 
-        button.textContent=state?'⌄':'›';
+        button.textContent = state ? '⌄' : '›';
       });
     }
 
     return li;
   }
 
-  function group(g){
-    var w=document.createElement('div');
-    w.className='ps-nav-group';
+  function group(g) {
+    var w = document.createElement('div');
+    w.className = 'ps-nav-group';
 
-    if(
+    if (
       active(g.href) ||
-      (g.sections||[]).some(function(s){
+      (g.sections || []).some(function (s) {
         return s.items.some(containsActive);
       })
-    ){
+    ) {
       w.classList.add('is-active');
     }
 
-    var row=document.createElement('div');
-    row.className='ps-nav-parent-row';
+    var row = document.createElement('div');
+    row.className = 'ps-nav-parent-row';
 
-    var parent=document.createElement('a');
+    var parent = document.createElement('a');
 
-    parent.href=g.href;
-    parent.className='ps-nav-parent';
+    parent.href = g.href;
+    parent.className = 'ps-nav-parent';
+    parent.textContent = g.label;
 
-    parent.innerHTML=
-      '<span class="ps-nav-parent-icon">'+
-      g.icon+
-      '</span><span>'+
-      g.label+
-      '</span>';
-
-    if(active(g.href)){
-      parent.setAttribute('aria-current','page');
+    if (active(g.href)) {
+      parent.setAttribute('aria-current', 'page');
     }
 
     row.appendChild(parent);
 
-    var hasMenu=(g.sections||[]).some(function(s){
-      return s.items&&s.items.length;
+    var hasMenu = (g.sections || []).some(function (s) {
+      return s.items && s.items.length;
     });
 
-    if(hasMenu){
+    if (hasMenu) {
+      var toggle = document.createElement('button');
 
-      var toggle=document.createElement('button');
-
-      toggle.type='button';
-      toggle.className='ps-nav-toggle';
+      toggle.type = 'button';
+      toggle.className = 'ps-nav-toggle';
 
       toggle.setAttribute(
         'aria-expanded',
@@ -236,45 +296,42 @@
 
       toggle.setAttribute(
         'aria-label',
-        'Otvori izbornik '+g.label
+        'Otvori izbornik ' + g.label
       );
 
-      toggle.textContent='⌄';
+      toggle.textContent = '▼';
 
       row.appendChild(toggle);
 
       w.appendChild(row);
 
-      var panel=document.createElement('div');
+      var panel = document.createElement('div');
 
-      panel.className='ps-subnav';
-      panel.setAttribute('role','menu');
+      panel.className = 'ps-subnav';
+      panel.setAttribute('role', 'menu');
 
-      var list=document.createElement('div');
+      var list = document.createElement('div');
 
-      list.className='ps-simple-section';
+      list.className = 'ps-simple-section';
 
-      (g.sections||[]).forEach(function(section){
-
-        section.items.forEach(function(item){
+      (g.sections || []).forEach(function (section) {
+        section.items.forEach(function (item) {
           list.appendChild(
-            nestedItem(item,1)
+            nestedItem(item, 1)
           );
         });
-
       });
 
       panel.appendChild(list);
       w.appendChild(panel);
 
-      toggle.addEventListener('click',function(e){
-
+      toggle.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
 
         closeOtherGroups(w);
 
-        var open=w.classList.toggle(
+        var open = w.classList.toggle(
           'is-expanded'
         );
 
@@ -282,25 +339,44 @@
           'aria-expanded',
           String(open)
         );
-
       });
 
-    }else{
-
+    } else {
       w.appendChild(row);
-
     }
 
     return w;
   }
 
-  function shell(){
+  function homeLink() {
+    var w = document.createElement('div');
+    w.className = 'ps-nav-home';
 
-    var header=document.querySelector('.ps-header');
+    var a = document.createElement('a');
 
-    if(!header){
-      header=document.createElement('header');
-      header.className='ps-header';
+    a.href = '/index.html';
+    a.className = 'ps-nav-parent';
+    a.textContent = 'Početna';
+
+    if (
+      current() === '/' ||
+      current() === '/index.html'
+    ) {
+      a.setAttribute('aria-current', 'page');
+      w.classList.add('is-active');
+    }
+
+    w.appendChild(a);
+
+    return w;
+  }
+
+  function shell() {
+    var header = document.querySelector('.ps-header');
+
+    if (!header) {
+      header = document.createElement('header');
+      header.className = 'ps-header';
 
       document.body.insertBefore(
         header,
@@ -308,19 +384,19 @@
       );
     }
 
-    var wrap=header.querySelector('.ps-nav');
+    var wrap = header.querySelector('.ps-nav');
 
-    if(!wrap){
-      wrap=document.createElement('div');
-      wrap.className='container ps-nav';
+    if (!wrap) {
+      wrap = document.createElement('div');
+      wrap.className = 'container ps-nav';
       header.appendChild(wrap);
     }
 
-    var brand=wrap.querySelector('.ps-brand');
+    var brand = wrap.querySelector('.ps-brand');
 
-    if(!brand){
-      brand=document.createElement('a');
-      brand.className='ps-brand';
+    if (!brand) {
+      brand = document.createElement('a');
+      brand.className = 'ps-brand';
 
       wrap.insertBefore(
         brand,
@@ -328,20 +404,20 @@
       );
     }
 
-    brand.href='/index.html';
+    brand.href = '/index.html';
 
     brand.setAttribute(
       'aria-label',
       'PatriaSoul — početna stranica'
     );
 
-    var nav=wrap.querySelector('.ps-mainnav');
+    var nav = wrap.querySelector('.ps-mainnav');
 
-    if(!nav){
-      nav=document.createElement('nav');
+    if (!nav) {
+      nav = document.createElement('nav');
 
-      nav.className='ps-mainnav';
-      nav.id='ps-mainnav';
+      nav.className = 'ps-mainnav';
+      nav.id = 'ps-mainnav';
 
       nav.setAttribute(
         'aria-label',
@@ -351,14 +427,13 @@
       wrap.appendChild(nav);
     }
 
-    var menu=wrap.querySelector('[data-ps-menu]');
+    var menu = wrap.querySelector('[data-ps-menu]');
 
-    if(!menu){
+    if (!menu) {
+      menu = document.createElement('button');
 
-      menu=document.createElement('button');
-
-      menu.className='ps-menu';
-      menu.type='button';
+      menu.className = 'ps-menu';
+      menu.type = 'button';
 
       menu.setAttribute(
         'data-ps-menu',
@@ -380,41 +455,39 @@
         'false'
       );
 
-      menu.innerHTML=
+      menu.innerHTML =
         '<span></span><span></span><span></span>';
 
       wrap.appendChild(menu);
     }
   }
 
-  function logo(){
-
-    var brand=document.querySelector(
+  function logo() {
+    var brand = document.querySelector(
       '.ps-brand'
     );
 
-    if(!brand)return;
+    if (!brand) return;
 
-    brand.innerHTML=
-      '<img class="ps-nav-logo" '+
-      'src="/images/file_0000000082ec81f4a6fc17bdbd959622_114540.png" '+
-      'alt="PatriaSoul" width="256" height="256">'+
+    brand.innerHTML =
+      '<img class="ps-nav-logo" ' +
+      'src="/images/file_0000000082ec81f4a6fc17bdbd959622_114540.png" ' +
+      'alt="PatriaSoul" width="256" height="256">' +
       '<span class="sr-only">PatriaSoul</span>';
   }
 
-  function styles(){
-
-    if(
+  function styles() {
+    if (
       document.getElementById(
         'ps-navigation-pro-css'
       )
-    )return;
+    ) return;
 
-    var s=document.createElement('style');
+    var s = document.createElement('style');
 
-    s.id='ps-navigation-pro-css';
+    s.id = 'ps-navigation-pro-css';
 
-    s.textContent=`
+    s.textContent = `
 html{scroll-behavior:smooth}
 body{overflow-x:hidden!important;overflow-y:auto!important}
 
@@ -478,7 +551,8 @@ flex:1 1 auto!important;
 min-width:0!important
 }
 
-.ps-nav-group{
+.ps-nav-group,
+.ps-nav-home{
 position:relative!important;
 display:block!important
 }
@@ -504,8 +578,8 @@ font-weight:750!important;
 white-space:nowrap!important
 }
 
-.ps-nav-parent-icon{
-font-size:15px!important
+.ps-nav-home .ps-nav-parent{
+border-radius:10px!important
 }
 
 .ps-nav-toggle{
@@ -516,17 +590,19 @@ border-radius:0 10px 10px 0!important;
 background:transparent!important;
 color:#f1d57b!important;
 cursor:pointer!important;
-font-size:15px!important;
+font-size:13px!important;
 padding:0!important
 }
 
 .ps-nav-parent-row:hover,
-.ps-nav-group.is-active>.ps-nav-parent-row{
+.ps-nav-group.is-active>.ps-nav-parent-row,
+.ps-nav-home.is-active{
 background:rgba(224,189,85,.10)!important
 }
 
 .ps-nav-parent:hover,
-.ps-nav-group.is-active>.ps-nav-parent-row .ps-nav-parent{
+.ps-nav-group.is-active>.ps-nav-parent-row .ps-nav-parent,
+.ps-nav-home.is-active .ps-nav-parent{
 color:#f5d879!important
 }
 
@@ -745,12 +821,18 @@ display:flex!important
 }
 
 .ps-nav-group,
+.ps-nav-home,
 .ps-nav-parent-row{
 width:100%!important
 }
 
 .ps-nav-parent-row{
 background:rgba(255,255,255,.025)!important
+}
+
+.ps-nav-home .ps-nav-parent{
+width:100%!important;
+justify-content:flex-start!important
 }
 
 .ps-nav-parent{
@@ -844,64 +926,60 @@ transition:none!important
     document.head.appendChild(s);
   }
 
-  function render(){
+  function render() {
+    var nav = document.querySelector('.ps-mainnav');
 
-    var nav=document.querySelector('.ps-mainnav');
+    if (!nav) return;
 
-    if(!nav)return;
+    nav.innerHTML = '';
 
-    nav.innerHTML='';
+    nav.appendChild(homeLink());
 
-    groups.forEach(function(g){
+    groups.forEach(function (g) {
       nav.appendChild(group(g));
     });
 
     logo();
   }
 
-  function closeOtherGroups(except){
-
+  function closeOtherGroups(except) {
     document
       .querySelectorAll('.ps-nav-group.is-expanded')
-      .forEach(function(g){
-
-        if(g===except)return;
+      .forEach(function (g) {
+        if (g === except) return;
 
         g.classList.remove(
           'is-expanded'
         );
 
-        var b=g.querySelector(
+        var b = g.querySelector(
           ':scope > .ps-nav-parent-row .ps-nav-toggle'
         );
 
-        if(b){
+        if (b) {
           b.setAttribute(
             'aria-expanded',
             'false'
           );
         }
-
       });
   }
 
-  function menu(){
-
-    var b=document.querySelector(
+  function menu() {
+    var b = document.querySelector(
       '[data-ps-menu]'
     );
 
-    var nav=document.querySelector(
+    var nav = document.querySelector(
       '.ps-mainnav'
     );
 
-    if(!b||!nav||b.dataset.bound)return;
+    if (!b || !nav || b.dataset.bound) return;
 
-    b.dataset.bound='1';
+    b.dataset.bound = '1';
 
-    b.addEventListener('click',function(){
-
-      var open=nav.classList.toggle(
+    b.addEventListener('click', function () {
+      var open = nav.classList.toggle(
         'is-open'
       );
 
@@ -915,57 +993,51 @@ transition:none!important
         open
       );
 
-      if(!open){
+      if (!open) {
         closeOtherGroups();
       }
-
     });
   }
 
-  function interactions(){
-
-    if(
+  function interactions() {
+    if (
       document.body.dataset.psNavInteractions
-    )return;
+    ) return;
 
-    document.body.dataset.psNavInteractions='1';
+    document.body.dataset.psNavInteractions = '1';
 
     document.addEventListener(
       'click',
-      function(e){
-
-        if(
+      function (e) {
+        if (
           !e.target.closest('.ps-nav-group')
-        ){
+        ) {
           closeOtherGroups();
         }
-
       }
     );
 
     document.addEventListener(
       'keydown',
-      function(e){
-
-        if(e.key==='Escape'){
-
+      function (e) {
+        if (e.key === 'Escape') {
           closeOtherGroups();
 
-          var nav=document.querySelector(
+          var nav = document.querySelector(
             '.ps-mainnav'
           );
 
-          var menu=document.querySelector(
+          var menu = document.querySelector(
             '.ps-menu'
           );
 
-          if(nav){
+          if (nav) {
             nav.classList.remove(
               'is-open'
             );
           }
 
-          if(menu){
+          if (menu) {
             menu.setAttribute(
               'aria-expanded',
               'false'
@@ -975,37 +1047,33 @@ transition:none!important
           document.body.classList.remove(
             'ps-mobile-nav-open'
           );
-
         }
-
       }
     );
 
     window.addEventListener(
       'resize',
-      function(){
-
-        if(
+      function () {
+        if (
           window.matchMedia(
             '(min-width:861px)'
           ).matches
-        ){
-
-          var nav=document.querySelector(
+        ) {
+          var nav = document.querySelector(
             '.ps-mainnav'
           );
 
-          var menu=document.querySelector(
+          var menu = document.querySelector(
             '.ps-menu'
           );
 
-          if(nav){
+          if (nav) {
             nav.classList.remove(
               'is-open'
             );
           }
 
-          if(menu){
+          if (menu) {
             menu.setAttribute(
               'aria-expanded',
               'false'
@@ -1015,172 +1083,158 @@ transition:none!important
           document.body.classList.remove(
             'ps-mobile-nav-open'
           );
-
         }
-
       }
     );
   }
 
-  function search(){
-
-    if(
+  function search() {
+    if (
       document.querySelector(
         '.ps-search-overlay'
       )
-    )return;
+    ) return;
 
-    var wrap=document.querySelector(
+    var wrap = document.querySelector(
       '.ps-nav'
     );
 
-    if(!wrap)return;
+    if (!wrap) return;
 
-    var trigger=document.createElement(
+    var trigger = document.createElement(
       'button'
     );
 
-    trigger.type='button';
-    trigger.className='ps-search-trigger';
+    trigger.type = 'button';
+    trigger.className = 'ps-search-trigger';
 
     trigger.setAttribute(
       'aria-label',
       'Pretraži PatriaSoul'
     );
 
-    trigger.textContent='⌕';
+    trigger.textContent = '⌕';
 
     wrap.appendChild(trigger);
 
-    var overlay=document.createElement(
+    var overlay = document.createElement(
       'div'
     );
 
-    overlay.className=
+    overlay.className =
       'ps-search-overlay';
 
-    overlay.innerHTML=
-      '<div class="ps-search-panel" role="dialog" aria-modal="true" aria-label="Pretraga PatriaSoul">'+
-      '<button type="button" class="ps-search-close" aria-label="Zatvori pretragu">✕</button>'+
-      '<div class="ps-search-title">Pretraži PatriaSoul</div>'+
-      '<div class="ps-search-subtitle">Brzo pronađi rubriku ili podstranicu.</div>'+
-      '<input class="ps-search-input" type="search" autocomplete="off" placeholder="Npr. Vukovar, gastronomija, Glagoljica…">'+
-      '<div class="ps-search-results"></div>'+
+    overlay.innerHTML =
+      '<div class="ps-search-panel" role="dialog" aria-modal="true" aria-label="Pretraga PatriaSoul">' +
+      '<button type="button" class="ps-search-close" aria-label="Zatvori pretragu">✕</button>' +
+      '<div class="ps-search-title">Pretraži PatriaSoul</div>' +
+      '<div class="ps-search-subtitle">Brzo pronađi rubriku ili podstranicu.</div>' +
+      '<input class="ps-search-input" type="search" autocomplete="off" placeholder="Npr. Vukovar, gastronomija, Glagoljica…">' +
+      '<div class="ps-search-results"></div>' +
       '</div>';
 
     document.body.appendChild(overlay);
 
-    var input=overlay.querySelector(
+    var input = overlay.querySelector(
       '.ps-search-input'
     );
 
-    var results=overlay.querySelector(
+    var results = overlay.querySelector(
       '.ps-search-results'
     );
 
-    function walk(item,out){
-
+    function walk(item, out) {
       out.push({
-        label:item.label,
-        href:item.href
+        label: item.label,
+        href: item.href
       });
 
-      (item.children||[]).forEach(
-        function(c){
-          walk(c,out);
+      (item.children || []).forEach(
+        function (c) {
+          walk(c, out);
         }
       );
     }
 
-    var all=[];
+    var all = [];
 
-    groups.forEach(function(g){
-
-      all.push({
-        label:g.label,
-        href:g.href
-      });
-
-      (g.sections||[]).forEach(
-        function(s){
-
-          s.items.forEach(
-            function(i){
-              walk(i,all);
-            }
-          );
-
-        }
-      );
-
+    all.push({
+      label: 'Početna',
+      href: '/index.html'
     });
 
-    all=all.filter(
-      function(x,i,a){
+    groups.forEach(function (g) {
+      all.push({
+        label: g.label,
+        href: g.href
+      });
 
+      (g.sections || []).forEach(
+        function (s) {
+          s.items.forEach(
+            function (i) {
+              walk(i, all);
+            }
+          );
+        }
+      );
+    });
+
+    all = all.filter(
+      function (x, i, a) {
         return a.findIndex(
-          function(y){
-            return y.href===x.href;
+          function (y) {
+            return y.href === x.href;
           }
-        )===i;
-
+        ) === i;
       }
     );
 
-    function renderResults(q){
+    function renderResults(q) {
+      results.innerHTML = '';
 
-      results.innerHTML='';
-
-      if(!q){
-
-        results.innerHTML=
+      if (!q) {
+        results.innerHTML =
           '<div class="ps-search-hint">Upiši pojam za pretragu.</div>';
 
         return;
       }
 
-      var needle=q.toLocaleLowerCase(
+      var needle = q.toLocaleLowerCase(
         'hr-HR'
       );
 
-      var found=all.filter(
-        function(x){
-
+      var found = all.filter(
+        function (x) {
           return x.label
             .toLocaleLowerCase('hr-HR')
-            .indexOf(needle)!==-1;
-
+            .indexOf(needle) !== -1;
         }
-      ).slice(0,12);
+      ).slice(0, 12);
 
-      if(!found.length){
-
-        results.innerHTML=
+      if (!found.length) {
+        results.innerHTML =
           '<div class="ps-search-hint">Nema rezultata.</div>';
 
         return;
       }
 
-      found.forEach(function(x){
-
-        var a=document.createElement(
+      found.forEach(function (x) {
+        var a = document.createElement(
           'a'
         );
 
-        a.href=x.href;
-        a.className=
+        a.href = x.href;
+        a.className =
           'ps-search-result';
 
-        a.textContent=x.label;
+        a.textContent = x.label;
 
         results.appendChild(a);
-
       });
-
     }
 
-    function openSearch(){
-
+    function openSearch() {
       overlay.classList.add(
         'is-open'
       );
@@ -1190,15 +1244,14 @@ transition:none!important
       );
 
       setTimeout(
-        function(){
+        function () {
           input.focus();
         },
         20
       );
     }
 
-    function closeSearch(){
-
+    function closeSearch() {
       overlay.classList.remove(
         'is-open'
       );
@@ -1222,18 +1275,16 @@ transition:none!important
 
     overlay.addEventListener(
       'click',
-      function(e){
-
-        if(e.target===overlay){
+      function (e) {
+        if (e.target === overlay) {
           closeSearch();
         }
-
       }
     );
 
     input.addEventListener(
       'input',
-      function(){
+      function () {
         renderResults(
           input.value.trim()
         );
@@ -1242,95 +1293,87 @@ transition:none!important
 
     document.addEventListener(
       'keydown',
-      function(e){
-
-        if(
+      function (e) {
+        if (
           (
-            e.key==='/' &&
+            e.key === '/' &&
             !/input|textarea|select/i.test(
               document.activeElement.tagName
             )
           ) ||
           (
             e.ctrlKey &&
-            e.key.toLowerCase()==='k'
+            e.key.toLowerCase() === 'k'
           )
-        ){
-
+        ) {
           e.preventDefault();
           openSearch();
-
         }
 
-        if(
-          e.key==='Escape' &&
+        if (
+          e.key === 'Escape' &&
           overlay.classList.contains(
             'is-open'
           )
-        ){
-
+        ) {
           closeSearch();
-
         }
-
       }
     );
 
     renderResults('');
   }
 
-  function back(){
-
-    if(
-      location.pathname==='/' ||
+  function back() {
+    if (
+      location.pathname === '/' ||
       /\/index\.html$/.test(
         location.pathname
       ) ||
       document.querySelector(
         '.ps-back-nav'
       )
-    )return;
+    ) return;
 
-    var box=document.createElement(
+    var box = document.createElement(
       'div'
     );
 
-    box.className='ps-back-nav';
+    box.className = 'ps-back-nav';
 
-    var a=document.createElement(
+    var a = document.createElement(
       'a'
     );
 
-    a.href='#';
-    a.textContent='← Natrag';
+    a.href = '#';
+    a.textContent = '← Natrag';
 
     a.addEventListener(
       'click',
-      function(e){
-
+      function (e) {
         e.preventDefault();
 
-        if(history.length>1){
+        if (history.length > 1) {
           history.back();
-        }else{
-          location.href='/index.html';
+        } else {
+          location.href =
+            '/index.html';
         }
-
       }
     );
 
     box.appendChild(a);
 
-    var h=document.querySelector(
+    var h = document.querySelector(
       '.ps-header'
     );
 
-    if(h){
+    if (h) {
       h.insertAdjacentElement(
         'afterend',
         box
       );
-    }else{
+    } else {
       document.body.insertBefore(
         box,
         document.body.firstChild
@@ -1338,21 +1381,20 @@ transition:none!important
     }
   }
 
-  function scrollTop(){
-
-    if(
+  function scrollTop() {
+    if (
       document.querySelector(
         '.ps-scroll-top'
       )
-    )return;
+    ) return;
 
-    var b=document.createElement(
+    var b = document.createElement(
       'button'
     );
 
-    b.type='button';
-    b.className='ps-scroll-top';
-    b.textContent='↑';
+    b.type = 'button';
+    b.className = 'ps-scroll-top';
+    b.textContent = '↑';
 
     b.setAttribute(
       'aria-label',
@@ -1361,49 +1403,45 @@ transition:none!important
 
     b.addEventListener(
       'click',
-      function(){
+      function () {
         window.scrollTo({
-          top:0,
-          behavior:'smooth'
+          top: 0,
+          behavior: 'smooth'
         });
       }
     );
 
     document.body.appendChild(b);
 
-    function toggle(){
-
+    function toggle() {
       b.classList.toggle(
         'is-visible',
-        window.scrollY>420
+        window.scrollY > 420
       );
-
     }
 
     window.addEventListener(
       'scroll',
       toggle,
-      {passive:true}
+      { passive: true }
     );
 
     toggle();
   }
 
-  function footer(){
-
-    var f=document.querySelector(
+  function footer() {
+    var f = document.querySelector(
       'footer'
     );
 
-    if(f){
+    if (f) {
       f.classList.add(
         'ps-footer'
       );
     }
   }
 
-  function init(){
-
+  function init() {
     styles();
     shell();
     render();
@@ -1413,37 +1451,30 @@ transition:none!important
     back();
     scrollTop();
     footer();
-
   }
 
-  if(
-    document.readyState==='loading'
-  ){
-
+  if (
+    document.readyState === 'loading'
+  ) {
     document.addEventListener(
       'DOMContentLoaded',
       init
     );
-
-  }else{
-
+  } else {
     init();
-
   }
 
-  window.PatriaSiteNavigation={
-    groups:groups,
-    render:render,
-    addBackButton:back,
-    addScrollTop:scrollTop,
-    openSearch:function(){
-
-      var b=document.querySelector(
+  window.PatriaSiteNavigation = {
+    groups: groups,
+    render: render,
+    addBackButton: back,
+    addScrollTop: scrollTop,
+    openSearch: function () {
+      var b = document.querySelector(
         '.ps-search-trigger'
       );
 
-      if(b)b.click();
-
+      if (b) b.click();
     }
   };
 
