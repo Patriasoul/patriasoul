@@ -1,5 +1,6 @@
-/* PatriaSoul — navigation UX layer
- * Keeps the canonical menu data in site-navigation.js and improves discoverability.
+/* PatriaSoul — navigation UX compatibility layer
+ * Fixes interaction after the canonical navigation structure changed.
+ * Top-level links remain real links; only arrow buttons open menus.
  */
 (function () {
   'use strict';
@@ -9,477 +10,165 @@
 
     var s = document.createElement('style');
     s.id = 'ps-navigation-ux-css';
-
     s.textContent = `
-      .ps-mainnav {
-        gap: 4px !important;
-      }
+      /* Interaction safety: navigation must never create a page-wide click blocker. */
+      html { overflow-x:hidden !important; overflow-y:auto !important; }
+      body { overflow-x:hidden !important; overflow-y:auto !important; }
+      .ps-header, .ps-nav, .ps-mainnav, .ps-mainnav * { pointer-events:auto; }
+      .ps-header { position:sticky !important; z-index:5000 !important; }
 
-      .ps-nav-group {
-        isolation: isolate !important;
-      }
+      .ps-mainnav { position:relative; }
+      .ps-nav-group { position:relative; isolation:isolate; }
+      .ps-nav-parent-row { display:flex; align-items:center; }
+      .ps-nav-parent { text-decoration:none !important; cursor:pointer !important; }
+      .ps-nav-toggle, .ps-nav-nested-toggle { cursor:pointer !important; }
 
-      .ps-nav-parent-row {
-        background: transparent !important;
-      }
-
-      .ps-nav-parent {
-        font-size: 14px !important;
-        letter-spacing: .01em !important;
-      }
-
-      .ps-nav-parent-icon {
-        font-size: 16px !important;
-      }
-
-      /* POČETNA */
-      .ps-nav-home {
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        min-height: 42px !important;
-        padding: 0 10px !important;
-        color: #d8dde5 !important;
-        text-decoration: none !important;
-        font-size: 14px !important;
-        font-weight: 700 !important;
-        letter-spacing: .01em !important;
-        border-radius: 8px !important;
-        white-space: nowrap !important;
-      }
-
-      .ps-nav-home:hover,
-      .ps-nav-home:focus-visible {
-        color: #fff !important;
-        background: rgba(255,255,255,.055) !important;
-      }
-
-      .ps-nav-group.is-expanded .ps-nav-parent-row,
-      .ps-nav-group:hover .ps-nav-parent-row {
-        background: rgba(255,255,255,.055) !important;
-      }
-
-      .ps-nav-group.is-expanded .ps-nav-parent,
-      .ps-nav-group:hover .ps-nav-parent {
-        color: #fff !important;
-      }
-
-      .ps-subnav {
-        min-width: 310px !important;
-        max-width: min(920px, calc(100vw - 28px)) !important;
-        padding: 18px !important;
-        border: 1px solid rgba(224,189,85,.18) !important;
-        border-radius: 14px !important;
-        box-shadow: 0 20px 55px rgba(0,0,0,.34) !important;
-      }
-
-      .ps-mega-section h3 {
-        font-size: 11px !important;
-        text-transform: uppercase !important;
-        letter-spacing: .12em !important;
-        margin: 0 0 8px !important;
-        opacity: .72 !important;
-      }
-
-      .ps-nav-item-row {
-        min-height: 38px !important;
-      }
-
-      .ps-sub-link {
-        font-size: 14px !important;
-        padding: 8px 10px !important;
-        border-radius: 8px !important;
-      }
-
-      .ps-sub-link:hover,
-      .ps-nav-item.is-active > .ps-nav-item-row > .ps-sub-link {
-        background: rgba(255,255,255,.07) !important;
-        color: #fff !important;
-      }
-
-      .ps-nav-nested-toggle {
-        width: 30px !important;
-        height: 30px !important;
-        border-radius: 7px !important;
-      }
-
-      .ps-regional-explore {
-        display: grid !important;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
-        margin: 0 0 28px;
-        padding: 18px;
-        border: 1px solid rgba(212,175,55,.18);
-        border-radius: 18px;
-        background: rgba(255,255,255,.025);
-      }
-
-      .ps-regional-explore h2 {
-        grid-column: 1 / -1;
-        margin: 0 0 2px;
-        font-size: 1.05rem;
-      }
-
-      .ps-regional-explore a {
-        display: block;
-        padding: 11px 12px;
-        border-radius: 10px;
-        background: rgba(255,255,255,.035);
-        color: #d4af37 !important;
-        text-decoration: none;
-        font-weight: 700;
-      }
-
-      .ps-regional-explore a:hover {
-        background: rgba(255,255,255,.08) !important;
-        color: #fff !important;
-      }
-
-      @media (min-width: 861px) {
-
+      @media (min-width:861px) {
         .ps-mainnav .ps-subnav {
-          display: none !important;
-          position: absolute !important;
-          top: calc(100% + 8px) !important;
-          right: 0 !important;
-          z-index: 5100 !important;
-          background: #111720 !important;
+          display:none !important;
+          position:absolute !important;
+          top:calc(100% + 8px) !important;
+          right:0 !important;
+          z-index:5100 !important;
+          pointer-events:auto !important;
         }
-
-        .ps-nav-group.is-expanded > .ps-subnav {
-          display: grid !important;
-          grid-template-columns: repeat(2, minmax(210px, 1fr)) !important;
-          gap: 20px !important;
-        }
-
+        .ps-nav-group.is-expanded > .ps-subnav,
         .ps-nav-group:hover > .ps-subnav {
-          display: grid !important;
-          grid-template-columns: repeat(2, minmax(210px, 1fr)) !important;
-          gap: 20px !important;
-        }
-
-        .ps-nav-group:has(.ps-nav-item-level-3) > .ps-subnav {
-          min-width: 650px !important;
-        }
-
-        .ps-nav-group:has(.ps-nav-item-level-3) > .ps-subnav .ps-mega-section:first-child {
-          grid-column: 1 / -1 !important;
+          display:block !important;
         }
       }
 
-      @media (max-width: 860px) {
-
-        .ps-mainnav {
-          align-items: stretch !important;
+      @media (max-width:860px) {
+        .ps-mainnav.is-open {
+          display:flex !important;
+          flex-direction:column !important;
+          align-items:stretch !important;
+          position:absolute !important;
+          left:0 !important;
+          right:0 !important;
+          top:100% !important;
+          z-index:5100 !important;
+          max-height:calc(100vh - 76px) !important;
+          overflow-y:auto !important;
+          -webkit-overflow-scrolling:touch !important;
+          pointer-events:auto !important;
         }
-
-        .ps-nav-home {
-          width: 100% !important;
-          justify-content: flex-start !important;
-          box-sizing: border-box !important;
-        }
-
-        .ps-nav-group {
-          width: 100% !important;
-        }
-
-        .ps-nav-parent-row {
-          width: 100% !important;
-        }
-
-        .ps-nav-parent {
-          flex: 1 1 auto !important;
-          justify-content: flex-start !important;
-        }
-
-        .ps-subnav {
-          max-width: none !important;
-          width: 100% !important;
-          box-sizing: border-box !important;
-          border-radius: 10px !important;
-          margin: 4px 0 8px !important;
-          padding: 12px !important;
-        }
-
-        .ps-nav-group.is-expanded > .ps-subnav {
-          display: block !important;
-        }
-
-        .ps-mega-section {
-          margin-bottom: 14px !important;
-        }
-
-        .ps-mega-section:last-child {
-          margin-bottom: 0 !important;
-        }
-
-        .ps-regional-explore {
-          grid-template-columns: 1fr 1fr !important;
-        }
-      }
-
-      @media (max-width: 520px) {
-
-        .ps-regional-explore {
-          grid-template-columns: 1fr !important;
-        }
+        .ps-nav-group { width:100% !important; }
+        .ps-nav-parent-row { width:100% !important; }
+        .ps-nav-parent { flex:1 1 auto !important; }
+        .ps-nav-group > .ps-subnav { display:none !important; position:static !important; }
+        .ps-nav-group.is-expanded > .ps-subnav { display:block !important; }
+        .ps-nav-group:hover > .ps-subnav { display:none !important; }
+        .ps-nav-group.is-expanded:hover > .ps-subnav { display:block !important; }
       }
     `;
-
     document.head.appendChild(s);
   }
 
+  function closeOtherGroups(current) {
+    document.querySelectorAll('.ps-nav-group.is-expanded').forEach(function (group) {
+      if (group === current) return;
+      group.classList.remove('is-expanded');
+      var toggle = group.querySelector(':scope > .ps-nav-parent-row .ps-nav-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
 
-  /*
-   * Čisti samo neželjene elemente.
-   *
-   * VAŽNO:
-   * Početna ima klasu .ps-nav-home i više se NE briše.
-   */
-  function sanitizeCanonicalNav() {
+  function bindNavigation() {
     var nav = document.querySelector('.ps-mainnav');
+    if (!nav || nav.dataset.psUxBound === '1') return;
+    nav.dataset.psUxBound = '1';
 
-    if (!nav) return;
+    /* Never cancel clicks on real navigation links. */
+    nav.addEventListener('click', function (event) {
+      var toggle = event.target.closest('.ps-nav-toggle, .ps-nav-nested-toggle');
+      if (!toggle) return;
 
-    Array.prototype.slice.call(nav.children).forEach(function (child) {
+      event.preventDefault();
+      event.stopPropagation();
 
+      if (toggle.classList.contains('ps-nav-toggle')) {
+        var group = toggle.closest('.ps-nav-group');
+        if (!group) return;
+        closeOtherGroups(group);
+        var open = group.classList.toggle('is-expanded');
+        toggle.setAttribute('aria-expanded', String(open));
+      } else {
+        var item = toggle.closest('.ps-nav-item');
+        var nested = item && item.querySelector(':scope > .ps-nav-nested');
+        if (!nested) return;
+        var state = nested.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(state));
+        toggle.textContent = state ? '⌄' : '›';
+      }
+    }, true);
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.ps-nav-group')) {
+        document.querySelectorAll('.ps-nav-group.is-expanded').forEach(function (group) {
+          group.classList.remove('is-expanded');
+          var toggle = group.querySelector(':scope > .ps-nav-parent-row .ps-nav-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      document.querySelectorAll('.ps-nav-group.is-expanded').forEach(function (group) {
+        group.classList.remove('is-expanded');
+        var toggle = group.querySelector(':scope > .ps-nav-parent-row .ps-nav-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  function bindMenuButton() {
+    var button = document.querySelector('[data-ps-menu]');
+    var nav = document.querySelector('.ps-mainnav');
+    if (!button || !nav || button.dataset.psUxMenuBound === '1') return;
+    button.dataset.psUxMenuBound = '1';
+
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      var open = nav.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+      button.setAttribute('aria-label', open ? 'Zatvori glavni izbornik' : 'Otvori glavni izbornik');
+    });
+  }
+
+  function removeInteractionBlockers() {
+    /* Disable only obvious full-viewport empty overlays created by navigation layers. */
+    document.querySelectorAll('body *').forEach(function (el) {
+      if (el.id === 'ps-mainnav' || el.closest('.ps-header')) return;
+      var cs = window.getComputedStyle(el);
+      var r = el.getBoundingClientRect();
       if (
-        !child.classList.contains('ps-nav-group') &&
-        !child.classList.contains('ps-nav-home')
+        cs.position === 'fixed' &&
+        cs.pointerEvents !== 'none' &&
+        r.width >= window.innerWidth * 0.98 &&
+        r.height >= window.innerHeight * 0.98 &&
+        !el.querySelector('input,button,a,textarea,select')
       ) {
-        child.remove();
+        el.style.pointerEvents = 'none';
       }
-
     });
   }
-
-
-  /*
-   * Dodaje Prirodu Hrvatske unutar
-   * Krajevi i geografija ako već ne postoji.
-   */
-  function exposeNatureInGeography() {
-    var nav = document.querySelector('.ps-mainnav');
-
-    if (!nav || nav.querySelector('[data-ps-nature-link]')) {
-      return;
-    }
-
-    var geography = nav.querySelector(
-      'a[href="/krajevi-i-geografija.html"]'
-    );
-
-    if (!geography) {
-      return;
-    }
-
-    var item = geography.closest('.ps-nav-item');
-
-    if (!item) {
-      return;
-    }
-
-    var nested = item.querySelector(':scope > .ps-nav-nested');
-
-    if (!nested) {
-      return;
-    }
-
-    var row = document.createElement('div');
-
-    row.className = 'ps-nav-item ps-nav-item-level-2';
-    row.setAttribute('data-ps-nature-link', 'true');
-
-    var linkRow = document.createElement('div');
-
-    linkRow.className = 'ps-nav-item-row';
-
-    var link = document.createElement('a');
-
-    link.className = 'ps-sub-link';
-    link.href = '/priroda.html';
-    link.textContent = '🌲 Priroda Hrvatske';
-
-    linkRow.appendChild(link);
-    row.appendChild(linkRow);
-    nested.appendChild(row);
-  }
-
-
-  /*
-   * Regionalni istraživački blok.
-   */
-  function improveRegionalDiscovery() {
-    var root = document.querySelector('main .rg');
-
-    if (!root || document.getElementById('ps-regional-explore')) {
-      return;
-    }
-
-    var breadcrumb = root.querySelector('.ps-breadcrumbs');
-    var text = breadcrumb ? breadcrumb.textContent : '';
-
-    var regionalSlugs = [
-      'zagorje-i-prigorje',
-      'medimurje',
-      'podravina-i-bilogora',
-      'lika-i-gorski-kotar',
-      'slavonija-i-baranja',
-      'istra',
-      'kvarner-i-primorje',
-      'dalmacija',
-      'posavina-i-pokuplje'
-    ];
-
-    var isRegional =
-      regionalSlugs.some(function (slug) {
-        return location.pathname.indexOf(slug) !== -1;
-      }) ||
-      /Krajevi i geografija/.test(text);
-
-    if (!isRegional) {
-      return;
-    }
-
-    var current = location.pathname.split('/').pop() || '';
-
-    var links = [
-      ['🗺️ Veliki regionalni vodič', '/regionalni-vodic.html'],
-      ['🏙️ Gradovi', '/gradovi.html'],
-      ['🏛️ Baština', '/bastina.html'],
-      ['🍽️ Gastronomija', '/gastronomija.html'],
-      ['🗣️ Govori i dijalekti', '/govori-i-dijalekti.html'],
-      ['🌲 Priroda Hrvatske', '/priroda.html']
-    ];
-
-    var box = document.createElement('section');
-
-    box.id = 'ps-regional-explore';
-    box.className = 'ps-regional-explore';
-
-    var heading = document.createElement('h2');
-
-    heading.textContent =
-      '🔎 Istraži ovaj kraj kroz cijeli PatriaSoul';
-
-    box.appendChild(heading);
-
-    links.forEach(function (entry) {
-
-      var a = document.createElement('a');
-
-      a.href = entry[1];
-      a.textContent = entry[0];
-
-      if (entry[1].split('/').pop() === current) {
-        a.setAttribute('aria-current', 'page');
-      }
-
-      box.appendChild(a);
-
-    });
-
-    root.querySelectorAll('aside.card').forEach(function (aside) {
-
-      var h = aside.querySelector('h2');
-
-      if (h && /Istraži dalje/.test(h.textContent)) {
-        aside.remove();
-      }
-
-    });
-
-    var back = root.querySelector('.back');
-
-    if (back) {
-      back.parentNode.insertBefore(box, back);
-    } else {
-      root.appendChild(box);
-    }
-  }
-
-
-  /*
-   * ESC zatvara otvoreni izbornik.
-   * Klik izvan navigacije također zatvara izbornik.
-   */
-  function improveKeyboardAndOutsideClick() {
-
-    document.addEventListener('keydown', function (e) {
-
-      if (e.key !== 'Escape') {
-        return;
-      }
-
-      document
-        .querySelectorAll('.ps-nav-group.is-expanded')
-        .forEach(function (group) {
-
-          group.classList.remove('is-expanded');
-
-          var button = group.querySelector('.ps-nav-toggle');
-
-          if (button) {
-            button.setAttribute('aria-expanded', 'false');
-          }
-
-        });
-    });
-
-
-    document.addEventListener('click', function (e) {
-
-      if (e.target.closest('.ps-nav-group')) {
-        return;
-      }
-
-      document
-        .querySelectorAll('.ps-nav-group.is-expanded')
-        .forEach(function (group) {
-
-          group.classList.remove('is-expanded');
-
-          var button = group.querySelector('.ps-nav-toggle');
-
-          if (button) {
-            button.setAttribute('aria-expanded', 'false');
-          }
-
-        });
-    });
-  }
-
 
   function init() {
-
-    /*
-     * Prvo očistimo samo ono što nije dio
-     * kanonske navigacije.
-     */
-    sanitizeCanonicalNav();
-
-    /*
-     * Zatim učitamo UX stilove.
-     */
     injectStyles();
-
-    /*
-     * Dodatne funkcije navigacije.
-     */
-    exposeNatureInGeography();
-    improveRegionalDiscovery();
-    improveKeyboardAndOutsideClick();
+    bindNavigation();
+    bindMenuButton();
+    removeInteractionBlockers();
   }
-
 
   if (document.readyState === 'loading') {
-
     document.addEventListener('DOMContentLoaded', init);
-
   } else {
-
     init();
-
   }
 
+  setTimeout(init, 300);
+  setTimeout(removeInteractionBlockers, 1000);
 })();
