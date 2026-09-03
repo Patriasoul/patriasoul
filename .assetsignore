@@ -1,0 +1,7 @@
+# Cloudflare Workers Static Assets — never upload repository/build internals
+.git
+.git/**
+.wrangler
+.wrangler/**
+node_modules
+node_modules/**
