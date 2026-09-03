@@ -29,5 +29,36 @@ function verifiedCityPool(city){const key=cityKey(city),legacy=global.PatriaCity
 function start(city){const key=cityKey(city),unique=verifiedCityPool(city),target=75;if(!readyState||unique.length<target)return [];const seed=((Date.now()>>>0)^((key.length*2654435761)>>>0))>>>0;const selected=global.PatriaQuiz.seededShuffle(unique,seed).slice(0,target);const h=history();h[key]=selected.map(q=>String(q.id));saveHistory(h);return selected.map(q=>global.PatriaQuiz.prepare(q))}
 function finish(city,score,correct,total){const p=global.PatriaPlayer.current(),answers=Math.max(0,Number(total)||75),result={id:crypto.randomUUID?.()||Date.now()+'',city,score:Math.max(0,score|0),correct:Math.max(0,correct|0),answers,name:p.name||'Gost',date:new Date().toISOString(),period:'daily'};save(read().concat(result));global.PatriaPlayer.addCityScore(city,result.score);global.PatriaPlayer.recordResult({category:'brani-svoj-grad',points:result.score,xp:result.score,correct:result.correct,answers,city,period:'daily',id:result.id});const m=missions();m.played++;m.points+=result.score;if(result.correct===answers)m.perfect++;saveMissions(m);global.PatriaBadges?.evaluate(global.PatriaPlayer.current());return{...result,missions:{played:m.played,perfect:m.perfect,points:m.points,completed:[m.played>=1?'prvi-izazov':null,m.perfect>=1?'bezgresni-branitelj':null,m.points>=1000?'cuvar-grada':null].filter(Boolean)}}}
 function cityRows(city){return read().filter(r=>!city||r.city===city).sort((a,b)=>b.score-a.score)}
+function installNicknameCard(){
+  if(typeof document==='undefined')return;
+  const mount=()=>{
+    const search=document.querySelector('#odabir .search-card');
+    if(!search||search.querySelector('.ps-nickname-card'))return;
+    const card=document.createElement('div');
+    card.className='ps-nickname-card';
+    card.innerHTML='<div class="ps-nickname-icon">👤</div><div class="ps-nickname-copy"><strong>Tvoj igrački nadimak</strong><span>Upiši ime pod kojim želiš igrati i pratiti svoj rezultat.</span></div><input id="psCityNickname" type="text" maxlength="40" autocomplete="nickname" placeholder="Npr. Bruno, Branitelj, Dalmatinac…" aria-label="Tvoj igrački nadimak"><small id="psNicknameStatus" aria-live="polite"></small>';
+    search.insertBefore(card,search.firstChild);
+    const style=document.createElement('style');
+    style.textContent='.ps-nickname-card{display:grid;grid-template-columns:auto 1fr minmax(220px,360px);gap:14px;align-items:center;margin-bottom:18px;padding:16px 18px;border:1px solid rgba(214,173,85,.24);border-radius:18px;background:linear-gradient(145deg,rgba(214,173,85,.08),rgba(255,255,255,.025))}.ps-nickname-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(214,173,85,.14);font-size:1.25rem}.ps-nickname-copy strong{display:block;color:#fff}.ps-nickname-copy span{display:block;margin-top:3px;color:rgba(255,255,255,.55);font-size:.84rem;line-height:1.35}.ps-nickname-card input{width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid rgba(255,255,255,.14);border-radius:13px;background:#080c11;color:#fff;font:inherit}.ps-nickname-card input:focus{outline:none;border-color:#d6ad55;box-shadow:0 0 0 3px rgba(214,173,85,.1)}.ps-nickname-card small{display:none;grid-column:2/-1;color:#d6ad55}.ps-nickname-card.ready{border-color:rgba(214,173,85,.45)}@media(max-width:700px){.ps-nickname-card{grid-template-columns:auto 1fr}.ps-nickname-card input{grid-column:1/-1}.ps-nickname-card small{grid-column:1/-1}}';
+    document.head.appendChild(style);
+    const input=card.querySelector('#psCityNickname');
+    const status=card.querySelector('#psNicknameStatus');
+    const stored=localStorage.getItem('patriasoul_city_nickname')||'';
+    if(stored)input.value=stored;
+    const sync=()=>{const value=input.value.trim().slice(0,40);if(value){localStorage.setItem('patriasoul_city_nickname',value);card.classList.add('ready');status.textContent='Nadimak je spreman.'}else{localStorage.removeItem('patriasoul_city_nickname');card.classList.remove('ready');status.textContent=''}};
+    input.addEventListener('input',sync);sync();
+    const oldPrompt=global.prompt;
+    global.prompt=function(message,defaultValue){
+      if(typeof message==='string'&&(message.toLowerCase().includes('nadimak')||message.toLowerCase().includes('ime'))){
+        input.focus();
+        sync();
+        return input.value.trim()||null;
+      }
+      return oldPrompt?oldPrompt.call(global,message,defaultValue):null;
+    };
+  };
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
+}
+installNicknameCard();
 global.PatriaCityGame={start,finish,results:read,cityRows,missions,questionCount:city=>verifiedCityPool(city).length,ready,activeLayerIds:ACTIVE_LAYER_IDS.slice()};
 })(typeof window!=='undefined'?window:globalThis);
