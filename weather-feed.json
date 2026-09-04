@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T07:50:52.975061+00:00",
+  "updatedAt": "2026-09-04T08:17:19.442481+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -92,12 +92,6 @@
       "wind": null,
       "humidity": null
     },
-    "Rijeka": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Rijeka-aerodrom": {
       "temp": null,
       "condition": null,
@@ -182,6 +176,12 @@
       "wind": null,
       "humidity": null
     },
+    "Rijeka": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Split": {
       "temp": null,
       "condition": null,
@@ -197,17 +197,17 @@
   },
   "alerts": [
     "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 33 °C; Minimalna temperatura > 23 °C",
+    "Toplinski val. Maksimalna temperatura > 33 °C",
     "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 33 °C; Minimum temperature > 23 °C",
+    "Heat wave. Maximum temperature > 33 °C",
     "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 34 °C",
+    "Toplinski val. Maksimalna temperatura > 34 °C; Minimalna temperatura > 26 °C",
     "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 34 °C",
+    "Heat wave. Maximum temperature > 34 °C; Minimum temperature > 26 °C",
     "Narančasto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 33 °C; Minimalna temperatura > 25 °C",
+    "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 27 °C",
     "Orange high temperature warning",
-    "Heat wave. Maximum temperature > 33 °C; Minimum temperature > 25 °C",
+    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 27 °C",
     "Žuto upozorenje za vjetar",
     "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
     "Yellow wind warning",
