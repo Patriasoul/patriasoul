@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T18:17:00.764592+00:00",
+  "updatedAt": "2026-09-04T18:33:50.684111+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,6 +9,12 @@
       "humidity": null
     },
     "Bjelovar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Crikvenica": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -38,6 +44,12 @@
       "wind": null,
       "humidity": null
     },
+    "Karlovac": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Knin": {
       "temp": null,
       "condition": null,
@@ -51,6 +63,12 @@
       "humidity": null
     },
     "Makarska": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Opatija": {
       "temp": null,
       "condition": null,
       "wind": null,
