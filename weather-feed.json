@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T21:48:11.162593+00:00",
+  "updatedAt": "2026-09-04T22:14:14.799516+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -154,29 +154,25 @@
     }
   },
   "alerts": [
+    "Žuto upozorenje za vjetar",
+    "Prolazno će zapuhati jak sjeverni i sjeveroistočni vjetar. Najjači udari vjetra > 55 km/h",
+    "Yellow wind warning",
+    "Strong N and NW wind briefly. Maximum gust speed > 55 km/h",
+    "Žuto upozorenje za vjetar",
+    "Prolazno će zapuhati jak sjeverni i sjeveroistočni vjetar. Najjači udari vjetra > 55 km/h",
+    "Yellow wind warning",
+    "Strong N and NW wind briefly. Maximum gust speed > 55 km/h",
     "Žuto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 33 °C",
     "Yellow high temperature warning",
     "Heat wave. Maximum temperature > 33 °C",
     "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 34 °C; Minimalna temperatura > 26 °C",
+    "Toplinski val. Maksimalna temperatura > 34 °C",
     "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 34 °C; Minimum temperature > 26 °C",
-    "Narančasto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 27 °C",
-    "Orange high temperature warning",
-    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 27 °C",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)"
+    "Heat wave. Maximum temperature > 34 °C",
+    "Žuto upozorenje za vrućinu",
+    "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 26 °C",
+    "Yellow high temperature warning",
+    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 26 °C"
   ]
 }\n
