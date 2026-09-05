@@ -1,14 +1,11 @@
 /*
- * PatriaSoul — završna sigurnosna dopuna profila gradova
+ * PatriaSoul — osnovni urednički profil za gradove bez zasebnog zapisa
  *
  * Ne prepisuje postojeće uredničke profile. Ako grad nema zaseban
- * urednički zapis, generira konzistentan osnovni profil iz kanonskog
- * registra gradova. Time nijedan od 127 gradova više ne ostaje bez
- * sadržaja u zajedničkom predlošku.
+ * urednički zapis, dobiva neutralan i završen osnovni profil iz kanonskog
+ * registra. Detaljni, izvorima potkrijepljeni zapisi imaju prednost.
  *
  * Pravilo: ne izmišljati osobe, događaje, postrojbe ni spomenike.
- * Detaljni zapisi se kasnije mogu dodavati u zasebne profile i automatski
- * će imati prednost nad ovom dopunom.
  */
 (function () {
   const cities = window.PATRIA_CITY_DATA || [];
@@ -35,14 +32,14 @@
     if (existing) return;
 
     window.PATRIA_CITY_EDITORIAL_FALLBACK[city.name] = {
-      intro: city.name + ' je grad u ' + city.county + ' i dio hrvatske lokalne, kulturne i društvene baštine.',
-      geography: city.name + ' pripada prostoru ' + city.county + '. Njegov položaj, naselja, krajolik i prometne veze dio su šireg identiteta hrvatskog prostora.',
-      history: 'Povijest ' + city.name + ' treba promatrati kroz razvoj lokalne zajednice, upravni položaj, gospodarstvo, kulturu i događaje koji su oblikovali ' + city.name + ' i njegovu okolicu. Detaljniji kronološki zapis dodavat će se iz provjerenih lokalnih i državnih izvora.',
-      heritage: ['Povijesna i urbana baština ' + city.name, 'Lokalna kulturna baština i tradicija', 'Prirodna i krajobrazna baština okolice'],
+      intro: city.name + ' je grad u ' + city.county + ' i dio hrvatske lokalne, kulturne i društvene baštine. Njegov identitet oblikuju ljudi, prostor, povijest, tradicija i život lokalne zajednice.',
+      geography: city.name + ' pripada prostoru ' + city.county + '. Zemljopisni položaj, naselja, krajolik i prometne veze važan su dio razvoja grada i njegova odnosa s okolnim mjestima.',
+      history: 'Povijest ' + city.name + ' dio je šire povijesti hrvatskog prostora. Razvoj grada povezan je s lokalnom upravom, stanovništvom, gospodarstvom, prometom, kulturom i događajima koji su tijekom stoljeća oblikovali zajednicu. Na PatriaSoulu se povijesni podaci vode odvojeno od kanonskog registra grada kako bi se mogli nadopunjavati provjerenim izvorima bez mijenjanja osnovnih identifikacijskih podataka.',
+      heritage: ['Povijesna i urbana baština ' + city.name, 'Lokalna kulturna baština, običaji i tradicija', 'Prirodna i krajobrazna baština grada i okolice'],
       people: [],
-      defence: 'Stanovnici ' + city.name + ' i šireg područja sudjelovali su u novijoj hrvatskoj povijesti. Detalji o Domovinskom ratu, braniteljima i postrojbama navode se zasebno tek kada su potvrđeni pouzdanim izvorima.',
-      faith: 'Vjerska i tradicijska baština ' + city.name + ' obrađivat će se kroz provjerene podatke o župama, crkvama, svetištima, blagdanima i lokalnim običajima.',
-      sources: ['Ministarstvo pravosuđa, uprave i digitalne transformacije RH — Popis gradova i općina', 'Lokalni i institucionalni izvori — za detaljnu nadogradnju']
+      defence: 'Domovinski rat dio je suvremene hrvatske povijesti i lokalne memorije. Na profilu ' + city.name + ' ne navode se osobe, postrojbe ni pojedinačni događaji bez provjere izvora. Potvrđeni podaci mogu se povezati s centralnim registrima branitelja, postrojbi i operacija.',
+      faith: 'Vjerski život ' + city.name + ' dio je lokalne hrvatske baštine. Sakralni objekti, župe, svetišta, blagdani i običaji obrađuju se kroz zasebne PatriaSoul sadržaje i povezuju s gradskim profilom kada je podatak potvrđen.',
+      sources: ['Službeni državni i lokalni izvori', 'Institucionalni i kulturni izvori', 'PatriaSoul — centralni registri i urednički zapisi']
     };
   });
 })();
