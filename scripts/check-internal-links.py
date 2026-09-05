@@ -1,6 +1,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 IGNORE_DIRS = {'.git', 'node_modules'}
@@ -30,6 +31,20 @@ def resolve(source, ref):
         target = target / 'index.html'
     return target.resolve()
 
+def navigation_targets():
+    nav = ROOT / 'site-navigation.js'
+    if not nav.exists():
+        return [], ['site-navigation.js nedostaje']
+    text = nav.read_text(encoding='utf-8', errors='replace')
+    # Navigation entries use absolute site paths; ignore non-HTML assets such as the logo.
+    targets = sorted(set(re.findall(r"['\"](/[^'\"]+\.html(?:#[^'\"]*)?)['\"]", text)))
+    missing = []
+    for ref in targets:
+        target = resolve(nav, ref)
+        if target is not None and not target.exists():
+            missing.append(f'site-navigation.js: nedostaje -> {ref}')
+    return targets, missing
+
 html_files = [p for p in ROOT.rglob('*.html') if not any(part in IGNORE_DIRS for part in p.parts)]
 missing = []
 nav_missing = []
@@ -55,10 +70,14 @@ for path in sorted(html_files):
     if '<footer' not in text.lower() and 'home-footer' not in text:
         footer_missing.append(path.relative_to(ROOT))
 
+nav_targets, nav_errors = navigation_targets()
+missing.extend([('site-navigation.js', 'href', error.replace('site-navigation.js: nedostaje -> ', '')) for error in nav_errors])
+
 print(f'HTML pages scanned: {len(html_files)}')
-print(f'Missing literal internal targets: {len(missing)}')
+print(f'Literal internal targets missing: {len(missing)}')
 for source, key, value in missing:
     print(f'  MISSING  {source}  {key}={value}')
+print(f'Navigation HTML targets checked: {len(nav_targets)}')
 print(f'Pages without site-navigation.js reference: {len(nav_missing)}')
 for path in nav_missing:
     print(f'  NAV-MISSING  {path}')
