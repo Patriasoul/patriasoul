@@ -29,6 +29,12 @@ IMAGE_MAP = {
     'vjera.html': '/images/vjera-duhovna-bastina.svg',
 }
 
+# Stare slike koje su uklonjene iz repozitorija. Svaki preostali HTML link
+# automatski se preusmjerava na provjereni lokalni asset.
+STALE_IMAGE_REPLACEMENTS = {
+    '/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg': '/images/flag-of-croatia-free-vector.jpg',
+}
+
 changed = []
 
 for path in ROOT.rglob('*.html'):
@@ -54,6 +60,9 @@ for path in ROOT.rglob('*.html'):
         pos = text.lower().find('</body>')
         if pos >= 0:
             text = text[:pos] + IMAGE_JS + '\n' + text[pos:]
+
+    for stale, replacement in STALE_IMAGE_REPLACEMENTS.items():
+        text = text.replace(stale, replacement)
 
     mapped = IMAGE_MAP.get(path.name)
     if mapped:
