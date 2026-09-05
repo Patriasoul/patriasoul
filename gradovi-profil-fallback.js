@@ -20,8 +20,39 @@
     window.PATRIA_CITY_EDITORIAL_8,
     window.PATRIA_CITY_EDITORIAL_9,
     window.PATRIA_CITY_EDITORIAL_10,
-    window.PATRIA_CITY_EDITORIAL_11
+    window.PATRIA_CITY_EDITORIAL_11,
+    window.PATRIA_CITY_EDITORIAL_12
   ].filter(Boolean);
+
+  // Uklanjamo interne uredničke napomene iz javnih profila i ostavljamo
+  // samo neutralne, objavljive formulacije kada činjenica nije dovoljno potvrđena.
+  editorialObjects.forEach(function (registry) {
+    if (registry.Benkovac) {
+      registry.Benkovac.people = ['Benkovački kulturni djelatnici i lokalni čuvari baštine'];
+    }
+    if (registry.Imotski) {
+      registry.Imotski.people = ['Imotski kulturni djelatnici, obrtnici i čuvari lokalne baštine'];
+    }
+    if (registry.Korčula) {
+      registry.Korčula.people = ['Korčulanski pomorci, brodograditelji i kulturni djelatnici'];
+    }
+  });
+
+  // Vrlika je nedostajala u uredničkom registru; dodajemo provjereni osnovni zapis
+  // u već učitani centralni urednički registar kako bi grad imao isti model kao ostali.
+  const editorialRegistry = window.PATRIA_CITY_EDITORIAL_12 || window.PATRIA_CITY_EDITORIAL_11 || window.PATRIA_CITY_EDITORIAL;
+  if (editorialRegistry && !editorialRegistry.Vrlika) {
+    editorialRegistry.Vrlika = {
+      intro: 'Vrlika je povijesni grad u Dalmatinskoj zagori, smješten u Cetinskom kraju podno Dinare i poznat po tradiciji, prirodnom krajoliku i tvrđavi Prozor.',
+      geography: 'Grad se nalazi u Splitsko-dalmatinskoj županiji, u gornjem toku Cetine, između Perućkog jezera i planinskog prostora Dinare.',
+      history: 'Razvoj Vrlike povezan je s položajem u gornjem Cetinskom kraju, srednjovjekovnom utvrdom Prozor i životom zajednice koja je stoljećima povezivala poljoprivredu, stočarstvo i prometne putove zagorskog prostora.',
+      heritage: ['Tvrđava Prozor', 'Izvor rijeke Cetine i cetinski krajolik', 'Crkva sv. Nikole', 'Tradicijska arhitektura i običaji Cetinske krajine'],
+      people: ['Milan Begović — hrvatski književnik rođen u Vrlici'],
+      defence: 'Vrlika i Cetinski kraj dio su suvremene hrvatske ratne i poslijeratne memorije. Pojedinačne osobe, postrojbe i događaji navode se samo kada su potvrđeni u zasebnim evidencijama i izvorima.',
+      faith: 'Crkva sv. Nikole i druga sakralna baština Vrlike dio su katoličke tradicije Cetinske krajine.',
+      sources: ['Grad Vrlika — službeni izvori', 'Turistička zajednica Grada Vrlike']
+    };
+  }
 
   window.PATRIA_CITY_EDITORIAL_FALLBACK = {};
 
