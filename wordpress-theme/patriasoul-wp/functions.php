@@ -1,3 +1,4 @@
 <?php
-function patriasoul_setup(){add_theme_support('title-tag');}
-add_action('after_setup_theme','patriasoul_setup');
+if(!defined('ABSPATH'))exit;
+require_once get_template_directory().'/inc/theme.php';
+require_once get_template_directory().'/inc/customizer.php';
