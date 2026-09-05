@@ -22,6 +22,7 @@ IMAGE_MAP = {
     'povijest.html': '/images/PATRIA_SOUL_ORIGINAL_ISPRAVLJEN_GRB.png',
     'hrvatska-povijest.html': '/images/PATRIA_SOUL_ORIGINAL_ISPRAVLJEN_GRB.png',
     'bastina.html': '/images/Bastina.jfif',
+    'vjera.html': '/images/vjera-duhovna-bastina.svg',
 }
 
 changed = []
@@ -50,7 +51,6 @@ for path in ROOT.rglob('*.html'):
         if pos >= 0:
             text = text[:pos] + IMAGE_JS + '\n' + text[pos:]
 
-    # Ako već postoji automatsko polje, samo mu dodijeli stvarnu postojeću sliku.
     mapped = IMAGE_MAP.get(path.name)
     if mapped:
         pattern = r'(<img\b[^>]*data-ps-image[^>]*data-ps-image-src=")[^"]*("[^>]*>)'
@@ -58,7 +58,6 @@ for path in ROOT.rglob('*.html'):
         pattern2 = r'(<img\b[^>]*data-ps-image[^>]*src=")[^"]*("[^>]*>)'
         text = re.sub(pattern2, lambda m: m.group(1) + mapped + m.group(2), text, count=1, flags=re.IGNORECASE)
 
-    # Za ostale stranice koje imaju <main>, osiguraj standardno polje samo ako ga već nemaju.
     if '<main' in text.lower() and 'ps-image-field' not in text:
         marker = re.search(r'</section>', text, flags=re.IGNORECASE)
         if marker:
