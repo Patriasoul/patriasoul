@@ -24,6 +24,7 @@ for path in ROOT.rglob('*.html'):
         if pos >= 0:
             text = text[:pos] + IMAGE_JS + '\n' + text[pos:]
 
+    # Pages without a dedicated image field receive one standardized replaceable slot.
     if '<main' in text.lower() and 'ps-image-field' not in text:
         marker = re.search(r'</section>', text, flags=re.IGNORECASE)
         if marker:
@@ -32,7 +33,7 @@ for path in ROOT.rglob('*.html'):
             field = (f'<figure class="ps-image-field ps-auto-image-field">'
                      f'<span class="ps-image-label">GLAVNA SLIKA · {label}</span>'
                      f'<img data-ps-image data-ps-image-src="{PLACEHOLDER}" src="{PLACEHOLDER}" alt="Glavna slika stranice — zamijeni fotografijom ili ilustracijom" width="1600" height="900">'
-                     f'<figcaption>Ovo je standardno slikovno polje PatriaSoula. Zamijeni samo vrijednost <code>data-ps-image-src</code> stvarnom slikom; struktura stranice ostaje ista.</figcaption>'
+                     f'<figcaption>Standardno slikovno polje PatriaSoula. Za zamjenu slike promijeni samo <code>data-ps-image-src</code>; struktura stranice ostaje ista.</figcaption>'
                      f'</figure>')
             text = text[:marker.end()] + '\n' + field + text[marker.end():]
 
