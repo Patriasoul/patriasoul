@@ -1,93 +1,12 @@
 /* PatriaSoul — urednički profili gradova 71–80 */
 window.PATRIA_CITY_EDITORIAL_8 = {
-  "Ogulin": {
-    intro:"Ogulin je povijesni grad podno Kleka, na prijelazu između Gorskog kotara, Like i karlovačkog prostora, snažno povezan s hrvatskom književnom i vojnom baštinom.",
-    geography:"Grad se nalazi u Karlovačkoj županiji, u prostranom ogulinskom kraju kojim dominira planina Klek te doline i rijeke Dobre i Zagorske Mrežnice.",
-    history:"Ogulin je osnovan krajem 15. stoljeća uz utvrdu Frankopana. Zbog položaja prema osmanskom pograničju imao je važnu obrambenu ulogu, a kasnije se razvijao kao upravno, prometno i kulturno središte.",
-    heritage:["Frankopanski kaštel", "Kula i zidine Starog grada", "Planina Klek", "Đulin ponor", "Zavičajni muzej Ogulin", "Ivana Brlić-Mažuranić i književna baština"],
-    people:["Ivana Brlić-Mažuranić — književnica povezana s Ogulinom", "Frankopani — plemićka obitelj važna za osnutak i razvoj grada"],
-    defence:"Ogulinski kraj imao je važnu obrambenu ulogu kroz povijest, a njegovi stanovnici sudjelovali su i u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Crkve i kapelice ogulinskog kraja dio su dugotrajne katoličke i tradicijske baštine grada i okolnih naselja.",
-    sources:["Grad Ogulin — službeni izvori","Turistička zajednica Grada Ogulina"]
-  },
-  "Ozalj": {
-    intro:"Ozalj je povijesni grad na Kupi, poznat po Starom gradu Ozlju, frankopanskoj i zrinskoj baštini te snažnoj povezanosti s hrvatskom kulturnom poviješću.",
-    geography:"Grad se nalazi u Karlovačkoj županiji, uz rijeku Kupu i na prijelazu između Pokuplja i živopisnog brežuljkastog krajolika.",
-    history:"Ozalj je jedno od važnih središta hrvatske srednjovjekovne i ranonovovjekovne povijesti. Grad i utvrda bili su povezani s Frankopanima i Zrinskima, a Ozaljski književno-jezični krug ostavio je važan trag u hrvatskoj kulturi.",
-    heritage:["Stari grad Ozalj", "Zavičajni muzej Ozalj", "Munjarа Ozalj", "Župna crkva sv. Vida", "Kupa i ozaljski krajolik", "Ozaljski književno-jezični krug"],
-    people:["Petar Zrinski — hrvatski velikaš povezan s Ozljem", "Katarina Zrinska — književnica i plemkinja povezana s ozaljskim krugom", "Nikola Šubić Zrinski — povezan s ozaljskom baštinom"],
-    defence:"Ozalj i kupski kraj imali su obrambenu važnost kroz povijest, a stanovnici područja sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Župna crkva sv. Vida i druge kapelice ozaljskog kraja dio su sakralne baštine Pokuplja.",
-    sources:["Grad Ozalj — službeni izvori","Zavičajni muzej Ozalj"]
-  },
-  "Slunj": {
-    intro:"Slunj je grad na rijekama Slunjčici i Korani, poznat po Rastokama, prirodnoj baštini i snažnom identitetu Korduna.",
-    geography:"Grad se nalazi u Karlovačkoj županiji, na prijelazu između Korduna i Like, gdje se Slunjčica ulijeva u Koranu.",
-    history:"Slunj se razvijao uz srednjovjekovnu utvrdu i važne putove. Zbog pograničnog položaja bio je izložen osmanskim prodorima, a suvremenu povijest grada snažno su obilježili Domovinski rat i obnova.",
-    heritage:["Rastoke", "Stari grad Slunj", "Mlinice Rastoka", "Rijeke Slunjčica i Korana", "Tradicijska kordunska baština"],
-    people:["Stanovnici Slunja i Korduna koji su čuvali tradiciju mlinarstva", "Branitelji slunjskog kraja"],
-    defence:"Slunj je jedno od važnih mjesta obrane Korduna tijekom Domovinskog rata. Grad i okolica teško su stradali tijekom okupacije, a oslobođeni su u operaciji Oluja 1995. godine.",
-    faith:"Crkve i kapelice slunjskog kraja dio su katoličke baštine Korduna i važnog lokalnog identiteta.",
-    sources:["Grad Slunj — službeni izvori","Turistička zajednica područja Slunj"]
-  },
-  "Ivanec": {
-    intro:"Ivanec je grad podno Ivanščice, povijesno povezan s rudarstvom, obrtima, planinarstvom i kulturnom baštinom Hrvatskog zagorja.",
-    geography:"Grad se nalazi u Varaždinskoj županiji, u dolini Bednje i podno sjevernih padina Ivanščice.",
-    history:"Ivanec se razvijao kao naselje i trgovište uz podnožje Ivanščice. Poseban trag ostavila je rudarska tradicija, koja je stoljećima bila važna za gospodarstvo ovog kraja.",
-    heritage:["Rudarska baština Ivanca", "Ivanščica", "Župna crkva sv. Marije Magdalene", "Planinarska i prirodna baština", "Tradicijska arhitektura ivanečkog kraja"],
-    people:["Rudari i obrtnici ivanečkog kraja", "Planinari i čuvari prirodne baštine Ivanščice"],
-    defence:"Stanovnici Ivanca i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Župna crkva sv. Marije Magdalene i lokalne kapelice dio su sakralne baštine ivanečkog kraja.",
-    sources:["Grad Ivanec — službeni izvori","Turistička zajednica Grada Ivanca"]
-  },
-  "Lepoglava": {
-    intro:"Lepoglava je povijesni grad podno Ivanščice, poznat po pavlinskoj tradiciji, čipkarstvu i bogatoj kulturnoj baštini.",
-    geography:"Grad se nalazi u Varaždinskoj županiji, u dolini Bednje podno sjevernih obronaka Ivanščice.",
-    history:"Lepoglava je snažno obilježena djelovanjem pavlina, koji su razvijali školstvo, umjetnost i duhovni život. U novijoj povijesti grad je poznat i po zatvorskom kompleksu te tradiciji lepoglavske čipke.",
-    heritage:["Pavlinski samostan i crkva Bezgrešnog začeća", "Lepoglavska čipka", "Ivanščica", "Pavlinska kulturna baština", "Tradicijska arhitektura"],
-    people:["Pavlini — važni za kulturni i obrazovni razvoj Lepoglave", "Zlatko Dalić — hrvatski nogometni trener rođen u Livnu, povezan s Hrvatskim nogometom, ne navoditi kao lepoglavsku osobu bez izvora"],
-    defence:"Stanovnici Lepoglave i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Pavlinska crkva i samostanska tradicija temelj su snažnog duhovnog identiteta Lepoglave.",
-    sources:["Grad Lepoglava — službeni izvori","Turistička zajednica Grada Lepoglave"]
-  },
-  "Ludbreg": {
-    intro:"Ludbreg je povijesni grad na Dravi, poznat kao međunarodno euharistijsko svetište i kao važno središte ludbreškog kraja.",
-    geography:"Grad se nalazi u Varaždinskoj županiji, uz rijeku Bednju i u blizini Drave, između Varaždina i Koprivnice.",
-    history:"Ludbreg ima dugu povijest naseljenosti i srednjovjekovni razvoj, a kroz stoljeća se oblikovao kao trgovačko, upravno i vjersko središte.",
-    heritage:["Svetište Predragocjene Krvi Isusove", "Dvorac Batthyany", "Povijesna jezgra", "Trg Svetog Trojstva", "Ludbreška tradicijska baština"],
-    people:["Ludbreški obrtnici, trgovci i kulturni djelatnici", "Svećenici i hodočasnici povezani sa Svetištem Predragocjene Krvi Isusove"],
-    defence:"Stanovnici Ludbrega i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Ludbreg je jedno od najpoznatijih hrvatskih katoličkih hodočasničkih mjesta, povezano sa štovanjem Predragocjene Krvi Isusove.",
-    sources:["Grad Ludbreg — službeni izvori","Svetište Predragocjene Krvi Isusove"]
-  },
-  "Novi Marof": {
-    intro:"Novi Marof je grad u Varaždinskoj županiji, smješten u dolini Bednje i poznat po dvorcu Erdödy, prirodi i zagorskoj baštini.",
-    geography:"Grad se nalazi između Varaždina i Ivanščice, u prijelaznom prostoru Hrvatskog zagorja i Varaždinske županije.",
-    history:"Razvoj Novog Marofa povezan je s vlastelinskim posjedima i obitelji Erdödy. Grad se u novije vrijeme razvio kao prometno, upravno i gospodarsko središte šireg kraja.",
-    heritage:["Dvorac Erdödy", "Dolina Bednje", "Ivanščica i okolni krajolik", "Sakralna baština", "Zagorska tradicijska baština"],
-    people:["Obitelj Erdödy — važna za povijest novomarofskog kraja", "Lokalni obrtnici i kulturni djelatnici"],
-    defence:"Stanovnici Novog Marofa i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Crkve i kapelice novomarofskog područja dio su duhovne baštine Varaždinskog kraja.",
-    sources:["Grad Novi Marof — službeni izvori","Turistička zajednica Novog Marofa"]
-  },
-  "Varaždinske Toplice": {
-    intro:"Varaždinske Toplice su povijesni lječilišni grad poznat po termalnim izvorima i kontinuitetu kupališne tradicije od rimskog doba.",
-    geography:"Grad se nalazi u Varaždinskoj županiji, na južnim obroncima Varaždinsko-topličkog gorja, u dolini Bednje.",
-    history:"Termalni izvori bili su važni još u rimsko doba, kada se na prostoru današnjih Toplica razvilo naselje Aquae Iasae. Kasniji razvoj grada ostao je povezan s lječilištem i termalnom tradicijom.",
-    heritage:["Arheološki lokalitet Aquae Iasae", "Termalni izvori", "Park i lječilišni kompleks", "Povijesna jezgra", "Sakralna baština"],
-    people:["Rimski stanovnici Aquae Iasae i istraživači antičkog lokaliteta", "Liječnici i stručnjaci povezani s razvojem lječilišta"],
-    defence:"Stanovnici Varaždinskih Toplica i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Župna crkva i lokalne kapelice dio su duhovne i kulturne baštine grada.",
-    sources:["Grad Varaždinske Toplice — službeni izvori","Arheološki institut / Aquae Iasae"]
-  },
-  "Đurđevac": {
-    intro:"Đurđevac je povijesni grad Podravine, poznat po Starom gradu, legendi o Picokima i posebnom krajoliku Đurđevačkih pijesaka.",
-    geography:"Grad se nalazi u Koprivničko-križevačkoj županiji, između Drave i Bilogore, uz područje Đurđevačkih pijesaka.",
-    history:"Đurđevac se razvijao uz utvrđeni Stari grad, važan za obranu Podravine. Legenda o Picokima postala je jedan od najprepoznatljivijih simbola grada i dio lokalne kulturne memorije.",
-    heritage:["Stari grad Đurđevac", "Đurđevački pijesci", "Legenda o Picokima", "Galerija Stari grad", "Podravska tradicijska baština"],
-    people:["Đurđevački branitelji i stanovnici Podravine", "Umjetnici i kulturni djelatnici povezani s gradom"],
-    defence:"Đurđevac i Podravina imali su važnu obrambenu ulogu kroz povijest, a stanovnici grada sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.",
-    faith:"Župna crkva sv. Jurja i lokalne kapelice dio su katoličke i tradicijske baštine Đurđevca.",
-    sources:["Grad Đurđevac — službeni izvori","Muzej Grada Đurđevca"]
-  }
+  "Ogulin": { intro:"Ogulin je povijesni grad podno Kleka, na prijelazu između Gorskog kotara, Like i karlovačkog prostora, snažno povezan s hrvatskom književnom i vojnom baštinom.", geography:"Grad se nalazi u Karlovačkoj županiji, u prostranom ogulinskom kraju kojim dominira planina Klek te doline i rijeke Dobre i Zagorske Mrežnice.", history:"Ogulin je osnovan krajem 15. stoljeća uz utvrdu Frankopana. Zbog položaja prema osmanskom pograničju imao je važnu obrambenu ulogu, a kasnije se razvijao kao upravno, prometno i kulturno središte.", heritage:["Frankopanski kaštel","Kula i zidine Starog grada","Planina Klek","Đulin ponor","Zavičajni muzej Ogulin","Ivana Brlić-Mažuranić i književna baština"], people:["Ivana Brlić-Mažuranić — književnica povezana s Ogulinom","Frankopani — plemićka obitelj važna za osnutak i razvoj grada"], defence:"Ogulinski kraj imao je važnu obrambenu ulogu kroz povijest, a njegovi stanovnici sudjelovali su i u obrani Hrvatske tijekom Domovinskog rata.", faith:"Crkve i kapelice ogulinskog kraja dio su dugotrajne katoličke i tradicijske baštine grada i okolnih naselja.", sources:["Grad Ogulin — službeni izvori","Turistička zajednica Grada Ogulina"] },
+  "Ozalj": { intro:"Ozalj je povijesni grad na Kupi, poznat po Starom gradu Ozlju, frankopanskoj i zrinskoj baštini te snažnoj povezanosti s hrvatskom kulturnom poviješću.", geography:"Grad se nalazi u Karlovačkoj županiji, uz rijeku Kupu i na prijelazu između Pokuplja i živopisnog brežuljkastog krajolika.", history:"Ozalj je jedno od važnih središta hrvatske srednjovjekovne i ranonovovjekovne povijesti. Grad i utvrda bili su povezani s Frankopanima i Zrinskima, a Ozaljski književno-jezični krug ostavio je važan trag u hrvatskoj kulturi.", heritage:["Stari grad Ozalj","Zavičajni muzej Ozalj","Munjara Ozalj","Župna crkva sv. Vida","Kupa i ozaljski krajolik","Ozaljski književno-jezični krug"], people:["Petar Zrinski — hrvatski velikaš povezan s Ozljem","Katarina Zrinska — književnica i plemkinja povezana s ozaljskim krugom","Nikola Šubić Zrinski — povezan s ozaljskom baštinom"], defence:"Ozalj i kupski kraj imali su obrambenu važnost kroz povijest, a stanovnici područja sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Župna crkva sv. Vida i druge kapelice ozaljskog kraja dio su sakralne baštine Pokuplja.", sources:["Grad Ozalj — službeni izvori","Zavičajni muzej Ozalj"] },
+  "Slunj": { intro:"Slunj je grad na rijekama Slunjčici i Korani, poznat po Rastokama, prirodnoj baštini i snažnom identitetu Korduna.", geography:"Grad se nalazi u Karlovačkoj županiji, na prijelazu između Korduna i Like, gdje se Slunjčica ulijeva u Koranu.", history:"Slunj se razvijao uz srednjovjekovnu utvrdu i važne putove. Zbog pograničnog položaja bio je izložen osmanskim prodorima, a suvremenu povijest grada snažno su obilježili Domovinski rat i obnova.", heritage:["Rastoke","Stari grad Slunj","Mlinice Rastoka","Rijeke Slunjčica i Korana","Tradicijska kordunska baština"], people:["Stanovnici Slunja i Korduna koji su čuvali tradiciju mlinarstva","Branitelji slunjskog kraja"], defence:"Slunj je jedno od važnih mjesta obrane Korduna tijekom Domovinskog rata. Grad i okolica teško su stradali tijekom okupacije, a oslobođeni su u operaciji Oluja 1995. godine.", faith:"Crkve i kapelice slunjskog kraja dio su katoličke baštine Korduna i važnog lokalnog identiteta.", sources:["Grad Slunj — službeni izvori","Turistička zajednica područja Slunj"] },
+  "Ivanec": { intro:"Ivanec je grad podno Ivanščice, povijesno povezan s rudarstvom, obrtima, planinarstvom i kulturnom baštinom Hrvatskog zagorja.", geography:"Grad se nalazi u Varaždinskoj županiji, u dolini Bednje i podno sjevernih padina Ivanščice.", history:"Ivanec se razvijao kao naselje i trgovište uz podnožje Ivanščice. Poseban trag ostavila je rudarska tradicija, koja je stoljećima bila važna za gospodarstvo ovog kraja.", heritage:["Rudarska baština Ivanca","Ivanščica","Župna crkva sv. Marije Magdalene","Planinarska i prirodna baština","Tradicijska arhitektura ivanečkog kraja"], people:["Rudari i obrtnici ivanečkog kraja","Planinari i čuvari prirodne baštine Ivanščice"], defence:"Stanovnici Ivanca i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Župna crkva sv. Marije Magdalene i lokalne kapelice dio su sakralne baštine ivanečkog kraja.", sources:["Grad Ivanec — službeni izvori","Turistička zajednica Grada Ivanca"] },
+  "Lepoglava": { intro:"Lepoglava je povijesni grad podno Ivanščice, poznat po pavlinskoj tradiciji, čipkarstvu i bogatoj kulturnoj baštini.", geography:"Grad se nalazi u Varaždinskoj županiji, u dolini Bednje podno sjevernih obronaka Ivanščice.", history:"Lepoglava je snažno obilježena djelovanjem pavlina, koji su razvijali školstvo, umjetnost i duhovni život. U novijoj povijesti grad je poznat i po zatvorskom kompleksu te tradiciji lepoglavske čipke.", heritage:["Pavlinski samostan i crkva Bezgrešnog začeća","Lepoglavska čipka","Ivanščica","Pavlinska kulturna baština","Tradicijska arhitektura"], people:["Pavlini — važni za kulturni i obrazovni razvoj Lepoglave","Lokalni čipkari, obrtnici i kulturni djelatnici"], defence:"Stanovnici Lepoglave i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Pavlinska crkva i samostanska tradicija temelj su snažnog duhovnog identiteta Lepoglave.", sources:["Grad Lepoglava — službeni izvori","Turistička zajednica Grada Lepoglave"] },
+  "Ludbreg": { intro:"Ludbreg je povijesni grad na Dravi, poznat kao međunarodno euharistijsko svetište i kao važno središte ludbreškog kraja.", geography:"Grad se nalazi u Varaždinskoj županiji, uz rijeku Bednju i u blizini Drave, između Varaždina i Koprivnice.", history:"Ludbreg ima dugu povijest naseljenosti i srednjovjekovni razvoj, a kroz stoljeća se oblikovao kao trgovačko, upravno i vjersko središte.", heritage:["Svetište Predragocjene Krvi Isusove","Dvorac Batthyany","Povijesna jezgra","Trg Svetog Trojstva","Ludbreška tradicijska baština"], people:["Ludbreški obrtnici, trgovci i kulturni djelatnici","Svećenici i hodočasnici povezani sa Svetištem Predragocjene Krvi Isusove"], defence:"Stanovnici Ludbrega i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Ludbreg je jedno od najpoznatijih hrvatskih katoličkih hodočasničkih mjesta, povezano sa štovanjem Predragocjene Krvi Isusove.", sources:["Grad Ludbreg — službeni izvori","Svetište Predragocjene Krvi Isusove"] },
+  "Novi Marof": { intro:"Novi Marof je grad u Varaždinskoj županiji, smješten u dolini Bednje i poznat po dvorcu Erdödy, prirodi i zagorskoj baštini.", geography:"Grad se nalazi između Varaždina i Ivanščice, u prijelaznom prostoru Hrvatskog zagorja i Varaždinske županije.", history:"Razvoj Novog Marofa povezan je s vlastelinskim posjedima i obitelji Erdödy. Grad se u novije vrijeme razvio kao prometno, upravno i gospodarsko središte šireg kraja.", heritage:["Dvorac Erdödy","Dolina Bednje","Ivanščica i okolni krajolik","Sakralna baština","Zagorska tradicijska baština"], people:["Obitelj Erdödy — važna za povijest novomarofskog kraja","Lokalni obrtnici i kulturni djelatnici"], defence:"Stanovnici Novog Marofa i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Crkve i kapelice novomarofskog područja dio su duhovne baštine Varaždinskog kraja.", sources:["Grad Novi Marof — službeni izvori","Turistička zajednica Novog Marofa"] },
+  "Varaždinske Toplice": { intro:"Varaždinske Toplice su povijesni lječilišni grad poznat po termalnim izvorima i kontinuitetu kupališne tradicije od rimskog doba.", geography:"Grad se nalazi u Varaždinskoj županiji, na južnim obroncima Varaždinsko-topličkog gorja, u dolini Bednje.", history:"Termalni izvori bili su važni još u rimsko doba, kada se na prostoru današnjih Toplica razvilo naselje Aquae Iasae. Kasniji razvoj grada ostao je povezan s lječilištem i termalnom tradicijom.", heritage:["Arheološki lokalitet Aquae Iasae","Termalni izvori","Park i lječilišni kompleks","Povijesna jezgra","Sakralna baština"], people:["Rimski stanovnici Aquae Iasae i istraživači antičkog lokaliteta","Liječnici i stručnjaci povezani s razvojem lječilišta"], defence:"Stanovnici Varaždinskih Toplica i okolice sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Župna crkva i lokalne kapelice dio su duhovne i kulturne baštine grada.", sources:["Grad Varaždinske Toplice — službeni izvori","Arheološki institut / Aquae Iasae"] },
+  "Đurđevac": { intro:"Đurđevac je povijesni grad Podravine, poznat po Starom gradu, legendi o Picokima i posebnom krajoliku Đurđevačkih pijesaka.", geography:"Grad se nalazi u Koprivničko-križevačkoj županiji, između Drave i Bilogore, uz područje Đurđevačkih pijesaka.", history:"Đurđevac se razvijao uz utvrđeni Stari grad, važan za obranu Podravine. Legenda o Picokima postala je jedan od najprepoznatljivijih simbola grada i dio lokalne kulturne memorije.", heritage:["Stari grad Đurđevac","Đurđevački pijesci","Legenda o Picokima","Galerija Stari grad","Podravska tradicijska baština"], people:["Đurđevački branitelji i stanovnici Podravine","Umjetnici i kulturni djelatnici povezani s gradom"], defence:"Đurđevac i Podravina imali su važnu obrambenu ulogu kroz povijest, a stanovnici grada sudjelovali su u obrani Hrvatske tijekom Domovinskog rata.", faith:"Župna crkva sv. Jurja i lokalne kapelice dio su katoličke i tradicijske baštine Đurđevca.", sources:["Grad Đurđevac — službeni izvori","Muzej Grada Đurđevca"] }
 };
