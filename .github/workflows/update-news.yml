@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  GEMINI_MODEL: gemini-2.5-flash
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
@@ -15,16 +18,26 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Preuzmi i razvrstaj RSS vijesti
+      - name: Preuzmi, razvrstaj i urednički obradi RSS vijesti
         shell: python
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          import json, re, html, urllib.request
+          import json, re, html, urllib.request, urllib.error
           import xml.etree.ElementTree as ET
           from datetime import datetime, timezone
           from email.utils import parsedate_to_datetime
 
           with open('news-sources.json', encoding='utf-8') as f:
               cfg=json.load(f)
+
+          old_items=[]
+          try:
+              with open('news-feed.json', encoding='utf-8') as f:
+                  old_items=json.load(f).get('items',[])
+          except Exception:
+              pass
+          old_by_link={x.get('link','').rstrip('/'):x for x in old_items if x.get('link')}
 
           def clean(text):
               text=html.unescape(text or '')
@@ -62,22 +75,114 @@ jobs:
                       summary=clean(node.findtext('description'))
                       date=parse_date(node.findtext('pubDate') or node.findtext('{http://purl.org/dc/elements/1.1/}date'))
                       if not title or not link: continue
-                      items.append({'title':title,'summary':summary[:360],'link':link,'date':date,'source':src['name'],'sourceId':src['id'],'category':category(title,summary,src['category'])})
+                      items.append({
+                        'title':title,
+                        'summary':summary[:600],
+                        'link':link,
+                        'date':date,
+                        'source':src['name'],
+                        'sourceId':src['id'],
+                        'category':category(title,summary,src['category'])
+                      })
               except Exception as e:
                   print(f'RSS warning {src["id"]}: {e}')
 
-          # Deduplikacija po poveznici/naslovu i najnovije prvo.
           seen=set(); unique=[]
           for x in sorted(items,key=lambda z:z.get('date',''),reverse=True):
               key=(x['link'].rstrip('/'),x['title'].lower())
               if key in seen: continue
               seen.add(key); unique.append(x)
 
-          data={'updatedAt':datetime.now(timezone.utc).isoformat(),'items':unique[:200]}
+          # Postojeći AI sažeci se zadržavaju. Samo nove vijesti šaljemo AI uredniku.
+          new_items=[]
+          for x in unique:
+              previous=old_by_link.get(x['link'].rstrip('/'))
+              if previous and previous.get('aiSummary') and previous.get('aiTitle'):
+                  x['aiTitle']=previous['aiTitle']
+                  x['aiSummary']=previous['aiSummary']
+                  x['editorialStatus']='ai'
+              else:
+                  new_items.append(x)
+
+          def gemini_rewrite(item):
+              if not GEMINI_API_KEY:
+                  return None
+              prompt=f'''Ti si urednik hrvatskog portala PatriaSoul.
+
+Pretvori sljedeće kratke RSS podatke u ORIGINALNI novinarski sažetak na hrvatskom jeziku. Ne kopiraj rečenice iz izvora. Ne izmišljaj činjenice, brojke, izjave, datume ili zaključke. Koristi isključivo informacije iz dostavljenih podataka. Ako podatak nije naveden, nemoj ga dodavati.
+
+Napiši:
+1. kratak, jasan naslov (najviše 100 znakova)
+2. sažetak od 2 do 4 rečenice (otprilike 300-600 znakova)
+
+Ton: profesionalan, miran, informativan, bez senzacionalizma. Ne spominji umjetnu inteligenciju. Ne tvrdi da je PatriaSoul bio na događaju. Izvor mora ostati naveden odvojeno.
+
+IZVOR: {item['source']}
+DATUM: {item['date']}
+NASLOV IZVORA: {item['title']}
+RSS SAŽETAK: {item['summary']}
+
+Vrati ISKLJUČIVO JSON oblika:
+{{"title":"...","summary":"..."}}'''
+              payload={
+                'contents':[{'parts':[{'text':prompt}]}],
+                'generationConfig':{
+                  'temperature':0.2,
+                  'responseMimeType':'application/json',
+                  'maxOutputTokens':500
+                }
+              }
+              url='https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key='+GEMINI_API_KEY
+              req=urllib.request.Request(url,data=json.dumps(payload).encode('utf-8'),headers={'Content-Type':'application/json','User-Agent':'PatriaSoul-NewsBot/1.0'},method='POST')
+              try:
+                  with urllib.request.urlopen(req,timeout=45) as r:
+                      response=json.loads(r.read().decode('utf-8'))
+                  text=response['candidates'][0]['content']['parts'][0]['text'].strip()
+                  result=json.loads(text)
+                  title=clean(result.get('title',''))
+                  summary=clean(result.get('summary',''))
+                  if not title or not summary: return None
+                  return {'title':title[:140],'summary':summary[:800]}
+              except Exception as e:
+                  print(f'Gemini warning for {item["link"]}: {e}')
+                  return None
+
+          # Maksimalno 20 novih stavki po pokretanju kako bi besplatni limit bio zaštićen.
+          for item in new_items[:20]:
+              result=gemini_rewrite(item)
+              if result:
+                  item['aiTitle']=result['title']
+                  item['aiSummary']=result['summary']
+                  item['editorialStatus']='ai'
+              else:
+                  item['aiTitle']=item['title']
+                  item['aiSummary']=item['summary']
+                  item['editorialStatus']='rss-fallback'
+
+          # Ako ima više od 20 novih stavki, ostale ostaju kao RSS fallback za ovaj ciklus.
+          for item in new_items[20:]:
+              item['aiTitle']=item['title']
+              item['aiSummary']=item['summary']
+              item['editorialStatus']='rss-fallback'
+
+          # UI i postojeći vijesti.js koriste title/summary, pa prikazujemo AI verziju.
+          for item in unique:
+              item['originalTitle']=item['title']
+              item['originalSummary']=item['summary']
+              item['title']=item.get('aiTitle',item['title'])
+              item['summary']=item.get('aiSummary',item['summary'])
+
+          data={
+            'updatedAt':datetime.now(timezone.utc).isoformat(),
+            'editorialModel':'gemini-2.5-flash',
+            'items':unique[:200]
+          }
           with open('news-feed.json','w',encoding='utf-8') as f:
               json.dump(data,f,ensure_ascii=False,indent=2)
               f.write('\n')
-          print(f'PatriaSoul news: {len(unique[:200])} items')
+          ai_count=sum(1 for x in unique[:200] if x.get('editorialStatus')=='ai')
+          fallback_count=sum(1 for x in unique[:200] if x.get('editorialStatus')=='rss-fallback')
+          print(f'PatriaSoul news: {len(unique[:200])} items | AI: {ai_count} | fallback: {fallback_count}')
 
       - name: Spremi osvježeni feed
         run: |
@@ -85,5 +190,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add news-feed.json
           git diff --cached --quiet && exit 0
-          git commit -m "Automatsko osvježavanje PatriaSoul vijesti"
+          git commit -m "Automatsko osvježavanje i AI uređivanje PatriaSoul vijesti"
           git push
