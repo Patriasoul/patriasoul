@@ -1,0 +1,2 @@
+<?php $k=$args['key'];$v=$args['card'];$img=ps_img($k); ?>
+<a class="ps-card" href="<?php echo esc_url($v[4]); ?>"><div class="ps-card-media" style="background-image:url('<?php echo esc_url($img); ?>')"></div><div class="ps-card-body"><div class="ps-icon"><?php echo esc_html($v[2]); ?></div><h3><?php echo esc_html($v[1]); ?></h3><p><?php echo esc_html($v[3]); ?></p><span class="go">Istraži →</span></div></a>
