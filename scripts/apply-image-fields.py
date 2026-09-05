@@ -11,8 +11,8 @@ PLACEHOLDER = '/images/patria-image-placeholder.svg'
 
 # Mapiranje postojećih tematskih slika na stranice. Tekst stranice se ne mijenja.
 IMAGE_MAP = {
-    'domovina.html': '/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg',
-    'hrvatska.html': '/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg',
+    'domovina.html': '/images/flag-of-croatia-free-vector.jpg',
+    'hrvatska.html': '/images/flag-of-croatia-free-vector.jpg',
     'gradovi.html': '/images/flag-of-croatia-free-vector.jpg',
     'branitelji.html': '/images/branitelji-hero.svg',
     'brani-svoj-grad.html': '/images/branitelji-hero.svg',
