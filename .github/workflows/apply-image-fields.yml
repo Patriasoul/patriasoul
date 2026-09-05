@@ -1,0 +1,38 @@
+name: Apply PatriaSoul image fields
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'scripts/apply-image-fields.py'
+      - 'patriasoul-image-fields.css'
+      - 'patriasoul-image-fields.js'
+      - 'images/patria-image-placeholder.svg'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  images:
+    if: ${{ !contains(github.event.head_commit.message, 'chore(images): apply unified image fields') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply image fields
+        run: python3 scripts/apply-image-fields.py
+      - name: Commit image field updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No image field changes required."
+            exit 0
+          fi
+          git add -A
+          git commit -m "chore(images): apply unified image fields"
+          git push
