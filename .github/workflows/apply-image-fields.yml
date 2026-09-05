@@ -16,7 +16,6 @@ permissions:
 
 jobs:
   images:
-    if: ${{ !contains(github.event.head_commit.message, 'chore(images): apply unified image fields') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
