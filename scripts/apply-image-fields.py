@@ -13,15 +13,19 @@ PLACEHOLDER = '/images/patria-image-placeholder.svg'
 IMAGE_MAP = {
     'domovina.html': '/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg',
     'hrvatska.html': '/images/croatia-flag-ruffled-beautifully-waving-macro-close-up-shot.jpg',
+    'gradovi.html': '/images/flag-of-croatia-free-vector.jpg',
     'branitelji.html': '/images/branitelji-hero.svg',
     'brani-svoj-grad.html': '/images/branitelji-hero.svg',
     'brigade.html': '/images/brigade-hero.svg',
-    'postrojbe.html': '/images/brigade-hero.svg',
+    'postrojbe.html': '/images/postrojbe-hero.svg',
     'domovinski-rat.html': '/images/domovinski-rat-hero.svg',
-    'vukovar.html': '/images/domovinski-rat-hero.svg',
-    'povijest.html': '/images/PATRIA_SOUL_ORIGINAL_ISPRAVLJEN_GRB.png',
-    'hrvatska-povijest.html': '/images/PATRIA_SOUL_ORIGINAL_ISPRAVLJEN_GRB.png',
+    'operacije.html': '/images/operacije-hero.svg',
+    'vukovar.html': '/images/vukovar-hero.svg',
+    'spomenici.html': '/images/spomenici-hero.svg',
+    'povijest.html': '/images/povijest.jfif',
+    'hrvatska-povijest.html': '/images/povijest.jfif',
     'bastina.html': '/images/Bastina.jfif',
+    'priroda.html': '/images/priroda-parkovi.svg',
     'vjera.html': '/images/vjera-duhovna-bastina.svg',
 }
 
