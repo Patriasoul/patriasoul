@@ -1,18 +1,14 @@
 /* PatriaSoul — whole portal search */
 (function(){'use strict';
 const items=[
- ['Početna','/index.html','PatriaSoul Hrvatska povijest znanje identitet'],
- ['Domovina','/domovina.html','Hrvatska gradovi krajevi priroda dijaspora vijesti vrijeme'],
- ['Branitelji','/branitelji.html','branitelji Domovinski rat Vukovar postrojbe svjedočanstva spomenici'],
- ['Povijest','/povijest.html','hrvatska povijest antika kraljevi srednji vijek Habsburzi preporod 20 stoljeće'],
- ['Baština','/bastina.html','baština glagoljica tradicija nošnje gastronomija glazba dijalekti'],
- ['Vjera','/vjera.html','vjera evanđelje Biblija molitve krunica blagdani svetac'],
- ['Gradovi','/gradovi.html','127 gradova Hrvatska Zagreb Split Rijeka Osijek Zadar'],
- ['Kviz','/quiz.html','kviz znanje dnevni tjedni mjesečni XP bodovi'],
- ['Brani svoj grad','/brani-svoj-grad.html','igra gradovi obrana izazov rang lista'],
- ['Rang-lista','/rang-lista.html','leaderboard XP bodovi rezultati'],
- ['Video','/video.html','video mediji'],['Galerija','/galerija.html','fotografije slike galerija'],['Vijesti','/vijesti.html','vijesti aktualno']
+ ['Početna','/index.html','PatriaSoul Hrvatska povijest znanje identitet'],['Domovina','/domovina.html','Hrvatska gradovi krajevi priroda dijaspora vijesti vrijeme'],['Branitelji','/branitelji.html','branitelji Domovinski rat Vukovar postrojbe svjedočanstva spomenici'],['Povijest','/povijest.html','hrvatska povijest antika kraljevi srednji vijek Habsburzi preporod 20 stoljeće'],['Baština','/bastina.html','baština glagoljica tradicija nošnje gastronomija glazba dijalekti'],['Vjera','/vjera.html','vjera evanđelje Biblija molitve krunica blagdani svetac'],['Gradovi','/gradovi.html','127 gradova Hrvatska Zagreb Split Rijeka Osijek Zadar'],['Kviz','/quiz.html','kviz znanje dnevni tjedni mjesečni XP bodovi'],['Brani svoj grad','/brani-svoj-grad.html','igra gradovi obrana izazov rang lista'],['Rang-lista','/rang-lista.html','leaderboard XP bodovi rezultati'],['Video','/video.html','video mediji'],['Galerija','/galerija.html','fotografije slike galerija'],['Vijesti','/vijesti.html','vijesti aktualno']
 ];
-function init(){const forms=document.querySelectorAll('[data-ps-search]');forms.forEach(form=>{const input=form.querySelector('input');if(!input)return;let box=form.querySelector('.ps-search-results');if(!box){box=document.createElement('div');box.className='ps-search-results';form.appendChild(box);}input.addEventListener('input',()=>{const q=input.value.trim().toLocaleLowerCase('hr');box.innerHTML='';if(q.length<2)return;items.filter(x=>(x[0]+' '+x[2]).toLocaleLowerCase('hr').includes(q)).slice(0,8).forEach(x=>{const a=document.createElement('a');a.href=x[1];a.innerHTML='<strong>'+x[0]+'</strong><small>'+x[2]+'</small>';box.appendChild(a);});});});}
+function results(q,box){box.innerHTML='';if(q.length<2)return;items.filter(x=>(x[0]+' '+x[2]).toLocaleLowerCase('hr').includes(q)).slice(0,8).forEach(x=>{const a=document.createElement('a');a.href=x[1];a.style.cssText='display:block;padding:10px 12px;color:#eef2f5;text-decoration:none;border-radius:9px';a.innerHTML='<strong>'+x[0]+'</strong><small style="display:block;color:#89939e">'+x[2]+'</small>';box.appendChild(a);});}
+function init(){
+ let wrap=document.querySelector('[data-ps-search]');
+ if(!wrap){wrap=document.createElement('div');wrap.id='ps-global-search';wrap.setAttribute('data-ps-search','');wrap.style.cssText='position:fixed;right:18px;bottom:18px;z-index:6000';const btn=document.createElement('button');btn.type='button';btn.textContent='🔎';btn.title='Pretraži PatriaSoul';btn.setAttribute('aria-label','Pretraži PatriaSoul');btn.style.cssText='width:52px;height:52px;border:1px solid rgba(224,189,85,.35);border-radius:50%;background:#10161d;color:#f1d57b;font-size:21px;box-shadow:0 10px 30px #0008;cursor:pointer';const panel=document.createElement('div');panel.style.cssText='display:none;position:absolute;right:0;bottom:62px;width:min(380px,calc(100vw - 36px));padding:12px;background:#0b1016;border:1px solid rgba(224,189,85,.3);border-radius:15px;box-shadow:0 20px 50px #000b';const input=document.createElement('input');input.type='search';input.placeholder='Pretraži cijeli PatriaSoul…';input.style.cssText='width:100%;box-sizing:border-box;padding:12px;border-radius:9px;border:1px solid #39434d;background:#10161d;color:#fff';const box=document.createElement('div');box.style.marginTop='8px';panel.append(input,box);wrap.append(btn,panel);document.body.appendChild(wrap);btn.onclick=()=>{panel.style.display=panel.style.display==='none'?'block':'none';if(panel.style.display==='block')input.focus()};input.addEventListener('input',()=>results(input.value.trim().toLocaleLowerCase('hr'),box));
+ }
+ const input=wrap.querySelector('input');const box=wrap.querySelector('.ps-search-results');if(input&&box)input.addEventListener('input',()=>results(input.value.trim().toLocaleLowerCase('hr'),box));
+}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
 })();
