@@ -23,6 +23,13 @@ create table if not exists public.editorial_audit (
 );
 
 alter table public.editorial_audit enable row level security;
-create policy if not exists editorial_audit_admin_read on public.editorial_audit for select using (public.is_admin());
-create policy if not exists editorial_audit_admin_insert on public.editorial_audit for insert with check (public.is_admin() and auth.uid() = user_id);
+
+drop policy if exists editorial_audit_admin_read on public.editorial_audit;
+create policy editorial_audit_admin_read on public.editorial_audit
+  for select using (public.is_admin());
+
+drop policy if exists editorial_audit_admin_insert on public.editorial_audit;
+create policy editorial_audit_admin_insert on public.editorial_audit
+  for insert with check (public.is_admin() and auth.uid() = user_id);
+
 create index if not exists editorial_audit_created on public.editorial_audit(created_at desc);
