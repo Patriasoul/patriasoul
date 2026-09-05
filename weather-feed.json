@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T21:48:07.704098+00:00",
+  "updatedAt": "2026-09-05T22:13:54.376538+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -155,13 +155,9 @@
   },
   "alerts": [
     "Žuto upozorenje za vjetar",
-    "Prolazno će zapuhati jak sjeverni i sjeveroistočni vjetar. Najjači udari vjetra > 55 km/h",
+    "Mjestimice olujni udari bure, osobito podno Velebita. Najjači udari vjetra > 65 km/h",
     "Yellow wind warning",
-    "Strong N and NW wind briefly. Maximum gust speed > 55 km/h",
-    "Žuto upozorenje za vjetar",
-    "Prolazno će zapuhati jak sjeverni i sjeveroistočni vjetar. Najjači udari vjetra > 55 km/h",
-    "Yellow wind warning",
-    "Strong N and NW wind briefly. Maximum gust speed > 55 km/h",
+    "Locally gale force gusts of bura (NE wind), especially at the foothill of Velebit mountain. Maximum gust speed > 65 km/h",
     "Žuto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 33 °C",
     "Yellow high temperature warning",
@@ -173,6 +169,20 @@
     "Žuto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 26 °C",
     "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 26 °C"
+    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 26 °C",
+    "Žuto upozorenje za vjetar",
+    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Yellow wind warning",
+    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Yellow wind warning",
+    "Fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Prijepodne mjestimice vrlo jaka, potkraj dana pojačana bura. Najjači udari vjetra 35-55 čvorova  (65-100 km/h)",
+    "Yellow wind warning",
+    "In the morning locally near gale, in the evening fresh NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Moguća pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)"
   ]
 }\n
