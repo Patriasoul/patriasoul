@@ -1,0 +1,27 @@
+name: PatriaSoul — HTML link check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.html'
+      - 'scripts/check-html-links.py'
+      - '.github/workflows/check-links.yml'
+  pull_request:
+    paths:
+      - '**.html'
+      - 'scripts/check-html-links.py'
+      - '.github/workflows/check-links.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Provjeri lokalne poveznice
+        run: python3 scripts/check-html-links.py
