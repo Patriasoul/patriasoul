@@ -4,6 +4,9 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_CSS = '<link rel="stylesheet" href="/patriasoul-image-fields.css">'
 IMAGE_JS = '<script src="/patriasoul-image-fields.js" defer></script>'
+ANALYTICS_JS = '<script src="/patriasoul-analytics.js" defer></script>'
+SEARCH_JS = '<script src="/portal-search.js" defer></script>'
+PWA_JS = '<script src="/patriasoul-pwa.js" defer></script>'
 PLACEHOLDER = '/images/patria-image-placeholder.svg'
 
 changed = []
@@ -19,12 +22,18 @@ for path in ROOT.rglob('*.html'):
         if pos >= 0:
             text = text[:pos] + IMAGE_CSS + '\n' + text[pos:]
 
+    additions = [ANALYTICS_JS, SEARCH_JS, PWA_JS]
+    for tag in additions:
+        if tag.split('src="')[1].split('"')[0] not in text:
+            pos = text.lower().find('</body>')
+            if pos >= 0:
+                text = text[:pos] + tag + '\n' + text[pos:]
+
     if '/patriasoul-image-fields.js' not in text:
         pos = text.lower().find('</body>')
         if pos >= 0:
             text = text[:pos] + IMAGE_JS + '\n' + text[pos:]
 
-    # Pages without a dedicated image field receive one standardized replaceable slot.
     if '<main' in text.lower() and 'ps-image-field' not in text:
         marker = re.search(r'</section>', text, flags=re.IGNORECASE)
         if marker:
@@ -41,6 +50,6 @@ for path in ROOT.rglob('*.html'):
         path.write_text(text, encoding='utf-8')
         changed.append(str(path.relative_to(ROOT)))
 
-print(f'Image field pass completed: {len(changed)} HTML files updated.')
+print(f'PatriaSoul shared pass completed: {len(changed)} HTML files updated.')
 for item in changed:
     print(item)
