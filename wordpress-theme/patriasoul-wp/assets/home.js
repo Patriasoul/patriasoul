@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',function(){const b=document.querySelector('.ps-menu'),n=document.querySelector('.ps-nav');if(b&&n)b.addEventListener('click',function(){n.classList.toggle('open');});});
