@@ -34,6 +34,7 @@
   </style>
 <link rel="stylesheet" href="/portal-editorial-pages.css">
 <script src="/navigation-ux.js?v=1" defer></script>
+<link rel="stylesheet" href="/patriasoul-image-fields.css">
 </head>
 <body>
   <header class="ps-header"><div class="container ps-nav"><a class="ps-brand" href="index.html" aria-label="PatriaSoul početna"><span class="ps-brand-mark">PS</span>PATRIA<span>SOUL</span></a><nav class="ps-mainnav" aria-label="Glavna navigacija"><a href="index.html">Početna</a><a href="vijesti.html">Vijesti</a><a href="gradovi.html">Gradovi</a><a href="brani-svoj-grad.html">Igra</a><a class="ps-nav-cta" href="quiz.html">🧠 Kviz</a></nav></div></header>
@@ -47,6 +48,7 @@
       <div class="wx-control"><button id="wx-locate" class="wx-locate" type="button">📍 Pronađi moju lokaciju</button><label class="sr-only" for="wx-city">Odaberi grad</label><select id="wx-city" class="wx-select" aria-label="Odaberi grad"><option value="">Ili odaberi grad…</option><option>Zagreb</option><option>Split</option><option>Rijeka</option><option>Osijek</option><option>Zadar</option><option>Šibenik</option><option>Sinj</option><option>Trilj</option><option>Omiš</option><option>Knin</option><option>Dubrovnik</option><option>Pula</option><option>Karlovac</option><option>Varaždin</option><option>Vukovar</option></select></div>
       <div data-ps-weather-strip aria-label="Vremenska traka u tvojoj blizini"></div>
     </div></section>
+<figure class="ps-image-field ps-auto-image-field"><span class="ps-image-label">GLAVNA SLIKA · Vrijeme u Hrvatskoj | PatriaSoul</span><img data-ps-image data-ps-image-src="/images/patria-image-placeholder.svg" src="/images/patria-image-placeholder.svg" alt="Glavna slika stranice — zamijeni fotografijom ili ilustracijom" width="1600" height="900"><figcaption>Standardno slikovno polje PatriaSoula. Za zamjenu slike promijeni samo <code>data-ps-image-src</code>; struktura stranice ostaje ista.</figcaption></figure>
 
     <section class="ps-section" aria-labelledby="wx-nearby-title"><div class="container wx-wrap">
       <div class="wx-section-head"><div><h2 id="wx-nearby-title">Vrijeme u najbližim gradovima</h2><p>Četiri lokacije najbliže tvojoj poziciji ili odabranom gradu.</p></div></div>
@@ -71,5 +73,6 @@
 
   <noscript><div class="container"><p>Za prikaz aktualnog vremena potrebno je uključiti JavaScript.</p></div></noscript>
   <script src="vrijeme-traka.js" defer></script><script src="vrijeme.js" defer></script>
+<script src="/patriasoul-image-fields.js" defer></script>
 </body>
 </html>
