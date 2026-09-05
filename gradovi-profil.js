@@ -31,7 +31,7 @@ window.PATRIA_CITY_EDITORIAL = {
     geography: "Grad leži uz Riječki zaljev na ušću Rječine, između mora i strmih padina zaleđa, s Trsatom kao važnom povijesnom točkom iznad grada.",
     history: "Područje Rijeke naseljeno je od pretpovijesti, a rimska Tarsatica razvila se na prostoru današnjeg Starog grada. Srednjovjekovni izvori razlikuju Trsat i Rijeku, a grad je kroz stoljeća bio povezan s Frankopanima i Habsburgovcima. Nakon burnih političkih promjena početkom 20. stoljeća, Rijeka je 1947. mirovnim ugovorom u Parizu ponovno ušla u sastav Hrvatske u okviru tadašnje Jugoslavije, a 1948. Rijeka i Sušak sjedinjeni su u jedinstveni grad.",
     heritage: ["Trsatska gradina", "Korzo i povijesna jezgra", "Katedrala sv. Vida", "Guvernerova palača", "Luka Rijeka i pomorska baština"],
-    people: ["Ivan Zajc", "Janko Polić Kamov", "Milan Smokvina", "Dino Rađa"],
+    people: ["Ivan Zajc", "Janko Polić Kamov", "Milan Smokvina", "Rikard Benčić"],
     defence: "Tijekom Domovinskog rata Rijeka je bila važno zaleđe i logističko središte. Grad je pomagao frontu i prihvaćao velik broj prognanika, dok su brojni Riječani i Primorci sudjelovali kao dragovoljci i pripadnici hrvatskih postrojbi.",
     faith: "Rijeka je sjedište Riječke nadbiskupije. Katedrala sv. Vida i Trsat s bazilikom Majke Božje Trsatske čine važan dio duhovnog identiteta grada.",
     sources: ["Grad Rijeka — Povijest Rijeke"]
@@ -61,30 +61,30 @@ window.PATRIA_CITY_EDITORIAL = {
     geography: "Smještena je na južnom vrhu istarskog poluotoka, uz dobro zaštićen zaljev koji je stoljećima pogodovao razvoju luke.",
     history: "Pula je bila važno rimsko središte, a njezin najpoznatiji spomenik je amfiteatar. Kroz noviju povijest grad je prolazio kroz različite državne uprave, a u 20. stoljeću snažno se razvio kao vojno-pomorsko i industrijsko središte.",
     heritage: ["Pulska Arena", "Augustov hram", "Sergijevci luk", "Povijesna jezgra", "Kaštel i fortifikacije"],
-    people: ["Mate Balota", "Antonio Smareglia", "Sergijevci i rimska baština kao dio identiteta grada"],
+    people: ["Mate Balota", "Antonio Smareglia", "Alida Valli", "Sergio Endrigo"],
     defence: "Istra nije bila klasično bojište poput dijelova kontinentalne Hrvatske, ali su građani Pule sudjelovali u obrani Hrvatske, a grad je imao važnu prometnu i logističku ulogu.",
     faith: "Pulska katedrala Uznesenja Blažene Djevice Marije i brojni sakralni objekti svjedoče o višestoljetnom kršćanskom kontinuitetu grada.",
-    sources: ["Grad Pula — službeni gradski izvori", "UNESCO — hrvatska baština"]
+    sources: ["Grad Pula — službeni gradski izvori", "Turistička zajednica Pula — značajne osobe rođene u Puli"]
   },
   "Slavonski Brod": {
     intro: "Slavonski Brod je važan grad Posavine, smješten uz Savu nasuprot Bosanskom Brodu i povijesno povezan s prometom između srednje Europe i Balkana.",
     geography: "Grad se prostire uz lijevu obalu Save, na važnom ravničarskom prometnom koridoru istočne Hrvatske.",
     history: "Položaj uz Savu odredio je razvoj Broda kao prometnog i obrambenog mjesta. Najpoznatija baštinska cjelina je velika barokna tvrđava Brod, građena u 18. stoljeću u sklopu habsburškog obrambenog sustava.",
     heritage: ["Tvrđava Brod", "Franjevački samostan", "Korzo i povijesna jezgra", "Sava i savski krajolik"],
-    people: ["Ivana Brlić-Mažuranić", "Dragutin Tadijanović", "lokalne kulturne i industrijske obitelji Broda"],
+    people: ["Dragutin Tadijanović", "Branko Ružić", "Mia Čorak Slavenska", "Ivana Brlić-Mažuranić — snažno povezana s Brodom iako rođena u Ogulinu"],
     defence: "Slavonski Brod bio je tijekom Domovinskog rata važno obrambeno i logističko središte. Grad je pretrpio napade, a položaj uz Savu imao je strateško značenje.",
     faith: "Franjevački samostan i crkva Presvetog Trojstva važan su dio duhovne i kulturne baštine grada.",
-    sources: ["Grad Slavonski Brod — službeni gradski izvori"]
+    sources: ["Turistička zajednica Brodsko-posavske županije — kulturni turizam", "Grad Slavonski Brod — službeni gradski izvori"]
   },
   "Karlovac": {
     intro: "Karlovac je grad na četiri rijeke, planski utemeljen kao renesansna tvrđava i važna prometna poveznica središnje Hrvatske.",
     geography: "Grad leži na području susreta Korane, Kupe, Mrežnice i Dobre, između Zagreba i jadranskog zaleđa.",
     history: "Karlovac je osnovan 1579. kao tvrđava na strateškom prostoru prema Osmanskom Carstvu. Zvjezdoliki oblik stare tvrđave jedan je od prepoznatljivih primjera renesansnog fortifikacijskog urbanizma u Hrvatskoj. Grad se kasnije razvio u prometno, obrtničko i industrijsko središte.",
     heritage: ["Zvijezda", "Stari grad Dubovac", "Korana i gradski parkovi", "Gradski muzej", "Povijesne fortifikacije"],
-    people: ["Ivan Mažuranić", "Stjepan Radić", "Miroslav Krleža — povezanost kroz kulturni kontekst Hrvatske"],
+    people: ["Ivan Mažuranić", "Braća Mirko i Stevo Seljan", "Dragojla Jarnević", "Vjekoslav Karas"],
     defence: "Karlovac je u Domovinskom ratu bio jedno od ključnih bojišta i obrambenih središta. Grad i okolna naselja bili su izloženi granatiranju i borbama, a obrana Karlovca imala je važnu ulogu u zaštiti središnje Hrvatske.",
     faith: "Crkve povijesne Zvijezde i okolice čine dio gradske sakralne baštine, dok je Dubovac važna povijesna točka karlovačkog prostora.",
-    sources: ["Grad Karlovac — službeni gradski izvori"]
+    sources: ["Gradski muzej Karlovac", "Karlovačka županija — poznate ličnosti"]
   },
   "Varaždin": {
     intro: "Varaždin je povijesni grad sjeverne Hrvatske, poznat po baroknoj urbanoj cjelini, kulturi i dugoj tradiciji školstva i glazbe.",
