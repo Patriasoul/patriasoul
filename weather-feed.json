@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T11:48:25.072245+00:00",
+  "updatedAt": "2026-09-06T12:18:41.924978+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -80,7 +80,19 @@
       "wind": null,
       "humidity": null
     },
+    "Osijek-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Pazin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pula": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -188,7 +200,7 @@
       "wind": null,
       "humidity": null
     },
-    "Pula": {
+    "Osijek": {
       "temp": null,
       "condition": null,
       "wind": null,
