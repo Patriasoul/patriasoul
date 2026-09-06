@@ -31,22 +31,29 @@
   panel.querySelector('.ps-ai-close').addEventListener('click',()=>panel.classList.remove('is-open'));
   add('Pozdrav! 👋 Ja sam PatriaSoul AI. Mogu odgovarati na pitanja, pretražiti PatriaSoul bazu i izraditi nacrt članka, sažetka, objave ili SEO sadržaja. Tijekom aktivnog kviza ne otkrivam odgovore. 🇭🇷','bot');
 
-  async function ensurePuterSignedIn(){
-    if(!window.puter || !window.puter.ai || typeof window.puter.ai.chat !== 'function'){
-      throw new Error('Puter.js nije učitan.');
+  async function ensurePuterReady(){
+    const provider=window.PatriaSoulAI;
+    if(!provider || typeof provider.ensurePuter!=='function'){
+      throw new Error('PatriaSoul AI provider nije učitan.');
     }
-    if(window.puter.auth && typeof window.puter.auth.isSignedIn === 'function' && !window.puter.auth.isSignedIn()){
-      if(typeof window.puter.auth.signIn !== 'function') throw new Error('Puter prijava nije dostupna.');
+    await provider.ensurePuter();
+  }
+
+  async function ensurePuterSignedIn(){
+    await ensurePuterReady();
+    const puter=window.puter;
+    if(puter.auth && typeof puter.auth.isSignedIn === 'function' && !puter.auth.isSignedIn()){
+      if(typeof puter.auth.signIn !== 'function') throw new Error('Puter prijava nije dostupna.');
       add('Za korištenje PatriaSoul AI-ja potrebno je prijaviti se na Puter. Otvaram prijavu…','bot');
-      await window.puter.auth.signIn({attempt_temp_user_creation:true});
+      await puter.auth.signIn({attempt_temp_user_creation:true});
     }
   }
 
   async function askQuestion(q){
     const wait=add('Razmišljam i provjeravam PatriaSoul bazu…','bot');
     try {
-      // Sign-in is intentionally triggered directly by the user's Send click,
-      // so the browser allows Puter's authentication popup.
+      // Puter authentication remains directly inside the form submit event,
+      // because Puter signIn opens a popup and browsers require a user action.
       await ensurePuterSignedIn();
       const agent=getAgent();
       if (!agent) throw new Error('PatriaSoul Agent nije učitan.');
