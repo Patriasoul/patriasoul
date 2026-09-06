@@ -28,7 +28,7 @@ async function callBazaarLink(apiKey: string, model: string, messages: Array<{ r
       model,
       messages,
       temperature: 0.3,
-      max_tokens: 2600,
+      max_tokens: 8192,
       enable_thinking: false
     })
   });
