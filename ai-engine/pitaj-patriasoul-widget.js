@@ -18,76 +18,70 @@
 
   const fab = document.createElement('button');
   fab.className = 'ps-ai-fab'; fab.type = 'button'; fab.textContent = '🧠 Pitaj PatriaSoul';
-  fab.setAttribute('aria-label','Otvori Pitaj PatriaSoul');
-  const panel = document.createElement('section'); panel.className='ps-ai-panel'; panel.setAttribute('aria-label','Pitaj PatriaSoul');
-  panel.innerHTML = `<div class="ps-ai-head"><div><div class="ps-ai-title">🧠 Pitaj PatriaSoul</div><span class="ps-ai-sub">AI vodič · istraživanje · stvaranje sadržaja</span></div><button class="ps-ai-close" type="button" aria-label="Zatvori">×</button></div><div class="ps-ai-actions"><button class="ps-ai-action" data-action="article">📰 Članak</button><button class="ps-ai-action" data-action="summary">📝 Sažetak</button><button class="ps-ai-action" data-action="social">📱 Objava</button><button class="ps-ai-action" data-action="seo">🔎 SEO</button></div><div class="ps-ai-log"></div><div class="ps-ai-brand">Powered by Puter.js · PatriaSoul AI · sadržaj je nacrt</div><form class="ps-ai-form"><input class="ps-ai-input" autocomplete="off" placeholder="Pitaj nešto…" aria-label="Pitanje"><button class="ps-ai-send" type="submit">➤</button></form>`;
-  document.body.append(fab,panel);
-  const log=panel.querySelector('.ps-ai-log'), input=panel.querySelector('.ps-ai-input');
-  function add(text, cls){const el=document.createElement('div');el.className='ps-ai-msg '+cls;el.textContent=text;log.appendChild(el);log.scrollTop=log.scrollHeight;return el;}
-  function getAgent(){return window.PatriaSoulAgent || null;}
-  function getContent(){return window.PatriaSoulContent || null;}
+  fab.setAttribute('aria-label', 'Otvori Pitaj PatriaSoul');
+  const panel = document.createElement('section'); panel.className = 'ps-ai-panel'; panel.setAttribute('aria-label', 'Pitaj PatriaSoul');
+  panel.innerHTML = `<div class="ps-ai-head"><div><div class="ps-ai-title">🧠 Pitaj PatriaSoul</div><span class="ps-ai-sub">AI vodič · znanje PatriaSoula · Hrvatska</span></div><button class="ps-ai-close" type="button" aria-label="Zatvori">×</button></div><div class="ps-ai-actions"><button class="ps-ai-action" data-action="article">📰 Članak</button><button class="ps-ai-action" data-action="summary">📝 Sažetak</button><button class="ps-ai-action" data-action="social">📱 Objava</button><button class="ps-ai-action" data-action="seo">🔎 SEO</button></div><div class="ps-ai-log"></div><div class="ps-ai-brand">PatriaSoul AI · odgovori se temelje na PatriaSoul bazi</div><form class="ps-ai-form"><input class="ps-ai-input" autocomplete="off" placeholder="Pitaj nešto o Hrvatskoj…" aria-label="Pitanje"><button class="ps-ai-send" type="submit">➤</button></form>`;
+  document.body.append(fab, panel);
 
-  fab.addEventListener('click',()=>{panel.classList.toggle('is-open'); if(panel.classList.contains('is-open')) input.focus();});
-  panel.querySelector('.ps-ai-close').addEventListener('click',()=>panel.classList.remove('is-open'));
-  add('Pozdrav! 👋 Ja sam PatriaSoul AI. Mogu odgovarati na pitanja, pretražiti PatriaSoul bazu i izraditi nacrt članka, sažetka, objave ili SEO sadržaja. Tijekom aktivnog kviza ne otkrivam odgovore. 🇭🇷','bot');
+  const log = panel.querySelector('.ps-ai-log');
+  const input = panel.querySelector('.ps-ai-input');
 
-  async function ensurePuterReady(){
-    const provider=window.PatriaSoulAI;
-    if(!provider || typeof provider.ensurePuter!=='function'){
-      throw new Error('PatriaSoul AI provider nije učitan.');
-    }
-    await provider.ensurePuter();
+  function add(text, cls) {
+    const el = document.createElement('div');
+    el.className = 'ps-ai-msg ' + cls;
+    el.textContent = text;
+    log.appendChild(el);
+    log.scrollTop = log.scrollHeight;
+    return el;
   }
 
-  async function ensurePuterSignedIn(){
-    await ensurePuterReady();
-    const puter=window.puter;
-    if(puter.auth && typeof puter.auth.isSignedIn === 'function' && !puter.auth.isSignedIn()){
-      if(typeof puter.auth.signIn !== 'function') throw new Error('Puter prijava nije dostupna.');
-      add('Za korištenje PatriaSoul AI-ja potrebno je prijaviti se na Puter. Otvaram prijavu…','bot');
-      await puter.auth.signIn({attempt_temp_user_creation:true});
-    }
-  }
+  function getAgent() { return window.PatriaSoulAgent || null; }
+  function getContent() { return window.PatriaSoulContent || null; }
 
-  async function askQuestion(q){
-    const wait=add('Razmišljam i provjeravam PatriaSoul bazu…','bot');
+  fab.addEventListener('click', () => {
+    panel.classList.toggle('is-open');
+    if (panel.classList.contains('is-open')) input.focus();
+  });
+  panel.querySelector('.ps-ai-close').addEventListener('click', () => panel.classList.remove('is-open'));
+  add('Pozdrav! 👋 Ja sam PatriaSoul AI. Mogu odgovarati na pitanja i raditi s podacima iz PatriaSoul baze. Tijekom aktivnog kviza ne otkrivam odgovore. 🇭🇷', 'bot');
+
+  async function askQuestion(q) {
+    const wait = add('Provjeravam PatriaSoul bazu…', 'bot');
     try {
-      // Puter authentication remains directly inside the form submit event,
-      // because Puter signIn opens a popup and browsers require a user action.
-      await ensurePuterSignedIn();
-      const agent=getAgent();
-      if (!agent) throw new Error('PatriaSoul Agent nije učitan.');
-      const r=await agent.ask(q,{quizActive:document.body.dataset.quizActive==='true'});
-      wait.textContent=r?.text||'Trenutno nemam dovoljno potvrđenih podataka za odgovor.';
-    } catch(err){
-      console.error('[PatriaSoul AI]',err);
-      const code=err && (err.error || err.code);
-      if(code==='popup_blocked') wait.textContent='Prijava je blokirana. Dopusti skočni prozor za PatriaSoul i pokušaj ponovno.';
-      else if(code==='auth_window_closed') wait.textContent='Prijava je otkazana. Pokušaj ponovno kada budeš spreman.';
-      else if(code==='Unauthorized') wait.textContent='Puter prijava je potrebna za korištenje ovog AI-ja.';
-      else wait.textContent='PatriaSoul AI trenutno nije dostupan. Detalj: '+(err?.message || 'nepoznata greška');
+      const agent = getAgent();
+      if (!agent) throw new Error('PatriaSoul AI engine nije učitan.');
+      const r = await agent.ask(q, { quizActive: document.body.dataset.quizActive === 'true' });
+      wait.textContent = r?.text || 'Trenutno nemam dovoljno potvrđenih podataka za odgovor.';
+      if (r?.fallback) wait.textContent += '\n\nNapomena: AI servis trenutno nije spojen, pa prikazujem relevantne potvrđene zapise iz PatriaSoul baze.';
+    } catch (err) {
+      console.error('[PatriaSoul AI]', err);
+      wait.textContent = 'PatriaSoul AI trenutno nije dostupan. ' + (err?.message || 'Pokušaj ponovno.');
     }
   }
 
-  async function generate(type){
-    const topic=window.prompt('Za koju temu želiš napraviti sadržaj?');
-    if(!topic || !topic.trim()) return;
-    add(`${type === 'article' ? '📰 Članak' : type === 'summary' ? '📝 Sažetak' : type === 'social' ? '📱 Objava' : '🔎 SEO'}: ${topic}`,'user');
-    const wait=add('Izrađujem nacrt iz potvrđenih podataka…','bot');
+  async function generate(type) {
+    const topic = window.prompt('Za koju temu želiš napraviti sadržaj?');
+    if (!topic || !topic.trim()) return;
+    add(`${type === 'article' ? '📰 Članak' : type === 'summary' ? '📝 Sažetak' : type === 'social' ? '📱 Objava' : '🔎 SEO'}: ${topic}`, 'user');
+    const wait = add('Izrađujem nacrt iz potvrđenih podataka…', 'bot');
     try {
-      await ensurePuterSignedIn();
-      const content=getContent();
-      if(!content) throw new Error('PatriaSoul Content Generator nije učitan.');
-      const result=await content.generate(type,topic);
-      wait.textContent=result?.text||'Nije moguće izraditi sadržaj.';
-    } catch(err){
-      console.error('[PatriaSoul Content]',err);
-      wait.textContent='Nije moguće izraditi sadržaj. '+(err?.message || 'Provjeri Puter prijavu.');
+      const content = getContent();
+      if (!content) throw new Error('PatriaSoul Content Generator nije učitan.');
+      const result = await content.generate(type, topic);
+      wait.textContent = result?.text || 'Nije moguće izraditi sadržaj.';
+    } catch (err) {
+      console.error('[PatriaSoul Content]', err);
+      wait.textContent = 'Nije moguće izraditi sadržaj. ' + (err?.message || 'Pokušaj ponovno.');
     }
   }
 
-  panel.querySelectorAll('.ps-ai-action').forEach(btn=>btn.addEventListener('click',()=>generate(btn.dataset.action)));
-  panel.querySelector('form').addEventListener('submit',async e=>{
-    e.preventDefault(); const q=input.value.trim(); if(!q)return; input.value=''; add(q,'user'); await askQuestion(q);
+  panel.querySelectorAll('.ps-ai-action').forEach(btn => btn.addEventListener('click', () => generate(btn.dataset.action)));
+  panel.querySelector('form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+    input.value = '';
+    add(q, 'user');
+    await askQuestion(q);
   });
 })();
