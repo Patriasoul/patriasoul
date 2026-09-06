@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const AI_VERSION = '45';
+  const AI_VERSION = '46';
   const requiredScripts = [
     '/ai/ollama-config.js',
     '/ai/ollama-client.js',
@@ -38,9 +38,7 @@
       ['PatriaSoulAI', window.PatriaSoulAI]
     ];
     const missing = checks.filter(([name, value]) => !value).map(([name]) => name);
-    if (missing.length) {
-      throw new Error('Nisu učitane AI komponente: ' + missing.join(', '));
-    }
+    if (missing.length) throw new Error('Nisu učitane AI komponente: ' + missing.join(', '));
   }
 
   async function bootstrap() {
@@ -48,18 +46,14 @@
     for (const src of requiredScripts) await load(src);
     verifyDependencies();
     window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'widget', version: AI_VERSION };
-    await load('/ai-engine/pitaj-patriasoul-widget.js');
+    await load('/ai-engine/pitaj-patriasoul-widget-v2.js');
     window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: true, stage: 'ready', version: AI_VERSION, error: null });
   }
 
-  const ready = bootstrap().catch(error => {
+  window.PatriaSoulAIReady = bootstrap().catch(error => {
     const message = error?.message || String(error);
     window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: false, stage: 'error', version: AI_VERSION, error: message });
     console.warn('[PatriaSoul AI] Loader:', message);
     throw error;
   });
-
-  // Expose the real bootstrap promise so the widget can wait for the engine
-  // instead of assuming that every dependency has already finished loading.
-  window.PatriaSoulAIReady = ready;
 })();
