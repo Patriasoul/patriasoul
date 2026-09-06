@@ -1,39 +1,35 @@
-// PatriaSoul - "Pitaj PatriaSoul" prototype
+// PatriaSoul — compatibility bridge for the legacy "Pitaj PatriaSoul" API.
+// The old prototype used the retired Puter provider. Keep this filename
+// compatible, but delegate to the current PatriaSoul Agent instead.
 (function () {
   'use strict';
-
-  async function loadKnowledge() {
-    const response = await fetch('/ai-engine/knowledge/index.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error('PatriaSoul Knowledge Base nije dostupna.');
-    return response.json();
-  }
 
   async function ask(question, options = {}) {
     const cleanQuestion = String(question || '').trim();
     if (!cleanQuestion) throw new Error('Upiši pitanje.');
 
-    const items = await loadKnowledge();
-    const retriever = window.PatriaSoulKnowledgeRetriever;
-    if (!retriever) throw new Error('PatriaSoul Knowledge Retriever nije učitan.');
+    const agent = window.PatriaSoulAgent;
+    if (!agent || typeof agent.ask !== 'function') {
+      throw new Error('PatriaSoul AI Agent nije učitan.');
+    }
 
-    const results = retriever.retrieve(items, cleanQuestion, {
-      trustedOnly: options.trustedOnly !== false,
-      limit: options.limit || 8,
-      filters: options.filters || {}
-    });
-    const context = retriever.buildContext(results);
-
-    if (!window.PatriaSoulPuterAI) throw new Error('Puter AI provider nije učitan.');
-    const response = await window.PatriaSoulPuterAI.ask(cleanQuestion, context, options);
-
-    return { response, context, results };
+    const result = await agent.ask(cleanQuestion, options);
+    return {
+      response: result?.text || '',
+      text: result?.text || '',
+      context: result?.context || [],
+      results: result?.results || [],
+      model: result?.model || null,
+      provider: result?.provider || 'patriasoul-api'
+    };
   }
 
   function responseText(response) {
     if (!response) return '';
     if (typeof response === 'string') return response;
-    if (typeof response.message?.content === 'string') return response.message.content;
     if (typeof response.text === 'string') return response.text;
+    if (typeof response.response === 'string') return response.response;
+    if (typeof response.message?.content === 'string') return response.message.content;
     return JSON.stringify(response);
   }
 
