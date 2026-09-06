@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T16:15:46.605089+00:00",
+  "updatedAt": "2026-09-06T16:32:13.208290+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -51,6 +51,12 @@
       "humidity": null
     },
     "Opatija": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Osijek-Čepin": {
       "temp": null,
       "condition": null,
       "wind": null,
