@@ -2,8 +2,7 @@
 (function () {
   'use strict';
 
-  // Cache-busting keeps older PWA/browser copies from hiding a newly deployed AI engine.
-  const AI_VERSION = '44';
+  const AI_VERSION = '45';
   const requiredScripts = [
     '/ai/ollama-config.js',
     '/ai/ollama-client.js',
@@ -22,6 +21,7 @@
       const script = document.createElement('script');
       script.src = url;
       script.async = false;
+      script.defer = false;
       script.onload = () => resolve(script);
       script.onerror = () => reject(new Error('Ne mogu učitati: ' + src));
       document.head.appendChild(script);
@@ -44,16 +44,22 @@
   }
 
   async function bootstrap() {
-    window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'dependencies' };
+    window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'dependencies', version: AI_VERSION };
     for (const src of requiredScripts) await load(src);
     verifyDependencies();
-    window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'widget' };
+    window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'widget', version: AI_VERSION };
     await load('/ai-engine/pitaj-patriasoul-widget.js');
-    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: true, stage: 'ready', error: null });
+    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: true, stage: 'ready', version: AI_VERSION, error: null });
   }
 
-  bootstrap().catch(error => {
-    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: false, stage: 'error', error: error?.message || String(error) });
-    console.warn('PatriaSoul AI nije učitan:', error);
+  const ready = bootstrap().catch(error => {
+    const message = error?.message || String(error);
+    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: false, stage: 'error', version: AI_VERSION, error: message });
+    console.warn('[PatriaSoul AI] Loader:', message);
+    throw error;
   });
+
+  // Expose the real bootstrap promise so the widget can wait for the engine
+  // instead of assuming that every dependency has already finished loading.
+  window.PatriaSoulAIReady = ready;
 })();
