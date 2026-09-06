@@ -21,7 +21,11 @@ Deno.serve(async (req) => {
 
   const apiKey = Deno.env.get("BAZAARLINK_API_KEY");
   if (!apiKey) {
-    return new Response(JSON.stringify({ error: "PatriaSoul AI provider nije konfiguriran.", provider: "bazaarlink", secretDetected: false }), {
+    return new Response(JSON.stringify({
+      error: "PatriaSoul AI provider nije konfiguriran.",
+      provider: "bazaarlink",
+      secretDetected: false
+    }), {
       status: 503,
       headers: corsHeaders
     });
@@ -51,12 +55,13 @@ Deno.serve(async (req) => {
         messages: [
           {
             role: "system",
-            content: "Ti si PatriaSoul AI, digitalni vodič kroz Hrvatsku i sadržaj portala PatriaSoul. Odgovaraj jasno, točno i na hrvatskom jeziku. Prioritet imaju potvrđeni podaci iz PatriaSoul Knowledge Base. Ne izmišljaj činjenice i ne predstavljaj nepotvrđene podatke kao činjenice."
+            content: "Ti si PatriaSoul AI, digitalni vodič kroz Hrvatsku i sadržaj portala PatriaSoul. Odgovaraj jasno, točno i prirodno na hrvatskom jeziku. Prioritet imaju potvrđeni podaci iz PatriaSoul Knowledge Base. Ne izmišljaj činjenice i ne predstavljaj nepotvrđene podatke kao činjenice. Nemoj prikazivati interno razmišljanje, analizu ili reasoning; korisniku prikaži samo konačan odgovor."
           },
           { role: "user", content: prompt }
         ],
         temperature: 0.3,
-        max_tokens: 1200
+        max_tokens: 4096,
+        enable_thinking: false
       })
     });
 
@@ -64,16 +69,29 @@ Deno.serve(async (req) => {
 
     if (!bazaarResponse.ok) {
       console.error("PatriaSoul BazaarLink error", bazaarResponse.status, data);
-      return new Response(JSON.stringify({ error: "AI provider nije uspio obraditi zahtjev.", provider: "bazaarlink", providerStatus: bazaarResponse.status }), {
+      return new Response(JSON.stringify({
+        error: "AI provider nije uspio obraditi zahtjev.",
+        provider: "bazaarlink",
+        providerStatus: bazaarResponse.status
+      }), {
         status: 502,
         headers: corsHeaders
       });
     }
 
-    const text = data?.choices?.[0]?.message?.content || data?.choices?.[0]?.text || data?.output_text || "";
+    const text = data?.choices?.[0]?.message?.content ||
+      data?.choices?.[0]?.text ||
+      data?.output_text ||
+      "";
 
     if (!text) {
-      return new Response(JSON.stringify({ error: "AI provider je vratio prazan odgovor.", provider: "bazaarlink" }), {
+      console.error("BazaarLink nije vratio tekst.", data);
+      return new Response(JSON.stringify({
+        error: "AI provider je vratio prazan odgovor.",
+        provider: "bazaarlink",
+        providerStatus: 200,
+        finishReason: data?.choices?.[0]?.finish_reason || null
+      }), {
         status: 502,
         headers: corsHeaders
       });
@@ -87,7 +105,10 @@ Deno.serve(async (req) => {
     }), { headers: corsHeaders });
   } catch (error) {
     console.error("PatriaSoul AI exception", error);
-    return new Response(JSON.stringify({ error: "Greška u PatriaSoul AI servisu.", provider: "bazaarlink" }), {
+    return new Response(JSON.stringify({
+      error: "Greška u PatriaSoul AI servisu.",
+      provider: "bazaarlink"
+    }), {
       status: 500,
       headers: corsHeaders
     });
