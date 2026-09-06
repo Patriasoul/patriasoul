@@ -51,19 +51,28 @@
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
+        // The PatriaSoul Edge Function is a public AI endpoint; browser cookies
+        // are not required. Omitting credentials also avoids credentialed-CORS
+        // failures when the backend intentionally returns wildcard CORS headers.
+        credentials: 'omit',
         body: JSON.stringify({
           question: String(question),
           prompt,
           context,
-          model: opts.model || cfg.model || 'gpt-5.6-luna'
+          model: opts.model || cfg.model || 'auto:free'
         })
       });
       if (!response.ok) throw new Error('PatriaSoul AI servis nije dostupan (' + response.status + ').');
       const data = await response.json();
       const text = textOf(data);
       if (!text) throw new Error('PatriaSoul AI servis je vratio prazan odgovor.');
-      return { text, model: data.model || cfg.model, provider: 'patriasoul-api', context, usedKnowledgeBase: context.length > 0 };
+      return {
+        text,
+        model: data.model || cfg.model,
+        provider: data.provider || 'patriasoul-api',
+        context,
+        usedKnowledgeBase: context.length > 0
+      };
     } catch (error) {
       if (cfg.knowledgeOnlyFallback && context.length) {
         return {
