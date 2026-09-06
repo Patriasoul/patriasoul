@@ -11,8 +11,7 @@
     '/ai-engine/agent/router.js',
     '/ai-engine/agent/agent.js',
     '/ai-engine/agent/content-generator.js',
-    '/ai-engine/puter-ai.js',
-    '/ai-engine/pitaj-patriasoul-widget.js'
+    '/ai-engine/puter-ai.js'
   ];
 
   const optionalScripts = ['https://js.puter.com/v2/'];
@@ -31,8 +30,22 @@
   (async function(){
     try {
       for(const src of requiredScripts) await load(src);
+
+      let puterLoaded = false;
       for(const src of optionalScripts) {
-        try { await load(src); } catch(e) { console.info('Puter.js nije dostupan; lokalni AI provider ostaje dostupan ako je konfiguriran.'); }
+        try {
+          await load(src);
+          puterLoaded = true;
+        } catch(e) {
+          console.info('Puter.js nije dostupan; pokušat će se lokalni AI provider ako je konfiguriran.');
+        }
+      }
+
+      // Load the widget last so its first interaction always sees the provider state.
+      await load('/ai-engine/pitaj-patriasoul-widget.js');
+
+      if (!puterLoaded && window.PatriaSoulAIConfig?.provider === 'puter') {
+        console.warn('PatriaSoul AI: Puter provider nije dostupan.');
       }
     } catch(e) {
       console.warn('PatriaSoul AI nije učitan:',e);
