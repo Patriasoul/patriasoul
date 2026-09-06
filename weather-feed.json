@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T06:18:42.745958+00:00",
+  "updatedAt": "2026-09-06T06:37:56.509028+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -104,6 +104,12 @@
       "wind": null,
       "humidity": null
     },
+    "Rijeka": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Rijeka-aerodrom": {
       "temp": null,
       "condition": null,
@@ -188,12 +194,6 @@
       "wind": null,
       "humidity": null
     },
-    "Rijeka": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Split": {
       "temp": null,
       "condition": null,
@@ -233,9 +233,9 @@
     "Yellow wind warning",
     "Fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
     "Žuto upozorenje za vjetar",
-    "Prijepodne mjestimice vrlo jaka, potkraj dana pojačana bura. Najjači udari vjetra 35-55 čvorova  (65-100 km/h)",
+    "Mjestimice pojačana, prijepodne i vrlo jaka bura. Najjači udari vjetra 35-55 čvorova  (65-100 km/h)",
     "Yellow wind warning",
-    "In the morning locally near gale, in the evening fresh NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)",
+    "Locally fresh, in the morning near gale NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)",
     "Žuto upozorenje za vjetar",
     "Moguća pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)"
   ]
