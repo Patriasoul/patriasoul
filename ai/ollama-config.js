@@ -3,7 +3,7 @@
 window.PatriaSoulAIConfig = Object.freeze({
   provider: 'puter',
   baseUrl: 'http://127.0.0.1:11434',
-  model: '',
+  model: 'gpt-5.6-luna',
   chatEnabled: true,
   publicExposure: false
 });
