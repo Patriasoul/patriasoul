@@ -11,7 +11,7 @@
     if (document.querySelector('script[data-patriasoul-ai-loader="current"]')) return;
 
     const script = document.createElement('script');
-    script.src = '/ai-engine/load-pitaj-patriasoul.js?v=47';
+    script.src = '/ai-engine/load-pitaj-patriasoul.js?v=48';
     script.async = false;
     script.dataset.patriasoulAiLoader = 'current';
     document.head.appendChild(script);
