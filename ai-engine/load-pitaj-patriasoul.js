@@ -11,7 +11,7 @@
     '/ai-engine/agent/router.js',
     '/ai-engine/agent/agent.js',
     '/ai-engine/agent/content-generator.js',
-    '/ai-engine/puter-ai.js'
+    '/ai-engine/patria-ai-provider.js'
   ];
 
   function load(src) {
@@ -32,21 +32,11 @@
     for (const src of requiredScripts) await load(src);
     window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'widget' };
     await load('/ai-engine/pitaj-patriasoul-widget.js');
-    window.PatriaSoulAIStatus = Object.freeze({
-      provider: 'patriasoul-api',
-      ready: true,
-      stage: 'ready',
-      error: null
-    });
+    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: true, stage: 'ready', error: null });
   }
 
   bootstrap().catch(error => {
-    window.PatriaSoulAIStatus = Object.freeze({
-      provider: 'patriasoul-api',
-      ready: false,
-      stage: 'error',
-      error: error?.message || String(error)
-    });
+    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: false, stage: 'error', error: error?.message || String(error) });
     console.warn('PatriaSoul AI nije učitan:', error);
   });
 })();
