@@ -1,18 +1,26 @@
-/* PatriaSoul AI Agent — Agent v3
+/* PatriaSoul AI Agent — Agent v4
  * Read-only router + Knowledge Base + provider.
  * The agent never writes to the site.
  */
 (function (global) {
   'use strict';
 
-  const MAX_CONTEXT_ITEMS = 8;
+  const MAX_CONTEXT_ITEMS = 6;
+
+  function isQuizQuestion(question) {
+    const q = String(question || '').toLocaleLowerCase('hr-HR');
+    return /\b(kviz|pitanje|točan odgovor|tocan odgovor|odgovori|odgovor je|koji je odgovor)\b/.test(q);
+  }
+
+  function isCityQuestion(question) {
+    const q = String(question || '').toLocaleLowerCase('hr-HR');
+    return /\b(grad|grada|gradu|gradom|gradovi|vukovar|zagreb|split|rijeka|dubrovnik)\b/.test(q);
+  }
 
   async function loadKnowledge() {
     const response = await fetch('/ai-engine/knowledge/index.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('PatriaSoul Knowledge Base nije dostupna.');
     const data = await response.json();
-    // Knowledge index is a manifest object: { version, counts, items: [...] }.
-    // The retriever expects the actual item array.
     if (Array.isArray(data)) return data;
     if (data && Array.isArray(data.items)) return data.items;
     throw new Error('PatriaSoul Knowledge Base ima neispravan format.');
@@ -36,6 +44,8 @@
       'PRAVILA:',
       '- Odgovaraj na hrvatskom jeziku.',
       '- Prioritet imaju provjereni podaci iz PatriaSoul Knowledge Base.',
+      '- Za pitanja o gradu prednost imaju zapisi tog grada i izravno povezane stranice.',
+      '- Ne uključuj kviz pitanja osim ako korisnik izričito pita za kviz ili pitanje.',
       '- Ne izmišljaj činjenice koje nisu potkrijepljene dostupnim podacima.',
       '- Zapise u statusu draft/review ne predstavljaj kao potvrđene činjenice.',
       '- Ako nema dovoljno podataka, jasno reci da podatak nije potvrđen u PatriaSoul bazi.',
@@ -68,12 +78,32 @@
 
     const route = global.PatriaSoulAgentRouter.route(q);
     const items = await loadKnowledge();
+    const quizQuestion = isQuizQuestion(q);
+    const cityQuestion = isCityQuestion(q);
+
     const results = global.PatriaSoulKnowledgeRetriever.retrieve(items, q, {
       trustedOnly: opts.trustedOnly !== false,
       limit: opts.limit || MAX_CONTEXT_ITEMS,
       filters: opts.filters || {}
+    }).filter(function (result) {
+      // For normal questions, quiz records are noise. Keep them only when
+      // the user explicitly asks about a quiz/question/answer.
+      if (!quizQuestion && result.item && result.item.type === 'kviz') return false;
+      return true;
     });
-    const context = global.PatriaSoulKnowledgeRetriever.buildContext(results);
+
+    // Keep the most relevant city/page records first. This is intentionally
+    // lightweight and does not duplicate city data in the Knowledge Base.
+    if (cityQuestion) {
+      results.sort(function (a, b) {
+        const aCity = a.item && (a.item.type === 'grad' || a.item.cityId) ? 1 : 0;
+        const bCity = b.item && (b.item.type === 'grad' || b.item.cityId) ? 1 : 0;
+        if (bCity !== aCity) return bCity - aCity;
+        return Number(b.score || 0) - Number(a.score || 0);
+      });
+    }
+
+    const context = global.PatriaSoulKnowledgeRetriever.buildContext(results.slice(0, MAX_CONTEXT_ITEMS));
     const prompt = buildPrompt(route, context, q);
 
     const result = await global.PatriaSoulAI.ask(q, {
