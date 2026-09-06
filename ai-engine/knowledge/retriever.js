@@ -1,4 +1,4 @@
-// PatriaSoul Knowledge Retriever v2
+// PatriaSoul Knowledge Retriever v3
 // Provider-neutral: priprema relevantne i provjerene zapise za AI.
 // Pravilo: što je izvor pouzdaniji i upit precizniji, zapis je više rangiran.
 (function () {
@@ -18,10 +18,51 @@
       .trim();
   }
 
+  // Hrvatski upiti često koriste padežne oblike (npr. Vukovaru,
+  // Vukovara, Vukovarom), dok je naziv u bazi najčešće nominativ.
+  // Ne pokušavamo napraviti punu lematizaciju; umjesto toga stvaramo
+  // nekoliko sigurnih kandidata za podudaranje.
+  function tokenVariants(token) {
+    const value = normalize(token);
+    if (!value || value.length < 3) return [];
+
+    const variants = new Set([value]);
+
+    if (value.length >= 6) {
+      const suffixes = [
+        'ovima', 'evima', 'ama', 'ima',
+        'om', 'em', 'ju', 'mu',
+        'u', 'a', 'e', 'i'
+      ];
+
+      for (const suffix of suffixes) {
+        if (value.endsWith(suffix) && value.length - suffix.length >= 4) {
+          variants.add(value.slice(0, -suffix.length));
+          break;
+        }
+      }
+    }
+
+    return [...variants];
+  }
+
   function tokenize(value) {
     return normalize(value)
       .split(/[^a-z0-9]+/i)
       .filter(token => token.length >= 3);
+  }
+
+  function expandedTokens(value) {
+    const tokens = tokenize(value);
+    const variants = new Set();
+
+    for (const token of tokens) {
+      for (const variant of tokenVariants(token)) {
+        variants.add(variant);
+      }
+    }
+
+    return [...variants];
   }
 
   function compactDate(value) {
@@ -32,6 +73,7 @@
 
   function score(item, query, filters = {}) {
     const q = tokenize(query);
+    const searchTokens = expandedTokens(query);
     const title = normalize(item.title);
     const content = normalize(item.content);
     const tags = normalize((item.tags || []).join(' '));
@@ -46,18 +88,35 @@
 
     let points = 0;
 
+    // Original exact-token scoring.
     q.forEach(token => {
       if (title.includes(token)) points += 6;
       else if (tags.includes(token)) points += 4;
       else if (haystack.includes(token)) points += 2;
 
-      // Blago nagrađuje početak riječi, što bolje prati prirodni hrvatski upit.
       const word = new RegExp(`\\b${token}`);
       if (word.test(title)) points += 2;
       if (word.test(content)) points += 1;
     });
 
-    if (q.length > 1 && q.every(token => haystack.includes(token))) points += 3;
+    // Croatian morphological matching.
+    for (const token of searchTokens) {
+      if (q.includes(token)) continue;
+
+      if (title.includes(token)) points += 5;
+      else if (tags.includes(token)) points += 3;
+      else if (haystack.includes(token)) points += 1;
+
+      const word = new RegExp(`\\b${token}`);
+      if (word.test(title)) points += 2;
+    }
+
+    // Strong bonus when all meaningful query stems occur in the same record.
+    const meaningful = searchTokens.filter(token => token.length >= 4);
+    if (meaningful.length > 0 && meaningful.every(token => haystack.includes(token))) {
+      points += 4;
+    }
+
     if (filters.type && item.type === filters.type) points += 4;
     if (filters.cityId && item.cityId === filters.cityId) points += 5;
     if (filters.status && item.status === filters.status) points += 4;
