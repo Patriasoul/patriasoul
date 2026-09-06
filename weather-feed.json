@@ -1,13 +1,7 @@
 {
-  "updatedAt": "2026-09-06T23:13:27.392718+00:00",
+  "updatedAt": "2026-09-06T23:29:35.519618+00:00",
   "source": "DHMZ",
   "stations": {
-    "RC Bilogora": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Bjelovar": {
       "temp": null,
       "condition": null,
@@ -21,12 +15,6 @@
       "humidity": null
     },
     "Dubrovnik": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Dubrovnik-aerodrom": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -68,37 +56,7 @@
       "wind": null,
       "humidity": null
     },
-    "Pula-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Rijeka-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Senj": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Sisak": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Slavonski Brod": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Split-aerodrom": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -116,49 +74,13 @@
       "wind": null,
       "humidity": null
     },
-    "Zadar-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Zagreb-Maksimir": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
-    "Zagreb-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Zagreb": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Rijeka": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Zadar": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Split": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Pula": {
       "temp": null,
       "condition": null,
       "wind": null,
