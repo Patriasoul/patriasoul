@@ -52,6 +52,16 @@
     }
   }
 
+  async function ensurePuterAuth() {
+    ensurePuter();
+    if (window.puter.auth && typeof window.puter.auth.isSignedIn === 'function' && !window.puter.auth.isSignedIn()) {
+      if (typeof window.puter.auth.signIn !== 'function') {
+        throw new Error('Puter prijava nije dostupna.');
+      }
+      await window.puter.auth.signIn({ attempt_temp_user_creation: true });
+    }
+  }
+
   async function ask(question, options = {}) {
     const q = String(question || '').trim();
     if (!q) throw new Error('Upit je prazan.');
@@ -81,7 +91,7 @@
       };
     }
 
-    ensurePuter();
+    await ensurePuterAuth();
     const request = { stream: options.stream === true };
     if (options.model) request.model = options.model;
     const response = await window.puter.ai.chat(prompt, request);
