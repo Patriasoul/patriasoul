@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T21:48:54.491380+00:00",
+  "updatedAt": "2026-09-06T22:14:57.351963+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -154,18 +154,14 @@
     }
   },
   "alerts": [
-    "Žuto upozorenje za vjetar",
-    "Mjestimice olujni udari bure, osobito podno Velebita. Najjači udari vjetra > 65 km/h",
-    "Yellow wind warning",
-    "Locally gale force gusts of bura (NE wind), especially at the foothill of Velebit mountain. Maximum gust speed > 65 km/h",
     "Žuto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 33 °C",
     "Yellow high temperature warning",
     "Heat wave. Maximum temperature > 33 °C",
     "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 34 °C",
+    "Toplinski val. Maksimalna temperatura > 34 °C; Minimalna temperatura > 26 °C",
     "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 34 °C",
+    "Heat wave. Maximum temperature > 34 °C; Minimum temperature > 26 °C",
     "Žuto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 26 °C",
     "Yellow high temperature warning",
@@ -175,14 +171,8 @@
     "Yellow wind warning",
     "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
     "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Pojačana, mjestimice jaka bura. Najjači udari vjetra 35-45 čvorova  (65-85 km/h)",
     "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana, prijepodne i vrlo jaka bura. Najjači udari vjetra 35-55 čvorova  (65-100 km/h)",
-    "Yellow wind warning",
-    "Locally fresh, in the morning near gale NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Moguća pojačana bura. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)"
+    "Fresh, locally strong NE wind. Maximum wind gusts 35-45 knots (65-85 km/h)"
   ]
 }\n
