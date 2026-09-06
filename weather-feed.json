@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T15:14:14.849254+00:00",
+  "updatedAt": "2026-09-06T15:30:49.581118+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -8,7 +8,37 @@
       "wind": null,
       "humidity": null
     },
+    "Crikvenica": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Dubrovnik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Dubrovnik-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Gospić": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Knin": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -62,6 +92,12 @@
       "wind": null,
       "humidity": null
     },
+    "Šibenik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Varaždin": {
       "temp": null,
       "condition": null,
@@ -105,12 +141,6 @@
       "humidity": null
     },
     "Split": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Dubrovnik": {
       "temp": null,
       "condition": null,
       "wind": null,
