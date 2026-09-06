@@ -3,6 +3,9 @@
 (function () {
   'use strict';
 
+  const PUTER_SRC = 'https://js.puter.com/v2/';
+  let puterLoadPromise = null;
+
   function getText(response) {
     if (!response) return '';
     if (typeof response === 'string') return response;
@@ -46,14 +49,54 @@
     });
   }
 
-  function ensurePuter() {
-    if (!window.puter || !window.puter.ai || typeof window.puter.ai.chat !== 'function') {
-      throw new Error('Puter.js nije učitan.');
-    }
+  function hasPuter() {
+    return !!(window.puter && window.puter.ai && typeof window.puter.ai.chat === 'function');
+  }
+
+  function loadPuter() {
+    if (hasPuter()) return Promise.resolve(window.puter);
+    if (puterLoadPromise) return puterLoadPromise;
+
+    puterLoadPromise = new Promise((resolve, reject) => {
+      const existing = document.querySelector('script[data-patriasoul-puter]');
+      if (existing) {
+        const started = Date.now();
+        const check = () => {
+          if (hasPuter()) return resolve(window.puter);
+          if (Date.now() - started >= 15000) return reject(new Error('Puter.js se učitao, ali njegov AI API nije dostupan.'));
+          setTimeout(check, 100);
+        };
+        check();
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = PUTER_SRC;
+      script.async = false;
+      script.dataset.patriasoulPuter = 'true';
+      script.onload = () => {
+        const started = Date.now();
+        const check = () => {
+          if (hasPuter()) return resolve(window.puter);
+          if (Date.now() - started >= 15000) return reject(new Error('Puter.js se učitao, ali njegov AI API nije dostupan.'));
+          setTimeout(check, 100);
+        };
+        check();
+      };
+      script.onerror = () => reject(new Error('Ne mogu učitati Puter.js s ' + PUTER_SRC));
+      document.head.appendChild(script);
+    });
+
+    return puterLoadPromise;
+  }
+
+  async function ensurePuter() {
+    await loadPuter();
+    if (!hasPuter()) throw new Error('Puter.js nije učitan.');
   }
 
   async function ensurePuterAuth() {
-    ensurePuter();
+    await ensurePuter();
     if (window.puter.auth && typeof window.puter.auth.isSignedIn === 'function' && !window.puter.auth.isSignedIn()) {
       if (typeof window.puter.auth.signIn !== 'function') {
         throw new Error('Puter prijava nije dostupna.');
