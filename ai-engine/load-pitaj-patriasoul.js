@@ -2,6 +2,8 @@
 (function () {
   'use strict';
 
+  // Cache-busting keeps older PWA/browser copies from hiding a newly deployed AI engine.
+  const AI_VERSION = '44';
   const requiredScripts = [
     '/ai/ollama-config.js',
     '/ai/ollama-client.js',
@@ -15,11 +17,10 @@
   ];
 
   function load(src) {
-    const existing = Array.from(document.scripts).find(s => s.src === new URL(src, document.baseURI).href);
-    if (existing) return Promise.resolve(existing);
+    const url = src + (src.includes('?') ? '&' : '?') + 'psai=' + AI_VERSION;
     return new Promise((resolve, reject) => {
       const script = document.createElement('script');
-      script.src = src;
+      script.src = url;
       script.async = false;
       script.onload = () => resolve(script);
       script.onerror = () => reject(new Error('Ne mogu učitati: ' + src));
@@ -27,9 +28,25 @@
     });
   }
 
+  function verifyDependencies() {
+    const checks = [
+      ['PatriaSoulAIConfig', window.PatriaSoulAIConfig],
+      ['PatriaSoulKnowledgeRetriever', window.PatriaSoulKnowledgeRetriever],
+      ['PatriaSoulAgentRouter', window.PatriaSoulAgentRouter],
+      ['PatriaSoulAgentTools', window.PatriaSoulAgentTools],
+      ['PatriaSoulAgent', window.PatriaSoulAgent],
+      ['PatriaSoulAI', window.PatriaSoulAI]
+    ];
+    const missing = checks.filter(([name, value]) => !value).map(([name]) => name);
+    if (missing.length) {
+      throw new Error('Nisu učitane AI komponente: ' + missing.join(', '));
+    }
+  }
+
   async function bootstrap() {
     window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'dependencies' };
     for (const src of requiredScripts) await load(src);
+    verifyDependencies();
     window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'widget' };
     await load('/ai-engine/pitaj-patriasoul-widget.js');
     window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: true, stage: 'ready', error: null });
