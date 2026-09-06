@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T05:48:09.516485+00:00",
+  "updatedAt": "2026-09-06T06:18:42.745958+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -44,6 +44,12 @@
       "wind": null,
       "humidity": null
     },
+    "Karlovac": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Knin": {
       "temp": null,
       "condition": null,
@@ -56,6 +62,12 @@
       "wind": null,
       "humidity": null
     },
+    "Makarska": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Opatija": {
       "temp": null,
       "condition": null,
@@ -63,6 +75,24 @@
       "humidity": null
     },
     "RC Osijek-Čepin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Osijek-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pazin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pula": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -98,6 +128,12 @@
       "wind": null,
       "humidity": null
     },
+    "Split-Marjan": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Split-aerodrom": {
       "temp": null,
       "condition": null,
@@ -116,7 +152,19 @@
       "wind": null,
       "humidity": null
     },
+    "Zadar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Zadar-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zagreb-Grič": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -146,19 +194,13 @@
       "wind": null,
       "humidity": null
     },
-    "Zadar": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Split": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
-    "Pula": {
+    "Osijek": {
       "temp": null,
       "condition": null,
       "wind": null,
