@@ -1,4 +1,4 @@
-/* PatriaSoul AI Agent — Agent v2
+/* PatriaSoul AI Agent — Agent v3
  * Read-only router + Knowledge Base + provider.
  * The agent never writes to the site.
  */
@@ -10,7 +10,12 @@
   async function loadKnowledge() {
     const response = await fetch('/ai-engine/knowledge/index.json', { cache: 'no-store' });
     if (!response.ok) throw new Error('PatriaSoul Knowledge Base nije dostupna.');
-    return response.json();
+    const data = await response.json();
+    // Knowledge index is a manifest object: { version, counts, items: [...] }.
+    // The retriever expects the actual item array.
+    if (Array.isArray(data)) return data;
+    if (data && Array.isArray(data.items)) return data.items;
+    throw new Error('PatriaSoul Knowledge Base ima neispravan format.');
   }
 
   function ensureDependencies() {
