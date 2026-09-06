@@ -31,16 +31,34 @@
   panel.querySelector('.ps-ai-close').addEventListener('click',()=>panel.classList.remove('is-open'));
   add('Pozdrav! 👋 Ja sam PatriaSoul AI. Mogu odgovarati na pitanja, pretražiti PatriaSoul bazu i izraditi nacrt članka, sažetka, objave ili SEO sadržaja. Tijekom aktivnog kviza ne otkrivam odgovore. 🇭🇷','bot');
 
+  async function ensurePuterSignedIn(){
+    if(!window.puter || !window.puter.ai || typeof window.puter.ai.chat !== 'function'){
+      throw new Error('Puter.js nije učitan.');
+    }
+    if(window.puter.auth && typeof window.puter.auth.isSignedIn === 'function' && !window.puter.auth.isSignedIn()){
+      if(typeof window.puter.auth.signIn !== 'function') throw new Error('Puter prijava nije dostupna.');
+      add('Za korištenje PatriaSoul AI-ja potrebno je prijaviti se na Puter. Otvaram prijavu…','bot');
+      await window.puter.auth.signIn({attempt_temp_user_creation:true});
+    }
+  }
+
   async function askQuestion(q){
     const wait=add('Razmišljam i provjeravam PatriaSoul bazu…','bot');
     try {
+      // Sign-in is intentionally triggered directly by the user's Send click,
+      // so the browser allows Puter's authentication popup.
+      await ensurePuterSignedIn();
       const agent=getAgent();
       if (!agent) throw new Error('PatriaSoul Agent nije učitan.');
       const r=await agent.ask(q,{quizActive:document.body.dataset.quizActive==='true'});
       wait.textContent=r?.text||'Trenutno nemam dovoljno potvrđenih podataka za odgovor.';
     } catch(err){
-      wait.textContent='PatriaSoul AI trenutno nije dostupan. Pokušaj ponovno.';
       console.error('[PatriaSoul AI]',err);
+      const code=err && (err.error || err.code);
+      if(code==='popup_blocked') wait.textContent='Prijava je blokirana. Dopusti skočni prozor za PatriaSoul i pokušaj ponovno.';
+      else if(code==='auth_window_closed') wait.textContent='Prijava je otkazana. Pokušaj ponovno kada budeš spreman.';
+      else if(code==='Unauthorized') wait.textContent='Puter prijava je potrebna za korištenje ovog AI-ja.';
+      else wait.textContent='PatriaSoul AI trenutno nije dostupan. Detalj: '+(err?.message || 'nepoznata greška');
     }
   }
 
@@ -50,13 +68,14 @@
     add(`${type === 'article' ? '📰 Članak' : type === 'summary' ? '📝 Sažetak' : type === 'social' ? '📱 Objava' : '🔎 SEO'}: ${topic}`,'user');
     const wait=add('Izrađujem nacrt iz potvrđenih podataka…','bot');
     try {
+      await ensurePuterSignedIn();
       const content=getContent();
       if(!content) throw new Error('PatriaSoul Content Generator nije učitan.');
       const result=await content.generate(type,topic);
       wait.textContent=result?.text||'Nije moguće izraditi sadržaj.';
     } catch(err){
-      wait.textContent='Nije moguće izraditi sadržaj. Provjeri dostupnost Puter AI-ja.';
       console.error('[PatriaSoul Content]',err);
+      wait.textContent='Nije moguće izraditi sadržaj. '+(err?.message || 'Provjeri Puter prijavu.');
     }
   }
 
