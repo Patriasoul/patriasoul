@@ -1,4 +1,4 @@
-/* PatriaSoul AI Agent — Agent v1
+/* PatriaSoul AI Agent — Agent v2
  * Read-only router + Knowledge Base + provider.
  * The agent never writes to the site.
  */
@@ -52,6 +52,14 @@
     const q = String(question || '').trim();
     if (!q) throw new Error('Upiši pitanje.');
     ensureDependencies();
+
+    if (global.PatriaSoulQuizGuard) {
+      const guard = global.PatriaSoulQuizGuard.guard(q, {
+        quizActive: !!opts.quizActive,
+        pathname: global.location && global.location.pathname
+      });
+      if (guard.blocked) return { text: guard.text, blocked: true, route: null, results: [], context: [], provider: 'patriasoul-quiz-guard', model: '', fallback: false };
+    }
 
     const route = global.PatriaSoulAgentRouter.route(q);
     const items = await loadKnowledge();
