@@ -1,10 +1,9 @@
-/* PatriaSoul AI — local Ollama configuration
- * Keep this file local/browser-only. Do not put API keys or secrets here.
- */
+// PatriaSoul AI configuration
+// Puter is the public/default provider. Ollama remains available for local development.
 window.PatriaSoulAIConfig = Object.freeze({
-  provider: 'ollama',
+  provider: 'puter',
   baseUrl: 'http://127.0.0.1:11434',
-  model: 'CHANGE_ME',
+  model: '',
   chatEnabled: true,
   publicExposure: false
 });
