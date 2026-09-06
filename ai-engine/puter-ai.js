@@ -1,13 +1,7 @@
-// PatriaSoul AI + Puter.js
-// Frontend adapter: Knowledge Retriever -> contextual prompt -> Puter AI.
+// PatriaSoul AI provider adapter
+// Knowledge Retriever -> contextual prompt -> Ollama (local) or Puter.js fallback.
 (function () {
   'use strict';
-
-  function ensurePuter() {
-    if (!window.puter || !window.puter.ai || typeof window.puter.ai.chat !== 'function') {
-      throw new Error('Puter.js nije učitan. Dodaj https://js.puter.com/v2/ prije ovog modula.');
-    }
-  }
 
   function getText(response) {
     if (!response) return '';
@@ -32,8 +26,33 @@
       `PITANJE KORISNIKA:\n${question}`;
   }
 
+  function ollamaEnabled(options) {
+    const cfg = window.PatriaSoulAIConfig || {};
+    const provider = options.provider || cfg.provider;
+    return provider === 'ollama' &&
+      window.PatriaSoulOllama &&
+      typeof window.PatriaSoulOllama.chat === 'function';
+  }
+
+  async function askWithOllama(prompt, options) {
+    const cfg = window.PatriaSoulAIConfig || {};
+    const model = options.model || cfg.model;
+    if (!model || model === 'CHANGE_ME') {
+      throw new Error('PatriaSoul AI: u Ollama konfiguraciji nije odabran model.');
+    }
+    return window.PatriaSoulOllama.chat(prompt, {
+      baseUrl: options.baseUrl || cfg.baseUrl,
+      model
+    });
+  }
+
+  function ensurePuter() {
+    if (!window.puter || !window.puter.ai || typeof window.puter.ai.chat !== 'function') {
+      throw new Error('Puter.js nije učitan.');
+    }
+  }
+
   async function ask(question, options = {}) {
-    ensurePuter();
     const q = String(question || '').trim();
     if (!q) throw new Error('Upit je prazan.');
 
@@ -50,14 +69,27 @@
     }
 
     const prompt = buildPrompt(q, context);
+
+    if (ollamaEnabled(options)) {
+      const text = await askWithOllama(prompt, options);
+      return {
+        text: getText(text),
+        model: options.model || window.PatriaSoulAIConfig.model,
+        provider: 'ollama',
+        context,
+        usedKnowledgeBase: context.length > 0
+      };
+    }
+
+    ensurePuter();
     const request = { stream: options.stream === true };
     if (options.model) request.model = options.model;
-
     const response = await window.puter.ai.chat(prompt, request);
 
     return {
       text: getText(response),
       model: options.model || 'Puter default model',
+      provider: 'puter',
       context,
       usedKnowledgeBase: context.length > 0
     };
