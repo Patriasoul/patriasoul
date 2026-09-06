@@ -38,6 +38,15 @@
   function getAgent() { return window.PatriaSoulAgent || null; }
   function getContent() { return window.PatriaSoulContent || null; }
 
+  async function waitForEngine() {
+    if (getAgent()) return getAgent();
+    if (window.PatriaSoulAIReady && typeof window.PatriaSoulAIReady.then === 'function') {
+      await window.PatriaSoulAIReady;
+      return getAgent();
+    }
+    return getAgent();
+  }
+
   fab.addEventListener('click', () => {
     panel.classList.toggle('is-open');
     if (panel.classList.contains('is-open')) input.focus();
@@ -48,8 +57,11 @@
   async function askQuestion(q) {
     const wait = add('Provjeravam PatriaSoul bazu…', 'bot');
     try {
-      const agent = getAgent();
-      if (!agent) throw new Error('PatriaSoul AI engine nije učitan.');
+      const agent = await waitForEngine();
+      if (!agent) {
+        const status = window.PatriaSoulAIStatus || {};
+        throw new Error(status.error || 'PatriaSoul AI engine nije učitan.');
+      }
       const r = await agent.ask(q, { quizActive: document.body.dataset.quizActive === 'true' });
       wait.textContent = r?.text || 'Trenutno nemam dovoljno potvrđenih podataka za odgovor.';
       if (r?.fallback) wait.textContent += '\n\nNapomena: AI servis trenutno nije spojen, pa prikazujem relevantne potvrđene zapise iz PatriaSoul baze.';
