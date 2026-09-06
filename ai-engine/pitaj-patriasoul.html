@@ -27,10 +27,10 @@
     <button type="submit">Pitaj</button>
   </form>
   <small class="patria-ai__note">PatriaSoul baza ostaje primarni izvor. AI izrađuje nacrte i odgovore, ali ne objavljuje sadržaj automatski.</small>
-  <small class="patria-ai__powered">Powered by Puter.js · PatriaSoul AI</small>
+  <small class="patria-ai__powered">PatriaSoul AI · odgovori se temelje na PatriaSoul bazi</small>
 </section>
 
-<script src="/ai-engine/load-pitaj-patriasoul.js"></script>
+<script src="/ai-engine/load-pitaj-patriasoul.js?v=48"></script>
 <script>
 (function () {
   const form = document.getElementById('patriaAiForm');
@@ -82,7 +82,7 @@
         const result = await content.generate(button.dataset.psContent, topic);
         waiting.textContent = result.text || 'Nije moguće izraditi sadržaj.';
       } catch (error) {
-        waiting.textContent = 'Nije moguće izraditi sadržaj. Provjeri dostupnost Puter AI-ja.';
+        waiting.textContent = 'Nije moguće izraditi sadržaj. Provjeri dostupnost PatriaSoul AI servisa.';
         console.error('[PatriaSoul Content]', error);
       }
     });
