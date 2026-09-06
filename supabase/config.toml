@@ -2,3 +2,8 @@
 # This file is intentionally minimal; database migrations live in supabase/migrations.
 
 project_id = "azerctpwfzdivydsxyex"
+
+# PatriaSoul AI is a public browser-facing endpoint.
+# Provider credentials remain server-side in Supabase secrets.
+[functions.patria-ai]
+verify_jwt = false
