@@ -19,9 +19,9 @@ Deno.serve(async (req) => {
     });
   }
 
-  const apiKey = Deno.env.get("OPENAI_API_KEY");
+  const apiKey = Deno.env.get("BAZAARLINK_API_KEY");
   if (!apiKey) {
-    return new Response(JSON.stringify({ error: "PatriaSoul AI provider nije konfiguriran." }), {
+    return new Response(JSON.stringify({ error: "PatriaSoul AI provider nije konfiguriran.", provider: "bazaarlink", secretDetected: false }), {
       status: 503,
       headers: corsHeaders
     });
@@ -31,7 +31,7 @@ Deno.serve(async (req) => {
     const body = await req.json();
     const question = String(body?.question || "").trim();
     const prompt = String(body?.prompt || "").trim();
-    const model = String(body?.model || "gpt-5.6-luna");
+    const model = String(body?.model || "auto:free");
 
     if (!question || !prompt) {
       return new Response(JSON.stringify({ error: "Nedostaje pitanje ili kontekst." }), {
@@ -40,35 +40,40 @@ Deno.serve(async (req) => {
       });
     }
 
-    const response = await fetch("https://api.openai.com/v1/responses", {
+    const bazaarResponse = await fetch("https://api.bazaarlink.ai/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${apiKey}`,
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${apiKey}`
       },
       body: JSON.stringify({
         model,
-        input: prompt,
-        max_output_tokens: 1200
+        messages: [
+          {
+            role: "system",
+            content: "Ti si PatriaSoul AI, digitalni vodič kroz Hrvatsku i sadržaj portala PatriaSoul. Odgovaraj jasno, točno i na hrvatskom jeziku. Prioritet imaju potvrđeni podaci iz PatriaSoul Knowledge Base. Ne izmišljaj činjenice i ne predstavljaj nepotvrđene podatke kao činjenice."
+          },
+          { role: "user", content: prompt }
+        ],
+        temperature: 0.3,
+        max_tokens: 1200
       })
     });
 
-    const data = await response.json();
-    if (!response.ok) {
-      console.error("PatriaSoul AI provider error", response.status, data);
-      return new Response(JSON.stringify({ error: "AI provider nije uspio obraditi zahtjev." }), {
+    const data = await bazaarResponse.json();
+
+    if (!bazaarResponse.ok) {
+      console.error("PatriaSoul BazaarLink error", bazaarResponse.status, data);
+      return new Response(JSON.stringify({ error: "AI provider nije uspio obraditi zahtjev.", provider: "bazaarlink", providerStatus: bazaarResponse.status }), {
         status: 502,
         headers: corsHeaders
       });
     }
 
-    const text = data?.output_text ||
-      data?.output?.flatMap((item: any) => item?.content || [])
-        ?.map((item: any) => item?.text || "")
-        ?.join("") || "";
+    const text = data?.choices?.[0]?.message?.content || data?.choices?.[0]?.text || data?.output_text || "";
 
     if (!text) {
-      return new Response(JSON.stringify({ error: "AI provider je vratio prazan odgovor." }), {
+      return new Response(JSON.stringify({ error: "AI provider je vratio prazan odgovor.", provider: "bazaarlink" }), {
         status: 502,
         headers: corsHeaders
       });
@@ -76,12 +81,13 @@ Deno.serve(async (req) => {
 
     return new Response(JSON.stringify({
       text,
-      model,
-      provider: "patriasoul-ai"
+      model: data?.model || model,
+      provider: "bazaarlink",
+      secretDetected: true
     }), { headers: corsHeaders });
   } catch (error) {
     console.error("PatriaSoul AI exception", error);
-    return new Response(JSON.stringify({ error: "Greška u PatriaSoul AI servisu." }), {
+    return new Response(JSON.stringify({ error: "Greška u PatriaSoul AI servisu.", provider: "bazaarlink" }), {
       status: 500,
       headers: corsHeaders
     });
