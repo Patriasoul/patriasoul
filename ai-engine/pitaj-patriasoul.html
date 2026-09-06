@@ -19,11 +19,12 @@
     <input id="patriaAiQuestion" autocomplete="off" placeholder="Npr. Što znaš o Sinju?" />
     <button type="submit">Pitaj</button>
   </form>
-  <small class="patria-ai__note">PatriaSoul baza je primarni izvor konteksta. AI odgovor može zahtijevati Puter prijavu.</small>
-  <small class="patria-ai__powered"><a href="https://developer.puter.com" target="_blank" rel="noopener noreferrer">Powered by Puter.js</a> · PatriaSoul AI</small>
+  <small class="patria-ai__note">PatriaSoul baza je primarni izvor konteksta. Lokalni Ollama model koristi se kao primarni AI provider.</small>
+  <small class="patria-ai__powered">Powered by Ollama · PatriaSoul AI</small>
 </section>
 
-<script src="https://js.puter.com/v2/"></script>
+<script src="/ai/ollama-config.js"></script>
+<script src="/ai/ollama-client.js"></script>
 <script src="/ai-engine/knowledge/retriever.js"></script>
 <script src="/ai-engine/puter-ai.js"></script>
 <script>
@@ -66,11 +67,12 @@
       const result = await window.PatriaSoulAI.ask(question, {
         knowledge,
         trustedOnly: true,
-        limit: 8
+        limit: 8,
+        provider: 'ollama'
       });
       waiting.textContent = result.text || 'Trenutno nemam dovoljno podataka za odgovor.';
     } catch (error) {
-      waiting.textContent = 'AI trenutno nije dostupan. Provjeri Puter prijavu ili pokušaj ponovno.';
+      waiting.textContent = 'Lokalni PatriaSoul AI trenutno nije dostupan. Provjeri je li Ollama pokrenuta i je li odabran model.';
       console.error('[PatriaSoul AI]', error);
     }
   });
