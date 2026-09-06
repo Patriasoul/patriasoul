@@ -1,24 +1,25 @@
 // PatriaSoul — compatibility bridge for the legacy AI widget path.
-// Keep this path alive so older cached loaders cannot execute the retired widget.
+// Older cached pages may still request this filename. Instead of running the
+// retired widget, this bridge boots the complete current AI loader.
 (function () {
   'use strict';
   if (window.__PATRIA_LEGACY_WIDGET_BRIDGE__) return;
   window.__PATRIA_LEGACY_WIDGET_BRIDGE__ = true;
 
-  function loadV2() {
-    if (window.__PATRIA_ASK_WIDGET_V2__) return;
-    const existing = document.querySelector('script[data-patriasoul-ai-widget="v2"]');
-    if (existing) return;
+  function bootCurrentAI() {
+    if (window.PatriaSoulAIReady && typeof window.PatriaSoulAIReady.then === 'function') return;
+    if (document.querySelector('script[data-patriasoul-ai-loader="current"]')) return;
+
     const script = document.createElement('script');
-    script.src = '/ai-engine/pitaj-patriasoul-widget-v2.js?psai=47';
+    script.src = '/ai-engine/load-pitaj-patriasoul.js?v=47';
     script.async = false;
-    script.dataset.patriasoulAiWidget = 'v2';
+    script.dataset.patriasoulAiLoader = 'current';
     document.head.appendChild(script);
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadV2, { once: true });
+    document.addEventListener('DOMContentLoaded', bootCurrentAI, { once: true });
   } else {
-    loadV2();
+    bootCurrentAI();
   }
 })();
