@@ -1,15 +1,20 @@
 // PatriaSoul AI provider adapter
-// Knowledge Retriever -> contextual prompt -> Ollama (local) or Puter.js fallback.
+// Knowledge Retriever -> contextual prompt -> Ollama (local) or Puter.js.
 (function () {
   'use strict';
 
   const PUTER_SRC = 'https://js.puter.com/v2/';
+  const PUTER_TIMEOUT = 15000;
   let puterLoadPromise = null;
 
   function getText(response) {
     if (!response) return '';
     if (typeof response === 'string') return response;
-    return response?.message?.content || response?.text || '';
+    if (typeof response?.message?.content === 'string') return response.message.content;
+    if (Array.isArray(response?.message?.content)) {
+      return response.message.content.map(x => x?.text || '').join('');
+    }
+    return response?.text || '';
   }
 
   function buildPrompt(question, context) {
@@ -53,38 +58,47 @@
     return !!(window.puter && window.puter.ai && typeof window.puter.ai.chat === 'function');
   }
 
+  function waitForPuter(timeoutMs) {
+    const started = Date.now();
+    const timeout = timeoutMs || PUTER_TIMEOUT;
+    return new Promise((resolve, reject) => {
+      (function check() {
+        if (hasPuter()) return resolve(window.puter);
+        if (Date.now() - started >= timeout) {
+          reject(new Error('Puter.js se učitao, ali puter.ai.chat nije dostupan.'));
+          return;
+        }
+        setTimeout(check, 100);
+      })();
+    });
+  }
+
   function loadPuter() {
     if (hasPuter()) return Promise.resolve(window.puter);
     if (puterLoadPromise) return puterLoadPromise;
 
     puterLoadPromise = new Promise((resolve, reject) => {
-      const existing = document.querySelector('script[data-patriasoul-puter]');
-      if (existing) {
-        const started = Date.now();
-        const check = () => {
-          if (hasPuter()) return resolve(window.puter);
-          if (Date.now() - started >= 15000) return reject(new Error('Puter.js se učitao, ali njegov AI API nije dostupan.'));
-          setTimeout(check, 100);
-        };
-        check();
-        return;
+      let script = document.querySelector('script[data-patriasoul-puter]');
+      if (!script) {
+        script = document.createElement('script');
+        script.src = PUTER_SRC;
+        script.async = false;
+        script.dataset.patriasoulPuter = 'true';
+        document.head.appendChild(script);
       }
 
-      const script = document.createElement('script');
-      script.src = PUTER_SRC;
-      script.async = false;
-      script.dataset.patriasoulPuter = 'true';
-      script.onload = () => {
-        const started = Date.now();
-        const check = () => {
-          if (hasPuter()) return resolve(window.puter);
-          if (Date.now() - started >= 15000) return reject(new Error('Puter.js se učitao, ali njegov AI API nije dostupan.'));
-          setTimeout(check, 100);
-        };
-        check();
-      };
-      script.onerror = () => reject(new Error('Ne mogu učitati Puter.js s ' + PUTER_SRC));
-      document.head.appendChild(script);
+      const failTimer = setTimeout(() => {
+        reject(new Error('Puter.js nije moguće učitati. Provjeri mrežu, CSP ili blokiranje CDN skripti.'));
+      }, PUTER_TIMEOUT + 2000);
+
+      waitForPuter(PUTER_TIMEOUT).then(puter => {
+        clearTimeout(failTimer);
+        resolve(puter);
+      }).catch(error => {
+        clearTimeout(failTimer);
+        puterLoadPromise = null;
+        reject(error);
+      });
     });
 
     return puterLoadPromise;
@@ -93,15 +107,16 @@
   async function ensurePuter() {
     await loadPuter();
     if (!hasPuter()) throw new Error('Puter.js nije učitan.');
+    return window.puter;
   }
 
   async function ensurePuterAuth() {
-    await ensurePuter();
-    if (window.puter.auth && typeof window.puter.auth.isSignedIn === 'function' && !window.puter.auth.isSignedIn()) {
-      if (typeof window.puter.auth.signIn !== 'function') {
+    const puter = await ensurePuter();
+    if (puter.auth && typeof puter.auth.isSignedIn === 'function' && !puter.auth.isSignedIn()) {
+      if (typeof puter.auth.signIn !== 'function') {
         throw new Error('Puter prijava nije dostupna.');
       }
-      await window.puter.auth.signIn({ attempt_temp_user_creation: true });
+      await puter.auth.signIn({ attempt_temp_user_creation: true });
     }
   }
 
@@ -135,18 +150,40 @@
     }
 
     await ensurePuterAuth();
-    const request = { stream: options.stream === true };
-    if (options.model) request.model = options.model;
+    const request = {
+      stream: options.stream === true,
+      model: options.model || (window.PatriaSoulAIConfig && window.PatriaSoulAIConfig.model) || 'gpt-5.6-luna'
+    };
     const response = await window.puter.ai.chat(prompt, request);
 
     return {
       text: getText(response),
-      model: options.model || 'Puter default model',
+      model: request.model,
       provider: 'puter',
       context,
       usedKnowledgeBase: context.length > 0
     };
   }
 
-  window.PatriaSoulAI = { ask, buildPrompt };
+  async function healthCheck() {
+    const status = {
+      puter: false,
+      chat: false,
+      auth: false,
+      agent: !!(window.PatriaSoulAgent && typeof window.PatriaSoulAgent.ask === 'function'),
+      retriever: !!(window.PatriaSoulKnowledgeRetriever && typeof window.PatriaSoulKnowledgeRetriever.retrieve === 'function'),
+      error: null
+    };
+    try {
+      const puter = await ensurePuter();
+      status.puter = true;
+      status.chat = !!(puter.ai && typeof puter.ai.chat === 'function');
+      status.auth = !puter.auth || typeof puter.auth.isSignedIn !== 'function' || puter.auth.isSignedIn();
+    } catch (error) {
+      status.error = error?.message || String(error);
+    }
+    return status;
+  }
+
+  window.PatriaSoulAI = { ask, buildPrompt, ensurePuter, healthCheck };
 })();
