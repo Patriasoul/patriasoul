@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T11:13:49.013900+00:00",
+  "updatedAt": "2026-09-06T11:48:25.072245+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,6 +9,12 @@
       "humidity": null
     },
     "Bjelovar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Crikvenica": {
       "temp": null,
       "condition": null,
       "wind": null,
