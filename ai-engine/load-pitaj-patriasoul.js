@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const AI_VERSION = '46';
+  const AI_VERSION = '48';
   const requiredScripts = [
     '/ai/ollama-config.js',
     '/ai/ollama-client.js',
