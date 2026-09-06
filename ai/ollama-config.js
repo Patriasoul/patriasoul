@@ -5,7 +5,7 @@ window.PatriaSoulAIConfig = Object.freeze({
   apiEndpoint: 'https://azerctpwfzdivydsxyex.supabase.co/functions/v1/patria-ai',
   localProvider: 'ollama',
   baseUrl: 'http://127.0.0.1:11434',
-  model: 'gpt-5.6-luna',
+  model: 'auto:free',
   chatEnabled: true,
   publicExposure: true,
   knowledgeOnlyFallback: true
