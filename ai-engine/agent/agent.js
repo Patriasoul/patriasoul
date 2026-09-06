@@ -1,8 +1,8 @@
 /* PatriaSoul AI Agent — Agent v1
  *
- * Connects the read-only router to the existing Knowledge Base and Puter.js.
- * The agent is intentionally bounded: it can retrieve context, select a
- * read-only ability, and stream a final answer. It cannot write to the site.
+ * Connects the read-only router to the existing Knowledge Base and provider adapter.
+ * The agent is intentionally bounded: it can retrieve context and generate a final
+ * answer, but it cannot write to the site.
  */
 (function (global) {
   'use strict';
@@ -27,12 +27,12 @@
     if (!global.PatriaSoulKnowledgeRetriever) {
       throw new Error('PatriaSoul Knowledge Retriever nije učitan.');
     }
-    if (!global.puter || !global.puter.ai || typeof global.puter.ai.chat !== 'function') {
-      throw new Error('Puter.js nije učitan.');
+    if (!global.PatriaSoulAI || typeof global.PatriaSoulAI.ask !== 'function') {
+      throw new Error('PatriaSoul AI provider nije učitan.');
     }
   }
 
-  function buildSystemPrompt(route, context) {
+  function buildPrompt(route, context, question) {
     const sources = context.map(function (item, index) {
       return `[${index + 1}] ${item.title}\n${item.content}\nIzvor: ${item.sourceTitle || item.source || 'PatriaSoul baza'}\nStatus: ${item.status}`;
     }).join('\n\n');
@@ -52,11 +52,14 @@
       `OPIS: ${(global.PatriaSoulAgentTools.get(route.tool) || {}).description || 'Nema odabrane Ability.'}`,
       '',
       'KONTEKST PATRIA SOUL BAZE:',
-      sources || 'Nema relevantnog zapisa.'
+      sources || 'Nema relevantnog zapisa.',
+      '',
+      'PITANJE KORISNIKA:',
+      question
     ].join('\n');
   }
 
-  async function stream(question, options) {
+  async function ask(question, options) {
     const opts = options || {};
     const q = String(question || '').trim();
     if (!q) throw new Error('Upiši pitanje.');
@@ -71,56 +74,28 @@
       filters: opts.filters || {}
     });
     const context = global.PatriaSoulKnowledgeRetriever.buildContext(results);
+    const prompt = buildPrompt(route, context, q);
 
-    const messages = [
-      { role: 'system', content: buildSystemPrompt(route, context) },
-      { role: 'user', content: q }
-    ];
-
-    const request = {
-      stream: true,
-      compaction: opts.compaction === false ? false : true
-    };
-    if (opts.model) request.model = opts.model;
-    if (opts.temperature !== undefined) request.temperature = opts.temperature;
-
-    const response = await global.puter.ai.chat(messages, request);
+    const result = await global.PatriaSoulAI.ask(prompt, {
+      provider: opts.provider,
+      model: opts.model,
+      baseUrl: opts.baseUrl,
+      stream: false,
+      trustedOnly: opts.trustedOnly !== false,
+      knowledge: []
+    });
 
     return {
-      response: response,
+      text: result && result.text ? result.text : 'Trenutno nema odgovora.',
       route: route,
       results: results,
       context: context,
-      provider: 'puter',
-      model: opts.model || 'Puter default model'
+      provider: result && result.provider ? result.provider : 'unknown',
+      model: result && result.model ? result.model : ''
     };
   }
 
-  async function ask(question, options) {
-    const run = await stream(question, options);
-    let text = '';
-    let compaction = null;
-
-    for await (const part of run.response) {
-      if (part && part.type === 'text' && part.text) {
-        text += part.text;
-      } else if (part && part.text) {
-        text += part.text;
-      } else if (part && part.type === 'compaction') {
-        compaction = part;
-      } else if (part && part.type === 'error') {
-        throw new Error(part.message || 'Puter AI streaming greška.');
-      }
-    }
-
-    return Object.assign(run, {
-      text: text,
-      compaction: compaction
-    });
-  }
-
   global.PatriaSoulAgent = Object.freeze({
-    stream: stream,
     ask: ask
   });
 })(window);
