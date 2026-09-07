@@ -3,20 +3,10 @@ export default {
     const url = new URL(request.url);
     const path = decodeURIComponent(url.pathname);
 
-    // Legacy compatibility: older pages requested these files.
+    // Legacy compatibility: older pages requested this asset.
     if (path === '/images/Hrvatske_kockice.png') {
       const replacementUrl = new URL('/images/flag-of-croatia-free-vector.jpg', request.url);
       return env.ASSETS.fetch(new Request(replacementUrl, request));
-    }
-
-    if (path === '/ai-engine/puter-ai.js') {
-      return new Response('// Legacy Puter AI compatibility shim. PatriaSoul now uses its native AI engine.\n', {
-        status: 200,
-        headers: {
-          'Content-Type': 'application/javascript; charset=utf-8',
-          'Cache-Control': 'public, max-age=3600'
-        }
-      });
     }
 
     // Serve the canonical SVG favicon even when browsers request /favicon.ico.
