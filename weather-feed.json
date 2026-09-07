@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T07:53:10.471533+00:00",
+  "updatedAt": "2026-09-07T08:17:34.668808+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -63,6 +63,12 @@
       "humidity": null
     },
     "Makarska": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Opatija": {
       "temp": null,
       "condition": null,
       "wind": null,
