@@ -1,38 +1,16 @@
-// PatriaSoul AI provider
-// Public-safe adapter. The local Answer Engine is the primary path.
+// PatriaSoul AI provider — knowledge-only
+// Nema vanjskog AI providera, endpointa, API ključa ni mrežnog AI poziva.
 (function (global) {
   'use strict';
-
-  function config() { return global.PatriaSoulAIConfig || {}; }
 
   function textOf(response) {
     if (!response) return '';
     if (typeof response === 'string') return response;
-    return response.text || response.output_text || response.message?.content || '';
-  }
-
-  function buildPrompt(question, context) {
-    const sources = (context || []).map((item, i) =>
-      `[${i + 1}] ${item.title}\n${item.content}\nIzvor: ${item.sourceTitle || item.source || 'PatriaSoul baza'}\nStatus: ${item.status}`
-    ).join('\n\n');
-
-    return [
-      'Ti si PatriaSoul AI, digitalni vodič kroz Hrvatsku i sadržaj portala PatriaSoul.',
-      'Odgovaraj na hrvatskom.',
-      'Prioritet imaju potvrđeni podaci iz PatriaSoul Knowledge Base.',
-      'Ne izmišljaj činjenice. Ako baza nije dovoljna, reci to jasno.',
-      '',
-      'KONTEKST:',
-      sources || 'Nema relevantnog zapisa.',
-      '',
-      'PITANJE:',
-      question
-    ].join('\n');
+    return response.text || '';
   }
 
   async function ask(question, options) {
     const opts = options || {};
-    const cfg = config();
     const context = Array.isArray(opts.knowledge) ? opts.knowledge : [];
     const engine = global.PatriaSoulAnswerEngine;
 
@@ -50,7 +28,7 @@
       };
     }
 
-    if (cfg.knowledgeOnlyFallback && context.length) {
+    if (context.length) {
       return {
         text: 'Prema relevantnim zapisima PatriaSoul baze:\n\n' + context.slice(0, 3).map((item, i) => `${i + 1}. ${item.title}\n${cleanText(item.content)}`).join('\n\n'),
         model: 'knowledge-base-fallback',
@@ -69,10 +47,10 @@
   }
 
   async function healthCheck() {
-    const cfg = config();
     return {
       provider: 'patriasoul-answer-engine',
       endpoint: null,
+      externalProvider: false,
       agent: !!global.PatriaSoulAgent,
       retriever: !!global.PatriaSoulKnowledgeRetriever,
       answerEngine: !!global.PatriaSoulAnswerEngine,
@@ -80,5 +58,5 @@
     };
   }
 
-  global.PatriaSoulAI = Object.freeze({ ask, buildPrompt, healthCheck });
+  global.PatriaSoulAI = Object.freeze({ ask, healthCheck });
 })(window);
