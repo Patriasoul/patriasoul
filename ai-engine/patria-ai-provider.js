@@ -1,6 +1,5 @@
 // PatriaSoul AI provider
-// Public-safe adapter: the browser talks to the PatriaSoul backend only.
-// No provider secret or third-party authentication belongs in this file.
+// Public-safe adapter. The local Answer Engine is the primary path.
 (function (global) {
   'use strict';
 
@@ -22,7 +21,6 @@
       'Odgovaraj na hrvatskom.',
       'Prioritet imaju potvrđeni podaci iz PatriaSoul Knowledge Base.',
       'Ne izmišljaj činjenice. Ako baza nije dovoljna, reci to jasno.',
-      'Zapise draft/review ne predstavljaj kao potvrđene činjenice.',
       '',
       'KONTEKST:',
       sources || 'Nema relevantnog zapisa.',
@@ -32,116 +30,53 @@
     ].join('\n');
   }
 
-  function knowledgeFallback(context) {
-    if (!context?.length) return 'U PatriaSoul bazi nema dovoljno potvrđenih podataka za ovo pitanje.';
-    return 'Prema relevantnim zapisima PatriaSoul baze:\n\n' + context.slice(0, 3).map((item, i) => {
-      const text = String(item.content || '').trim();
-      return `${i + 1}. ${item.title}\n${text.length > 700 ? text.slice(0, 700).replace(/\s+\S*$/, '') + '…' : text}`;
-    }).join('\n\n') + '\n\nIzvor: PatriaSoul Knowledge Base.';
-  }
-
   async function ask(question, options) {
     const opts = options || {};
     const cfg = config();
     const context = Array.isArray(opts.knowledge) ? opts.knowledge : [];
-    const prompt = opts.prompt || buildPrompt(question, context);
-    const endpoint = opts.apiEndpoint || cfg.apiEndpoint || '/api/ai';
+    const engine = global.PatriaSoulAnswerEngine;
 
-    try {
-      console.info('[PatriaSoul AI] poziv backendu', {
-        endpoint,
-        question: String(question),
-        model: opts.model || cfg.model || 'auto:free',
-        contextItems: context.length
-      });
-
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'omit',
-        body: JSON.stringify({
-          question: String(question),
-          prompt,
-          context,
-          model: opts.model || cfg.model || 'auto:free'
-        })
-      });
-
-      const rawText = await response.text();
-      let data = null;
-      try {
-        data = rawText ? JSON.parse(rawText) : null;
-      } catch (parseError) {
-        console.error('[PatriaSoul AI] backend nije vratio valjani JSON', {
-          status: response.status,
-          statusText: response.statusText,
-          rawText: rawText.slice(0, 2000),
-          parseError: parseError?.message || String(parseError)
-        });
-        throw new Error('PatriaSoul AI servis je vratio neispravan odgovor (' + response.status + ').');
-      }
-
-      console.info('[PatriaSoul AI] backend odgovor', {
-        status: response.status,
-        ok: response.ok,
-        provider: data?.provider || null,
-        model: data?.model || null,
-        finishReason: data?.finishReason || null,
-        secretDetected: data?.secretDetected ?? null,
-        hasText: !!textOf(data),
-        error: data?.error || null,
-        providerStatus: data?.providerStatus || null
-      });
-
-      if (!response.ok) {
-        const detail = data?.error || ('HTTP ' + response.status);
-        throw new Error('PatriaSoul AI servis nije dostupan (' + response.status + '): ' + detail);
-      }
-
-      const text = textOf(data);
-      if (!text) {
-        throw new Error('PatriaSoul AI servis je vratio prazan odgovor.');
-      }
-
+    if (engine && typeof engine.compose === 'function') {
+      const answer = engine.compose(String(question || ''), context);
       return {
-        text,
-        model: data.model || cfg.model,
-        provider: data.provider || 'patriasoul-api',
+        text: textOf(answer),
+        model: answer.model || 'knowledge-only',
+        provider: answer.provider || 'patriasoul-answer-engine',
         context,
-        usedKnowledgeBase: context.length > 0,
-        finishReason: data.finishReason || null
+        usedKnowledgeBase: !!answer.usedKnowledgeBase,
+        confidence: answer.confidence ?? 0,
+        sources: answer.sources || [],
+        fallback: false
       };
-    } catch (error) {
-      console.error('[PatriaSoul AI] poziv nije uspio', {
-        endpoint,
-        message: error?.message || String(error),
-        name: error?.name || null,
-        stack: error?.stack || null
-      });
-
-      if (cfg.knowledgeOnlyFallback && context.length) {
-        return {
-          text: knowledgeFallback(context),
-          model: 'knowledge-base-fallback',
-          provider: 'patriasoul-knowledge',
-          context,
-          usedKnowledgeBase: true,
-          fallback: true,
-          providerError: error?.message || String(error)
-        };
-      }
-      throw error;
     }
+
+    if (cfg.knowledgeOnlyFallback && context.length) {
+      return {
+        text: 'Prema relevantnim zapisima PatriaSoul baze:\n\n' + context.slice(0, 3).map((item, i) => `${i + 1}. ${item.title}\n${cleanText(item.content)}`).join('\n\n'),
+        model: 'knowledge-base-fallback',
+        provider: 'patriasoul-knowledge',
+        context,
+        usedKnowledgeBase: true,
+        fallback: true
+      };
+    }
+
+    throw new Error('PatriaSoul Answer Engine nije učitan.');
+  }
+
+  function cleanText(value) {
+    return String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
   async function healthCheck() {
     const cfg = config();
     return {
-      provider: cfg.provider || 'patriasoul-api',
-      endpoint: cfg.apiEndpoint || '/api/ai',
+      provider: 'patriasoul-answer-engine',
+      endpoint: null,
       agent: !!global.PatriaSoulAgent,
       retriever: !!global.PatriaSoulKnowledgeRetriever,
-      ready: true
+      answerEngine: !!global.PatriaSoulAnswerEngine,
+      ready: !!global.PatriaSoulAnswerEngine
     };
   }
 
