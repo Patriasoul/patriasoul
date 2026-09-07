@@ -1,4 +1,4 @@
-/* PatriaSoul AI Agent — Knowledge-only Agent v5
+/* PatriaSoul AI Agent — Knowledge-only Agent v6
  * Read-only router + Knowledge Base + local Answer Engine.
  * The agent never writes to the site and never calls external AI APIs.
  */
@@ -6,6 +6,10 @@
   'use strict';
 
   const MAX_CONTEXT_ITEMS = 6;
+  const KNOWLEDGE_FILES = [
+    '/ai-engine/knowledge/index.json',
+    '/ai-engine/knowledge/core-knowledge.json'
+  ];
 
   function isQuizQuestion(question) {
     const q = String(question || '').toLocaleLowerCase('hr-HR');
@@ -14,16 +18,30 @@
 
   function isCityQuestion(question) {
     const q = String(question || '').toLocaleLowerCase('hr-HR');
-    return /\b(grad|grada|gradu|gradom|gradovi|vukovar|zagreb|split|rijeka|dubrovnik)\b/.test(q);
+    return /\b(grad|grada|gradu|gradom|gradovi|vukovar|zagreb|split|rijeka|dubrovnik|zadar|osijek|knin|sinj|pula|sibenik|šibenik|trogir|varazdin|varaždin|karlovac|gospic|gospić)\b/.test(q);
   }
 
-  async function loadKnowledge() {
-    const response = await fetch('/ai-engine/knowledge/index.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error('PatriaSoul Knowledge Base nije dostupna.');
+  async function loadKnowledgeFile(path) {
+    const response = await fetch(path, { cache: 'no-store' });
+    if (!response.ok) throw new Error('Ne mogu učitati PatriaSoul Knowledge Base: ' + path);
     const data = await response.json();
     if (Array.isArray(data)) return data;
     if (data && Array.isArray(data.items)) return data.items;
-    throw new Error('PatriaSoul Knowledge Base ima neispravan format.');
+    throw new Error('PatriaSoul Knowledge Base ima neispravan format: ' + path);
+  }
+
+  async function loadKnowledge() {
+    const loaded = await Promise.all(KNOWLEDGE_FILES.map(loadKnowledgeFile));
+    const seen = new Set();
+    const merged = [];
+
+    loaded.flat().forEach(item => {
+      if (!item || !item.id || seen.has(item.id)) return;
+      seen.add(item.id);
+      merged.push(item);
+    });
+
+    return merged;
   }
 
   function ensureDependencies() {
