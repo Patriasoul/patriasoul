@@ -1,6 +1,6 @@
-/* PatriaSoul AI — content generator
+/* PatriaSoul AI — knowledge-only content generator
  * Generates drafts from the canonical PatriaSoul Knowledge Base.
- * It never publishes or writes repository content.
+ * It never publishes, writes repository content or calls external AI APIs.
  */
 (function (global) {
   'use strict';
@@ -24,45 +24,14 @@
     return global.PatriaSoulKnowledgeRetriever.buildContext(results);
   }
 
-  function promptFor(type, topic, context) {
-    const sources = context.map(function (item, index) {
-      return `[${index + 1}] ${item.title}\n${item.content}\nIzvor: ${item.sourceTitle || item.source || 'PatriaSoul baza'}\nStatus: ${item.status}`;
-    }).join('\n\n') || 'Nema dovoljno potvrđenih podataka u bazi.';
-
-    const common = [
-      'Ti si urednički AI portala PatriaSoul.',
-      'Piši na hrvatskom jeziku.',
-      'Koristi samo potvrđene podatke iz priloženog PatriaSoul konteksta.',
-      'Ne izmišljaj činjenice, datume, osobe, izvore ili citate.',
-      'Ako podatak nije potvrđen, jasno ga označi ili izostavi.',
-      'Rezultat je NACRT i ne smije se predstavljati kao automatski objavljen sadržaj.',
-      '', `TEMA: ${topic}`, '', 'POTVRĐENI KONTEKST:', sources
-    ];
-
-    if (type === 'article') common.push('', 'ZADATAK:', 'Izradi nacrt članka s naslovom, podnaslovom, uvodom, međunaslovima, glavnim tekstom, zaključkom i odjeljkom "Izvori PatriaSoul".');
-    else if (type === 'summary') common.push('', 'ZADATAK:', 'Sažmi temu jasno i čitko u 5–8 kratkih odlomaka ili natuknica.');
-    else if (type === 'social') common.push('', 'ZADATAK:', 'Napiši objavu za Facebook/Instagram, informativnu i domoljubnu bez izmišljanja činjenica. Dodaj kratak naslov i prikladne hashtagove.');
-    else if (type === 'seo') common.push('', 'ZADATAK:', 'Izradi SEO paket: SEO naslov, meta opis do približno 155 znakova, fokusnu ključnu riječ, 5 pomoćnih ključnih riječi i URL slug.');
-    else common.push('', 'ZADATAK:', 'Izradi koristan urednički nacrt koristeći samo potvrđeni kontekst.');
-
-    return common.join('\n');
-  }
-
-  async function generate(type, topic, options) {
+  async function generate(type, topic) {
     const cleanTopic = String(topic || '').trim();
     if (!cleanTopic) throw new Error('Tema je prazna.');
     if (!global.PatriaSoulAI || typeof global.PatriaSoulAI.ask !== 'function') throw new Error('PatriaSoul AI provider nije učitan.');
 
     const items = await loadKnowledge();
     const context = getContext(items, cleanTopic);
-    const opts = options || {};
-    const response = await global.PatriaSoulAI.ask(cleanTopic, {
-      provider: opts.provider,
-      model: opts.model,
-      apiEndpoint: opts.apiEndpoint,
-      knowledge: context,
-      prompt: promptFor(type, cleanTopic, context)
-    });
+    const response = await global.PatriaSoulAI.ask(cleanTopic, { knowledge: context });
 
     return { type, topic: cleanTopic, text: response?.text || '', context, fallback: !!response?.fallback };
   }
