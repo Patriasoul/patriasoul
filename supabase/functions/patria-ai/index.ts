@@ -17,7 +17,12 @@ Budi sažet: ciljaj na najvažnije činjenice, najviše oko 250–350 riječi, o
 Ako koristiš popis, neka bude kratak i završi ga prije kraja odgovora.
 Nemoj prekidati odgovor usred rečenice, stavke ili misli.`;
 
-async function callBazaarLink(apiKey: string, model: string, messages: Array<{ role: string; content: string }>) {
+async function callBazaarLink(
+  apiKey: string,
+  model: string,
+  messages: Array<{ role: string; content: string }>,
+  maxTokens = 8192
+) {
   return fetch("https://api.bazaarlink.ai/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -28,10 +33,19 @@ async function callBazaarLink(apiKey: string, model: string, messages: Array<{ r
       model,
       messages,
       temperature: 0.3,
-      max_tokens: 8192,
+      max_tokens: maxTokens,
       enable_thinking: false
     })
   });
+}
+
+function extractText(data: any): string {
+  return String(
+    data?.choices?.[0]?.message?.content ||
+    data?.choices?.[0]?.text ||
+    data?.output_text ||
+    ""
+  ).trim();
 }
 
 Deno.serve(async (req) => {
@@ -76,8 +90,10 @@ Deno.serve(async (req) => {
       { role: "user", content: prompt }
     ];
 
-    let bazaarResponse = await callBazaarLink(apiKey, model, messages);
+    let bazaarResponse = await callBazaarLink(apiKey, model, messages, 8192);
     let data = await bazaarResponse.json();
+    let text = bazaarResponse.ok ? extractText(data) : "";
+    let finishReason = data?.choices?.[0]?.finish_reason || null;
 
     if (!bazaarResponse.ok) {
       console.error("PatriaSoul BazaarLink error", bazaarResponse.status, data);
@@ -91,33 +107,40 @@ Deno.serve(async (req) => {
       });
     }
 
-    let text = data?.choices?.[0]?.message?.content ||
-      data?.choices?.[0]?.text ||
-      data?.output_text ||
-      "";
-    let finishReason = data?.choices?.[0]?.finish_reason || null;
-
-    // Ako provider ipak prekine odgovor zbog duljine, tražimo kratku završnu verziju
-    // umjesto da korisniku prikažemo odrezanu rečenicu.
-    if (text && finishReason === "length") {
+    // Qwen ponekad može potrošiti izlazni budžet na interno razmišljanje i
+    // vratiti content="". U tom slučaju obavezno ponavljamo zahtjev.
+    // Prethodna verzija je retry radila samo kada je tekst već postojao,
+    // pa se upravo ovaj slučaj pretvarao u 502.
+    if (!text || finishReason === "length") {
       const compactMessages = [
-        { role: "system", content: systemPrompt + " Ovo je sažetak za korisnika. Odgovori potpuno i završi sve rečenice; najviše 180 riječi." },
+        {
+          role: "system",
+          content: `${systemPrompt}
+Ovo je drugi pokušaj. Ne prikazuj reasoning. Vrati ISKLJUČIVO konačan odgovor korisniku.
+Odgovor mora imati barem jednu potpunu rečenicu i mora završiti bez prekidanja.
+Najviše 180 riječi.`
+        },
         { role: "user", content: prompt }
       ];
 
       try {
-        const retryResponse = await callBazaarLink(apiKey, model, compactMessages);
+        const retryResponse = await callBazaarLink(apiKey, model, compactMessages, 4096);
         const retryData = await retryResponse.json();
-        if (retryResponse.ok) {
-          const retryText = retryData?.choices?.[0]?.message?.content ||
-            retryData?.choices?.[0]?.text ||
-            retryData?.output_text ||
-            "";
-          if (retryText) {
-            text = retryText;
-            finishReason = retryData?.choices?.[0]?.finish_reason || null;
-            data = retryData;
-          }
+        const retryText = retryResponse.ok ? extractText(retryData) : "";
+        const retryFinishReason = retryData?.choices?.[0]?.finish_reason || null;
+
+        console.info("PatriaSoul AI compact retry", {
+          status: retryResponse.status,
+          ok: retryResponse.ok,
+          model: retryData?.model || model,
+          finishReason: retryFinishReason,
+          hasText: !!retryText
+        });
+
+        if (retryResponse.ok && retryText) {
+          text = retryText;
+          finishReason = retryFinishReason;
+          data = retryData;
         }
       } catch (retryError) {
         console.error("PatriaSoul AI compact retry error", retryError);
@@ -125,12 +148,21 @@ Deno.serve(async (req) => {
     }
 
     if (!text) {
-      console.error("BazaarLink nije vratio tekst.", data);
+      console.error("BazaarLink nije vratio tekst.", {
+        model: data?.model || model,
+        finishReason,
+        choice: data?.choices?.[0] || null,
+        usage: data?.usage || null,
+        warning: data?.warning || null
+      });
+
       return new Response(JSON.stringify({
-        error: "AI provider je vratio prazan odgovor.",
+        error: "AI provider je nakon ponovnog pokušaja vratio prazan odgovor.",
         provider: "bazaarlink",
         providerStatus: 200,
-        finishReason
+        model: data?.model || model,
+        finishReason,
+        retryAttempted: true
       }), {
         status: 502,
         headers: corsHeaders
@@ -138,7 +170,7 @@ Deno.serve(async (req) => {
     }
 
     return new Response(JSON.stringify({
-      text: String(text).trim(),
+      text,
       model: data?.model || model,
       provider: "bazaarlink",
       secretDetected: true,
