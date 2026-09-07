@@ -2,7 +2,7 @@
 (function () {
   'use strict';
 
-  const AI_VERSION = '48';
+  const AI_VERSION = '49';
   const requiredScripts = [
     '/ai/ollama-config.js',
     '/ai/ollama-client.js',
@@ -12,6 +12,7 @@
     '/ai-engine/agent/router.js',
     '/ai-engine/agent/agent.js',
     '/ai-engine/agent/content-generator.js',
+    '/ai-engine/answer-engine.js',
     '/ai-engine/patria-ai-provider.js'
   ];
 
@@ -35,6 +36,7 @@
       ['PatriaSoulAgentRouter', window.PatriaSoulAgentRouter],
       ['PatriaSoulAgentTools', window.PatriaSoulAgentTools],
       ['PatriaSoulAgent', window.PatriaSoulAgent],
+      ['PatriaSoulAnswerEngine', window.PatriaSoulAnswerEngine],
       ['PatriaSoulAI', window.PatriaSoulAI]
     ];
     const missing = checks.filter(([name, value]) => !value).map(([name]) => name);
@@ -42,17 +44,17 @@
   }
 
   async function bootstrap() {
-    window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'dependencies', version: AI_VERSION };
+    window.PatriaSoulAIStatus = { provider: 'patriasoul-answer-engine', ready: false, stage: 'dependencies', version: AI_VERSION };
     for (const src of requiredScripts) await load(src);
     verifyDependencies();
-    window.PatriaSoulAIStatus = { provider: 'patriasoul-api', ready: false, stage: 'widget', version: AI_VERSION };
+    window.PatriaSoulAIStatus = { provider: 'patriasoul-answer-engine', ready: false, stage: 'widget', version: AI_VERSION };
     await load('/ai-engine/pitaj-patriasoul-widget-v2.js');
-    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: true, stage: 'ready', version: AI_VERSION, error: null });
+    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-answer-engine', ready: true, stage: 'ready', version: AI_VERSION, error: null });
   }
 
   window.PatriaSoulAIReady = bootstrap().catch(error => {
     const message = error?.message || String(error);
-    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-api', ready: false, stage: 'error', version: AI_VERSION, error: message });
+    window.PatriaSoulAIStatus = Object.freeze({ provider: 'patriasoul-answer-engine', ready: false, stage: 'error', version: AI_VERSION, error: message });
     console.warn('[PatriaSoul AI] Loader:', message);
     throw error;
   });
