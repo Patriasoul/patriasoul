@@ -1,12 +1,12 @@
 {
-  "enabled": false,
-  "provider": "gemini",
-  "model": "",
+  "enabled": true,
+  "provider": "patriasoul-answer-engine",
+  "model": "knowledge-only",
+  "endpoint": null,
   "knowledgeBase": "knowledge/",
-  "maxContextItems": 8,
-  "maxRequestsPerMinute": 20,
-  "maxRequestsPerDayPerUser": 30,
+  "maxContextItems": 12,
   "requireSourcesForFacts": true,
   "humanReviewForSensitiveNews": true,
-  "storeUserPrompts": false
+  "storeUserPrompts": false,
+  "externalProviders": false
 }
