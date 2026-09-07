@@ -1,11 +1,10 @@
 // Global loader for PatriaSoul AI widget.
+// Potpuno lokalni/knowledge-only engine: nema Putera ni vanjskih AI API-ja.
 (function () {
   'use strict';
 
-  const AI_VERSION = '49';
+  const AI_VERSION = '50';
   const requiredScripts = [
-    '/ai/ollama-config.js',
-    '/ai/ollama-client.js',
     '/ai-engine/quiz-guard.js',
     '/ai-engine/knowledge/retriever.js',
     '/ai-engine/agent/tool-registry.js',
@@ -31,7 +30,6 @@
 
   function verifyDependencies() {
     const checks = [
-      ['PatriaSoulAIConfig', window.PatriaSoulAIConfig],
       ['PatriaSoulKnowledgeRetriever', window.PatriaSoulKnowledgeRetriever],
       ['PatriaSoulAgentRouter', window.PatriaSoulAgentRouter],
       ['PatriaSoulAgentTools', window.PatriaSoulAgentTools],
