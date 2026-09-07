@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T04:51:43.826037+00:00",
+  "updatedAt": "2026-09-07T05:14:55.566663+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -32,19 +32,7 @@
       "wind": null,
       "humidity": null
     },
-    "Gospić": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "RC Gradište (kod Županje)": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Knin": {
       "temp": null,
       "condition": null,
       "wind": null,
