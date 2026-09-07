@@ -1,7 +1,8 @@
 {
-  "provider": "gemini",
-  "endpoint": "/api/ai",
-  "enabled": false,
+  "provider": "patriasoul-answer-engine",
+  "endpoint": null,
+  "enabled": true,
+  "mode": "knowledge-only",
   "tasks": {
     "news_summary": true,
     "news_rewrite": true,
@@ -12,12 +13,12 @@
   },
   "limits": {
     "maxInputChars": 12000,
-    "maxOutputTokens": 1200,
-    "requestsPerMinutePerUser": 5
+    "maxContextItems": 12
   },
   "security": {
-    "apiKeyLocation": "server-environment-secret",
-    "neverExposeApiKeyToBrowser": true,
+    "externalProvider": false,
+    "apiKeys": false,
+    "browserExternalCalls": false,
     "requireEditorialReviewForSensitiveNews": true
   }
 }
