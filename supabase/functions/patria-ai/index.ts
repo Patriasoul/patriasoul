@@ -17,12 +17,7 @@ Budi sažet: ciljaj na najvažnije činjenice, najviše oko 250–350 riječi, o
 Ako koristiš popis, neka bude kratak i završi ga prije kraja odgovora.
 Nemoj prekidati odgovor usred rečenice, stavke ili misli.`;
 
-async function callBazaarLink(
-  apiKey: string,
-  model: string,
-  messages: Array<{ role: string; content: string }>,
-  maxTokens = 8192
-) {
+async function callBazaarLink(apiKey: string, model: string, messages: Array<{ role: string; content: string }>, maxTokens = 8192) {
   return fetch("https://api.bazaarlink.ai/v1/chat/completions", {
     method: "POST",
     headers: {
@@ -34,42 +29,25 @@ async function callBazaarLink(
       messages,
       temperature: 0.3,
       max_tokens: maxTokens,
-      enable_thinking: false
+      reasoning: { effort: "low" }
     })
   });
 }
 
 function extractText(data: any): string {
-  return String(
-    data?.choices?.[0]?.message?.content ||
-    data?.choices?.[0]?.text ||
-    data?.output_text ||
-    ""
-  ).trim();
+  return String(data?.choices?.[0]?.message?.content || data?.choices?.[0]?.text || data?.output_text || "").trim();
 }
 
 Deno.serve(async (req) => {
-  if (req.method === "OPTIONS") {
-    return new Response("ok", { headers: corsHeaders });
-  }
+  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
 
   if (req.method !== "POST") {
-    return new Response(JSON.stringify({ error: "Method not allowed" }), {
-      status: 405,
-      headers: corsHeaders
-    });
+    return new Response(JSON.stringify({ error: "Method not allowed" }), { status: 405, headers: corsHeaders });
   }
 
   const apiKey = Deno.env.get("BAZAARLINK_API_KEY");
   if (!apiKey) {
-    return new Response(JSON.stringify({
-      error: "PatriaSoul AI provider nije konfiguriran.",
-      provider: "bazaarlink",
-      secretDetected: false
-    }), {
-      status: 503,
-      headers: corsHeaders
-    });
+    return new Response(JSON.stringify({ error: "PatriaSoul AI provider nije konfiguriran.", provider: "bazaarlink", secretDetected: false }), { status: 503, headers: corsHeaders });
   }
 
   try {
@@ -79,10 +57,7 @@ Deno.serve(async (req) => {
     const model = String(body?.model || "auto:free");
 
     if (!question || !prompt) {
-      return new Response(JSON.stringify({ error: "Nedostaje pitanje ili kontekst." }), {
-        status: 400,
-        headers: corsHeaders
-      });
+      return new Response(JSON.stringify({ error: "Nedostaje pitanje ili kontekst." }), { status: 400, headers: corsHeaders });
     }
 
     const messages = [
@@ -97,29 +72,13 @@ Deno.serve(async (req) => {
 
     if (!bazaarResponse.ok) {
       console.error("PatriaSoul BazaarLink error", bazaarResponse.status, data);
-      return new Response(JSON.stringify({
-        error: "AI provider nije uspio obraditi zahtjev.",
-        provider: "bazaarlink",
-        providerStatus: bazaarResponse.status
-      }), {
-        status: 502,
-        headers: corsHeaders
-      });
+      return new Response(JSON.stringify({ error: "AI provider nije uspio obraditi zahtjev.", provider: "bazaarlink", providerStatus: bazaarResponse.status }), { status: 502, headers: corsHeaders });
     }
 
-    // Qwen ponekad može potrošiti izlazni budžet na interno razmišljanje i
-    // vratiti content="". U tom slučaju obavezno ponavljamo zahtjev.
-    // Prethodna verzija je retry radila samo kada je tekst već postojao,
-    // pa se upravo ovaj slučaj pretvarao u 502.
+    // Ako provider vrati prazan content ili prekine zbog duljine, pokušavamo još jednom.
     if (!text || finishReason === "length") {
       const compactMessages = [
-        {
-          role: "system",
-          content: `${systemPrompt}
-Ovo je drugi pokušaj. Ne prikazuj reasoning. Vrati ISKLJUČIVO konačan odgovor korisniku.
-Odgovor mora imati barem jednu potpunu rečenicu i mora završiti bez prekidanja.
-Najviše 180 riječi.`
-        },
+        { role: "system", content: `${systemPrompt}\nOvo je drugi pokušaj. Ne prikazuj reasoning. Vrati ISKLJUČIVO konačan odgovor korisniku.\nOdgovor mora imati barem jednu potpunu rečenicu i mora završiti bez prekidanja.\nNajviše 180 riječi.` },
         { role: "user", content: prompt }
       ];
 
@@ -163,10 +122,7 @@ Najviše 180 riječi.`
         model: data?.model || model,
         finishReason,
         retryAttempted: true
-      }), {
-        status: 502,
-        headers: corsHeaders
-      });
+      }), { status: 502, headers: corsHeaders });
     }
 
     return new Response(JSON.stringify({
@@ -178,12 +134,6 @@ Najviše 180 riječi.`
     }), { headers: corsHeaders });
   } catch (error) {
     console.error("PatriaSoul AI exception", error);
-    return new Response(JSON.stringify({
-      error: "Greška u PatriaSoul AI servisu.",
-      provider: "bazaarlink"
-    }), {
-      status: 500,
-      headers: corsHeaders
-    });
+    return new Response(JSON.stringify({ error: "Greška u PatriaSoul AI servisu.", provider: "bazaarlink" }), { status: 500, headers: corsHeaders });
   }
 });
