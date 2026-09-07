@@ -48,12 +48,16 @@
     const endpoint = opts.apiEndpoint || cfg.apiEndpoint || '/api/ai';
 
     try {
+      console.info('[PatriaSoul AI] poziv backendu', {
+        endpoint,
+        question: String(question),
+        model: opts.model || cfg.model || 'auto:free',
+        contextItems: context.length
+      });
+
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        // The PatriaSoul Edge Function is a public AI endpoint; browser cookies
-        // are not required. Omitting credentials also avoids credentialed-CORS
-        // failures when the backend intentionally returns wildcard CORS headers.
         credentials: 'omit',
         body: JSON.stringify({
           question: String(question),
@@ -62,18 +66,59 @@
           model: opts.model || cfg.model || 'auto:free'
         })
       });
-      if (!response.ok) throw new Error('PatriaSoul AI servis nije dostupan (' + response.status + ').');
-      const data = await response.json();
+
+      const rawText = await response.text();
+      let data = null;
+      try {
+        data = rawText ? JSON.parse(rawText) : null;
+      } catch (parseError) {
+        console.error('[PatriaSoul AI] backend nije vratio valjani JSON', {
+          status: response.status,
+          statusText: response.statusText,
+          rawText: rawText.slice(0, 2000),
+          parseError: parseError?.message || String(parseError)
+        });
+        throw new Error('PatriaSoul AI servis je vratio neispravan odgovor (' + response.status + ').');
+      }
+
+      console.info('[PatriaSoul AI] backend odgovor', {
+        status: response.status,
+        ok: response.ok,
+        provider: data?.provider || null,
+        model: data?.model || null,
+        finishReason: data?.finishReason || null,
+        secretDetected: data?.secretDetected ?? null,
+        hasText: !!textOf(data),
+        error: data?.error || null,
+        providerStatus: data?.providerStatus || null
+      });
+
+      if (!response.ok) {
+        const detail = data?.error || ('HTTP ' + response.status);
+        throw new Error('PatriaSoul AI servis nije dostupan (' + response.status + '): ' + detail);
+      }
+
       const text = textOf(data);
-      if (!text) throw new Error('PatriaSoul AI servis je vratio prazan odgovor.');
+      if (!text) {
+        throw new Error('PatriaSoul AI servis je vratio prazan odgovor.');
+      }
+
       return {
         text,
         model: data.model || cfg.model,
         provider: data.provider || 'patriasoul-api',
         context,
-        usedKnowledgeBase: context.length > 0
+        usedKnowledgeBase: context.length > 0,
+        finishReason: data.finishReason || null
       };
     } catch (error) {
+      console.error('[PatriaSoul AI] poziv nije uspio', {
+        endpoint,
+        message: error?.message || String(error),
+        name: error?.name || null,
+        stack: error?.stack || null
+      });
+
       if (cfg.knowledgeOnlyFallback && context.length) {
         return {
           text: knowledgeFallback(context),
@@ -82,7 +127,7 @@
           context,
           usedKnowledgeBase: true,
           fallback: true,
-          providerError: error.message
+          providerError: error?.message || String(error)
         };
       }
       throw error;
