@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T08:36:48.331697+00:00",
+  "updatedAt": "2026-09-07T08:53:43.258252+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -197,9 +197,9 @@
   },
   "alerts": [
     "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 33 °C",
+    "Toplinski val. Maksimalna temperatura > 33 °C; Minimalna temperatura > 23 °C",
     "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 33 °C",
+    "Heat wave. Maximum temperature > 33 °C; Minimum temperature > 23 °C",
     "Žuto upozorenje za vrućinu",
     "Toplinski val. Maksimalna temperatura > 34 °C; Minimalna temperatura > 26 °C",
     "Yellow high temperature warning",
