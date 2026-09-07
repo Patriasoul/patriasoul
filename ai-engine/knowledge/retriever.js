@@ -1,6 +1,6 @@
-// PatriaSoul Knowledge Retriever v3
+// PatriaSoul Knowledge Retriever v4
 // Provider-neutral: priprema relevantne i provjerene zapise za AI.
-// Pravilo: što je izvor pouzdaniji i upit precizniji, zapis je više rangiran.
+// Pravilo: zapis bez stvarnog podudaranja s upitom ne smije ući u kontekst samo zato što je verified/published.
 (function () {
   'use strict';
 
@@ -18,10 +18,6 @@
       .trim();
   }
 
-  // Hrvatski upiti često koriste padežne oblike (npr. Vukovaru,
-  // Vukovara, Vukovarom), dok je naziv u bazi najčešće nominativ.
-  // Ne pokušavamo napraviti punu lematizaciju; umjesto toga stvaramo
-  // nekoliko sigurnih kandidata za podudaranje.
   function tokenVariants(token) {
     const value = normalize(token);
     if (!value || value.length < 3) return [];
@@ -87,12 +83,21 @@
     ].join(' '));
 
     let points = 0;
+    let matched = false;
 
-    // Original exact-token scoring.
+    // Original exact-token scoring, but remember whether the query actually
+    // matched this record. Trusted status alone must never make a record relevant.
     q.forEach(token => {
-      if (title.includes(token)) points += 6;
-      else if (tags.includes(token)) points += 4;
-      else if (haystack.includes(token)) points += 2;
+      if (title.includes(token)) {
+        points += 6;
+        matched = true;
+      } else if (tags.includes(token)) {
+        points += 4;
+        matched = true;
+      } else if (haystack.includes(token)) {
+        points += 2;
+        matched = true;
+      }
 
       const word = new RegExp(`\\b${token}`);
       if (word.test(title)) points += 2;
@@ -103,9 +108,16 @@
     for (const token of searchTokens) {
       if (q.includes(token)) continue;
 
-      if (title.includes(token)) points += 5;
-      else if (tags.includes(token)) points += 3;
-      else if (haystack.includes(token)) points += 1;
+      if (title.includes(token)) {
+        points += 5;
+        matched = true;
+      } else if (tags.includes(token)) {
+        points += 3;
+        matched = true;
+      } else if (haystack.includes(token)) {
+        points += 1;
+        matched = true;
+      }
 
       const word = new RegExp(`\\b${token}`);
       if (word.test(title)) points += 2;
@@ -115,7 +127,10 @@
     const meaningful = searchTokens.filter(token => token.length >= 4);
     if (meaningful.length > 0 && meaningful.every(token => haystack.includes(token))) {
       points += 4;
+      matched = true;
     }
+
+    if (!matched) return 0;
 
     if (filters.type && item.type === filters.type) points += 4;
     if (filters.cityId && item.cityId === filters.cityId) points += 5;
