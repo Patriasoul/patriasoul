@@ -68,7 +68,6 @@
       }
       const r = await agent.ask(q, { quizActive: document.body.dataset.quizActive === 'true' });
       wait.textContent = r?.text || 'Trenutno nemam dovoljno potvrđenih podataka za odgovor.';
-      if (r?.fallback) wait.textContent += '\n\nNapomena: AI servis trenutno nije spojen, pa prikazujem relevantne potvrđene zapise iz PatriaSoul baze.';
     } catch (err) {
       console.error('[PatriaSoul AI]', err);
       wait.textContent = 'PatriaSoul AI trenutno nije dostupan. ' + (err?.message || 'Pokušaj ponovno.');
