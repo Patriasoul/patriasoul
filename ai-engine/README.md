@@ -1,32 +1,32 @@
 # PatriaSoul AI Engine
 
-Centralni AI sloj za PatriaSoul. Engine nije zaseban model; on je sigurna aplikacijska arhitektura koja povezuje PatriaSoul Knowledge Base s odabranim AI providerom.
+Centralni AI sloj za PatriaSoul. Engine je **knowledge-only** aplikacijski sustav: koristi isključivo PatriaSoul Knowledge Base i vlastiti Answer Engine.
 
 ## Princip
 
 1. Zahtjev dolazi iz portala.
-2. Engine određuje vrstu zadatka.
-3. Knowledge Base se pretražuje prije generiranja odgovora.
-4. AI dobiva samo relevantan kontekst.
-5. Odgovor se vraća s informacijom o izvorima i statusu provjere gdje je dostupno.
-6. Osjetljive uredničke radnje ostaju pod ljudskom kontrolom.
+2. Engine određuje vrstu pitanja/zadatka.
+3. PatriaSoul Knowledge Base se pretražuje prije odgovora.
+4. Relevantni potvrđeni zapisi rangiraju se prema pitanju.
+5. `PatriaSoulAnswerEngine` sastavlja odgovor iz pronađenih podataka.
+6. Ako nema dovoljno potvrđenih podataka, engine to jasno kaže umjesto da izmišlja odgovor.
 
-## Predviđeni zadaci
+## Potpuna neovisnost
 
-- `ask` — pitanja korisnika o PatriaSoul sadržaju
-- `summarize_news` — sažetak vijesti
-- `rewrite_news` — urednički nacrt vlastitim riječima uz navođenje izvora
-- `quiz_generate` — prijedlog pitanja za kviz
-- `explain_quiz` — objašnjenje odgovora
-- `fact_check` — pomoć pri provjeri tvrdnji
-- `daily_brief` — PatriaSoul danas
+PatriaSoul AI **ne koristi Puter, OpenAI, Gemini, Anthropic, Ollama, Supabase AI funkcije niti bilo koji drugi vanjski AI provider/API**.
 
-## Sigurnost
+Nema API ključeva, vanjskih AI endpointa ni poziva prema AI servisima iz preglednika.
 
-API ključevi nikad ne smiju biti u frontend kodu ili Git repozitoriju. Produkcijski provider spaja se preko serverskog endpointa i environment secreta.
+## Komponente
 
-Engine je zamišljen kao provider-neutralan: Gemini, OpenAI ili drugi kompatibilni provider mogu se uključiti bez promjene javnog sučelja portala.
+- `knowledge/retriever.js` — dohvat relevantnih zapisa
+- `answer-engine.js` — lokalno sastavljanje odgovora
+- `agent/agent.js` — usmjeravanje pitanja
+- `agent/router.js` — određivanje vrste zadatka
+- `agent/tool-registry.js` — dostupne AI sposobnosti
+- `quiz-guard.js` — zaštita aktivnog kviza
+- `pitaj-patriasoul-widget-v2.js` — korisničko sučelje chata
 
-## Trenutni status
+## Ograničenje
 
-`disabled / scaffold` — nema aktivnog vanjskog API poziva. Sljedeći korak je implementacija server endpointa i Knowledge Base retrievera.
+Ovaj engine nije generativni LLM. Njegova prednost je što odgovore temelji na vlastitoj, kontroliranoj PatriaSoul bazi i ne šalje korisnička pitanja trećim AI servisima.
