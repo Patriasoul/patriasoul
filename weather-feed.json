@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T21:49:05.490720+00:00",
+  "updatedAt": "2026-09-08T22:15:01.258523+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -148,13 +148,25 @@
     }
   },
   "alerts": [
-    "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 33 °C",
-    "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 33 °C",
-    "Žuto upozorenje za vrućinu",
-    "Toplinski val. Maksimalna temperatura > 32 °C; Minimalna temperatura > 26 °C",
-    "Yellow high temperature warning",
-    "Heat wave. Maximum temperature > 32 °C; Minimum temperature > 26 °C"
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno mogući izraženiji pljuskovi s grmljavinom i prolazno jakim vjetrom, osobito na zapadu područja i u Posavini. Vjerojatnost grmljavine > 50 %",
+    "Yellow thunderstorm warning",
+    "Locally possible severe thundershowers. Lightning risk > 50 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno mogući izraženiji pljuskovi s grmljavinom i na udare olujnim vjetrom. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 50 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers possible. Maximum gust speed > 65 km/h; Lightning risk > 50 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno mogući izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 50 %",
+    "Yellow thunderstorm warning",
+    "Locally possible severe thundershowers. Lightning risk > 50 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Ponegdje izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers. Lightning risk > 60 %",
+    "Narančasto upozorenje za grmljavinsku oluju",
+    "Mjestimice izraženiji pljuskovi s grmljavinom, moguće i na udare olujnim vjetrom. Lokalno je moguća pojava tuče. Poslijepodne lokalno moguće grmljavinsko nevrijeme, osobito u Istri. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 70 %",
+    "Orange thunderstorm warning",
+    "Locally severe thundershowers with possible gale force gust. Locally possible hail. Locally possible thunderstorm, especially in Istria. Maximum gust speed > 65 km/h; Lightning risk > 70 %"
   ]
 }\n
