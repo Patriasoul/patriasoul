@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T15:54:42.274637+00:00",
+  "updatedAt": "2026-09-08T16:17:33.680927+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -14,31 +14,7 @@
       "wind": null,
       "humidity": null
     },
-    "Dubrovnik": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Dubrovnik-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Gospić": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "RC Gradište (kod Županje)": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Knin": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -62,12 +38,6 @@
       "wind": null,
       "humidity": null
     },
-    "Osijek-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Pula-aerodrom": {
       "temp": null,
       "condition": null,
@@ -80,19 +50,7 @@
       "wind": null,
       "humidity": null
     },
-    "Slavonski Brod": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Split-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Šibenik": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -146,13 +104,13 @@
       "wind": null,
       "humidity": null
     },
-    "Pula": {
+    "Dubrovnik": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
-    "Osijek": {
+    "Pula": {
       "temp": null,
       "condition": null,
       "wind": null,
