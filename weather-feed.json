@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T17:15:47.663940+00:00",
+  "updatedAt": "2026-09-08T17:32:14.274353+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -20,6 +20,12 @@
       "wind": null,
       "humidity": null
     },
+    "Dubrovnik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Dubrovnik-aerodrom": {
       "temp": null,
       "condition": null,
@@ -33,6 +39,12 @@
       "humidity": null
     },
     "RC Gradište (kod Županje)": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Knin": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -129,12 +141,6 @@
       "humidity": null
     },
     "Split": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Dubrovnik": {
       "temp": null,
       "condition": null,
       "wind": null,
