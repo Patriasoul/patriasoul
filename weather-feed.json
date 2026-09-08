@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T14:17:55.321896+00:00",
+  "updatedAt": "2026-09-08T14:37:08.751538+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,6 +9,12 @@
       "humidity": null
     },
     "Crikvenica": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Dubrovnik": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -129,12 +135,6 @@
       "humidity": null
     },
     "Split": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Dubrovnik": {
       "temp": null,
       "condition": null,
       "wind": null,
