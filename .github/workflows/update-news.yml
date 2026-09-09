@@ -18,26 +18,28 @@ jobs:
       - name: Preuzmi i obradi RSS vijesti
         shell: python
         run: |
-          import json, re, html, urllib.request
+          import json, re, html, urllib.request, hashlib
           import xml.etree.ElementTree as ET
           from datetime import datetime, timezone
           from email.utils import parsedate_to_datetime
 
           with open('news-sources.json', encoding='utf-8') as f:
               cfg=json.load(f)
+          with open('news-rules.json', encoding='utf-8') as f:
+              rules=json.load(f)
+          with open('news-locations.json', encoding='utf-8') as f:
+              locations=json.load(f)
 
-          old_items=[]
           try:
               with open('news-feed.json', encoding='utf-8') as f:
                   old_items=json.load(f).get('items',[])
           except Exception:
-              pass
+              old_items=[]
           old_by_link={x.get('link','').rstrip('/'):x for x in old_items if x.get('link')}
 
           def clean(value):
               value=html.unescape(str(value or ''))
-              value=re.sub(r'<[^>]+>', ' ', value)
-              return re.sub(r'\s+', ' ', value).strip()
+              return re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', value)).strip()
 
           def lname(tag):
               return str(tag or '').rsplit('}',1)[-1].lower()
@@ -45,12 +47,10 @@ jobs:
           def child_text(node, names):
               wanted={x.lower() for x in names}
               for child in list(node):
-                  if lname(child.tag) in wanted and clean(child.text):
-                      return clean(child.text)
+                  if lname(child.tag) in wanted and clean(child.text): return clean(child.text)
               for child in node.iter():
                   if child is node: continue
-                  if lname(child.tag) in wanted and clean(child.text):
-                      return clean(child.text)
+                  if lname(child.tag) in wanted and clean(child.text): return clean(child.text)
               return ''
 
           def link_value(node):
@@ -61,119 +61,119 @@ jobs:
                   if clean(child.text): return clean(child.text)
               return ''
 
-          def category(title, summary, default):
-              s=(title+' '+summary).lower()
-              rules=[
-                ('branitelji',['branitelj','branitelji','veteran','domovinski rat','nestal','poginul','vukovar','oluja','bljesak','hrvi']),
-                ('vjera',['crkva','biskup','svećen','svec','misa','molit','katoli','vatikan','isus','kršć']),
-                ('povijest',['obljetnic','povijest','povijes','baštin','memorijal','spomenik','godišnjic']),
-                ('gradovi',['zagreb','split','sinj','vukovar','knin','dubrovnik','rijeka','osijek','zadar','šibenik','omiš','gospić','pula','varaždin','samobor']),
-                ('kultura',['kultura','film','kazališt','muzej','knjig','glazb','izložb','festival','umjet']),
-                ('svijet',['europsk','eu ','ukrajin','nato','slovačk','mađarsk','njemačk','francusk','srb','svijet','međunarod']),
-              ]
-              for c,words in rules:
-                  if any(w in s for w in words): return c
-              return default
-
           def parse_date(value):
               if not value: return datetime.now(timezone.utc).isoformat()
-              try:
-                  return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
-              except Exception:
-                  return value
+              try: return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
+              except Exception: return value
+
+          def norm(value):
+              s=clean(value).lower()
+              s=s.replace('č','c').replace('ć','c').replace('đ','d').replace('š','s').replace('ž','z')
+              return re.sub(r'[^a-z0-9 ]+',' ',s)
+
+          def tags_and_category(title, summary, default):
+              text=(title+' '+summary).lower()
+              hits=[]
+              for category, words in rules.get('categoryRules',{}).items():
+                  if any(w.lower() in text for w in words): hits.append(category)
+              category=hits[0] if hits else default
+              return category, hits[:5]
+
+          def detect_locations(title, summary):
+              text=norm(title+' '+summary)
+              found=[]
+              for name, aliases in locations.get('aliases',{}).items():
+                  if any(re.search(r'(?<![a-z0-9])'+re.escape(norm(a))+r'(?![a-z0-9])', text) for a in aliases):
+                      found.append(name)
+              return found[:8]
+
+          def score(item):
+              text=(item['title']+' '+item['summary']).lower()
+              source_weight=rules.get('importance',{}).get('sourceWeights',{}).get(item['sourceId'],10)
+              high=sum(1 for w in rules.get('importance',{}).get('highValueTerms',[]) if w.lower() in text)
+              medium=sum(1 for w in rules.get('importance',{}).get('mediumValueTerms',[]) if w.lower() in text)
+              location_bonus=min(12,len(item.get('locations',[]))*3)
+              category_bonus=8 if item.get('category') in ('branitelji','domovina','povijest') else 4
+              return min(100, source_weight+high*8+medium*3+location_bonus+category_bonus)
 
           items=[]
-          source_success=0
           source_counts={}
           errors=[]
+          source_success=0
 
           for src in cfg.get('sources',[]):
               try:
-                  req=urllib.request.Request(
-                      src['feed'],
-                      headers={
-                          'User-Agent':'Mozilla/5.0 (compatible; PatriaSoul-NewsBot/2.0)',
-                          'Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml, */*'
-                      }
-                  )
+                  req=urllib.request.Request(src['feed'],headers={
+                      'User-Agent':'Mozilla/5.0 (compatible; PatriaSoul-NewsBot/3.0)',
+                      'Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml, */*'
+                  })
                   raw=urllib.request.urlopen(req,timeout=30).read()
                   root=ET.fromstring(raw)
                   nodes=[n for n in root.iter() if lname(n.tag) in ('item','entry')]
                   found=0
-
                   for node in nodes:
-                      title=child_text(node,['title'])
-                      link=link_value(node)
+                      title=child_text(node,['title']); link=link_value(node)
                       summary=child_text(node,['description','summary','content','encoded'])
-                      date_value=child_text(node,['pubDate','published','updated','date','modified','created'])
-                      date=parse_date(date_value)
-                      if not title or not link:
-                          continue
+                      date=parse_date(child_text(node,['pubDate','published','updated','date','modified','created']))
+                      if not title or not link: continue
                       found += 1
-                      items.append({
-                          'title':title,
-                          'summary':summary[:800],
-                          'link':link,
-                          'date':date,
-                          'source':src['name'],
-                          'sourceId':src['id'],
-                          'category':category(title,summary,src.get('category','domovina'))
-                      })
-
+                      category,tags=tags_and_category(title,summary,src.get('category','domovina'))
+                      item={
+                          'title':title,'summary':summary[:800],'link':link,'date':date,
+                          'source':src['name'],'sourceId':src['id'],'category':category,
+                          'tags':tags,'locations':detect_locations(title,summary)
+                      }
+                      item['importance']=score(item)
+                      items.append(item)
                   source_counts[src['id']]=found
-                  if found:
-                      source_success += 1
-                  else:
-                      errors.append(f'{src["id"]}: feed nema prepoznate stavke')
+                  if found: source_success += 1
+                  else: errors.append(f'{src["id"]}: feed nema prepoznate stavke')
               except Exception as e:
                   source_counts[src['id']]=0
                   errors.append(f'{src["id"]}: {e}')
 
-          print('RSS source counts:', source_counts)
           if source_success == 0:
               raise SystemExit('NEWS: nijedan RSS izvor nije dao stavke. Feed se ne prebrisuje. '+' | '.join(errors))
 
-          seen=set(); unique=[]
-          for item in sorted(items,key=lambda x:x.get('date',''),reverse=True):
-              key=item['link'].rstrip('/')
-              if key in seen: continue
-              seen.add(key)
-              previous=old_by_link.get(key)
-              if previous:
-                  item['originalTitle']=previous.get('originalTitle',item['title'])
-                  item['originalSummary']=previous.get('originalSummary',item['summary'])
-              else:
-                  item['originalTitle']=item['title']
-                  item['originalSummary']=item['summary']
+          # Deduplicacija po URL-u i po normaliziranom naslovu.
+          seen_links=set(); seen_titles=set(); unique=[]
+          for item in sorted(items,key=lambda x:(x.get('importance',0),x.get('date','')),reverse=True):
+              link=item['link'].rstrip('/')
+              title_key=norm(item['title'])
+              if link in seen_links or (title_key and title_key in seen_titles): continue
+              seen_links.add(link); seen_titles.add(title_key)
+              previous=old_by_link.get(link)
+              item['originalTitle']=previous.get('originalTitle',item['title']) if previous else item['title']
+              item['originalSummary']=previous.get('originalSummary',item['summary']) if previous else item['summary']
               item['editorialStatus']='rss'
+              item['id']=hashlib.sha1(link.encode('utf-8')).hexdigest()[:12]
               unique.append(item)
 
           data={
               'updatedAt':datetime.now(timezone.utc).isoformat(),
-              'editorialModel':'rss-direct',
+              'editorialModel':'patriasoul-news-engine-2',
               'sourceCounts':source_counts,
+              'errors':errors,
               'items':unique[:200]
           }
           with open('news-feed.json','w',encoding='utf-8') as f:
-              json.dump(data,f,ensure_ascii=False,indent=2)
-              f.write('\n')
-          print('PatriaSoul news:',len(unique[:200]),'items')
-          if errors:
-              print('RSS warnings:', ' | '.join(errors))
+              json.dump(data,f,ensure_ascii=False,indent=2); f.write('\n')
+          print('PatriaSoul News Engine:',len(unique[:200]),'items')
+          print('Source counts:',source_counts)
+          if errors: print('RSS warnings:', ' | '.join(errors))
 
       - name: Provjeri feed prije spremanja
         shell: python
         run: |
           import json
-          with open('news-feed.json',encoding='utf-8') as f:
-              data=json.load(f)
+          with open('news-feed.json',encoding='utf-8') as f: data=json.load(f)
           items=data.get('items',[])
-          if not isinstance(items,list) or not items:
-              raise SystemExit('NEWS QA: news-feed.json je prazan — commit se prekida.')
-          required=('title','summary','link','source','category')
+          if not isinstance(items,list) or not items: raise SystemExit('NEWS QA: news-feed.json je prazan — commit se prekida.')
+          required=('id','title','summary','link','source','category')
           bad=[i for i,x in enumerate(items) if not all(x.get(k) for k in required)]
-          if bad:
-              raise SystemExit('NEWS QA: neispravne stavke: '+str(bad[:20]))
+          if bad: raise SystemExit('NEWS QA: neispravne stavke: '+str(bad[:20]))
+          links=[x['link'].rstrip('/') for x in items]
+          if len(links)!=len(set(links)): raise SystemExit('NEWS QA: pronađen duplikat URL-a.')
           print('NEWS QA OK:',len(items),'vijesti')
 
       - name: Spremi osvježeni feed
@@ -182,5 +182,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add news-feed.json
           git diff --cached --quiet && exit 0
-          git commit -m "Popravljeno automatsko osvježavanje PatriaSoul vijesti"
+          git commit -m "Nadogradi automatski PatriaSoul News Engine"
           git push
