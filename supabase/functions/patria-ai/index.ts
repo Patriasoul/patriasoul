@@ -8,7 +8,7 @@ const corsHeaders = {
   "Content-Type": "application/json; charset=utf-8",
 };
 
-const MODEL = "gemini-2.5-flash-lite";
+const MODEL = "gemini-3.5-flash-lite";
 const MAX_CONTEXT_ITEMS = 8;
 const MAX_CONTEXT_CHARS = 24000;
 const MAX_QUESTION_CHARS = 4000;
@@ -195,7 +195,6 @@ ${knowledge ? `PATRIASOUL KNOWLEDGE BASE:\n${knowledge}` : "PATRIASOUL KNOWLEDGE
           },
           contents,
           generationConfig: {
-            temperature: 0.2,
             maxOutputTokens: 1200,
           },
         }),
