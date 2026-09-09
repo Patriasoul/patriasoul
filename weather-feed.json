@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T16:17:08.812824+00:00",
+  "updatedAt": "2026-09-09T16:36:07.085548+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -8,37 +8,7 @@
       "wind": null,
       "humidity": null
     },
-    "Bjelovar": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Crikvenica": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Dubrovnik-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Križevci": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Opatija": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "RC Osijek-Čepin": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -57,12 +27,6 @@
       "humidity": null
     },
     "Split-aerodrom": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Varaždin": {
       "temp": null,
       "condition": null,
       "wind": null,
