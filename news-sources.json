@@ -29,6 +29,30 @@
       "name": "Ministarstvo prostornoga uređenja, graditeljstva i državne imovine",
       "feed": "https://mpgi.gov.hr/rss.aspx?ID=8",
       "category": "domovina"
+    },
+    {
+      "id": "mints",
+      "name": "Ministarstvo turizma i sporta",
+      "feed": "https://mints.gov.hr/rss.aspx/?ID=8&lng=",
+      "category": "kultura"
+    },
+    {
+      "id": "dhmz",
+      "name": "Državni hidrometeorološki zavod",
+      "feed": "https://meteo.hr/rss.xml",
+      "category": "domovina"
+    },
+    {
+      "id": "mpudt",
+      "name": "Ministarstvo pravosuđa, uprave i digitalne transformacije",
+      "feed": "https://mpudt.gov.hr/rss.aspx?ID=8",
+      "category": "domovina"
+    },
+    {
+      "id": "dzs-stanovnistvo",
+      "name": "Državni zavod za statistiku – Stanovništvo",
+      "feed": "https://podaci.dzs.hr/hr/dzs-rss/rss-stanovnistvo/",
+      "category": "domovina"
     }
   ],
   "categories": {
