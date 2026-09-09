@@ -9,6 +9,7 @@ on:
       - '*.html'
       - '*.md'
       - 'news-feed.json'
+      - 'ai-engine/knowledge/core-knowledge.json'
       - 'scripts/build-knowledge-index.py'
       - '.github/workflows/build-knowledge.yml'
   schedule:
@@ -26,6 +27,25 @@ jobs:
 
       - name: Izgradi Knowledge Base indeks
         run: python3 scripts/build-knowledge-index.py
+
+      - name: Provjeri Vukovar i core zapise
+        shell: python
+        run: |
+          import json
+          with open('ai-engine/knowledge/core-knowledge.json', encoding='utf-8') as f:
+              core=json.load(f)
+          with open('ai-engine/knowledge/index.json', encoding='utf-8') as f:
+              index=json.load(f)
+          core_items=core.get('items', core) if isinstance(core, dict) else core
+          index_items=index.get('items', [])
+          core_ids={str(x.get('id')) for x in core_items if isinstance(x,dict) and x.get('id')}
+          index_ids={str(x.get('id')) for x in index_items if isinstance(x,dict) and x.get('id')}
+          missing=sorted(core_ids-index_ids)
+          if missing:
+              raise SystemExit('Nedostaju core zapisi u indeksu: '+', '.join(missing[:20]))
+          if not any(str(x.get('id')) == 'city-vukovar-core' for x in index_items):
+              raise SystemExit('Vukovar core zapis nije u Knowledge Base indeksu')
+          print('Knowledge QA OK:', len(core_ids), 'core zapisa; Vukovar prisutan.')
 
       - name: Spremi indeks
         run: |
