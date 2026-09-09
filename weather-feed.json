@@ -1,8 +1,20 @@
 {
-  "updatedAt": "2026-09-09T03:16:04.216159+00:00",
+  "updatedAt": "2026-09-09T03:34:24.541189+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Bjelovar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Crikvenica": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -20,7 +32,19 @@
       "wind": null,
       "humidity": null
     },
+    "Gospić": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "RC Gradište (kod Županje)": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Knin": {
       "temp": null,
       "condition": null,
       "wind": null,
