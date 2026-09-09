@@ -1,0 +1,24 @@
+{
+  "categories": {
+    "domovina": "🇭🇷 Domovina",
+    "branitelji": "🛡️ Branitelji",
+    "povijest": "📜 Povijest",
+    "vjera": "⛪ Vjera",
+    "bastina": "🏛️ Baština",
+    "gradovi": "🏙️ Gradovi",
+    "kultura": "🎭 Kultura",
+    "svijet": "🌍 Hrvatska i svijet",
+    "sport": "⚽ Sport"
+  },
+  "priority": [
+    "branitelji",
+    "domovina",
+    "povijest",
+    "vjera",
+    "bastina",
+    "gradovi",
+    "kultura",
+    "sport",
+    "svijet"
+  ]
+}
