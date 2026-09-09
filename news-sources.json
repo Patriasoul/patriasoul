@@ -17,6 +17,18 @@
       "name": "Hrvatski sabor",
       "feed": "https://www.sabor.hr/hr/rss",
       "category": "domovina"
+    },
+    {
+      "id": "mzom",
+      "name": "Ministarstvo znanosti, obrazovanja i mladih",
+      "feed": "https://mzom.gov.hr/rss.aspx?ID=8",
+      "category": "domovina"
+    },
+    {
+      "id": "mpgi",
+      "name": "Ministarstvo prostornoga uređenja, graditeljstva i državne imovine",
+      "feed": "https://mpgi.gov.hr/rss.aspx?ID=8",
+      "category": "domovina"
     }
   ],
   "categories": {
