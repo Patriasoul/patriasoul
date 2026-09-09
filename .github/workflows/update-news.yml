@@ -8,9 +8,6 @@ on:
 permissions:
   contents: write
 
-env:
-  GEMINI_MODEL: gemini-2.5-flash
-
 jobs:
   update-news:
     runs-on: ubuntu-latest
@@ -18,10 +15,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Preuzmi, razvrstaj i urednički obradi RSS vijesti
+      - name: Preuzmi i obradi RSS vijesti
         shell: python
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           import json, re, html, urllib.request
           import xml.etree.ElementTree as ET
@@ -39,10 +34,32 @@ jobs:
               pass
           old_by_link={x.get('link','').rstrip('/'):x for x in old_items if x.get('link')}
 
-          def clean(text):
-              text=html.unescape(text or '')
-              text=re.sub(r'<[^>]+>', ' ', text)
-              return re.sub(r'\s+', ' ', text).strip()
+          def clean(value):
+              value=html.unescape(str(value or ''))
+              value=re.sub(r'<[^>]+>', ' ', value)
+              return re.sub(r'\s+', ' ', value).strip()
+
+          def lname(tag):
+              return str(tag or '').rsplit('}',1)[-1].lower()
+
+          def child_text(node, names):
+              wanted={x.lower() for x in names}
+              for child in list(node):
+                  if lname(child.tag) in wanted and clean(child.text):
+                      return clean(child.text)
+              for child in node.iter():
+                  if child is node: continue
+                  if lname(child.tag) in wanted and clean(child.text):
+                      return clean(child.text)
+              return ''
+
+          def link_value(node):
+              for child in list(node):
+                  if lname(child.tag) != 'link': continue
+                  href=clean(child.attrib.get('href',''))
+                  if href: return href
+                  if clean(child.text): return clean(child.text)
+              return ''
 
           def category(title, summary, default):
               s=(title+' '+summary).lower()
@@ -58,109 +75,97 @@ jobs:
                   if any(w in s for w in words): return c
               return default
 
-          def parse_date(v):
-              if not v: return datetime.now(timezone.utc).isoformat()
-              try: return parsedate_to_datetime(v).astimezone(timezone.utc).isoformat()
-              except: return v
-
-          def tag(node, name):
-              child=node.find(name)
-              return child.text if child is not None else None
+          def parse_date(value):
+              if not value: return datetime.now(timezone.utc).isoformat()
+              try:
+                  return parsedate_to_datetime(value).astimezone(timezone.utc).isoformat()
+              except Exception:
+                  return value
 
           items=[]
           source_success=0
           source_counts={}
           errors=[]
-          for src in cfg['sources']:
+
+          for src in cfg.get('sources',[]):
               try:
-                  req=urllib.request.Request(src['feed'],headers={'User-Agent':'PatriaSoul-NewsBot/1.0','Accept':'application/rss+xml, application/xml, text/xml, */*'})
-                  raw=urllib.request.urlopen(req,timeout=20).read()
+                  req=urllib.request.Request(
+                      src['feed'],
+                      headers={
+                          'User-Agent':'Mozilla/5.0 (compatible; PatriaSoul-NewsBot/2.0)',
+                          'Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml, */*'
+                      }
+                  )
+                  raw=urllib.request.urlopen(req,timeout=30).read()
                   root=ET.fromstring(raw)
+                  nodes=[n for n in root.iter() if lname(n.tag) in ('item','entry')]
                   found=0
-                  nodes=root.findall('.//item')
-                  if not nodes:
-                      # Some feeds expose Atom entries instead of RSS items.
-                      nodes=root.findall('.//{http://www.w3.org/2005/Atom}entry')
+
                   for node in nodes:
-                      title=clean(tag(node,'title') or node.findtext('{http://www.w3.org/2005/Atom}title'))
-                      link=clean(tag(node,'link'))
-                      if not link:
-                          link_el=node.find('{http://www.w3.org/2005/Atom}link')
-                          link=clean(link_el.get('href','') if link_el is not None else '')
-                      summary=clean(tag(node,'description') or tag(node,'summary') or node.findtext('{http://www.w3.org/2005/Atom}summary'))
-                      date_value=tag(node,'pubDate') or tag(node,'{http://purl.org/dc/elements/1.1/}date') or node.findtext('{http://www.w3.org/2005/Atom}published') or node.findtext('{http://www.w3.org/2005/Atom}updated')
+                      title=child_text(node,['title'])
+                      link=link_value(node)
+                      summary=child_text(node,['description','summary','content','encoded'])
+                      date_value=child_text(node,['pubDate','published','updated','date','modified','created'])
                       date=parse_date(date_value)
-                      if not title or not link: continue
+                      if not title or not link:
+                          continue
                       found += 1
-                      items.append({'title':title,'summary':summary[:600],'link':link,'date':date,'source':src['name'],'sourceId':src['id'],'category':category(title,summary,src['category'])})
+                      items.append({
+                          'title':title,
+                          'summary':summary[:800],
+                          'link':link,
+                          'date':date,
+                          'source':src['name'],
+                          'sourceId':src['id'],
+                          'category':category(title,summary,src.get('category','domovina'))
+                      })
+
                   source_counts[src['id']]=found
                   if found:
                       source_success += 1
                   else:
-                      errors.append(f'{src["id"]}: feed je dohvaćen, ali nema stavki')
+                      errors.append(f'{src["id"]}: feed nema prepoznate stavke')
               except Exception as e:
                   source_counts[src['id']]=0
                   errors.append(f'{src["id"]}: {e}')
 
           print('RSS source counts:', source_counts)
           if source_success == 0:
-              raise SystemExit('Nijedan RSS izvor nije vratio nijednu vijest. Feed se ne smije prebrisati praznim podacima. '+ ' | '.join(errors))
+              raise SystemExit('NEWS: nijedan RSS izvor nije dao stavke. Feed se ne prebrisuje. '+' | '.join(errors))
 
           seen=set(); unique=[]
-          for x in sorted(items,key=lambda z:z.get('date',''),reverse=True):
-              key=(x['link'].rstrip('/'),x['title'].lower())
+          for item in sorted(items,key=lambda x:x.get('date',''),reverse=True):
+              key=item['link'].rstrip('/')
               if key in seen: continue
-              seen.add(key); unique.append(x)
-
-          new_items=[]
-          for x in unique:
-              previous=old_by_link.get(x['link'].rstrip('/'))
-              if previous and previous.get('aiSummary') and previous.get('aiTitle'):
-                  x['aiTitle']=previous['aiTitle']; x['aiSummary']=previous['aiSummary']; x['editorialStatus']='ai'
+              seen.add(key)
+              previous=old_by_link.get(key)
+              if previous:
+                  item['originalTitle']=previous.get('originalTitle',item['title'])
+                  item['originalSummary']=previous.get('originalSummary',item['summary'])
               else:
-                  new_items.append(x)
+                  item['originalTitle']=item['title']
+                  item['originalSummary']=item['summary']
+              item['editorialStatus']='rss'
+              unique.append(item)
 
-          def gemini_rewrite(item):
-              if not GEMINI_API_KEY: return None
-              prompt=f'''Ti si urednik hrvatskog portala PatriaSoul. Pretvori RSS podatke u ORIGINALNI novinarski sažetak na hrvatskom. Ne izmišljaj činjenice. Napiši naslov do 100 znakova i sažetak 2-4 rečenice. Ton profesionalan, miran i informativan. Vrati samo JSON: {{"title":"...","summary":"..."}}.
-
-IZVOR: {item['source']}
-DATUM: {item['date']}
-NASLOV: {item['title']}
-SAŽETAK: {item['summary']}'''
-              payload={'contents':[{'parts':[{'text':prompt}]}],'generationConfig':{'temperature':0.2,'responseMimeType':'application/json','maxOutputTokens':500}}
-              url='https://generativelanguage.googleapis.com/v1beta/models/'+GEMINI_MODEL+':generateContent?key='+GEMINI_API_KEY
-              req=urllib.request.Request(url,data=json.dumps(payload).encode('utf-8'),headers={'Content-Type':'application/json','User-Agent':'PatriaSoul-NewsBot/1.0'},method='POST')
-              try:
-                  with urllib.request.urlopen(req,timeout=45) as r: response=json.loads(r.read().decode('utf-8'))
-                  result=json.loads(response['candidates'][0]['content']['parts'][0]['text'].strip())
-                  title=clean(result.get('title','')); summary=clean(result.get('summary',''))
-                  return {'title':title[:140],'summary':summary[:800]} if title and summary else None
-              except Exception as e:
-                  print(f'Gemini warning for {item["link"]}: {e}'); return None
-
-          for item in new_items[:20]:
-              result=gemini_rewrite(item)
-              if result:
-                  item['aiTitle']=result['title']; item['aiSummary']=result['summary']; item['editorialStatus']='ai'
-              else:
-                  item['aiTitle']=item['title']; item['aiSummary']=item['summary']; item['editorialStatus']='rss-fallback'
-          for item in new_items[20:]:
-              item['aiTitle']=item['title']; item['aiSummary']=item['summary']; item['editorialStatus']='rss-fallback'
-          for item in unique:
-              item['originalTitle']=item['title']; item['originalSummary']=item['summary']
-              item['title']=item.get('aiTitle',item['title']); item['summary']=item.get('aiSummary',item['summary'])
-
-          data={'updatedAt':datetime.now(timezone.utc).isoformat(),'editorialModel':GEMINI_MODEL,'items':unique[:200]}
+          data={
+              'updatedAt':datetime.now(timezone.utc).isoformat(),
+              'editorialModel':'rss-direct',
+              'sourceCounts':source_counts,
+              'items':unique[:200]
+          }
           with open('news-feed.json','w',encoding='utf-8') as f:
-              json.dump(data,f,ensure_ascii=False,indent=2); f.write('\n')
-          print(f'PatriaSoul news: {len(unique[:200])} items')
+              json.dump(data,f,ensure_ascii=False,indent=2)
+              f.write('\n')
+          print('PatriaSoul news:',len(unique[:200]),'items')
+          if errors:
+              print('RSS warnings:', ' | '.join(errors))
 
       - name: Provjeri feed prije spremanja
         shell: python
         run: |
           import json
-          with open('news-feed.json', encoding='utf-8') as f:
+          with open('news-feed.json',encoding='utf-8') as f:
               data=json.load(f)
           items=data.get('items',[])
           if not isinstance(items,list) or not items:
@@ -177,5 +182,5 @@ SAŽETAK: {item['summary']}'''
           git config user.email "actions@users.noreply.github.com"
           git add news-feed.json
           git diff --cached --quiet && exit 0
-          git commit -m "Automatsko osvježavanje i AI uređivanje PatriaSoul vijesti"
+          git commit -m "Popravljeno automatsko osvježavanje PatriaSoul vijesti"
           git push
