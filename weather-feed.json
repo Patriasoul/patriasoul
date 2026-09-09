@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T16:52:29.072438+00:00",
+  "updatedAt": "2026-09-09T17:14:35.634939+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -8,7 +8,55 @@
       "wind": null,
       "humidity": null
     },
+    "Bjelovar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Crikvenica": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Dubrovnik-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Gospić": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Knin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Križevci": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Opatija": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Osijek-Čepin": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -26,7 +74,25 @@
       "wind": null,
       "humidity": null
     },
+    "Slavonski Brod": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Split-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Šibenik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Varaždin": {
       "temp": null,
       "condition": null,
       "wind": null,
