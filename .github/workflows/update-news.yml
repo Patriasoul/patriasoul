@@ -98,6 +98,7 @@ jobs:
 
           items=[]
           source_counts={}
+          source_health={}
           errors=[]
           source_success=0
 
@@ -126,10 +127,19 @@ jobs:
                       item['importance']=score(item)
                       items.append(item)
                   source_counts[src['id']]=found
+                  source_health[src['id']]={
+                      'status':'OK' if found else 'EMPTY',
+                      'items':found
+                  }
                   if found: source_success += 1
                   else: errors.append(f'{src["id"]}: feed nema prepoznate stavke')
               except Exception as e:
                   source_counts[src['id']]=0
+                  source_health[src['id']]={
+                      'status':'ERROR',
+                      'items':0,
+                      'error':str(e)[:300]
+                  }
                   errors.append(f'{src["id"]}: {e}')
 
           if source_success == 0:
@@ -149,10 +159,20 @@ jobs:
               item['id']=hashlib.sha1(link.encode('utf-8')).hexdigest()[:12]
               unique.append(item)
 
+          health_values=list(source_health.values())
+          health_summary={
+              'configured':len(cfg.get('sources',[])),
+              'ok':sum(1 for x in health_values if x.get('status')=='OK'),
+              'empty':sum(1 for x in health_values if x.get('status')=='EMPTY'),
+              'error':sum(1 for x in health_values if x.get('status')=='ERROR')
+          }
+
           data={
               'updatedAt':datetime.now(timezone.utc).isoformat(),
               'editorialModel':'patriasoul-news-engine-2',
               'sourceCounts':source_counts,
+              'sourceHealth':source_health,
+              'healthSummary':health_summary,
               'errors':errors,
               'items':unique[:200]
           }
@@ -160,6 +180,8 @@ jobs:
               json.dump(data,f,ensure_ascii=False,indent=2); f.write('\n')
           print('PatriaSoul News Engine:',len(unique[:200]),'items')
           print('Source counts:',source_counts)
+          print('Source health:',source_health)
+          print('Health summary:',health_summary)
           if errors: print('RSS warnings:', ' | '.join(errors))
 
       - name: Provjeri feed prije spremanja
@@ -174,7 +196,11 @@ jobs:
           if bad: raise SystemExit('NEWS QA: neispravne stavke: '+str(bad[:20]))
           links=[x['link'].rstrip('/') for x in items]
           if len(links)!=len(set(links)): raise SystemExit('NEWS QA: pronađen duplikat URL-a.')
-          print('NEWS QA OK:',len(items),'vijesti')
+          health=data.get('sourceHealth',{})
+          summary=data.get('healthSummary',{})
+          if not isinstance(health,dict) or not health: raise SystemExit('NEWS QA: sourceHealth nedostaje ili je prazan.')
+          if summary.get('configured') != len(health): raise SystemExit('NEWS QA: healthSummary/configured ne odgovara broju izvora.')
+          print('NEWS QA OK:',len(items),'vijesti | izvori:',summary.get('ok',0),'OK /',summary.get('error',0),'ERROR /',summary.get('empty',0),'EMPTY')
 
       - name: Spremi osvježeni feed
         run: |
