@@ -1,0 +1,17 @@
+{
+  "importance": {
+    "sourceWeights": {"vlada": 30, "branitelji": 35, "sabor": 25},
+    "highValueTerms": ["domovinski rat","vukovar","branitelji","hrvatsko ratno zrakoplovstvo","mup","morh","kanader","požar","sigurnost","obrana","nestali","poginuli","obljetnica","državni vrh"],
+    "mediumValueTerms": ["kultura","baština","muzej","grad","županija","turizam","poljoprivreda","infrastruktura","sport"],
+    "maxAgeDays": 14
+  },
+  "categoryRules": {
+    "branitelji": ["branitelj","branitelji","veteran","domovinski rat","nestal","poginul","vukovar","oluja","bljesak","hrvi","morh","hrz"],
+    "vjera": ["crkva","biskup","svećen","svec","misa","molit","katoli","vatikan","isus","kršć","župa"],
+    "povijest": ["obljetnic","povijest","povijes","memorijal","spomenik","godišnjic","arheolog"],
+    "bastina": ["baštin","glagolj","kulturno dobro","zaštićeno dobro","tvrđav","gradina","stari grad"],
+    "gradovi": ["zagreb","split","sinj","vukovar","knin","dubrovnik","rijeka","osijek","zadar","šibenik","omiš","gospić","pula","varaždin","samobor"],
+    "kultura": ["kultura","film","kazališt","muzej","knjig","glazb","izložb","festival","umjet"],
+    "svijet": ["europsk","eu ","ukrajin","nato","slovačk","mađarsk","njemačk","francusk","srb","svijet","međunarod"]
+  }
+}
