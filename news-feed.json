@@ -1,4 +1,131 @@
 {
-  "updatedAt": "2026-09-05T12:12:39.988740+00:00",
-  "items": []
+  "updatedAt": "2026-09-09T21:25:00+02:00",
+  "editorialModel": "official-sources",
+  "sourceCounts": {
+    "vlada": 5,
+    "branitelji": 3,
+    "sabor": 3
+  },
+  "items": [
+    {
+      "title": "Nadogradnja borbenog komunikacijskog sustava HRZ-a vrijedna 33,2 milijuna eura",
+      "summary": "Potpisan je ugovor za razvoj komunikacijskih sposobnosti Hrvatskog ratnog zrakoplovstva, uz modernizaciju sustava i usklađivanje s NATO standardima.",
+      "link": "https://www.vlada.gov.hr/nadogradnja-borbenog-komunikacijskog-sustava-hrz-a-vrijedna-33-2-milijuna-eura/47258",
+      "date": "2026-09-09T10:00:00+02:00",
+      "source": "Vlada Republike Hrvatske",
+      "sourceId": "vlada",
+      "category": "domovina",
+      "originalTitle": "Nadogradnja borbenog komunikacijskog sustava HRZ-a vrijedna 33,2 milijuna eura",
+      "originalSummary": "Potpisan je ugovor za razvoj komunikacijskih sposobnosti Hrvatskog ratnog zrakoplovstva.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Otpad u Gospiću bit će pravodobno saniran, vrlo brzo krenut će prvi radovi",
+      "summary": "Vlada navodi da je proces odvoza otpada i sanacije prostora na lokaciji PPK Velebit u Gospiću u tijeku te da će uskoro krenuti prvi radovi.",
+      "link": "https://www.vlada.gov.hr/otpad-u-gospicu-bit-ce-pravodobno-saniran-vrlo-brzo-krenut-ce-prvi-radovi/47257",
+      "date": "2026-09-09T09:00:00+02:00",
+      "source": "Vlada Republike Hrvatske",
+      "sourceId": "vlada",
+      "category": "domovina",
+      "originalTitle": "Otpad u Gospiću bit će pravodobno saniran, vrlo brzo krenut će prvi radovi",
+      "originalSummary": "Proces odvoza otpada i sanacije prostora na lokaciji PPK Velebit u Gospiću je u tijeku.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Kontinuirani dijalog, fiskalna decentralizacija i zajednička provedba projekata stupovi su suradnje Vlade i županije",
+      "summary": "Predsjednik Vlade Andrej Plenković govorio je u Trakošćanu o suradnji Vlade i Varaždinske županije te ulaganjima u infrastrukturu i razvoj.",
+      "link": "https://www.vlada.gov.hr/kontinuirani-dijalog-fiskalna-decentralizacija-i-zajednicka-provedba-projekata-stupovi-su-suradnje-vlade-i-zupanije/47256",
+      "date": "2026-09-08T15:00:00+02:00",
+      "source": "Vlada Republike Hrvatske",
+      "sourceId": "vlada",
+      "category": "gradovi",
+      "originalTitle": "Kontinuirani dijalog, fiskalna decentralizacija i zajednička provedba projekata stupovi su suradnje Vlade i županije",
+      "originalSummary": "Predsjednik Vlade govorio je u Trakošćanu o suradnji Vlade i Varaždinske županije.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Tonči Glavinić kandidat za novog Glavnog državnog inspektora",
+      "summary": "Premijer Andrej Plenković objavio je kandidaturu Tončija Glavinića za dužnost glavnog državnog inspektora.",
+      "link": "https://www.vlada.gov.hr/tonci-glavinic-kandidat-za-novog-glavnog-drzavnog-inspektora/47255",
+      "date": "2026-09-08T12:00:00+02:00",
+      "source": "Vlada Republike Hrvatske",
+      "sourceId": "vlada",
+      "category": "domovina",
+      "originalTitle": "Tonči Glavinić kandidat za novog Glavnog državnog inspektora",
+      "originalSummary": "Objavljena je kandidatura Tončija Glavinića za dužnost glavnog državnog inspektora.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Hrvatska šalje dva kanadera za pomoć u gašenju požara u BiH",
+      "summary": "Vlada Republike Hrvatske donijela je odluku o pružanju humanitarne pomoći u gašenju požara u Bosni i Hercegovini.",
+      "link": "https://vlada.gov.hr/vijesti/8",
+      "date": "2026-09-06T12:00:00+02:00",
+      "source": "Vlada Republike Hrvatske",
+      "sourceId": "vlada",
+      "category": "svijet",
+      "originalTitle": "Hrvatska šalje dva kanadera za pomoć u gašenju požara u BiH",
+      "originalSummary": "Hrvatska pruža humanitarnu pomoć u gašenju požara u BiH.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Rudolf Perešin uzor je i trajna smjernica pilotima HRZ-a",
+      "summary": "Ministarstvo hrvatskih branitelja istaknulo je povijesni značaj Rudolfa Perešina i njegovu ulogu kao uzora hrvatskim pilotima.",
+      "link": "https://branitelji.gov.hr/",
+      "date": "2026-09-07T10:00:00+02:00",
+      "source": "Ministarstvo hrvatskih branitelja",
+      "sourceId": "branitelji",
+      "category": "branitelji",
+      "originalTitle": "Rudolf Perešin uzor je i trajna smjernica pilotima HRZ-a",
+      "originalSummary": "Istaknut je povijesni značaj Rudolfa Perešina za Hrvatsko ratno zrakoplovstvo.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "U Vukovaru obilježen Dan sjećanja na nestale u Domovinskom ratu",
+      "summary": "U Vukovaru je obilježen Dan sjećanja na nestale u Domovinskom ratu i Međunarodni dan nestalih osoba.",
+      "link": "https://branitelji.gov.hr/",
+      "date": "2026-08-30T10:00:00+02:00",
+      "source": "Ministarstvo hrvatskih branitelja",
+      "sourceId": "branitelji",
+      "category": "branitelji",
+      "originalTitle": "U Vukovaru obilježen Dan sjećanja na nestale u Domovinskom ratu",
+      "originalSummary": "U Vukovaru je obilježen Dan sjećanja na nestale u Domovinskom ratu.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Petir: Domaće sjeme strateški je važno za hrvatsku proizvodnju hrane i prehrambenu sigurnost",
+      "summary": "Predsjednica saborskog Odbora za poljoprivredu Marijana Petir istaknula je važnost domaćeg sjemenarstva i prehrambene sigurnosti.",
+      "link": "https://sabor.hr/hr/press/priopcenja/petir-domace-sjeme-strateski-je-vazno-za-hrvatsku-proizvodnju-hrane-i-prehrambenu",
+      "date": "2026-09-08T10:00:00+02:00",
+      "source": "Hrvatski sabor",
+      "sourceId": "sabor",
+      "category": "domovina",
+      "originalTitle": "Petir: Domaće sjeme strateški je važno za hrvatsku proizvodnju hrane i prehrambenu sigurnost",
+      "originalSummary": "Istaknuta je važnost domaćeg sjemenarstva i znanja za hrvatsku proizvodnju hrane.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Održana 23. sjednica Predsjedništva Hrvatskoga sabora",
+      "summary": "Održana je sjednica Predsjedništva Hrvatskoga sabora s predsjednicima klubova zastupnika.",
+      "link": "https://sabor.hr/hr/press/priopcenja/odrzana-23-sjednica-predsjednistva-hrvatskoga-sabora",
+      "date": "2026-09-08T10:00:00+02:00",
+      "source": "Hrvatski sabor",
+      "sourceId": "sabor",
+      "category": "domovina",
+      "originalTitle": "Održana 23. sjednica Predsjedništva Hrvatskoga sabora",
+      "originalSummary": "Održana je 23. sjednica Predsjedništva Hrvatskoga sabora.",
+      "editorialStatus": "official"
+    },
+    {
+      "title": "Predsjednica Odbora za Europske poslove uputila pismo predsjednici Europske komisije",
+      "summary": "Predsjednica Odbora za europske poslove Hrvatskoga sabora Jelena Miloš uputila je pismo predsjednici Europske komisije.",
+      "link": "https://sabor.hr/hr/press/priopcenja",
+      "date": "2026-09-08T09:00:00+02:00",
+      "source": "Hrvatski sabor",
+      "sourceId": "sabor",
+      "category": "svijet",
+      "originalTitle": "Predsjednica Odbora za Europske poslove uputila pismo predsjednici Europske komisije",
+      "originalSummary": "Hrvatski sabor objavio je priopćenje o pismu predsjednici Europske komisije.",
+      "editorialStatus": "official"
+    }
+  ]
 }
