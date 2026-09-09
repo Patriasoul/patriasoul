@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T11:33:40.716691+00:00",
+  "updatedAt": "2026-09-09T11:51:11.073271+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -195,36 +195,5 @@
       "humidity": null
     }
   },
-  "alerts": [
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženi pljuskovi s grmljavinom te jakim i olujnim udarima vjetra, osobito na zapadu područja i u Posavini. Najjači udari vjetra > 55 km/h; Vjerojatnost grmljavine > 60 %",
-    "Yellow thunderstorm warning",
-    "Locally possible severe thundershowers. Maximum gust speed > 55 km/h; Lightning risk > 60 %",
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženi pljuskovi s grmljavinom i na udare olujnim vjetrom. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 70 %",
-    "Yellow thunderstorm warning",
-    "Locally severe thundershowers possible. Maximum gust speed > 65 km/h; Lightning risk > 70 %",
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno mogući izraženi pljuskovi s grmljavinom, osobito krajem dana. Vjerojatnost grmljavine > 70 %",
-    "Yellow thunderstorm warning",
-    "Locally possible severe thundershowers. Lightning risk > 70 %",
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Izraženi pljuskovi s grmljavinom, osobito u Gorskom kotaru. Vjerojatnost grmljavine > 60 %",
-    "Yellow thunderstorm warning",
-    "Locally severe thundershowers. Lightning risk > 60 %",
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Prema kraju dana mogući su izraženi pljuskovi s grmljavinom, ponajprije na sjeveru. Vjerojatnost grmljavine > 50 %",
-    "Yellow thunderstorm warning",
-    "Thundershowers possible. Lightning risk > 50 %",
-    "Narančasto upozorenje za grmljavinsku oluju",
-    "Moguće nevrijeme s obilnom kišom, grmljavinom, olujnim udarima vjetra. Lokalno je moguća pojava tuče i pijavica. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 70 %",
-    "Orange thunderstorm warning",
-    "Severe thunderstorm with gale force gust and hail is possible. Maximum gust speed > 65 km/h; Lightning risk > 70 %",
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Prema kraju dana mogući su izraženi pljuskovi s grmljavinom, ponajprije na sjeveru. Vjerojatnost grmljavine > 50 %",
-    "Yellow thunderstorm warning",
-    "Thundershowers possible. Lightning risk > 50 %",
-    "Žuto upozorenje za vjetar",
-    "Ponegdje jako jugo i jugozapadni vjetar. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)"
-  ]
+  "alerts": []
 }\n
