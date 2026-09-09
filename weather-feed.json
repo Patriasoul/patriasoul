@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T05:50:27.654905+00:00",
+  "updatedAt": "2026-09-09T06:20:50.125035+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -44,6 +44,12 @@
       "wind": null,
       "humidity": null
     },
+    "Karlovac": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Knin": {
       "temp": null,
       "condition": null,
@@ -51,6 +57,12 @@
       "humidity": null
     },
     "Križevci": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Makarska": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -68,7 +80,31 @@
       "wind": null,
       "humidity": null
     },
+    "Osijek-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pazin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Pula": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Pula-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Rijeka": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -98,6 +134,12 @@
       "wind": null,
       "humidity": null
     },
+    "Split-Marjan": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Split-aerodrom": {
       "temp": null,
       "condition": null,
@@ -116,7 +158,19 @@
       "wind": null,
       "humidity": null
     },
+    "Zadar": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
     "Zadar-aerodrom": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Zagreb-Grič": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -140,25 +194,13 @@
       "wind": null,
       "humidity": null
     },
-    "Rijeka": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
-    "Zadar": {
-      "temp": null,
-      "condition": null,
-      "wind": null,
-      "humidity": null
-    },
     "Split": {
       "temp": null,
       "condition": null,
       "wind": null,
       "humidity": null
     },
-    "Pula": {
+    "Osijek": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -185,6 +227,14 @@
     "Narančasto upozorenje za grmljavinsku oluju",
     "Mjestimice izraženiji pljuskovi s grmljavinom, moguće i na udare olujnim vjetrom. Lokalno je moguća pojava tuče. Poslijepodne lokalno moguće grmljavinsko nevrijeme, osobito u Istri. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
-    "Locally severe thundershowers with possible gale force gust. Locally possible hail. Locally possible thunderstorm, especially in Istria. Maximum gust speed > 65 km/h; Lightning risk > 70 %"
+    "Locally severe thundershowers with possible gale force gust. Locally possible hail. Locally possible thunderstorm, especially in Istria. Maximum gust speed > 65 km/h; Lightning risk > 70 %",
+    "Žuto upozorenje za vjetar",
+    "Ponegdje jako jugo i jugozapadni vjetar. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Yellow wind warning",
+    "Locally strong SE i SW wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Ponegdje jako jugo i jugozapadni vjetar. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
+    "Yellow wind warning",
+    "Locally strong SE i SW wind. Maximum wind gusts 35-40 knots (65-75 km/h)"
   ]
 }\n
