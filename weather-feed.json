@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T01:14:38.165822+00:00",
+  "updatedAt": "2026-09-09T01:33:26.279650+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
@@ -9,6 +9,30 @@
       "humidity": null
     },
     "Crikvenica": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Dubrovnik": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Gospić": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Knin": {
       "temp": null,
       "condition": null,
       "wind": null,
@@ -27,6 +51,12 @@
       "humidity": null
     },
     "RC Osijek-Čepin": {
+      "temp": null,
+      "condition": null,
+      "wind": null,
+      "humidity": null
+    },
+    "Šibenik": {
       "temp": null,
       "condition": null,
       "wind": null,
