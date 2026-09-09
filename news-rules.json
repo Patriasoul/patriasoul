@@ -1,8 +1,8 @@
 {
   "importance": {
-    "sourceWeights": {"vlada": 30, "branitelji": 35, "sabor": 25},
+    "sourceWeights": {"vlada": 30, "branitelji": 35, "sabor": 25, "mzom": 22, "mpgi": 20},
     "highValueTerms": ["domovinski rat","vukovar","branitelji","hrvatsko ratno zrakoplovstvo","mup","morh","kanader","požar","sigurnost","obrana","nestali","poginuli","obljetnica","državni vrh"],
-    "mediumValueTerms": ["kultura","baština","muzej","grad","županija","turizam","poljoprivreda","infrastruktura","sport"],
+    "mediumValueTerms": ["kultura","baština","muzej","grad","županija","turizam","poljoprivreda","infrastruktura","sport","obrazovanje","znanost","mladi","graditeljstvo","prostorno uređenje","stanovanje","državna imovina"],
     "maxAgeDays": 14
   },
   "categoryRules": {
