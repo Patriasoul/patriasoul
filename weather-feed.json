@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T09:34:54.160968+00:00",
+  "updatedAt": "2026-09-09T09:52:02.756916+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -224,17 +224,19 @@
     "Izraženi pljuskovi s grmljavinom, osobito u Gorskom kotaru. Vjerojatnost grmljavine > 60 %",
     "Yellow thunderstorm warning",
     "Locally severe thundershowers. Lightning risk > 60 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Prema kraju dana mogući su izraženi pljuskovi s grmljavinom, ponajprije na sjeveru. Vjerojatnost grmljavine > 50 %",
+    "Yellow thunderstorm warning",
+    "Thundershowers possible. Lightning risk > 50 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Moguće nevrijeme s izraženim pljuskovima, grmljavinom i na udare olujnim vjetrom. Lokalno je moguća pojava tuče. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 70 %",
+    "Moguće nevrijeme s obilnom kišom, grmljavinom, olujnim udarima vjetra. Lokalno je moguća pojava tuče i pijavica. Najjači udari vjetra > 65 km/h; Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
     "Severe thunderstorm with gale force gust and hail is possible. Maximum gust speed > 65 km/h; Lightning risk > 70 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Prema kraju dana mogući su izraženi pljuskovi s grmljavinom, ponajprije na sjeveru. Vjerojatnost grmljavine > 50 %",
+    "Yellow thunderstorm warning",
+    "Thundershowers possible. Lightning risk > 50 %",
     "Žuto upozorenje za vjetar",
-    "Ponegdje jako jugo i jugozapadni vjetar. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally strong SE i SW wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Ponegdje jako jugo i jugozapadni vjetar. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally strong SE i SW wind. Maximum wind gusts 35-40 knots (65-75 km/h)"
+    "Ponegdje jako jugo i jugozapadni vjetar. Najjači udari vjetra 35-40 čvorova  (65-75 km/h)"
   ]
 }\n
