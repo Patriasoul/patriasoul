@@ -1,8 +1,8 @@
 {
   "importance": {
-    "sourceWeights": {"vlada": 30, "branitelji": 35, "sabor": 25, "mzom": 22, "mpgi": 20, "mints": 20, "dhmz": 32, "mpudt": 22, "dzs-stanovnistvo": 18},
+    "sourceWeights": {"vlada": 30, "branitelji": 35, "sabor": 25, "mzom": 22, "mpgi": 20, "mints": 20, "dhmz": 32, "mpudt": 22, "zakonodavstvo": 22, "dzs-stanovnistvo": 18, "dzs-bdp": 18, "dzs-gradevinarstvo": 17},
     "highValueTerms": ["domovinski rat","vukovar","branitelji","hrvatsko ratno zrakoplovstvo","mup","morh","kanader","požar","sigurnost","obrana","nestali","poginuli","obljetnica","državni vrh","upozorenje","nevrijeme","olujno nevrijeme","poplava","suša","temperatura mora"],
-    "mediumValueTerms": ["kultura","baština","muzej","grad","županija","turizam","poljoprivreda","infrastruktura","sport","obrazovanje","znanost","mladi","graditeljstvo","prostorno uređenje","stanovanje","državna imovina","pravosuđe","sud","zakon","statistika","stanovništvo","cijene","rad","mirovine"],
+    "mediumValueTerms": ["kultura","baština","muzej","grad","županija","turizam","poljoprivreda","infrastruktura","sport","obrazovanje","znanost","mladi","graditeljstvo","prostorno uređenje","stanovanje","državna imovina","pravosuđe","sud","zakon","uredba","statistika","stanovništvo","bdp","cijene","rad","mirovine"],
     "maxAgeDays": 14
   },
   "categoryRules": {
