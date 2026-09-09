@@ -21,28 +21,36 @@ jobs:
           import json, re, urllib.request, xml.etree.ElementTree as ET
           from datetime import datetime, timezone
 
-          SOURCES={
-            'current':'https://vrijeme.hr/hrvatska_n.xml',
-            'alerts':'https://meteo.hr/upozorenja/cap_hr_today.xml'
-          }
+          SOURCES={'current':'https://vrijeme.hr/hrvatska_n.xml','alerts':'https://meteo.hr/upozorenja/cap_hr_today.xml'}
           wanted=['Zagreb','Karlovac','Sisak','Varaždin','Križevci','Bjelovar','Rijeka','Opatija','Crikvenica','Krk','Gospić','Senj','Zadar','Šibenik','Knin','Split','Makarska','Dubrovnik','Pula','Pazin','Osijek','Slavonski Brod','Gradište','Bilogora']
 
           def local(tag): return tag.rsplit('}',1)[-1].lower()
-          def clean(v): return re.sub(r'\\s+',' ',str(v or '')).strip()
+          def clean(v): return re.sub(r'\s+',' ',str(v or '')).strip()
           def text(el): return clean(el.text if el is not None else '')
-          def child_map(node): return {local(c.tag):text(c) for c in list(node)}
+          def descendant_map(node):
+              # DHMZ places measurements below nested elements in the XML.
+              # Collect all descendants, not only direct children.
+              result={}
+              for c in node.iter():
+                  if c is node: continue
+                  key=local(c.tag)
+                  value=text(c)
+                  if value and key not in result: result[key]=value
+              return result
           def find_value(m, names):
+              for n in names:
+                  if n in m and m[n] != '': return m[n]
               for n in names:
                   for k,v in m.items():
                       if n in k and v!='': return v
               return None
 
-          raw=urllib.request.urlopen(urllib.request.Request(SOURCES['current'],headers={'User-Agent':'PatriaSoul-Weather/1.0'}),timeout=30).read()
+          raw=urllib.request.urlopen(urllib.request.Request(SOURCES['current'],headers={'User-Agent':'PatriaSoul-Weather/1.0','Accept':'application/xml,text/xml,*/*'}),timeout=30).read()
           root=ET.fromstring(raw)
           stations={}
           for node in root.iter():
               if local(node.tag)!='grad': continue
-              m=child_map(node)
+              m=descendant_map(node)
               name=find_value(m,['gradime','ime','naziv','postaja','mjesto'])
               if not name: continue
               temp=find_value(m,['temp','temperatura'])
@@ -52,7 +60,6 @@ jobs:
               if any(w.lower() in name.lower() for w in wanted):
                   stations[name]={'temp':temp,'condition':cond,'wind':wind,'humidity':hum}
 
-          # Fallback aliases: preserve common PatriaSoul display names even if DHMZ station uses a suffix.
           aliases={}
           for k,v in stations.items():
               base=re.sub(r'[-–].*$','',k).strip().lower()
@@ -66,15 +73,27 @@ jobs:
           try:
               ar=ET.fromstring(urllib.request.urlopen(SOURCES['alerts'],timeout=30).read())
               for e in ar.iter():
-                  if local(e.tag) in ('headline','event','description') and text(e):
-                      alerts.append(text(e))
-          except Exception as e:
-              print('CAP warning:',e)
+                  if local(e.tag) in ('headline','event','description') and text(e): alerts.append(text(e))
+          except Exception as e: print('CAP warning:',e)
 
           data={'updatedAt':datetime.now(timezone.utc).isoformat(),'source':'DHMZ','stations':stations,'alerts':alerts[:30]}
           with open('weather-feed.json','w',encoding='utf-8') as f:
-              json.dump(data,f,ensure_ascii=False,indent=2); f.write('\\n')
+              json.dump(data,f,ensure_ascii=False,indent=2); f.write('\n')
           print('PatriaSoul weather stations:',len(stations),'alerts:',len(alerts))
+
+      - name: QA vremenskog feeda
+        shell: python
+        run: |
+          import json
+          with open('weather-feed.json',encoding='utf-8') as f: data=json.load(f)
+          stations=data.get('stations',{})
+          if not stations: raise SystemExit('WEATHER QA: nema nijedne stanice')
+          usable=0
+          for name,x in stations.items():
+              if any(x.get(k) not in (None,'') for k in ('temp','condition','wind','humidity')): usable += 1
+          print('WEATHER QA:',len(stations),'stanica,',usable,'s podacima')
+          if usable < max(3, len(stations)//10):
+              raise SystemExit('WEATHER QA: premalo stvarnih mjerenja; feed se ne smije spremiti kao uspješan')
 
       - name: Spremi osvježeni weather feed
         run: |
