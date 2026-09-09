@@ -1,5 +1,4 @@
 // PatriaSoul Vrijeme — lokacija korisnika + 4 najbliža grada + DHMZ upozorenja
-// Jedan izvor podataka: weather-cities.json + weather-feed.json.
 (function(){
   'use strict';
 
@@ -11,12 +10,8 @@
   let feed = { stations: {}, alerts: [] };
 
   const esc = value => String(value ?? '').replace(/[&<>\"]/g, char => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '\"': '&quot;'
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '\"': '&quot;'
   }[char]));
-
   const normalize = value => String(value ?? '').trim().toLocaleLowerCase('hr-HR');
 
   function distanceKm(lat1, lon1, lat2, lon2){
@@ -50,7 +45,13 @@
   function stationFor(city){
     if(!city) return null;
     const stations = feed?.stations || {};
-    return stations[city.station] || stations[city.name] || stations[normalize(city.name)] || null;
+    const station = city.station || '';
+    const direct = stations[station] || stations[city.name] || stations[normalize(city.name)];
+    if(direct) return direct;
+
+    const target = normalize(station || city.name);
+    const key = Object.keys(stations).find(name => normalize(name) === target || normalize(name).includes(target) || target.includes(normalize(name)));
+    return key ? stations[key] : null;
   }
 
   function formatTemperature(value){
@@ -67,20 +68,11 @@
       : '📍 Hrvatska';
 
     return `<article class="wx-card ${main ? 'wx-main' : ''}">
-      <div class="wx-card-top">
-        <span class="wx-distance">${esc(distance)}</span>
-        <span class="wx-source">DHMZ</span>
-      </div>
-      <div class="wx-city">
-        <h2>${esc(city.name)}</h2>
-        <span class="wx-icon" aria-hidden="true">${icon(weather?.condition)}</span>
-      </div>
+      <div class="wx-card-top"><span class="wx-distance">${esc(distance)}</span><span class="wx-source">DHMZ</span></div>
+      <div class="wx-city"><h2>${esc(city.name)}</h2><span class="wx-icon" aria-hidden="true">${icon(weather?.condition)}</span></div>
       <div class="wx-temp">${esc(formatTemperature(weather?.temp))}</div>
       <p class="wx-condition">${esc(weather?.condition || 'Podaci se učitavaju…')}</p>
-      <div class="wx-details">
-        <span>💨 ${esc(weather?.wind || '—')}</span>
-        <span>💧 ${weather?.humidity != null ? esc(weather.humidity) + '%' : '—'}</span>
-      </div>
+      <div class="wx-details"><span>💨 ${esc(weather?.wind || '—')}</span><span>💧 ${weather?.humidity != null ? esc(weather.humidity) + '%' : '—'}</span></div>
       <a class="wx-city-link" href="grad.html?city=${encodeURIComponent(city.name)}">Profil grada →</a>
     </article>`;
   }
@@ -88,14 +80,12 @@
   function render(list, label){
     const container = $('wx-list');
     if(!container) return;
-
     const safeList = Array.isArray(list) ? list.filter(Boolean).slice(0, 4) : [];
     if(!safeList.length){
       container.innerHTML = '<div class="wx-empty">Nema dostupnih lokacija za prikaz.</div>';
       if($('wx-count')) $('wx-count').textContent = 'Podaci trenutno nisu dostupni.';
       return;
     }
-
     container.innerHTML = safeList.map(card).join('');
     if($('wx-count')) $('wx-count').textContent = label || `Prikazane su ${safeList.length} najbliže lokacije.`;
   }
@@ -103,14 +93,8 @@
   function renderAlerts(){
     const box = $('wx-alerts');
     if(!box) return;
-
     const alerts = Array.isArray(feed?.alerts) ? feed.alerts.filter(Boolean) : [];
-    if(!alerts.length){
-      box.hidden = true;
-      box.innerHTML = '';
-      return;
-    }
-
+    if(!alerts.length){ box.hidden = true; box.innerHTML = ''; return; }
     box.hidden = false;
     box.innerHTML = `<strong>🚨 DHMZ upozorenja</strong><ul>${alerts.slice(0, 5).map(alert => `<li>${esc(typeof alert === 'object' ? (alert.text || alert.description || alert.message || '') : alert)}</li>`).join('')}</ul>`;
   }
@@ -118,27 +102,20 @@
   function populateCitySelect(){
     const select = $('wx-city');
     if(!select || !cities.length) return;
-
     const current = new URLSearchParams(location.search).get('city');
     const fragment = document.createDocumentFragment();
-
-    cities
-      .filter(city => city?.name)
-      .sort((a, b) => String(a.name).localeCompare(String(b.name), 'hr'))
-      .forEach(city => {
-        const option = document.createElement('option');
-        option.value = city.name;
-        option.textContent = city.name;
-        if(current && normalize(current) === normalize(city.name)) option.selected = true;
-        fragment.appendChild(option);
-      });
-
+    cities.filter(city => city?.name).sort((a,b)=>String(a.name).localeCompare(String(b.name),'hr')).forEach(city=>{
+      const option=document.createElement('option'); option.value=city.name; option.textContent=city.name;
+      if(current && normalize(current)===normalize(city.name)) option.selected=true;
+      fragment.appendChild(option);
+    });
     select.appendChild(fragment);
   }
 
-  function showStatus(text){
-    const location = $('wx-location');
-    if(location) location.textContent = text;
+  function showStatus(text){ if($('wx-location')) $('wx-location').textContent=text; }
+
+  function renderFallback(){
+    render(cities.slice(0,4), 'Lokacija nije dostupna — prikazane su početne lokacije.');
   }
 
   function chooseCity(){
@@ -148,84 +125,81 @@
     if(wanted){
       const selected = cities.find(city => normalize(city.name) === normalize(wanted));
       if(selected){
-        const nearby = cities
-          .filter(city => city !== selected && Number.isFinite(Number(city.lat)) && Number.isFinite(Number(city.lon)))
-          .map(city => ({ ...city, distance: distanceKm(Number(selected.lat), Number(selected.lon), Number(city.lat), Number(city.lon)) }))
-          .sort((a, b) => a.distance - b.distance)
-          .slice(0, 3);
-        render([selected, ...nearby], `Prikazano je vrijeme za ${selected.name} i 3 najbliža grada.`);
+        const nearby=cities.filter(city=>city!==selected && Number.isFinite(Number(city.lat)) && Number.isFinite(Number(city.lon)))
+          .map(city=>({...city,distance:distanceKm(Number(selected.lat),Number(selected.lon),Number(city.lat),Number(city.lon))}))
+          .sort((a,b)=>a.distance-b.distance).slice(0,3);
+        render([selected,...nearby],`Prikazano je vrijeme za ${selected.name} i 3 najbliža grada.`);
         showStatus(`📍 ${selected.name} i okolica`);
         return;
       }
     }
 
-    if(!navigator.geolocation){
-      showStatus('📍 Lokacija nije dostupna — odaberi grad');
-      render(cities.slice(0, 4), 'Prikazane su početne lokacije.');
+    if(!('geolocation' in navigator)){
+      showStatus('📍 Ovaj preglednik ne podržava lokaciju — odaberi grad');
+      renderFallback();
       return;
     }
 
-    showStatus('📍 Tražim tvoju lokaciju…');
+    if(window.isSecureContext === false){
+      showStatus('🔒 Lokacija radi samo na HTTPS stranici — odaberi grad');
+      renderFallback();
+      return;
+    }
+
+    showStatus('📍 Dohvaćam tvoju lokaciju…');
+
     navigator.geolocation.getCurrentPosition(
-      position => {
-        const list = nearest(position.coords.latitude, position.coords.longitude);
+      position=>{
+        const {latitude,longitude}=position.coords;
+        const list=nearest(latitude,longitude);
+        if(!list.length){ showStatus('📍 Lokacija je pronađena, ali nema obližnjih gradova'); renderFallback(); return; }
         showStatus('📍 Vrijeme u tvojoj blizini · lokacija se ne sprema');
-        render(list, 'Prikazane su 4 lokacije najbliže tvojoj poziciji.');
+        render(list,'Prikazane su 4 lokacije najbliže tvojoj poziciji.');
       },
-      () => {
-        showStatus('📍 Lokacija nije dopuštena — odaberi grad');
-        render(cities.slice(0, 4), 'Prikazane su početne lokacije.');
+      error=>{
+        const messages={
+          1:'Lokacija nije dopuštena — dopusti pristup lokaciji u pregledniku',
+          2:'Lokaciju trenutno nije moguće odrediti — odaberi grad',
+          3:'Dohvat lokacije je istekao — odaberi grad'
+        };
+        console.warn('[PatriaSoul Vrijeme] Geolocation:', error?.code, error?.message || 'nepoznata greška');
+        showStatus(`📍 ${messages[error?.code] || 'Lokacija nije dostupna — odaberi grad'}`);
+        renderFallback();
       },
-      { enableHighAccuracy: false, timeout: 9000, maximumAge: 900000 }
+      {enableHighAccuracy:false,timeout:12000,maximumAge:300000}
     );
   }
 
   async function fetchJson(url){
-    const response = await fetch(`${url}?v=${Date.now()}`, { cache: 'no-store' });
+    const response=await fetch(`${url}?v=${Date.now()}`,{cache:'no-store'});
     if(!response.ok) throw new Error(`Neuspješno učitavanje: ${url} (${response.status})`);
     return response.json();
   }
 
   async function init(){
     try{
-      [cities, feed] = await Promise.all([fetchJson(CITIES), fetchJson(FEED)]);
-      cities = Array.isArray(cities) ? cities : [];
-      feed = feed && typeof feed === 'object' ? feed : { stations: {}, alerts: [] };
-
-      populateCitySelect();
-      renderAlerts();
-
+      [cities,feed]=await Promise.all([fetchJson(CITIES),fetchJson(FEED)]);
+      cities=Array.isArray(cities)?cities:[];
+      feed=feed&&typeof feed==='object'?feed:{stations:{},alerts:[]};
+      populateCitySelect(); renderAlerts();
       if($('wx-updated')){
-        const date = feed.updatedAt ? new Date(feed.updatedAt) : null;
-        $('wx-updated').textContent = date && !Number.isNaN(date.getTime())
-          ? `Ažurirano ${date.toLocaleString('hr-HR')}`
-          : 'Čeka se prvo osvježavanje podataka';
+        const date=feed.updatedAt?new Date(feed.updatedAt):null;
+        $('wx-updated').textContent=date&&!Number.isNaN(date.getTime())?`Ažurirano ${date.toLocaleString('hr-HR')}`:'Čeka se prvo osvježavanje podataka';
       }
-
       chooseCity();
     }catch(error){
-      console.error('[PatriaSoul Vrijeme]', error);
-      if($('wx-list')) $('wx-list').innerHTML = '<div class="wx-empty">Vrijeme se trenutno ne može učitati. Provjeri vezu i pokušaj ponovno.</div>';
+      console.error('[PatriaSoul Vrijeme]',error);
+      if($('wx-list')) $('wx-list').innerHTML='<div class="wx-empty">Vrijeme se trenutno ne može učitati. Provjeri vezu i pokušaj ponovno.</div>';
       showStatus('⚠️ Podaci o vremenu trenutno nisu dostupni');
-      if($('wx-updated')) $('wx-updated').textContent = 'Greška pri učitavanju podataka';
+      if($('wx-updated')) $('wx-updated').textContent='Greška pri učitavanju podataka';
     }
   }
 
   function bind(){
-    const locate = $('wx-locate');
-    if(locate) locate.addEventListener('click', chooseCity);
-
-    const city = $('wx-city');
-    if(city){
-      city.addEventListener('change', event => {
-        const value = event.target.value;
-        if(value) location.href = `vrijeme.html?city=${encodeURIComponent(value)}`;
-      });
-    }
-
+    const locate=$('wx-locate'); if(locate) locate.addEventListener('click',chooseCity);
+    const city=$('wx-city'); if(city) city.addEventListener('change',event=>{const value=event.target.value;if(value) location.href=`vrijeme.html?city=${encodeURIComponent(value)}`;});
     init();
   }
 
-  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', bind, { once: true });
-  else bind();
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',bind,{once:true}); else bind();
 })();
