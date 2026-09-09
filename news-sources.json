@@ -49,9 +49,27 @@
       "category": "domovina"
     },
     {
+      "id": "zakonodavstvo",
+      "name": "Ured za zakonodavstvo",
+      "feed": "https://zakonodavstvo.gov.hr/rss.aspx?ID=8",
+      "category": "domovina"
+    },
+    {
       "id": "dzs-stanovnistvo",
       "name": "Državni zavod za statistiku – Stanovništvo",
       "feed": "https://podaci.dzs.hr/hr/dzs-rss/rss-stanovnistvo/",
+      "category": "domovina"
+    },
+    {
+      "id": "dzs-bdp",
+      "name": "Državni zavod za statistiku – BDP i nacionalni računi",
+      "feed": "https://podaci.dzs.hr/hr/dzs-rss/rss-bdp-i-nacionalni-racuni/",
+      "category": "domovina"
+    },
+    {
+      "id": "dzs-gradevinarstvo",
+      "name": "Državni zavod za statistiku – Građevinarstvo",
+      "feed": "https://podaci.dzs.hr/hr/dzs-rss/rss-gradevinarstvo/",
       "category": "domovina"
     }
   ],
