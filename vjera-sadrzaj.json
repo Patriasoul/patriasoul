@@ -1,0 +1,45 @@
+{
+  "version":"1.0",
+  "portal":"vjera",
+  "categories":[
+    {"id":"evandelje","title":"Evanđelje dana","url":"/evandelje.html"},
+    {"id":"liturgija","title":"Liturgija i kalendar","url":"/liturgija.html"},
+    {"id":"biblija","title":"Biblija","url":"/biblija.html"},
+    {"id":"molitve","title":"Molitve","url":"/molitve.html"},
+    {"id":"krunica","title":"Krunica","url":"/krunica.html"},
+    {"id":"svetci","title":"Svetci i blaženici","url":"/svetci.html"},
+    {"id":"blagdani","title":"Blagdani i običaji","url":"/blagdani.html"},
+    {"id":"svetista","title":"Svetišta i hodočašća","url":"/svetista.html"},
+    {"id":"sakramenti","title":"Sakramenti","url":"/sakramenti.html"},
+    {"id":"obitelj","title":"Obitelj i vjera","url":"/obitelj-vjera.html"},
+    {"id":"mladi","title":"Mladi i vjera","url":"/mladi-vjera.html"},
+    {"id":"duhovnost","title":"Duhovnost","url":"/duhovnost.html"},
+    {"id":"svjedocanstva","title":"Svjedočanstva vjere","url":"/vjera-svjedocanstva.html"},
+    {"id":"vijesti","title":"Katoličke vijesti","url":"/katolicke-vijesti.html"}
+  ],
+  "entities":[
+    {"id":"nikola-tavelic","type":"saint","title":"Sv. Nikola Tavelić","relations":["svetci","blagdani","povijest","svetista"]},
+    {"id":"leopold-mandic","type":"saint","title":"Sv. Leopold Mandić","relations":["svetci","molitve","sakramenti"]},
+    {"id":"alojzije-stepinac","type":"blessed","title":"Bl. Alojzije Stepinac","relations":["svetci","povijest","domovina"]},
+    {"id":"ivan-merz","type":"blessed","title":"Bl. Ivan Merz","relations":["svetci","mladi","povijest"]},
+    {"id":"sinj","type":"shrine","title":"Gospa Sinjska","relations":["svetista","blagdani","svetci","dalmacija","sinj"]},
+    {"id":"marija-bistrica","type":"shrine","title":"Marija Bistrica","relations":["svetista","blagdani","hrvatska","zagorje"]}
+  ],
+  "relationships":[
+    {"from":"evandelje","to":"liturgija","label":"liturgijski dan"},
+    {"from":"evandelje","to":"svetci","label":"svetac dana"},
+    {"from":"liturgija","to":"blagdani","label":"slavlje"},
+    {"from":"svetci","to":"povijest","label":"povijesni kontekst"},
+    {"from":"svetista","to":"domovina","label":"hrvatska baština"},
+    {"from":"svetista","to":"gradovi","label":"lokacija"},
+    {"from":"obitelj","to":"blagdani","label":"obiteljski običaji"},
+    {"from":"mladi","to":"duhovnost","label":"rast u vjeri"}
+  ],
+  "sources":[
+    {"name":"Hrvatska biskupska konferencija","url":"https://hbk.hr/","role":"službeni hrvatski crkveni izvor"},
+    {"name":"Nacionalni liturgijski kalendar HBK","url":"https://hbk.hr/nacionalni-liturgijski-kalendar/","role":"liturgijski kalendar"},
+    {"name":"Katekizam Katoličke Crkve","url":"https://www.vatican.va/content/catechism/en.html","role":"nauk Katoličke Crkve"},
+    {"name":"Informativna katolička agencija","url":"https://ika.hkm.hr/","role":"katoličke vijesti"},
+    {"name":"Hrvatska katolička mreža","url":"https://hkm.hr/","role":"katolički medijski sadržaji"}
+  ]
+}
