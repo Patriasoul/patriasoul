@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T08:17:17.924974+00:00",
+  "updatedAt": "2026-09-10T08:53:07.425820+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,10 +15,10 @@
       "humidity": "71"
     },
     "Crikvenica": {
-      "temp": "25.5",
+      "temp": "25.2",
       "condition": "povjetarac",
       "wind": "NE",
-      "humidity": "51"
+      "humidity": "53"
     },
     "Dubrovnik": {
       "temp": "30.4",
@@ -53,7 +53,7 @@
     "Knin": {
       "temp": "25.2",
       "condition": "pretežno oblačno",
-      "wind": "NW",
+      "wind": "S",
       "humidity": "59"
     },
     "Križevci": {
@@ -69,10 +69,10 @@
       "humidity": "59"
     },
     "Opatija": {
-      "temp": "20.4",
+      "temp": "20.5",
       "condition": "-",
       "wind": "-",
-      "humidity": "92"
+      "humidity": "93"
     },
     "RC Osijek-Čepin": {
       "temp": "20.0",
@@ -91,6 +91,12 @@
       "condition": "slaba kiša",
       "wind": "E",
       "humidity": "84"
+    },
+    "Rijeka": {
+      "temp": "20.5",
+      "condition": "slaba kiša",
+      "wind": "N",
+      "humidity": "-"
     },
     "Rijeka-aerodrom": {
       "temp": "22.6",
@@ -176,12 +182,6 @@
       "wind": "NE",
       "humidity": "74"
     },
-    "Rijeka": {
-      "temp": "22.6",
-      "condition": "potpuno oblačno",
-      "wind": "NE",
-      "humidity": "81"
-    },
     "Split": {
       "temp": "28.3",
       "condition": "pretežno oblačno",
@@ -221,9 +221,9 @@
     "Yellow thunderstorm warning",
     "Severe thudershowers locally. Lightning risk > 70 %",
     "Žuto upozorenje za grmljavinsku oluju",
-    "Izraženi pljuskovi s grmljavinom. Lokalno je moguća pojava tuče. Vjerojatnost grmljavine > 60 %",
+    "Izraženi pljuskovi s grmljavinom. Lokalno je moguća pojava tuče. Na sjeveru regije moguće urbane i bujične poplave. Vjerojatnost grmljavine > 60 %",
     "Yellow thunderstorm warning",
-    "Strong thudershowers locally. Lightning risk > 60 %",
+    "Strong thudershowers locally. Possible urban and flash floods. Lightning risk > 60 %",
     "Narančasto upozorenje za kišu",
     "Lokalno obilna kiša u kratkom vremenu. Količina oborine > 100 mm"
   ]
