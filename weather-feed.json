@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T00:21:04.934797+00:00",
+  "updatedAt": "2026-09-10T00:52:58.402193+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
@@ -76,7 +76,7 @@
     },
     "Split-aerodrom": {
       "temp": "23.1",
-      "condition": "potpuno oblačno",
+      "condition": "pretežno oblačno",
       "wind": "N",
       "humidity": "73"
     },
@@ -130,7 +130,7 @@
     },
     "Split": {
       "temp": "23.1",
-      "condition": "potpuno oblačno",
+      "condition": "pretežno oblačno",
       "wind": "N",
       "humidity": "73"
     },
