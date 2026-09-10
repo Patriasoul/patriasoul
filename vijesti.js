@@ -23,32 +23,58 @@
     const badge=priority>=70?'VAŽNO':priority>=50?'ISTAKNUTO':'';
     return `<article class="news-card" data-importance="${priority}">
       <div class="news-meta"><span>${esc(CATS[x.category]||'📰 Vijesti')}</span><time datetime="${esc(x.date)}" title="${esc(x.date)}">${date(x.date)} · ${esc(timeAgo(x.date))}</time></div>
-      ${badge?`<div style="margin-top:10px;font-size:.72rem;font-weight:900;letter-spacing:.08em;color:#f1d58d">${badge}</div>`:''}
+      ${badge?`<div class="news-badge">${badge}</div>`:''}
       <h2>${esc(x.title)}</h2>
       <p>${esc(x.summary||'')}</p>
-      ${locations.length?`<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:2px">${locations.map(v=>`<span style="font-size:.75rem;padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.05);color:#b9c0c8">📍 ${esc(v)}</span>`).join('')}</div>`:''}
-      ${tags.length?`<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${tags.map(v=>`<span style="font-size:.72rem;color:#9da4ad">#${esc(v)}</span>`).join('')}</div>`:''}
+      ${locations.length?`<div class="news-pills">${locations.map(v=>`<span>📍 ${esc(v)}</span>`).join('')}</div>`:''}
+      ${tags.length?`<div class="news-tags">${tags.map(v=>`<span>#${esc(v)}</span>`).join('')}</div>`:''}
       <div class="news-source">Izvor: <strong>${esc(x.source)}</strong></div>
       <a class="news-link" href="${esc(x.link)}" target="_blank" rel="noopener noreferrer">Pročitaj izvornu vijest →</a>
     </article>`;
   }
+  function featured(x){
+    if(!x)return '<div class="news-featured-empty">Nema dostupne glavne vijesti.</div>';
+    const priority=Number(x.importance)||0;
+    return `<article class="news-featured-card">
+      <div class="news-featured-media"><span>${esc(CATS[x.category]||'📰 Vijesti')}</span></div>
+      <div class="news-featured-body">
+        <div class="news-meta"><span>${date(x.date)} · ${esc(timeAgo(x.date))}</span>${priority>=70?'<b class="news-badge">VAŽNO</b>':''}</div>
+        <h2>${esc(x.title)}</h2>
+        <p>${esc(x.summary||'')}</p>
+        <div class="news-source">Izvor: <strong>${esc(x.source)}</strong></div>
+        <a class="news-link" href="${esc(x.link)}" target="_blank" rel="noopener noreferrer">Opširnije →</a>
+      </div>
+    </article>`;
+  }
+  function latestItem(x){
+    return `<a class="latest-item" href="${esc(x.link)}" target="_blank" rel="noopener noreferrer">
+      <time>${esc(timeAgo(x.date))}</time>
+      <span class="latest-category">${esc(CATS[x.category]||'📰 Vijesti')}</span>
+      <strong>${esc(x.title)}</strong>
+    </a>`;
+  }
   function render(){
     const list=filtered();
     $('count').textContent=`${list.length} ${list.length===1?'vijest':'vijesti'}`;
-    $('news-list').innerHTML=list.length?list.map(card).join(''):`<div class="news-empty"><strong>Nema vijesti za odabrani filter.</strong><p>Pokušaj s drugom kategorijom ili pretragom.</p></div>`;
+    const featureHost=$('news-featured');
+    if(featureHost)featureHost.innerHTML=featured(list[0]);
+    const latestHost=$('news-latest');
+    if(latestHost)latestHost.innerHTML=list.slice(0,8).map(latestItem).join('')||'<div class="latest-empty">Nema vijesti.</div>';
+    const body=list.slice(1);
+    $('news-list').innerHTML=body.length?body.map(card).join(''):`<div class="news-empty"><strong>${list.length?'Nema dodatnih vijesti za prikaz.':'Nema vijesti za odabrani filter.'}</strong><p>Pokušaj s drugom kategorijom ili pretragom.</p></div>`;
     document.querySelectorAll('[data-cat]').forEach(b=>b.classList.toggle('active',b.dataset.cat===state.category));
   }
   function renderHighlights(){
     const host=document.querySelector('.news-highlights');
     if(!host||!state.items.length)return;
     const top=[...state.items].sort((a,b)=>(Number(b.importance)||0)-(Number(a.importance)||0)||new Date(b.date)-new Date(a.date)).slice(0,4);
-    host.innerHTML=top.map(x=>`<a class="news-highlight" href="${esc(x.link)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><b>${esc(CATS[x.category]||'📰 Vijesti')}</b><span>${esc(x.title)}</span></a>`).join('');
+    host.innerHTML=top.map(x=>`<a class="news-highlight" href="${esc(x.link)}" target="_blank" rel="noopener noreferrer"><b>${esc(CATS[x.category]||'📰 Vijesti')}</b><span>${esc(x.title)}</span></a>`).join('');
   }
   function addSortControl(){
     const toolbar=document.querySelector('.news-toolbar');
     if(!toolbar||document.getElementById('news-sort'))return;
     const select=document.createElement('select');
-    select.id='news-sort';select.className='news-search';select.style.maxWidth='260px';
+    select.id='news-sort';select.className='news-sort';
     select.setAttribute('aria-label','Način sortiranja');
     select.innerHTML='<option value="importance">Prvo najvažnije</option><option value="date">Prvo najnovije</option>';
     select.addEventListener('change',e=>{state.sort=e.target.value;render()});
