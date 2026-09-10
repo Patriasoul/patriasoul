@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T15:33:55.001468+00:00",
+  "updatedAt": "2026-09-10T15:50:35.876649+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -19,12 +19,6 @@
       "condition": "lahor",
       "wind": "N",
       "humidity": "68"
-    },
-    "Dubrovnik": {
-      "temp": "31.4",
-      "condition": "povjetarac",
-      "wind": "SE",
-      "humidity": "64"
     },
     "Dubrovnik-aerodrom": {
       "temp": "29.7",
@@ -151,6 +145,12 @@
       "condition": "umjereno oblačno",
       "wind": "SE",
       "humidity": "54"
+    },
+    "Dubrovnik": {
+      "temp": "29.7",
+      "condition": "pretežno oblačno",
+      "wind": "S",
+      "humidity": "41"
     },
     "Pula": {
       "temp": "22.8",
