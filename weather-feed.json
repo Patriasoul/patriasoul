@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T07:34:42.920550+00:00",
+  "updatedAt": "2026-09-10T07:51:27.210695+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -13,12 +13,6 @@
       "condition": "pretežno oblačno",
       "wind": "NE",
       "humidity": "77"
-    },
-    "Crikvenica": {
-      "temp": "24.3",
-      "condition": "lahor",
-      "wind": "E",
-      "humidity": "64"
     },
     "Dubrovnik": {
       "temp": "29.0",
