@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T01:31:35.978994+00:00",
+  "updatedAt": "2026-09-10T01:51:20.064464+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
@@ -37,6 +37,12 @@
       "condition": "povjetarac",
       "wind": "NW",
       "humidity": "90"
+    },
+    "Križevci": {
+      "temp": "19.2",
+      "condition": "slab vjetar",
+      "wind": "E",
+      "humidity": "82"
     },
     "Opatija": {
       "temp": "23.9",
