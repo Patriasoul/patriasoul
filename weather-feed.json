@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T06:20:56.302598+00:00",
+  "updatedAt": "2026-09-10T06:53:55.946690+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -158,6 +158,12 @@
       "wind": "E",
       "humidity": "91"
     },
+    "Zadar": {
+      "temp": "24.0",
+      "condition": "pretežno oblačno",
+      "wind": "SE",
+      "humidity": "88"
+    },
     "Zadar-aerodrom": {
       "temp": "21.3",
       "condition": "umjereno oblačno",
@@ -187,12 +193,6 @@
       "condition": "pretežno oblačno",
       "wind": "NE",
       "humidity": "87"
-    },
-    "Zadar": {
-      "temp": "21.3",
-      "condition": "umjereno oblačno",
-      "wind": "E",
-      "humidity": "77"
     },
     "Split": {
       "temp": "26.5",
