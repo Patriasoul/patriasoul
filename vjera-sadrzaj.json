@@ -1,13 +1,16 @@
 {
-  "version":"1.0",
+  "version":"2.0",
   "portal":"vjera",
+  "editorialStandard":"VJERA-UREDNICKI-STANDARD.md",
   "categories":[
+    {"id":"vjera","title":"Vjera i duhovna baština","url":"/vjera.html"},
     {"id":"evandelje","title":"Evanđelje dana","url":"/evandelje.html"},
     {"id":"liturgija","title":"Liturgija i kalendar","url":"/liturgija.html"},
-    {"id":"biblija","title":"Biblija","url":"/biblija.html"},
+    {"id":"biblija","title":"Biblija i tumačenja","url":"/biblija.html"},
     {"id":"molitve","title":"Molitve","url":"/molitve.html"},
     {"id":"krunica","title":"Krunica","url":"/krunica.html"},
     {"id":"svetci","title":"Svetci i blaženici","url":"/svetci.html"},
+    {"id":"svetac-dana","title":"Svetac dana","url":"/svetac-dana.html"},
     {"id":"blagdani","title":"Blagdani i običaji","url":"/blagdani.html"},
     {"id":"svetista","title":"Svetišta i hodočašća","url":"/svetista.html"},
     {"id":"sakramenti","title":"Sakramenti","url":"/sakramenti.html"},
@@ -18,28 +21,70 @@
     {"id":"vijesti","title":"Katoličke vijesti","url":"/katolicke-vijesti.html"}
   ],
   "entities":[
-    {"id":"nikola-tavelic","type":"saint","title":"Sv. Nikola Tavelić","relations":["svetci","blagdani","povijest","svetista"]},
-    {"id":"leopold-mandic","type":"saint","title":"Sv. Leopold Mandić","relations":["svetci","molitve","sakramenti"]},
-    {"id":"alojzije-stepinac","type":"blessed","title":"Bl. Alojzije Stepinac","relations":["svetci","povijest","domovina"]},
-    {"id":"ivan-merz","type":"blessed","title":"Bl. Ivan Merz","relations":["svetci","mladi","povijest"]},
-    {"id":"sinj","type":"shrine","title":"Gospa Sinjska","relations":["svetista","blagdani","svetci","dalmacija","sinj"]},
-    {"id":"marija-bistrica","type":"shrine","title":"Marija Bistrica","relations":["svetista","blagdani","hrvatska","zagorje"]}
+    {"id":"nikola-tavelic","type":"saint","title":"Sv. Nikola Tavelić","status":"svetac","birthPlace":"Šibenik","birthYear":"oko 1340.","deathPlace":"Jeruzalem","deathDate":"1391-11-14","liturgicalMemorial":"11-14","relations":["svetci","svetac-dana","liturgija","blagdani","povijest","svetista","gradovi","sibenik"]},
+    {"id":"marko-krizevcanin","type":"saint","title":"Sv. Marko Križevčanin","status":"svetac","birthPlace":"Križevci","birthYear":"1589.","deathPlace":"Košice","deathDate":"1619-09-07","liturgicalMemorial":"09-07","relations":["svetci","svetac-dana","liturgija","povijest","gradovi","krizevci"]},
+    {"id":"leopold-mandic","type":"saint","title":"Sv. Leopold Bogdan Mandić","status":"svetac","birthPlace":"Herceg Novi","birthDate":"1866-05-12","deathPlace":"Padova","deathDate":"1942-07-30","liturgicalMemorial":"05-12","relations":["svetci","svetac-dana","liturgija","molitve","sakramenti","svetista","gradovi"]},
+    {"id":"alojzije-stepinac","type":"blessed","title":"Bl. Alojzije Stepinac","status":"blaženik","birthPlace":"Krašić","birthDate":"1898-05-08","deathDate":"1960-02-10","liturgicalMemorial":"02-10","relations":["svetci","svetac-dana","liturgija","povijest","domovina","gradovi","krasic"]},
+    {"id":"augustin-kazotic","type":"blessed","title":"Bl. Augustin Kažotić","status":"blaženik","birthPlace":"Trogir","birthYear":"oko 1260.","deathPlace":"Lucera","deathDate":"1323-08-03","liturgicalMemorial":"08-03","relations":["svetci","svetac-dana","liturgija","povijest","gradovi","trogir"]},
+    {"id":"julijan-iz-bala","type":"blessed","title":"Bl. Julijan iz Bala","status":"blaženik","birthPlace":"Bale","birthYear":"oko 1300.","deathDate":"1349-05-01","relations":["svetci","svetac-dana","povijest","gradovi","bale"]},
+    {"id":"jakov-zadranin","type":"blessed","title":"Bl. Jakov Zadranin","status":"blaženik","birthPlace":"Zadar","birthYear":"oko 1400.","deathPlace":"Bitetto","deathDate":"1490-04-27","liturgicalMemorial":"04-27","relations":["svetci","svetac-dana","liturgija","povijest","gradovi","zadar"]},
+    {"id":"gracija-iz-mua","type":"blessed","title":"Bl. Gracija iz Mua","status":"blaženik","birthPlace":"Muo u Boki","birthDate":"1438-11-27","deathPlace":"Venecija","deathDate":"1508-11-09","liturgicalMemorial":"11-08","relations":["svetci","svetac-dana","liturgija","povijest"]},
+    {"id":"ozana-kotorska","type":"blessed","title":"Bl. Ozana Kotorska","status":"blaženica","birthPlace":"Relezi","birthDate":"1493-11-25","deathPlace":"Kotor","deathDate":"1565-04-27","liturgicalMemorial":"04-27","relations":["svetci","svetac-dana","liturgija","povijest","gradovi","kotor"]},
+    {"id":"ivan-merz","type":"blessed","title":"Bl. Ivan Merz","status":"blaženik","birthPlace":"Banja Luka","birthDate":"1896-12-16","deathPlace":"Zagreb","deathDate":"1928-05-10","liturgicalMemorial":"05-10","relations":["svetci","svetac-dana","liturgija","mladi","povijest","gradovi","zagreb"]},
+    {"id":"jula-ivanisevic","type":"blessed","title":"Bl. Marija Jula Ivanišević","status":"blaženica","birthPlace":"Godinjak","birthDate":"1893-11-25","deathPlace":"Goražde","deathDate":"1941-12-15","relations":["svetci","svjedocanstva","povijest","drinske-mucenice"]},
+    {"id":"bernardeta-banja","type":"blessed","title":"Bl. Marija Bernadeta Banja","status":"blaženica","birthPlace":"Veliki Grđevac","birthDate":"1912-06-17","deathPlace":"Goražde","deathDate":"1941-12-15","relations":["svetci","svjedocanstva","povijest","drinske-mucenice"]},
+    {"id":"miroslav-bulesic","type":"blessed","title":"Bl. Miroslav Bulešić","status":"blaženik","birthPlace":"Čabrunići","birthDate":"1920-05-13","deathPlace":"Lanišće","deathDate":"1947-08-24","relations":["svetci","svetac-dana","povijest","svjedocanstva","istra"]},
+    {"id":"serafin-glasnovic-kodic","type":"blessed","title":"Bl. Serafin Glasnović Kodić","status":"blaženik","birthPlace":"Janjevo","birthDate":"1893-04-25","deathPlace":"Lješ","deathDate":"1947-05-11","relations":["svetci","svjedocanstva","povijest"]},
+    {"id":"anton-muzic","type":"blessed","title":"Bl. Anton Muzić","status":"blaženik","birthPlace":"Vrnavokolo","birthDate":"1921-05-12","deathPlace":"Skadar","deathYear":"1948.","relations":["svetci","svjedocanstva","povijest"]},
+    {"id":"marija-propetoga-isusa-petkovic","type":"blessed","title":"Bl. Marija od Propetoga Isusa Petković","status":"blaženica","birthPlace":"Blato","birthDate":"1892-12-10","deathPlace":"Rim","deathDate":"1966-07-09","liturgicalMemorial":"07-09","relations":["svetci","svetac-dana","liturgija","obitelj","mladi","svetista","gradovi","blato"]},
+    {"id":"alojzije-palic","type":"blessed","title":"Bl. Alojzije Palić","status":"blaženik","birthPlace":"Janjevo","birthDate":"1877-02-20","deathPlace":"Janosh","deathDate":"1913-03-07","relations":["svetci","svjedocanstva","povijest"]},
+    {"id":"drinske-mucenice","type":"group","title":"Drinske mučenice","status":"blaženice","members":["jula-ivanisevic","bernardeta-banja","berchmana-leidenix","krizina-bojanc","antonija-fabjan"],"relations":["svetci","svjedocanstva","povijest"]},
+    {"id":"berchmana-leidenix","type":"blessed","title":"Bl. Berchmana Leidenix","status":"blaženica","relations":["drinske-mucenice","svjedocanstva","povijest"]},
+    {"id":"krizina-bojanc","type":"blessed","title":"Bl. Krizina Bojanc","status":"blaženica","relations":["drinske-mucenice","svjedocanstva","povijest"]},
+    {"id":"antonija-fabjan","type":"blessed","title":"Bl. Antonija Fabjan","status":"blaženica","relations":["drinske-mucenice","svjedocanstva","povijest"]},
+    {"id":"gospa-sinjska","type":"shrine","title":"Gospa Sinjska","location":"Sinj","relations":["svetista","blagdani","svetci","gradovi","sinj","dalmatinska-bastina"]},
+    {"id":"marija-bistrica","type":"shrine","title":"Marija Bistrica","location":"Marija Bistrica","relations":["svetista","blagdani","hrvatska","zagorje","gradovi"]}
   ],
   "relationships":[
     {"from":"evandelje","to":"liturgija","label":"liturgijski dan"},
-    {"from":"evandelje","to":"svetci","label":"svetac dana"},
+    {"from":"evandelje","to":"svetac-dana","label":"dnevni svjedok vjere"},
     {"from":"liturgija","to":"blagdani","label":"slavlje"},
+    {"from":"liturgija","to":"svetci","label":"liturgijski spomendani"},
+    {"from":"svetac-dana","to":"svetci","label":"dnevni zapis"},
     {"from":"svetci","to":"povijest","label":"povijesni kontekst"},
-    {"from":"svetista","to":"domovina","label":"hrvatska baština"},
+    {"from":"svetci","to":"gradovi","label":"mjesto života ili djelovanja"},
+    {"from":"svetci","to":"svetista","label":"mjesta štovanja i hodočašća"},
     {"from":"svetista","to":"gradovi","label":"lokacija"},
+    {"from":"svetista","to":"domovina","label":"hrvatska vjerska i kulturna baština"},
     {"from":"obitelj","to":"blagdani","label":"obiteljski običaji"},
-    {"from":"mladi","to":"duhovnost","label":"rast u vjeri"}
+    {"from":"mladi","to":"duhovnost","label":"rast u vjeri"},
+    {"from":"svjedocanstva","to":"svetci","label":"svjedoci vjere"},
+    {"from":"vjera","to":"povijest","label":"vjerska baština u povijesnom kontekstu"},
+    {"from":"vjera","to":"gradovi","label":"živa vjera hrvatskih mjesta"}
+  ],
+  "liturgicalMemorials":[
+    {"date":"02-10","title":"Bl. Alojzije Stepinac","rank":"spomendan","entity":"alojzije-stepinac"},
+    {"date":"04-27","title":"Bl. Ozana Kotorska","rank":"neobvezatni spomendan","entity":"ozana-kotorska"},
+    {"date":"05-10","title":"Bl. Ivan Merz","rank":"neobvezatni spomendan","entity":"ivan-merz"},
+    {"date":"05-12","title":"Sv. Leopold Mandić","rank":"spomendan","entity":"leopold-mandic"},
+    {"date":"07-09","title":"Bl. Marija Propetoga Isusa","rank":"neobvezatni spomendan","entity":"marija-propetoga-isusa-petkovic"},
+    {"date":"08-03","title":"Bl. Augustin Kažotić","rank":"neobvezatni spomendan","entity":"augustin-kazotic"},
+    {"date":"09-07","title":"Sv. Marko Križevčanin","rank":"spomendan","entity":"marko-krizevcanin"},
+    {"date":"11-14","title":"Sv. Nikola Tavelić","rank":"spomendan","entity":"nikola-tavelic"}
   ],
   "sources":[
-    {"name":"Hrvatska biskupska konferencija","url":"https://hbk.hr/","role":"službeni hrvatski crkveni izvor"},
-    {"name":"Nacionalni liturgijski kalendar HBK","url":"https://hbk.hr/nacionalni-liturgijski-kalendar/","role":"liturgijski kalendar"},
+    {"name":"Hrvatska biskupska konferencija — Hrvatski sveci i blaženici","url":"https://hbk.hr/hrvatski-sveci-i-blazenici/","role":"službeni popis i osnovni biografski podaci"},
+    {"name":"Nacionalni liturgijski kalendar HBK","url":"https://hbk.hr/nacionalni-liturgijski-kalendar/","role":"službeni nacionalni liturgijski kalendar"},
+    {"name":"Pastirsko pismo HBK i BK BiH","url":"https://dok.hbk.hr/crkveni-dokument/na-krscanskim-temeljima-u-zajednistvu-crkve-hodocasnici-nade/","role":"službeni kontekst hrvatskih svjedoka vjere"},
     {"name":"Katekizam Katoličke Crkve","url":"https://www.vatican.va/content/catechism/en.html","role":"nauk Katoličke Crkve"},
-    {"name":"Informativna katolička agencija","url":"https://ika.hkm.hr/","role":"katoličke vijesti"},
-    {"name":"Hrvatska katolička mreža","url":"https://hkm.hr/","role":"katolički medijski sadržaji"}
+    {"name":"Informativna katolička agencija","url":"https://ika.hkm.hr/","role":"katoličke vijesti — izvor za sažimanje i povezivanje"},
+    {"name":"Hrvatska katolička mreža","url":"https://hkm.hr/","role":"katolički medijski sadržaji — izvor za sažimanje i povezivanje"}
+  ],
+  "editorialRules":[
+    "Službeni crkveni status osobe ne mijenja se uredničkim tumačenjem.",
+    "Povijesna činjenica, crkveno učenje, pobožna predaja i osobno svjedočanstvo moraju biti jasno razlikovani.",
+    "Liturgijski datumi preuzimaju se iz službenih crkvenih izvora; ne nagađaju se.",
+    "Vijesti se sažimaju vlastitim riječima i povezuju s izvornim medijem; ne kopiraju se članci.",
+    "Fotografije se koriste samo kada je izvor i licenca prihvatljiva."
   ]
 }
