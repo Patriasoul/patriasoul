@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T21:30:30.138694+00:00",
+  "updatedAt": "2026-09-10T21:48:52.874261+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -63,10 +63,10 @@
       "humidity": "96"
     },
     "RC Osijek-Čepin": {
-      "temp": "19.1",
-      "condition": "lahor",
+      "temp": "19.2",
+      "condition": "potpuno oblačno",
       "wind": "N",
-      "humidity": "67"
+      "humidity": "69"
     },
     "Osijek-aerodrom": {
       "temp": "19.6",
@@ -87,10 +87,10 @@
       "humidity": "93"
     },
     "Slavonski Brod": {
-      "temp": "18.9",
-      "condition": "lahor",
+      "temp": "19.3",
+      "condition": "umjereno oblačno",
       "wind": "NW",
-      "humidity": "69"
+      "humidity": "68"
     },
     "Split-aerodrom": {
       "temp": "27.2",
@@ -106,9 +106,9 @@
     },
     "Varaždin": {
       "temp": "13.8",
-      "condition": "povjetarac",
+      "condition": "slaba kiša",
       "wind": "NW",
-      "humidity": "90"
+      "humidity": "92"
     },
     "Zadar-aerodrom": {
       "temp": "21.3",
@@ -117,10 +117,10 @@
       "humidity": "84"
     },
     "Zagreb-Maksimir": {
-      "temp": "14.9",
-      "condition": "lahor",
+      "temp": "15.0",
+      "condition": "potpuno oblačno",
       "wind": "S",
-      "humidity": "89"
+      "humidity": "91"
     },
     "Zagreb-aerodrom": {
       "temp": "14.6",
