@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T04:16:09.378943+00:00",
+  "updatedAt": "2026-09-10T04:51:52.221095+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,21 +9,21 @@
       "humidity": "66"
     },
     "Bjelovar": {
-      "temp": "18.8",
-      "condition": "slab vjetar",
-      "wind": "NE",
-      "humidity": "64"
+      "temp": "18.9",
+      "condition": "povjetarac",
+      "wind": "N",
+      "humidity": "65"
     },
     "Crikvenica": {
-      "temp": "21.8",
+      "temp": "21.7",
       "condition": "lahor",
-      "wind": "N",
+      "wind": "NE",
       "humidity": "81"
     },
     "Dubrovnik": {
       "temp": "27.7",
       "condition": "vedro",
-      "wind": "NE",
+      "wind": "S",
       "humidity": "40"
     },
     "Dubrovnik-aerodrom": {
@@ -32,11 +32,23 @@
       "wind": "E",
       "humidity": "46"
     },
+    "Gospić": {
+      "temp": "15.8",
+      "condition": "lahor",
+      "wind": "N",
+      "humidity": "99"
+    },
     "RC Gradište (kod Županje)": {
       "temp": "19.2",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "NE",
       "humidity": "84"
+    },
+    "Knin": {
+      "temp": "18.4",
+      "condition": "povjetarac",
+      "wind": "N",
+      "humidity": "90"
     },
     "Križevci": {
       "temp": "18.5",
@@ -45,10 +57,10 @@
       "humidity": "61"
     },
     "Opatija": {
-      "temp": "21.1",
+      "temp": "21.0",
       "condition": "-",
       "wind": "-",
-      "humidity": "95"
+      "humidity": "96"
     },
     "RC Osijek-Čepin": {
       "temp": "18.9",
