@@ -1,8 +1,0 @@
-/* PatriaSoul — proširena Vjera navigacija */
-(function(){'use strict';
-var items=[
-['Vjera i duhovna baština','/vjera.html','✝️'],['Evanđelje dana','/evandelje.html','📖'],['Liturgija i kalendar','/liturgija.html','📅'],['Biblija i tumačenja','/biblija.html','📚'],['Molitve','/molitve.html','🙏'],['Krunica','/krunica.html','📿'],['Svetci i blaženici','/svetci.html','🕯️'],['Svetac dana','/svetac-dana.html','⭐'],['Blagdani i običaji','/blagdani.html','⛪'],['Svetišta i hodočašća','/svetista.html','🗺️'],['Sakramenti','/sakramenti.html','🕊️'],['Obitelj i vjera','/obitelj-vjera.html','❤️'],['Mladi i vjera','/mladi-vjera.html','🎓'],['Duhovnost','/duhovnost.html','🕯️'],['Svjedočanstva vjere','/vjera-svjedocanstva.html','🙌'],['Katoličke vijesti','/katolicke-vijesti.html','📰']
-];
-function run(){var nav=document.querySelector('.ps-mainnav');if(!nav||document.querySelector('[data-vjera-extra]'))return;var group=[...nav.querySelectorAll('.ps-nav-group')].find(function(x){var a=x.querySelector('.ps-nav-parent');return a&&a.getAttribute('href')==='/vjera.html'});if(!group)return;var sub=group.querySelector('.ps-subnav');if(!sub)return;sub.setAttribute('data-vjera-extra','');var box=sub.querySelector('.ps-simple-section')||sub;items.forEach(function(it){if(box.querySelector('a[href="'+it[1]+'"]'))return;var e=document.createElement('div');e.className='ps-nav-item ps-nav-item-level-1';e.innerHTML='<div class="ps-nav-item-row"><a class="ps-sub-link" href="'+it[1]+'">'+it[2]+' '+it[0]+'</a></div>';box.appendChild(e)});}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run);else run();setTimeout(run,700);setTimeout(run,1800);
-})();
