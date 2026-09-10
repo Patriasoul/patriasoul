@@ -1,7 +1,7 @@
 /* PatriaSoul — Dnevna liturgija 2026
- * Primarni izvor: Catholic Readings API (2026).
+ * Primarni izvor čitanja: Catholic Readings API (2026).
  * Liturgijske podatke treba provjeravati prema službenom nacionalnom kalendaru HBK.
- * Svetac dana prikazuje se samo ako ga dnevni zapis stvarno navodi.
+ * Čitanje Evanđelja ne ovisi o dostupnosti zasebnog kalendarskog zapisa.
  */
 const API_BASE='https://cpbjr.github.io/catholic-readings-api';
 const MONTHS=['siječnja','veljače','ožujka','travnja','svibnja','lipnja','srpnja','kolovoza','rujna','listopada','studenoga','prosinca'];
@@ -16,7 +16,10 @@ function translateLiturgicalName(name){const value=String(name||'').trim();if(!v
 function cleanSaint(name){const value=String(name||'').trim();if(!value||/^(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday) of the .* week of Ordinary Time$/i.test(value))return '';return value.replace(/,\s*(Priest|Bishop|Pope|Virgin|Martyr|Deacon|Doctor of the Church|Religious|Nun|Friar|Abbot).*$/i,'').replace(/^Saint\s+/i,'Sv. ').replace(/^Blessed\s+/i,'Bl. ')}
 export async function getVjeraDnevnoOnline(date=new Date()){
   const key=isoDate(date);if(!key.startsWith('2026-'))return null;
-  const [readings,calendar]=await Promise.all([getJson(endpoint('readings',key)),getJson(endpoint('liturgical-calendar',key))]);
+  // Evanđelje je primarni podatak. Ako kalendar zakaže, stranica i dalje radi.
+  const readings=await getJson(endpoint('readings',key));
+  let calendar=null;
+  try{calendar=await getJson(endpoint('liturgical-calendar',key));}catch(_){calendar=null;}
   const r=readings?.readings||{};const c=calendar?.celebration||{};
   const liturgicalName=translateLiturgicalName(c.name);const saint=cleanSaint(c.name);const type=translateType(c.type);
   return {date:prettyDate(key),isoDate:key,saint,liturgicalName,celebration:type,gospel:r.gospel||'',gospelTitle:'Evanđelje dana',firstReading:r.firstReading||'',psalm:r.psalm||'',secondReading:r.secondReading||'',season:translateSeason(readings?.season||calendar?.season),isFeria:!saint&&!!liturgicalName,reflection:'Današnja Božja riječ poziva nas da zastanemo, poslušamo i dopustimo da nas Evanđelje vodi u konkretnom životu.',source:'Catholic Readings API — 2026',sourceUrl:readings?.usccbLink||`${API_BASE}/readings/2026/${key.slice(5)}.json`,saintImage:c.image||''};
