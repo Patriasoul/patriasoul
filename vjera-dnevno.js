@@ -5,7 +5,6 @@
  */
 const API_BASE='https://cpbjr.github.io/catholic-readings-api';
 const MONTHS=['siječnja','veljače','ožujka','travnja','svibnja','lipnja','srpnja','kolovoza','rujna','listopada','studenoga','prosinca'];
-const WEEKDAYS=['nedjelja','ponedjeljak','utorak','srijeda','četvrtak','petak','subota'];
 const ORDINALS={first:'1.',second:'2.',third:'3.',fourth:'4.',fifth:'5.',sixth:'6.',seventh:'7.',eighth:'8.',ninth:'9.',tenth:'10.',eleventh:'11.',twelfth:'12.',thirteenth:'13.',fourteenth:'14.',fifteenth:'15.',sixteenth:'16.',seventeenth:'17.',eighteenth:'18.',nineteenth:'19.',twentieth:'20.',twenty-first:'21.',twenty-second:'22.',twenty-third:'23.',twenty-fourth:'24.',twenty-fifth:'25.',twenty-sixth:'26.',twenty-seventh:'27.',twenty-eighth:'28.',twenty-ninth:'29.',thirtieth:'30.',thirty-first:'31.',thirty-second:'32.',thirty-third:'33.',thirty-fourth:'34.'};
 function isoDate(date=new Date()){
   const d=new Date(date); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
@@ -39,7 +38,7 @@ export async function getVjeraDnevnoOnline(date=new Date()){
   const liturgicalName=translateLiturgicalName(c.name);
   const saint=cleanSaint(c.name);
   const type=translateType(c.type);
-  return {date:prettyDate(key),isoDate:key,saint:saint||'Liturgijski dan',liturgicalName,celebration:type,gospel:r.gospel||'',gospelTitle:'Evanđelje dana',firstReading:r.firstReading||'',psalm:r.psalm||'',secondReading:r.secondReading||'',season:translateSeason(readings?.season||calendar?.season),isFeria:!saint&&!!liturgicalName,reflection:'Današnja Božja riječ poziva nas da zastanemo, poslušamo i dopustimo da nas Evanđelje vodi u konkretnom životu.',source:'Catholic Readings API — 2026',sourceUrl:readings?.usccbLink||`${API_BASE}/readings/2026/${key.slice(5)}.json`,saintImage:c.image||''};
+  return {date:prettyDate(key),isoDate:key,saint:saint||liturgicalName||'Liturgijski dan',liturgicalName,celebration:type,gospel:r.gospel||'',gospelTitle:'Evanđelje dana',firstReading:r.firstReading||'',psalm:r.psalm||'',secondReading:r.secondReading||'',season:translateSeason(readings?.season||calendar?.season),isFeria:!saint&&!!liturgicalName,reflection:'Današnja Božja riječ poziva nas da zastanemo, poslušamo i dopustimo da nas Evanđelje vodi u konkretnom životu.',source:'Catholic Readings API — 2026',sourceUrl:readings?.usccbLink||`${API_BASE}/readings/2026/${key.slice(5)}.json`,saintImage:c.image||''};
 }
 export function todayKey(){return isoDate(new Date())}
 export {isoDate,prettyDate};
