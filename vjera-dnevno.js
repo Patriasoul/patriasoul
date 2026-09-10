@@ -1,5 +1,6 @@
 /* PatriaSoul — Dnevna liturgija 2026
- * Primarni izvor: Catholic Readings API (2026), uz lokalni fallback iz vjera.js.
+ * Primarni izvor: Catholic Readings API (2026).
+ * Liturgijske podatke treba provjeravati prema službenom nacionalnom kalendaru HBK.
  */
 const API_BASE='https://cpbjr.github.io/catholic-readings-api';
 const MONTHS=['siječnja','veljače','ožujka','travnja','svibnja','lipnja','srpnja','kolovoza','rujna','listopada','studenoga','prosinca'];
