@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T04:34:18.878072+00:00",
+  "updatedAt": "2026-09-11T04:50:54.681087+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -70,7 +70,7 @@
     },
     "Pula-aerodrom": {
       "temp": "20.4",
-      "condition": "potpuno oblačno",
+      "condition": "pretežno oblačno",
       "wind": "SE",
       "humidity": "86"
     },
@@ -160,7 +160,7 @@
     },
     "Pula": {
       "temp": "20.4",
-      "condition": "potpuno oblačno",
+      "condition": "pretežno oblačno",
       "wind": "SE",
       "humidity": "86"
     }
