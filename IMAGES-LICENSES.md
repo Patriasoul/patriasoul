@@ -16,7 +16,7 @@ Ovaj dokument prati fotografije koje PatriaSoul preuzima iz otvorenih izvora. **
 | `images/gallery/slavonska-nosnja.jpg` | Slavonska narodna nošnja | Misalalic | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Traditional_Slavonian_National_Costume.jpg |
 | `images/gallery/zagreb-jelacic.jpg` | Zagreb / Trg bana Jelačića | Nick Savchenko | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg |
 | `images/gallery/varazdin-vijecnica.jpg` | Varaždin | Pudelek (Marcin Szala) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vara%C5%BEdin_-_town_hall.JPG |
-| `images/gallery/opatija.jpg` | Opatija / Kvarner | Kiki273 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Opatija.jpg |
+| `images/gallery/opatija.jpg` | Opatija / Kvarner | Vzach~commonswiki | Public domain | https://commons.wikimedia.org/wiki/File:Opatija.JPG |
 
 ## Kako portal koristi fotografije
 
