@@ -1,90 +1,162 @@
 {
-  "updatedAt": "2026-09-11T02:51:00.925558+00:00",
+  "updatedAt": "2026-09-11T03:15:11.534231+00:00",
   "source": "DHMZ",
   "stations": {
+    "RC Bilogora": {
+      "temp": "12.8",
+      "condition": "slaba kiša",
+      "wind": "NE",
+      "humidity": "97"
+    },
     "Bjelovar": {
-      "temp": "13.4",
+      "temp": "13.6",
       "condition": "povjetarac",
-      "wind": "N",
+      "wind": "NE",
       "humidity": "99"
     },
     "Crikvenica": {
-      "temp": "19.9",
+      "temp": "19.5",
       "condition": "lahor",
       "wind": "N",
-      "humidity": "87"
+      "humidity": "92"
     },
     "Dubrovnik": {
-      "temp": "27.6",
-      "condition": "umjeren vjetar",
+      "temp": "28.1",
+      "condition": "pretežno vedro",
       "wind": "SE",
-      "humidity": "48"
+      "humidity": "46"
+    },
+    "Dubrovnik-aerodrom": {
+      "temp": "24.9",
+      "condition": "vedro",
+      "wind": "E",
+      "humidity": "52"
     },
     "Gospić": {
-      "temp": "13.4",
+      "temp": "13.6",
       "condition": "lahor",
-      "wind": "W",
+      "wind": "NE",
       "humidity": "99"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "15.4",
-      "condition": "povjetarac",
-      "wind": "N",
+      "temp": "15.9",
+      "condition": "potpuno oblačno",
+      "wind": "E",
       "humidity": "68"
     },
-    "Knin": {
-      "temp": "19.7",
-      "condition": "slab vjetar",
-      "wind": "NW",
-      "humidity": "97"
-    },
     "Križevci": {
-      "temp": "13.0",
-      "condition": "povjetarac",
+      "temp": "12.8",
+      "condition": "slaba kiša",
       "wind": "NE",
-      "humidity": "99"
+      "humidity": "97"
     },
     "Opatija": {
-      "temp": "18.7",
+      "temp": "18.1",
       "condition": "-",
       "wind": "-",
-      "humidity": "97"
+      "humidity": "93"
     },
     "RC Osijek-Čepin": {
-      "temp": "15.8",
+      "temp": "16.2",
       "condition": "povjetarac",
       "wind": "NE",
-      "humidity": "80"
+      "humidity": "76"
     },
-    "Slavonski Brod": {
-      "temp": "16.7",
-      "condition": "lahor",
+    "Pula-aerodrom": {
+      "temp": "20.6",
+      "condition": "pretežno oblačno",
       "wind": "E",
-      "humidity": "88"
+      "humidity": "86"
     },
-    "Šibenik": {
-      "temp": "21.0",
-      "condition": "-",
-      "wind": "-",
+    "Rijeka-aerodrom": {
+      "temp": "18.0",
+      "condition": "potpuno oblačno",
+      "wind": "NE",
       "humidity": "94"
     },
-    "Varaždin": {
-      "temp": "12.8",
-      "condition": "lahor",
+    "Senj": {
+      "temp": "19.5",
+      "condition": "potpuno oblačno, vjetrovito",
+      "wind": "NE",
+      "humidity": "71"
+    },
+    "Sisak": {
+      "temp": "13.2",
+      "condition": "kiša",
       "wind": "W",
       "humidity": "99"
     },
-    "Zagreb-Maksimir": {
-      "temp": "13.6",
-      "condition": "lahor",
+    "Slavonski Brod": {
+      "temp": "15.6",
+      "condition": "potpuno oblačno",
+      "wind": "NW",
+      "humidity": "90"
+    },
+    "Split-aerodrom": {
+      "temp": "25.8",
+      "condition": "grmljavina bez oborina",
+      "wind": "SE",
+      "humidity": "84"
+    },
+    "Šibenik": {
+      "temp": "21.4",
+      "condition": "grmljavina s oborinom",
+      "wind": "E",
+      "humidity": "97"
+    },
+    "Varaždin": {
+      "temp": "12.9",
+      "condition": "kiša",
+      "wind": "SW",
+      "humidity": "97"
+    },
+    "Zadar-aerodrom": {
+      "temp": "20.5",
+      "condition": "pretežno oblačno",
       "wind": "NE",
-      "humidity": "91"
+      "humidity": "94"
+    },
+    "Zagreb-Maksimir": {
+      "temp": "13.9",
+      "condition": "jaka kiša",
+      "wind": "NW",
+      "humidity": "92"
+    },
+    "Zagreb-aerodrom": {
+      "temp": "13.3",
+      "condition": "slaba kiša",
+      "wind": "SW",
+      "humidity": "97"
     },
     "Zagreb": {
-      "temp": "13.6",
-      "condition": "lahor",
+      "temp": "13.3",
+      "condition": "slaba kiša",
+      "wind": "SW",
+      "humidity": "97"
+    },
+    "Rijeka": {
+      "temp": "18.0",
+      "condition": "potpuno oblačno",
       "wind": "NE",
-      "humidity": "91"
+      "humidity": "94"
+    },
+    "Zadar": {
+      "temp": "20.5",
+      "condition": "pretežno oblačno",
+      "wind": "NE",
+      "humidity": "94"
+    },
+    "Split": {
+      "temp": "25.8",
+      "condition": "grmljavina bez oborina",
+      "wind": "SE",
+      "humidity": "84"
+    },
+    "Pula": {
+      "temp": "20.6",
+      "condition": "pretežno oblačno",
+      "wind": "E",
+      "humidity": "86"
     }
   },
   "alerts": [
