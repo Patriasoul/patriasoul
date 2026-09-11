@@ -1,7 +1,7 @@
-/* PatriaSoul — PWA bootstrap */
+/* PatriaSoul — PWA bootstrap (compatibility layer) */
 (function(){'use strict';
   if(!('serviceWorker' in navigator)) return;
   window.addEventListener('load',function(){
-    navigator.serviceWorker.register('/patriasoul-sw.js',{scope:'/'}).catch(function(){});
+    navigator.serviceWorker.register('/sw.js',{scope:'/'}).catch(function(){});
   });
 })();
