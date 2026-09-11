@@ -12,7 +12,6 @@ export const brigade = [
   { id: 7, number: '7.', name: '7. gardijska brigada', nickname: 'Pume', type: 'gardijska', headquarters: 'Varaždin', region: 'Sjeverozapadna Hrvatska', period: '1992–1996' },
   { id: 9, number: '9.', name: '9. gardijska brigada', nickname: 'Vukovi', type: 'gardijska', headquarters: 'Gospić', region: 'Lika', period: '1992–1996' },
   { id: 8, number: '8.', name: '8. lako jurišna brigada Vojne policije', nickname: 'Orlovi', type: 'vojna policija', headquarters: 'Zagreb', region: 'Hrvatska', period: 'Domovinski rat' },
-
   { id: 57, number: '57.', name: '57. brigada', nickname: 'Marijan Celjak', type: 'pričuvna', headquarters: 'Sisak', region: 'Banovina', period: 'Domovinski rat' },
   { id: 99, number: '99.', name: '99. brigada HV', nickname: '', type: 'pričuvna', headquarters: 'Zagreb – Peščenica', region: 'Zagreb', period: 'Domovinski rat' },
   { id: 100, number: '100.', name: '100. brigada HV', nickname: '', type: 'pričuvna', headquarters: 'Zagreb – Centar', region: 'Zagreb', period: 'Domovinski rat' },
@@ -57,6 +56,12 @@ export const brigade = [
   { id: 139, number: '139.', name: '139. brigada HV', nickname: '', type: 'pričuvna', headquarters: '', region: 'Hrvatska', period: 'Domovinski rat' },
   { id: 140, number: '140.', name: '140. brigada HV', nickname: '', type: 'pričuvna', headquarters: 'Jastrebarsko', region: 'Zagrebačka', period: 'Domovinski rat' },
   { id: 141, number: '141.', name: '141. brigada HV', nickname: '', type: 'pričuvna', headquarters: 'Split', region: 'Dalmacija', period: 'Domovinski rat' },
-  { id: 153, number: '153.', name: '153. brigada HV', nickname: '', type: 'pričuvna', headquarters: 'Velika Gorica', region: 'Zagrebačka', period: 'Domovinski rat' },
-  { id: 155, number: '155.', name: '155. brigada HV', nickname: '', type: 'pričuvna', headquarters: 'Crikvenica', region: 'Kvarner i Primorje', period: '1991–1995' }
+  { id: 148, number: '148.', name: '148. brigada HV', nickname: '', type: 'ratna brigada', headquarters: 'Zagreb', region: 'Zagreb', period: 'Domovinski rat' },
+  { id: 149, number: '149.', name: '149. brigada HV', nickname: 'Trešnjevka', type: 'ratna brigada', headquarters: 'Zagreb', region: 'Zagreb', period: 'Domovinski rat' },
+  { id: 150, number: '150.', name: '150. brigada HV', nickname: '', type: 'ratna brigada', headquarters: 'Zagreb – Črnomerec', region: 'Zagreb', period: 'Domovinski rat' },
+  { id: 151, number: '151.', name: '151. brigada HV', nickname: '', type: 'ratna brigada', headquarters: 'Samobor', region: 'Zagrebačka', period: 'Domovinski rat' },
+  { id: 153, number: '153.', name: '153. brigada HV', nickname: '', type: 'ratna brigada', headquarters: 'Velika Gorica', region: 'Zagrebačka', period: 'Domovinski rat' },
+  { id: 155, number: '155.', name: '155. brigada HV', nickname: '', type: 'ratna brigada', headquarters: 'Crikvenica', region: 'Kvarner i Primorje', period: '1991–1995' },
+  { id: 165, number: '165.', name: '165. brigada HV', nickname: '', type: 'ratna brigada', headquarters: 'Sunja', region: 'Banovina', period: 'Domovinski rat' },
+  { id: 175, number: '175.', name: '175. brigada HV', nickname: 'Hrvatska iskonska', type: 'ratna brigada', headquarters: 'Zagreb', region: 'Zagreb', period: 'Domovinski rat' }
 ];
