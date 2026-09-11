@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  const AI_VERSION = '51';
+  const AI_VERSION = '52';
   const requiredScripts = [
     '/ai-engine/quiz-guard.js',
     '/ai-engine/knowledge/retriever.js',
