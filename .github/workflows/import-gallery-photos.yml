@@ -40,7 +40,7 @@ jobs:
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Traditional_Slavonian_National_Costume.jpg' 'slavonska-nosnja.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar_-_street.JPG' 'vukovar-ulica.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Memorijalno_groblje_Vukovar.jpg' 'vukovar-groblje.jpg'
-          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Croatia_BW_2014-10-07_14-21-23.jpg' 'opatija.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Opatija.JPG' 'opatija.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Vara%C5%BEdin_-_town_hall.JPG' 'varazdin-vijecnica.jpg'
 
       - name: Commit downloaded photos
@@ -54,5 +54,5 @@ jobs:
             echo 'No gallery changes.'
             exit 0
           fi
-          git commit -m 'Add selected Croatian gallery photos'
+          git commit -m 'Refresh verified Croatian gallery photos'
           git push
