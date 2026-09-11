@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-11T08:29:16.221455+00:00",
+  "generatedAt": "2026-09-11T08:37:00.040346+00:00",
   "source": "PatriaSoul repository",
   "counts": {
     "grad": 142,
@@ -736,7 +736,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.177976+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009384+00:00"
     },
     {
       "id": "city-ivanic-grad",
@@ -753,7 +753,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.177983+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009389+00:00"
     },
     {
       "id": "city-jastrebarsko",
@@ -770,7 +770,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.177988+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009393+00:00"
     },
     {
       "id": "city-samobor",
@@ -787,7 +787,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.177991+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009395+00:00"
     },
     {
       "id": "city-sveta-nedelja",
@@ -804,7 +804,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.177995+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009397+00:00"
     },
     {
       "id": "city-sveti-ivan-zelina",
@@ -821,7 +821,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.177998+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009399+00:00"
     },
     {
       "id": "city-velika-gorica",
@@ -838,7 +838,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178001+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009402+00:00"
     },
     {
       "id": "city-vrbovec",
@@ -855,7 +855,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178003+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009403+00:00"
     },
     {
       "id": "city-zapresic",
@@ -872,7 +872,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178007+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009406+00:00"
     },
     {
       "id": "city-donja-stubica",
@@ -889,7 +889,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178010+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009408+00:00"
     },
     {
       "id": "city-klanjec",
@@ -906,7 +906,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178013+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009410+00:00"
     },
     {
       "id": "city-krapina",
@@ -923,7 +923,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178016+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009412+00:00"
     },
     {
       "id": "city-oroslavje",
@@ -940,7 +940,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178019+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009414+00:00"
     },
     {
       "id": "city-pregrada",
@@ -957,7 +957,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178021+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009416+00:00"
     },
     {
       "id": "city-zabok",
@@ -974,7 +974,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178024+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009418+00:00"
     },
     {
       "id": "city-zlatar",
@@ -991,7 +991,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178028+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009421+00:00"
     },
     {
       "id": "city-glina",
@@ -1008,7 +1008,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178030+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009423+00:00"
     },
     {
       "id": "city-hrvatska-kostajnica",
@@ -1025,7 +1025,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178034+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009426+00:00"
     },
     {
       "id": "city-kutina",
@@ -1042,7 +1042,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178036+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009428+00:00"
     },
     {
       "id": "city-novska",
@@ -1059,7 +1059,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178039+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009430+00:00"
     },
     {
       "id": "city-petrinja",
@@ -1076,7 +1076,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178042+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009431+00:00"
     },
     {
       "id": "city-popovaca",
@@ -1093,7 +1093,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178045+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009433+00:00"
     },
     {
       "id": "city-sisak",
@@ -1110,7 +1110,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178048+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009435+00:00"
     },
     {
       "id": "city-duga-resa",
@@ -1127,7 +1127,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178050+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009437+00:00"
     },
     {
       "id": "city-karlovac",
@@ -1144,7 +1144,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178053+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009439+00:00"
     },
     {
       "id": "city-ogulin",
@@ -1161,7 +1161,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178055+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009440+00:00"
     },
     {
       "id": "city-ozalj",
@@ -1178,7 +1178,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178058+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009442+00:00"
     },
     {
       "id": "city-slunj",
@@ -1195,7 +1195,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178061+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009444+00:00"
     },
     {
       "id": "city-ivanec",
@@ -1212,7 +1212,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178067+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009449+00:00"
     },
     {
       "id": "city-lepoglava",
@@ -1229,7 +1229,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178070+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009450+00:00"
     },
     {
       "id": "city-ludbreg",
@@ -1246,7 +1246,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178093+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009452+00:00"
     },
     {
       "id": "city-novi-marof",
@@ -1263,7 +1263,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178100+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009456+00:00"
     },
     {
       "id": "city-varazdin",
@@ -1280,7 +1280,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178102+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009458+00:00"
     },
     {
       "id": "city-varazdinske-toplice",
@@ -1297,7 +1297,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178107+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009460+00:00"
     },
     {
       "id": "city-durdevac",
@@ -1314,7 +1314,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178110+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009462+00:00"
     },
     {
       "id": "city-koprivnica",
@@ -1331,7 +1331,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178113+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009464+00:00"
     },
     {
       "id": "city-krizevci",
@@ -1348,7 +1348,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178116+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009466+00:00"
     },
     {
       "id": "city-bjelovar",
@@ -1365,7 +1365,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178120+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009469+00:00"
     },
     {
       "id": "city-cazma",
@@ -1382,7 +1382,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178124+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009472+00:00"
     },
     {
       "id": "city-daruvar",
@@ -1399,7 +1399,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178127+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009474+00:00"
     },
     {
       "id": "city-garesnica",
@@ -1416,7 +1416,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178130+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009476+00:00"
     },
     {
       "id": "city-grubisno-polje",
@@ -1433,7 +1433,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178133+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009478+00:00"
     },
     {
       "id": "city-bakar",
@@ -1450,7 +1450,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178136+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009480+00:00"
     },
     {
       "id": "city-cres",
@@ -1467,7 +1467,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178138+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009481+00:00"
     },
     {
       "id": "city-crikvenica",
@@ -1484,7 +1484,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178141+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009485+00:00"
     },
     {
       "id": "city-cabar",
@@ -1501,7 +1501,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178144+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009486+00:00"
     },
     {
       "id": "city-delnice",
@@ -1518,7 +1518,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178148+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009488+00:00"
     },
     {
       "id": "city-kastav",
@@ -1535,7 +1535,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178151+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009490+00:00"
     },
     {
       "id": "city-kraljevica",
@@ -1552,7 +1552,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178154+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009492+00:00"
     },
     {
       "id": "city-krk",
@@ -1569,7 +1569,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178223+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009555+00:00"
     },
     {
       "id": "city-mali-losinj",
@@ -1586,7 +1586,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178225+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009558+00:00"
     },
     {
       "id": "city-novi-vinodolski",
@@ -1603,7 +1603,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178228+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009560+00:00"
     },
     {
       "id": "city-opatija",
@@ -1620,7 +1620,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178231+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009562+00:00"
     },
     {
       "id": "city-rab",
@@ -1637,7 +1637,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178234+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009564+00:00"
     },
     {
       "id": "city-rijeka",
@@ -1654,7 +1654,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178238+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009570+00:00"
     },
     {
       "id": "city-vrbovsko",
@@ -1671,7 +1671,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178241+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009573+00:00"
     },
     {
       "id": "city-gospic",
@@ -1688,7 +1688,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178245+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009577+00:00"
     },
     {
       "id": "city-novalja",
@@ -1705,7 +1705,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178249+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009578+00:00"
     },
     {
       "id": "city-otocac",
@@ -1722,7 +1722,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178252+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009580+00:00"
     },
     {
       "id": "city-senj",
@@ -1739,7 +1739,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178254+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009582+00:00"
     },
     {
       "id": "city-orahovica",
@@ -1756,7 +1756,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178257+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009584+00:00"
     },
     {
       "id": "city-slatina",
@@ -1773,7 +1773,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178260+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009586+00:00"
     },
     {
       "id": "city-virovitica",
@@ -1790,7 +1790,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178262+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009588+00:00"
     },
     {
       "id": "city-kutjevo",
@@ -1807,7 +1807,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178265+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009589+00:00"
     },
     {
       "id": "city-lipik",
@@ -1824,7 +1824,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178267+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009591+00:00"
     },
     {
       "id": "city-pakrac",
@@ -1841,7 +1841,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178270+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009593+00:00"
     },
     {
       "id": "city-pleternica",
@@ -1858,7 +1858,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178272+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009596+00:00"
     },
     {
       "id": "city-pozega",
@@ -1875,7 +1875,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178275+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009598+00:00"
     },
     {
       "id": "city-nova-gradiska",
@@ -1892,7 +1892,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178279+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009600+00:00"
     },
     {
       "id": "city-slavonski-brod",
@@ -1909,7 +1909,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178282+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009601+00:00"
     },
     {
       "id": "city-benkovac",
@@ -1926,7 +1926,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178285+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009603+00:00"
     },
     {
       "id": "city-biograd-na-moru",
@@ -1943,7 +1943,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178289+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009606+00:00"
     },
     {
       "id": "city-nin",
@@ -1960,7 +1960,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178291+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009608+00:00"
     },
     {
       "id": "city-obrovac",
@@ -1977,7 +1977,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178294+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009610+00:00"
     },
     {
       "id": "city-pag",
@@ -1994,7 +1994,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178296+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009612+00:00"
     },
     {
       "id": "city-zadar",
@@ -2011,7 +2011,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178299+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009613+00:00"
     },
     {
       "id": "city-beli-manastir",
@@ -2028,7 +2028,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178303+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009617+00:00"
     },
     {
       "id": "city-belisce",
@@ -2045,7 +2045,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178305+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009619+00:00"
     },
     {
       "id": "city-dakovo",
@@ -2062,7 +2062,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178308+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009622+00:00"
     },
     {
       "id": "city-donji-miholjac",
@@ -2079,7 +2079,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178311+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009623+00:00"
     },
     {
       "id": "city-nasice",
@@ -2096,7 +2096,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178316+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009631+00:00"
     },
     {
       "id": "city-osijek",
@@ -2113,7 +2113,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178319+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009633+00:00"
     },
     {
       "id": "city-valpovo",
@@ -2130,7 +2130,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178322+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009635+00:00"
     },
     {
       "id": "city-drnis",
@@ -2147,7 +2147,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178324+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009637+00:00"
     },
     {
       "id": "city-knin",
@@ -2164,7 +2164,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178327+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009638+00:00"
     },
     {
       "id": "city-skradin",
@@ -2181,7 +2181,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178329+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009640+00:00"
     },
     {
       "id": "city-sibenik",
@@ -2198,7 +2198,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178332+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009642+00:00"
     },
     {
       "id": "city-vodice",
@@ -2215,7 +2215,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178334+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009644+00:00"
     },
     {
       "id": "city-ilok",
@@ -2232,7 +2232,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178336+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009645+00:00"
     },
     {
       "id": "city-otok",
@@ -2249,7 +2249,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178339+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009647+00:00"
     },
     {
       "id": "city-vinkovci",
@@ -2266,7 +2266,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178343+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009651+00:00"
     },
     {
       "id": "city-vukovar",
@@ -2283,7 +2283,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178346+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009652+00:00"
     },
     {
       "id": "city-zupanja",
@@ -2300,7 +2300,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178356+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009656+00:00"
     },
     {
       "id": "city-hvar",
@@ -2317,7 +2317,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178358+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009658+00:00"
     },
     {
       "id": "city-imotski",
@@ -2334,7 +2334,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178362+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009660+00:00"
     },
     {
       "id": "city-kastela",
@@ -2351,7 +2351,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178365+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009662+00:00"
     },
     {
       "id": "city-komiza",
@@ -2368,7 +2368,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178367+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009664+00:00"
     },
     {
       "id": "city-makarska",
@@ -2385,7 +2385,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178370+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009666+00:00"
     },
     {
       "id": "city-omis",
@@ -2402,7 +2402,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178372+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009667+00:00"
     },
     {
       "id": "city-sinj",
@@ -2419,7 +2419,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178375+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009669+00:00"
     },
     {
       "id": "city-solin",
@@ -2436,7 +2436,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178377+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009671+00:00"
     },
     {
       "id": "city-split",
@@ -2453,7 +2453,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178380+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009673+00:00"
     },
     {
       "id": "city-stari-grad",
@@ -2470,7 +2470,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178383+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009674+00:00"
     },
     {
       "id": "city-supetar",
@@ -2487,7 +2487,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178387+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009677+00:00"
     },
     {
       "id": "city-trogir",
@@ -2504,7 +2504,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178391+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009681+00:00"
     },
     {
       "id": "city-trilj",
@@ -2521,7 +2521,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178395+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009684+00:00"
     },
     {
       "id": "city-vis",
@@ -2538,7 +2538,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178398+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009686+00:00"
     },
     {
       "id": "city-vrlika",
@@ -2555,7 +2555,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178401+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009688+00:00"
     },
     {
       "id": "city-vrgorac",
@@ -2572,7 +2572,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178404+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009690+00:00"
     },
     {
       "id": "city-buje",
@@ -2589,7 +2589,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178406+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009691+00:00"
     },
     {
       "id": "city-buzet",
@@ -2606,7 +2606,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178410+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009694+00:00"
     },
     {
       "id": "city-labin",
@@ -2623,7 +2623,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178412+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009696+00:00"
     },
     {
       "id": "city-novigrad",
@@ -2640,7 +2640,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178415+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009698+00:00"
     },
     {
       "id": "city-pazin",
@@ -2657,7 +2657,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178417+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009699+00:00"
     },
     {
       "id": "city-porec",
@@ -2674,7 +2674,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178420+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009701+00:00"
     },
     {
       "id": "city-pula",
@@ -2691,7 +2691,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178422+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009703+00:00"
     },
     {
       "id": "city-rovinj",
@@ -2708,7 +2708,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178424+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009705+00:00"
     },
     {
       "id": "city-umag",
@@ -2725,7 +2725,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178426+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009708+00:00"
     },
     {
       "id": "city-dubrovnik",
@@ -2742,7 +2742,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178433+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009709+00:00"
     },
     {
       "id": "city-korcula",
@@ -2759,7 +2759,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178435+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009711+00:00"
     },
     {
       "id": "city-metkovic",
@@ -2776,7 +2776,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178438+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009713+00:00"
     },
     {
       "id": "city-opuzen",
@@ -2793,7 +2793,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178440+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009715+00:00"
     },
     {
       "id": "city-ploce",
@@ -2810,7 +2810,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178443+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009717+00:00"
     },
     {
       "id": "city-cakovec",
@@ -2827,7 +2827,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178446+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009718+00:00"
     },
     {
       "id": "city-mursko-sredisce",
@@ -2844,7 +2844,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178448+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009720+00:00"
     },
     {
       "id": "city-prelog",
@@ -2861,7 +2861,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178451+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009722+00:00"
     },
     {
       "id": "city-zagreb",
@@ -2878,7 +2878,7 @@
       "source": "mpudt-jls",
       "sourceTitle": "Kanonski registar gradova PatriaSoul",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178453+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009724+00:00"
     },
     {
       "id": "quiz-p001",
@@ -2893,7 +2893,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178736+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009942+00:00"
     },
     {
       "id": "quiz-p002",
@@ -2908,7 +2908,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178749+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009951+00:00"
     },
     {
       "id": "quiz-p003",
@@ -2923,7 +2923,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178757+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009957+00:00"
     },
     {
       "id": "quiz-p004",
@@ -2938,7 +2938,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178766+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009963+00:00"
     },
     {
       "id": "quiz-p005",
@@ -2953,7 +2953,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178772+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009967+00:00"
     },
     {
       "id": "quiz-p006",
@@ -2968,7 +2968,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178777+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009972+00:00"
     },
     {
       "id": "quiz-p007",
@@ -2983,7 +2983,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178783+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009976+00:00"
     },
     {
       "id": "quiz-p008",
@@ -2998,7 +2998,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178792+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009982+00:00"
     },
     {
       "id": "quiz-p009",
@@ -3013,7 +3013,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178798+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009986+00:00"
     },
     {
       "id": "quiz-p010",
@@ -3028,7 +3028,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178805+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009992+00:00"
     },
     {
       "id": "quiz-p011",
@@ -3043,7 +3043,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178811+00:00"
+      "updatedAt": "2026-09-11T08:37:00.009996+00:00"
     },
     {
       "id": "quiz-p012",
@@ -3058,7 +3058,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178818+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010000+00:00"
     },
     {
       "id": "quiz-p013",
@@ -3073,7 +3073,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178825+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010004+00:00"
     },
     {
       "id": "quiz-p014",
@@ -3088,7 +3088,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178831+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010008+00:00"
     },
     {
       "id": "quiz-p015",
@@ -3103,7 +3103,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178837+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010012+00:00"
     },
     {
       "id": "quiz-p016",
@@ -3118,7 +3118,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178842+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010015+00:00"
     },
     {
       "id": "quiz-p017",
@@ -3133,7 +3133,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178848+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010019+00:00"
     },
     {
       "id": "quiz-p018",
@@ -3148,7 +3148,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178854+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010023+00:00"
     },
     {
       "id": "quiz-p019",
@@ -3163,7 +3163,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178860+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010027+00:00"
     },
     {
       "id": "quiz-p020",
@@ -3178,7 +3178,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178866+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010031+00:00"
     },
     {
       "id": "quiz-p021",
@@ -3193,7 +3193,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178872+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010035+00:00"
     },
     {
       "id": "quiz-p022",
@@ -3208,7 +3208,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178876+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010038+00:00"
     },
     {
       "id": "quiz-p023",
@@ -3223,7 +3223,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178882+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010042+00:00"
     },
     {
       "id": "quiz-p024",
@@ -3238,7 +3238,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178887+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010046+00:00"
     },
     {
       "id": "quiz-p025",
@@ -3253,7 +3253,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178892+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010051+00:00"
     },
     {
       "id": "quiz-p026",
@@ -3268,7 +3268,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178897+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010054+00:00"
     },
     {
       "id": "quiz-p027",
@@ -3283,7 +3283,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178901+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010058+00:00"
     },
     {
       "id": "quiz-p028",
@@ -3298,7 +3298,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178908+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010061+00:00"
     },
     {
       "id": "quiz-p029",
@@ -3313,7 +3313,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178912+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010064+00:00"
     },
     {
       "id": "quiz-p030",
@@ -3328,7 +3328,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178917+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010067+00:00"
     },
     {
       "id": "quiz-p031",
@@ -3343,7 +3343,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178924+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010072+00:00"
     },
     {
       "id": "quiz-p032",
@@ -3358,7 +3358,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178929+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010076+00:00"
     },
     {
       "id": "quiz-p033",
@@ -3373,7 +3373,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178934+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010079+00:00"
     },
     {
       "id": "quiz-p034",
@@ -3388,7 +3388,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178940+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010083+00:00"
     },
     {
       "id": "quiz-p035",
@@ -3403,7 +3403,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178946+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010088+00:00"
     },
     {
       "id": "quiz-p036",
@@ -3418,7 +3418,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178953+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010093+00:00"
     },
     {
       "id": "quiz-p037",
@@ -3433,7 +3433,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178958+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010096+00:00"
     },
     {
       "id": "quiz-p038",
@@ -3448,7 +3448,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178963+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010100+00:00"
     },
     {
       "id": "quiz-p039",
@@ -3463,7 +3463,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178968+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010104+00:00"
     },
     {
       "id": "quiz-p040",
@@ -3478,7 +3478,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178975+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010108+00:00"
     },
     {
       "id": "quiz-p041",
@@ -3493,7 +3493,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178982+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010113+00:00"
     },
     {
       "id": "quiz-p042",
@@ -3508,7 +3508,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178988+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010117+00:00"
     },
     {
       "id": "quiz-p043",
@@ -3523,7 +3523,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.178994+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010120+00:00"
     },
     {
       "id": "quiz-p044",
@@ -3538,7 +3538,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179000+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010124+00:00"
     },
     {
       "id": "quiz-p045",
@@ -3553,7 +3553,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179006+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010128+00:00"
     },
     {
       "id": "quiz-p046",
@@ -3568,7 +3568,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179011+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010131+00:00"
     },
     {
       "id": "quiz-p047",
@@ -3583,7 +3583,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179017+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010135+00:00"
     },
     {
       "id": "quiz-p048",
@@ -3598,7 +3598,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179023+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010139+00:00"
     },
     {
       "id": "quiz-p049",
@@ -3613,7 +3613,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179028+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010142+00:00"
     },
     {
       "id": "quiz-p050",
@@ -3628,7 +3628,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179036+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010147+00:00"
     },
     {
       "id": "quiz-p051",
@@ -3643,7 +3643,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179042+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010151+00:00"
     },
     {
       "id": "quiz-p052",
@@ -3658,7 +3658,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179048+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010155+00:00"
     },
     {
       "id": "quiz-p053",
@@ -3673,7 +3673,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179054+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010159+00:00"
     },
     {
       "id": "quiz-p054",
@@ -3688,7 +3688,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179063+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010165+00:00"
     },
     {
       "id": "quiz-p055",
@@ -3703,7 +3703,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179067+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010169+00:00"
     },
     {
       "id": "quiz-p056",
@@ -3718,7 +3718,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179097+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010172+00:00"
     },
     {
       "id": "quiz-p057",
@@ -3733,7 +3733,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179102+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010177+00:00"
     },
     {
       "id": "quiz-p058",
@@ -3748,7 +3748,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179109+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010180+00:00"
     },
     {
       "id": "quiz-p059",
@@ -3763,7 +3763,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179114+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010183+00:00"
     },
     {
       "id": "quiz-p060",
@@ -3778,7 +3778,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179119+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010187+00:00"
     },
     {
       "id": "quiz-p061",
@@ -3793,7 +3793,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179123+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010190+00:00"
     },
     {
       "id": "quiz-p062",
@@ -3808,7 +3808,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179128+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010193+00:00"
     },
     {
       "id": "quiz-p063",
@@ -3823,7 +3823,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179132+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010197+00:00"
     },
     {
       "id": "quiz-p064",
@@ -3838,7 +3838,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179138+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010201+00:00"
     },
     {
       "id": "quiz-p065",
@@ -3853,7 +3853,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179143+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010204+00:00"
     },
     {
       "id": "quiz-p066",
@@ -3868,7 +3868,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179147+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010207+00:00"
     },
     {
       "id": "quiz-p067",
@@ -3883,7 +3883,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179155+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010212+00:00"
     },
     {
       "id": "quiz-p068",
@@ -3898,7 +3898,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179160+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010216+00:00"
     },
     {
       "id": "quiz-p069",
@@ -3913,7 +3913,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179164+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010219+00:00"
     },
     {
       "id": "quiz-p070",
@@ -3928,7 +3928,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179171+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010225+00:00"
     },
     {
       "id": "quiz-p071",
@@ -3943,7 +3943,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179177+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010229+00:00"
     },
     {
       "id": "quiz-p072",
@@ -3958,7 +3958,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179184+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010232+00:00"
     },
     {
       "id": "quiz-p073",
@@ -3973,7 +3973,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179189+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010236+00:00"
     },
     {
       "id": "quiz-p074",
@@ -3988,7 +3988,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179196+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010241+00:00"
     },
     {
       "id": "quiz-p075",
@@ -4003,7 +4003,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179203+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010246+00:00"
     },
     {
       "id": "quiz-p076",
@@ -4018,7 +4018,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179209+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010250+00:00"
     },
     {
       "id": "quiz-p077",
@@ -4033,7 +4033,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179215+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010254+00:00"
     },
     {
       "id": "quiz-p078",
@@ -4048,7 +4048,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179221+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010257+00:00"
     },
     {
       "id": "quiz-p079",
@@ -4063,7 +4063,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179226+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010260+00:00"
     },
     {
       "id": "quiz-p080",
@@ -4078,7 +4078,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179231+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010264+00:00"
     },
     {
       "id": "quiz-p081",
@@ -4093,7 +4093,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179238+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010268+00:00"
     },
     {
       "id": "quiz-p082",
@@ -4108,7 +4108,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179243+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010272+00:00"
     },
     {
       "id": "quiz-p083",
@@ -4123,7 +4123,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179249+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010275+00:00"
     },
     {
       "id": "quiz-p084",
@@ -4138,7 +4138,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179255+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010279+00:00"
     },
     {
       "id": "quiz-p085",
@@ -4153,7 +4153,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179260+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010284+00:00"
     },
     {
       "id": "quiz-p086",
@@ -4168,7 +4168,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179266+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010288+00:00"
     },
     {
       "id": "quiz-p087",
@@ -4183,7 +4183,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179275+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010293+00:00"
     },
     {
       "id": "quiz-p088",
@@ -4198,7 +4198,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179280+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010296+00:00"
     },
     {
       "id": "quiz-p089",
@@ -4213,7 +4213,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179287+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010302+00:00"
     },
     {
       "id": "quiz-p090",
@@ -4228,7 +4228,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179293+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010305+00:00"
     },
     {
       "id": "quiz-p091",
@@ -4243,7 +4243,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179299+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010310+00:00"
     },
     {
       "id": "quiz-p092",
@@ -4258,7 +4258,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179304+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010313+00:00"
     },
     {
       "id": "quiz-p093",
@@ -4273,7 +4273,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179309+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010316+00:00"
     },
     {
       "id": "quiz-p094",
@@ -4288,7 +4288,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179313+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010320+00:00"
     },
     {
       "id": "quiz-p095",
@@ -4303,7 +4303,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179318+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010323+00:00"
     },
     {
       "id": "quiz-p096",
@@ -4318,7 +4318,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179324+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010327+00:00"
     },
     {
       "id": "quiz-p097",
@@ -4333,7 +4333,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179329+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010330+00:00"
     },
     {
       "id": "quiz-p098",
@@ -4348,7 +4348,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179336+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010335+00:00"
     },
     {
       "id": "quiz-p099",
@@ -4363,7 +4363,7 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179341+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010338+00:00"
     },
     {
       "id": "quiz-p100",
@@ -4378,10 +4378,10 @@
       "source": "data.js",
       "sourceTitle": "PatriaSoul centralna baza pitanja",
       "status": "verified",
-      "updatedAt": "2026-09-11T08:29:16.179345+00:00"
+      "updatedAt": "2026-09-11T08:37:00.010341+00:00"
     },
     {
-      "id": "news-0-50702268",
+      "id": "news-0-62015216",
       "type": "vijest",
       "title": "Nadogradnja borbenog komunikacijskog sustava HRZ-a vrijedna 33,2 milijuna eura",
       "content": "Potpisan je ugovor za razvoj komunikacijskih sposobnosti Hrvatskog ratnog zrakoplovstva, uz modernizaciju sustava i usklađivanje s NATO standardima.",
@@ -4395,7 +4395,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-1-80079218",
+      "id": "news-1-20481102",
       "type": "vijest",
       "title": "Otpad u Gospiću bit će pravodobno saniran, vrlo brzo krenut će prvi radovi",
       "content": "Vlada navodi da je proces odvoza otpada i sanacije prostora na lokaciji PPK Velebit u Gospiću u tijeku te da će uskoro krenuti prvi radovi.",
@@ -4409,7 +4409,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-2-7989958",
+      "id": "news-2-91754081",
       "type": "vijest",
       "title": "Kontinuirani dijalog, fiskalna decentralizacija i zajednička provedba projekata stupovi su suradnje Vlade i županije",
       "content": "Predsjednik Vlade Andrej Plenković govorio je u Trakošćanu o suradnji Vlade i Varaždinske županije te ulaganjima u infrastrukturu i razvoj.",
@@ -4423,7 +4423,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-3-46320430",
+      "id": "news-3-67219228",
       "type": "vijest",
       "title": "Tonči Glavinić kandidat za novog Glavnog državnog inspektora",
       "content": "Premijer Andrej Plenković objavio je kandidaturu Tončija Glavinića za dužnost glavnog državnog inspektora.",
@@ -4437,7 +4437,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-4-34603552",
+      "id": "news-4-88417322",
       "type": "vijest",
       "title": "Hrvatska šalje dva kanadera za pomoć u gašenju požara u BiH",
       "content": "Vlada Republike Hrvatske donijela je odluku o pružanju humanitarne pomoći u gašenju požara u Bosni i Hercegovini.",
@@ -4451,7 +4451,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-5-62474450",
+      "id": "news-5-69738255",
       "type": "vijest",
       "title": "Rudolf Perešin uzor je i trajna smjernica pilotima HRZ-a",
       "content": "Ministarstvo hrvatskih branitelja istaknulo je povijesni značaj Rudolfa Perešina i njegovu ulogu kao uzora hrvatskim pilotima.",
@@ -4465,7 +4465,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-6-62474450",
+      "id": "news-6-69738255",
       "type": "vijest",
       "title": "U Vukovaru obilježen Dan sjećanja na nestale u Domovinskom ratu",
       "content": "U Vukovaru je obilježen Dan sjećanja na nestale u Domovinskom ratu i Međunarodni dan nestalih osoba.",
@@ -4479,7 +4479,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-7-63105958",
+      "id": "news-7-39472306",
       "type": "vijest",
       "title": "Petir: Domaće sjeme strateški je važno za hrvatsku proizvodnju hrane i prehrambenu sigurnost",
       "content": "Predsjednica saborskog Odbora za poljoprivredu Marijana Petir istaknula je važnost domaćeg sjemenarstva i prehrambene sigurnosti.",
@@ -4493,7 +4493,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-8-66450132",
+      "id": "news-8-24390147",
       "type": "vijest",
       "title": "Održana 23. sjednica Predsjedništva Hrvatskoga sabora",
       "content": "Održana je sjednica Predsjedništva Hrvatskoga sabora s predsjednicima klubova zastupnika.",
@@ -4507,7 +4507,7 @@
       "updatedAt": "2026-09-09T21:25:00+02:00"
     },
     {
-      "id": "news-9-90082622",
+      "id": "news-9-69347492",
       "type": "vijest",
       "title": "Predsjednica Odbora za Europske poslove uputila pismo predsjednici Europske komisije",
       "content": "Predsjednica Odbora za europske poslove Hrvatskoga sabora Jelena Miloš uputila je pismo predsjednici Europske komisije.",
@@ -4532,7 +4532,7 @@
       "source": "kontakt.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-hrvati-u-njemackoj.html",
@@ -4546,7 +4546,7 @@
       "source": "hrvati-u-njemackoj.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-hrvati-u-australiji.html",
@@ -4560,7 +4560,7 @@
       "source": "hrvati-u-australiji.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-brigade.html",
@@ -4574,7 +4574,7 @@
       "source": "brigade.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-dijaspora-povijest-iseljavanja.html",
@@ -4588,7 +4588,7 @@
       "source": "dijaspora-povijest-iseljavanja.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-svetci.html",
@@ -4602,13 +4602,13 @@
       "source": "svetci.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995549+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-medimurje.html",
       "type": "stranica",
       "title": "Međimurje | PatriaSoul",
-      "content": "Međimurje | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Međimurje 🇭🇷 Domovina · Sjever Hrvatske Međimurje Kraj između Mure i Drave, najprostranije određen dvjema rijekama, a iznutra podijeljen na brežuljkasto Gornje i ravničarsko Donje Međimurje. Mali prostor velike gustoće života, rada, baštine i zelenila. 729,2 km² površina Međimurske županije 105 250 stanovnika prema popisu 2021. 3 grada Čakovec, Mursko Središće i Prelog 131 naselje u Međimurskoj županiji Zemljopis Mura i Drava Čakovec i Zrinski Gradovi i mjesta Baština Živa kultura Izvori Zemljopis prostora Između dviju velikih rijeka Hrvatska enciklopedija Međimurje opisuje kao kraj između Drave na jugu i Mure na sjeveru. Gornje Međimurje čine niske Međimurske gorice, dok Donje Međimurje pripada dravsko-murskoj nizini. Takva podjela jasno se vidi u krajoliku, poljoprivredi i načinu života. Gornje i Donje Međimurje U Gornjem Međimurju prevladavaju brežuljci, vinogradi i voćnjaci. Štrigova, Sveti Martin na Muri i okolna mjesta dio su tog prepoznatljivog vinorodnog krajolika. Donje Međimurje otvorenije je i ravničarskije. Uz Muru i Dravu nalaze se livade, pašnjaci, šume, rukavci i poljoprivredne površine, a naselja su povezana gustom mrežom cesta i drugih prometnica. Prirodna osnova Mura sjeverna granica i važan riječni ekosustav Drava južna granica Međimurja i važna nizinska rijeka Međimurske gorice brežuljkasti vinogradarski prostor Gornjeg Međimurja Trnava važan lokalni vodotok i pritok Mure Mura i Drava Rijeke koje su dale ime i lice kraju Mura i Drava nisu samo granice na zemljovidu. One su oblikovale plodnost tla, promet, naseljavanje, ribarstvo, šume i livade te današnji prirodni identitet Međimurja. 🌊 Mura Mura je lijevi pritok Drave, duga 438 km, a u Dravu se ulijeva kod Legrada. Njezin tok čini sjeverni prirodni okvir Međimurja i važan je za riječne ekosustave. 🌿 Drava Drava je desni pritok Dunava. U hrvatskom dijelu toka snažno je povezana s energetikom, ali i s vrijednim poplavnim, šumskim i vodenim staništima. 🐦 Riječni krajolik Rukavci, mrtvice, šume, livade i obale stvaraju mozaik staništa koji je važan za ptice, ribe i druge vrste vezane uz nizinske rijeke. Povijest i baština Čakovec i trag Zrinskih Čakovec je povijesno, upravno, gospodarsko i kulturno središte Međimurja. Stari grad Zrinskih jedan je od njegovih najprepoznatljivijih simbola. Stari grad Zrinskih Utvrda i dvorac u središtu Čakovca snažno su povezani s obitelji Zrinski. Nikola IV. Zrinski preuzeo je Čakovec i Međimurje 1546., a zatim je utvrda proširena i preoblikovana u snažan renesansni kompleks. Čakovec je kroz stoljeća mijenjao gospodare i upravne okvire, ali je ostao središnja točka Međimurja. Današnji Stari grad povezuje povijest grada, obitelji Zrinski i kulturni život suvremenog Međimurja. Mjesta baštine Čakovec Stari grad Zrinskih i gradska povijesna jezgra Šenkovec povezan s nekadašnjim pavlinskim samostanom Štrigova vinogradarski kraj i sakralna baština Sveti Martin na Muri riječni krajolik, toplice i tradicija Gradovi i mjesta Čakovec, Prelog i Mursko Središće Međimurska županija ima tri grada i 22 općine. Mreža naselja jedna je od važnih značajki prostora u kojem su gradska i ruralna područja snažno povezana. Čakovec Županijsko središte i najveći grad Međimurja. Razvijao se uz Trnavu, a danas je gospodarsko, kulturno, obrazovno i prometno središte regije. Gradovi Hrvatske → Prelog Grad u Donjem Međimurju, smješten u blizini Drave i jezera HE Čakovec. Važan je dio gospodarske i prometne mreže regije. Gradovi Hrvatske → Mursko Središće Grad na desnoj obali Mure, povijesno povezan s rudarstvom i danas sjeverno središte međimurskog prostora. Gradovi Hrvatske → Štrigova i vinorodne gorice Brežuljkasti prostor Gornjeg Međimurja posebno je prepoznat po vinogradima, voćnjacima, kletima i panoramskim pogledima. Zagorje i Prigorje → Živa baština Međimurska popevka, vinogradi i svakodnevni život Međimurje je prostor u kojem se tradicija nije zadržala samo u muzejima. Jezik, pjesma, gastronomija, vinogradarstvo, proštenja i obiteljski običaji i danas su dio identiteta. 🎶 Međimurska popevka Međimurska popevka važan je dio kulturnog identiteta kraja i zaštićena je kao nematerijalna kulturna baština. 🍷 Vinske gorice Gornje Međimurje ima dugu vinogradarsku tradiciju. Kleti i vinogradi oblikuju krajolik i povezani su s lokalnim običajima i gastronomijom. 🍰 Međimurska gibanica Gastronomsku baštinu predstavljaju složena tradicijska jela i slastice, među kojima posebno mjesto ima međimurska gibanica. PatriaSoul urednički pogled: Međimurje je primjer kako mali zemljopisni prostor može imati snažan i prepoznatljiv identitet. Mura i Drava određuju njegov prirodni okvir, Čakovec povezuje urbani život, a gorice, sela, pjesma i tradicija čuvaju kontinuitet svakodnevice. Zato Međimurje na PatriaSoulu promatramo kao cjelinu prostora, ljudi i baštine. Izvori i uredništvo Provjerljivo znanje Glavni izvor: Leksikografski zavod Miroslav Krleža — Hrvatska enciklopedija, natuknica „Međimurje”. Dodatni izvori: Hrvatska enciklopedija — „Međimurska županija”, „Čakovec”, „Mura” i „Drava”. Turistički izvor: Turistička zajednica Međimurske županije — Visit Međimurje, službeni turistički portal. PatriaSoul: tekst je originalna urednička obrada; vanjski članci nisu prepisivani. Hrvatska enciklopedija — Međimurje → Hrvatska enciklopedija — Čakovec → Visit Međimurje → ← Natrag na Krajeve i geografiju · Domovina © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
+      "content": "Međimurje | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Međimurje 🇭🇷 Domovina · Sjever Hrvatske Međimurje Kraj između Mure i Drave, najprostranije određen dvjema rijekama, a iznutra podijeljen na brežuljkasto Gornje i ravničarsko Donje Međimurje. Mali prostor velike gustoće života, rada, baštine i zelenila. GLAVNA SLIKA · Međimurje | PatriaSoul 729,2 km² površina Međimurske županije 105 250 stanovnika prema popisu 2021. 3 grada Čakovec, Mursko Središće i Prelog 131 naselje u Međimurskoj županiji Zemljopis Mura i Drava Čakovec i Zrinski Gradovi i mjesta Baština Živa kultura Izvori Zemljopis prostora Između dviju velikih rijeka Hrvatska enciklopedija Međimurje opisuje kao kraj između Drave na jugu i Mure na sjeveru. Gornje Međimurje čine niske Međimurske gorice, dok Donje Međimurje pripada dravsko-murskoj nizini. Takva podjela jasno se vidi u krajoliku, poljoprivredi i načinu života. Gornje i Donje Međimurje U Gornjem Međimurju prevladavaju brežuljci, vinogradi i voćnjaci. Štrigova, Sveti Martin na Muri i okolna mjesta dio su tog prepoznatljivog vinorodnog krajolika. Donje Međimurje otvorenije je i ravničarskije. Uz Muru i Dravu nalaze se livade, pašnjaci, šume, rukavci i poljoprivredne površine, a naselja su povezana gustom mrežom cesta i drugih prometnica. Prirodna osnova Mura sjeverna granica i važan riječni ekosustav Drava južna granica Međimurja i važna nizinska rijeka Međimurske gorice brežuljkasti vinogradarski prostor Gornjeg Međimurja Trnava važan lokalni vodotok i pritok Mure Mura i Drava Rijeke koje su dale ime i lice kraju Mura i Drava nisu samo granice na zemljovidu. One su oblikovale plodnost tla, promet, naseljavanje, ribarstvo, šume i livade te današnji prirodni identitet Međimurja. 🌊 Mura Mura je lijevi pritok Drave, duga 438 km, a u Dravu se ulijeva kod Legrada. Njezin tok čini sjeverni prirodni okvir Međimurja i važan je za riječne ekosustave. 🌿 Drava Drava je desni pritok Dunava. U hrvatskom dijelu toka snažno je povezana s energetikom, ali i s vrijednim poplavnim, šumskim i vodenim staništima. 🐦 Riječni krajolik Rukavci, mrtvice, šume, livade i obale stvaraju mozaik staništa koji je važan za ptice, ribe i druge vrste vezane uz nizinske rijeke. Povijest i baština Čakovec i trag Zrinskih Čakovec je povijesno, upravno, gospodarsko i kulturno središte Međimurja. Stari grad Zrinskih jedan je od njegovih najprepoznatljivijih simbola. Stari grad Zrinskih Utvrda i dvorac u središtu Čakovca snažno su povezani s obitelji Zrinski. Nikola IV. Zrinski preuzeo je Čakovec i Međimurje 1546., a zatim je utvrda proširena i preoblikovana u snažan renesansni kompleks. Čakovec je kroz stoljeća mijenjao gospodare i upravne okvire, ali je ostao središnja točka Međimurja. Današnji Stari grad povezuje povijest grada, obitelji Zrinski i kulturni život suvremenog Međimurja. Mjesta baštine Čakovec Stari grad Zrinskih i gradska povijesna jezgra Šenkovec povezan s nekadašnjim pavlinskim samostanom Štrigova vinogradarski kraj i sakralna baština Sveti Martin na Muri riječni krajolik, toplice i tradicija Gradovi i mjesta Čakovec, Prelog i Mursko Središće Međimurska županija ima tri grada i 22 općine. Mreža naselja jedna je od važnih značajki prostora u kojem su gradska i ruralna područja snažno povezana. Čakovec Županijsko središte i najveći grad Međimurja. Razvijao se uz Trnavu, a danas je gospodarsko, kulturno, obrazovno i prometno središte regije. Gradovi Hrvatske → Prelog Grad u Donjem Međimurju, smješten u blizini Drave i jezera HE Čakovec. Važan je dio gospodarske i prometne mreže regije. Gradovi Hrvatske → Mursko Središće Grad na desnoj obali Mure, povijesno povezan s rudarstvom i danas sjeverno središte međimurskog prostora. Gradovi Hrvatske → Štrigova i vinorodne gorice Brežuljkasti prostor Gornjeg Međimurja posebno je prepoznat po vinogradima, voćnjacima, kletima i panoramskim pogledima. Zagorje i Prigorje → Živa baština Međimurska popevka, vinogradi i svakodnevni život Međimurje je prostor u kojem se tradicija nije zadržala samo u muzejima. Jezik, pjesma, gastronomija, vinogradarstvo, proštenja i obiteljski običaji i danas su dio identiteta. 🎶 Međimurska popevka Međimurska popevka važan je dio kulturnog identiteta kraja i zaštićena je kao nematerijalna kulturna baština. 🍷 Vinske gorice Gornje Međimurje ima dugu vinogradarsku tradiciju. Kleti i vinogradi oblikuju krajolik i povezani su s lokalnim običajima i gastronomijom. 🍰 Međimurska gibanica Gastronomsku baštinu predstavljaju složena tradicijska jela i slastice, među kojima posebno mjesto ima međimurska gibanica. PatriaSoul urednički pogled: Međimurje je primjer kako mali zemljopisni prostor može imati snažan i prepoznatljiv identitet. Mura i Drava određuju njegov prirodni okvir, Čakovec povezuje urbani život, a gorice, sela, pjesma i tradicija čuvaju kontinuitet svakodnevice. Zato Međimurje na PatriaSoulu promatramo kao cjelinu prostora, ljudi i baštine. Izvori i uredništvo Provjerljivo znanje Glavni izvor: Leksikografski zavod Miroslav Krleža — Hrvatska enciklopedija, natuknica „Međimurje”. Dodatni izvori: Hrvatska enciklopedija — „Međimurska županija”, „Čakovec”, „Mura” i „Drava”. Turistički izvor: Turistička zajednica Međimurske županije — Visit Međimurje, službeni turistički portal. PatriaSoul: tekst je originalna urednička obrada; vanjski članci nisu prepisivani. Hrvatska enciklopedija — Međimurje → Hrvatska enciklopedija — Čakovec → Visit Međimurje → ← Natrag na Krajeve i geografiju · Domovina © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
       "tags": [
         "medimurje",
         "portal"
@@ -4616,7 +4616,7 @@
       "source": "medimurje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.941484+00:00"
     },
     {
       "id": "page-dijaspora-poduzetnistvo.html",
@@ -4630,7 +4630,7 @@
       "source": "dijaspora-poduzetnistvo.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-video.html",
@@ -4644,7 +4644,7 @@
       "source": "video.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-gastronomija.html",
@@ -4658,7 +4658,7 @@
       "source": "gastronomija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.747608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-operacije.html",
@@ -4672,7 +4672,7 @@
       "source": "operacije.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.986606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.942484+00:00"
     },
     {
       "id": "page-hrvatski-narodni-preporod.html",
@@ -4686,7 +4686,7 @@
       "source": "hrvatski-narodni-preporod.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.750608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.793487+00:00"
     },
     {
       "id": "page-duhovnost.html",
@@ -4700,7 +4700,7 @@
       "source": "duhovnost.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-knezovi-i-vladari.html",
@@ -4714,7 +4714,7 @@
       "source": "knezovi-i-vladari.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-hrvatska.html",
@@ -4728,7 +4728,7 @@
       "source": "hrvatska.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.749608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.793487+00:00"
     },
     {
       "id": "page-svjedocanstva.html",
@@ -4742,7 +4742,7 @@
       "source": "svjedocanstva.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995549+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-regionalni-vodic.html",
@@ -4756,7 +4756,7 @@
       "source": "regionalni-vodic.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.993606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950484+00:00"
     },
     {
       "id": "page-dijaspora-novi-zeland.html",
@@ -4770,7 +4770,7 @@
       "source": "dijaspora-novi-zeland.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-profil.html",
@@ -4784,7 +4784,7 @@
       "source": "profil.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-hrvatska-stvara.html",
@@ -4798,7 +4798,7 @@
       "source": "hrvatska-stvara.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.749608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-stvaranje-moderne-hrvatske.html",
@@ -4812,13 +4812,13 @@
       "source": "stvaranje-moderne-hrvatske.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.994606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951484+00:00"
     },
     {
       "id": "page-krajevi-i-geografija.html",
       "type": "stranica",
       "title": "Krajevi i geografija Hrvatske | PatriaSoul",
-      "content": "Krajevi i geografija Hrvatske | PatriaSoul PS PATRIA SOUL ☰ Početna / Domovina / Krajevi i geografija 🇭🇷 Domovina · prostor Hrvatske Krajevi i geografija Hrvatske Hrvatska je mala zemlja velikih geografskih razlika: panonske ravnice, brežuljci sjeverozapada, dinarske planine i krš, jadranska obala i otoci. Ovdje upoznajemo prostor koji je kroz stoljeća oblikovao život, gospodarstvo, gradove, običaje i identitet hrvatskih krajeva. 56.594 km² kopnene površine 127 gradova prema službenom popisu 8 nacionalnih parkova 12 parkova prirode Kako čitati Hrvatsku Regija nije isto što i županija Hrvatski krajevi mogu se promatrati geografski, povijesno, kulturno ili funkcionalno. Zato granice poput Slavonije, Istre, Like, Dalmacije ili Hrvatskog zagorja ne moraju odgovarati današnjim administrativnim granicama. PatriaSoul ih prikazuje kao žive prostore s vlastitim krajolikom, naseljima, baštinom i tradicijom. Tri velika prostora Od panonske ravnice do Jadrana 🌾 Panonska Hrvatska Ravnice Save, Drave i Dunava, plodna tla, poljoprivredni krajolici i velika riječna područja. Slavonija i Baranja najprepoznatljiviji su dijelovi ovog prostora. Slavonija i Baranja → ⛰️ Gorska Hrvatska Dinarski prostor obilježen je planinama, šumama, kršem, ponornicama i krškim poljima. Lika i Gorski kotar predstavljaju njegove najpoznatije cjeline. Lika i Gorski kotar → 🌊 Primorska Hrvatska Jadranska obala, otoci i zaleđe stvaraju raznolik mediteranski prostor Istre, Kvarnera i Dalmacije. Dalmacija → Hrvatski krajevi Istraži regiju po regiju Zagorje i Prigorje Brežuljci, vinogradi, termalni izvori, dvorci i gusto naseljen sjeverozapadni kraj. Otvori kraj → Međimurje Prostor između Mure i Drave, poznat po poljoprivredi, vinogradima i snažnoj tradiciji. Otvori kraj → Podravina i Bilogora Drava, ravnice i blaga pobrđa povezana s poljoprivredom i ruralnom baštinom. Otvori kraj → Lika i Gorski kotar Planine, šume, krš, izvori i snažan kontinentalno-planinski karakter. Otvori kraj → Slavonija i Baranja Panonske ravnice, velike rijeke, plodna tla, vinogradi i bogata kulturna baština. Otvori kraj → Istra Mediteranski poluotok s obalom, unutrašnjim brežuljcima, vinogradima i maslinicima. Otvori kraj → Kvarner i Primorje Spoj mora i gorja, riječkog prostora i kvarnerskih otoka. Otvori kraj → Dalmacija Duga jadranska obala, otoci, priobalni gradovi i planinsko zaleđe. Otvori kraj → Posavina i Pokuplje Nizinski prostor uz Savu i Kupu, poplavne ravnice, šume i povijesna naselja. Otvori kraj → Reljef Planine, krš i nizine Reljef izravno utječe na klimu, vode, naselja, promet i gospodarstvo. Dinarsko gorje čini važnu prirodnu okosnicu zemlje, dok panonske nizine otvaraju široke poljoprivredne prostore. Krš je osobito izražen u Lici, Gorskom kotaru, Velebitu i Dalmaciji. Dinara — 1831 m Najviši vrh Hrvatske. Velebit — 1757 m Najduža hrvatska planina, oko 145 km. Biokovo — 1762 m Strmo planinsko zaleđe dalmatinske obale. Što je krš? Vapnenački teren omogućuje razvoj ponikava, jama, špilja, krških polja i ponornica. Voda može nestati pod zemljom i ponovno izbiti na površinu u obliku snažnih izvora. Vode i Jadran Rijeke, more i otoci 💧 Sava i Drava Velike panonske rijeke oblikuju nizinski krajolik i povezane su s crnomorskim slijevom. 🌊 Dunav Europski plovni put koji uz hrvatski istok povezuje područje Vukovara i Iloka s velikim riječnim sustavom. 🏝️ Otoci Krk, Cres, Brač, Hvar, Pag, Korčula, Dugi otok, Mljet, Vis i Lastovo samo su dio bogatog hrvatskog otočnog prostora. Zaštićena priroda Prirodna baština Hrvatske 8 nacionalnih parkova Brijuni, Kornati, Krka, Mljet, Paklenica, Plitvička jezera, Risnjak i Sjeverni Velebit predstavljaju različita hrvatska prirodna područja. 12 parkova prirode Od Kopačkog rita i Lonjskog polja do Biokova, Dinare, Učke i Velebita, zaštićena područja obuhvaćaju ravnice, močvare, šume, planine i more. Priroda Detaljnije o nacionalnim parkovima, parkovima prirode, rijekama, šumama, životinjama i biljkama pronađi u posebnom podportalu. Istraži prirodu Hrvatske → Geografija koja oblikuje život Prostor povezuje ljude Ravnica je oblikovala poljoprivredni krajolik Slavonije i Baranje. Brežuljci sjeverozapada povezani su s vinogradima i raštrkanim naseljima. Planinski prostori utjecali su na šumarstvo, stočarstvo i promet. Na Jadranu su more, luke i otoci stoljećima oblikovali pomorstvo, ribarstvo, trgovinu i život obalnih gradova. Na PatriaSoulu zato geografiju povezujemo s gradovima, baštinom, gastronomijom, govorima, običajima i svakodnevnim životom. 🔎 Nastavi istraživanje Gradovi Hrvatske Gradovi, mjesta i njihova priča. Veliki regionalni vodič Sve regije na jednom mjestu. Domovina Glavni ulaz u podportal Domovina. 🇭🇷 Istraži Hrvatsku dublje Od geografije nastavi prema gradovima, prirodi i regionalnim pričama. Veliki regionalni vodič → Izvori i urednička osnova: Hrvatska enciklopedija, natuknice „Hrvatska“, „regija“ i „regionalizacija“; Ministarstvo pravosuđa, uprave i digitalne transformacije — službeni popis županija, gradova i općina; službene stranice zaštićenih područja Republike Hrvatske. Vanjski izvori služe za provjeru činjenica; tekst je originalno urednički obrađen za PatriaSoul. © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
+      "content": "Krajevi i geografija Hrvatske | PatriaSoul PS PATRIA SOUL ☰ Početna / Domovina / Krajevi i geografija 🇭🇷 Domovina · prostor Hrvatske Krajevi i geografija Hrvatske Hrvatska je mala zemlja velikih geografskih razlika: panonske ravnice, brežuljci sjeverozapada, dinarske planine i krš, jadranska obala i otoci. Ovdje upoznajemo prostor koji je kroz stoljeća oblikovao život, gospodarstvo, gradove, običaje i identitet hrvatskih krajeva. 56.594 km² kopnene površine 127 gradova prema službenom popisu 8 nacionalnih parkova 12 parkova prirode GLAVNA SLIKA · Krajevi i geografija Hrvatske | PatriaSoul Kako čitati Hrvatsku Regija nije isto što i županija Hrvatski krajevi mogu se promatrati geografski, povijesno, kulturno ili funkcionalno. Zato granice poput Slavonije, Istre, Like, Dalmacije ili Hrvatskog zagorja ne moraju odgovarati današnjim administrativnim granicama. PatriaSoul ih prikazuje kao žive prostore s vlastitim krajolikom, naseljima, baštinom i tradicijom. Tri velika prostora Od panonske ravnice do Jadrana 🌾 Panonska Hrvatska Ravnice Save, Drave i Dunava, plodna tla, poljoprivredni krajolici i velika riječna područja. Slavonija i Baranja najprepoznatljiviji su dijelovi ovog prostora. Slavonija i Baranja → ⛰️ Gorska Hrvatska Dinarski prostor obilježen je planinama, šumama, kršem, ponornicama i krškim poljima. Lika i Gorski kotar predstavljaju njegove najpoznatije cjeline. Lika i Gorski kotar → 🌊 Primorska Hrvatska Jadranska obala, otoci i zaleđe stvaraju raznolik mediteranski prostor Istre, Kvarnera i Dalmacije. Dalmacija → Hrvatski krajevi Istraži regiju po regiju Zagorje i Prigorje Brežuljci, vinogradi, termalni izvori, dvorci i gusto naseljen sjeverozapadni kraj. Otvori kraj → Međimurje Prostor između Mure i Drave, poznat po poljoprivredi, vinogradima i snažnoj tradiciji. Otvori kraj → Podravina i Bilogora Drava, ravnice i blaga pobrđa povezana s poljoprivredom i ruralnom baštinom. Otvori kraj → Lika i Gorski kotar Planine, šume, krš, izvori i snažan kontinentalno-planinski karakter. Otvori kraj → Slavonija i Baranja Panonske ravnice, velike rijeke, plodna tla, vinogradi i bogata kulturna baština. Otvori kraj → Istra Mediteranski poluotok s obalom, unutrašnjim brežuljcima, vinogradima i maslinicima. Otvori kraj → Kvarner i Primorje Spoj mora i gorja, riječkog prostora i kvarnerskih otoka. Otvori kraj → Dalmacija Duga jadranska obala, otoci, priobalni gradovi i planinsko zaleđe. Otvori kraj → Posavina i Pokuplje Nizinski prostor uz Savu i Kupu, poplavne ravnice, šume i povijesna naselja. Otvori kraj → Reljef Planine, krš i nizine Reljef izravno utječe na klimu, vode, naselja, promet i gospodarstvo. Dinarsko gorje čini važnu prirodnu okosnicu zemlje, dok panonske nizine otvaraju široke poljoprivredne prostore. Krš je osobito izražen u Lici, Gorskom kotaru, Velebitu i Dalmaciji. Dinara — 1831 m Najviši vrh Hrvatske. Velebit — 1757 m Najduža hrvatska planina, oko 145 km. Biokovo — 1762 m Strmo planinsko zaleđe dalmatinske obale. Što je krš? Vapnenački teren omogućuje razvoj ponikava, jama, špilja, krških polja i ponornica. Voda može nestati pod zemljom i ponovno izbiti na površinu u obliku snažnih izvora. Vode i Jadran Rijeke, more i otoci 💧 Sava i Drava Velike panonske rijeke oblikuju nizinski krajolik i povezane su s crnomorskim slijevom. 🌊 Dunav Europski plovni put koji uz hrvatski istok povezuje područje Vukovara i Iloka s velikim riječnim sustavom. 🏝️ Otoci Krk, Cres, Brač, Hvar, Pag, Korčula, Dugi otok, Mljet, Vis i Lastovo samo su dio bogatog hrvatskog otočnog prostora. Zaštićena priroda Prirodna baština Hrvatske 8 nacionalnih parkova Brijuni, Kornati, Krka, Mljet, Paklenica, Plitvička jezera, Risnjak i Sjeverni Velebit predstavljaju različita hrvatska prirodna područja. 12 parkova prirode Od Kopačkog rita i Lonjskog polja do Biokova, Dinare, Učke i Velebita, zaštićena područja obuhvaćaju ravnice, močvare, šume, planine i more. Priroda Detaljnije o nacionalnim parkovima, parkovima prirode, rijekama, šumama, životinjama i biljkama pronađi u posebnom podportalu. Istraži prirodu Hrvatske → Geografija koja oblikuje život Prostor povezuje ljude Ravnica je oblikovala poljoprivredni krajolik Slavonije i Baranje. Brežuljci sjeverozapada povezani su s vinogradima i raštrkanim naseljima. Planinski prostori utjecali su na šumarstvo, stočarstvo i promet. Na Jadranu su more, luke i otoci stoljećima oblikovali pomorstvo, ribarstvo, trgovinu i život obalnih gradova. Na PatriaSoulu zato geografiju povezujemo s gradovima, baštinom, gastronomijom, govorima, običajima i svakodnevnim životom. 🔎 Nastavi istraživanje Gradovi Hrvatske Gradovi, mjesta i njihova priča. Veliki regionalni vodič Sve regije na jednom mjestu. Domovina Glavni ulaz u podportal Domovina. 🇭🇷 Istraži Hrvatsku dublje Od geografije nastavi prema gradovima, prirodi i regionalnim pričama. Veliki regionalni vodič → Izvori i urednička osnova: Hrvatska enciklopedija, natuknice „Hrvatska“, „regija“ i „regionalizacija“; Ministarstvo pravosuđa, uprave i digitalne transformacije — službeni popis županija, gradova i općina; službene stranice zaštićenih područja Republike Hrvatske. Vanjski izvori služe za provjeru činjenica; tekst je originalno urednički obrađen za PatriaSoul. © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
       "tags": [
         "krajevi-i-geografija",
         "portal"
@@ -4826,7 +4826,7 @@
       "source": "krajevi-i-geografija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-grad.html",
@@ -4840,7 +4840,7 @@
       "source": "grad.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.747608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.791487+00:00"
     },
     {
       "id": "page-kvarner-i-primorje.html",
@@ -4854,7 +4854,7 @@
       "source": "kvarner-i-primorje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-o-nama.html",
@@ -4868,13 +4868,13 @@
       "source": "o-nama.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.942484+00:00"
     },
     {
       "id": "page-podravina-i-bilogora.html",
       "type": "stranica",
       "title": "Podravina i Bilogora | PatriaSoul",
-      "content": "Podravina i Bilogora | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Podravina i Bilogora 🇭🇷 Domovina · Sjeverna Hrvatska Podravina i Bilogora Prostor Drave, plodnih ravnica, šumovite Bilogore, vinograda, sela i gradova. To je kraj u kojem rijeka, poljoprivreda, gospodarstvo i kulturna baština stvaraju prepoznatljiv sjeverni hrvatski krajolik. Drava glavna prirodna os Podravine Bilogora šumovito pobrđe južno od Drave Koprivnica jedno od važnih regionalnih središta Đurđevački peski jedinstven pješčani krajobraz Podravine Zemljopis Priroda Gradovi Povijest Baština Život Izvori Zemljopis prostora Ravnica uz Dravu i zeleni valovi Bilogore Podravina je nizinski prostor uz Dravu, dok Bilogora južno od nje tvori prijelaz prema središnjoj Hrvatskoj. Granice povijesno-geografskih regija nisu jednake današnjim administrativnim granicama, pa PatriaSoul regiju promatra prvenstveno kroz njezin krajolik, naselja i kulturne veze. Drava kao životna os Drava je stoljećima oblikovala Podravinu. Njezina poplavna područja, rukavci, šljunčani i pješčani nanosi stvaraju raznolike ekosustave, a rijeka je istodobno utjecala na poljoprivredu, ribarstvo, promet i svakodnevni život stanovništva. Južnije se krajolik mijenja: ravnica prelazi u valovite obronke Bilogore, gdje se izmjenjuju šume, oranice, livade, voćnjaci i vinogradi. Prirodni orijentiri Drava rijeka i važan riječni ekosustav Đurđevački peski pješčani krajobraz i posebna staništa Bilogora šumovito nisko gorje Kalnik, Papuk i Krndija gorja na južnom i istočnom obodu šireg prostora Priroda Rijeka, šume, močvare i pijesak Podravska priroda posebno je vrijedna ondje gdje se očuvala povezanost rijeke s poplavnim područjima, šumama i vlažnim staništima. 🌊 Dravski krajolik Rukavci, mrtvice, sprudovi i poplavne šume stvaraju mozaik staništa povezanih s dinamičnim tokom Drave. 🏜️ Đurđevački peski Pješčani nanosi daju prostoru neobičan izgled. Danas su važni i kao vrijedan primjer posebnog krajobraza i staništa. 🌳 Bilogora Šumovito pobrđe čini prirodnu poveznicu između podravske nizine i viših gorja središnje Hrvatske. Gradovi i mjesta Od Koprivnice do Virovitice Podravinu i Bilogoru povezuje mreža gradova, manjih središta i ruralnih naselja. Svako od njih ima svoj povijesni i gospodarski karakter. Koprivnica Važno gospodarsko, kulturno i obrazovno središte Podravine, povezano s dugom poviješću grada i razvojem prehrambene industrije. Istraži gradove → Đurđevac Grad poznat po Starom gradu, Picokijadi i posebnom krajobrazu Đurđevačkih peski. Gradovi → Virovitica Regionalno središte zapadnog dijela Virovitičko-podravske županije, povezano s Podravinom i obroncima Bilogore. Gradovi → Pitomača i druga mjesta Mreža naselja uz Dravu i na obroncima Bilogore čuva ruralni karakter prostora i tradiciju poljoprivrede, obrta i obiteljskih gospodarstava. Gradovi → Povijest Utvrde, krajiška granica i život uz Dravu Podravina je zbog svog položaja kroz povijest imala veliku komunikacijsku i obrambenu važnost. Posebno je snažan trag ostavila osmanska opasnost i organizacija obrane u ranom novom vijeku. Koprivnica i Đurđevac Koprivnica je tijekom 16. stoljeća postala važna utvrda obrambenog sustava, dok je Đurđevac poznat po svojoj utvrdi i legendi o Picokima. Ti tragovi prošlosti danas su dio kulturnog identiteta regije. Povijest Podravine ipak nije samo vojna povijest. Razvoj trgovine, poljoprivrede, obrta, školstva i kasnije industrije snažno je oblikovao moderna naselja. Baština koju vrijedi upoznati Stari grad Đurđevac utvrda i muzejski prostor Koprivnica povijesna jezgra i ostaci utvrda Podravski muzeji lokalna povijest, umjetnost i arheologija Kulturna baština Picokijada, umjetnost i podravska tradicija Podravina ima snažnu tradiciju folklora, književnosti, likovne umjetnosti i lokalnih manifestacija. Kulturni život regije nije vezan samo uz gradove nego i uz sela, udruge, obiteljske običaje i godišnje svetkovine. 🎭 Picokijada Manifestacija u Đurđevcu podsjeća na legendu o obrani grada i postala je jedna od najprepoznatljivijih kulturno-turističkih manifestacija Podravine. 🎨 Podravska umjetnost Naivna umjetnost i slikarstvo vezani uz podravski prostor zauzimaju posebno mjesto u hrvatskoj kulturnoj povijesti. 🏡 Ruralna baština Tradicionalne kuće, gospodarske zgrade, vinogradi, običaji i domaća proizvodnja čine važan dio živog kulturnog krajolika. Život i identitet Plodna zemlja, domaća hrana i govori kraja Podravski identitet nastajao je uz rijeku, polja i šume. Poljoprivreda, prehrambena industrija, obrti i obiteljska gospodarstva i danas su važni za život regije. 🌾 Poljoprivreda Ravnice uz Dravu pogodne su za ratarstvo i povrćarstvo, dok se na Bilogori i drugim brežuljkastim područjima pojavljuju voćnjaci i vinogradi. 🍲 Gastronomija Kukuruz, buča, krumpir, heljda, meso, sir, riječna riba i domaći kolači dio su prehrambene tradicije sjeverne Hrvatske. 🗣️ Govori Kajkavski govori snažni su u zapadnim i središnjim dijelovima prostora, dok prema istoku dolazi do prijelaznih i štokavskih obilježja. PatriaSoul urednički pogled: Podravina i Bilogora najbolje se čitaju kroz odnos rijeke i zemlje. Drava daje dinamiku prostoru, ravnica hrani stanovništvo, Bilogora čuva šume i izvore, a gradovi i sela povezuju prirodu s gospodarstvom i kulturom. To je kraj koji nije samo zemljopisna oznaka nego živi dio hrvatskog identiteta. Izvori i uredništvo Provjerljivo znanje Autor / institucija: Leksikografski zavod Miroslav Krleža — Hrvatska enciklopedija, natuknice „Podravina” i „Bilogora”. Izvori: Hrvatska enciklopedija, mrežno izdanje, Leksikografski zavod Miroslav Krleža; službene turističke i muzejske stranice gradova i institucija regije. PatriaSoul: tekst je originalna urednička obrada i sažetak za portal; vanjski sadržaj nije prepisivan. Hrvatska enciklopedija — Podravina → Hrvatska enciklopedija — Bilogora → ← Natrag na Krajeve i geografiju · Domovina © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
+      "content": "Podravina i Bilogora | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Podravina i Bilogora 🇭🇷 Domovina · Sjeverna Hrvatska Podravina i Bilogora Prostor Drave, plodnih ravnica, šumovite Bilogore, vinograda, sela i gradova. To je kraj u kojem rijeka, poljoprivreda, gospodarstvo i kulturna baština stvaraju prepoznatljiv sjeverni hrvatski krajolik. GLAVNA SLIKA · Podravina i Bilogora | PatriaSoul Drava glavna prirodna os Podravine Bilogora šumovito pobrđe južno od Drave Koprivnica jedno od važnih regionalnih središta Đurđevački peski jedinstven pješčani krajobraz Podravine Zemljopis Priroda Gradovi Povijest Baština Život Izvori Zemljopis prostora Ravnica uz Dravu i zeleni valovi Bilogore Podravina je nizinski prostor uz Dravu, dok Bilogora južno od nje tvori prijelaz prema središnjoj Hrvatskoj. Granice povijesno-geografskih regija nisu jednake današnjim administrativnim granicama, pa PatriaSoul regiju promatra prvenstveno kroz njezin krajolik, naselja i kulturne veze. Drava kao životna os Drava je stoljećima oblikovala Podravinu. Njezina poplavna područja, rukavci, šljunčani i pješčani nanosi stvaraju raznolike ekosustave, a rijeka je istodobno utjecala na poljoprivredu, ribarstvo, promet i svakodnevni život stanovništva. Južnije se krajolik mijenja: ravnica prelazi u valovite obronke Bilogore, gdje se izmjenjuju šume, oranice, livade, voćnjaci i vinogradi. Prirodni orijentiri Drava rijeka i važan riječni ekosustav Đurđevački peski pješčani krajobraz i posebna staništa Bilogora šumovito nisko gorje Kalnik, Papuk i Krndija gorja na južnom i istočnom obodu šireg prostora Priroda Rijeka, šume, močvare i pijesak Podravska priroda posebno je vrijedna ondje gdje se očuvala povezanost rijeke s poplavnim područjima, šumama i vlažnim staništima. 🌊 Dravski krajolik Rukavci, mrtvice, sprudovi i poplavne šume stvaraju mozaik staništa povezanih s dinamičnim tokom Drave. 🏜️ Đurđevački peski Pješčani nanosi daju prostoru neobičan izgled. Danas su važni i kao vrijedan primjer posebnog krajobraza i staništa. 🌳 Bilogora Šumovito pobrđe čini prirodnu poveznicu između podravske nizine i viših gorja središnje Hrvatske. Gradovi i mjesta Od Koprivnice do Virovitice Podravinu i Bilogoru povezuje mreža gradova, manjih središta i ruralnih naselja. Svako od njih ima svoj povijesni i gospodarski karakter. Koprivnica Važno gospodarsko, kulturno i obrazovno središte Podravine, povezano s dugom poviješću grada i razvojem prehrambene industrije. Istraži gradove → Đurđevac Grad poznat po Starom gradu, Picokijadi i posebnom krajobrazu Đurđevačkih peski. Gradovi → Virovitica Regionalno središte zapadnog dijela Virovitičko-podravske županije, povezano s Podravinom i obroncima Bilogore. Gradovi → Pitomača i druga mjesta Mreža naselja uz Dravu i na obroncima Bilogore čuva ruralni karakter prostora i tradiciju poljoprivrede, obrta i obiteljskih gospodarstava. Gradovi → Povijest Utvrde, krajiška granica i život uz Dravu Podravina je zbog svog položaja kroz povijest imala veliku komunikacijsku i obrambenu važnost. Posebno je snažan trag ostavila osmanska opasnost i organizacija obrane u ranom novom vijeku. Koprivnica i Đurđevac Koprivnica je tijekom 16. stoljeća postala važna utvrda obrambenog sustava, dok je Đurđevac poznat po svojoj utvrdi i legendi o Picokima. Ti tragovi prošlosti danas su dio kulturnog identiteta regije. Povijest Podravine ipak nije samo vojna povijest. Razvoj trgovine, poljoprivrede, obrta, školstva i kasnije industrije snažno je oblikovao moderna naselja. Baština koju vrijedi upoznati Stari grad Đurđevac utvrda i muzejski prostor Koprivnica povijesna jezgra i ostaci utvrda Podravski muzeji lokalna povijest, umjetnost i arheologija Kulturna baština Picokijada, umjetnost i podravska tradicija Podravina ima snažnu tradiciju folklora, književnosti, likovne umjetnosti i lokalnih manifestacija. Kulturni život regije nije vezan samo uz gradove nego i uz sela, udruge, obiteljske običaje i godišnje svetkovine. 🎭 Picokijada Manifestacija u Đurđevcu podsjeća na legendu o obrani grada i postala je jedna od najprepoznatljivijih kulturno-turističkih manifestacija Podravine. 🎨 Podravska umjetnost Naivna umjetnost i slikarstvo vezani uz podravski prostor zauzimaju posebno mjesto u hrvatskoj kulturnoj povijesti. 🏡 Ruralna baština Tradicionalne kuće, gospodarske zgrade, vinogradi, običaji i domaća proizvodnja čine važan dio živog kulturnog krajolika. Život i identitet Plodna zemlja, domaća hrana i govori kraja Podravski identitet nastajao je uz rijeku, polja i šume. Poljoprivreda, prehrambena industrija, obrti i obiteljska gospodarstva i danas su važni za život regije. 🌾 Poljoprivreda Ravnice uz Dravu pogodne su za ratarstvo i povrćarstvo, dok se na Bilogori i drugim brežuljkastim područjima pojavljuju voćnjaci i vinogradi. 🍲 Gastronomija Kukuruz, buča, krumpir, heljda, meso, sir, riječna riba i domaći kolači dio su prehrambene tradicije sjeverne Hrvatske. 🗣️ Govori Kajkavski govori snažni su u zapadnim i središnjim dijelovima prostora, dok prema istoku dolazi do prijelaznih i štokavskih obilježja. PatriaSoul urednički pogled: Podravina i Bilogora najbolje se čitaju kroz odnos rijeke i zemlje. Drava daje dinamiku prostoru, ravnica hrani stanovništvo, Bilogora čuva šume i izvore, a gradovi i sela povezuju prirodu s gospodarstvom i kulturom. To je kraj koji nije samo zemljopisna oznaka nego živi dio hrvatskog identiteta. Izvori i uredništvo Provjerljivo znanje Autor / institucija: Leksikografski zavod Miroslav Krleža — Hrvatska enciklopedija, natuknice „Podravina” i „Bilogora”. Izvori: Hrvatska enciklopedija, mrežno izdanje, Leksikografski zavod Miroslav Krleža; službene turističke i muzejske stranice gradova i institucija regije. PatriaSoul: tekst je originalna urednička obrada i sažetak za portal; vanjski sadržaj nije prepisivan. Hrvatska enciklopedija — Podravina → Hrvatska enciklopedija — Bilogora → ← Natrag na Krajeve i geografiju · Domovina © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
       "tags": [
         "podravina-i-bilogora",
         "portal"
@@ -4882,7 +4882,7 @@
       "source": "podravina-i-bilogora.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.991606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.948484+00:00"
     },
     {
       "id": "page-habsburško-razdoblje.html",
@@ -4896,7 +4896,7 @@
       "source": "habsburško-razdoblje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-zene-u-domovinskom-ratu.html",
@@ -4910,7 +4910,7 @@
       "source": "zene-u-domovinskom-ratu.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.997148+00:00"
+      "updatedAt": "2026-09-11T08:36:59.953507+00:00"
     },
     {
       "id": "page-CHANGELOG-2026.md",
@@ -4924,7 +4924,7 @@
       "source": "CHANGELOG-2026.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-privatnost.html",
@@ -4938,7 +4938,7 @@
       "source": "privatnost.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-hrvatska-danas.html",
@@ -4952,7 +4952,7 @@
       "source": "hrvatska-danas.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.749608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-obitelj-vjera.html",
@@ -4966,7 +4966,7 @@
       "source": "obitelj-vjera.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.942484+00:00"
     },
     {
       "id": "page-svetac-dana.html",
@@ -4980,7 +4980,7 @@
       "source": "svetac-dana.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995549+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-vrijeme.html",
@@ -4994,7 +4994,7 @@
       "source": "vrijeme.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.952484+00:00"
     },
     {
       "id": "page-povijesne-osobe.html",
@@ -5008,7 +5008,7 @@
       "source": "povijesne-osobe.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-hrvati-u-kanadi.html",
@@ -5022,7 +5022,7 @@
       "source": "hrvati-u-kanadi.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-govori-i-dijalekti.html",
@@ -5036,7 +5036,7 @@
       "source": "govori-i-dijalekti.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.747608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.791487+00:00"
     },
     {
       "id": "page-glagoljica.html",
@@ -5050,7 +5050,7 @@
       "source": "glagoljica.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.747608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-404.html",
@@ -5064,7 +5064,7 @@
       "source": "404.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-o-patriasoul.html",
@@ -5078,7 +5078,7 @@
       "source": "o-patriasoul.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.942484+00:00"
     },
     {
       "id": "page-DOMOVINA-UREDNICKI-STANDARD.md",
@@ -5092,7 +5092,7 @@
       "source": "DOMOVINA-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-price-o-prezivljavanju-i-logorima.html",
@@ -5106,7 +5106,7 @@
       "source": "price-o-prezivljavanju-i-logorima.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-dijaspora-francuska.html",
@@ -5120,7 +5120,7 @@
       "source": "dijaspora-francuska.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-urednicka-nacela-dijaspora.html",
@@ -5134,7 +5134,7 @@
       "source": "urednicka-nacela-dijaspora.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995549+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-VJERA-UREDNICKI-STANDARD.md",
@@ -5148,7 +5148,7 @@
       "source": "VJERA-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-sakramenti.html",
@@ -5162,13 +5162,13 @@
       "source": "sakramenti.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.993606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950484+00:00"
     },
     {
       "id": "page-priroda.html",
       "type": "stranica",
       "title": "Priroda Hrvatske | PatriaSoul",
-      "content": "Priroda Hrvatske | PatriaSoul PS PATRIA SOUL ☰ Početna / Domovina / Priroda 🌿 DOMOVINA · PRIRODNA BAŠTINA Priroda Hrvatske Hrvatska je prostor velikih prirodnih razlika: panonske ravnice i močvare, brežuljci sjeverozapada, šumovite planine, dinarski krš, rijeke i jezera te Jadransko more s otocima. PatriaSoul prirodu promatra kao baštinu koju treba upoznati, poštovati i čuvati. 8 nacionalnih parkova 12 parkova prirode 1831 m najviši vrh Hrvatske — Dinara 🇭🇷 kopno, planine, rijeke, more i otoci Nacionalni parkovi Parkovi prirode Planine i krš Rijeke i jezera More i otoci Priroda po krajevima 8 nacionalnih parkova Nacionalni parkovi Hrvatske Nacionalni parkovi štite posebno vrijedne prirodne cjeline. Hrvatskih osam parkova obuhvaća gorske, riječne, otočne i morske krajobraze. Plitvička jezera Sustav jezera, sedrenih barijera, slapova i šuma. Park je na UNESCO-ovu Popisu svjetske baštine. Risnjak Gorski kotar, šume, planinski vrhovi i izvorište Kupe čine njegovu prirodnu jezgru. Paklenica Velika i Mala Paklenica usjekle su duboke kanjone u Velebitu, uz izrazit krški reljef. Krka Rijeka Krka oblikuje sedrene slapove, kanjone i bogata riječna staništa. Kornati Otočni park prepoznatljiv po kamenitim otocima, hridima, uvalama i vrijednom podmorju. Mljet Zapadni dio Mljeta čuvaju guste šume, morska jezera i očuvane obalne cjeline. Brijuni Otočni arhipelag uz Istru povezuje prirodne, krajobrazne i kulturne vrijednosti. Sjeverni Velebit Visokogorski krš, šume i planinski vrhovi predstavljaju jednu od najvrjednijih cjelina Velebita. Izvor: Ministarstvo zaštite okoliša i zelene tranzicije Republike Hrvatske; službene ustanove nacionalnih parkova. 12 parkova prirode Parkovi prirode Parkovi prirode čuvaju velike krajobrazne cjeline u kojima se prirodne vrijednosti isprepliću s tradicijskim načinom života i korištenjem prostora. Biokovo Strmi krški masiv iznad Makarskog primorja s velikim visinskim razlikama i bogatom florom. Dinara Visokoplaninski krški prostor i najviši hrvatski planinski krajolik. Kopački rit Poplavno područje Drave i Dunava od iznimne važnosti za močvarna staništa i ptice. Lastovsko otočje Očuvani otočni, obalni i morski prostor s velikom bioraznolikošću. Lonjsko polje Poplavne ravnice Save, močvare, pašnjaci, šume i tradicijska sela. Medvednica Šumovita gora iznad Zagreba s brojnim izvorima, potocima i šumskim staništima. Papuk Gorski krajolik Slavonije s vrijednom geološkom baštinom i šumama. Telašćica Zaštićena uvala i krajolik Dugog otoka sa strmim stijenama i vrijednim podmorjem. Učka Planina iznad Kvarnera s šumama, travnjacima, kršem i kanjonom Vela draga. Velebit Velika krška planinska cjelina koja povezuje kontinentalni i primorski prostor. Vransko jezero Najveće prirodno jezero u Hrvatskoj i važno močvarno stanište uz Jadran. Žumberak–Samoborsko gorje Brdski prostor šuma, livada, izvora, potoka i tradicionalnih ruralnih krajolika. Planinski svijet Planine, krš i šume Hrvatski planinski prostor pripada Dinarskom gorju. Velebit, Dinara, Biokovo, Lička Plješevica, Gorski kotar i druga gorja oblikuju klimu, vode, šume, naselja i prometne pravce. Dinara — 1831 m Najviši vrh Hrvatske. Kamešnica — 1809 m Visoko dinarsko gorje na jugoistoku Hrvatske. Biokovo — 1762 m Strmo se uzdiže iznad dalmatinske obale. Velebit — 1757 m Najduža hrvatska planina, duga približno 145 km. Što je krš? Krš nastaje djelovanjem vode na topljive stijene, osobito vapnenac. Zato nalazimo ponikve, škrape, špilje, jame, krška polja, izvore i ponornice. Takvi su krajolici osobito izraženi u Lici, Gorskom kotaru, Velebitu, Dinari i Dalmaciji. Vode Hrvatske Rijeke, jezera i močvare Hrvatske rijeke pripadaju crnomorskom i jadranskom slijevu. Uz njih su nastala brojna naselja, poljoprivredni krajolici i vrijedna močvarna staništa. Sava Velika panonska rijeka koja prolazi kroz Zagreb i Sisak te pripada crnomorskom slijevu. Drava Važna panonska rijeka koja oblikuje vrijedna riječna staništa i povezuje se s Dunavom. Dunav Veliki europski plovni put uz hrvatski krajnji istok, osobito važan za Vukovar i Ilok. Kupa Izvire u Gorskom kotaru, prolazi kroz Karlovac i utječe u Savu. Cetina Jedna od najvažnijih dalmatinskih rijeka, duboko usječena u krški prostor. Krka Krška rijeka poznata po sedrenim slapovima i nacionalnom parku. Gacka i Lika Primjeri krških rijeka Like čiji se tokovi snažno povezuju s podzemnim vodama. Plitvička jezera Jezerski sustav nastao djelovanjem sedrenih barijera i prirodnih vodenih procesa. Vransko jezero Veliko prirodno jezero uz Jadran, važno za ptice močvarice i ekosustav. Jadranska priroda More, obala i otoci Razvedena hrvatska obala Jadranska obala, otoci, kanali, uvale, grebeni i hridi stvaraju jednu od najprepoznatljivijih prirodnih cjelina Hrvatske. Otoci su uglavnom pruženi usporedno s kopnom, što je karakteristično za dalmatinski tip obale. Krk, Cres, Brač, Hvar, Pag, Korčula, Dugi otok, Mljet, Vis i Lastovo samo su dio otočnog svijeta koji povezuje prirodu, pomorstvo i kulturnu baštinu. Morska bioraznolikost Jadransko more stanište je brojnih riba, morskih sisavaca, morskih ptica i drugih organizama. Očuvanje čistog mora, obale i podmorja zato je ključan zadatak zaštite hrvatske prirode. Priroda po hrvatskim krajevima Svaki kraj ima svoje prirodno lice 🌾 Slavonija i Baranja Ravnice, velike rijeke, poplavne šume i močvarna područja. Istraži kraj → ⛰️ Lika i Gorski kotar Planine, šume, krš, izvori, ponornice i zaštićena područja. Istraži kraj → 🌿 Zagorje i Prigorje Brežuljci, šume, livade, izvori i zaštićeni krajolici. Istraži kraj → 🌊 Kvarner i Primorje Planine iznad mora, otoci, obalni krajolici i Učka. Istraži kraj → 🌅 Istra Mediteranska obala, unutrašnja brda, šume i krški krajolik. Istraži kraj → 🏝️ Dalmacija Jadransko more, otoci, krš, planine i mediteranska vegetacija. Istraži kraj → PatriaSoul — Čuvaj nasljeđe Priroda nije samo prostor koji gledamo. Ona je voda koju pijemo, šuma koja nas štiti, more koje povezuje obalu i otoke, planina koja određuje krajolik i stanište brojnih vrsta. Zato je očuvanje prirode dio očuvanja hrvatske baštine. 🗺️ Nastavi istraživati Domovinu Geografiju poveži s krajevima, gradovima i životom Hrvatske. Krajevi i geografija → Izvori: Ministarstvo zaštite okoliša i zelene tranzicije Republike Hrvatske — službeni podaci o zaštićenim područjima; Hrvatska enciklopedija, Leksikografski zavod Miroslav Krleža — natuknice o hrvatskim planinama, rijekama, regijama i zaštićenim područjima. PatriaSoul tekst je autorski sažetak i ne prenosi tuđe članke u cijelosti. © 2026 PatriaSoul Hrvatska. Povijest. Znanje. Identitet.",
+      "content": "Priroda Hrvatske | PatriaSoul PS PATRIA SOUL ☰ Početna / Domovina / Priroda 🌿 DOMOVINA · PRIRODNA BAŠTINA Priroda Hrvatske Hrvatska je prostor velikih prirodnih razlika: panonske ravnice i močvare, brežuljci sjeverozapada, šumovite planine, dinarski krš, rijeke i jezera te Jadransko more s otocima. PatriaSoul prirodu promatra kao baštinu koju treba upoznati, poštovati i čuvati. GLAVNA SLIKA · Priroda Hrvatske | PatriaSoul 8 nacionalnih parkova 12 parkova prirode 1831 m najviši vrh Hrvatske — Dinara 🇭🇷 kopno, planine, rijeke, more i otoci Nacionalni parkovi Parkovi prirode Planine i krš Rijeke i jezera More i otoci Priroda po krajevima 8 nacionalnih parkova Nacionalni parkovi Hrvatske Nacionalni parkovi štite posebno vrijedne prirodne cjeline. Hrvatskih osam parkova obuhvaća gorske, riječne, otočne i morske krajobraze. Plitvička jezera Sustav jezera, sedrenih barijera, slapova i šuma. Park je na UNESCO-ovu Popisu svjetske baštine. Risnjak Gorski kotar, šume, planinski vrhovi i izvorište Kupe čine njegovu prirodnu jezgru. Paklenica Velika i Mala Paklenica usjekle su duboke kanjone u Velebitu, uz izrazit krški reljef. Krka Rijeka Krka oblikuje sedrene slapove, kanjone i bogata riječna staništa. Kornati Otočni park prepoznatljiv po kamenitim otocima, hridima, uvalama i vrijednom podmorju. Mljet Zapadni dio Mljeta čuvaju guste šume, morska jezera i očuvane obalne cjeline. Brijuni Otočni arhipelag uz Istru povezuje prirodne, krajobrazne i kulturne vrijednosti. Sjeverni Velebit Visokogorski krš, šume i planinski vrhovi predstavljaju jednu od najvrjednijih cjelina Velebita. Izvor: Ministarstvo zaštite okoliša i zelene tranzicije Republike Hrvatske; službene ustanove nacionalnih parkova. 12 parkova prirode Parkovi prirode Parkovi prirode čuvaju velike krajobrazne cjeline u kojima se prirodne vrijednosti isprepliću s tradicijskim načinom života i korištenjem prostora. Biokovo Strmi krški masiv iznad Makarskog primorja s velikim visinskim razlikama i bogatom florom. Dinara Visokoplaninski krški prostor i najviši hrvatski planinski krajolik. Kopački rit Poplavno područje Drave i Dunava od iznimne važnosti za močvarna staništa i ptice. Lastovsko otočje Očuvani otočni, obalni i morski prostor s velikom bioraznolikošću. Lonjsko polje Poplavne ravnice Save, močvare, pašnjaci, šume i tradicijska sela. Medvednica Šumovita gora iznad Zagreba s brojnim izvorima, potocima i šumskim staništima. Papuk Gorski krajolik Slavonije s vrijednom geološkom baštinom i šumama. Telašćica Zaštićena uvala i krajolik Dugog otoka sa strmim stijenama i vrijednim podmorjem. Učka Planina iznad Kvarnera s šumama, travnjacima, kršem i kanjonom Vela draga. Velebit Velika krška planinska cjelina koja povezuje kontinentalni i primorski prostor. Vransko jezero Najveće prirodno jezero u Hrvatskoj i važno močvarno stanište uz Jadran. Žumberak–Samoborsko gorje Brdski prostor šuma, livada, izvora, potoka i tradicionalnih ruralnih krajolika. Planinski svijet Planine, krš i šume Hrvatski planinski prostor pripada Dinarskom gorju. Velebit, Dinara, Biokovo, Lička Plješevica, Gorski kotar i druga gorja oblikuju klimu, vode, šume, naselja i prometne pravce. Dinara — 1831 m Najviši vrh Hrvatske. Kamešnica — 1809 m Visoko dinarsko gorje na jugoistoku Hrvatske. Biokovo — 1762 m Strmo se uzdiže iznad dalmatinske obale. Velebit — 1757 m Najduža hrvatska planina, duga približno 145 km. Što je krš? Krš nastaje djelovanjem vode na topljive stijene, osobito vapnenac. Zato nalazimo ponikve, škrape, špilje, jame, krška polja, izvore i ponornice. Takvi su krajolici osobito izraženi u Lici, Gorskom kotaru, Velebitu, Dinari i Dalmaciji. Vode Hrvatske Rijeke, jezera i močvare Hrvatske rijeke pripadaju crnomorskom i jadranskom slijevu. Uz njih su nastala brojna naselja, poljoprivredni krajolici i vrijedna močvarna staništa. Sava Velika panonska rijeka koja prolazi kroz Zagreb i Sisak te pripada crnomorskom slijevu. Drava Važna panonska rijeka koja oblikuje vrijedna riječna staništa i povezuje se s Dunavom. Dunav Veliki europski plovni put uz hrvatski krajnji istok, osobito važan za Vukovar i Ilok. Kupa Izvire u Gorskom kotaru, prolazi kroz Karlovac i utječe u Savu. Cetina Jedna od najvažnijih dalmatinskih rijeka, duboko usječena u krški prostor. Krka Krška rijeka poznata po sedrenim slapovima i nacionalnom parku. Gacka i Lika Primjeri krških rijeka Like čiji se tokovi snažno povezuju s podzemnim vodama. Plitvička jezera Jezerski sustav nastao djelovanjem sedrenih barijera i prirodnih vodenih procesa. Vransko jezero Veliko prirodno jezero uz Jadran, važno za ptice močvarice i ekosustav. Jadranska priroda More, obala i otoci Razvedena hrvatska obala Jadranska obala, otoci, kanali, uvale, grebeni i hridi stvaraju jednu od najprepoznatljivijih prirodnih cjelina Hrvatske. Otoci su uglavnom pruženi usporedno s kopnom, što je karakteristično za dalmatinski tip obale. Krk, Cres, Brač, Hvar, Pag, Korčula, Dugi otok, Mljet, Vis i Lastovo samo su dio otočnog svijeta koji povezuje prirodu, pomorstvo i kulturnu baštinu. Morska bioraznolikost Jadransko more stanište je brojnih riba, morskih sisavaca, morskih ptica i drugih organizama. Očuvanje čistog mora, obale i podmorja zato je ključan zadatak zaštite hrvatske prirode. Priroda po hrvatskim krajevima Svaki kraj ima svoje prirodno lice 🌾 Slavonija i Baranja Ravnice, velike rijeke, poplavne šume i močvarna područja. Istraži kraj → ⛰️ Lika i Gorski kotar Planine, šume, krš, izvori, ponornice i zaštićena područja. Istraži kraj → 🌿 Zagorje i Prigorje Brežuljci, šume, livade, izvori i zaštićeni krajolici. Istraži kraj → 🌊 Kvarner i Primorje Planine iznad mora, otoci, obalni krajolici i Učka. Istraži kraj → 🌅 Istra Mediteranska obala, unutrašnja brda, šume i krški krajolik. Istraži kraj → 🏝️ Dalmacija Jadransko more, otoci, krš, planine i mediteranska vegetacija. Istraži kraj → PatriaSoul — Čuvaj nasljeđe Priroda nije samo prostor koji gledamo. Ona je voda koju pijemo, šuma koja nas štiti, more koje povezuje obalu i otoke, planina koja određuje krajolik i stanište brojnih vrsta. Zato je očuvanje prirode dio očuvanja hrvatske baštine. 🗺️ Nastavi istraživati Domovinu Geografiju poveži s krajevima, gradovima i životom Hrvatske. Krajevi i geografija → Izvori: Ministarstvo zaštite okoliša i zelene tranzicije Republike Hrvatske — službeni podaci o zaštićenim područjima; Hrvatska enciklopedija, Leksikografski zavod Miroslav Krleža — natuknice o hrvatskim planinama, rijekama, regijama i zaštićenim područjima. PatriaSoul tekst je autorski sažetak i ne prenosi tuđe članke u cijelosti. © 2026 PatriaSoul Hrvatska. Povijest. Znanje. Identitet.",
       "tags": [
         "priroda",
         "portal"
@@ -5176,7 +5176,7 @@
       "source": "priroda.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-dijaspora-koja-je-stala-u-obranu.html",
@@ -5190,7 +5190,7 @@
       "source": "dijaspora-koja-je-stala-u-obranu.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-pjesme-hrvatske.html",
@@ -5204,7 +5204,7 @@
       "source": "pjesme-hrvatske.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.991606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.948484+00:00"
     },
     {
       "id": "page-dijaspora-svedska.html",
@@ -5218,7 +5218,7 @@
       "source": "dijaspora-svedska.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-modal.html",
@@ -5232,7 +5232,7 @@
       "source": "modal.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.941484+00:00"
     },
     {
       "id": "page-istra.html",
@@ -5246,7 +5246,7 @@
       "source": "istra.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.939484+00:00"
     },
     {
       "id": "page-sakralna-bastina.html",
@@ -5260,7 +5260,7 @@
       "source": "sakralna-bastina.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.993606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950484+00:00"
     },
     {
       "id": "page-galerija.html",
@@ -5274,7 +5274,7 @@
       "source": "galerija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-heroji-iz-sjene.html",
@@ -5288,7 +5288,7 @@
       "source": "heroji-iz-sjene.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-vijesti.html",
@@ -5302,7 +5302,7 @@
       "source": "vijesti.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.952484+00:00"
     },
     {
       "id": "page-vjera.html",
@@ -5316,7 +5316,7 @@
       "source": "vjera.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.952484+00:00"
     },
     {
       "id": "page-dijaspora-povratak.html",
@@ -5330,7 +5330,7 @@
       "source": "dijaspora-povratak.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-liturgija.html",
@@ -5344,7 +5344,7 @@
       "source": "liturgija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-svetista.html",
@@ -5358,7 +5358,7 @@
       "source": "svetista.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995549+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-vojne-postrojbe-i-njihovi-putevi.html",
@@ -5372,7 +5372,7 @@
       "source": "vojne-postrojbe-i-njihovi-putevi.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.952484+00:00"
     },
     {
       "id": "page-branitelji.html",
@@ -5386,7 +5386,7 @@
       "source": "branitelji.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-FAZE-1-2-ZAVRSENO.md",
@@ -5400,7 +5400,7 @@
       "source": "FAZE-1-2-ZAVRSENO.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-spomenici.html",
@@ -5414,7 +5414,7 @@
       "source": "spomenici.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.994606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950769+00:00"
     },
     {
       "id": "page-20-stoljece.html",
@@ -5428,7 +5428,7 @@
       "source": "20-stoljece.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-molitve.html",
@@ -5442,7 +5442,7 @@
       "source": "molitve.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.941484+00:00"
     },
     {
       "id": "page-STATUS-PROJEKTA.md",
@@ -5456,7 +5456,7 @@
       "source": "STATUS-PROJEKTA.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-mladi-vjera.html",
@@ -5470,7 +5470,7 @@
       "source": "mladi-vjera.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.941484+00:00"
     },
     {
       "id": "page-footer.html",
@@ -5484,7 +5484,7 @@
       "source": "footer.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-hrvatska-i-dijaspora.html",
@@ -5498,7 +5498,7 @@
       "source": "hrvatska-i-dijaspora.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.749608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-rang-lista.html",
@@ -5512,7 +5512,7 @@
       "source": "rang-lista.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.993606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-antika-i-dolazak-hrvata.html",
@@ -5526,7 +5526,7 @@
       "source": "antika-i-dolazak-hrvata.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745176+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788487+00:00"
     },
     {
       "id": "page-zasto-sam-se-vratio.html",
@@ -5540,7 +5540,7 @@
       "source": "zasto-sam-se-vratio.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.997148+00:00"
+      "updatedAt": "2026-09-11T08:36:59.953507+00:00"
     },
     {
       "id": "page-dijaspora-pregled.html",
@@ -5554,7 +5554,7 @@
       "source": "dijaspora-pregled.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-HRVATSKA-STVARA-UREDNICKI-STANDARD.md",
@@ -5568,7 +5568,7 @@
       "source": "HRVATSKA-STVARA-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-domovinski-rat.html",
@@ -5582,7 +5582,7 @@
       "source": "domovinski-rat.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-search.html",
@@ -5596,7 +5596,7 @@
       "source": "search.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.994518+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950769+00:00"
     },
     {
       "id": "page-biblija.html",
@@ -5610,7 +5610,7 @@
       "source": "biblija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-krunica.html",
@@ -5624,7 +5624,7 @@
       "source": "krunica.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-quiz.html",
@@ -5638,7 +5638,7 @@
       "source": "quiz.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.993606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-dijaspora-obitelj.html",
@@ -5652,13 +5652,13 @@
       "source": "dijaspora-obitelj.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-zagorje-i-prigorje.html",
       "type": "stranica",
       "title": "Hrvatsko zagorje i Prigorje | PatriaSoul",
-      "content": "Hrvatsko zagorje i Prigorje | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Zagorje i Prigorje 🇭🇷 Domovina · Sjeverozapadna Hrvatska Hrvatsko zagorje i Prigorje Brežuljci, šume, vinogradi, izvori termalne vode, dvorci, crkve, hodočasnička mjesta i raštrkana naselja daju sjeverozapadnoj Hrvatskoj prepoznatljiv krajolik. PatriaSoul ovdje spaja geografiju prostora s njegovom živom baštinom i svakodnevnim životom. ≈ 1 900 km² površina Hrvatskog zagorja prema Hrvatskoj enciklopediji 1 060 m Ivanščica — najviša gora Hrvatskog zagorja Krapina glavno naselje i sjedište Krapinsko-zagorske županije Kaj važna sastavnica jezičnog identiteta kraja Zemljopis Priroda Gradovi i mjesta Baština Život i običaji Izvori Zemljopis prostora Kraj između gora, dolina i rijeka Hrvatsko zagorje je zemljopisno-povijesna regija sjeverozapadne Hrvatske. Najveći dio nalazi se u Krapinsko-zagorskoj županiji, dok se manji dijelovi protežu prema Varaždinskoj i Zagrebačkoj županiji. Prigorja i doline čine prepoznatljiv mozaik naselja, poljoprivrednih površina i šuma. Od Sutle do Bednje Prostor obilježavaju porječja Krapine, Sutle i gornje Bednje te niz niskih i srednje visokih gora. Među važnim reljefnim cjelinama ističu se Ivanščica, Strahinščica, Kuna gora, Desinićka gora, Maceljsko gorje i Ravna gora, dok južni okvir prema Zagrebu čini Medvednica. Takav reljef nije samo zemljopisna činjenica. On je oblikovao način naseljavanja, poljoprivredu, promet, pogled na krajolik i snažnu tradiciju života na brežuljcima i u dolinama. Važni prirodni okviri Ivanščica 1 060 m, najviša gora Zagorja Strahinščica jedan od istaknutih gorskih nizova Sutla važna rijeka zapadnog prostora Krapina i Bednja riječni sustavi koji oblikuju doline Priroda Šume, vode, brežuljci i termalni izvori Prirodni prostor Zagorja i Prigorja karakteriziraju šumovita gorja, poljoprivredna prigorja, doline, potoci i izvori. Termalna i mineralna vrela važan su dio prirodne i turističke baštine sjeverozapadne Hrvatske. 🌳 Šume i gorja Šumski kompleksi Ivanščice, Medvednice, Maceljskog gorja i drugih uzvisina daju krajoliku zelenu okosnicu i stvaraju važna staništa brojnih biljnih i životinjskih vrsta. ♨️ Toplice Krapinske, Stubičke, Tuheljske i Varaždinske toplice povezane su s prirodnim termalnim izvorima i dugom tradicijom liječenja, odmora i turizma. 🌿 Zaštićena priroda Medvednica i druga zaštićena područja pokazuju koliko su očuvanje šuma, voda, livada i geološke baštine važni za budućnost regije. Gradovi i mjesta Mreža gradova, trgovišta i sela Zagorje nije samo jedan grad. Njegov identitet čini široka mreža manjih gradova, općinskih središta, sela i povijesnih naselja. Krapina Glavno naselje Hrvatskog zagorja i sjedište Krapinsko-zagorske županije. Krapina je snažno povezana s prirodnom, arheološkom i kulturnom baštinom kraja. Istraži hrvatske gradove → Zabok Važno gospodarsko i prometno središte zagorskog prostora, smješteno u dolini Krapine. Gradovi → Ivanec i Novi Marof Gradovi na sjevernijem prostoru uz Ivanščicu i Varaždinsko topličko područje, povezani s planinskim krajolikom i dugom poviješću. Gradovi → Stubica, Zlatar, Pregrada i Klanjec Mreža gradova i povijesnih središta koja povezuju doline, prigorja, dvorce, sakralnu baštinu i tradicionalni ruralni prostor. Gradovi → Kulturna i povijesna baština Dvorci, crkve, hodočašća i tragovi prošlosti Hrvatsko zagorje jedan je od prostora Hrvatske s izrazito gustom mrežom dvoraca, kurija, utvrda, crkava i kapela. Baština nije izdvojena od krajolika: povijesne građevine često su smještene na brežuljcima, uz naselja i stare prometne putove. 🏰 Trakošćan Jedan od najpoznatijih hrvatskih dvoraca, smješten u slikovitom krajoliku sjeverozapadnog dijela regije. 🏰 Veliki Tabor Impozantna utvrda i dvorac iznad zagorskog krajolika, važan dio kulturne baštine Hrvatskog zagorja. ⛪ Marija Bistrica Najpoznatije hrvatsko marijansko hodočasničko mjesto i snažno središte vjerske i kulturne baštine. Od Krapine do Kumrovca Povijest kraja vidljiva je u utvrdama, dvorcima, crkvama, starim jezgrama, arheološkim lokalitetima i tradicijskim kućama. Krapina je posebno važna zbog nalazišta neandertalaca na Hušnjakovu brdu, dok se brojna druga mjesta vežu uz plemićke obitelji, vlastelinstva i događaje hrvatske povijesti. Napomena: Domovinski rat, branitelji i ratna memorija na PatriaSoulu imaju zaseban portal Branitelji i nisu dio ove regionalne cjeline. Povezano na PatriaSoulu Baština → Gradovi → Priroda Hrvatske → Krajevi i geografija → Živa baština Kaj, vinogradi, toplice i zagorski stol Identitet kraja ne čine samo povijesne građevine. Živa baština vidi se u jeziku, hrani, običajima, proštenjima, vinogradima, obiteljskim gospodarstvima, folkloru i načinu života. 🗣️ Kajkavski govori Kajkavsko narječje važan je dio kulturnog identiteta sjeverozapadne Hrvatske, s brojnim lokalnim govorima i posebnostima. 🍷 Vinogradarska tradicija Brežuljkasti tereni i tradicija vinogradarstva oblikovali su krajolik i svakodnevni život brojnih obitelji. 🥟 Zagorski stol Štrukli, purica s mlincima i druga tradicionalna jela dio su gastronomske baštine koju vrijedi čuvati i predstavljati novim generacijama. PatriaSoul urednički pogled: Zagorje i Prigorje najbolje je razumjeti povezivanjem prostora i ljudi. Planina utječe na vodu, voda na naselja, naselja na promet i gospodarstvo, a sve zajedno stvara kulturni krajolik. Zato regionalni vodič nije samo popis mjesta nego priča o prostoru koji se stoljećima oblikuje životom ljudi. Izvori i uredništvo Provjerljivo znanje Autor / institucija: Leksikografski zavod Miroslav Krleža — Hrvatska enciklopedija, natuknica „Hrvatsko zagorje”. Izvor: Hrvatska enciklopedija, mrežno izdanje, Leksikografski zavod Miroslav Krleža, pristupljeno 10. 9. 2026. Dodatni izvor: Enciklopedija Hrvatskoga zagorja, Leksikografski zavod Miroslav Krleža; drugo, dopunjeno izdanje objavljeno 2025. PatriaSoul: tekst je originalna urednička obrada i sažetak za portal; vanjski sadržaj nije prepisivan. Otvori Hrvatsku enciklopediju → Enciklopedija Hrvatskoga zagorja → ← Natrag na Krajeve i geografiju · Domovina © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
+      "content": "Hrvatsko zagorje i Prigorje | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Zagorje i Prigorje 🇭🇷 Domovina · Sjeverozapadna Hrvatska Hrvatsko zagorje i Prigorje Brežuljci, šume, vinogradi, izvori termalne vode, dvorci, crkve, hodočasnička mjesta i raštrkana naselja daju sjeverozapadnoj Hrvatskoj prepoznatljiv krajolik. PatriaSoul ovdje spaja geografiju prostora s njegovom živom baštinom i svakodnevnim životom. GLAVNA SLIKA · Hrvatsko zagorje i Prigorje | PatriaSoul ≈ 1 900 km² površina Hrvatskog zagorja prema Hrvatskoj enciklopediji 1 060 m Ivanščica — najviša gora Hrvatskog zagorja Krapina glavno naselje i sjedište Krapinsko-zagorske županije Kaj važna sastavnica jezičnog identiteta kraja Zemljopis Priroda Gradovi i mjesta Baština Život i običaji Izvori Zemljopis prostora Kraj između gora, dolina i rijeka Hrvatsko zagorje je zemljopisno-povijesna regija sjeverozapadne Hrvatske. Najveći dio nalazi se u Krapinsko-zagorskoj županiji, dok se manji dijelovi protežu prema Varaždinskoj i Zagrebačkoj županiji. Prigorja i doline čine prepoznatljiv mozaik naselja, poljoprivrednih površina i šuma. Od Sutle do Bednje Prostor obilježavaju porječja Krapine, Sutle i gornje Bednje te niz niskih i srednje visokih gora. Među važnim reljefnim cjelinama ističu se Ivanščica, Strahinščica, Kuna gora, Desinićka gora, Maceljsko gorje i Ravna gora, dok južni okvir prema Zagrebu čini Medvednica. Takav reljef nije samo zemljopisna činjenica. On je oblikovao način naseljavanja, poljoprivredu, promet, pogled na krajolik i snažnu tradiciju života na brežuljcima i u dolinama. Važni prirodni okviri Ivanščica 1 060 m, najviša gora Zagorja Strahinščica jedan od istaknutih gorskih nizova Sutla važna rijeka zapadnog prostora Krapina i Bednja riječni sustavi koji oblikuju doline Priroda Šume, vode, brežuljci i termalni izvori Prirodni prostor Zagorja i Prigorja karakteriziraju šumovita gorja, poljoprivredna prigorja, doline, potoci i izvori. Termalna i mineralna vrela važan su dio prirodne i turističke baštine sjeverozapadne Hrvatske. 🌳 Šume i gorja Šumski kompleksi Ivanščice, Medvednice, Maceljskog gorja i drugih uzvisina daju krajoliku zelenu okosnicu i stvaraju važna staništa brojnih biljnih i životinjskih vrsta. ♨️ Toplice Krapinske, Stubičke, Tuheljske i Varaždinske toplice povezane su s prirodnim termalnim izvorima i dugom tradicijom liječenja, odmora i turizma. 🌿 Zaštićena priroda Medvednica i druga zaštićena područja pokazuju koliko su očuvanje šuma, voda, livada i geološke baštine važni za budućnost regije. Gradovi i mjesta Mreža gradova, trgovišta i sela Zagorje nije samo jedan grad. Njegov identitet čini široka mreža manjih gradova, općinskih središta, sela i povijesnih naselja. Krapina Glavno naselje Hrvatskog zagorja i sjedište Krapinsko-zagorske županije. Krapina je snažno povezana s prirodnom, arheološkom i kulturnom baštinom kraja. Istraži hrvatske gradove → Zabok Važno gospodarsko i prometno središte zagorskog prostora, smješteno u dolini Krapine. Gradovi → Ivanec i Novi Marof Gradovi na sjevernijem prostoru uz Ivanščicu i Varaždinsko topličko područje, povezani s planinskim krajolikom i dugom poviješću. Gradovi → Stubica, Zlatar, Pregrada i Klanjec Mreža gradova i povijesnih središta koja povezuju doline, prigorja, dvorce, sakralnu baštinu i tradicionalni ruralni prostor. Gradovi → Kulturna i povijesna baština Dvorci, crkve, hodočašća i tragovi prošlosti Hrvatsko zagorje jedan je od prostora Hrvatske s izrazito gustom mrežom dvoraca, kurija, utvrda, crkava i kapela. Baština nije izdvojena od krajolika: povijesne građevine često su smještene na brežuljcima, uz naselja i stare prometne putove. 🏰 Trakošćan Jedan od najpoznatijih hrvatskih dvoraca, smješten u slikovitom krajoliku sjeverozapadnog dijela regije. 🏰 Veliki Tabor Impozantna utvrda i dvorac iznad zagorskog krajolika, važan dio kulturne baštine Hrvatskog zagorja. ⛪ Marija Bistrica Najpoznatije hrvatsko marijansko hodočasničko mjesto i snažno središte vjerske i kulturne baštine. Od Krapine do Kumrovca Povijest kraja vidljiva je u utvrdama, dvorcima, crkvama, starim jezgrama, arheološkim lokalitetima i tradicijskim kućama. Krapina je posebno važna zbog nalazišta neandertalaca na Hušnjakovu brdu, dok se brojna druga mjesta vežu uz plemićke obitelji, vlastelinstva i događaje hrvatske povijesti. Napomena: Domovinski rat, branitelji i ratna memorija na PatriaSoulu imaju zaseban portal Branitelji i nisu dio ove regionalne cjeline. Povezano na PatriaSoulu Baština → Gradovi → Priroda Hrvatske → Krajevi i geografija → Živa baština Kaj, vinogradi, toplice i zagorski stol Identitet kraja ne čine samo povijesne građevine. Živa baština vidi se u jeziku, hrani, običajima, proštenjima, vinogradima, obiteljskim gospodarstvima, folkloru i načinu života. 🗣️ Kajkavski govori Kajkavsko narječje važan je dio kulturnog identiteta sjeverozapadne Hrvatske, s brojnim lokalnim govorima i posebnostima. 🍷 Vinogradarska tradicija Brežuljkasti tereni i tradicija vinogradarstva oblikovali su krajolik i svakodnevni život brojnih obitelji. 🥟 Zagorski stol Štrukli, purica s mlincima i druga tradicionalna jela dio su gastronomske baštine koju vrijedi čuvati i predstavljati novim generacijama. PatriaSoul urednički pogled: Zagorje i Prigorje najbolje je razumjeti povezivanjem prostora i ljudi. Planina utječe na vodu, voda na naselja, naselja na promet i gospodarstvo, a sve zajedno stvara kulturni krajolik. Zato regionalni vodič nije samo popis mjesta nego priča o prostoru koji se stoljećima oblikuje životom ljudi. Izvori i uredništvo Provjerljivo znanje Autor / institucija: Leksikografski zavod Miroslav Krleža — Hrvatska enciklopedija, natuknica „Hrvatsko zagorje”. Izvor: Hrvatska enciklopedija, mrežno izdanje, Leksikografski zavod Miroslav Krleža, pristupljeno 10. 9. 2026. Dodatni izvor: Enciklopedija Hrvatskoga zagorja, Leksikografski zavod Miroslav Krleža; drugo, dopunjeno izdanje objavljeno 2025. PatriaSoul: tekst je originalna urednička obrada i sažetak za portal; vanjski sadržaj nije prepisivan. Otvori Hrvatsku enciklopediju → Enciklopedija Hrvatskoga zagorja → ← Natrag na Krajeve i geografiju · Domovina © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
       "tags": [
         "zagorje-i-prigorje",
         "portal"
@@ -5666,7 +5666,7 @@
       "source": "zagorje-i-prigorje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.997148+00:00"
+      "updatedAt": "2026-09-11T08:36:59.953507+00:00"
     },
     {
       "id": "page-IGRA-UREDNICKI-STANDARD.md",
@@ -5680,7 +5680,7 @@
       "source": "IGRA-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-hrvati-u-austriji.html",
@@ -5694,7 +5694,7 @@
       "source": "hrvati-u-austriji.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-UREDNICKI-STANDARD-PATRIASOUL.md",
@@ -5708,7 +5708,7 @@
       "source": "UREDNICKI-STANDARD-PATRIASOUL.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-duel.html",
@@ -5722,7 +5722,7 @@
       "source": "duel.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-dijaspora-udruge.html",
@@ -5736,7 +5736,7 @@
       "source": "dijaspora-udruge.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-hrvati-u-italiji.html",
@@ -5750,7 +5750,7 @@
       "source": "hrvati-u-italiji.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-hrvatski-kraljevi.html",
@@ -5764,7 +5764,7 @@
       "source": "hrvatski-kraljevi.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.750608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.793487+00:00"
     },
     {
       "id": "page-hrvati-u-sad.html",
@@ -5778,7 +5778,7 @@
       "source": "hrvati-u-sad.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-izvodaci.html",
@@ -5792,7 +5792,7 @@
       "source": "izvodaci.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-blagdani.html",
@@ -5806,7 +5806,7 @@
       "source": "blagdani.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-dijaspora-jezik-i-skole.html",
@@ -5820,7 +5820,7 @@
       "source": "dijaspora-jezik-i-skole.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-index.html",
@@ -5834,7 +5834,7 @@
       "source": "index.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.939484+00:00"
     },
     {
       "id": "page-dizajn.md",
@@ -5848,7 +5848,7 @@
       "source": "dizajn.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-domovina.html",
@@ -5862,7 +5862,7 @@
       "source": "domovina.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-hrvati-u-novom-zelandu.html",
@@ -5876,7 +5876,7 @@
       "source": "hrvati-u-novom-zelandu.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-lijecnici-i-sanitetsko-osoblje.html",
@@ -5890,7 +5890,7 @@
       "source": "lijecnici-i-sanitetsko-osoblje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-POVIJEST-UREDNICKI-STANDARD.md",
@@ -5904,13 +5904,13 @@
       "source": "POVIJEST-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-slavonija-i-baranja.html",
       "type": "stranica",
-      "title": "Slavonija i Baranja | Veliki regionalni vodič | PatriaSoul",
-      "content": "Slavonija i Baranja | Veliki regionalni vodič | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Slavonija i Baranja Istočna Hrvatska Slavonija i Baranja Prostor ravnica, velikih rijeka, plodnih polja, vinograda, šuma i snažne slavonske i baranjske tradicije. GLAVNA SLIKA · Slavonija i Baranja | Veliki regionalni vodič | PatriaSoul Standardno slikovno polje PatriaSoula. Za zamjenu slike promijeni samo data-ps-image-src ; struktura stranice ostaje ista. 🌾 Slavonija Povijesno-geografska regija između Save i Drave, s velikim ravnicama i gorama poput Papuka, Krndije, Psunja, Požeške gore i Dilja. 🌊 Rijeke Sava, Drava, Dunav, Bosut i Vuka stvaraju važan hidrološki i gospodarski sustav istočne Hrvatske. 🍇 Baranja Prostor između Drave i Dunava poznat je po vinogradima, plodnim tlima, Kopačkom ritu i tradiciji podunavskog kraja. Panonski prostor Ravnica, gorje i velike rijeke Slavonija nije potpuno ravna: zapadni i središnji dijelovi imaju gorja i pobrđa, dok se prema istoku šire velike ravnice i lesne zaravni. Baranja je posebno oblikovana Dravom i Dunavom. Plodna tla omogućila su razvoj žitarica, industrijskog bilja, voća, vinove loze, stočarstva i ribnjačarstva. 🌿 Priroda Kopački rit močvarni prostor između Drave i Dunava Papuk planina i zaštićeni prirodni prostor Dunav velika europska rijeka uz Vukovar i Ilok Drava ključna rijeka sjeverne Slavonije i Baranje 🏺 Povijest Od prapovijesnih kultura i rimskih naselja do srednjovjekovnih gradova, osmanskog razdoblja, obnove nakon oslobođenja i modernog razvoja, prostor ima izrazito slojevitu povijest. ⛪ Baština Osječka Tvrđa, đakovačka katedrala, vinkovačka i vukovarska baština, iločki stari grad i brojni dvorci, crkve i sela čine snažnu kulturnu mrežu. 🍲 Gastronomija Kulenu, fiš-paprikaš, čobanac, šaran, perkelt, grah i brojna jela od tijesta i mesa prati snažna tradicija paprika, vina i domaćih proizvoda. 🗣️ Govori i običaji Štokavsko narječno područje ima brojne lokalne govore. Tamburaška glazba, folklor, kirbaji, berbe, svinjokolje, šokačka i baranjska tradicija te obiteljske svetkovine dio su živog identiteta. 🔎 Istraži dalje Gradovi → Baština → Gastronomija → Povijest → ← Natrag na Krajeve i geografiju © 2026 PatriaSoul Hrvatska. Povijest. Znanje. Identitet.",
+      "title": "Slavonija i Baranja | PatriaSoul",
+      "content": "Slavonija i Baranja | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Slavonija i Baranja Istočna Hrvatska Slavonija i Baranja Prostor velikih rijeka, plodnih ravnica, šuma i vinograda, ali i gradova, tvrđava, sela i živih tradicija. PatriaSoul ovdje povezuje zemljopis s pričama ljudi, baštinom i svakodnevnim životom istočne Hrvatske. Drava sjeverna prirodna okosnica Slavonije Dunav velika europska rijeka uz Baranju i istok Hrvatske Kopački rit jedno od najvažnijih močvarnih područja Hrvatske Papuk planinski prostor zapadne Slavonije Slavonija Ravnica nije cijela priča Slavonija je povijesno-geografska regija istočne Hrvatske između Save i Drave. Prema zapadu i središtu pojavljuju se Papuk, Krndija, Psunj, Požeška gora i Dilj, dok se prema istoku šire velike ravnice i lesne zaravni. Baranja Između Drave i Dunava Hrvatska Baranja nalazi se u prostoru između Drave, Dunava i granice s Mađarskom. Banska kosa, vinogradi, plodne ravnice i poplavni krajobrazi daju joj vrlo prepoznatljiv karakter. Rijeke Voda oblikuje kraj Sava, Drava, Dunav, Bosut i Vuka nisu samo zemljopisne oznake. Oni oblikuju poljoprivredu, naselja, prirodna staništa, promet i način života. Zemljopis Od slavonskih gora do Podunavlja Slavonija pripada panonskom prostoru, ali je reljefno raznolika. Zapadni i središnji dijelovi imaju šumovita gorja i pobrđa, među kojima se ističu Papuk, Krndija, Psunj, Požeška gora i Dilj. Istočnije prevladavaju nizine, riječne terase i lesne zaravni. Baranja je također pretežno nizinska, s Banskom kosom kao istaknutom uzvisinom. Prostor uz Dravu i Dunav obilježavaju rukavci, poplavne ravnice, močvare i šume. Plodna tla temelj su snažne poljoprivredne tradicije: žitarice, industrijsko bilje, voće, vinova loza, stočarstvo i ribnjačarstvo stoljećima su dio gospodarstva regije. Priroda Mjesta koja vrijedi upoznati Kopački rit močvarni i poplavni krajobraz između Drave i Dunava Papuk zaštićeni planinski prostor i geološka baština Drava važna rijeka s velikim prirodnim i krajobraznim vrijednostima Dunav podunavski prostor Baranje i istočne Hrvatske 🏙️ Gradovi Osijek je najveće urbano središte regije i važno kulturno, obrazovno i gospodarsko središte. Slavonski Brod , Vinkovci , Đakovo , Požega , Našice , Vukovar , Ilok , Beli Manastir , Valpovo , Đurđenovac i druga mjesta imaju vlastite priče i regionalne identitete. Istraži hrvatske gradove → 🏛️ Povijest i baština Osječka Tvrđa, đakovačka katedrala, iločki Stari grad, dvorci, crkve, arheološka nalazišta i tradicijska sela svjedoče o slojevitoj prošlosti. Vinkovci imaju iznimno važnu arheološku baštinu, dok Baranja čuva tragove različitih srednjoeuropskih i podunavskih utjecaja. Istraži baštinu → 🌾 Život i gospodarstvo Poljoprivreda ostaje jedna od prepoznatljivih gospodarskih osnova regije. Uz ratarstvo i stočarstvo važni su vinogradarstvo, voćarstvo, šumarstvo, prehrambena industrija i turizam. U gradovima se razvijaju obrazovanje, usluge, kultura i suvremeno poduzetništvo. Živa baština Glazba, govor, običaji i stol Slavonija i Baranja imaju snažnu tradiciju tamburaške glazbe, folklora, crkvenih i obiteljskih običaja, berbi i seoskih svetkovina. Tradicijska glazba Slavonije i Baranje prepoznatljiva je po karakterističnom dvoglasju i tamburaškoj tradiciji, a gajde pripadaju starijem sloju tradicijskih glazbala. Kulinarstvo povezuje plodove ravnice i rijeka: kulen i druge suhomesnate proizvode, fiš-paprikaš, čobanac, jela od riječnih riba, domaće tijesto, papriku i vina. Baranjska vinska tradicija posebno je vezana uz Bansku kosu. PatriaSoul ovu baštinu promatra kao živi identitet — ne samo kao muzejski ostatak prošlosti. Povezani PatriaSoul sadržaj Istraži dalje Priroda Hrvatske → Veliki regionalni vodič → Gradovi → Domovina → Povijest → Izvori i urednička napomena Na čemu se temelji sadržaj? Osnovne zemljopisne i povijesne činjenice provjerene su prema Hrvatskoj enciklopediji Leksikografskog zavoda Miroslav Krleža. Za Slavoniju korišten je mrežni članak Slavonija , a za Baranju članak Baranja . Autor / izdavač: Leksikografski zavod Miroslav Krleža · Izvor: Hrvatska enciklopedija · Pristup: rujan 2026. Originalni izvor — Slavonija · Originalni izvor — Baranja PatriaSoul ne prenosi tuđe članke u cijelosti. Tekst ove stranice je originalna urednička obrada koja povezuje provjerene činjenice s PatriaSoul kontekstom. Domovinski rat, branitelji, postrojbe, operacije i ratna memorija obrađuju se u zasebnom portalu Branitelji , a ne unutar ovog geografskog vodiča. ← Natrag na Krajeve i geografiju © 2026 PatriaSoul Hrvatska. Povijest. Znanje. Identitet.",
       "tags": [
         "slavonija-i-baranja",
         "portal"
@@ -5918,7 +5918,7 @@
       "source": "slavonija-i-baranja.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.994518+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950769+00:00"
     },
     {
       "id": "page-dijaspora-domovinski-rat.html",
@@ -5932,13 +5932,13 @@
       "source": "dijaspora-domovinski-rat.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-lika-i-gorski-kotar.html",
       "type": "stranica",
-      "title": "Lika i Gorski kotar | Veliki regionalni vodič | PatriaSoul",
-      "content": "Lika i Gorski kotar | Veliki regionalni vodič | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Lika i Gorski kotar Gorska Hrvatska Lika i Gorski kotar Šumovita i krška Hrvatska između panonske unutrašnjosti i Jadrana: planine, polja, ponornice, rijeke i iznimna prirodna baština. GLAVNA SLIKA · Lika i Gorski kotar | Veliki regionalni vodič | PatriaSoul Standardno slikovno polje PatriaSoula. Za zamjenu slike promijeni samo data-ps-image-src ; struktura stranice ostaje ista. 🏞️ Lika Velika krška polja i planinski lanci daju Lici prepoznatljiv otvoren, ali surov krajolik. Gospić je važno regionalno središte. 🌲 Gorski kotar Šume, visoke zaravni, Kupa i planinski masivi obilježavaju prostor između unutrašnjosti i Kvarnera. 💧 Krške vode Gacka, Lika, Kupa, Dobra, Korana i Mrežnica pokazuju različite oblike krške hidrologije. Reljef Planine, polja i krš Velebit, Plješivica, Velika i Mala Kapela te Risnjak stvaraju planinski okvir. Između njih nalaze se krška polja i udoline. Voda često ponire kroz vapnenačku podlogu i ponovno izbija u izvorima. Gorski kotar je osobito šumovit, dok Liku karakteriziraju velika polja i otvoreniji krajobrazi. 🌿 Zaštićena priroda Plitvička jezera nacionalni park i svjetski poznat sustav sedrenih jezera Risnjak nacionalni park Gorskog kotara Sjeverni Velebit nacionalni park krškog gorja Velebit park prirode i veliki planinski sustav 🏺 Povijest Gorski prijevoji bili su važni za povezivanje Panonije i Jadrana. Stare ceste, utvrde, trgovišta i krajiška naselja svjedoče o prometnom i obrambenom značenju prostora. ⛪ Baština Crkve, kapele, stari gradovi, tradicijske kuće i tragovi povijesnih prometnica čine kulturnu baštinu gorske Hrvatske. 🍲 Gastronomija Jela se oslanjaju na krumpir, kupus, gljive, divljač, pastrvu, sir i meso. Lička kuhinja i goranska jela povezuju kontinentalne i planinske tradicije. 🗣️ Govori i život u gorju Na ovom se prostoru dodiruju različiti kajkavski, čakavski i štokavski utjecaji. Tradicija šumarstva, stočarstva, lovstva i rada uz planinske prometnice snažno je oblikovala lokalne zajednice. Zima, nadmorska visina i udaljenost između naselja također su ostavili trag u načinu gradnje, prehrani i običajima. 🔎 Istraži dalje Gradovi → Baština → Povijest → Kvarner i Primorje → ← Natrag na Krajeve i geografiju © 2026 PatriaSoul Hrvatska. Povijest. Znanje. Identitet.",
+      "title": "Lika i Gorski kotar | PatriaSoul",
+      "content": "Lika i Gorski kotar | PatriaSoul PatriaSoul ☰ Početna / Krajevi i geografija / Lika i Gorski kotar Veliki regionalni vodič · Gorska Hrvatska Lika i Gorski kotar Prostor planina, krša, šuma, polja i izvora — Hrvatska između kontinentalne unutrašnjosti i Jadrana. Lika i Gorski kotar čine srce gorske Hrvatske, ali svaki od tih krajeva ima vlastiti krajolik, povijest i identitet. GLAVNA SLIKA · Lika i Gorski kotar | PatriaSoul PatriaSoul ovaj prostor promatra kao živi kraj, a ne samo kao geografsku oznaku: od velikih ličkih polja i rijeka ponornica do goranskih šuma, Kupske doline, Velebita i planinskih naselja. Regionalne granice pritom nisu uvijek iste u geografskim, povijesnim i administrativnim izvorima, pa je važno razlikovati prirodnu regiju od današnjih upravnih granica. Gorska Hrvatska Lika i Gorski kotar čine dvije velike cjeline Gorske Hrvatske. Velebit Najduža hrvatska planina, snažna prirodna granica između gorske i primorske Hrvatske. Risnjak · 1528 m Jedan od najpoznatijih vrhova Gorskoga kotara i središte istoimenog nacionalnog parka. Lika i Gacka Velike krške rijeke i polja oblikuju prepoznatljiv lički krajolik. 🌄 Dvije regije, jedan planinski prostor Hrvatska enciklopedija Gorsku Hrvatsku navodi kao geografsku cjelinu podijeljenu na Liku i Gorski kotar. Lika se prostire između Velebita, Plješevice i Kapele, dok je Gorski kotar planinski kraj u zaleđu Riječkoga zaljeva, s prijelazom prema Ogulinsko-plaščanskoj udolini. 🏞️ Lika Lika je povijesno-geografska regija velikih krških polja, planinskih lanaca i ponornica. Ličko, Gacko, Krbavsko, Koreničko i Lapačko polje daju joj snažan prostorni identitet. 🌲 Gorski kotar Visoki krški ravnjak, šume i planinski masivi obilježavaju Gorski kotar. Risnjak, Snježnik, Bitoraj i druga goranska gorja oblikuju krajolik između unutrašnjosti i Kvarnera. ⛰️ Prijelazni prostori Ogulin, Velika Kapela, Brinje i okolni krajevi pokazuju kako se prirodne i kulturne regije preklapaju. Regionalni vodič zato ne izjednačava geografsku regiju s administrativnom granicom. 💧 Voda koja oblikuje krš Krš je ključ za razumijevanje ovog prostora. Vapnenačke i dolomitne stijene omogućuju poniranje vode, podzemno otjecanje i pojavu snažnih izvora. Rijeke Like i Gacke posebno su važne za lički krajolik, dok Kupa i njezine pritoke obilježavaju Gorski kotar. Lika Rijeka Lika izvire pod Velebitom i prolazi Ličkim poljem. Njezin je tok snažno povezan s krškim podzemljem i hidroenergetskim sustavom. Gacka Gacka je jedna od najpoznatijih ličkih rijeka i prepoznatljiva je po snažnim izvorima, bistroj vodi i dolini oko Otočca. Kupa Kupa izvire u Gorskom kotaru i postaje važna prirodna os prema sjeverozapadu. Dolina Kupe povezuje goranski kraj s prostorom prema Sloveniji i Kordunu. 🌲 Priroda koju vrijedi čuvati Lika i Gorski kotar među najvrjednijim su prostorima hrvatske prirodne baštine. Na relativno malom području susreću se visoke šume, duboki krš, kanjoni, izvori, planinska staništa i zaštićeni krajobrazi. Plitvička jezera Nacionalni park s jedinstvenim sustavom sedrenih jezera i slapova. Prirodna cjelina Plitvica snažno je povezana s ličkim krškim prostorom. Risnjak Nacionalni park u Gorskom kotaru obuhvaća planinski prostor Risnjaka i Snježnika. Šume, krški oblici i bogatstvo vrsta čine ga jednom od ključnih prirodnih vrijednosti regije. Sjeverni Velebit Nacionalni park poznat je po Hajdučkim i Rožanskim kukovima, Zavižanu, Velebitskom botaničkom vrtu i Premužićevoj stazi. Velebit Park prirode Velebit obuhvaća golemi planinski sustav od područja iznad Senja do doline Zrmanje. Unutar Velebita nalaze se i nacionalni parkovi Sjeverni Velebit i Paklenica. Bijele i Samarske stijene Strogi rezervat u području Velike Kapele jedan je od najdojmljivijih krških krajolika Gorskoga kotara, s tornjevima, stijenama i šumovitim udolinama. Goranske šume Bukva, jela i smreka daju Gorskom kotaru izrazito šumski karakter. Šume su stoljećima povezane s gospodarstvom, životom naselja i očuvanjem prirode. 🏘️ Gradovi i mjesta Gradovi i veća naselja ovog prostora imaju različite uloge: od regionalnih središta i povijesnih trgovišta do planinskih turističkih mjesta i dolinskih naselja. Gospić Najveće gradsko središte Like i sjedište Ličko-senjske županije. Smješten je uz Ličko polje, podno Velebita, te je važno polazište za upoznavanje ličkog prostora. Otočac Središte Gacke doline i jedno od važnih povijesnih i kulturnih mjesta Like. Gacka je jedan od prepoznatljivih simbola prostora. Ogulin Grad na prijelazu između Gorske Hrvatske i unutrašnjosti, poznat po Đulinom ponoru, Frankopanskoj baštini i prirodnim vrijednostima okolnog prostora. Delnice Najveće urbano središte užeg Gorskog kotara i važno prometno i gospodarsko mjesto u planinskom prostoru. Čabar i Vrbovsko Gradovi duboko povezani s goranskim šumama, Kupom i povijesnim prometnim pravcima prema unutrašnjosti i Kvarneru. Fužine, Lokve i Skrad Planinska mjesta koja povezuju prirodnu baštinu, jezera, šume, tradicionalni život i razvoj goranskog turizma. 🏛️ Povijest i baština Gorski prijevoji i doline stoljećima su povezivali Panoniju i Jadran. Karolinska i Jozefinska cesta, razvoj željeznice te nekadašnje kirijašenje ostavili su dubok trag u povijesti Gorskoga kotara. U Lici su se kroz stoljeća isprepletali tragovi Japoda, rimskog svijeta, srednjovjekovne Hrvatske, plemićkih rodova, Vojne krajine i kasnijeg modernog razvoja. Smiljan i Nikola Tesla Smiljan kraj Gospića rodno je mjesto Nikole Tesle. Memorijalni centar čuva uspomenu na znanstvenika i njegovu povezanost s ličkim zavičajem. Frankopanska baština Ogulin i širi prostor Kapele povezani su s Frankopanima, starim utvrdama i pričom o srednjovjekovnom i ranonovovjekovnom razvoju ovog dijela Hrvatske. Planinska tradicija Pastirski stanovi, suhozidi, drvena gradnja, šumarstvo, stočarstvo i stare prometnice svjedoče o načinu života prilagođenom dugim zimama i planinskom okolišu. PatriaSoul urednička napomena: Povijest Domovinskog rata, branitelje, postrojbe, operacije i memorijale obrađujemo u zasebnom portalu Branitelji . Ova regionalna stranica ostaje usmjerena na geografiju, prirodu, povijest kraja i njegovu kulturnu baštinu. Živi kraj Čuvati prostor znači čuvati identitet Lika i Gorski kotar nisu samo prostor kroz koji se prolazi prema moru. To su krajevi šuma, planina, polja, sela, gradova, starih putova i ljudi koji su stoljećima živjeli u zahtjevnom, ali iznimno vrijednom okolišu. PatriaSoul želi taj identitet prikazivati bez romantiziranja i bez gubitka činjenica — kroz znanje, baštinu i priče ljudi i prostora. Priroda Hrvatske → Gradovi Hrvatske → Baština → Veliki regionalni vodič → Domovina → Branitelji → Izvori i urednička osnova Glavni geografski i povijesni podaci provjereni su prema autoritativnim institucionalnim izvorima. PatriaSoul tekstove piše samostalno i ne prenosi cijele vanjske članke. Lika — Hrvatska enciklopedija Leksikografski zavod Miroslav Krleža, mrežno izdanje, pristupljeno rujan 2026. Originalni izvor → enciklopedija.hr/clanak/lika-regija Gorski kotar — Hrvatska enciklopedija Leksikografski zavod Miroslav Krleža, mrežno izdanje, pristupljeno rujan 2026. Originalni izvor → enciklopedija.hr/clanak/gorski-kotar Park prirode Velebit — Javna ustanova Park prirode Velebit Službene informacije o području, zaštiti i prirodnoj baštini, 2026. Originalni izvor → pp-velebit.hr Nacionalni park Sjeverni Velebit — Javna ustanova NP Sjeverni Velebit Službene informacije o parku, zaštićenim područjima i baštini. Originalni izvor → np-sjeverni-velebit.hr Regionalizacija Hrvatske — Hrvatska enciklopedija Leksikografski zavod Miroslav Krleža, za razgraničenje geografskih i povijesnih regija. Originalni izvor → Hrvatska enciklopedija Uredničko pravilo: kada vanjski izvor nema imenovanog pojedinačnog autora, PatriaSoul navodi stvarnog institucionalnog izdavača umjesto izmišljanja autora. ← Natrag na Krajeve i geografiju © 2026 PatriaSoul VJERA • LJUBAV • DOMOVINA",
       "tags": [
         "lika-i-gorski-kotar",
         "portal"
@@ -5946,7 +5946,7 @@
       "source": "lika-i-gorski-kotar.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.984606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-cookie-banner.html",
@@ -5960,7 +5960,7 @@
       "source": "cookie-banner.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-vijesti-admin.html",
@@ -5974,7 +5974,7 @@
       "source": "vijesti-admin.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-VJERA-AUDIT-2026-09.md",
@@ -5988,7 +5988,7 @@
       "source": "VJERA-AUDIT-2026-09.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-BASTINA-UREDNICKI-STANDARD.md",
@@ -6002,7 +6002,7 @@
       "source": "BASTINA-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-bastina.html",
@@ -6016,7 +6016,7 @@
       "source": "bastina.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-bitke-i-vojna-povijest.html",
@@ -6030,7 +6030,7 @@
       "source": "bitke-i-vojna-povijest.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-dijaspora-podrucja.html",
@@ -6044,7 +6044,7 @@
       "source": "dijaspora-podrucja.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-BRANITELJI-UREDNICKI-STANDARD.md",
@@ -6058,7 +6058,7 @@
       "source": "BRANITELJI-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785079+00:00"
     },
     {
       "id": "page-glazbala.html",
@@ -6072,7 +6072,7 @@
       "source": "glazbala.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.747608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.791487+00:00"
     },
     {
       "id": "page-dijaspora-mladi.html",
@@ -6086,7 +6086,7 @@
       "source": "dijaspora-mladi.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-dvorci-utvrde-i-legende.html",
@@ -6100,7 +6100,7 @@
       "source": "dvorci-utvrde-i-legende.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-gradovi.html",
@@ -6114,7 +6114,7 @@
       "source": "gradovi.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-srednji-vijek.html",
@@ -6128,7 +6128,7 @@
       "source": "srednji-vijek.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.994606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.950769+00:00"
     },
     {
       "id": "page-funkcije.md",
@@ -6142,7 +6142,7 @@
       "source": "funkcije.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-dijaspora-ostale-drzave.html",
@@ -6156,7 +6156,7 @@
       "source": "dijaspora-ostale-drzave.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-brani-svoj-grad.html",
@@ -6170,7 +6170,7 @@
       "source": "brani-svoj-grad.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745278+00:00"
+      "updatedAt": "2026-09-11T08:36:59.788671+00:00"
     },
     {
       "id": "page-tradicija-i-obicaji.html",
@@ -6184,7 +6184,7 @@
       "source": "tradicija-i-obicaji.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995549+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951868+00:00"
     },
     {
       "id": "page-katolicke-vijesti.html",
@@ -6198,7 +6198,7 @@
       "source": "katolicke-vijesti.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.983606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.940484+00:00"
     },
     {
       "id": "page-narodne-nosnje.html",
@@ -6212,7 +6212,7 @@
       "source": "narodne-nosnje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.941484+00:00"
     },
     {
       "id": "page-README.md",
@@ -6226,7 +6226,7 @@
       "source": "README.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-HRVATSKA-I-DIJASPORA-UREDNICKI-STANDARD.md",
@@ -6240,7 +6240,7 @@
       "source": "HRVATSKA-I-DIJASPORA-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-postrojbe.html",
@@ -6254,7 +6254,7 @@
       "source": "postrojbe.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.948484+00:00"
     },
     {
       "id": "page-vukovar.html",
@@ -6268,7 +6268,7 @@
       "source": "vukovar.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.952484+00:00"
     },
     {
       "id": "page-newsletter.html",
@@ -6282,7 +6282,7 @@
       "source": "newsletter.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.985606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.942484+00:00"
     },
     {
       "id": "page-povijest.html",
@@ -6296,7 +6296,7 @@
       "source": "povijest.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-dijaspora-identitet.html",
@@ -6310,7 +6310,7 @@
       "source": "dijaspora-identitet.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-plan-razvoja.md",
@@ -6324,7 +6324,7 @@
       "source": "plan-razvoja.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.991606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.948484+00:00"
     },
     {
       "id": "page-hrvatska-povijest.html",
@@ -6338,7 +6338,7 @@
       "source": "hrvatska-povijest.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.749608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-struktura.md",
@@ -6352,7 +6352,7 @@
       "source": "struktura.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.994606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.951484+00:00"
     },
     {
       "id": "page-prijava.html",
@@ -6366,7 +6366,7 @@
       "source": "prijava.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-vjera-svjedocanstva.html",
@@ -6380,7 +6380,7 @@
       "source": "vjera-svjedocanstva.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.995606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.952484+00:00"
     },
     {
       "id": "page-dalmacija.html",
@@ -6394,7 +6394,7 @@
       "source": "dalmacija.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-dijaspora-irska.html",
@@ -6408,7 +6408,7 @@
       "source": "dijaspora-irska.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.745608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.789487+00:00"
     },
     {
       "id": "page-hrvati-u-cileu.html",
@@ -6422,7 +6422,7 @@
       "source": "hrvati-u-cileu.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-glazba.html",
@@ -6436,7 +6436,7 @@
       "source": "glazba.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.747608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-hrvati-u-argentini.html",
@@ -6450,7 +6450,7 @@
       "source": "hrvati-u-argentini.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-hrvati-u-svicarskoj.html",
@@ -6464,7 +6464,7 @@
       "source": "hrvati-u-svicarskoj.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.748608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.792487+00:00"
     },
     {
       "id": "page-evandelje.html",
@@ -6478,7 +6478,7 @@
       "source": "evandelje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.746608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.790487+00:00"
     },
     {
       "id": "page-posavina-i-pokuplje.html",
@@ -6492,7 +6492,7 @@
       "source": "posavina-i-pokuplje.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.948484+00:00"
     },
     {
       "id": "page-qa.html",
@@ -6506,7 +6506,7 @@
       "source": "qa.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.992606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.949484+00:00"
     },
     {
       "id": "page-admin.html",
@@ -6520,7 +6520,7 @@
       "source": "admin.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-odlikovanja-i-priznanja.html",
@@ -6534,7 +6534,7 @@
       "source": "odlikovanja-i-priznanja.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.986606+00:00"
+      "updatedAt": "2026-09-11T08:36:59.942484+00:00"
     },
     {
       "id": "page-MEDIJI-UREDNICKI-STANDARD.md",
@@ -6548,7 +6548,7 @@
       "source": "MEDIJI-UREDNICKI-STANDARD.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.741046+00:00"
+      "updatedAt": "2026-09-11T08:36:59.785487+00:00"
     },
     {
       "id": "page-ai-README.md",
@@ -6562,7 +6562,7 @@
       "source": "ai/README.md",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.744608+00:00"
+      "updatedAt": "2026-09-11T08:36:59.787487+00:00"
     },
     {
       "id": "page-pages-kviz-index.html",
@@ -6576,7 +6576,7 @@
       "source": "pages/kviz/index.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.987242+00:00"
+      "updatedAt": "2026-09-11T08:36:59.943125+00:00"
     },
     {
       "id": "page-pages-vjera-index.html",
@@ -6590,7 +6590,7 @@
       "source": "pages/vjera/index.html",
       "sourceTitle": "PatriaSoul portal",
       "status": "published",
-      "updatedAt": "2026-09-11T08:29:15.987242+00:00"
+      "updatedAt": "2026-09-11T08:36:59.943125+00:00"
     }
   ]
 }
