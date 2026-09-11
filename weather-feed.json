@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T08:17:01.952401+00:00",
+  "updatedAt": "2026-09-11T08:35:10.871519+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,9 +15,9 @@
       "humidity": "94"
     },
     "Crikvenica": {
-      "temp": "20.7",
-      "condition": "lahor",
-      "wind": "N",
+      "temp": "21.5",
+      "condition": "povjetarac",
+      "wind": "NE",
       "humidity": "87"
     },
     "Dubrovnik": {
@@ -41,7 +41,7 @@
     "RC Gradište (kod Županje)": {
       "temp": "17.6",
       "condition": "potpuno oblačno",
-      "wind": "E",
+      "wind": "NW",
       "humidity": "74"
     },
     "Karlovac": {
@@ -69,7 +69,7 @@
       "humidity": "74"
     },
     "Opatija": {
-      "temp": "18.0",
+      "temp": "18.1",
       "condition": "-",
       "wind": "-",
       "humidity": "97"
@@ -119,7 +119,7 @@
     "Slavonski Brod": {
       "temp": "16.0",
       "condition": "slaba kiša poslije grmlj.",
-      "wind": "NW",
+      "wind": "W",
       "humidity": "92"
     },
     "Split-Marjan": {
@@ -167,7 +167,7 @@
     "Zagreb-Maksimir": {
       "temp": "14.5",
       "condition": "potpuno oblačno",
-      "wind": "SE",
+      "wind": "S",
       "humidity": "88"
     },
     "Zagreb-aerodrom": {
@@ -217,14 +217,14 @@
     "Yellow thunderstorm warning",
     "Thundershowers locally possible. Lightning risk > 60 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Mjestimice grmljavinsko nevrijeme. Količina oborine > 30 mm; Vjerojatnost grmljavine > 70 %",
+    "Mjestimice grmljavinsko nevrijeme. Količina oborine > 60 mm; Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
-    "Severe thunderstorms locally. Rainfall > 30 mm; Lightning risk > 70 %",
+    "Severe thunderstorms locally. Rainfall > 60 mm; Lightning risk > 70 %",
     "Žuto upozorenje za grmljavinsku oluju",
     "Lokalno mogući izraženi pljuskovi s grmljavinom. Vjerojatnost grmljavine > 50 %",
     "Yellow thunderstorm warning",
     "Thundershowers locally possible. Lightning risk > 50 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Mjestimice grmljavinsko nevrijeme. Količina oborine > 30 mm; Vjerojatnost grmljavine > 70 %"
+    "Mjestimice grmljavinsko nevrijeme. Količina oborine > 60 mm; Vjerojatnost grmljavine > 70 %"
   ]
 }
