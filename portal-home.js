@@ -39,6 +39,15 @@
     nav.insertBefore(wrap,nav.firstChild);
   }
 
+  function watchHomeNavigation(){
+    ensureHomeNavigation();
+    var nav=document.querySelector('.ps-mainnav');
+    if(!nav || nav.__patriaHomeObserver) return;
+    var observer=new MutationObserver(function(){ ensureHomeNavigation(); });
+    observer.observe(nav,{childList:true,subtree:false});
+    nav.__patriaHomeObserver=observer;
+  }
+
   function renderStats(){
     var target=byId('portal-live-stats');
     if(!target) return;
@@ -63,7 +72,7 @@
   }
 
   function init(){
-    ensureHomeNavigation();
+    watchHomeNavigation();
     renderStats();
     renderTimeline();
     document.documentElement.classList.add('portal-home-ready');
