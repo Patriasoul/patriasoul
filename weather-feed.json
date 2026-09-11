@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T11:15:13.714084+00:00",
+  "updatedAt": "2026-09-11T11:32:17.157948+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -13,6 +13,12 @@
       "condition": "potpuno oblačno",
       "wind": "N",
       "humidity": "93"
+    },
+    "Crikvenica": {
+      "temp": "24.2",
+      "condition": "povjetarac",
+      "wind": "NW",
+      "humidity": "56"
     },
     "Dubrovnik": {
       "temp": "29.4",
@@ -29,13 +35,13 @@
     "Gospić": {
       "temp": "18.6",
       "condition": "slaba kiša",
-      "wind": "N",
+      "wind": "NW",
       "humidity": "90"
     },
     "RC Gradište (kod Županje)": {
       "temp": "15.7",
       "condition": "kiša poslije grmlj.",
-      "wind": "W",
+      "wind": "NE",
       "humidity": "97"
     },
     "Karlovac": {
@@ -47,7 +53,7 @@
     "Knin": {
       "temp": "23.1",
       "condition": "pretežno oblačno",
-      "wind": "W",
+      "wind": "SE",
       "humidity": "79"
     },
     "Križevci": {
@@ -61,6 +67,12 @@
       "condition": "pretežno oblačno",
       "wind": "NW",
       "humidity": "67"
+    },
+    "Opatija": {
+      "temp": "18.6",
+      "condition": "-",
+      "wind": "-",
+      "humidity": "92"
     },
     "RC Osijek-Čepin": {
       "temp": "15.6",
@@ -107,7 +119,7 @@
     "Slavonski Brod": {
       "temp": "16.6",
       "condition": "pretežno oblačno",
-      "wind": "NW",
+      "wind": "E",
       "humidity": "92"
     },
     "Split-Marjan": {
@@ -131,7 +143,7 @@
     "Varaždin": {
       "temp": "14.2",
       "condition": "potpuno oblačno",
-      "wind": "NW",
+      "wind": "N",
       "humidity": "90"
     },
     "Zadar": {
