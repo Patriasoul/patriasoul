@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T06:19:31.533628+00:00",
+  "updatedAt": "2026-09-11T06:40:41.845163+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -112,7 +112,7 @@
     },
     "Rijeka-aerodrom": {
       "temp": "18.6",
-      "condition": "-",
+      "condition": "potpuno oblačno",
       "wind": "SE",
       "humidity": "92"
     },
@@ -142,7 +142,7 @@
     },
     "Split-aerodrom": {
       "temp": "21.1",
-      "condition": "potpuno oblačno",
+      "condition": "grmljavina s oborinom",
       "wind": "S",
       "humidity": "93"
     },
@@ -196,7 +196,7 @@
     },
     "Split": {
       "temp": "21.1",
-      "condition": "potpuno oblačno",
+      "condition": "grmljavina s oborinom",
       "wind": "S",
       "humidity": "93"
     },
@@ -209,17 +209,17 @@
   },
   "alerts": [
     "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno obilniji pljuskovi, ponegdje moguće uz grmljavinu. Količina oborine > 20 mm",
+    "Lokalno mogući obilniji pljuskovi praćeni grmljavinom. Količina oborine > 20 mm",
     "Yellow thunderstorm warning",
-    "Locally thundershowers. Rainfall > 20 mm",
+    "Heavy thundershowers locally possible. Rainfall > 20 mm",
     "Žuto upozorenje za grmljavinsku oluju",
     "Lokalno obilniji pljuskovi, ponegdje moguće uz grmljavinu. Količina oborine > 20 mm",
     "Yellow thunderstorm warning",
-    "Locally thundershowers. Rainfall > 20 mm",
+    "Heavy thundershowers locally possible. Rainfall > 20 mm",
     "Žuto upozorenje za grmljavinsku oluju",
     "Lokalno obilniji pljuskovi, ponegdje moguće uz grmljavinu. Količina oborine > 20 mm",
     "Yellow thunderstorm warning",
-    "Locally thundershowers. Rainfall > 20 mm",
+    "Heavy thundershowers locally possible. Rainfall > 20 mm",
     "Žuto upozorenje za kišu",
     "Lokalno obilna kiša. Količina oborine > 50 mm",
     "Yellow rain warning",
@@ -229,14 +229,14 @@
     "Yellow thunderstorm warning",
     "Locally thundershower. Lightning risk > 60 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Grmljavinsko nevrijeme. Vjerojatnost grmljavine > 70 %",
+    "Mjestimice grmljavinsko nevrijeme. Količina oborine > 30 mm; Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
-    "Thunderstorm. Lightning risk > 70 %",
+    "Severe thunderstorms locally. Rainfall > 30 mm; Lightning risk > 70 %",
     "Žuto upozorenje za grmljavinsku oluju",
     "Lokalno izraženi pljuskovi s grmljavinom. Vjerojatnost grmljavine > 70 %",
     "Yellow thunderstorm warning",
     "Lokalno izraženi pljuskovi s grmljavinom. Lightning risk > 70 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Grmljavinsko nevrijeme. Vjerojatnost grmljavine > 80 %"
+    "Mjestimice grmljavinsko nevrijeme. Količina oborine > 30 mm; Vjerojatnost grmljavine > 70 %"
   ]
 }
