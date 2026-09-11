@@ -49,9 +49,11 @@
 
   function contextual(path){
     var p=path.toLowerCase();
+    if(/dubrovnik/.test(p)) return commons.dubrovnik;
+    if(/ston/.test(p)) return commons.ston;
     if(/vukovar|branitelj|domovinski-rat|operacije|brigade|postrojbe|spomenici|memorijal/.test(p)) return commons.vukovar;
     if(/istra|pula|porec|rovinj|umag|pazin|labin|buzet|novigrad/.test(p)) return commons.istra;
-    if(/dalmacija|split|zadar|sibenik|dubrovnik|omis|sinj|makarska|trogir|solin|knin/.test(p)) return commons.split;
+    if(/dalmacija|split|zadar|sibenik|omis|sinj|makarska|trogir|solin|knin/.test(p)) return commons.split;
     if(/kvarner|primorje|rijeka|opatija|krk|cres|losinj|senj/.test(p)) return commons.opatija;
     if(/zagorje|prigorje|varazdin|krapina|zabok|cakovec|medimurje/.test(p)) return commons.north;
     if(/slavonija|baranja|osijek|vinkovci|slavonski-brod|pozega|dakovo|ilok/.test(p)) return commons.panonia;
@@ -70,11 +72,13 @@
     if(!q) return commons.zagreb;
     q=q.toLowerCase();
     if(/vukovar/.test(q)) return commons.vukovar;
-    if(/split|solin|sinj|zadar|sibenik|dubrovnik|omis|makarska|trogir|knin/.test(q)) return commons.split;
+    if(/dubrovnik/.test(q)) return commons.dubrovnik;
+    if(/ston/.test(q)) return commons.ston;
     if(/pula|porec|rovinj|umag|pazin|labin|buzet|novigrad/.test(q)) return commons.istra;
     if(/rijeka|opatija|krk|cres|losinj|senj/.test(q)) return commons.opatija;
     if(/varazdin|cakovec|prelog|mursko|krapina|zabok|zagreb|samobor/.test(q)) return commons.north;
     if(/osijek|vinkovci|slavonski|pozega|dakovo|ilok|virovitica|koprivnica|djurdjevac|bjelovar/.test(q)) return commons.panonia;
+    if(/split|solin|sinj|zadar|sibenik|omis|makarska|trogir|knin/.test(q)) return commons.split;
     return null;
   }
 
