@@ -17,6 +17,9 @@ Ovaj dokument prati fotografije koje PatriaSoul preuzima iz otvorenih izvora. **
 | `images/gallery/zagreb-jelacic.jpg` | Zagreb / Trg bana Jelačića | Nick Savchenko | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg |
 | `images/gallery/varazdin-vijecnica.jpg` | Varaždin | Pudelek (Marcin Szala) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Vara%C5%BEdin_-_town_hall.JPG |
 | `images/gallery/opatija.jpg` | Opatija / Kvarner | Vzach~commonswiki | Public domain | https://commons.wikimedia.org/wiki/File:Opatija.JPG |
+| `images/gallery/kopacki-rit.jpg` | Kopački rit / Baranja | ZovkoM | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kopacki_rit.jpg |
+| `images/gallery/velebit.jpg` | Velebit | Gap | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Velebit.jpg |
+| `images/gallery/medvedgrad.jpg` | Medvedgrad / Medvednica | Icyblues | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Medvedgrad_Zagreb.jpg |
 
 ## Kako portal koristi fotografije
 
