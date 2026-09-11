@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T21:14:38.174185+00:00",
+  "updatedAt": "2026-09-11T21:29:34.553570+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,10 +9,22 @@
       "humidity": "97"
     },
     "Bjelovar": {
-      "temp": "12.4",
-      "condition": "-",
-      "wind": "NW",
+      "temp": "12.6",
+      "condition": "lahor",
+      "wind": "S",
       "humidity": "99"
+    },
+    "Crikvenica": {
+      "temp": "21.4",
+      "condition": "povjetarac",
+      "wind": "E",
+      "humidity": "49"
+    },
+    "Dubrovnik": {
+      "temp": "26.9",
+      "condition": "lahor",
+      "wind": "W",
+      "humidity": "52"
     },
     "Dubrovnik-aerodrom": {
       "temp": "22.0",
@@ -20,17 +32,35 @@
       "wind": "E",
       "humidity": "82"
     },
-    "Križevci": {
-      "temp": "11.8",
+    "Gospić": {
+      "temp": "14.3",
       "condition": "lahor",
+      "wind": "NW",
+      "humidity": "97"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "15.5",
+      "condition": "slab vjetar",
+      "wind": "NW",
+      "humidity": "89"
+    },
+    "Knin": {
+      "temp": "16.8",
+      "condition": "umjeren vjetar",
+      "wind": "NW",
+      "humidity": "78"
+    },
+    "Križevci": {
+      "temp": "11.6",
+      "condition": "-",
       "wind": "N",
       "humidity": "99"
     },
     "Opatija": {
-      "temp": "18.0",
+      "temp": "17.9",
       "condition": "-",
       "wind": "-",
-      "humidity": "76"
+      "humidity": "77"
     },
     "RC Osijek-Čepin": {
       "temp": "14.1",
@@ -61,6 +91,12 @@
       "condition": "vedro",
       "wind": "NW",
       "humidity": "65"
+    },
+    "Šibenik": {
+      "temp": "20.3",
+      "condition": "-",
+      "wind": "-",
+      "humidity": "61"
     },
     "Varaždin": {
       "temp": "12.0",
@@ -109,12 +145,6 @@
       "condition": "vedro",
       "wind": "NW",
       "humidity": "65"
-    },
-    "Dubrovnik": {
-      "temp": "22.0",
-      "condition": "pretežno oblačno",
-      "wind": "E",
-      "humidity": "82"
     },
     "Pula": {
       "temp": "19.0",
