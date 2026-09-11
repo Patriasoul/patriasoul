@@ -6,6 +6,7 @@ CSS = '<link rel="stylesheet" href="/patriasoul-global.css">'
 EDITORIAL = '<link rel="stylesheet" href="/portal-editorial-pages.css">'
 JS = '<script src="/site-navigation.js?v=46" defer></script>'
 NAV_UX = '<script src="/navigation-ux.js?v=1" defer></script>'
+VISUALS = '<script src="/patriasoul-visuals.js?v=1" defer></script>'
 changed = []
 
 for path in ROOT.rglob('*.html'):
@@ -22,6 +23,7 @@ for path in ROOT.rglob('*.html'):
     text = re.sub(r'\s*<link\s+rel=["\']stylesheet["\']\s+href=["\']/navigation-layout\.css(?:\?[^"\']*)?["\']\s*/?>', '', text, flags=re.IGNORECASE)
     text = re.sub(r'/site-navigation\.js(?:\?[^"\']*)?', '/site-navigation.js?v=46', text)
     text = re.sub(r'<script\s+src=["\']/navigation-ux\.js(?:\?[^"\']*)?["\']\s+defer\s*></script>', NAV_UX, text, flags=re.IGNORECASE)
+    text = re.sub(r'<script\s+src=["\']/patriasoul-visuals\.js(?:\?[^"\']*)?["\']\s+defer\s*></script>', VISUALS, text, flags=re.IGNORECASE)
 
     additions = []
     if '/patriasoul-global.css' not in text:
@@ -32,6 +34,8 @@ for path in ROOT.rglob('*.html'):
         additions.append(JS)
     if '/navigation-ux.js' not in text:
         additions.append(NAV_UX)
+    if '/patriasoul-visuals.js' not in text:
+        additions.append(VISUALS)
     if additions:
         pos = text.lower().find('</head>')
         if pos >= 0:
@@ -43,6 +47,6 @@ for path in ROOT.rglob('*.html'):
     changed.append(str(path.relative_to(ROOT)))
 
 print(f'Updated PatriaSoul shared shell in {len(changed)} HTML files.')
-print('Every HTML page now uses the shared global CSS, editorial page skin and navigation UX layer.')
+print('Every HTML page now uses the shared global CSS, editorial page skin, navigation UX and contextual photography layer.')
 for item in changed:
     print(item)
