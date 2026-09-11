@@ -12,7 +12,7 @@
     '/posavina-i-pokuplje.html': ['/images/gallery/slavonija.jpg','Panonska i riječna Hrvatska','Ljeto','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Slavonija3_8292855.jpg'],
     '/lika-i-gorski-kotar.html': ['/images/gallery/ston.jpg','Krška Hrvatska','Bernard Gagnon','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:View_of_Ston,_Croatia.jpg'],
     '/istra.html': ['/images/gallery/istra-batana.jpg','Istra · pomorska baština','Shabicht','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Batana_istrska.jpg'],
-    '/kvarner-i-primorje.html': ['/images/gallery/opatija.jpg','Kvarner i Primorje · Opatija','Kiki273','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Opatija.jpg'],
+    '/kvarner-i-primorje.html': ['/images/gallery/opatija.jpg','Kvarner i Primorje · Opatija','Vzach~commonswiki','Public domain','https://commons.wikimedia.org/wiki/File:Opatija.JPG'],
     '/dalmacija.html': ['/images/gallery/split-marjan.jpg','Dalmacija · Split i Marjan','dominkod','CC BY 3.0','https://commons.wikimedia.org/wiki/File:Split_-_a_view_from_Marjan_-_panoramio.jpg'],
     '/povijest.html': ['/images/gallery/varazdin-vijecnica.jpg','Povijesna Hrvatska','Pudelek (Marcin Szala)','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Vara%C5%BEdin_-_town_hall.JPG'],
     '/bastina.html': ['/images/gallery/istra-batana.jpg','Hrvatska kulturna baština','Shabicht','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Batana_istrska.jpg'],
