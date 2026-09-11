@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T05:14:35.670713+00:00",
+  "updatedAt": "2026-09-11T05:32:49.838027+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,10 +15,10 @@
       "humidity": "99"
     },
     "Crikvenica": {
-      "temp": "19.0",
+      "temp": "18.7",
       "condition": "povjetarac",
       "wind": "N",
-      "humidity": "93"
+      "humidity": "90"
     },
     "Dubrovnik": {
       "temp": "28.0",
@@ -32,11 +32,23 @@
       "wind": "E",
       "humidity": "54"
     },
+    "Gospić": {
+      "temp": "13.4",
+      "condition": "lahor",
+      "wind": "E",
+      "humidity": "99"
+    },
     "RC Gradište (kod Županje)": {
       "temp": "16.5",
       "condition": "potpuno oblačno",
       "wind": "N",
       "humidity": "66"
+    },
+    "Knin": {
+      "temp": "18.3",
+      "condition": "povjetarac",
+      "wind": "N",
+      "humidity": "99"
     },
     "Križevci": {
       "temp": "12.8",
@@ -45,16 +57,16 @@
       "humidity": "97"
     },
     "Opatija": {
-      "temp": "17.4",
+      "temp": "17.6",
       "condition": "-",
       "wind": "-",
       "humidity": "97"
     },
     "RC Osijek-Čepin": {
-      "temp": "15.8",
-      "condition": "povjetarac",
+      "temp": "16.0",
+      "condition": "potpuno oblačno",
       "wind": "NW",
-      "humidity": "84"
+      "humidity": "79"
     },
     "Pula-aerodrom": {
       "temp": "20.1",
@@ -83,7 +95,7 @@
     "Slavonski Brod": {
       "temp": "16.0",
       "condition": "potpuno oblačno",
-      "wind": "W",
+      "wind": "NW",
       "humidity": "79"
     },
     "Split-aerodrom": {
@@ -101,7 +113,7 @@
     "Varaždin": {
       "temp": "12.4",
       "condition": "slaba kiša",
-      "wind": "NW",
+      "wind": "N",
       "humidity": "97"
     },
     "Zadar-aerodrom": {
@@ -113,7 +125,7 @@
     "Zagreb-Maksimir": {
       "temp": "14.2",
       "condition": "potpuno oblačno",
-      "wind": "E",
+      "wind": "NE",
       "humidity": "90"
     },
     "Zagreb-aerodrom": {
