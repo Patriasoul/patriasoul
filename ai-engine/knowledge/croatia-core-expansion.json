@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "source": "PatriaSoul urednički temeljni zapisi",
+  "items": [
+    {
+      "id": "croatia-state-basic",
+      "type": "domovina",
+      "title": "Republika Hrvatska – osnovne činjenice",
+      "content": "Republika Hrvatska europska je država smještena na dodiru srednje Europe, jugoistočne Europe i Sredozemlja. Glavni grad je Zagreb. Hrvatska ima izlaz na Jadransko more, brojne otoke i raznolike prirodne cjeline od panonskih nizina do dinarskog gorja. U teritorijalnom ustroju ima 20 županija, Grad Zagreb koji ima položaj grada i županije, 127 gradova i 428 općina.",
+      "tags": ["Hrvatska","Republika Hrvatska","Zagreb","127 gradova","20 županija","428 općina","Jadran"],
+      "source": "https://mpudt.gov.hr/gradjani-21417/iz-djelokruga/lokalna-i-podrucna-regionalna-samouprava-24398/popis-zupanija-gradova-i-opcina-24402/24402",
+      "sourceTitle": "Ministarstvo pravosuđa, uprave i digitalne transformacije RH",
+      "status": "verified"
+    },
+    {
+      "id": "croatia-geography-regions",
+      "type": "geografija",
+      "title": "Geografske cjeline Hrvatske",
+      "content": "Hrvatski prostor obuhvaća panonsku, peripanonsku, gorsku i primorsku Hrvatsku. Ističu se ravničarska Slavonija i Baranja, brežuljkasti sjeverozapad, Lika i Gorski kotar, Istra, Kvarner i Hrvatsko primorje te Dalmacija. Geografske regije nisu isto što i službene administrativne jedinice pa se njihove granice mogu razlikovati ovisno o kriteriju.",
+      "tags": ["geografija","regije","Slavonija","Baranja","Lika","Gorski kotar","Istra","Kvarner","Dalmacija"],
+      "source": "https://www.enciklopedija.hr/clanak/regionalizacija",
+      "sourceTitle": "Hrvatska enciklopedija – regionalizacija",
+      "status": "verified"
+    },
+    {
+      "id": "croatia-adriatic-islands",
+      "type": "priroda",
+      "title": "Jadransko more i hrvatski otoci",
+      "content": "Hrvatska ima izrazito razvedenu jadransku obalu s velikim brojem otoka, otočića i hridi. Među najvećim i najpoznatijim otocima su Krk, Cres, Brač, Hvar, Pag, Korčula, Dugi otok, Mljet i Vis. Jadranska obala važna je za pomorstvo, ribarstvo, turizam, prirodnu baštinu i kulturni identitet obalnih krajeva.",
+      "tags": ["Jadran","otoci","Krk","Cres","Brač","Hvar","Korčula","Mljet","Vis","Dalmacija"],
+      "source": "https://www.enciklopedija.hr/clanak/jadransko-more",
+      "sourceTitle": "Hrvatska enciklopedija – Jadransko more",
+      "status": "verified"
+    },
+    {
+      "id": "croatia-national-parks",
+      "type": "priroda",
+      "title": "Nacionalni parkovi Hrvatske",
+      "content": "Hrvatska ima osam nacionalnih parkova: Brijuni, Kornati, Krka, Mljet, Paklenica, Plitvička jezera, Risnjak i Sjeverni Velebit. Nacionalni parkovi štite posebno vrijedne prirodne cjeline i dio su hrvatskog sustava zaštite prirode.",
+      "tags": ["nacionalni parkovi","Brijuni","Kornati","Krka","Mljet","Paklenica","Plitvička jezera","Risnjak","Sjeverni Velebit"],
+      "source": "https://mingo.gov.hr/",
+      "sourceTitle": "Ministarstvo zaštite okoliša i zelene tranzicije RH",
+      "status": "verified"
+    },
+    {
+      "id": "zagreb-capital",
+      "type": "grad",
+      "title": "Zagreb",
+      "content": "Zagreb je glavni i najveći grad Republike Hrvatske te političko, gospodarsko, kulturno, znanstveno i prometno središte države. Povijesnu jezgru čine Gornji grad i Kaptol, a među prepoznatljivim gradskim prostorima su Trg bana Josipa Jelačića, Dolac, Maksimir, Medvednica i Sava.",
+      "tags": ["Zagreb","glavni grad","Gornji grad","Kaptol","Maksimir","Medvednica"],
+      "cityId": "zagreb",
+      "source": "https://www.enciklopedija.hr/clanak/zagreb",
+      "sourceTitle": "Hrvatska enciklopedija – Zagreb",
+      "status": "verified"
+    },
+    {
+      "id": "split-city",
+      "type": "grad",
+      "title": "Split",
+      "content": "Split je najveći grad Dalmacije i važno jadransko središte. Povijesnom jezgrom dominira Dioklecijanova palača, oko koje se razvio srednjovjekovni i noviji grad. Povijesni kompleks Splita s Dioklecijanovom palačom nalazi se na UNESCO-ovu Popisu svjetske baštine.",
+      "tags": ["Split","Dalmacija","Dioklecijanova palača","UNESCO","Marjan"],
+      "cityId": "split",
+      "source": "https://www.enciklopedija.hr/clanak/split",
+      "sourceTitle": "Hrvatska enciklopedija – Split",
+      "status": "verified"
+    },
+    {
+      "id": "rijeka-city",
+      "type": "grad",
+      "title": "Rijeka",
+      "content": "Rijeka je najveća hrvatska luka i važno urbano središte Kvarnera. Grad se razvio uz Rječine i Kvarnerski zaljev te je snažno povezan s pomorstvom, industrijom, lukom i kulturnim životom. Trsat s kaštelom jedan je od prepoznatljivih povijesnih prostora grada.",
+      "tags": ["Rijeka","Kvarner","luka","Trsat","pomorstvo"],
+      "cityId": "rijeka",
+      "source": "https://www.enciklopedija.hr/clanak/rijeka",
+      "sourceTitle": "Hrvatska enciklopedija – Rijeka",
+      "status": "verified"
+    },
+    {
+      "id": "osijek-city",
+      "type": "grad",
+      "title": "Osijek",
+      "content": "Osijek je najveći grad istočne Hrvatske i važno urbano središte Slavonije. Grad leži uz Dravu, a posebno je poznata povijesna Tvrđa. Osijek je važno gospodarsko, obrazovno, kulturno i prometno središte Osječko-baranjske županije.",
+      "tags": ["Osijek","Slavonija","Drava","Tvrđa","Osječko-baranjska županija"],
+      "cityId": "osijek",
+      "source": "https://www.enciklopedija.hr/clanak/osijek",
+      "sourceTitle": "Hrvatska enciklopedija – Osijek",
+      "status": "verified"
+    },
+    {
+      "id": "dubrovnik-city",
+      "type": "grad",
+      "title": "Dubrovnik",
+      "content": "Dubrovnik je povijesni grad na južnom hrvatskom Jadranu i jedno od najpoznatijih hrvatskih kulturnih središta. Povijesna jezgra, gradske zidine, Stradun i brojni spomenici svjedoče o višestoljetnoj tradiciji Dubrovačke Republike. Stari grad Dubrovnik nalazi se na UNESCO-ovu Popisu svjetske baštine.",
+      "tags": ["Dubrovnik","Dubrovačka Republika","Stradun","gradske zidine","UNESCO"],
+      "cityId": "dubrovnik",
+      "source": "https://www.enciklopedija.hr/clanak/dubrovnik",
+      "sourceTitle": "Hrvatska enciklopedija – Dubrovnik",
+      "status": "verified"
+    },
+    {
+      "id": "vukovar-memory",
+      "type": "branitelji",
+      "title": "Vukovar – mjesto hrvatskog sjećanja",
+      "content": "Vukovar zauzima posebno mjesto u hrvatskoj kulturi sjećanja zbog obrane grada 1991., stradanja stanovništva i branitelja te brojnih mjesta sjećanja. Memorijalni prostori uključuju Memorijalno groblje žrtava iz Domovinskog rata, Ovčaru, Vukovarski vodotoranj i druga mjesta povezana s ratnim stradanjem.",
+      "tags": ["Vukovar","sjećanje","Domovinski rat","Ovčara","Memorijalno groblje","Vodotoranj"],
+      "cityId": "vukovar",
+      "source": "https://branitelji.gov.hr/",
+      "sourceTitle": "Ministarstvo hrvatskih branitelja RH",
+      "status": "verified"
+    },
+    {
+      "id": "homeland-war-chronology",
+      "type": "povijest",
+      "title": "Kronološki okvir Domovinskog rata",
+      "content": "Domovinski rat odvijao se u razdoblju raspada Jugoslavije i stvaranja suvremene hrvatske države. Za razumijevanje kronologije važno je razlikovati političke događaje, oružanu obranu, međunarodno priznanje Republike Hrvatske, vojno-redarstvene operacije i završetak rata te mirnu reintegraciju hrvatskog Podunavlja. PatriaSoul sadržaj o ratu treba uvijek povezivati s provjerenim institucionalnim izvorima i kulturom sjećanja.",
+      "tags": ["Domovinski rat","kronologija","1990","1991","međunarodno priznanje","operacije","mirna reintegracija"],
+      "source": "https://branitelji.gov.hr/",
+      "sourceTitle": "Ministarstvo hrvatskih branitelja RH",
+      "status": "verified"
+    },
+    {
+      "id": "operation-bljesak-core",
+      "type": "dogadjaj",
+      "title": "Operacija Bljesak",
+      "content": "Vojno-redarstvena operacija Bljesak provedena je početkom svibnja 1995. na području zapadne Slavonije. Hrvatska je njome vratila pod svoj nadzor područje koje je do tada bilo izvan ustavno-pravnog poretka Republike Hrvatske. Operacija je trajala od 1. do 4. svibnja 1995.",
+      "tags": ["Bljesak","1. svibnja 1995","4. svibnja 1995","zapadna Slavonija","Domovinski rat"],
+      "source": "https://branitelji.gov.hr/",
+      "sourceTitle": "Ministarstvo hrvatskih branitelja RH",
+      "status": "verified"
+    },
+    {
+      "id": "operation-oluja-core",
+      "type": "dogadjaj",
+      "title": "Operacija Oluja",
+      "content": "Vojno-redarstvena operacija Oluja započela je 4. kolovoza 1995. i bila je ključna operacija oslobađanja velikog dijela okupiranog teritorija Republike Hrvatske. Operacija je završila 7. kolovoza 1995., a Dan pobjede i domovinske zahvalnosti i Dan hrvatskih branitelja obilježava se 5. kolovoza.",
+      "tags": ["Oluja","4. kolovoza 1995","5. kolovoza","7. kolovoza 1995","Domovinski rat","Knin"],
+      "source": "https://branitelji.gov.hr/",
+      "sourceTitle": "Ministarstvo hrvatskih branitelja RH",
+      "status": "verified"
+    },
+    {
+      "id": "croatia-independence-1991",
+      "type": "povijest",
+      "title": "Stvaranje moderne hrvatske države 1990.–1991.",
+      "content": "Proces stvaranja moderne hrvatske države obilježili su višestranački izbori 1990., donošenje novog ustavnog okvira, politička odluka o samostalnosti te proglašenje neovisnosti Republike Hrvatske 25. lipnja 1991. Odluka o raskidu državnopravnih veza s bivšom državom donesena je 8. listopada 1991. Nakon međunarodnog priznanja Hrvatska je nastavila proces izgradnje suvremene države.",
+      "tags": ["1990","1991","neovisnost","25. lipnja 1991","8. listopada 1991","Republika Hrvatska"],
+      "source": "https://www.enciklopedija.hr/clanak/hrvatska-drzava",
+      "sourceTitle": "Hrvatska enciklopedija – Hrvatska",
+      "status": "verified"
+    },
+    {
+      "id": "glagolitic-heritage",
+      "type": "bastina",
+      "title": "Glagoljica i hrvatska kulturna baština",
+      "content": "Glagoljica je jedno od najvažnijih obilježja hrvatske srednjovjekovne pismenosti. Hrvatska glagoljska tradicija posebno je snažna na prostoru Kvarnera, Istre i sjeverne Dalmacije. Baština uključuje kamene natpise, liturgijske knjige, rukopisne i tiskane tekstove te tradiciju uporabe hrvatskoga crkvenoslavenskog jezika.",
+      "tags": ["glagoljica","Bašćanska ploča","Kvarner","Istra","Dalmacija","hrvatska baština"],
+      "source": "https://www.enciklopedija.hr/clanak/glagoljica",
+      "sourceTitle": "Hrvatska enciklopedija – glagoljica",
+      "status": "verified"
+    },
+    {
+      "id": "croatia-catholic-heritage",
+      "type": "vjera",
+      "title": "Katolička baština Hrvatske",
+      "content": "Katolička tradicija snažno je obilježila hrvatsku kulturnu i povijesnu baštinu. U hrvatskim krajevima razvili su se brojni samostani, crkve, katedrale, svetišta, hodočasnički putovi i liturgijska baština. PatriaSoul u sadržaju o vjeri treba jasno razlikovati službeni nauk Katoličke Crkve, povijesne činjenice, pobožnu predaju i osobna svjedočanstva.",
+      "tags": ["katoličanstvo","vjera","crkve","katedrale","svetišta","baština"],
+      "source": "https://hbk.hr/",
+      "sourceTitle": "Hrvatska biskupska konferencija",
+      "status": "verified"
+    },
+    {
+      "id": "croatian-cultural-identity",
+      "type": "kultura",
+      "title": "Hrvatski kulturni identitet",
+      "content": "Hrvatski kulturni identitet oblikovali su različiti povijesni i regionalni slojevi: mediteranski, srednjoeuropski, panonski i dinarski. Jezik, narječja, književnost, glazba, tradicijska kultura, vjera, graditeljska baština, gastronomija i običaji povezuju lokalne identitete u širu hrvatsku kulturnu cjelinu.",
+      "tags": ["kultura","identitet","baština","narječja","običaji","glazba","gastronomija"],
+      "source": "https://www.enciklopedija.hr/",
+      "sourceTitle": "Hrvatska enciklopedija – Leksikografski zavod Miroslav Krleža",
+      "status": "verified"
+    },
+    {
+      "id": "croatia-unesco-heritage",
+      "type": "bastina",
+      "title": "Hrvatska baština pod zaštitom UNESCO-a",
+      "content": "Hrvatska ima niz lokaliteta i dobara upisanih na UNESCO-ove popise svjetske baštine i nematerijalne kulturne baštine. Među poznatim materijalnim lokalitetima su Dubrovnik, Split s Dioklecijanovom palačom, povijesna jezgra Trogira, Eufrazijeva bazilika u Poreču i Starogradsko polje na Hvaru. Nematerijalna baština uključuje različite tradicije, običaje, glazbene i obrtničke prakse.",
+      "tags": ["UNESCO","Dubrovnik","Split","Trogir","Poreč","Hvar","kulturna baština"],
+      "source": "https://whc.unesco.org/en/statesparties/hr",
+      "sourceTitle": "UNESCO World Heritage Centre – Croatia",
+      "status": "verified"
+    }
+  ]
+}
