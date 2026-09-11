@@ -38,10 +38,12 @@ jobs:
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Slavonija3_8292855.jpg' 'slavonija.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Smiraj_dana_na_rijeci_Savi.jpg' 'sava-slavonija.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Traditional_Slavonian_National_Costume.jpg' 'slavonska-nosnja.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Kopacki_rit.jpg' 'kopacki-rit.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Vukovar_-_street.JPG' 'vukovar-ulica.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Memorijalno_groblje_Vukovar.jpg' 'vukovar-groblje.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Opatija.JPG' 'opatija.jpg'
           download 'https://commons.wikimedia.org/wiki/Special:FilePath/Vara%C5%BEdin_-_town_hall.JPG' 'varazdin-vijecnica.jpg'
+          download 'https://commons.wikimedia.org/wiki/Special:FilePath/Velebit.jpg' 'velebit.jpg'
 
       - name: Commit downloaded photos
         shell: bash
@@ -54,5 +56,5 @@ jobs:
             echo 'No gallery changes.'
             exit 0
           fi
-          git commit -m 'Refresh verified Croatian gallery photos'
+          git commit -m 'Expand verified Croatian gallery photos'
           git push
