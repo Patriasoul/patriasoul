@@ -6,12 +6,15 @@
     zagreb: ['/images/gallery/zagreb-jelacic.jpg','Zagreb · Trg bana Jelačića','Nick Savchenko','CC BY-SA 2.0','https://commons.wikimedia.org/wiki/File:Zagreb_(29255640143).jpg'],
     north: ['/images/gallery/varazdin-vijecnica.jpg','Varaždin · sjeverozapadna Hrvatska','Pudelek (Marcin Szala)','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Vara%C5%BEdin_-_town_hall.JPG'],
     panonia: ['/images/gallery/slavonija.jpg','Slavonija · panonska Hrvatska','Ljeto','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Slavonija3_8292855.jpg'],
+    slavoniaNature: ['/images/gallery/kopacki-rit.jpg','Kopački rit · Baranja i Podunavlje','ZovkoM','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Kopacki_rit.jpg'],
     istra: ['/images/gallery/istra-batana.jpg','Istra · pomorska baština','Shabicht','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Batana_istrska.jpg'],
     opatija: ['/images/gallery/opatija.jpg','Opatija · Kvarner','Vzach~commonswiki','Public domain','https://commons.wikimedia.org/wiki/File:Opatija.JPG'],
     split: ['/images/gallery/split-marjan.jpg','Split · Marjan','dominkod','CC BY 3.0','https://commons.wikimedia.org/wiki/File:Split_-_a_view_from_Marjan_-_panoramio.jpg'],
     vukovar: ['/images/gallery/vukovar-ulica.jpg','Vukovar','Pudelek (Marcin Szala)','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Vukovar_-_street.JPG'],
     memorial: ['/images/gallery/vukovar-groblje.jpg','Memorijalna mjesta · Vukovar','Damir Čolja','CC BY-SA 3.0','https://commons.wikimedia.org/wiki/File:Memorijalno_groblje_Vukovar.jpg'],
     ston: ['/images/gallery/ston.jpg','Ston · krška i povijesna Hrvatska','Bernard Gagnon','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:View_of_Ston,_Croatia.jpg'],
+    velebit: ['/images/gallery/velebit.jpg','Velebit · hrvatski planinski prostor','Gap','CC BY-SA 2.5','https://commons.wikimedia.org/wiki/File:Velebit.jpg'],
+    medvedgrad: ['/images/gallery/medvedgrad.jpg','Medvedgrad · Medvednica i Zagreb','Icyblues','CC BY-SA 4.0','https://commons.wikimedia.org/wiki/File:Medvedgrad_Zagreb.jpg'],
     dubrovnik: ['/images/gallery/dubrovnik-stari-grad.jpg','Dubrovnik · hrvatska baština i Jadran','dronepicr','CC BY 2.0','https://commons.wikimedia.org/wiki/File:A_distant_view_of_Divovici_Beach_and_the_Old_Town_of_Dubrovnik,_Croatia_(48739125537).jpg']
   };
 
@@ -23,15 +26,15 @@
     '/zagorje-i-prigorje.html': commons.north,
     '/medimurje.html': commons.north,
     '/podravina-i-bilogora.html': commons.panonia,
-    '/slavonija-i-baranja.html': commons.panonia,
+    '/slavonija-i-baranja.html': commons.slavoniaNature,
     '/posavina-i-pokuplje.html': commons.panonia,
-    '/lika-i-gorski-kotar.html': commons.ston,
+    '/lika-i-gorski-kotar.html': commons.velebit,
     '/istra.html': commons.istra,
     '/kvarner-i-primorje.html': commons.opatija,
     '/dalmacija.html': commons.split,
-    '/priroda.html': commons.ston,
-    '/povijest.html': commons.north,
-    '/hrvatska-povijest.html': commons.north,
+    '/priroda.html': commons.velebit,
+    '/povijest.html': commons.medvedgrad,
+    '/hrvatska-povijest.html': commons.medvedgrad,
     '/20-stoljece.html': commons.vukovar,
     '/stvaranje-moderne-hrvatske.html': commons.vukovar,
     '/bastina.html': commons.istra,
@@ -56,13 +59,13 @@
     if(/dalmacija|split|zadar|sibenik|omis|sinj|makarska|trogir|solin|knin/.test(p)) return commons.split;
     if(/kvarner|primorje|rijeka|opatija|krk|cres|losinj|senj/.test(p)) return commons.opatija;
     if(/zagorje|prigorje|varazdin|krapina|zabok|cakovec|medimurje/.test(p)) return commons.north;
-    if(/slavonija|baranja|osijek|vinkovci|slavonski-brod|pozega|dakovo|ilok/.test(p)) return commons.panonia;
+    if(/slavonija|baranja|osijek|vinkovci|slavonski-brod|pozega|dakovo|ilok/.test(p)) return commons.slavoniaNature;
     if(/podravina|bilogora|koprivnica|virovitica|djurdjevac|bjelovar/.test(p)) return commons.panonia;
     if(/posavina|pokuplje|sisak|karlovac|petrinja|glina|kutina/.test(p)) return commons.panonia;
-    if(/lika|gorski-kotar|gospic|otocac|ogulin|delnice/.test(p)) return commons.ston;
+    if(/lika|gorski-kotar|gospic|otocac|ogulin|delnice/.test(p)) return commons.velebit;
     if(/vjera|evandelje|molitve|krunica|sakramenti|liturgija|svetac|blagdani|svetista/.test(p)) return commons.north;
     if(/bastina|tradicija|glazba|gastronomija|kultura/.test(p)) return commons.istra;
-    if(/povijest|stoljece|kraljev|srednji-vijek|antika/.test(p)) return commons.north;
+    if(/povijest|stoljece|kraljev|srednji-vijek|antika/.test(p)) return commons.medvedgrad;
     return null;
   }
 
@@ -77,8 +80,9 @@
     if(/pula|porec|rovinj|umag|pazin|labin|buzet|novigrad/.test(q)) return commons.istra;
     if(/rijeka|opatija|krk|cres|losinj|senj/.test(q)) return commons.opatija;
     if(/varazdin|cakovec|prelog|mursko|krapina|zabok|zagreb|samobor/.test(q)) return commons.north;
-    if(/osijek|vinkovci|slavonski|pozega|dakovo|ilok|virovitica|koprivnica|djurdjevac|bjelovar/.test(q)) return commons.panonia;
+    if(/osijek|vinkovci|slavonski|pozega|dakovo|ilok|virovitica|koprivnica|djurdjevac|bjelovar/.test(q)) return commons.slavoniaNature;
     if(/split|solin|sinj|zadar|sibenik|omis|makarska|trogir|knin/.test(q)) return commons.split;
+    if(/lika|gospic|otocac|ogulin|delnice/.test(q)) return commons.velebit;
     return null;
   }
 
