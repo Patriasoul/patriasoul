@@ -18,6 +18,20 @@
     return 0;
   }
 
+  function ensureHomeNavigation(){
+    var nav=document.querySelector('.ps-mainnav');
+    if(!nav || nav.querySelector('.ps-nav-home')) return;
+    var wrap=document.createElement('div');
+    wrap.className='ps-nav-home is-active';
+    var link=document.createElement('a');
+    link.className='ps-nav-parent ps-nav-home-link';
+    link.href='/index.html';
+    link.innerHTML='<span class="ps-nav-parent-icon">⌂</span><span>Početna</span>';
+    link.setAttribute('aria-current','page');
+    wrap.appendChild(link);
+    nav.insertBefore(wrap,nav.firstChild);
+  }
+
   function renderStats(){
     var target=byId('portal-live-stats');
     if(!target) return;
@@ -42,6 +56,7 @@
   }
 
   function init(){
+    ensureHomeNavigation();
     renderStats();
     renderTimeline();
     document.documentElement.classList.add('portal-home-ready');
