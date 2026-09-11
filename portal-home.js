@@ -16,6 +16,16 @@
     return Array.isArray(window.PATRIA_QUESTIONS) ? window.PATRIA_QUESTIONS.length : 0;
   }
 
+  function syncHomepageLabels(){
+    var cityLinks=document.querySelectorAll('.home-card[href="/gradovi.html"] h3');
+    var cities=cityCount();
+    if(cities && cityLinks.length){ Array.prototype.forEach.call(cityLinks,function(el){ el.textContent=cities+' gradova'; }); }
+    var heads=document.querySelectorAll('.home-section-head h2');
+    Array.prototype.forEach.call(heads,function(el){
+      if(el.textContent.trim()==='Četiri ulaza u hrvatsko sjećanje') el.textContent='Tragovi vremena';
+    });
+  }
+
   function renderStats(){
     var target=byId('portal-live-stats');
     if(!target) return;
@@ -34,7 +44,7 @@
     if(!target) return;
     if(window.PatriaSoulTragoviVremena && typeof window.PatriaSoulTragoviVremena.renderHome==='function') window.PatriaSoulTragoviVremena.renderHome();
   }
-  function init(){ renderStats(); renderTimeline(); document.documentElement.classList.add('portal-home-ready'); }
+  function init(){ syncHomepageLabels(); renderStats(); renderTimeline(); document.documentElement.classList.add('portal-home-ready'); }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true}); else init();
-  window.PatriaPortalHome={renderStats:renderStats,renderTimeline:renderTimeline};
+  window.PatriaPortalHome={renderStats:renderStats,renderTimeline:renderTimeline,syncHomepageLabels:syncHomepageLabels};
 })();
