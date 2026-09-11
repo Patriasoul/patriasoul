@@ -21,6 +21,13 @@
   function ensureHomeNavigation(){
     var nav=document.querySelector('.ps-mainnav');
     if(!nav || nav.querySelector('.ps-nav-home')) return;
+    var style=document.getElementById('ps-home-nav-style');
+    if(!style){
+      style=document.createElement('style');
+      style.id='ps-home-nav-style';
+      style.textContent='.ps-nav-home{position:relative!important;flex:0 0 auto!important}.ps-nav-home-link{display:inline-flex!important;align-items:center!important;gap:5px!important;min-height:48px!important;padding:9px 12px!important;border-radius:10px!important;background:rgba(224,189,85,.12)!important;color:#f5d879!important;text-decoration:none!important;font:800 14px/1.1 system-ui,sans-serif!important;white-space:nowrap!important}.ps-nav-home-link:hover{background:rgba(224,189,85,.20)!important;color:#fff!important}.ps-nav-home-link .ps-nav-parent-icon{font-size:15px!important}';
+      document.head.appendChild(style);
+    }
     var wrap=document.createElement('div');
     wrap.className='ps-nav-home is-active';
     var link=document.createElement('a');
