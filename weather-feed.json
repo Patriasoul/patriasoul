@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T10:31:02.388452+00:00",
+  "updatedAt": "2026-09-12T10:48:00.808677+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -41,7 +41,7 @@
     "RC Gradište (kod Županje)": {
       "temp": "20.6",
       "condition": "umjereno oblačno",
-      "wind": "NW",
+      "wind": "SW",
       "humidity": "59"
     },
     "Karlovac": {
