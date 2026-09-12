@@ -1,156 +1,90 @@
 {
-  "updatedAt": "2026-09-12T00:52:01.740992+00:00",
+  "updatedAt": "2026-09-12T01:13:13.953232+00:00",
   "source": "DHMZ",
   "stations": {
-    "RC Bilogora": {
-      "temp": "12.1",
-      "condition": "magla",
-      "wind": "SW",
-      "humidity": "99"
-    },
     "Bjelovar": {
-      "temp": "12.2",
-      "condition": "povjetarac",
+      "temp": "12.0",
+      "condition": "lahor",
       "wind": "SW",
       "humidity": "99"
     },
     "Crikvenica": {
       "temp": "20.9",
       "condition": "povjetarac",
-      "wind": "SE",
-      "humidity": "48"
+      "wind": "E",
+      "humidity": "49"
     },
     "Dubrovnik": {
-      "temp": "22.6",
+      "temp": "22.0",
       "condition": "povjetarac",
-      "wind": "NE",
-      "humidity": "96"
-    },
-    "Dubrovnik-aerodrom": {
-      "temp": "22.4",
-      "condition": "pretežno oblačno",
-      "wind": "W",
+      "wind": "NW",
       "humidity": "88"
     },
     "Gospić": {
-      "temp": "12.0",
+      "temp": "11.4",
       "condition": "lahor",
-      "wind": "N",
+      "wind": "W",
       "humidity": "99"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "14.3",
+      "temp": "14.4",
       "condition": "povjetarac",
       "wind": "W",
-      "humidity": "90"
+      "humidity": "88"
     },
     "Knin": {
-      "temp": "16.8",
+      "temp": "16.7",
       "condition": "umjeren vjetar",
-      "wind": "NW",
-      "humidity": "76"
+      "wind": "N",
+      "humidity": "71"
     },
     "Križevci": {
-      "temp": "10.1",
-      "condition": "-",
-      "wind": "E",
+      "temp": "9.8",
+      "condition": "lahor",
+      "wind": "S",
       "humidity": "99"
     },
     "Opatija": {
-      "temp": "17.1",
+      "temp": "16.9",
       "condition": "-",
       "wind": "-",
-      "humidity": "72"
+      "humidity": "75"
     },
     "RC Osijek-Čepin": {
-      "temp": "12.5",
+      "temp": "11.9",
       "condition": "povjetarac",
-      "wind": "SW",
+      "wind": "W",
       "humidity": "99"
-    },
-    "Pula-aerodrom": {
-      "temp": "17.2",
-      "condition": "pretežno oblačno",
-      "wind": "E",
-      "humidity": "67"
-    },
-    "Rijeka-aerodrom": {
-      "temp": "18.4",
-      "condition": "pretežno oblačno",
-      "wind": "NW",
-      "humidity": "58"
     },
     "Slavonski Brod": {
-      "temp": "14.4",
-      "condition": "pretežno oblačno",
+      "temp": "14.3",
+      "condition": "povjetarac",
       "wind": "W",
-      "humidity": "96"
-    },
-    "Split-aerodrom": {
-      "temp": "21.2",
-      "condition": "vedro",
-      "wind": "NW",
-      "humidity": "61"
+      "humidity": "92"
     },
     "Šibenik": {
-      "temp": "18.9",
+      "temp": "19.2",
       "condition": "-",
       "wind": "-",
-      "humidity": "64"
+      "humidity": "62"
     },
     "Varaždin": {
-      "temp": "10.4",
-      "condition": "vedro",
+      "temp": "9.5",
+      "condition": "lahor",
       "wind": "SW",
       "humidity": "99"
     },
-    "Zadar-aerodrom": {
-      "temp": "17.5",
-      "condition": "vedro",
-      "wind": "C",
-      "humidity": "72"
-    },
     "Zagreb-Maksimir": {
-      "temp": "11.6",
-      "condition": "pretežno vedro",
+      "temp": "11.1",
+      "condition": "lahor",
       "wind": "N",
-      "humidity": "95"
-    },
-    "Zagreb-aerodrom": {
-      "temp": "11.4",
-      "condition": "umjereno oblačno",
-      "wind": "SW",
-      "humidity": "98"
+      "humidity": "94"
     },
     "Zagreb": {
-      "temp": "11.4",
-      "condition": "umjereno oblačno",
-      "wind": "SW",
-      "humidity": "98"
-    },
-    "Rijeka": {
-      "temp": "18.4",
-      "condition": "pretežno oblačno",
-      "wind": "NW",
-      "humidity": "58"
-    },
-    "Zadar": {
-      "temp": "17.5",
-      "condition": "vedro",
-      "wind": "C",
-      "humidity": "72"
-    },
-    "Split": {
-      "temp": "21.2",
-      "condition": "vedro",
-      "wind": "NW",
-      "humidity": "61"
-    },
-    "Pula": {
-      "temp": "17.2",
-      "condition": "pretežno oblačno",
-      "wind": "E",
-      "humidity": "67"
+      "temp": "11.1",
+      "condition": "lahor",
+      "wind": "N",
+      "humidity": "94"
     }
   },
   "alerts": [
