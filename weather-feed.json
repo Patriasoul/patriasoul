@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T15:14:29.161408+00:00",
+  "updatedAt": "2026-09-12T15:30:11.926065+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,16 +9,16 @@
       "humidity": "49"
     },
     "Bjelovar": {
-      "temp": "22.6",
+      "temp": "22.7",
       "condition": "povjetarac",
       "wind": "NE",
-      "humidity": "46"
+      "humidity": "43"
     },
     "Crikvenica": {
-      "temp": "27.1",
-      "condition": "lahor",
+      "temp": "26.6",
+      "condition": "povjetarac",
       "wind": "NE",
-      "humidity": "30"
+      "humidity": "27"
     },
     "Dubrovnik": {
       "temp": "27.8",
@@ -33,34 +33,34 @@
       "humidity": "58"
     },
     "Gospić": {
-      "temp": "21.2",
+      "temp": "21.0",
       "condition": "slab vjetar",
       "wind": "N",
-      "humidity": "44"
+      "humidity": "45"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "22.8",
+      "temp": "22.4",
       "condition": "slab vjetar",
       "wind": "N",
-      "humidity": "40"
+      "humidity": "42"
     },
     "Knin": {
-      "temp": "26.7",
-      "condition": "povjetarac",
+      "temp": "26.0",
+      "condition": "slab vjetar",
       "wind": "NE",
-      "humidity": "28"
+      "humidity": "29"
     },
     "Križevci": {
-      "temp": "22.5",
+      "temp": "22.6",
       "condition": "povjetarac",
       "wind": "NE",
-      "humidity": "40"
+      "humidity": "41"
     },
     "Opatija": {
-      "temp": "25.8",
+      "temp": "25.5",
       "condition": "-",
       "wind": "-",
-      "humidity": "39"
+      "humidity": "37"
     },
     "RC Osijek-Čepin": {
       "temp": "23.2",
@@ -89,7 +89,7 @@
     "Slavonski Brod": {
       "temp": "23.0",
       "condition": "umjereno oblačno",
-      "wind": "N",
+      "wind": "NW",
       "humidity": "40"
     },
     "Split-aerodrom": {
@@ -99,7 +99,7 @@
       "humidity": "28"
     },
     "Šibenik": {
-      "temp": "28.7",
+      "temp": "28.6",
       "condition": "-",
       "wind": "-",
       "humidity": "24"
@@ -107,7 +107,7 @@
     "Varaždin": {
       "temp": "22.5",
       "condition": "pretežno oblačno",
-      "wind": "E",
+      "wind": "NE",
       "humidity": "44"
     },
     "Zadar-aerodrom": {
