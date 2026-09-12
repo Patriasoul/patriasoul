@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T07:13:23.792619+00:00",
+  "updatedAt": "2026-09-12T07:30:12.861827+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -17,7 +17,7 @@
     "Dubrovnik": {
       "temp": "26.1",
       "condition": "umjereno oblačno",
-      "wind": "NE",
+      "wind": "N",
       "humidity": "53"
     },
     "Dubrovnik-aerodrom": {
@@ -47,13 +47,13 @@
     "Knin": {
       "temp": "20.8",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "NW",
       "humidity": "43"
     },
     "Križevci": {
       "temp": "10.8",
       "condition": "magla",
-      "wind": "S",
+      "wind": "SW",
       "humidity": "100"
     },
     "Makarska": {
@@ -63,10 +63,10 @@
       "humidity": "54"
     },
     "Opatija": {
-      "temp": "19.2",
+      "temp": "19.3",
       "condition": "-",
       "wind": "-",
-      "humidity": "53"
+      "humidity": "50"
     },
     "RC Osijek-Čepin": {
       "temp": "13.9",
@@ -113,7 +113,7 @@
     "Slavonski Brod": {
       "temp": "14.4",
       "condition": "pretežno oblačno",
-      "wind": "W",
+      "wind": "SW",
       "humidity": "96"
     },
     "Split-Marjan": {
@@ -161,7 +161,7 @@
     "Zagreb-Maksimir": {
       "temp": "13.7",
       "condition": "umjereno oblačno",
-      "wind": "SE",
+      "wind": "S",
       "humidity": "92"
     },
     "Zagreb-aerodrom": {
