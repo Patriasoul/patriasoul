@@ -1,47 +1,89 @@
 {
-  "updatedAt": "2026-09-13T01:12:57.805104+00:00",
+  "updatedAt": "2026-09-13T01:31:55.228190+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
-      "temp": "12.2",
+      "temp": "12.1",
       "condition": "lahor",
       "wind": "SE",
       "humidity": "98"
     },
+    "Crikvenica": {
+      "temp": "16.8",
+      "condition": "povjetarac",
+      "wind": "-",
+      "humidity": "63"
+    },
+    "Dubrovnik": {
+      "temp": "22.1",
+      "condition": "umjeren vjetar",
+      "wind": "NE",
+      "humidity": "37"
+    },
+    "Gospić": {
+      "temp": "8.2",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "99"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "11.0",
+      "condition": "lahor",
+      "wind": "W",
+      "humidity": "92"
+    },
+    "Knin": {
+      "temp": "18.9",
+      "condition": "slab vjetar",
+      "wind": "NW",
+      "humidity": "43"
+    },
     "Križevci": {
-      "temp": "10.5",
-      "condition": "-",
-      "wind": "SE",
+      "temp": "10.6",
+      "condition": "lahor",
+      "wind": "W",
       "humidity": "99"
     },
     "Opatija": {
       "temp": "17.7",
       "condition": "-",
       "wind": "-",
-      "humidity": "57"
+      "humidity": "56"
     },
     "RC Osijek-Čepin": {
-      "temp": "10.3",
+      "temp": "10.4",
       "condition": "lahor",
-      "wind": "W",
+      "wind": "NW",
       "humidity": "99"
     },
+    "Slavonski Brod": {
+      "temp": "10.4",
+      "condition": "lahor",
+      "wind": "NW",
+      "humidity": "91"
+    },
+    "Šibenik": {
+      "temp": "18.0",
+      "condition": "-",
+      "wind": "-",
+      "humidity": "44"
+    },
     "Varaždin": {
-      "temp": "9.7",
+      "temp": "9.5",
       "condition": "lahor",
       "wind": "W",
       "humidity": "99"
     },
     "Zagreb-Maksimir": {
-      "temp": "11.5",
+      "temp": "11.2",
       "condition": "-",
-      "wind": "NW",
+      "wind": "C",
       "humidity": "89"
     },
     "Zagreb": {
-      "temp": "11.5",
+      "temp": "11.2",
       "condition": "-",
-      "wind": "NW",
+      "wind": "C",
       "humidity": "89"
     }
   },
