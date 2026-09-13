@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T04:15:43.244231+00:00",
+  "updatedAt": "2026-09-13T04:33:14.608897+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -10,15 +10,15 @@
     },
     "Bjelovar": {
       "temp": "10.8",
-      "condition": "-",
-      "wind": "NW",
+      "condition": "lahor",
+      "wind": "E",
       "humidity": "100"
     },
     "Crikvenica": {
-      "temp": "16.3",
-      "condition": "lahor",
-      "wind": "N",
-      "humidity": "64"
+      "temp": "16.4",
+      "condition": "povjetarac",
+      "wind": "-",
+      "humidity": "63"
     },
     "Dubrovnik": {
       "temp": "21.0",
@@ -41,14 +41,14 @@
     "RC Gradište (kod Županje)": {
       "temp": "9.8",
       "condition": "vedro",
-      "wind": "SE",
+      "wind": "S",
       "humidity": "92"
     },
     "Knin": {
-      "temp": "19.3",
-      "condition": "povjetarac",
+      "temp": "19.2",
+      "condition": "slab vjetar",
       "wind": "NW",
-      "humidity": "41"
+      "humidity": "42"
     },
     "Križevci": {
       "temp": "9.5",
@@ -57,16 +57,16 @@
       "humidity": "96"
     },
     "Opatija": {
-      "temp": "16.8",
+      "temp": "16.9",
       "condition": "-",
       "wind": "-",
-      "humidity": "62"
+      "humidity": "63"
     },
     "RC Osijek-Čepin": {
-      "temp": "9.2",
-      "condition": "-",
-      "wind": "SW",
-      "humidity": "99"
+      "temp": "9.4",
+      "condition": "vedro",
+      "wind": "NE",
+      "humidity": "97"
     },
     "Pula-aerodrom": {
       "temp": "17.4",
@@ -95,7 +95,7 @@
     "Slavonski Brod": {
       "temp": "8.2",
       "condition": "pretežno vedro",
-      "wind": "W",
+      "wind": "SW",
       "humidity": "95"
     },
     "Split-aerodrom": {
@@ -113,7 +113,7 @@
     "Varaždin": {
       "temp": "8.5",
       "condition": "umjereno oblačno",
-      "wind": "SW",
+      "wind": "W",
       "humidity": "99"
     },
     "Zadar-aerodrom": {
@@ -125,7 +125,7 @@
     "Zagreb-Maksimir": {
       "temp": "10.3",
       "condition": "vedro",
-      "wind": "C",
+      "wind": "NW",
       "humidity": "96"
     },
     "Zagreb-aerodrom": {
