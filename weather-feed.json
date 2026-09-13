@@ -1,90 +1,90 @@
 {
-  "updatedAt": "2026-09-13T01:49:58.984876+00:00",
+  "updatedAt": "2026-09-13T02:15:13.323671+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
-      "temp": "12.1",
+      "temp": "11.7",
       "condition": "lahor",
       "wind": "SE",
-      "humidity": "98"
+      "humidity": "100"
     },
     "Crikvenica": {
-      "temp": "16.8",
-      "condition": "povjetarac",
-      "wind": "-",
-      "humidity": "63"
+      "temp": "16.4",
+      "condition": "lahor",
+      "wind": "NW",
+      "humidity": "64"
     },
     "Dubrovnik": {
-      "temp": "22.1",
-      "condition": "umjeren vjetar",
+      "temp": "21.8",
+      "condition": "umjereno jak vjetar",
       "wind": "NE",
-      "humidity": "37"
+      "humidity": "36"
     },
     "Gospić": {
       "temp": "8.2",
       "condition": "lahor",
-      "wind": "NE",
+      "wind": "SW",
       "humidity": "99"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "11.0",
+      "temp": "10.2",
       "condition": "lahor",
       "wind": "W",
-      "humidity": "92"
+      "humidity": "94"
     },
     "Knin": {
-      "temp": "18.9",
+      "temp": "19.6",
       "condition": "slab vjetar",
       "wind": "NW",
-      "humidity": "43"
+      "humidity": "39"
     },
     "Križevci": {
-      "temp": "10.6",
+      "temp": "10.3",
       "condition": "lahor",
-      "wind": "W",
+      "wind": "SE",
       "humidity": "99"
     },
     "Opatija": {
-      "temp": "17.7",
+      "temp": "17.5",
       "condition": "-",
       "wind": "-",
-      "humidity": "56"
+      "humidity": "57"
     },
     "RC Osijek-Čepin": {
-      "temp": "10.4",
+      "temp": "10.2",
       "condition": "lahor",
       "wind": "NW",
       "humidity": "99"
     },
     "Slavonski Brod": {
-      "temp": "10.4",
+      "temp": "9.8",
       "condition": "lahor",
-      "wind": "NW",
+      "wind": "S",
       "humidity": "91"
     },
     "Šibenik": {
-      "temp": "18.0",
+      "temp": "17.2",
       "condition": "-",
       "wind": "-",
-      "humidity": "44"
+      "humidity": "46"
     },
     "Varaždin": {
-      "temp": "9.5",
+      "temp": "9.8",
       "condition": "lahor",
-      "wind": "W",
+      "wind": "SW",
       "humidity": "99"
     },
     "Zagreb-Maksimir": {
-      "temp": "11.2",
+      "temp": "11.1",
       "condition": "-",
-      "wind": "C",
-      "humidity": "89"
+      "wind": "NW",
+      "humidity": "91"
     },
     "Zagreb": {
-      "temp": "11.2",
+      "temp": "11.1",
       "condition": "-",
-      "wind": "C",
-      "humidity": "89"
+      "wind": "NW",
+      "humidity": "91"
     }
   },
   "alerts": [
