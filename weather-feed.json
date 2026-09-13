@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T23:13:54.730941+00:00",
+  "updatedAt": "2026-09-13T23:30:34.238387+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
@@ -9,43 +9,79 @@
       "humidity": "83"
     },
     "Crikvenica": {
-      "temp": "19.7",
+      "temp": "19.5",
       "condition": "povjetarac",
       "wind": "N",
-      "humidity": "66"
+      "humidity": "67"
+    },
+    "Dubrovnik": {
+      "temp": "23.7",
+      "condition": "umjereno jak vjetar",
+      "wind": "NE",
+      "humidity": "30"
+    },
+    "Gospić": {
+      "temp": "11.4",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "98"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "15.3",
+      "condition": "povjetarac",
+      "wind": "S",
+      "humidity": "80"
+    },
+    "Knin": {
+      "temp": "16.1",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "63"
     },
     "Križevci": {
       "temp": "16.9",
       "condition": "lahor",
       "wind": "NE",
-      "humidity": "94"
+      "humidity": "92"
     },
     "Opatija": {
       "temp": "20.7",
       "condition": "-",
       "wind": "-",
-      "humidity": "46"
+      "humidity": "47"
     },
     "RC Osijek-Čepin": {
       "temp": "16.0",
       "condition": "lahor",
-      "wind": "NW",
+      "wind": "W",
       "humidity": "79"
+    },
+    "Slavonski Brod": {
+      "temp": "16.2",
+      "condition": "lahor",
+      "wind": "SW",
+      "humidity": "81"
+    },
+    "Šibenik": {
+      "temp": "20.0",
+      "condition": "-",
+      "wind": "-",
+      "humidity": "47"
     },
     "Varaždin": {
       "temp": "18.1",
-      "condition": "lahor",
+      "condition": "povjetarac",
       "wind": "E",
-      "humidity": "71"
+      "humidity": "70"
     },
     "Zagreb-Maksimir": {
-      "temp": "17.7",
+      "temp": "17.8",
       "condition": "lahor",
       "wind": "N",
       "humidity": "73"
     },
     "Zagreb": {
-      "temp": "17.7",
+      "temp": "17.8",
       "condition": "lahor",
       "wind": "N",
       "humidity": "73"
