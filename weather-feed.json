@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T18:16:56.670698+00:00",
+  "updatedAt": "2026-09-15T18:35:19.368176+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,10 +15,10 @@
       "humidity": "64"
     },
     "Crikvenica": {
-      "temp": "24.0",
+      "temp": "23.9",
       "condition": "povjetarac",
       "wind": "N",
-      "humidity": "44"
+      "humidity": "45"
     },
     "Dubrovnik": {
       "temp": "25.9",
@@ -69,15 +69,15 @@
       "humidity": "60"
     },
     "Opatija": {
-      "temp": "23.6",
+      "temp": "23.4",
       "condition": "-",
       "wind": "-",
-      "humidity": "43"
+      "humidity": "46"
     },
     "RC Osijek-Čepin": {
       "temp": "20.6",
       "condition": "vedro",
-      "wind": "NE",
+      "wind": "SE",
       "humidity": "52"
     },
     "Osijek-aerodrom": {
@@ -149,7 +149,7 @@
     "Varaždin": {
       "temp": "16.8",
       "condition": "vedro",
-      "wind": "C",
+      "wind": "S",
       "humidity": "79"
     },
     "Zadar": {
