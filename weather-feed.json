@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T17:30:52.137632+00:00",
+  "updatedAt": "2026-09-15T17:49:49.625115+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -49,6 +49,12 @@
       "condition": "povjetarac",
       "wind": "N",
       "humidity": "41"
+    },
+    "Križevci": {
+      "temp": "22.0",
+      "condition": "lahor",
+      "wind": "NW",
+      "humidity": "55"
     },
     "Opatija": {
       "temp": "24.2",
