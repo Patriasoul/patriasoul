@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T16:34:18.934923+00:00",
+  "updatedAt": "2026-09-15T16:52:10.134650+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -105,10 +105,10 @@
       "humidity": "45"
     },
     "Zagreb-Maksimir": {
-      "temp": "24.8",
-      "condition": "lahor",
+      "temp": "24.6",
+      "condition": "vedro",
       "wind": "S",
-      "humidity": "39"
+      "humidity": "40"
     },
     "Zagreb-aerodrom": {
       "temp": "24.8",
