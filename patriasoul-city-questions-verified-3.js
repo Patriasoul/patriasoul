@@ -52,7 +52,7 @@
     ]
   };
   const urls={
-    daruvar:'https://daruvar.hr/daruvar-kroz-povijest/',kutina:'https://stari.kutina.hr/Sluzbeni-dio/O-Kutini',nova-gradiska:'https://novagradiska.hr/zivot-u-novoj-gradiski/povijest/',zupanja:'https://zupanja.hr/povijest-sporta-u-zupanji/',
+    daruvar:'https://daruvar.hr/daruvar-kroz-povijest/',kutina:'https://stari.kutina.hr/Sluzbeni-dio/O-Kutini','nova-gradiska':'https://novagradiska.hr/zivot-u-novoj-gradiski/povijest/',zupanja:'https://zupanja.hr/povijest-sporta-u-zupanji/',
     petrinja:'https://petrinja.hr/povijest-grada/',ogulin:'https://www.ogulin.hr/o-ogulinu/povijest/',buzet:'https://www.buzet.hr/',rovinj:'https://www.rovinj-rovigno.hr/o-rovinju/povijest/'
   };
   const normalizeCity=s=>String(s).toLocaleLowerCase('hr').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
