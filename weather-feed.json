@@ -1,16 +1,46 @@
 {
-  "updatedAt": "2026-09-16T01:14:45.208426+00:00",
+  "updatedAt": "2026-09-16T01:31:16.220143+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
-      "temp": "13.0",
+      "temp": "12.9",
       "condition": "-",
       "wind": "E",
       "humidity": "94"
     },
-    "Križevci": {
-      "temp": "11.3",
+    "Crikvenica": {
+      "temp": "17.9",
       "condition": "lahor",
+      "wind": "E",
+      "humidity": "74"
+    },
+    "Dubrovnik": {
+      "temp": "23.6",
+      "condition": "slab vjetar",
+      "wind": "NE",
+      "humidity": "40"
+    },
+    "Gospić": {
+      "temp": "9.4",
+      "condition": "lahor",
+      "wind": "NW",
+      "humidity": "99"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "13.6",
+      "condition": "lahor",
+      "wind": "SE",
+      "humidity": "96"
+    },
+    "Knin": {
+      "temp": "15.0",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "74"
+    },
+    "Križevci": {
+      "temp": "11.4",
+      "condition": "povjetarac",
       "wind": "NW",
       "humidity": "99"
     },
@@ -21,26 +51,38 @@
       "humidity": "63"
     },
     "RC Osijek-Čepin": {
-      "temp": "12.3",
+      "temp": "12.2",
       "condition": "lahor",
       "wind": "NW",
       "humidity": "99"
     },
+    "Slavonski Brod": {
+      "temp": "12.0",
+      "condition": "-",
+      "wind": "C",
+      "humidity": "90"
+    },
+    "Šibenik": {
+      "temp": "19.8",
+      "condition": "-",
+      "wind": "-",
+      "humidity": "51"
+    },
     "Varaždin": {
-      "temp": "11.0",
+      "temp": "11.1",
       "condition": "lahor",
       "wind": "SW",
       "humidity": "99"
     },
     "Zagreb-Maksimir": {
-      "temp": "12.5",
-      "condition": "-",
+      "temp": "12.4",
+      "condition": "lahor",
       "wind": "NW",
       "humidity": "90"
     },
     "Zagreb": {
-      "temp": "12.5",
-      "condition": "-",
+      "temp": "12.4",
+      "condition": "lahor",
       "wind": "NW",
       "humidity": "90"
     }
