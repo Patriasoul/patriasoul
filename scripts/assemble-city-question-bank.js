@@ -13,7 +13,12 @@ const answers=q=>(Array.isArray(q.answers)?q.answers:Array.isArray(q.options)?q.
 const contentKey=q=>qText(q)+'|'+answers(q).slice().sort().join('|')+'|'+q.correctIndex;
 const templateKey=q=>{let t=qText(q);for(const p of ['koji je toc an podatak o ','koji je toc an podatak o','sto je povezano s ','kada se navodi ','koja tvrdnja opisuje ','sto treba zapamtiti o '])if(t.startsWith(p)){t=t.slice(p.length);break}return t+'|'+answers(q).slice().sort().join('|')+'|'+q.correctIndex};
 const valid=q=>q&&q.id&&q.cityId&&q.citySource==='verified'&&q.sourceUrl&&Array.isArray(q.answers)&&q.answers.length===4&&q.answers.every(a=>typeof a==='string'&&a.trim())&&Number.isInteger(q.correctIndex)&&q.correctIndex>=0&&q.correctIndex<4;
-function evalFile(file,ctx){vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});}
+function sourceForEval(file){
+  // Some legacy verified files contain unquoted hyphenated object keys (e.g. nova-gradiska).
+  // Only the temporary VM input is normalized; repository source files are never modified.
+  return fs.readFileSync(file,'utf8').replace(/([,{]\s*)([A-Za-z_$][A-Za-z0-9_$]*(?:-[A-Za-z0-9_$-]+)+)(\s*:)/g,'$1"$2"$3');
+}
+function evalFile(file,ctx){vm.runInContext(sourceForEval(file),ctx,{filename:file});}
 function load(){
   const ctx=vm.createContext({console});ctx.window=ctx;ctx.globalThis=ctx;evalFile(path.join(ROOT,'gradovi.js'),ctx);
   const files=fs.readdirSync(ROOT).filter(f=>/^patriasoul-city-questions-verified(?:-\d+)?\.js$/.test(f)).sort((a,b)=>{const na=(a.match(/-(\d+)\.js$/)||[])[1],nb=(b.match(/-(\d+)\.js$/)||[])[1];if(na==null)return -1;if(nb==null)return 1;return +na-+nb});
@@ -27,15 +32,12 @@ function load(){
 function main(){
   const {cities,pools}=load();if(cities.length!==TARGET_CITIES)throw new Error(`Expected ${TARGET_CITIES} cities, got ${cities.length}`);
   const report=[],duplicates=[];
-  // Analyze each city's actual pool and record exact/content/template duplicate groups.
   for(const c of cities){const raw=pools.get(c.slug)||[],cm=new Map(),tm=new Map();
     for(const q of raw){const ck=contentKey(q),tk=templateKey(q);(cm.get(ck)||cm.set(ck,[]).get(ck)).push(q);(tm.get(tk)||tm.set(tk,[]).get(tk)).push(q)}
     for(const g of cm.values())if(g.length>1)duplicates.push({type:'same-content',city:c.slug,ids:g.map(q=>q.id),questions:g.map(q=>q.question)});
     for(const g of tm.values())if(g.length>1&&g.some(q=>q.question!==g[0].question))duplicates.push({type:'same-fact-template',city:c.slug,ids:g.map(q=>q.id),questions:g.map(q=>q.question)});
     report.push({name:c.name,slug:c.slug,raw:raw.length,uniqueIds:new Set(raw.map(q=>q.id)).size,contentGroups:cm.size,templateGroups:tm.size});
   }
-  // Select each city's own questions first: one representative for each exact content signature,
-  // then additional distinct verified variants only if needed to reach 75.
   const selected=new Map(),used=new Set(),leftovers=[];
   for(const c of cities){const pool=pools.get(c.slug)||[],chosen=[],seen=new Set();
     for(const q of pool){const k=contentKey(q);if(!seen.has(k)){seen.add(k);chosen.push(q);used.add(q.id)}}
@@ -43,8 +45,6 @@ function main(){
     selected.set(c.slug,chosen);
     for(const q of pool)if(!used.has(q.id))leftovers.push(q);
   }
-  // Deficit balancing: take only a leftover question whose target city is explicit in the QUESTION
-  // or source URL. Never infer from an answer option alone; never rewrite city content.
   const unresolved=[];
   for(const c of cities){const chosen=selected.get(c.slug);if(chosen.length>=TARGET_PER_CITY)continue;
     const target=norm(c.name),cand=[];
