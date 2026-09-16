@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T12:20:51.687706+00:00",
+  "updatedAt": "2026-09-16T12:54:40.396459+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -22,9 +22,9 @@
     },
     "Dubrovnik": {
       "temp": "28.8",
-      "condition": "umjeren vjetar",
+      "condition": "pretežno vedro",
       "wind": "S",
-      "humidity": "49"
+      "humidity": "44"
     },
     "Dubrovnik-aerodrom": {
       "temp": "25.6",
