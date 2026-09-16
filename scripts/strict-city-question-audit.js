@@ -24,7 +24,7 @@
       if(repeated.length)errors.push('repeated-facts:'+repeated.length);
       return {city:c.name,slug:c.slug,loaded:qs.length,uniqueFacts:facts.size,repeatedFacts:repeated.length,ok:qs.length===TARGET_PER_CITY&&repeated.length===0&&errors.length===0,errors};
     });
-    const result={targetCities:TARGET_CITIES,targetPerCity:TARGET_PER_CITY,targetTotal:TARGET_TOTAL,actualCities:cities.length,totalLoaded:all.length,ok:actualCities===TARGET_CITIES&&report.every(r=>r.ok),cities:report};
+    const result={targetCities:TARGET_CITIES,targetPerCity:TARGET_PER_CITY,targetTotal:TARGET_TOTAL,actualCities:cities.length,totalLoaded:all.length,ok:cities.length===TARGET_CITIES&&report.every(r=>r.ok),cities:report};
     global.PatriaStrictCityAudit=result;return result;
   }
   global.PatriaStrictCityAudit={run};
