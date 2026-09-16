@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T04:15:55.501128+00:00",
+  "updatedAt": "2026-09-16T04:33:48.108812+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -10,9 +10,21 @@
     },
     "Bjelovar": {
       "temp": "12.0",
-      "condition": "lahor",
-      "wind": "E",
+      "condition": "-",
+      "wind": "C",
       "humidity": "97"
+    },
+    "Crikvenica": {
+      "temp": "16.4",
+      "condition": "lahor",
+      "wind": "N",
+      "humidity": "77"
+    },
+    "Dubrovnik": {
+      "temp": "23.0",
+      "condition": "vedro",
+      "wind": "N",
+      "humidity": "42"
     },
     "Dubrovnik-aerodrom": {
       "temp": "20.0",
@@ -20,16 +32,28 @@
       "wind": "NE",
       "humidity": "55"
     },
+    "Gospić": {
+      "temp": "7.4",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "99"
+    },
     "RC Gradište (kod Županje)": {
       "temp": "11.6",
       "condition": "vedro",
-      "wind": "S",
+      "wind": "SE",
       "humidity": "91"
+    },
+    "Knin": {
+      "temp": "12.4",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "88"
     },
     "Križevci": {
       "temp": "10.5",
       "condition": "vedro",
-      "wind": "C",
+      "wind": "NW",
       "humidity": "95"
     },
     "Opatija": {
@@ -55,6 +79,12 @@
       "condition": "vedro",
       "wind": "C",
       "humidity": "81"
+    },
+    "Senj": {
+      "temp": "21.2",
+      "condition": "vedro",
+      "wind": "NE",
+      "humidity": "52"
     },
     "Sisak": {
       "temp": "11.4",
@@ -127,12 +157,6 @@
       "condition": "vedro",
       "wind": "N",
       "humidity": "56"
-    },
-    "Dubrovnik": {
-      "temp": "20.0",
-      "condition": "vedro",
-      "wind": "NE",
-      "humidity": "55"
     },
     "Pula": {
       "temp": "15.1",
