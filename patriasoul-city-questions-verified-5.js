@@ -38,5 +38,5 @@
   Object.entries(extra).forEach(([city,items])=>items.forEach((x,i)=>all.push({id:`verified5_${city}_${String(i+1).padStart(3,'0')}`,cityId:normalizeCity(city),citySource:'verified',category:'gradovi',question:x[0],answers:x[1],correctIndex:0,sourceUrl:urls[normalizeCity(city)]})));
   global.PATRIA_CITY_VERIFIED_EXTRA_5=all;
   global.PatriaCityVerified5={all:()=>all.slice(),forCity:city=>{const slug=normalizeCity(city);return all.filter(q=>q.cityId===slug)},sources:()=>({...urls})};
-  if(document&&document.write){document.write('<scr'+'ipt src="/patriasoul-city-questions-verified-6.js"></scr'+'ipt>');}
+  if(typeof document!=='undefined'&&document.write){document.write('<scr'+'ipt src="/patriasoul-city-questions-verified-6.js"></scr'+'ipt>');}
 })(typeof window!=='undefined'?window:globalThis);
