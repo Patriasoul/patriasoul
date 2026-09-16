@@ -1,0 +1,53 @@
+name: PatriaSoul — assemble 127×75 city bank
+
+on:
+  push:
+    paths:
+      - 'patriasoul-city-questions-verified*.js'
+      - 'patriasoul-city-questions.js'
+      - 'patriasoul-city-questions-verified.js'
+      - 'gradovi.js'
+      - 'scripts/assemble-city-question-bank.js'
+      - '.github/workflows/assemble-city-bank.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    if: "!contains(github.event.head_commit.message, '[skip city-bank]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Assemble bank
+        run: node scripts/assemble-city-question-bank.js
+
+      - name: Publish generated bank
+        run: |
+          git config user.name 'patriasoul-city-bank-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/brani-svoj-grad-assembly.json data/brani-svoj-grad-bank.js
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+            exit 0
+          fi
+          git commit -m 'Build final 127×75 city question bank [skip city-bank]'
+          git push
+
+      - name: Upload assembly report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brani-svoj-grad-assembly-report
+          path: data/brani-svoj-grad-assembly.json
+          if-no-files-found: ignore
