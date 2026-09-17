@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T05:32:47.308619+00:00",
+  "updatedAt": "2026-09-17T05:51:15.691745+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -7,6 +7,12 @@
       "condition": "vedro",
       "wind": "N",
       "humidity": "87"
+    },
+    "Bjelovar": {
+      "temp": "13.9",
+      "condition": "-",
+      "wind": "C",
+      "humidity": "-"
     },
     "Dubrovnik": {
       "temp": "21.9",
@@ -20,11 +26,23 @@
       "wind": "E",
       "humidity": "80"
     },
+    "Gospić": {
+      "temp": "9.3",
+      "condition": "-",
+      "wind": "NE",
+      "humidity": "92"
+    },
     "RC Gradište (kod Županje)": {
       "temp": "13.7",
       "condition": "vedro",
       "wind": "W",
       "humidity": "89"
+    },
+    "Knin": {
+      "temp": "11.2",
+      "condition": "-",
+      "wind": "NW",
+      "humidity": "-"
     },
     "Križevci": {
       "temp": "13.8",
