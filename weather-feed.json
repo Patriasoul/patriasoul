@@ -1,184 +1,106 @@
 {
-  "updatedAt": "2026-09-17T21:48:02.643106+00:00",
+  "updatedAt": "2026-09-17T22:14:51.023504+00:00",
   "source": "DHMZ",
   "stations": {
-    "RC Bilogora": {
-      "temp": "16.0",
-      "condition": "potpuno oblačno",
-      "wind": "W",
-      "humidity": "76"
-    },
     "Bjelovar": {
-      "temp": "15.8",
+      "temp": "15.1",
       "condition": "-",
       "wind": "C",
-      "humidity": "89"
+      "humidity": "94"
     },
     "Crikvenica": {
       "temp": "18.0",
       "condition": "lahor",
       "wind": "N",
-      "humidity": "90"
+      "humidity": "86"
     },
     "Dubrovnik": {
-      "temp": "23.0",
-      "condition": "lahor",
+      "temp": "22.7",
+      "condition": "povjetarac",
       "wind": "NW",
-      "humidity": "60"
-    },
-    "Dubrovnik-aerodrom": {
-      "temp": "20.1",
-      "condition": "vedro",
-      "wind": "SE",
-      "humidity": "76"
+      "humidity": "63"
     },
     "Gospić": {
       "temp": "14.4",
       "condition": "lahor",
-      "wind": "NW",
+      "wind": "N",
       "humidity": "99"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "19.0",
+      "temp": "18.8",
       "condition": "povjetarac",
       "wind": "W",
-      "humidity": "61"
+      "humidity": "62"
     },
     "Knin": {
-      "temp": "17.4",
-      "condition": "lahor",
-      "wind": "NE",
-      "humidity": "99"
+      "temp": "17.2",
+      "condition": "povjetarac",
+      "wind": "NW",
+      "humidity": "98"
     },
     "Križevci": {
-      "temp": "15.0",
-      "condition": "-",
-      "wind": "NW",
-      "humidity": "100"
+      "temp": "14.3",
+      "condition": "lahor",
+      "wind": "S",
+      "humidity": "99"
     },
     "Opatija": {
-      "temp": "17.2",
+      "temp": "17.1",
       "condition": "-",
       "wind": "-",
       "humidity": "93"
     },
     "RC Osijek-Čepin": {
-      "temp": "18.9",
-      "condition": "potpuno oblačno",
+      "temp": "18.1",
+      "condition": "povjetarac",
       "wind": "W",
-      "humidity": "62"
-    },
-    "Osijek-aerodrom": {
-      "temp": "19.3",
-      "condition": "pretežno oblačno",
-      "wind": "W",
-      "humidity": "62"
-    },
-    "Pula-aerodrom": {
-      "temp": "18.6",
-      "condition": "pretežno oblačno",
-      "wind": "NE",
-      "humidity": "89"
-    },
-    "Rijeka-aerodrom": {
-      "temp": "17.1",
-      "condition": "pretežno oblačno",
-      "wind": "E",
-      "humidity": "87"
+      "humidity": "68"
     },
     "Slavonski Brod": {
-      "temp": "17.3",
-      "condition": "potpuno oblačno",
-      "wind": "W",
-      "humidity": "76"
-    },
-    "Split-aerodrom": {
-      "temp": "20.0",
-      "condition": "potpuno oblačno",
-      "wind": "NW",
-      "humidity": "80"
+      "temp": "17.2",
+      "condition": "povjetarac",
+      "wind": "SW",
+      "humidity": "79"
     },
     "Varaždin": {
-      "temp": "15.2",
-      "condition": "pretežno oblačno",
-      "wind": "SW",
+      "temp": "14.9",
+      "condition": "lahor",
+      "wind": "W",
       "humidity": "91"
     },
-    "Zadar-aerodrom": {
-      "temp": "17.7",
-      "condition": "pretežno oblačno",
-      "wind": "SE",
-      "humidity": "97"
-    },
     "Zagreb-Maksimir": {
-      "temp": "16.3",
-      "condition": "potpuno oblačno",
-      "wind": "NW",
-      "humidity": "94"
-    },
-    "Zagreb-aerodrom": {
-      "temp": "15.9",
-      "condition": "potpuno oblačno",
-      "wind": "SW",
-      "humidity": "95"
+      "temp": "16.0",
+      "condition": "lahor",
+      "wind": "N",
+      "humidity": "91"
     },
     "Zagreb": {
-      "temp": "15.9",
-      "condition": "potpuno oblačno",
-      "wind": "SW",
-      "humidity": "95"
-    },
-    "Rijeka": {
-      "temp": "17.1",
-      "condition": "pretežno oblačno",
-      "wind": "E",
-      "humidity": "87"
-    },
-    "Zadar": {
-      "temp": "17.7",
-      "condition": "pretežno oblačno",
-      "wind": "SE",
-      "humidity": "97"
-    },
-    "Split": {
-      "temp": "20.0",
-      "condition": "potpuno oblačno",
-      "wind": "NW",
-      "humidity": "80"
-    },
-    "Pula": {
-      "temp": "18.6",
-      "condition": "pretežno oblačno",
-      "wind": "NE",
-      "humidity": "89"
-    },
-    "Osijek": {
-      "temp": "19.3",
-      "condition": "pretežno oblačno",
-      "wind": "W",
-      "humidity": "62"
+      "temp": "16.0",
+      "condition": "lahor",
+      "wind": "N",
+      "humidity": "91"
     }
   },
   "alerts": [
-    "Žuto upozorenje za kišu",
-    "Lokalno obilnija kiša, osobito u Gorskom kotaru. Mogućnost urbanih i bujičnih poplava. Količina oborine > 30 mm",
-    "Yellow rain warning",
-    "Locally heavy rain, especially in Gorski kotar. Locally flash floods possible. Rainfall > 30 mm",
-    "Narančasto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženiji pljuskovi s grmljavinom, moguće nevrijeme. Vjerojatnost grmljavine > 70 %",
-    "Orange thunderstorm warning",
-    "Locally severe thundershowers. Lightning risk > 70 %",
     "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženiji pljuskovi s grmljavinom osobito na sjeveru. Vjerojatnost grmljavine > 60 %",
+    "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 30 %",
     "Yellow thunderstorm warning",
-    "Locally severe thundershowers especially in the north. Lightning risk > 60 %",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knot (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knot (65-75 km/h)"
+    "Locally severe thundershowers. Lightning risk > 30 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers. Lightning risk > 60 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno izraženiji pljuskovi s grmljavinom, moguća obilnija oborina. Količina oborine > 40 mm; Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers. Rainfall > 40 mm; Lightning risk > 60 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers. Lightning risk > 60 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers. Lightning risk > 60 %"
   ]
 }
