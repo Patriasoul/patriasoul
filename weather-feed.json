@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T04:34:20.160296+00:00",
+  "updatedAt": "2026-09-17T04:51:46.596095+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -143,14 +143,6 @@
     "Žuto upozorenje za grmljavinsku oluju",
     "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 70 %",
     "Yellow thunderstorm warning",
-    "Locally severe thundershowers. Lightning risk > 70 %",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knot (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knot (65-75 km/h)"
+    "Locally severe thundershowers. Lightning risk > 70 %"
   ]
 }
