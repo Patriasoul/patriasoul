@@ -17,12 +17,13 @@ function sourceForEval(file){return fs.readFileSync(file,'utf8').replace(/([,{]\
 function evalFile(file,ctx){vm.runInContext(sourceForEval(file),ctx,{filename:file});}
 function load(){
   const ctx=vm.createContext({console});ctx.window=ctx;ctx.globalThis=ctx;evalFile(path.join(ROOT,'gradovi.js'),ctx);
-  const files=fs.readdirSync(ROOT).filter(f=>/^patriasoul-city-questions-verified(?:-\d+)?\.js$/.test(f)).sort((a,b)=>{const na=(a.match(/-(\d+)\.js$/)||[])[1],nb=(b.match(/-(\d+)\.js$/)||[])[1];if(na==null)return -1;if(nb==null)return 1;return +na-+nb});
+  const files=fs.readdirSync(ROOT).filter(f=>/^patriasoul-city-questions-verified(?:-\d+)?\.js$/.test(f)||/^patriasoul-city-questions-verified-missing-\d+\.js$/.test(f)).sort();
   files.forEach(f=>evalFile(path.join(ROOT,f),ctx));
   const cities=ctx.PATRIA_CITY_DATA||[],pools=new Map(cities.map(c=>[c.slug,[]])),sources=new Map();
   const add=(q,source)=>{if(!valid(q)||!pools.has(q.cityId))return;if(sources.has(q.id))return;sources.set(q.id,source);pools.get(q.cityId).push({...q,__source:source});};
   if(ctx.PatriaCityVerified?.forCity)for(const c of cities)(ctx.PatriaCityVerified.forCity(c.name)||[]).forEach(q=>add(q,'legacy'));
   for(const n of LAYERS){const api=ctx[`PatriaCityVerified${n}`];if(api?.forCity)for(const c of cities)(api.forCity(c.name)||[]).forEach(q=>add(q,`layer-${n}`));}
+  for(const key of Object.keys(ctx).filter(k=>/^PatriaCityVerifiedMissing\d+$/.test(k))){const api=ctx[key];if(api?.forCity)for(const c of cities)(api.forCity(c.name)||[]).forEach(q=>add(q,key));}
   return {cities,pools};
 }
 function main(){
