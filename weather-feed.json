@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T17:13:29.298905+00:00",
+  "updatedAt": "2026-09-17T17:50:01.827950+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -8,47 +8,11 @@
       "wind": "NW",
       "humidity": "65"
     },
-    "Bjelovar": {
-      "temp": "19.2",
-      "condition": "povjetarac",
-      "wind": "N",
-      "humidity": "59"
-    },
-    "Crikvenica": {
-      "temp": "19.6",
-      "condition": "lahor",
-      "wind": "E",
-      "humidity": "92"
-    },
     "Dubrovnik-aerodrom": {
       "temp": "23.3",
       "condition": "vedro",
       "wind": "S",
       "humidity": "67"
-    },
-    "Gospić": {
-      "temp": "14.8",
-      "condition": "lahor",
-      "wind": "S",
-      "humidity": "99"
-    },
-    "Križevci": {
-      "temp": "18.7",
-      "condition": "lahor",
-      "wind": "N",
-      "humidity": "60"
-    },
-    "Opatija": {
-      "temp": "18.6",
-      "condition": "-",
-      "wind": "-",
-      "humidity": "93"
-    },
-    "RC Osijek-Čepin": {
-      "temp": "20.0",
-      "condition": "slab vjetar",
-      "wind": "NW",
-      "humidity": "60"
     },
     "Pula-aerodrom": {
       "temp": "19.0",
@@ -62,23 +26,11 @@
       "wind": "SE",
       "humidity": "93"
     },
-    "Slavonski Brod": {
-      "temp": "23.6",
-      "condition": "lahor",
-      "wind": "N",
-      "humidity": "53"
-    },
     "Split-aerodrom": {
       "temp": "24.6",
       "condition": "umjereno oblačno",
       "wind": "SW",
       "humidity": "73"
-    },
-    "Varaždin": {
-      "temp": "18.3",
-      "condition": "lahor",
-      "wind": "N",
-      "humidity": "57"
     },
     "Zadar-aerodrom": {
       "temp": "18.1",
@@ -89,7 +41,7 @@
     "Zagreb-Maksimir": {
       "temp": "18.2",
       "condition": "potpuno oblačno",
-      "wind": "W",
+      "wind": "SW",
       "humidity": "82"
     },
     "Zagreb-aerodrom": {
