@@ -6,18 +6,14 @@ const fs=require('fs'),path=require('path'),vm=require('vm');
 const ROOT=path.resolve(__dirname,'..');
 const TARGET_CITIES=127,TARGET_PER_CITY=75,TARGET_TOTAL=9525;
 const EXCLUDED=[33,121];
-const LAYERS=Array.from({length:126},(_,i)=>i+2).filter(n=>!EXCLUDED.includes(n));
+const LAYERS=Array.from({length:127},(_,i)=>i+2).filter(n=>!EXCLUDED.includes(n));
 const norm=s=>String(s??'').toLocaleLowerCase('hr-HR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/[^a-z0-9]+/g,' ').trim();
 const qText=q=>norm(q.question);
 const answers=q=>(Array.isArray(q.answers)?q.answers:Array.isArray(q.options)?q.options.map(x=>typeof x==='object'?x.text:x):[]).map(norm);
 const contentKey=q=>qText(q)+'|'+answers(q).slice().sort().join('|')+'|'+q.correctIndex;
 const templateKey=q=>{let t=qText(q);for(const p of ['koji je toc an podatak o ','koji je toc an podatak o','sto je povezano s ','kada se navodi ','koja tvrdnja opisuje ','sto treba zapamtiti o '])if(t.startsWith(p)){t=t.slice(p.length);break}return t+'|'+answers(q).slice().sort().join('|')+'|'+q.correctIndex};
 const valid=q=>q&&q.id&&q.cityId&&q.citySource==='verified'&&q.sourceUrl&&Array.isArray(q.answers)&&q.answers.length===4&&q.answers.every(a=>typeof a==='string'&&a.trim())&&Number.isInteger(q.correctIndex)&&q.correctIndex>=0&&q.correctIndex<4;
-function sourceForEval(file){
-  // Some legacy verified files contain unquoted hyphenated object keys (e.g. nova-gradiska).
-  // Only the temporary VM input is normalized; repository source files are never modified.
-  return fs.readFileSync(file,'utf8').replace(/([,{]\s*)([A-Za-z_$][A-Za-z0-9_$]*(?:-[A-Za-z0-9_$-]+)+)(\s*:)/g,'$1"$2"$3');
-}
+function sourceForEval(file){return fs.readFileSync(file,'utf8').replace(/([,{]\s*)([A-Za-z_$][A-Za-z0-9_$]*(?:-[A-Za-z0-9_$-]+)+)(\s*:)/g,'$1"$2"$3');}
 function evalFile(file,ctx){vm.runInContext(sourceForEval(file),ctx,{filename:file});}
 function load(){
   const ctx=vm.createContext({console});ctx.window=ctx;ctx.globalThis=ctx;evalFile(path.join(ROOT,'gradovi.js'),ctx);
