@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T08:34:44.752839+00:00",
+  "updatedAt": "2026-09-17T08:50:42.202561+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -197,13 +197,17 @@
   },
   "alerts": [
     "Žuto upozorenje za kišu",
-    "Lokalno obilnija kiša, osobito u Gorskom kotaru. Količina oborine > 30 mm",
+    "Lokalno obilnija kiša, osobito u Gorskom kotaru. Mogućnost urbanih i bujičnih poplava. Količina oborine > 30 mm",
     "Yellow rain warning",
-    "Locally heavy rain, especially in Gorski kotar. Rainfall > 30 mm",
+    "Locally heavy rain, especially in Gorski kotar. Locally flash floods possible. Rainfall > 30 mm",
     "Narančasto upozorenje za grmljavinsku oluju",
     "Lokalno izraženiji pljuskovi s grmljavinom, moguće nevrijeme. Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
     "Locally severe thundershowers. Lightning risk > 70 %",
+    "Žuto upozorenje za grmljavinsku oluju",
+    "Lokalno izraženiji pljuskovi s grmljavinom osobito na sjeveru. Vjerojatnost grmljavine > 60 %",
+    "Yellow thunderstorm warning",
+    "Locally severe thundershowers especially in the north. Lightning risk > 60 %",
     "Žuto upozorenje za vjetar",
     "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
     "Yellow wind warning",
