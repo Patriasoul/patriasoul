@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T21:15:21.187381+00:00",
+  "updatedAt": "2026-09-17T21:30:58.954805+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,16 +9,22 @@
       "humidity": "76"
     },
     "Bjelovar": {
-      "temp": "16.0",
+      "temp": "15.8",
       "condition": "-",
       "wind": "C",
       "humidity": "89"
     },
     "Crikvenica": {
-      "temp": "18.2",
-      "condition": "povjetarac",
+      "temp": "18.0",
+      "condition": "lahor",
       "wind": "N",
-      "humidity": "88"
+      "humidity": "90"
+    },
+    "Dubrovnik": {
+      "temp": "23.0",
+      "condition": "lahor",
+      "wind": "NW",
+      "humidity": "60"
     },
     "Dubrovnik-aerodrom": {
       "temp": "20.1",
@@ -26,9 +32,27 @@
       "wind": "SE",
       "humidity": "76"
     },
-    "Križevci": {
-      "temp": "14.9",
+    "Gospić": {
+      "temp": "14.4",
       "condition": "lahor",
+      "wind": "NW",
+      "humidity": "99"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "19.0",
+      "condition": "povjetarac",
+      "wind": "W",
+      "humidity": "61"
+    },
+    "Knin": {
+      "temp": "17.4",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "99"
+    },
+    "Križevci": {
+      "temp": "15.0",
+      "condition": "-",
       "wind": "NW",
       "humidity": "100"
     },
@@ -121,12 +145,6 @@
       "condition": "potpuno oblačno",
       "wind": "NW",
       "humidity": "80"
-    },
-    "Dubrovnik": {
-      "temp": "20.1",
-      "condition": "vedro",
-      "wind": "SE",
-      "humidity": "76"
     },
     "Pula": {
       "temp": "18.6",
