@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T20:15:01.514145+00:00",
+  "updatedAt": "2026-09-18T20:31:52.811975+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,10 +15,16 @@
       "humidity": "83"
     },
     "Crikvenica": {
-      "temp": "20.5",
+      "temp": "20.4",
       "condition": "lahor",
-      "wind": "W",
-      "humidity": "87"
+      "wind": "N",
+      "humidity": "88"
+    },
+    "Dubrovnik": {
+      "temp": "22.4",
+      "condition": "lahor",
+      "wind": "N",
+      "humidity": "62"
     },
     "Dubrovnik-aerodrom": {
       "temp": "21.5",
@@ -29,11 +35,11 @@
     "Gospić": {
       "temp": "17.8",
       "condition": "potpuno oblačno",
-      "wind": "SW",
+      "wind": "W",
       "humidity": "92"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "19.8",
+      "temp": "19.6",
       "condition": "lahor",
       "wind": "E",
       "humidity": "65"
@@ -47,13 +53,13 @@
     "Knin": {
       "temp": "17.8",
       "condition": "umjereno oblačno",
-      "wind": "NW",
+      "wind": "SW",
       "humidity": "94"
     },
     "Križevci": {
       "temp": "15.9",
       "condition": "pretežno vedro",
-      "wind": "SE",
+      "wind": "W",
       "humidity": "91"
     },
     "Makarska": {
@@ -66,12 +72,12 @@
       "temp": "21.1",
       "condition": "-",
       "wind": "-",
-      "humidity": "83"
+      "humidity": "84"
     },
     "RC Osijek-Čepin": {
       "temp": "18.3",
       "condition": "vedro",
-      "wind": "S",
+      "wind": "NE",
       "humidity": "59"
     },
     "Pazin": {
@@ -161,7 +167,7 @@
     "Zagreb-Maksimir": {
       "temp": "17.0",
       "condition": "umjereno oblačno",
-      "wind": "N",
+      "wind": "NW",
       "humidity": "86"
     },
     "Zagreb-aerodrom": {
@@ -181,12 +187,6 @@
       "condition": "umjereno oblačno",
       "wind": "SW",
       "humidity": "81"
-    },
-    "Dubrovnik": {
-      "temp": "21.5",
-      "condition": "umjereno oblačno",
-      "wind": "E",
-      "humidity": "58"
     },
     "Pula": {
       "temp": "19.5",
