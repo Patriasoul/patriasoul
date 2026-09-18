@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T07:32:33.274288+00:00",
+  "updatedAt": "2026-09-18T07:49:58.081404+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -205,9 +205,9 @@
     "Yellow thunderstorm warning",
     "Locally severe thundershowers. Lightning risk > 60 %",
     "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženiji pljuskovi s grmljavinom. Količina oborine > 40 mm; Vjerojatnost grmljavine > 60 %",
+    "količina oborine > 40 mm; Vjerojatnost grmljavine > 60 %",
     "Yellow thunderstorm warning",
-    "Locally severe thundershowers. Rainfall > 40 mm; Lightning risk > 60 %",
+    "rainfall > 40 mm; Lightning risk > 60 %",
     "Žuto upozorenje za grmljavinsku oluju",
     "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 60 %",
     "Yellow thunderstorm warning",
