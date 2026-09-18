@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T07:15:48.684173+00:00",
+  "updatedAt": "2026-09-18T07:32:33.274288+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,10 +15,10 @@
       "humidity": "97"
     },
     "Crikvenica": {
-      "temp": "18.9",
+      "temp": "19.1",
       "condition": "lahor",
       "wind": "N",
-      "humidity": "79"
+      "humidity": "81"
     },
     "Dubrovnik": {
       "temp": "26.7",
@@ -59,7 +59,7 @@
     "Križevci": {
       "temp": "12.2",
       "condition": "magla",
-      "wind": "SW",
+      "wind": "W",
       "humidity": "99"
     },
     "Makarska": {
@@ -69,10 +69,10 @@
       "humidity": "71"
     },
     "Opatija": {
-      "temp": "19.4",
+      "temp": "19.6",
       "condition": "-",
       "wind": "-",
-      "humidity": "83"
+      "humidity": "80"
     },
     "RC Osijek-Čepin": {
       "temp": "17.6",
@@ -119,7 +119,7 @@
     "Slavonski Brod": {
       "temp": "16.1",
       "condition": "pretežno oblačno",
-      "wind": "NW",
+      "wind": "W",
       "humidity": "89"
     },
     "Split-Marjan": {
