@@ -1,7 +1,13 @@
 {
-  "updatedAt": "2026-09-18T19:14:28.623802+00:00",
+  "updatedAt": "2026-09-18T19:30:05.271389+00:00",
   "source": "DHMZ",
   "stations": {
+    "RC Bilogora": {
+      "temp": "20.3",
+      "condition": "umjereno oblačno",
+      "wind": "N",
+      "humidity": "61"
+    },
     "Bjelovar": {
       "temp": "18.9",
       "condition": "pretežno vedro",
@@ -9,15 +15,15 @@
       "humidity": "80"
     },
     "Crikvenica": {
-      "temp": "21.0",
+      "temp": "20.9",
       "condition": "lahor",
-      "wind": "NE",
+      "wind": "N",
       "humidity": "84"
     },
     "Dubrovnik": {
       "temp": "22.9",
       "condition": "pretežno vedro",
-      "wind": "NW",
+      "wind": "E",
       "humidity": "55"
     },
     "Dubrovnik-aerodrom": {
@@ -29,12 +35,12 @@
     "Gospić": {
       "temp": "18.4",
       "condition": "slaba kiša",
-      "wind": "NE",
+      "wind": "E",
       "humidity": "93"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "20.5",
-      "condition": "povjetarac",
+      "temp": "20.4",
+      "condition": "lahor",
       "wind": "E",
       "humidity": "60"
     },
@@ -47,7 +53,7 @@
     "Knin": {
       "temp": "18.5",
       "condition": "umjereno oblačno",
-      "wind": "W",
+      "wind": "NW",
       "humidity": "94"
     },
     "Križevci": {
@@ -63,10 +69,10 @@
       "humidity": "69"
     },
     "Opatija": {
-      "temp": "21.3",
+      "temp": "21.5",
       "condition": "-",
       "wind": "-",
-      "humidity": "82"
+      "humidity": "80"
     },
     "RC Osijek-Čepin": {
       "temp": "20.1",
@@ -113,7 +119,7 @@
     "Slavonski Brod": {
       "temp": "21.0",
       "condition": "umjereno oblačno",
-      "wind": "NE",
+      "wind": "E",
       "humidity": "59"
     },
     "Split-Marjan": {
@@ -137,7 +143,7 @@
     "Varaždin": {
       "temp": "15.4",
       "condition": "umjereno oblačno",
-      "wind": "S",
+      "wind": "SW",
       "humidity": "87"
     },
     "Zadar": {
@@ -161,7 +167,7 @@
     "Zagreb-Maksimir": {
       "temp": "17.3",
       "condition": "pretežno oblačno",
-      "wind": "NW",
+      "wind": "N",
       "humidity": "85"
     },
     "Zagreb-aerodrom": {
