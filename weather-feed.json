@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-19T02:15:02.231847+00:00",
+  "updatedAt": "2026-09-19T02:31:52.053138+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
-      "temp": "16.0",
+      "temp": "15.7",
       "condition": "-",
       "wind": "C",
-      "humidity": "93"
+      "humidity": "96"
     },
     "Crikvenica": {
       "temp": "19.5",
@@ -15,57 +15,57 @@
       "humidity": "95"
     },
     "Dubrovnik": {
-      "temp": "23.3",
+      "temp": "23.5",
       "condition": "povjetarac",
       "wind": "NW",
-      "humidity": "62"
+      "humidity": "61"
     },
     "Gospić": {
       "temp": "15.0",
       "condition": "lahor",
-      "wind": "W",
+      "wind": "NE",
       "humidity": "99"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "15.5",
+      "temp": "15.8",
       "condition": "lahor",
-      "wind": "NW",
-      "humidity": "87"
+      "wind": "N",
+      "humidity": "85"
     },
     "Knin": {
-      "temp": "16.9",
+      "temp": "17.0",
       "condition": "lahor",
-      "wind": "SE",
+      "wind": "NE",
       "humidity": "99"
     },
     "Križevci": {
       "temp": "15.9",
       "condition": "povjetarac",
-      "wind": "SW",
-      "humidity": "95"
+      "wind": "W",
+      "humidity": "99"
     },
     "RC Osijek-Čepin": {
-      "temp": "17.0",
+      "temp": "17.2",
       "condition": "lahor",
       "wind": "NE",
-      "humidity": "78"
-    },
-    "Slavonski Brod": {
-      "temp": "18.2",
-      "condition": "slab vjetar",
-      "wind": "W",
       "humidity": "76"
     },
+    "Slavonski Brod": {
+      "temp": "18.4",
+      "condition": "slab vjetar",
+      "wind": "NW",
+      "humidity": "79"
+    },
     "Šibenik": {
-      "temp": "21.2",
+      "temp": "21.5",
       "condition": "-",
       "wind": "-",
-      "humidity": "82"
+      "humidity": "76"
     },
     "Varaždin": {
-      "temp": "13.6",
+      "temp": "13.7",
       "condition": "povjetarac",
-      "wind": "SW",
+      "wind": "W",
       "humidity": "99"
     },
     "Zagreb-Maksimir": {
