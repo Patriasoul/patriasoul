@@ -1,223 +1,525 @@
 # PatriaSoul — glavni urednički standard 🇭🇷
 
-> Krovni standard za stvaranje, uređivanje, provjeru i predstavljanje sadržaja na PatriaSoulu.
+> **Krovni standard za stvaranje, istraživanje, pisanje, provjeru i objavu sadržaja na PatriaSoulu.**
+>
+> **Glavno pravilo:** PatriaSoul ne nabraja Hrvatsku. PatriaSoul istražuje, provjerava i pripovijeda njezine priče.
 
-## 1. Temeljna načela
+## 1. Što je PatriaSoul?
 
-PatriaSoul treba biti:
-- vjerodostojan
+PatriaSoul je portal hrvatskih priča, sjećanja, baštine, povijesti, ljudi i suvremenog života.
+
+Naš cilj nije proizvesti što više stranica. Cilj je stvarati sadržaj koji je:
+- istinit
+- provjeren
+- novinarski napisan
+- zanimljiv i čitljiv
 - dostojanstven
-- čitljiv
-- hrvatski i kulturno ukorijenjen
-- jasno strukturiran
-- provjerljiv
-- vizualno bogat, ali nenametljiv
+- jasno potpisan i izvorno obrađen
+- vrijedan čitanja i nakon mnogo godina
 
-**Ne izmišljati činjenice, citate, osobe, događaje, izvore ili svjedočanstva.**
+**Ne prepisujemo članke s interneta.** Internet, knjige, arhivi, muzeji, službene institucije i drugi izvori služe za istraživanje i provjeru. Konačni tekst pišemo vlastitim riječima i vlastitim uredničkim pristupom.
 
-Činjenični sadržaj treba imati odgovarajući izvor kada je to primjenjivo. To je u skladu s postojećim pravilom projekta da činjenični sadržaj ima evidentiran izvor i da se koristi jedno mjesto istine. 
+**Ne izmišljamo činjenice, citate, osobe, događaje, izvore ili svjedočanstva.**
 
-## 2. Zajednički obrazac članka
+---
 
-Kad vrsta sadržaja to dopušta, koristiti:
+# 2. PATRIASOUL NOVINARSKI KALUP
 
-1. **Naslov** — jasan i zanimljiv; citat samo ako je stvaran i provjeren.
-2. **Kratki uvod** — korisniku odmah objasniti što će saznati.
-3. **Glavni sadržaj** — podijeliti u kratke odlomke i logične podnaslove.
-4. **Ključne činjenice** — izdvojiti najvažnije podatke.
-5. **Povezani sadržaj** — povezati gradove, osobe, događaje, baštinu, vjeru ili druge relevantne zapise.
-6. **Izvori** — jasno navesti relevantne izvore.
-7. **Multimedija** — fotografije, karte, audio ili video samo kada imaju smisla i odgovarajuća prava korištenja.
+Ovo je osnovni predložak za buduće članke i priče. Ne mora svaki tekst imati svaki element, ali svaki autor prije objave treba proći kroz ovaj redoslijed.
 
-## 3. Čitljivost na internetu
+## 2.1 Tema
 
-- kratki odlomci
-- jasni podnaslovi
-- istaknute ključne informacije
-- popisi kada poboljšavaju preglednost
-- izbjegavati zidove teksta
-- ne pretjerivati s uskličnicima, velikim slovima i ukrasima
-- važna informacija treba biti dostupna i na mobitelu
+Prije pisanja odgovoriti:
+- Što je tema?
+- Zašto je važna?
+- Zašto je zanimljiva baš sada?
+- Tko je u središtu priče?
+- Što želimo da čitatelj sazna ili razumije?
+- Koji su izvori dostupni?
+- Postoji li stvarna priča iza teme?
 
-## 4. Izvori i fact-checking
+Ako tema nema jasan razlog za čitanje, ne razvlačiti je u umjetni članak.
 
-Prioritet imaju:
-1. službeni državni izvori i registri
-2. znanstvene i akademske institucije
-3. muzeji, arhivi i ustanove kulture
-4. službene crkvene institucije za crkvene teme
-5. relevantne međunarodne institucije
-6. provjereni sekundarni izvori
+## 2.2 Naslov
 
-Kod spornih ili osjetljivih tema razlikovati:
-- potvrđenu činjenicu
-- osobno svjedočenje
-- interpretaciju
-- urednički zaključak
+Naslov treba biti:
+- jasan
+- konkretan
+- zanimljiv
+- istinit
+- bez lažnog senzacionalizma
 
-Ako postoje različiti podaci, ne skrivati razliku nego je jasno objasniti.
+Ne koristiti naslove koji obećavaju nešto što tekst ne dokazuje.
 
-## 5. Fotografije i multimedija
+**Loše:**  
+Sve što trebate znati o Puli
 
-Svaki vizual treba imati smisao. Prednost imaju:
-- originalne fotografije uz dopuštenje
-- javno dostupne i pravilno licencirane fotografije
-- muzejske, arhivske i službene zbirke kada su prava korištenja jasna
-- karte i infografike s jasno navedenim izvorom
+**Bolje:**  
+Pula koju ne poznajemo: tragovi prošlosti koji su još uvijek među nama
 
-Ne koristiti tuđe fotografije bez provjere prava.
+## 2.3 Podnaslov
 
-## 6. Gradovi i Domovina
+Jedna do dvije rečenice koje daju kontekst i objašnjavaju zašto priču vrijedi pročitati.
 
-Sadržaj o gradovima treba koristiti kanonski registar gradova i postojeći profilni predložak, a ne stvarati paralelne popise. 
+## 2.4 Uvod / lead
 
-Preporučena struktura:
-- identitet grada
-- položaj i geografija
-- povijest
-- znamenitosti
-- baština i običaji
-- gastronomija
-- poznate osobe
-- vjera i sakralna baština
-- Domovinski rat i sjećanje, gdje je relevantno
-- današnji život
-- izvori
+Prvih nekoliko rečenica mora otvoriti priču.
 
-## 7. Povijest
+Ne počinjati automatski enciklopedijskom definicijom.
 
-Povijesni članci trebaju imati kronološku i uzročno-posljedičnu jasnoću.
+Umjesto:
+> Pula je grad u Istri i najveći grad Istarske županije...
 
-Preporučeno:
-- razdoblje
+tražiti novinarski ulaz:
+> Kada danas prođemo ulicama Pule, teško je zamisliti koliko je različitih vremena ostavilo trag upravo na ovom prostoru...
+
+Lead treba čitatelja uvesti u temu, a ne ispričati cijeli članak.
+
+## 2.5 Glavna priča
+
+Glavni tekst treba biti napisan kao priča, a ne kao niz natuknica.
+
+Koristiti:
+- kratke i prirodne odlomke
+- logične podnaslove
+- kronologiju kada je potrebna
+- ljude i konkretne događaje
 - kontekst
-- ključni događaji
-- osobe
-- posljedice i značenje
-- izvori
+- citate samo kada su stvarni
+- prijelaze koji čitatelja vode kroz priču
 
-Ne prezentirati kasnije interpretacije kao činjenice. Za osjetljive događaje koristiti više izvora kada je moguće.
+Činjenice se ne izbacuju iz teksta u obliku beskrajnog popisa. One se koriste da bi čitatelj razumio priču.
 
-## 8. Baština
+## 2.6 Čovjek u priči
 
-Baštinu predstavljati kao živu kulturnu vrijednost, a ne samo kao popis znamenitosti.
+Kad god je prirodno, tražiti ljudsku dimenziju:
+- tko je nešto doživio?
+- tko je nešto napravio?
+- tko danas čuva određenu tradiciju?
+- čije svjedočanstvo može pomoći razumjeti temu?
 
-Za običaj, predmet, pjesmu, nošnju ili zanat navesti gdje je karakterističan, kako je nastao ili se razvijao, kako se koristio i postoji li danas.
+Ako je osoba stvarna, podaci o njoj moraju biti provjerljivi.
 
-### Gastronomija
+## 2.7 Kontekst
 
-Za tradicionalno jelo, kada je moguće:
-- naziv i lokalni nazivi
-- podrijetlo/regija
-- priča o jelu
-- sastojci
-- tradicionalni recept
-- priprema
-- regionalne varijacije
-- fotografija jela
-- izvori ili svjedočanstvo o tradiciji
+Čitatelju objasniti:
+- što se dogodilo
+- kada
+- gdje
+- tko je sudjelovao
+- zašto se dogodilo
+- kakve su bile posljedice
+- zašto je tema važna danas
 
-Ne predstavljati modernu varijaciju kao izvorni tradicionalni recept.
+Ne pretpostavljati da čitatelj već zna pozadinu.
 
-### Govori i dijalekti
+## 2.8 Izdvojeni detalj
 
-Za svaki govor/dijalekt:
-- područje
-- osnovne jezične osobine
-- karakteristične riječi i izrazi
-- primjeri uz odgovarajući kontekst
-- odnos prema širem dijalektu
-- lokalna posebnost
-- izvori
+Kad članak to dopušta, ubaciti jedan ili više korisnih uredničkih blokova:
+- **Jeste li znali?**
+- **Dokumentirano**
+- **Svjedočanstvo**
+- **Važan datum**
+- **Mjesto priče**
+- **Čuvar nasljeđa**
+- **Iz arhive**
 
-Primjere zapisivati pažljivo i ne stereotipizirati govornike.
+Blok se koristi samo ako stvarno dodaje vrijednost.
 
-## 9. Vjera
+## 2.9 Zaključak
 
-Vjerski sadržaj treba biti dostojanstven, jasan i u skladu s naravi teme.
+Članak treba završiti prirodno.
 
-Za biblijske citate, molitve, blagdane i svece navesti odgovarajući izvor kada je primjenjivo. Razlikovati izvorni tekst, objašnjenje i osobnu duhovnu refleksiju.
+Ne ponavljati cijeli tekst.
+
+Dobar završetak može:
+- povezati prošlost i sadašnjost
+- vratiti priču na čovjeka
+- pokazati zašto je nešto važno sačuvati
+- otvoriti pitanje za daljnje istraživanje
+- povezati čitatelja s drugom PatriaSoul pričom
+
+---
+
+# 3. ISTINA PRIJE ATRAKTIVNOSTI
+
+Kod svake tvrdnje pitamo:
+
+**Znamo li da je to činjenica?**
+
+Ako da — navedemo i provjerimo izvor kada je potrebno.
+
+Ako je riječ o osobnom sjećanju — označimo kao svjedočanstvo.
+
+Ako je riječ o predaji — napišemo da je riječ o predaji.
+
+Ako postoji spor — prikažemo što izvori govore i jasno navedemo razliku.
+
+Ako ne znamo — **ne izmišljamo odgovor.**
+
+Rečenica:
+> Nismo pronašli dovoljno pouzdanih izvora da bismo ovo potvrdili.
+
+bolja je od izmišljene sigurnosti.
+
+---
+
+# 4. ISTRAŽIVANJE PRIJE PISANJA
+
+Preporučeni redoslijed:
+
+### 1. Primarni izvori
+- arhivski dokumenti
+- službeni registri
+- zakoni i službeni dokumenti
+- muzejska građa
+- izvorni dokumenti
+- izravni intervjui i svjedočanstva
+
+### 2. Institucije
+- muzeji
+- arhivi
+- sveučilišta
+- znanstvene ustanove
+- službene stranice gradova i općina
+- državne institucije
+- crkvene institucije kada je riječ o vjerskim temama
+
+### 3. Stručna literatura
+- znanstveni radovi
+- monografije
+- knjige
+- stručni članci
+
+### 4. Sekundarni izvori
+Medijski i drugi internetski izvori mogu pomoći u istraživanju, ali ne smiju automatski postati dokaz samo zato što nešto piše na internetu.
+
+---
+
+# 5. NOVINARSKI PRINCIP 5W + H
+
+Kad je primjenjivo, članak mora moći odgovoriti na:
+- **Tko?**
+- **Što?**
+- **Gdje?**
+- **Kada?**
+- **Zašto?**
+- **Kako?**
+
+Kod priča i reportaža tome dodajemo:
+- **Tko je to doživio?**
+- **Kako je to izgledalo?**
+- **Što je ostalo nakon događaja?**
+- **Zašto je važno da se danas toga sjećamo?**
+
+---
+
+# 6. VRSTE PATRIASOUL SADRŽAJA
+
+## 📰 Članak
+Informativna i novinarski obrađena tema.
+
+## 📖 Priča
+Dublji tekst u kojem su činjenice povezane s ljudima, mjestom i kontekstom.
+
+## 🔎 Istraživanje
+Tema za koju je potrebno sustavno pregledati više izvora i provjeriti različite tvrdnje.
+
+## 🎙️ Intervju
+Razgovor sa stvarnom osobom. Pitanja, odgovori i kontekst moraju biti stvarni.
+
+## 🕯️ Istinita priča
+Dokumentirana osobna, obiteljska ili povijesna priča.
+
+## 🛡️ Svjedočanstvo
+Osobno sjećanje ili iskustvo. Jasno ga odvojiti od neovisno potvrđenih činjenica.
+
+## 📜 Povijesna priča
+Povijesni događaj ispričan razumljivo i kronološki, uz izvore i kontekst.
+
+## 🏛️ Čuvari nasljeđa
+Priče o ljudima koji čuvaju baštinu, sjećanje, običaj, zanat, dokumente ili neku drugu vrijednost.
+
+## 🌿 Reportaža
+Priča iz mjesta i među ljudima, s opisom prostora, atmosfere i stvarnih događaja.
+
+## 🇭🇷 Hrvatska stvara
+Suvremene priče o ljudima, znanju, znanosti, poduzetništvu, kulturi, sportu i stvaralaštvu.
+
+---
+
+# 7. POSEBAN STANDARD ZA ISTINITE PRIČE
+
+Kod istinitih priča posebno navesti, kada je moguće:
+- tko je izvor priče
+- kada i gdje je događaj bio
+- je li riječ o osobnom svjedočanstvu
+- koji dijelovi su neovisno potvrđeni
+- koji dijelovi ostaju osobno sjećanje
+- postoji li dokumentacija
+- postoje li drugi relevantni izvori
+
+Ne dramatizirati tuđu tragediju radi klikova.
+
+Ne dodavati detalje koji nisu potvrđeni.
+
+Ne mijenjati smisao svjedočanstva radi boljeg naslova.
+
+Kod osjetljivih priča poštovati dostojanstvo osoba i obitelji.
+
+---
+
+# 8. ČUVARI NASLJEĐA — PREPOZNATLJIVI PATRIASOUL FORMAT
+
+Ovaj format treba postati jedan od zaštitnih znakova portala.
+
+Primjer strukture:
+
+**ČUVARI NASLJEĐA #001**
+
+# [Naslov priče o osobi]
+
+*Kratki podnaslov.*
+
+Uvod u osobu i ono što čuva.
+
+Zatim priča:
+- kako je počelo
+- što ta osoba čuva
+- zašto je to važno
+- od koga je nasljeđe preuzeto
+- kako se danas prenosi dalje
+- što bi se izgubilo da se ne sačuva
+
+Na kraju:
+
+**PatriaSoul · Čuvari nasljeđa**
+
+---
+
+# 9. GRADOVI I DOMOVINA
+
+Grad ne predstavljamo kao popis podataka.
+
+Ne radimo stanovništvo, površinu, znamenitosti, poznate osobe i gastronomiju kao nepovezane natuknice.
+
+Podaci mogu biti prisutni, ali priča je glavna.
+
+Primjer toka:
+
+**Grad → čovjek → događaj → mjesto → baština → sjećanje → današnji život**
+
+Gradovi postaju izvori tema za članke i priče.
+
+---
+
+# 10. POVIJEST
+
+Povijesni tekst mora razlikovati:
+
+**činjenicu**  
+od  
+**interpretacije**  
+od  
+**svjedočanstva**  
+od  
+**predaje**.
+
+Ne prenositi današnje političke ili društvene interpretacije kao da su povijesna činjenica.
+
+Kod osjetljivih događaja koristiti više relevantnih izvora kada je moguće.
+
+---
+
+# 11. BRANITELJI I DOMOVINSKI RAT
+
+Posebno poštovati:
+- točnost datuma
+- mjesta
+- postrojbe
+- operacije
+- imena
+- činove
+- dokumente
+- autentične citate
+
+Svjedočanstvo branitelja jasno označiti kao svjedočanstvo, a ne kao automatsku zamjenu za dokumentarni izvor.
+
+Ne koristiti ratne priče za senzacionalizam.
+
+Poštovati poginule, nestale, branitelje i njihove obitelji.
+
+---
+
+# 12. BAŠTINA, KULTURA I TRADICIJA
+
+Baštinu ne predstavljamo kao katalog.
+
+Za običaj, predmet, pjesmu, nošnju, jelo ili zanat pokušati objasniti:
+- gdje se pojavljuje
+- kako je nastao ili se razvijao
+- tko ga je prenosio
+- kako se koristio
+- što znači lokalnoj zajednici
+- postoji li danas
+- što se promijenilo
+
+Tradicionalno ne znači automatski i drevno. Ako je podrijetlo nesigurno, to treba jasno napisati.
+
+---
+
+# 13. VJERA
+
+Vjerski sadržaj mora biti dostojanstven i izvorno utemeljen.
+
+Razlikovati:
+- službeni crkveni nauk
+- biblijski tekst
+- povijesnu činjenicu
+- pobožnu tradiciju
+- osobno svjedočanstvo
+- osobnu refleksiju
 
 Ne pripisivati Crkvi stav koji nije potvrđen relevantnim crkvenim izvorom.
 
-## 10. Mediji
+---
 
-Vijesti trebaju odgovoriti na osnovna pitanja: tko, što, gdje, kada, zašto i kako.
+# 14. VIJESTI I AKTUALNOSTI
 
-- navesti datum
-- navesti izvor
-- ne kopirati članke drugih medija
-- vlastitim riječima sažeti sadržaj
-- jasno razlikovati vijest od komentara
-- kod razvoja događaja označiti da se informacije mogu mijenjati
+Vijest mora odgovoriti na osnovna novinarska pitanja.
 
-Video i galerije trebaju imati naslov, kratak opis, kategoriju i, kada je potrebno, izvor/autora.
+Obavezno, kada je primjenjivo:
+- datum
+- mjesto
+- izvor
+- što se dogodilo
+- tko je objavio informaciju
+- što je potvrđeno
+- što još nije potvrđeno
 
-## 11. Igra i kviz
+Vijesti drugih medija ne kopirati. Informacije se provjeravaju i vlastitim riječima obrađuju.
 
-Svako pitanje treba imati:
-- jedno jasno točno rješenje
-- uvjerljive, ali netočne distraktore
-- jasnu formulaciju
-- kategoriju
-- izvor kada je činjenično pitanje
-- objašnjenje odgovora kada je predviđeno sustavom
+Jasno razdvojiti vijest, analizu, komentar, najavu i priču.
 
-Ne koristiti neprovjerene podatke samo radi povećanja broja pitanja. Postojeće banke pitanja ostaju kanonski vlasnici kviznog sadržaja.
+---
 
-## 12. Branitelji
+# 15. LJUDI I INTERVJUI
 
-Detaljan standard nalazi se u `BRANITELJI-UREDNICKI-STANDARD.md`.
+Za stvarnu osobu koristiti provjerljive podatke.
 
-Posebno vrijedi:
-- autentični citati samo uz stvarni izvor
-- empatija prema braniteljima i obiteljima
-- ne pritiskati osobe na traumatične detalje
-- provjeravati datume, mjesta, operacije i postrojbe
-- jasno razlikovati osobno sjećanje od potvrđenih činjenica
-- poštovati dostojanstvo žrtava i branitelja
+Kod intervjua:
+- osoba mora stvarno sudjelovati
+- odgovori moraju biti autentični
+- ne izmišljati izjave
+- ne mijenjati smisao odgovora
+- navesti datum razgovora kada je relevantno
+- poštovati privatnost
 
-## 13. Osobe i intervjui
+Ako osoba želi pseudonim, koristiti ga prema uredničkoj procjeni.
 
-Za stvarnu osobu koristiti provjerljive podatke i, kada je riječ o intervjuu, jasno navesti da je riječ o razgovoru.
+---
 
-Preporučeni podaci:
-- ime/prezime ili pseudonim ako osoba to želi
-- uloga/zanimanje
-- relevantno razdoblje
-- mjesto ili područje djelovanja
-- datum intervjua
-- način pribavljanja svjedočanstva
-- status provjere
+# 16. FOTOGRAFIJE, VIDEO I AUDIO
 
-Ne fabricirati biografije ili izjave.
+Vizual nije samo ukras.
 
-## 14. Povezivanje sadržaja
+Svaka fotografija treba imati:
+- opis
+- autora kada je poznat
+- izvor
+- odgovarajuće pravo korištenja kada je potrebno
 
-Svaki veći članak treba, gdje je prirodno, voditi prema povezanim sadržajima.
+Prednost imaju vlastite fotografije, fotografije uz dopuštenje, pravilno licencirane fotografije te muzejske i arhivske zbirke uz jasna prava.
+
+Ne uzimati tuđu fotografiju samo zato što je lako pronađena na Googleu.
+
+---
+
+# 17. PATRIASOUL POTPIS
+
+Svaki objavljeni članak treba imati prepoznatljiv urednički identitet.
+
+Osnovni potpis:
+
+**PatriaSoul · Čuvari nasljeđa**
+
+Kada postoji konkretan autor:
+
+**Piše: [ime autora]**  
+**PatriaSoul · Čuvari nasljeđa**
+
+Kod istraživačkih tekstova može stajati:
+
+**Istražio i napisao PatriaSoul**
+
+Potpis mora odgovarati stvarnom načinu nastanka sadržaja.
+
+---
+
+# 18. POVEZANI SADRŽAJ
+
+Svaki veći članak treba, kada je prirodno, povezati čitatelja s drugim relevantnim sadržajem.
 
 Primjer:
 
-`Grad → Povijest → Osoba → Događaj → Spomenik → Izvor`
+**Grad → osoba → događaj → spomenik → povijest → baština**
 
-Koristiti postojeće kanonske ID-jeve umjesto stvaranja duplikata.
+Ne stvarati nepotrebne duplikate istih podataka na više stranica.
 
-## 15. Urednička kontrolna lista prije objave
+---
 
-- [ ] Naslov je jasan i nije obmanjujući.
-- [ ] Tekst je čitljiv na mobitelu.
-- [ ] Činjenice su provjerene.
-- [ ] Izvori su navedeni gdje je potrebno.
-- [ ] Citati su stvarni i provjerljivi.
-- [ ] Nema izmišljenih osoba ili događaja.
-- [ ] Fotografije imaju riješena prava korištenja.
-- [ ] Povezani sadržaji vode na postojeće stranice.
-- [ ] Nema nepotrebnog dupliciranja podataka.
-- [ ] Hrvatski jezik i dijakritički znakovi su ispravni.
-- [ ] Sadržaj je dostojanstven i primjeren temi.
+# 19. SEO NE SMIJE POBIJEDITI NOVINARSTVO
 
-## 16. Zlatno uredničko pravilo
+Naslov i tekst trebaju biti razumljivi tražilicama, ali nećemo pisati za algoritam umjesto za čovjeka.
 
-**Bolje jedan kvalitetan, provjeren i dostojanstveno napisan zapis nego deset brzih i nepouzdanih.**
+Čitatelj je prvi.
 
-PatriaSoul ne treba samo izgledati bogato. Treba biti mjesto kojem se može vjerovati.
+---
+
+# 20. KONAČNA KONTROLNA LISTA PRIJE OBJAVE
+
+### ISTRAŽIVANJE
+- [ ] Tema ima jasan razlog za objavu.
+- [ ] Pronađeni su relevantni izvori.
+- [ ] Ključne činjenice su provjerene.
+- [ ] Različite tvrdnje su uspoređene kada je potrebno.
+
+### NOVINARSTVO
+- [ ] Naslov je istinit i zanimljiv.
+- [ ] Lead uvodi u priču.
+- [ ] Tekst nije samo popis činjenica.
+- [ ] Priča ima kontekst.
+- [ ] Jasno je tko, što, gdje, kada, zašto i kako.
+- [ ] Ljudska dimenzija je uključena kada je prirodna.
+- [ ] Činjenice su odvojene od svjedočanstava i predaja.
+- [ ] Nema izmišljanja.
+
+### JEZIK
+- [ ] Hrvatski je jezično ispravan.
+- [ ] Dijakritički znakovi su ispravni.
+- [ ] Odlomci su čitljivi na mobitelu.
+- [ ] Nema nepotrebnog ponavljanja.
+
+### IZVORI
+- [ ] Izvori su navedeni.
+- [ ] Citati su autentični.
+- [ ] Fotografije imaju odgovarajuće pravo korištenja.
+- [ ] Ne postoji prepisani tuđi članak.
+
+### PATRIASOUL IDENTITET
+- [ ] Tekst ima PatriaSoul urednički glas.
+- [ ] Potpis je ispravan.
+- [ ] Povezani sadržaj postoji kada ima smisla.
+- [ ] Čitatelj nakon teksta zna zašto je priča važna.
+
+---
+
+# 21. ZLATNO PRAVILO
+
+> **Bolje jedna istinita, provjerena i dobro ispričana priča nego deset brzih tekstova napisanih samo da bi stranica bila puna.**
+
+> **Ne želimo samo zapisati što se dogodilo. Želimo razumjeti, provjeriti i ispričati zašto je ta priča važna.**
+
+**PATRIASOUL · ČUVARI NASLJEĐA**
+
+*Čuvamo priče. Provjeravamo činjenice. Prenosimo nasljeđe.*
