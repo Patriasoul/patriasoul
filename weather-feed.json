@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T05:30:55.242876+00:00",
+  "updatedAt": "2026-09-19T05:48:11.089381+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -70,7 +70,7 @@
     },
     "Pula-aerodrom": {
       "temp": "17.6",
-      "condition": "pretežno vedro",
+      "condition": "rosa, pretežno vedro",
       "wind": "NE",
       "humidity": "90"
     },
@@ -160,24 +160,24 @@
     },
     "Pula": {
       "temp": "17.6",
-      "condition": "pretežno vedro",
+      "condition": "rosa, pretežno vedro",
       "wind": "NE",
       "humidity": "90"
     }
   },
   "alerts": [
     "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno su mogući izraženi pljuskovi s grmljavinom. Vjerojatnost grmljavine > 70 %",
+    "Lokalno izraženi pljuskovi s grmljavinom. Obilna kiša u kratkom vremenu. Prolazno jaki udari vjetra. Količina oborine > 145 mm; Vjerojatnost grmljavine > 70 %",
     "Yellow thunderstorm warning",
-    "Locally severe thundershowers are possible. Lightning risk > 70 %",
+    "Locally severe thundershowers and strong gusts of wind are possible. Rainfall > 40 mm; Lightning risk > 70 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženi pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom vremenu, osobito na otocima južnog dijela i na opožarenim područjima. Vjerojatnost grmljavine > 70 %",
+    "Lokalno izraženi pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom vremenu, osobito na otocima južnog dijela i na opožarenim područjima. Prolazno jaki, moguće i olujni udari vjetra. Količina oborine > 220 mm; Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
-    "Locally severe thundershowers. Heavy rainfall is possible over a short period, especially on southern islands and burned areas. Lightning risk > 70 %",
+    "Locally severe thundershowers. Heavy rainfall is possible over a short period, especially on southern islands and burned areas. Strong and gale force gusts possible. Rainfall > 220 mm; Lightning risk > 70 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženi pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom vremenu, osobito na otocima. Vjerojatnost grmljavine > 70 %",
+    "Lokalno izraženi pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom vremenu, osobito na otocima. Prolazno jaki, moguće i olujni udari vjetra. Količina oborine > 220 mm; Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
-    "Locally severe thundershowers. Heavy rainfall is possible over a short period, especially on islands. Lightning risk > 70 %",
+    "Locally severe thundershowers. Heavy rainfall is possible over a short period, especially on islands. Strong and gale force gusts possible. Rainfall > 220 mm; Lightning risk > 70 %",
     "Žuto upozorenje za vjetar",
     "Moguć je kratkotrajni vrlo jak sjeverozapadni vjetar i bura. Najjači udari vjetra 35-45 čvorova (65-85 km/h)",
     "Yellow wind warning",
