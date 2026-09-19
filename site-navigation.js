@@ -1,71 +1,35 @@
-/* PatriaSoul — canonical portal navigation */
+/* PatriaSoul — canonical portal navigation
+ * Službena struktura portala:
+ * Početna · O PatriaSoul · Članci i priče · Istinite priče · Čuvari nasljeđa
+ * Pjesme i stihovi · Galerija / Mediji · Vaše priče · Zajednica · Pretraži · Newsletter
+ */
 (function(){'use strict';
 var G=[
-['Domovina','🇭🇷','/domovina.html',[
- ['Hrvatska','/domovina.html'],
- ['Gradovi','/gradovi.html'],
- ['Krajevi i geografija','/krajevi-i-geografija.html'],
- ['Priroda','/priroda.html'],
- ['Hrvatska stvara','/hrvatska-stvara.html'],
- ['Dijaspora','/hrvatska-i-dijaspora.html']
-]],
-['Članci i priče','📖','/domovina.html',[
- ['Istinite priče','/svjedocanstva.html'],
- ['Povijesne priče','/povijest.html'],
- ['Ljudi','/povijesne-osobe.html'],
- ['Gradovi i krajevi','/gradovi.html'],
+['Članci i priče','📖','/clanci-i-price.html',[
+ ['Povijest','/povijest.html'],
+ ['Branitelji i Domovinski rat','/branitelji.html'],
  ['Kultura i baština','/bastina.html'],
  ['Vjera i duhovnost','/vjera.html'],
+ ['Gradovi i krajevi','/gradovi.html'],
+ ['Priroda','/priroda.html'],
+ ['Ljudi','/povijesne-osobe.html'],
+ ['Hrvatska danas','/hrvatska-danas.html'],
+ ['Hrvatska stvara','/hrvatska-stvara.html'],
+ ['Dijaspora','/hrvatska-i-dijaspora.html'],
  ['Mitovi i legende','/dvorci-utvrde-i-legende.html']
 ]],
-['Branitelji','🛡️','/branitelji.html',[
- ['Domovinski rat','/domovinski-rat.html'],
- ['Svjedočanstva','/svjedocanstva.html'],
- ['Postrojbe','/postrojbe.html'],
- ['Operacije i bojišta','/operacije.html'],
- ['Spomenici i memorijali','/spomenici.html']
-]],
-['Povijest','📜','/povijest.html',[
- ['Povijest Hrvatske','/hrvatska-povijest.html'],
- ['Srednji vijek','/srednji-vijek.html'],
- ['Hrvatski narodni preporod','/hrvatski-narodni-preporod.html'],
- ['20. stoljeće','/20-stoljece.html'],
- ['Stvaranje moderne Hrvatske','/stvaranje-moderne-hrvatske.html'],
- ['Bitke i vojna povijest','/bitke-i-vojna-povijest.html'],
- ['Povijesne osobe','/povijesne-osobe.html']
-]],
-['Baština','🏛️','/bastina.html',[
- ['Kultura i baština','/bastina.html'],
- ['Sakralna baština','/sakralna-bastina.html'],
- ['Glagoljica','/glagoljica.html'],
- ['Tradicija i običaji','/tradicija-i-obicaji.html'],
- ['Narodne nošnje','/narodne-nosnje.html'],
- ['Gastronomija','/gastronomija.html'],
- ['Glazba','/glazba.html'],
- ['Govori i dijalekti','/govori-i-dijalekti.html']
-]],
-['Vjera','✝️','/vjera.html',[
- ['Vjera i duhovna baština','/vjera.html'],
- ['Evanđelje dana','/evandelje.html'],
- ['Svetci i blaženici','/svetci.html'],
- ['Blagdani i običaji','/blagdani.html'],
- ['Svetišta i hodočašća','/svetista.html'],
- ['Svjedočanstva vjere','/vjera-svjedocanstva.html']
-]],
-['Hrvatska danas','📰','/hrvatska-danas.html',[
- ['Vijesti','/vijesti.html'],
- ['Hrvatska stvara','/hrvatska-stvara.html'],
- ['Hrvatska i dijaspora','/hrvatska-i-dijaspora.html'],
- ['Vrijeme','/vrijeme.html']
-]],
-['Mediji','▣','/video.html',[
- ['Video','/video.html'],
+['Istinite priče','🕯️','/istinite-price.html',[]],
+['Čuvari nasljeđa','🛡️','/cuvari-nasljeda.html',[]],
+['Pjesme i stihovi','🎵','/pjesme-i-stihovi.html',[]],
+['Galerija / Mediji','▣','/galerija-mediji.html',[
  ['Galerija','/galerija.html'],
- ['Vijesti','/vijesti.html']
+ ['Video','/video.html']
 ]],
-['O nama','','/o-nama.html',[]],
-['Kontakt','','/kontakt.html',[]]
-]
+['Vaše priče','✍️','/vase-price.html',[]],
+['Zajednica','🤝','/zajednica.html',[]],
+['Pretraži','🔎','/pretrazi.html',[]],
+['Newsletter','✉️','/newsletter.html',[]]
+];
 var logo='/images/file_0000000082ec81f4a6fc17bdbd959622_114540.png';
 function path(){return location.pathname.replace(/\/+$/,'')||'/'}
 function act(h){return (h.replace(/\/+$/,'')||'/')===path()}
