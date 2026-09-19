@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T09:15:03.145683+00:00",
+  "updatedAt": "2026-09-19T09:31:41.017728+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -11,13 +11,19 @@
     "Bjelovar": {
       "temp": "19.4",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "NE",
+      "humidity": "74"
+    },
+    "Crikvenica": {
+      "temp": "23.9",
+      "condition": "lahor",
+      "wind": "SW",
       "humidity": "74"
     },
     "Dubrovnik": {
       "temp": "26.6",
       "condition": "pretežno oblačno",
-      "wind": "SE",
+      "wind": "E",
       "humidity": "69"
     },
     "Dubrovnik-aerodrom": {
@@ -29,8 +35,14 @@
     "Gospić": {
       "temp": "19.6",
       "condition": "pretežno oblačno",
-      "wind": "SE",
+      "wind": "SW",
       "humidity": "73"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "19.3",
+      "condition": "lahor",
+      "wind": "SW",
+      "humidity": "89"
     },
     "Karlovac": {
       "temp": "19.2",
@@ -57,10 +69,10 @@
       "humidity": "86"
     },
     "Opatija": {
-      "temp": "22.8",
+      "temp": "23.1",
       "condition": "-",
       "wind": "-",
-      "humidity": "74"
+      "humidity": "73"
     },
     "RC Osijek-Čepin": {
       "temp": "21.9",
@@ -85,6 +97,12 @@
       "condition": "vedro",
       "wind": "E",
       "humidity": "56"
+    },
+    "Rijeka": {
+      "temp": "25.8",
+      "condition": "pretežno vedro",
+      "wind": "SE",
+      "humidity": "57"
     },
     "Rijeka-aerodrom": {
       "temp": "25.2",
@@ -131,7 +149,7 @@
     "Varaždin": {
       "temp": "19.8",
       "condition": "pretežno oblačno",
-      "wind": "W",
+      "wind": "NW",
       "humidity": "66"
     },
     "Zadar": {
@@ -155,7 +173,7 @@
     "Zagreb-Maksimir": {
       "temp": "21.2",
       "condition": "pretežno oblačno",
-      "wind": "E",
+      "wind": "NE",
       "humidity": "69"
     },
     "Zagreb-aerodrom": {
@@ -169,12 +187,6 @@
       "condition": "umjereno oblačno",
       "wind": "NE",
       "humidity": "70"
-    },
-    "Rijeka": {
-      "temp": "25.2",
-      "condition": "umjereno oblačno",
-      "wind": "NW",
-      "humidity": "56"
     },
     "Split": {
       "temp": "24.3",
