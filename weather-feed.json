@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T05:13:32.661543+00:00",
+  "updatedAt": "2026-09-19T05:30:55.242876+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,10 +9,16 @@
       "humidity": "94"
     },
     "Bjelovar": {
-      "temp": "15.3",
-      "condition": "-",
-      "wind": "NW",
+      "temp": "15.4",
+      "condition": "lahor",
+      "wind": "E",
       "humidity": "99"
+    },
+    "Crikvenica": {
+      "temp": "18.4",
+      "condition": "lahor",
+      "wind": "E",
+      "humidity": "95"
     },
     "Dubrovnik": {
       "temp": "23.3",
@@ -26,14 +32,32 @@
       "wind": "E",
       "humidity": "68"
     },
+    "Gospić": {
+      "temp": "14.4",
+      "condition": "lahor",
+      "wind": "SW",
+      "humidity": "99"
+    },
+    "RC Gradište (kod Županje)": {
+      "temp": "15.9",
+      "condition": "lahor",
+      "wind": "W",
+      "humidity": "99"
+    },
+    "Knin": {
+      "temp": "16.4",
+      "condition": "lahor",
+      "wind": "SE",
+      "humidity": "99"
+    },
     "Križevci": {
       "temp": "15.1",
       "condition": "pretežno oblačno",
-      "wind": "SE",
+      "wind": "NE",
       "humidity": "96"
     },
     "Opatija": {
-      "temp": "19.3",
+      "temp": "19.2",
       "condition": "-",
       "wind": "-",
       "humidity": "87"
@@ -71,7 +95,7 @@
     "Slavonski Brod": {
       "temp": "17.5",
       "condition": "kiša",
-      "wind": "N",
+      "wind": "S",
       "humidity": "93"
     },
     "Split-aerodrom": {
@@ -89,7 +113,7 @@
     "Varaždin": {
       "temp": "14.3",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "SW",
       "humidity": "97"
     },
     "Zadar-aerodrom": {
@@ -143,17 +167,17 @@
   },
   "alerts": [
     "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno su mogući izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 50 %",
+    "Lokalno su mogući izraženi pljuskovi s grmljavinom. Vjerojatnost grmljavine > 70 %",
     "Yellow thunderstorm warning",
-    "Locally severe thundershowers are possible. Lightning risk > 50 %",
+    "Locally severe thundershowers are possible. Lightning risk > 70 %",
     "Narančasto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženiji pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom periodu. Vjerojatnost grmljavine > 70 %",
+    "Lokalno izraženi pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom vremenu, osobito na otocima južnog dijela i na opožarenim područjima. Vjerojatnost grmljavine > 70 %",
     "Orange thunderstorm warning",
-    "Locally severe thundershowers.Heavy rainfall is possible over a short period. Lightning risk > 70 %",
-    "Žuto upozorenje za grmljavinsku oluju",
-    "Lokalno izraženiji pljuskovi s grmljavinom. Vjerojatnost grmljavine > 70 %",
-    "Yellow thunderstorm warning",
-    "Locally severe thundershowers. Lightning risk > 70 %",
+    "Locally severe thundershowers. Heavy rainfall is possible over a short period, especially on southern islands and burned areas. Lightning risk > 70 %",
+    "Narančasto upozorenje za grmljavinsku oluju",
+    "Lokalno izraženi pljuskovi s grmljavinom. Moguća je veća količina oborine u kratkom vremenu, osobito na otocima. Vjerojatnost grmljavine > 70 %",
+    "Orange thunderstorm warning",
+    "Locally severe thundershowers. Heavy rainfall is possible over a short period, especially on islands. Lightning risk > 70 %",
     "Žuto upozorenje za vjetar",
     "Moguć je kratkotrajni vrlo jak sjeverozapadni vjetar i bura. Najjači udari vjetra 35-45 čvorova (65-85 km/h)",
     "Yellow wind warning",
