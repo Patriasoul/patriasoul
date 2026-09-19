@@ -1,15 +1,71 @@
 /* PatriaSoul — canonical portal navigation */
 (function(){'use strict';
 var G=[
-['Domovina','🇭🇷','/domovina.html',[['Hrvatska','/domovina.html'],['Gradovi','/gradovi.html'],['Krajevi i geografija','/krajevi-i-geografija.html',[['Krajevi','/krajevi-i-geografija.html'],['Priroda Hrvatske','/priroda.html'],['Veliki regionalni vodič','/regionalni-vodic.html',[['Zagorje i Prigorje','/zagorje-i-prigorje.html'],['Međimurje','/medimurje.html'],['Podravina i Bilogora','/podravina-i-bilogora.html'],['Lika i Gorski kotar','/lika-i-gorski-kotar.html'],['Slavonija i Baranja','/slavonija-i-baranja.html'],['Istra','/istra.html'],['Kvarner i Primorje','/kvarner-i-primorje.html'],['Dalmacija','/dalmacija.html'],['Posavina i Pokuplje','/posavina-i-pokuplje.html']]]]],['Hrvatska i dijaspora','/hrvatska-i-dijaspora.html',[['Pregled Hrvata u svijetu','/dijaspora-pregled.html'],['Korijeni i hrvatski identitet','/dijaspora-identitet.html'],['Hrvatski jezik i škole','/dijaspora-jezik-i-skole.html'],['Udruge, klubovi i zajednice','/dijaspora-udruge.html'],['Povratak korijenima','/dijaspora-povratak.html'],['Poduzetništvo i ulaganja','/dijaspora-poduzetnistvo.html'],['Povijest hrvatskog iseljavanja','/dijaspora-povijest-iseljavanja.html'],['Hrvati po državama i područjima','/dijaspora-podrucja.html',[['🇩🇪 Njemačka','/hrvati-u-njemackoj.html'],['🇦🇹 Austrija','/hrvati-u-austriji.html'],['🇨🇭 Švicarska','/hrvati-u-svicarskoj.html'],['🇮🇹 Italija','/hrvati-u-italiji.html'],['🇫🇷 Francuska','/dijaspora-francuska.html'],['🇮🇪 Irska','/dijaspora-irska.html'],['🇸🇪 Švedska','/dijaspora-svedska.html'],['🇺🇸 SAD','/hrvati-u-sad.html'],['🇨🇦 Kanada','/hrvati-u-kanadi.html'],['🇦🇷 Argentina','/hrvati-u-argentina.html'],['🇨🇱 Čile','/hrvati-u-cileu.html'],['🇦🇺 Australija','/hrvati-u-australiji.html'],['🇳🇿 Novi Zeland','/hrvati-u-novom-zelandu.html']]],['Obitelj i međugeneracijski prijenos identiteta','/dijaspora-obitelj.html'],['Mladi i treća generacija','/dijaspora-mladi.html'],['Dijaspora i Domovinski rat','/dijaspora-domovinski-rat.html'],['Zašto sam se vratio?','/zasto-sam-se-vratio.html'],['Urednička načela dijaspore','/urednicka-nacela-dijaspora.html']]],['Hrvatska stvara','/hrvatska-stvara.html',[['🧠 Hrvatska pamet','/hrvatska-stvara.html#hrvatska-pamet'],['🌱 Mladi na selu','/hrvatska-stvara.html#mladi-na-selu'],['🏭 Domaći brendovi','/hrvatska-stvara.html#domaci-brendovi'],['🛒 Kupujmo hrvatsko','/hrvatska-stvara.html#kupujmo-hrvatsko'],['👨‍👩‍👧 Obiteljski poslovi','/hrvatska-stvara.html#obiteljski-poslovi'],['🌍 Iz Hrvatske u svijet','/hrvatska-stvara.html#iz-hrvatske-u-svijet'],['🏆 Priče o uspjehu','/hrvatska-stvara.html#price-o-uspjehu'],['💡 Ideje koje mijenjaju Hrvatsku','/hrvatska-stvara.html#ideje']]],['Vijesti','/vijesti.html'],['Vrijeme','/vrijeme.html']]],
-['Branitelji','🛡️','/branitelji.html',[['Branitelji','/branitelji.html'],['Domovinski rat','/domovinski-rat.html',[['Vukovar','/vukovar.html'],['Operacije i bojišta','/operacije.html']]],['Postrojbe','/postrojbe.html'],['Svjedočanstva','/svjedocanstva.html',[['Heroji iz sjene','/heroji-iz-sjene.html'],['Vojne postrojbe i njihovi putevi','/vojne-postrojbe-i-njihovi-putevi.html'],['Žene u Domovinskom ratu','/zene-u-domovinskom-ratu.html'],['Priče o preživljavanju i logorima','/price-o-prezivljavanju-i-logorima.html'],['Liječnici i sanitetsko osoblje','/lijecnici-i-sanitetsko-osoblje.html'],['Dijaspora koja je stala u obranu','/dijaspora-koja-je-stala-u-obranu.html']]],['Odlikovanja i priznanja','/odlikovanja-i-priznanja.html'],['Spomenici i memorijali','/spomenici.html']]],
-['Povijest','📜','/povijest.html',[['Povijest Hrvatske','/hrvatska-povijest.html'],['Antika i dolazak Hrvata','/antika-i-dolazak-hrvata.html'],['Knezovi i vladari','/knezovi-i-vladari.html'],['Hrvatski kraljevi','/hrvatski-kraljevi.html'],['Srednji vijek','/srednji-vijek.html'],['Habsburško razdoblje','/habsbursko-razdoblje.html'],['Hrvatski narodni preporod','/hrvatski-narodni-preporod.html'],['20. stoljeće','/20-stoljece.html'],['Stvaranje moderne Hrvatske','/stvaranje-moderne-hrvatske.html'],['Bitke i vojna povijest','/bitke-i-vojna-povijest.html'],['Dvorci, utvrde i legende','/dvorci-utvrde-i-legende.html'],['Povijesne osobe','/povijesne-osobe.html']]],
-['Baština','🏛️','/bastina.html',[['Baština','/bastina.html'],['Sakralna baština','/sakralna-bastina.html'],['Glagoljica','/glagoljica.html'],['Tradicija i običaji','/tradicija-i-obicaji.html'],['Narodne nošnje','/narodne-nosnje.html'],['Gastronomija','/gastronomija.html'],['Glazba','/glazba.html'],['Govori i dijalekti','/govori-i-dijalekti.html']]],
-['Vjera','✝️','/vjera.html',[['Vjera i duhovna baština','/vjera.html'],['Evanđelje dana','/evandelje.html'],['Liturgija i kalendar','/liturgija.html'],['Biblija i tumačenja','/biblija.html'],['Molitve','/molitve.html'],['Krunica','/krunica.html'],['Svetci i blaženici','/svetci.html'],['Svetac dana','/svetac-dana.html'],['Blagdani i običaji','/blagdani.html'],['Svetišta i hodočašća','/svetista.html'],['Sakramenti','/sakramenti.html'],['Obitelj i vjera','/obitelj-vjera.html'],['Mladi i vjera','/mladi-vjera.html'],['Duhovnost','/duhovnost.html'],['Svjedočanstva vjere','/vjera-svjedocanstva.html'],['Katoličke vijesti','/katolicke-vijesti.html']]],
-['Mediji','▣','/video.html',[['Video','/video.html'],['Galerija','/galerija.html'],['Vijesti','/vijesti.html']]],
-['Igra','🎮','/brani-svoj-grad.html',[['Brani svoj grad','/brani-svoj-grad.html'],['Kviz','/quiz.html'],['Duel','/duel.html'],['Rang-lista','/rang-lista.html'],['Profil','/profil.html']]],
-['O nama','','/o-nama.html',[]],['Kontakt','','/kontakt.html',[]]
-];
+['Domovina','🇭🇷','/domovina.html',[
+ ['Hrvatska','/domovina.html'],
+ ['Gradovi','/gradovi.html'],
+ ['Krajevi i geografija','/krajevi-i-geografija.html'],
+ ['Priroda','/priroda.html'],
+ ['Hrvatska stvara','/hrvatska-stvara.html'],
+ ['Dijaspora','/hrvatska-i-dijaspora.html']
+]],
+['Članci i priče','📖','/domovina.html',[
+ ['Istinite priče','/svjedocanstva.html'],
+ ['Povijesne priče','/povijest.html'],
+ ['Ljudi','/povijesne-osobe.html'],
+ ['Gradovi i krajevi','/gradovi.html'],
+ ['Kultura i baština','/bastina.html'],
+ ['Vjera i duhovnost','/vjera.html'],
+ ['Mitovi i legende','/dvorci-utvrde-i-legende.html']
+]],
+['Branitelji','🛡️','/branitelji.html',[
+ ['Domovinski rat','/domovinski-rat.html'],
+ ['Svjedočanstva','/svjedocanstva.html'],
+ ['Postrojbe','/postrojbe.html'],
+ ['Operacije i bojišta','/operacije.html'],
+ ['Spomenici i memorijali','/spomenici.html']
+]],
+['Povijest','📜','/povijest.html',[
+ ['Povijest Hrvatske','/hrvatska-povijest.html'],
+ ['Srednji vijek','/srednji-vijek.html'],
+ ['Hrvatski narodni preporod','/hrvatski-narodni-preporod.html'],
+ ['20. stoljeće','/20-stoljece.html'],
+ ['Stvaranje moderne Hrvatske','/stvaranje-moderne-hrvatske.html'],
+ ['Bitke i vojna povijest','/bitke-i-vojna-povijest.html'],
+ ['Povijesne osobe','/povijesne-osobe.html']
+]],
+['Baština','🏛️','/bastina.html',[
+ ['Kultura i baština','/bastina.html'],
+ ['Sakralna baština','/sakralna-bastina.html'],
+ ['Glagoljica','/glagoljica.html'],
+ ['Tradicija i običaji','/tradicija-i-obicaji.html'],
+ ['Narodne nošnje','/narodne-nosnje.html'],
+ ['Gastronomija','/gastronomija.html'],
+ ['Glazba','/glazba.html'],
+ ['Govori i dijalekti','/govori-i-dijalekti.html']
+]],
+['Vjera','✝️','/vjera.html',[
+ ['Vjera i duhovna baština','/vjera.html'],
+ ['Evanđelje dana','/evandelje.html'],
+ ['Svetci i blaženici','/svetci.html'],
+ ['Blagdani i običaji','/blagdani.html'],
+ ['Svetišta i hodočašća','/svetista.html'],
+ ['Svjedočanstva vjere','/vjera-svjedocanstva.html']
+]],
+['Hrvatska danas','📰','/hrvatska-danas.html',[
+ ['Vijesti','/vijesti.html'],
+ ['Hrvatska stvara','/hrvatska-stvara.html'],
+ ['Hrvatska i dijaspora','/hrvatska-i-dijaspora.html'],
+ ['Vrijeme','/vrijeme.html']
+]],
+['Mediji','▣','/video.html',[
+ ['Video','/video.html'],
+ ['Galerija','/galerija.html'],
+ ['Vijesti','/vijesti.html']
+]],
+['O nama','','/o-nama.html',[]],
+['Kontakt','','/kontakt.html',[]]
+]
 var logo='/images/file_0000000082ec81f4a6fc17bdbd959622_114540.png';
 function path(){return location.pathname.replace(/\/+$/,'')||'/'}
 function act(h){return (h.replace(/\/+$/,'')||'/')===path()}
