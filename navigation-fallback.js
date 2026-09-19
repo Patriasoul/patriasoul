@@ -1,22 +1,23 @@
 /* PatriaSoul — navigation fallback
- * Keeps the main navigation visible even if the canonical navigation script is
- * delayed or blocked by a stale cache. The canonical site-navigation.js remains
- * the source of truth and may replace this markup when it loads.
+ * Canonical fallback: keeps the current portal structure visible even when
+ * site-navigation.js is delayed or blocked by a stale cache.
  */
 (function () {
   'use strict';
 
   var links = [
     ['Početna', '/index.html'],
-    ['Domovina', '/domovina.html'],
-    ['Branitelji', '/branitelji.html'],
-    ['Povijest', '/povijest.html'],
-    ['Baština', '/bastina.html'],
-    ['Vjera', '/vjera.html'],
-    ['Mediji', '/video.html'],
-    ['Igra', '/brani-svoj-grad.html'],
-    ['O nama', '/o-nama.html'],
-    ['Kontakt', '/kontakt.html']
+    ['Članci i priče', '/clanci-i-price.html'],
+    ['Istinite priče', '/istinite-price.html'],
+    ['Čuvari nasljeđa', '/cuvari-nasljeda.html'],
+    ['Pjesme i stihovi', '/pjesme-i-stihovi.html'],
+    ['Galerija / Mediji', '/galerija-mediji.html'],
+    ['Vaše priče', '/vase-price.html'],
+    ['Zajednica', '/zajednica.html'],
+    ['Pretraži', '/pretrazi.html'],
+    ['Newsletter', '/newsletter.html'],
+    ['Igraj kviz', '/quiz.html'],
+    ['Brani svoj grad', '/brani-svoj-grad.html']
   ];
 
   function build() {
