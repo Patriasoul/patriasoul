@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T22:30:45.133614+00:00",
+  "updatedAt": "2026-09-20T22:49:14.108019+00:00",
   "source": "DHMZ",
   "stations": {
     "Bjelovar": {
@@ -37,6 +37,12 @@
       "condition": "lahor",
       "wind": "E",
       "humidity": "95"
+    },
+    "Križevci": {
+      "temp": "15.8",
+      "condition": "lahor",
+      "wind": "NW",
+      "humidity": "99"
     },
     "Opatija": {
       "temp": "21.7",
