@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T17:12:55.273575+00:00",
+  "updatedAt": "2026-09-21T17:30:54.513615+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -9,22 +9,22 @@
       "humidity": "51"
     },
     "Bjelovar": {
-      "temp": "17.6",
+      "temp": "17.4",
       "condition": "lahor",
-      "wind": "W",
-      "humidity": "60"
+      "wind": "NW",
+      "humidity": "61"
     },
     "Crikvenica": {
-      "temp": "23.1",
+      "temp": "22.5",
       "condition": "povjetarac",
       "wind": "NE",
       "humidity": "40"
     },
     "Dubrovnik": {
-      "temp": "26.6",
-      "condition": "povjetarac",
+      "temp": "26.7",
+      "condition": "slab vjetar",
       "wind": "N",
-      "humidity": "37"
+      "humidity": "36"
     },
     "Dubrovnik-aerodrom": {
       "temp": "25.8",
@@ -33,40 +33,40 @@
       "humidity": "37"
     },
     "Gospić": {
-      "temp": "15.4",
+      "temp": "15.0",
       "condition": "lahor",
-      "wind": "N",
-      "humidity": "75"
+      "wind": "NW",
+      "humidity": "76"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "18.0",
+      "temp": "17.5",
       "condition": "povjetarac",
       "wind": "NW",
-      "humidity": "41"
+      "humidity": "44"
     },
     "Knin": {
-      "temp": "21.0",
+      "temp": "20.9",
       "condition": "slab vjetar",
       "wind": "NW",
-      "humidity": "53"
+      "humidity": "51"
     },
     "Križevci": {
-      "temp": "17.4",
+      "temp": "16.3",
       "condition": "lahor",
-      "wind": "W",
-      "humidity": "57"
+      "wind": "E",
+      "humidity": "64"
     },
     "Opatija": {
-      "temp": "21.8",
+      "temp": "21.7",
       "condition": "-",
       "wind": "-",
-      "humidity": "53"
+      "humidity": "51"
     },
     "RC Osijek-Čepin": {
-      "temp": "17.1",
+      "temp": "16.3",
       "condition": "povjetarac",
       "wind": "NW",
-      "humidity": "40"
+      "humidity": "42"
     },
     "Pula-aerodrom": {
       "temp": "21.4",
@@ -81,10 +81,10 @@
       "humidity": "49"
     },
     "Slavonski Brod": {
-      "temp": "18.2",
+      "temp": "17.5",
       "condition": "lahor",
-      "wind": "SW",
-      "humidity": "53"
+      "wind": "NW",
+      "humidity": "54"
     },
     "Split-aerodrom": {
       "temp": "25.0",
@@ -93,16 +93,16 @@
       "humidity": "43"
     },
     "Šibenik": {
-      "temp": "23.7",
+      "temp": "23.6",
       "condition": "-",
       "wind": "-",
-      "humidity": "44"
+      "humidity": "43"
     },
     "Varaždin": {
-      "temp": "16.8",
+      "temp": "16.2",
       "condition": "lahor",
-      "wind": "SE",
-      "humidity": "56"
+      "wind": "E",
+      "humidity": "53"
     },
     "Zadar-aerodrom": {
       "temp": "22.5",
