@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T17:30:54.513615+00:00",
+  "updatedAt": "2026-09-21T17:49:17.705734+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -97,12 +97,6 @@
       "condition": "-",
       "wind": "-",
       "humidity": "43"
-    },
-    "Varaždin": {
-      "temp": "16.2",
-      "condition": "lahor",
-      "wind": "E",
-      "humidity": "53"
     },
     "Zadar-aerodrom": {
       "temp": "22.5",
