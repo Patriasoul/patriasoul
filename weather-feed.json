@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T09:16:37.165947+00:00",
+  "updatedAt": "2026-09-21T09:33:45.255359+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -15,7 +15,7 @@
       "humidity": "52"
     },
     "Crikvenica": {
-      "temp": "23.3",
+      "temp": "23.6",
       "condition": "povjetarac",
       "wind": "NE",
       "humidity": "47"
@@ -69,10 +69,10 @@
       "humidity": "70"
     },
     "Opatija": {
-      "temp": "22.7",
+      "temp": "23.0",
       "condition": "-",
       "wind": "-",
-      "humidity": "58"
+      "humidity": "57"
     },
     "RC Osijek-Čepin": {
       "temp": "20.0",
@@ -125,7 +125,7 @@
     "Slavonski Brod": {
       "temp": "20.2",
       "condition": "pretežno oblačno",
-      "wind": "NE",
+      "wind": "N",
       "humidity": "37"
     },
     "Split-Marjan": {
@@ -211,7 +211,7 @@
     "Žuto upozorenje za vjetar",
     "Prijepodne te ponovno navečer podno Velebita mjestimice olujni udari bure. Najjači udari vjetra > 65 km/h",
     "Yellow wind warning",
-    "During the forenoon and again in the evening in the Velebit foothills locally gale force gusts of bura (NE wind). Maximum gust speed > 65 km/h",
+    "Locally gale force gusts of bura (NE wind). Maximum gust speed > 65 km/h",
     "Žuto upozorenje za vjetar",
     "Lokalno olujni udari bure. Najjači udari vjetra > 65 km/h",
     "Yellow wind warning",
