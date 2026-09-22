@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T08:16:34.008824+00:00",
+  "updatedAt": "2026-09-22T08:34:33.164682+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -14,10 +14,16 @@
       "wind": "N",
       "humidity": "74"
     },
+    "Crikvenica": {
+      "temp": "22.2",
+      "condition": "povjetarac",
+      "wind": "N",
+      "humidity": "24"
+    },
     "Dubrovnik": {
       "temp": "20.8",
-      "condition": "vedro, vjetrovito",
-      "wind": "NE",
+      "condition": "vedro",
+      "wind": "N",
       "humidity": "24"
     },
     "Dubrovnik-aerodrom": {
@@ -29,7 +35,7 @@
     "Gospić": {
       "temp": "14.0",
       "condition": "vedro",
-      "wind": "NW",
+      "wind": "N",
       "humidity": "52"
     },
     "RC Gradište (kod Županje)": {
@@ -47,7 +53,7 @@
     "Knin": {
       "temp": "19.1",
       "condition": "vedro",
-      "wind": "NE",
+      "wind": "N",
       "humidity": "39"
     },
     "Križevci": {
@@ -63,10 +69,10 @@
       "humidity": "22"
     },
     "Opatija": {
-      "temp": "20.7",
+      "temp": "20.9",
       "condition": "-",
       "wind": "-",
-      "humidity": "27"
+      "humidity": "29"
     },
     "RC Osijek-Čepin": {
       "temp": "14.6",
@@ -85,6 +91,12 @@
       "condition": "umjereno oblačno, vjetrovito",
       "wind": "E",
       "humidity": "29"
+    },
+    "Rijeka": {
+      "temp": "21.1",
+      "condition": "pretežno vedro",
+      "wind": "E",
+      "humidity": "33"
     },
     "Rijeka-aerodrom": {
       "temp": "20.6",
@@ -131,7 +143,7 @@
     "Varaždin": {
       "temp": "14.1",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "NE",
       "humidity": "60"
     },
     "Zadar": {
@@ -169,12 +181,6 @@
       "condition": "pretežno oblačno",
       "wind": "E",
       "humidity": "81"
-    },
-    "Rijeka": {
-      "temp": "20.6",
-      "condition": "vedro",
-      "wind": "NW",
-      "humidity": "26"
     },
     "Split": {
       "temp": "21.3",
