@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T09:15:21.533121+00:00",
+  "updatedAt": "2026-09-22T09:31:52.558316+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
@@ -11,13 +11,19 @@
     "Bjelovar": {
       "temp": "12.8",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "NW",
       "humidity": "78"
+    },
+    "Crikvenica": {
+      "temp": "22.7",
+      "condition": "slab vjetar",
+      "wind": "N",
+      "humidity": "24"
     },
     "Dubrovnik": {
       "temp": "21.9",
       "condition": "vedro",
-      "wind": "NE",
+      "wind": "N",
       "humidity": "23"
     },
     "Dubrovnik-aerodrom": {
@@ -29,7 +35,7 @@
     "Gospić": {
       "temp": "15.6",
       "condition": "pretežno vedro",
-      "wind": "W",
+      "wind": "NW",
       "humidity": "51"
     },
     "RC Gradište (kod Županje)": {
@@ -47,13 +53,13 @@
     "Knin": {
       "temp": "20.8",
       "condition": "vedro",
-      "wind": "N",
+      "wind": "NE",
       "humidity": "35"
     },
     "Križevci": {
       "temp": "14.2",
       "condition": "pretežno oblačno",
-      "wind": "N",
+      "wind": "NE",
       "humidity": "60"
     },
     "Makarska": {
@@ -63,10 +69,10 @@
       "humidity": "25"
     },
     "Opatija": {
-      "temp": "21.9",
+      "temp": "22.1",
       "condition": "-",
       "wind": "-",
-      "humidity": "27"
+      "humidity": "31"
     },
     "RC Osijek-Čepin": {
       "temp": "17.1",
@@ -91,6 +97,12 @@
       "condition": "pretežno vedro, vjetrovito",
       "wind": "NE",
       "humidity": "27"
+    },
+    "Rijeka": {
+      "temp": "22.2",
+      "condition": "pretežno vedro",
+      "wind": "NE",
+      "humidity": "32"
     },
     "Rijeka-aerodrom": {
       "temp": "21.5",
@@ -137,7 +149,7 @@
     "Varaždin": {
       "temp": "14.9",
       "condition": "pretežno oblačno",
-      "wind": "E",
+      "wind": "NE",
       "humidity": "58"
     },
     "Zadar": {
@@ -161,7 +173,7 @@
     "Zagreb-Maksimir": {
       "temp": "15.0",
       "condition": "pretežno oblačno",
-      "wind": "E",
+      "wind": "NE",
       "humidity": "59"
     },
     "Zagreb-aerodrom": {
@@ -175,12 +187,6 @@
       "condition": "pretežno oblačno",
       "wind": "E",
       "humidity": "66"
-    },
-    "Rijeka": {
-      "temp": "21.5",
-      "condition": "vedro",
-      "wind": "N",
-      "humidity": "27"
     },
     "Split": {
       "temp": "22.6",
@@ -203,22 +209,6 @@
   },
   "alerts": [
     "Žuto upozorenje za vjetar",
-    "Lokalno olujni udari bure. Najjači udari vjetra > 65 km/h",
-    "Yellow wind warning",
-    "Locally gale force gusts of bura (NE wind). Maximum gust speed > 65 km/h",
-    "Žuto upozorenje za vjetar",
-    "Lokalno olujni udari bure. Najjači udari vjetra > 65 km/h",
-    "Yellow wind warning",
-    "Locally gale force gusts of bura (NE wind). Maximum gust speed > 65 km/h",
-    "Žuto upozorenje za vjetar",
-    "Lokalno olujni udari bure. Najjači udari vjetra > 65 km/h",
-    "Yellow wind warning",
-    "Locally gale force gusts of bura (NE wind). Maximum gust speed > 65 km/h",
-    "Žuto upozorenje za vjetar",
-    "Lokalno olujni udari bure. Najjači udari vjetra > 65 km/h",
-    "Yellow wind warning",
-    "Locally gale force gusts of bura (NE wind). Maximum gust speed > 65 km/h",
-    "Žuto upozorenje za vjetar",
     "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
     "Yellow wind warning",
     "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
@@ -231,6 +221,16 @@
     "Yellow wind warning",
     "Strong, locally near gale NE wind. Maximum wind gusts 35-60 knot (65-110 km/h)",
     "Žuto upozorenje za vjetar",
-    "Jaka, ponegdje i vrlo jaka bura. Najjači udari vjetra 35-55 čvorova (65-100 km/h)"
+    "Jaka, ponegdje i vrlo jaka bura. Najjači udari vjetra 35-55 čvorova (65-100 km/h)",
+    "Yellow wind warning",
+    "Strong, locally near gale NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Jaka, ponegdje i vrlo jaka bura. Najjači udari vjetra 35-55 čvorova (65-100 km/h)",
+    "Yellow wind warning",
+    "Strong, locally near gale NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)",
+    "Žuto upozorenje za vjetar",
+    "Jaka, ponegdje i vrlo jaka bura. Najjači udari vjetra 35-55 čvorova (65-100 km/h)",
+    "Yellow wind warning",
+    "Strong, locally near gale NE wind. Maximum wind gusts 35-55 knots (65-100 km/h)"
   ]
 }
