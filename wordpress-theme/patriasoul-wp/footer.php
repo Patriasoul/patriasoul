@@ -1,1 +1,11 @@
-<footer class="ps-footer"><div class="ps-wrap"><div class="ps-footer-grid"><div><h3>PATRIA<span>SOUL</span></h3><p>Hrvatska. Povijest. Znanje. Identitet.</p><p>Čuvamo ono što vrijedi zapamtiti.</p></div><div><h4>Domovina</h4><div class="ps-links"><a href="/domovinski-rat/">Domovinski rat</a><a href="/branitelji/">Branitelji</a><a href="/spomenici/">Sjećanje</a><a href="/postrojbe/">Postrojbe</a></div></div><div><h4>Istraži</h4><div class="ps-links"><a href="/hrvatska/">Hrvatska</a><a href="/gradovi/">Gradovi</a><a href="/krajevi-i-geografija/">Krajevi i geografija</a><a href="/povijest/">Povijest</a></div></div><div><h4>Vjera</h4><div class="ps-links"><a href="/evandelje/">Evanđelje</a><a href="/molitve/">Molitve</a><a href="/svetci/">Svetci</a><a href="/blagdani/">Blagdani</a></div></div></div><div class="ps-bottom">© <?php echo date('Y'); ?> PatriaSoul <span>Hrvatska. Povijest. Znanje. Identitet.</span></div></div></footer><?php wp_footer(); ?></body></html>
+<footer class="ps-footer">
+<div class="ps-wrap">
+<div class="ps-footer-grid">
+<div class="ps-footer-brand"><h3>PATRIA<span>SOUL</span></h3><p>Vjera. Obitelj. Domovina. Nasljeđe.</p><p>Digitalni prostor za priče, znanje, vjeru i hrvatsko nasljeđe.</p></div>
+<div><h4>Domovina</h4><div class="ps-links"><a href="<?php echo esc_url(home_url('/domovinski-rat/')); ?>">Domovinski rat</a><a href="<?php echo esc_url(home_url('/branitelji/')); ?>">Branitelji</a><a href="<?php echo esc_url(home_url('/povijest/')); ?>">Povijest</a><a href="<?php echo esc_url(home_url('/bastina/')); ?>">Baština</a></div></div>
+<div><h4>Vjera</h4><div class="ps-links"><a href="<?php echo esc_url(home_url('/vjera/')); ?>">Vjera</a><a href="<?php echo esc_url(home_url('/evandelje/')); ?>">Evanđelje</a><a href="<?php echo esc_url(home_url('/molitve/')); ?>">Molitve</a><a href="<?php echo esc_url(home_url('/svetci/')); ?>">Svetci</a></div></div>
+<div><h4>PatriaSoul</h4><div class="ps-links"><a href="<?php echo esc_url(home_url('/o-nama/')); ?>">O nama</a><a href="<?php echo esc_url(home_url('/kontakt/')); ?>">Kontakt</a><a href="<?php echo esc_url(home_url('/quiz/')); ?>">Hrvatski kviz</a><a href="<?php echo esc_url(home_url('/vijesti/')); ?>">Vijesti</a></div></div>
+</div>
+<div class="ps-bottom"><span>© <?php echo esc_html(date('Y')); ?> PatriaSoul</span><span>Vjera. Obitelj. Domovina. Nasljeđe.</span></div>
+</div>
+</footer><?php wp_footer(); ?></body></html>
