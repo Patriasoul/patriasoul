@@ -10,8 +10,7 @@ function ps_portal_author_description() {
 }
 
 function ps_portal_author_box($author_id = 0) {
-    $author_id = $author_id ? absint($author_id) : get_queried_object_id();
-    if (!$author_id || !get_user_by('id', $author_id)) $author_id = get_current_user_id();
+    $author_id = $author_id ? absint($author_id) : get_current_user_id();
     ?>
     <aside class="ps-author-box">
         <div class="ps-author-box__eyebrow">Autor</div>
