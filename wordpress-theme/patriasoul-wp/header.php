@@ -8,10 +8,10 @@ if (has_nav_menu('primary')) {
     wp_nav_menu(array('theme_location'=>'primary','container'=>false,'menu_class'=>'ps-menu-list','fallback_cb'=>false));
 } else {
     $menus = array(
-        'Domovina'=>array('/domovina/','Domovinski rat','/domovinski-rat/','Branitelji','/branitelji/'),
+        'Domovina'=>array('/domovina/','Domovinski rat','/domovinski-rat/','Branitelji','/branitelji/','Sjećanje','/category/sjecanje/'),
         'Branitelji'=>array('/branitelji/','Svjedočanstva','/category/svjedocanstva/','Životopisi','/category/zivotopisi/','Udruge i inicijative','/category/udruge-i-inicijative/','Obljetnice i komemoracije','/category/obljetnice-i-komemoracije/'),
         'Povijest'=>array('/povijest/'),
-        'Baština'=>array('/bastina/','Povijesna baština','/category/povijesna-bastina/','Običaji i tradicija','/category/obicaji-i-tradicija/','Jezik i književnost','/category/jezik-i-knjizevnost/','Sakralna i kulturna baština','/category/sakralna-i-kulturna-bastina/','Obnova i zaštita','/category/obnova-i-zastita/'),
+        'Baština'=>array('/bastina/','Čuvajmo nasljeđe','/category/cuvajmo-nasljedje/','Povijesna baština','/category/povijesna-bastina/','Običaji i tradicija','/category/obicaji-i-tradicija/','Jezik i književnost','/category/jezik-i-knjizevnost/','Sakralna i kulturna baština','/category/sakralna-i-kulturna-bastina/','Obnova i zaštita','/category/obnova-i-zastita/'),
         'Vjera'=>array('/vjera/','Evanđelje','/evandelje/','Molitve','/molitve/','Svetci','/svetci/','Blagdani','/blagdani/'),
         'Mediji'=>array('/mediji/','Vijesti','/vijesti/','Aktualnosti','/aktualnosti/','Video','/video/','Galerija','/galerija/'),
         'Igra'=>array('/igra/','Hrvatski kviz','/quiz/','Brani svoj grad','/brani-svoj-grad/','Dnevni kviz','/dnevni-kviz/','Izazovi','/izazovi/')
