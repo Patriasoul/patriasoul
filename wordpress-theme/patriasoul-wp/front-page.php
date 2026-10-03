@@ -50,7 +50,7 @@ $featured_ids = $featured->posts ? wp_list_pluck($featured->posts, 'ID') : array
 <section class="ps-portal-section ps-portal-section--split">
     <div class="ps-wrap ps-portal-split">
         <?php ps_portal_section('Najčitanije', ps_portal_popular_query(5), 'popular', 'ps-section-popular'); ?>
-        <?php ps_portal_section('Možda ste propustili', ps_portal_missed_query(0, 5), 'compact', 'ps-section-missed'); ?>
+        <?php ps_portal_section('Možda ste propustili', ps_portal_missed_home_query(5, $featured_ids), 'compact', 'ps-section-missed'); ?>
     </div>
 </section>
 
