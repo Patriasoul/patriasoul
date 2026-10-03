@@ -8,10 +8,10 @@ if (!defined('ABSPATH')) exit;
 
 function ps_portal_section_map() {
     return array(
-        'domovina' => array('title'=>'Domovina','intro'=>'Domovinski rat, branitelji, sjećanje i hrvatska svakodnevica.','children'=>array('domovinski-rat','branitelji')),
+        'domovina' => array('title'=>'Domovina','intro'=>'Domovinski rat, branitelji, sjećanje i hrvatska svakodnevica.','children'=>array('domovinski-rat','branitelji','sjecanje')),
         'branitelji' => array('title'=>'Branitelji','intro'=>'Svjedočanstva, životopisi, udruge, inicijative i obilježavanja.','children'=>array('svjedocanstva','zivotopisi','udruge-i-inicijative','obljetnice-i-komemoracije')),
         'povijest' => array('title'=>'Povijest','intro'=>'Razdoblja, događaji, ljudi i tragovi hrvatske povijesti.','children'=>array()),
-        'bastina' => array('title'=>'Baština','intro'=>'Povijesna baština, običaji, jezik, kultura i sakralna baština.','children'=>array('povijesna-bastina','obicaji-i-tradicija','jezik-i-knjizevnost','sakralna-i-kulturna-bastina','obnova-i-zastita')),
+        'bastina' => array('title'=>'Baština','intro'=>'Povijesna baština, običaji, jezik, kultura i sakralna baština.','children'=>array('cuvajmo-nasljedje','cuvajmo-nasljede','bastina','povijesna-bastina','obicaji-i-tradicija','jezik-i-knjizevnost','sakralna-i-kulturna-bastina','obnova-i-zastita')),
         'vjera' => array('title'=>'Vjera','intro'=>'Evanđelje, molitve, svetci, blagdani i duhovni sadržaj.','children'=>array('evandelje','molitve','svetci','blagdani')),
         'mediji' => array('title'=>'Mediji','intro'=>'Vijesti, video, galerija i multimedijski sadržaj PatriaSoula.','children'=>array('vijesti','aktualnosti','video','galerija')),
         'igra' => array('title'=>'Igra','intro'=>'Kvizovi, izazovi i sadržaj kroz koji učimo i pamtimo.','children'=>array('quiz','brani-svoj-grad','dnevni-kviz','izazovi')),
