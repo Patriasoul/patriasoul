@@ -37,8 +37,22 @@ function ps_portal_section_query($slug, $count = 5, $exclude = array()) {
     $config = ps_portal_page_config($slug);
     $slugs = $config && !empty($config['children']) ? $config['children'] : array($slug);
     $ids = ps_portal_category_ids($slugs);
+
+    if (!$ids && $slug === 'domovina') {
+        $ids = ps_portal_category_ids(array('domovinski-rat','branitelji','sjecanje'));
+    }
+    if (!$ids && $slug === 'bastina') {
+        $ids = ps_portal_category_ids(array('cuvajmo-nasljedje','cuvajmo-nasljede','bastina'));
+    }
     if (!$ids) return new WP_Query(array('post__in'=>array(0)));
-    return ps_portal_get_posts(array('posts_per_page'=>absint($count),'category__in'=>$ids,'post__not_in'=>array_map('absint',(array)$exclude),'orderby'=>'date','order'=>'DESC));
+
+    return ps_portal_get_posts(array(
+        'posts_per_page'=>absint($count),
+        'category__in'=>$ids,
+        'post__not_in'=>array_map('absint',(array)$exclude),
+        'orderby'=>'date',
+        'order'=>'DESC'
+    ));
 }
 
 function ps_portal_feed_config() {
