@@ -23,6 +23,18 @@ function ps_portal_latest_query($count = 6, $exclude = array()) {
     ));
 }
 
+function ps_portal_featured_category_query($category_id, $count = 4, $exclude = array()) {
+    $sticky = get_option('sticky_posts', array());
+    $base = array('posts_per_page'=>absint($count),'category__in'=>array(absint($category_id)),'post__not_in'=>array_map('absint',(array)$exclude),'orderby'=>'date','order'=>'DESC');
+    if ($sticky) $base['post__in'] = array_map('absint',$sticky);
+    $q = ps_portal_get_posts($base);
+    if (!$q->have_posts()) {
+        unset($base['post__in']);
+        $q = ps_portal_get_posts($base);
+    }
+    return $q;
+}
+
 function ps_portal_featured_query($count = 5, $exclude = array()) {
     $sticky = get_option('sticky_posts', array());
     if ($sticky) {
@@ -45,7 +57,8 @@ function ps_portal_popular_query($count = 5, $exclude = array()) {
         'orderby' => 'meta_value_num',
         'order' => 'DESC',
     ));
-    return $query;
+    if ($query->have_posts()) return $query;
+    return ps_portal_latest_query($count, $exclude);
 }
 
 function ps_portal_related_query($post_id, $count = 4) {
@@ -67,7 +80,13 @@ function ps_portal_missed_query($post_id = 0, $count = 5) {
         $related = ps_portal_related_query($post_id, $count + 2);
         if ($related->have_posts()) return $related;
     }
-    return ps_portal_latest_query($count, $exclude);
+    return ps_portal_missed_home_query($count, $exclude);
+}
+
+function ps_portal_missed_home_query($count = 5, $exclude = array()) {
+    $date = gmdate('Y-m-d H:i:s', strtotime('-21 days'));
+    $q = ps_portal_get_posts(array('posts_per_page'=>absint($count),'post__not_in'=>array_map('absint',(array)$exclude),'date_query'=>array(array('before'=>$date)),'orderby'=>'date','order'=>'DESC));
+    return $q->have_posts() ? $q : ps_portal_latest_query($count, $exclude);
 }
 
 function ps_portal_track_views() {
