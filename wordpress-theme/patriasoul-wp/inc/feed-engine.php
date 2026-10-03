@@ -74,10 +74,12 @@ function ps_portal_related_query($post_id, $count = 4) {
     ));
 }
 
-function ps_portal_missed_query($post_id = 0, $count = 5) {
-    $exclude = $post_id ? array($post_id) : array();
+function ps_portal_missed_query($post_id = 0, $count = 5, $extra_exclude = array()) {
+    $exclude = array_merge($post_id ? array($post_id) : array(), array_map('absint', (array) $extra_exclude));
     if ($post_id) {
         $related = ps_portal_related_query($post_id, $count + 2);
+        $related_posts = $related->posts ? wp_list_pluck($related->posts, 'ID') : array();
+        $related->posts = array_slice($related->posts, 0, absint($count));
         if ($related->have_posts()) return $related;
     }
     return ps_portal_missed_home_query($count, $exclude);
