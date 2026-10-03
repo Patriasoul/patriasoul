@@ -102,3 +102,27 @@ function ps_portal_section($title, $query, $variant = 'standard', $class = '') {
     <?php
     wp_reset_postdata();
 }
+
+/**
+ * Additional automatic portal feeds used by the homepage.
+ */
+function ps_portal_focus_query($count = 4, $exclude = array()) {
+    return ps_portal_featured_query($count, $exclude);
+}
+
+function ps_portal_named_category_query($slugs, $count = 4, $exclude = array()) {
+    $ids = ps_portal_category_ids((array) $slugs);
+    if (!$ids) return new WP_Query(array('post__in'=>array(0)));
+    return ps_portal_get_posts(array(
+        'posts_per_page' => absint($count),
+        'category__in' => $ids,
+        'post__not_in' => array_map('absint', (array) $exclude),
+        'orderby' => 'date',
+        'order' => 'DESC',
+    ));
+}
+
+function ps_portal_category_exists($slug) {
+    $cat = get_category_by_slug(sanitize_title($slug));
+    return $cat && !is_wp_error($cat);
+}
