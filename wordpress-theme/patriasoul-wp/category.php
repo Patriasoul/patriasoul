@@ -4,7 +4,7 @@ $cat = get_queried_object();
 $featured = ps_portal_featured_category_query($cat->term_id, 4);
 $featured_ids = $featured->posts ? wp_list_pluck($featured->posts, 'ID') : array();
 $subcats = get_categories(array('parent'=>$cat->term_id,'hide_empty'=>true));
-$latest_args = array('category__in'=>array($cat->term_id),'posts_per_page'=>9,'post__not_in'=>$featured_ids,'orderby'=>'date','order'=>'DESC');
+$latest_args = array('category__in'=>array($cat->term_id),'posts_per_page'=>9,'paged'=>max(1,get_query_var('paged')),'post__not_in'=>$featured_ids,'orderby'=>'date','order'=>'DESC');
 $latest = ps_portal_get_posts($latest_args);
 ?>
 <main class="ps-archive-wrap">
@@ -55,7 +55,7 @@ $latest = ps_portal_get_posts($latest_args);
     <div class="ps-archive-grid">
         <?php while($latest->have_posts()):$latest->the_post(); ps_portal_render_card(get_the_ID(),'standard'); endwhile; ?>
     </div>
-    <?php the_posts_pagination(array('mid_size'=>1,'prev_text'=>'← Prethodno','next_text'=>'Sljedeće →')); ?>
+    <?php echo paginate_links(array('total'=>$latest->max_num_pages,'current'=>max(1,get_query_var('paged')),'mid_size'=>1,'prev_text'=>'← Prethodno','next_text'=>'Sljedeće →','type'=>'list')); ?>
     <?php else: ?>
     <div class="ps-empty-note">U ovoj rubrici trenutno nema dodatnih objava.</div>
     <?php endif; wp_reset_postdata(); ?>
