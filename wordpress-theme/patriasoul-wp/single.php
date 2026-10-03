@@ -11,7 +11,7 @@
 </header>
 <?php if(has_post_thumbnail()): ?><div class="ps-single-hero"><?php the_post_thumbnail('full'); ?></div><?php endif; ?>
 <div class="ps-single-content"><?php the_content(); ?></div>
-<div class="ps-author-inline"><?php ps_portal_author_box(); ?></div>
+<div class="ps-author-inline"><?php ps_portal_author_box(get_the_author_meta('ID')); ?></div>
 <?php $related=ps_portal_related_query(get_the_ID(),4); if($related->have_posts()): ?>
 <section class="ps-related"><div class="ps-portal-section__head"><div><span class="eyebrow">Nakon ove priče</span><h2>Povezano</h2></div></div><div class="ps-portal-grid ps-portal-grid--standard"><?php while($related->have_posts()):$related->the_post();ps_portal_render_card(get_the_ID(),'compact');endwhile;wp_reset_postdata(); ?></div></section>
 <?php endif; ?>
