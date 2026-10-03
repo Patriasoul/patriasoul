@@ -6,6 +6,41 @@ if (!defined('ABSPATH')) exit;
  * Central configuration for automatic editorial feeds.
  */
 
+function ps_portal_section_map() {
+    return array(
+        'domovina' => array('title'=>'Domovina','intro'=>'Domovinski rat, branitelji, sjećanje i hrvatska svakodnevica.','children'=>array('domovinski-rat','branitelji')),
+        'branitelji' => array('title'=>'Branitelji','intro'=>'Svjedočanstva, životopisi, udruge, inicijative i obilježavanja.','children'=>array('svjedocanstva','zivotopisi','udruge-i-inicijative','obljetnice-i-komemoracije')),
+        'povijest' => array('title'=>'Povijest','intro'=>'Razdoblja, događaji, ljudi i tragovi hrvatske povijesti.','children'=>array()),
+        'bastina' => array('title'=>'Baština','intro'=>'Povijesna baština, običaji, jezik, kultura i sakralna baština.','children'=>array('povijesna-bastina','obicaji-i-tradicija','jezik-i-knjizevnost','sakralna-i-kulturna-bastina','obnova-i-zastita')),
+        'vjera' => array('title'=>'Vjera','intro'=>'Evanđelje, molitve, svetci, blagdani i duhovni sadržaj.','children'=>array('evandelje','molitve','svetci','blagdani')),
+        'mediji' => array('title'=>'Mediji','intro'=>'Vijesti, video, galerija i multimedijski sadržaj PatriaSoula.','children'=>array('vijesti','aktualnosti','video','galerija')),
+        'igra' => array('title'=>'Igra','intro'=>'Kvizovi, izazovi i sadržaj kroz koji učimo i pamtimo.','children'=>array('quiz','brani-svoj-grad','dnevni-kviz','izazovi')),
+    );
+}
+
+function ps_portal_page_config($slug) {
+    $map = ps_portal_section_map();
+    $slug = sanitize_title($slug);
+    return isset($map[$slug]) ? $map[$slug] : null;
+}
+
+function ps_portal_category_ids($slugs) {
+    $ids = array();
+    foreach ((array) $slugs as $slug) {
+        $cat = get_category_by_slug(sanitize_title($slug));
+        if ($cat && !is_wp_error($cat)) $ids[] = (int) $cat->term_id;
+    }
+    return array_values(array_unique($ids));
+}
+
+function ps_portal_section_query($slug, $count = 5, $exclude = array()) {
+    $config = ps_portal_page_config($slug);
+    $slugs = $config && !empty($config['children']) ? $config['children'] : array($slug);
+    $ids = ps_portal_category_ids($slugs);
+    if (!$ids) return new WP_Query(array('post__in'=>array(0)));
+    return ps_portal_get_posts(array('posts_per_page'=>absint($count),'category__in'=>$ids,'post__not_in'=>array_map('absint',(array)$exclude),'orderby'=>'date','order'=>'DESC));
+}
+
 function ps_portal_feed_config() {
     return array(
         'featured' => array('title' => 'Istaknuto', 'count' => 5, 'class' => 'ps-feed-featured'),
