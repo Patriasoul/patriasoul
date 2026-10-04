@@ -1,166 +1,162 @@
 {
-  "updatedAt": "2026-10-03T22:04:01.734845+00:00",
+  "updatedAt": "2026-10-04T00:46:27.409995+00:00",
   "source": "DHMZ",
   "stations": {
     "RC Bilogora": {
-      "temp": "17.0",
+      "temp": "14.7",
       "condition": "vedro",
       "wind": "SE",
-      "humidity": "42"
+      "humidity": "54"
     },
     "Bjelovar": {
-      "temp": "10.5",
-      "condition": "-",
-      "wind": "E",
-      "humidity": "72"
+      "temp": "8.0",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "83"
     },
     "Crikvenica": {
-      "temp": "19.3",
+      "temp": "15.3",
       "condition": "lahor",
       "wind": "NW",
-      "humidity": "33"
+      "humidity": "65"
     },
     "Dubrovnik": {
-      "temp": "19.3",
-      "condition": "povjetarac",
-      "wind": "NW",
-      "humidity": "74"
+      "temp": "20.0",
+      "condition": "lahor",
+      "wind": "NE",
+      "humidity": "44"
     },
     "Dubrovnik-aerodrom": {
-      "temp": "17.1",
+      "temp": "18.0",
       "condition": "vedro",
-      "wind": "NE",
-      "humidity": "80"
+      "wind": "E",
+      "humidity": "51"
     },
     "Gospić": {
-      "temp": "7.1",
+      "temp": "4.2",
       "condition": "lahor",
-      "wind": "N",
-      "humidity": "95"
+      "wind": "NE",
+      "humidity": "99"
     },
     "RC Gradište (kod Županje)": {
-      "temp": "11.8",
-      "condition": "lahor",
+      "temp": "7.8",
+      "condition": "povjetarac",
       "wind": "SE",
-      "humidity": "52"
+      "humidity": "72"
     },
     "Knin": {
-      "temp": "12.6",
-      "condition": "povjetarac",
-      "wind": "E",
-      "humidity": "64"
+      "temp": "9.1",
+      "condition": "lahor",
+      "wind": "SE",
+      "humidity": "81"
     },
     "Križevci": {
-      "temp": "9.7",
+      "temp": "6.7",
       "condition": "lahor",
-      "wind": "N",
-      "humidity": "73"
+      "wind": "NE",
+      "humidity": "87"
     },
     "Opatija": {
-      "temp": "16.7",
+      "temp": "15.5",
       "condition": "-",
       "wind": "-",
       "humidity": "45"
     },
     "RC Osijek-Čepin": {
-      "temp": "12.9",
-      "condition": "vedro",
-      "wind": "E",
-      "humidity": "50"
-    },
-    "Pula-aerodrom": {
-      "temp": "16.2",
+      "temp": "8.3",
       "condition": "vedro",
       "wind": "NE",
-      "humidity": "46"
-    },
-    "Rijeka-aerodrom": {
-      "temp": "16.6",
-      "condition": "vedro",
-      "wind": "E",
-      "humidity": "43"
-    },
-    "Slavonski Brod": {
-      "temp": "14.2",
-      "condition": "vedro",
-      "wind": "NE",
-      "humidity": "51"
-    },
-    "Split-aerodrom": {
-      "temp": "16.8",
-      "condition": "vedro",
-      "wind": "W",
-      "humidity": "63"
-    },
-    "Šibenik": {
-      "temp": "16.3",
-      "condition": "povjetarac",
-      "wind": "NW",
-      "humidity": "57"
-    },
-    "Varaždin": {
-      "temp": "8.6",
-      "condition": "vedro",
-      "wind": "SW",
-      "humidity": "85"
-    },
-    "Zadar-aerodrom": {
-      "temp": "9.2",
-      "condition": "vedro",
-      "wind": "C",
-      "humidity": "93"
-    },
-    "Zagreb-Maksimir": {
-      "temp": "10.2",
-      "condition": "vedro",
-      "wind": "NW",
       "humidity": "74"
     },
-    "Zagreb-aerodrom": {
-      "temp": "8.4",
-      "condition": "vedro",
-      "wind": "NW",
-      "humidity": "85"
-    },
-    "Zagreb": {
-      "temp": "8.4",
-      "condition": "vedro",
-      "wind": "NW",
-      "humidity": "85"
-    },
-    "Rijeka": {
-      "temp": "16.6",
-      "condition": "vedro",
-      "wind": "E",
-      "humidity": "43"
-    },
-    "Zadar": {
-      "temp": "9.2",
-      "condition": "vedro",
-      "wind": "C",
-      "humidity": "93"
-    },
-    "Split": {
-      "temp": "16.8",
-      "condition": "vedro",
-      "wind": "W",
-      "humidity": "63"
-    },
-    "Pula": {
-      "temp": "16.2",
+    "Pula-aerodrom": {
+      "temp": "13.6",
       "condition": "vedro",
       "wind": "NE",
-      "humidity": "46"
+      "humidity": "50"
+    },
+    "Rijeka-aerodrom": {
+      "temp": "14.7",
+      "condition": "vedro",
+      "wind": "NE",
+      "humidity": "48"
+    },
+    "Slavonski Brod": {
+      "temp": "6.4",
+      "condition": "vedro",
+      "wind": "SW",
+      "humidity": "81"
+    },
+    "Split-aerodrom": {
+      "temp": "17.2",
+      "condition": "vedro",
+      "wind": "N",
+      "humidity": "58"
+    },
+    "Šibenik": {
+      "temp": "14.4",
+      "condition": "lahor",
+      "wind": "SE",
+      "humidity": "71"
+    },
+    "Varaždin": {
+      "temp": "5.1",
+      "condition": "vedro",
+      "wind": "SW",
+      "humidity": "87"
+    },
+    "Zadar-aerodrom": {
+      "temp": "8.3",
+      "condition": "vedro",
+      "wind": "SE",
+      "humidity": "96"
+    },
+    "Zagreb-Maksimir": {
+      "temp": "8.0",
+      "condition": "vedro",
+      "wind": "SW",
+      "humidity": "84"
+    },
+    "Zagreb-aerodrom": {
+      "temp": "5.8",
+      "condition": "vedro",
+      "wind": "SW",
+      "humidity": "91"
+    },
+    "Zagreb": {
+      "temp": "5.8",
+      "condition": "vedro",
+      "wind": "SW",
+      "humidity": "91"
+    },
+    "Rijeka": {
+      "temp": "14.7",
+      "condition": "vedro",
+      "wind": "NE",
+      "humidity": "48"
+    },
+    "Zadar": {
+      "temp": "8.3",
+      "condition": "vedro",
+      "wind": "SE",
+      "humidity": "96"
+    },
+    "Split": {
+      "temp": "17.2",
+      "condition": "vedro",
+      "wind": "N",
+      "humidity": "58"
+    },
+    "Pula": {
+      "temp": "13.6",
+      "condition": "vedro",
+      "wind": "NE",
+      "humidity": "50"
     }
   },
   "alerts": [
     "Žuto upozorenje za vjetar",
     "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
-    "Žuto upozorenje za vjetar",
-    "Mjestimice pojačana bura. Najjači udari vjetra 35-40 čvorova (65-75 km/h)",
     "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)",
-    "Yellow wind warning",
-    "Locally fresh NE wind. Maximum wind gusts 35-40 knots (65-75 km/h)"
+    "Locally fresh NE wind. Maximum wind gusts 35-40 knot (65-75 km/h)"
   ]
 }
